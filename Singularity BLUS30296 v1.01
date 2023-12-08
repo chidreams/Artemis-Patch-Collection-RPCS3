@@ -1,0 +1,127 @@
+Version: 1.2
+# Title: Singularity
+# Serial: BLUS30296
+# Category: GD
+# Version: APP_VER=01.01 VERSION=01.00
+# Converted by gully
+Anchors:
+  Singularity2: &Singularity2
+    - [be32,0x00D82024,0x914B000C]
+  Singularity3: &Singularity3
+    - [be32,0x00E50B74,0x60000000]
+  Singularity4: &Singularity4
+    - [be32,0x00D80DE8,0x60000000]
+  Singularity5: &Singularity5
+    - [be32,0x00E97B50,0x60000000]
+  Singularity6: &Singularity6
+    - [be32,0x00BE5460,0x60000000]
+  Singularity7: &Singularity7
+    - [be32,0x00D275F4,0x60000000]
+  Singularity8: &Singularity8
+    - [be32,0x005CD2D4,0x60000000]
+  Singularity9: &Singularity9
+    - [be32,0x00D94B04,0x60000000]
+  Singularity10: &Singularity10
+    - [be32,0x00E54F9C,0x60000000]
+  Singularity12: &Singularity12
+    - [be32,0x00F7E520,0x60000000]
+PPU-e7fff70ff27acd3e7a18923e4a35f44b3e581cb2:
+  "Ammo Never Decreases":
+    Games:
+      "Singularity (Artemis)":
+        BLUS30296: [ 01.01 ]
+    Author: bungholio Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *Singularity2 ]
+PPU-e7fff70ff27acd3e7a18923e4a35f44b3e581cb2:
+  "TMD Energy Never Decreases":
+    Games:
+      "Singularity (Artemis)":
+        BLUS30296: [ 01.01 ]
+    Author: bungholio Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *Singularity3 ]
+PPU-e7fff70ff27acd3e7a18923e4a35f44b3e581cb2:
+  "Medkits, E99 Energy Cells, And Weapon Tech Never Decrease":
+    Games:
+      "Singularity (Artemis)":
+        BLUS30296: [ 01.01 ]
+    Author: bungholio Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *Singularity4 ]
+PPU-e7fff70ff27acd3e7a18923e4a35f44b3e581cb2:
+  "Infinite Sprint":
+    Games:
+      "Singularity (Artemis)":
+        BLUS30296: [ 01.01 ]
+    Author: bungholio Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *Singularity5 ]
+PPU-e7fff70ff27acd3e7a18923e4a35f44b3e581cb2:
+  "Temporal Dilation Never Decreases":
+    Games:
+      "Singularity (Artemis)":
+        BLUS30296: [ 01.01 ]
+    Author: bungholio Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *Singularity6 ]
+PPU-e7fff70ff27acd3e7a18923e4a35f44b3e581cb2:
+  "Deadlock Lasts Forever":
+    Games:
+      "Singularity (Artemis)":
+        BLUS30296: [ 01.01 ]
+    Author: bungholio Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *Singularity7 ]
+PPU-e7fff70ff27acd3e7a18923e4a35f44b3e581cb2:
+  "Oxygen Never Decreases":
+    Games:
+      "Singularity (Artemis)":
+        BLUS30296: [ 01.01 ]
+    Author: bungholio Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *Singularity8 ]
+PPU-e7fff70ff27acd3e7a18923e4a35f44b3e581cb2:
+  "Max Medkits + E99 Cells On Gain":
+    Games:
+      "Singularity (Artemis)":
+        BLUS30296: [ 01.01 ]
+    Author: bungholio Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *Singularity9 ]
+PPU-e7fff70ff27acd3e7a18923e4a35f44b3e581cb2:
+  "Rapid Fire Impulse":
+    Games:
+      "Singularity (Artemis)":
+        BLUS30296: [ 01.01 ]
+    Author: bungholio Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *Singularity10 ]
+PPU-e7fff70ff27acd3e7a18923e4a35f44b3e581cb2:
+  "Enemies Never Attack Nor Move":
+    Games:
+      "Singularity (Artemis)":
+        BLUS30296: [ 01.01 ]
+    Author: bungholio Ported by ChiDreamS
+    Notes:  Game will not progress if you use this code 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *Singularity12 ]
