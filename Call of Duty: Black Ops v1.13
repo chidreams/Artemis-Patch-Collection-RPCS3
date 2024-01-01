@@ -1,0 +1,88 @@
+Version: 1.2
+# Title: Call of Duty®: Black Ops
+# Serial: BLUS30591
+# Category: GD
+# Version: APP_VER=01.13 VERSION=01.00
+PPU-c5bfb7ce22e587ea94a21dea88fc6729f0754a6f:
+  Infinite Health:
+    Games:
+      "Call of Duty®: Black Ops (Artemis)":
+        BLUS30591: [ 01.13 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ be32,0x0031BAD8,0x3C8003E8 ]
+      - [ be32,0x0031BADC,0x608403E8 ]
+      - [ be32,0x0031BAE0,0x909E0184 ]
+PPU-c5bfb7ce22e587ea94a21dea88fc6729f0754a6f:      
+  Infinite Ammo Usage:
+    Games:
+      "Call of Duty®: Black Ops (Artemis)":
+        BLUS30591: [ 01.13 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.3
+    Group: AA
+    Patch:
+     - [ be32, 0x000A237C, 0x386003E7 ]
+PPU-c5bfb7ce22e587ea94a21dea88fc6729f0754a6f:
+  Infinite Ammo No Reload + Infinite Grenades:
+    Games:
+      "Call of Duty®: Black Ops (Artemis)":
+        BLUS30591: [ 01.13 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.3
+    Group: AB
+    Patch:
+     - [ be32, 0x000A1864,0x48000004]
+PPU-c5bfb7ce22e587ea94a21dea88fc6729f0754a6f:
+  Improved Accuracy :
+    Games:
+      "Call of Duty®: Black Ops (Artemis)":
+        BLUS30591: [ 01.13 ]
+    Author: Peoples00 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.3
+    Group: C
+    Patch:
+    - [ be32,0x00090DE8,0x38000000]
+    - [ be32,0x00090DEC,0x901F052C]
+    - [ be32,0x00090D2C,0x38000000]
+    - [ be32,0x00090D30,0x901F052C]
+    - [ be32,0x00090DE8,0x38000000]
+    - [ be32,0x00090DEC,0x901F052C]
+    - [ be32,0x00090D2C,0x38000000]
+    - [ be32,0x00090D30,0x901F052C]
+    - [ be32,0x0024FC28,0x60000000]
+    - [ be32,0x000994B8,0x60000000]
+    - [ be32,0x0009CAF0,0x60000000]
+    - [ be32,0x0009DB10,0x60000000]
+    - [ be32,0x0006AE88,0x60000000]
+    - [ be32,0x0006AE90,0x60000000]
+PPU-c5bfb7ce22e587ea94a21dea88fc6729f0754a6f:
+  Max Score On Gain Zombie Mode:
+    Games:
+      "Call of Duty®: Black Ops (Artemis)":
+        BLUS30591: [ 01.13 ]
+    Author: Peoples00 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ be32,0x0025A504,0x3FA03B9A ]
+      - [ be32,0x0025A534,0x63BDC9FF ]
+PPU-c5bfb7ce22e587ea94a21dea88fc6729f0754a6f:
+  Invincible Again Melee Attack (Zombie Mode):
+    Games:
+      "Call of Duty®: Black Ops (Artemis)":
+        BLUS30591: [ 01.13 ]
+    Author: Peoples00 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ be32,0x0020D898,0x60000000 ]
+
+
+
+
