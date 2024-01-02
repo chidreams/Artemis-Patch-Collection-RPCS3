@@ -1,0 +1,160 @@
+Version: 1.2
+Anchors:
+  HardCrP: &HardCrP
+      - [ be32,0x009513F4,0x60000000]
+      - [ be32,0x009534A0,0x60000000] 
+  HardCrP2: &HardCrP2
+      - [ be32,0x000CEE90,0x60000000]
+  HardCrP3: &HardCrP3
+      - [ be32,0x000CEFD4,0x60000000]
+      - [ be32,0x001B393C,0x60000000] 
+  HardCrP4: &HardCrP4
+      - [ be32,0x009510D8,0x60000000]
+  HardCrP5: &HardCrP5
+      - [ be32,0x009510FC,0x60000000]
+  HardCrP6: &HardCrP6
+      - [ be32,0x00142E24,0x60000000]
+  HardCrP7: &HardCrP7
+      - [ be32,0x009513F0,0x60000000]
+  HardCrP8: &HardCrP8
+      - [ be32,0x009512F4,0x39290000]
+  HardCrP9: &HardCrP9
+      - [ be32,0x000CEFC4,0xF94800C8]
+  HardCrP10: &HardCrP10
+      - [ be32,0x000CEEDC,0x60000000]
+  HardCrP11: &HardCrP11
+      - [ be32,0x000CEE8C,0x60000000]
+  HardCrP12: &HardCrP12
+      - [ be32,0x009512F8,0x39200013]
+  HardCrP13: &HardCrP13
+      - [ be32,0x00953094,0xD1831210]      
+PPU-506c11110b75cb60e70ed04b81909118dc52b882:
+  "AoB Infinite Health":
+    Games:
+      "Hard Corps: Uprising (Artemis)":
+        NPEB00332: [ 01.00 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *HardCrP ]
+PPU-506c11110b75cb60e70ed04b81909118dc52b882:
+  "AoB Max Corps Points":
+    Games:
+      "Hard Corps: Uprising (Artemis)":
+        NPEB00332: [ 01.00 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *HardCrP2 ]
+PPU-506c11110b75cb60e70ed04b81909118dc52b882:
+  "AoB Max Score":
+    Games:
+      "Hard Corps: Uprising (Artemis)":
+        NPEB00332: [ 01.00 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *HardCrP3 ]
+PPU-506c11110b75cb60e70ed04b81909118dc52b882:
+  "AoB Infinite Mid-Air Jumps":
+    Games:
+      "Hard Corps: Uprising (Artemis)":
+        NPEB00332: [ 01.00 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *HardCrP4 ]
+PPU-506c11110b75cb60e70ed04b81909118dc52b882:
+  "AoB Infinite Dash":
+    Games:
+      "Hard Corps: Uprising (Artemis)":
+        NPEB00332: [ 01.00 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *HardCrP5 ]
+PPU-506c11110b75cb60e70ed04b81909118dc52b882:
+  "AoB Invincibility (after first hit)":
+    Games:
+      "Hard Corps: Uprising (Artemis)":
+        NPEB00332: [ 01.00 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *HardCrP6 ]
+PPU-506c11110b75cb60e70ed04b81909118dc52b882:
+  "AoB Unlimited Health P1 And P2":
+    Games:
+      "Hard Corps: Uprising (Artemis)":
+        NPEB00332: [ 01.00 ]
+    Author: crapulecorp
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *HardCrP7 ]
+PPU-506c11110b75cb60e70ed04b81909118dc52b882:
+  "AoB Player 1 Unlimited Lives":
+    Games:
+      "Hard Corps: Uprising (Artemis)":
+        NPEB00332: [ 01.00 ]
+    Author: crapulecorp
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *HardCrP8 ]
+PPU-506c11110b75cb60e70ed04b81909118dc52b882:
+  "AoB Player 1 Max Score If Increase":
+    Games:
+      "Hard Corps: Uprising (Artemis)":
+        NPEB00332: [ 01.00 ]
+    Author: crapulecorp
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *HardCrP9 ]
+PPU-506c11110b75cb60e70ed04b81909118dc52b882:
+  "AoB Max Corps Points P1":
+    Games:
+      "Hard Corps: Uprising (Artemis)":
+        NPEB00332: [ 01.00 ]
+    Author: crapulecorp
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *HardCrP10 ]
+PPU-506c11110b75cb60e70ed04b81909118dc52b882:
+  "AoB Max Corps Points P2":
+    Games:
+      "Hard Corps: Uprising (Artemis)":
+        NPEB00332: [ 01.00 ]
+    Author: crapulecorp
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *HardCrP11 ]
+PPU-506c11110b75cb60e70ed04b81909118dc52b882:
+  "AoB Infinite Lives (get a 1-Up for Disposable Warrior Trophy)":
+    Games:
+      "Hard Corps: Uprising (Artemis)":
+        NPEB00332: [ 01.00 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *HardCrP12 ]
+PPU-506c11110b75cb60e70ed04b81909118dc52b882:
+  "AoB Combo x100":
+    Games:
+      "Hard Corps: Uprising (Artemis)":
+        NPEB00332: [ 01.00 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *HardCrP13 ]
