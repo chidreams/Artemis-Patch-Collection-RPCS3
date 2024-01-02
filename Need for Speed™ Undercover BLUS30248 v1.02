@@ -1,0 +1,36 @@
+Version: 1.2
+PPU-255b4b35d2722e73b82c4d87d8849cff9f54e09e:
+  "ASM Infinite Bullet Time":
+    Games:
+      "Need for Speed™ Undercover (Artemis)":
+        BLUS30248: [ 01.02]
+    Author: jgduff Ported by ChIdReamS1
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x00525198, 0x60000000]
+      - [ be32, 0x005251A0, 0x60000000]
+PPU-255b4b35d2722e73b82c4d87d8849cff9f54e09e:
+  "ASM Infinite Nitro":
+    Games:
+      "Need for Speed™ Undercover (Artemis)":
+        BLUS30248: [ 01.02]
+    Author: jgduff Ported by ChIdReamS1
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x004824E0, 0x60000000]
+      - [ be32, 0x009DEBD0, 0x60000000]
+PPU-255b4b35d2722e73b82c4d87d8849cff9f54e09e:
+  "ASM Infinite Money":
+    Games:
+      "Need for Speed™ Undercover (Artemis)":
+        BLUS30248: [ 01.02]
+    Author: jgduff Ported by ChIdReamS1
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x005789B8, 0x60000000]
+      - [ be32, 0x005A6D6C, 0x60000000]
+      - [ be32, 0x008A5330, 0x60000000]
+      - [ be32, 0x008A5350, 0x60000000]
