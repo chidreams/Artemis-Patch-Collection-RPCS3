@@ -1,0 +1,331 @@
+Version: 1.2
+# Title: RESIDENT EVIL 6
+# Serial: BLUS30855
+# Category: GD
+# Version: APP_VER=01.06 VERSION=01.01
+Anchors:
+  REvil6: &REvil6
+    - [ be32,0x007AF424,0xA07F0F22]
+    - [ be32,0x007AF428,0xB07F0F20]
+  REvil62: &REvil62
+    - [ be32,0x00BE1200,0x38A003E7]
+  REvil63: &REvil63
+    - [ be32,0x00176738,0x60000000]
+    - [ be32,0x00176BCC,0xC3DF3F78]
+    - [ be32,0x00175DB8,0x60000000]
+  REvil64: &REvil64
+    - [ be32,0x00177AF0,0x30C60063]
+  REvil65: &REvil65
+    - [ be32,0x000D8264,0x60000000]
+    - [ be32,0x000D8A2C,0x60000000]
+    - [ be32,0x000D8F30,0x60000000]
+  REvil66: &REvil66
+    - [ be32,0x007AD5B8,0xA0830F22]
+    - [ be32,0x007AD5BC,0xB0830F20]
+    - [ be32,0x007AF424,0xA07F0F22]
+    - [ be32,0x007AF428,0xB07F0F20]
+  REvil67: &REvil67
+    - [ be32,0x0068533C,0x38A02710]
+  REvil68: &REvil68
+    - [ be32,0x0080BC1C,0xC0233064]
+  REvil69: &REvil69
+    - [ be32,0x00C0EE18,0x48000004]
+    - [ be32,0x00C15364,0x48000004]
+    - [ be32,0x00C0EF24,0x48000004]
+    - [ be32,0x00C196EC,0x48000004]
+  REvil610: &REvil610
+    - [ be32,0x00C1C47C,0x48000004]
+  REvil611: &REvil611
+    - [ be32,0x00C1BEFC,0x48000004]
+  REvil612: &REvil612
+    - [ be32,0x006869B0,0x4E800020]
+  REvil613: &REvil613
+    - [ be32,0x0031BD74,0x60000000]
+    - [ be32,0x0036F968,0x60000000]
+    - [ be32,0x0036F368,0x60000000]
+    - [ be32,0x0049A210,0x60000000]
+    - [ be32,0x00495264,0x60000000]
+    - [ be32,0x004950B0,0x60000000]
+    - [ be32,0x004D0958,0x60000000]
+  REvil614: &REvil614
+    - [ be32,0x00668120,0x60000000]
+  REvil615: &REvil615
+    - [ be32,0x00176B84,0xC3DF3F78]
+    - [ be32,0x00176588,0xC3DD0000]
+    - [ be32,0x00175D4C,0xC03F0000]
+  REvil616: &REvil616
+    - [ be32,0x00177E08,0x30C603E7]
+  REvil617: &REvil617
+    - [ be32,0x00177E7C,0x30A503E7]
+  REvil618: &REvil618
+    - [ be32,0x00177AF0,0x30C603E7]
+  REvil619: &REvil619
+    - [ be32,0x00177E34,0x90640000]    
+PPU-645e8d6e9d9da6451789170b9daa4b0ae49b8009:
+  "Freeze Health Player ( Your Player Not Enemies )":
+    Games:
+      " RESIDENT EVIL 6 (Artemis)":
+        BLUS30855: [ 01.06 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *REvil6 ]
+PPU-645e8d6e9d9da6451789170b9daa4b0ae49b8009:
+  "Ammount Of Ammo + First Aid + Grenades Modifiers":
+    Games:
+      " RESIDENT EVIL 6 (Artemis)":
+        BLUS30855: [ 01.06 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *REvil62 ]
+PPU-645e8d6e9d9da6451789170b9daa4b0ae49b8009:
+  "Mercenaries Timer + Combo Timer + Bonus Timer Freeze":
+    Games:
+      " RESIDENT EVIL 6 (Artemis)":
+        BLUS30855: [ 01.06 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *REvil63 ]
+PPU-645e8d6e9d9da6451789170b9daa4b0ae49b8009:
+  "99 Bonus Combo Counter On Mercenaries":
+    Games:
+      " RESIDENT EVIL 6 (Artemis)":
+        BLUS30855: [ 01.06 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *REvil64 ]
+PPU-645e8d6e9d9da6451789170b9daa4b0ae49b8009:
+  "Action Bar Timer Thing Doesnt Decrease":
+    Games:
+      " RESIDENT EVIL 6 (Artemis)":
+        BLUS30855: [ 01.06 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *REvil65 ]
+PPU-645e8d6e9d9da6451789170b9daa4b0ae49b8009:
+  "Infinite Health":
+    Games:
+      " RESIDENT EVIL 6 (Artemis)":
+        BLUS30855: [ 01.06 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *REvil66 ]
+PPU-645e8d6e9d9da6451789170b9daa4b0ae49b8009:
+  "Infinite Health For Agent Hunt Mode ":
+    Games:
+      " RESIDENT EVIL 6 (Artemis)":
+        BLUS30855: [ 01.06 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: Disable If You Are Planning Playing Story Mode, 7CA62814=Disable
+    Patch Version: 1.2
+    Patch:
+      - [ load, *REvil67 ]
+PPU-645e8d6e9d9da6451789170b9daa4b0ae49b8009:
+  "Infinite Stamina For Agent Hunt Mode ":
+    Games:
+      " RESIDENT EVIL 6 (Artemis)":
+        BLUS30855: [ 01.06 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *REvil68 ]
+PPU-645e8d6e9d9da6451789170b9daa4b0ae49b8009:
+  "No Reload + Infinite Grenades":
+    Games:
+      " RESIDENT EVIL 6 (Artemis)":
+        BLUS30855: [ 01.06 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *REvil69 ]
+PPU-645e8d6e9d9da6451789170b9daa4b0ae49b8009:
+  "Infinite Herb":
+    Games:
+      " RESIDENT EVIL 6 (Artemis)":
+        BLUS30855: [ 01.06 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *REvil610 ]
+PPU-645e8d6e9d9da6451789170b9daa4b0ae49b8009:
+  "Infinite First Aid Spray":
+    Games:
+      " RESIDENT EVIL 6 (Artemis)":
+        BLUS30855: [ 01.06 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *REvil611 ]
+PPU-645e8d6e9d9da6451789170b9daa4b0ae49b8009:
+  "1 Hit Kills Zombie":
+    Games:
+      " RESIDENT EVIL 6 (Artemis)":
+        BLUS30855: [ 01.06 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: Only Work For Zombie And Some Boss.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *REvil612 ]
+PPU-645e8d6e9d9da6451789170b9daa4b0ae49b8009:
+  "Cant Be Grabs By Zombie Level 1":
+    Games:
+      " RESIDENT EVIL 6 (Artemis)":
+        BLUS30855: [ 01.06 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: J'avo Can Still Grabs
+    Patch Version: 1.2
+    Patch:
+      - [ load, *REvil613 ]
+PPU-645e8d6e9d9da6451789170b9daa4b0ae49b8009:
+  "Freeze Zombie-Javo ":
+    Games:
+      " RESIDENT EVIL 6 (Artemis)":
+        BLUS30855: [ 01.06 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *REvil614 ]
+PPU-645e8d6e9d9da6451789170b9daa4b0ae49b8009:
+  "Stop Mercenaries Timer + Combo Timer + Bonus Timer":
+    Games:
+      " RESIDENT EVIL 6 (Artemis)":
+        BLUS30855: [ 01.06 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *REvil615 ]
+PPU-645e8d6e9d9da6451789170b9daa4b0ae49b8009:
+  "Total Enemies Kills Modifiers Mercenaries":
+    Games:
+      " RESIDENT EVIL 6 (Artemis)":
+        BLUS30855: [ 01.06 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 000A=10x;0063=99x;01F4=500x;03E7=999x
+    Patch Version: 1.2
+    Patch:
+      - [ load, *REvil616 ]
+PPU-645e8d6e9d9da6451789170b9daa4b0ae49b8009:
+  "Combo Counter Modifiers Mercenaries":
+    Games:
+      " RESIDENT EVIL 6 (Artemis)":
+        BLUS30855: [ 01.06 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 000A=10x;0063=99x;01F4=500x;03E7=999x
+    Patch Version: 1.2
+    Patch:
+      - [ load, *REvil617 ]
+PPU-645e8d6e9d9da6451789170b9daa4b0ae49b8009:
+  "Bonus Combo Modifiers Mercenaries":
+    Games:
+      " RESIDENT EVIL 6 (Artemis)":
+        BLUS30855: [ 01.06 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 000A=10x;0063=99x;01F4=500x;03E7=999x
+    Patch Version: 1.2
+    Patch:
+      - [ load, *REvil618 ]
+PPU-645e8d6e9d9da6451789170b9daa4b0ae49b8009:
+  "Max Score On Mercenaries":
+    Games:
+      " RESIDENT EVIL 6 (Artemis)":
+        BLUS30855: [ 01.06 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *REvil619 ]
+PPU-645e8d6e9d9da6451789170b9daa4b0ae49b8009:
+  "Action Bar Meter Instantly Full From Any Joystick Movement":
+    Games:
+      " RESIDENT EVIL 6 (Artemis)":
+        BLUS30855: [ 01.06 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x000D8B10,0xC03E002C]
+    - [ be32,0x000D9018,0xC03E002C]
+  "Automatically Dodge Crate On Plane While Climbing":
+    Games:
+      " RESIDENT EVIL 6 (Artemis)":
+        BLUS30855: [ 01.06 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x000DA588,0x38600001]
+  "Automatically Complete Grab Button Mashers":
+    Games:
+      " RESIDENT EVIL 6 (Artemis)":
+        BLUS30855: [ 01.06 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x000DA5A4,0x38600001]
+  "Automatically Complete Grab Joystick Movers":
+    Games:
+      " RESIDENT EVIL 6 (Artemis)":
+        BLUS30855: [ 01.06 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x000DA5DC,0x38600001]
+  "Automatically Avoided Train, Ducked While In Cart, Some Attack On Deborah":
+    Games:
+      " RESIDENT EVIL 6 (Artemis)":
+        BLUS30855: [ 01.06 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x000DA630,0x38600001]
+  "Automatically Do Rotating Wheel Timed Button Pressed":
+    Games:
+      " RESIDENT EVIL 6 (Artemis)":
+        BLUS30855: [ 01.06 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x000DA668,0x38600001]
+  "Automatically Complete Grab Timed Button Presses Perfectly":
+    Games:
+      " RESIDENT EVIL 6 (Artemis)":
+        BLUS30855: [ 01.06 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x000D8308,0x38600001]
+    - [ be32,0x000D830C,0x807E000C]
+    - [ be32,0x000D8310,0xC03E003C]
+    - [ be32,0x000D8314,0xD0230068]
+    - [ be32,0x000D8318,0x807E000C]
+    - [ be32,0x000D831C,0x80830024]
+    - [ be32,0x000D8320,0x2C04000C]
+    - [ be32,0x000D8324,0x2C840013]
+    - [ be32,0x000D8328,0x40820084]
+    - [ be32,0x000D832C,0xC03E003C]
+    - [ be32,0x000D8330,0xC05E0040]
+    - [ be32,0x000D8334,0xFC011000]
+    - [ be32,0x000D8338,0x4CC11382]
+    - [ be32,0x000D833C,0x48000008]
