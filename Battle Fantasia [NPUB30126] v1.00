@@ -1,0 +1,37 @@
+Version: 1.2
+# Title: BattleFantasia
+# Serial: NPUB30126
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.02
+PPU-287b6a695f4f3865f4d005f53caca4415d534b27:
+  "Infinite Health":
+    Games:
+      "BattleFantasia (Artemis)":
+        NPUB30126: [ 01.00 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00071F98,0xC0290000]
+    - [ be32,0x00071F9C,0xD0290004]
+PPU-287b6a695f4f3865f4d005f53caca4415d534b27:
+  "CPU Instant Dead-K.0":
+    Games:
+      "BattleFantasia (Artemis)":
+        NPUB30126: [ 01.00 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00071FE8,0x38000000]
+    - [ be32,0x00071FEC,0x90090004]
+PPU-287b6a695f4f3865f4d005f53caca4415d534b27:
+  "Freeze Fighting-Timer":
+    Games:
+      "BattleFantasia (Artemis)":
+        NPUB30126: [ 01.00 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0006CB64,0xEC21F828]
