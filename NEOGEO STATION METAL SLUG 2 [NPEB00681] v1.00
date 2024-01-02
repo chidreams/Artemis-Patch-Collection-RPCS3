@@ -1,0 +1,93 @@
+Version: 1.2
+# METAL SLUG 2
+# Serial: NPEB00681
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.00
+PPU-ef41953662aae0f7660c52a01c7acfe6f3216dfa:
+  "P1 Invincibility L1 To Activate":
+    Games:
+      "NEOGEO STATION METAL SLUG 2 (Artemis)":
+        NPEB00681: [ 01.00 ]
+    Author: GuitarMan Ported by ChIdReamS
+    Notes: Dose not work whine on vechical 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x002C1CBC,0x2805EAD0]
+    - [ be32,0x002C1CC0,0x40820050]
+    - [ be32,0x002C1CC4,0x89240020]
+    - [ be32,0x002C1CC8,0x28090001]
+    - [ be32,0x002C1CCC,0x40820044]
+    - [ be32,0x002C1CD0,0x3D200062]
+    - [ be32,0x002C1CD4,0x8929A0F6]
+    - [ be32,0x002C1CD8,0x28090002]
+    - [ be32,0x002C1CDC,0x3D0000D7]
+    - [ be32,0x002C1CE0,0x8A28FFF8]
+    - [ be32,0x002C1CE4,0x9928FFF8]
+    - [ be32,0x002C1CE8,0x4082001C]
+    - [ be32,0x002C1CEC,0x7C098800]
+    - [ be32,0x002C1CF0,0x41820014]
+    - [ be32,0x002C1CF4,0x3A000001]
+    - [ be32,0x002C1CF8,0x9208FFF0]
+    - [ be32,0x002C1CFC,0x8208FFF0]
+    - [ be32,0x002C1D00,0x71290002]
+    - [ be32,0x002C1D04,0x28100001]
+    - [ be32,0x002C1D08,0x40820008]
+    - [ be32,0x002C1D0C,0xB2040015]
+    - [ be32,0x002C1D10,0xE9240010]
+    - [ be32,0x002C1D14,0x4804AEB2]
+    - [ be32,0x0004AEAC,0x482C1CBE]
+PPU-ef41953662aae0f7660c52a01c7acfe6f3216dfa:
+  "P1 Infinite Arms Bombs Rapid Fire":
+    Games:
+      "NEOGEO STATION METAL SLUG 2 (Artemis)":
+        NPEB00681: [ 01.00 ]
+    Author: GuitarMan Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x002C1D24,0x2805C340]
+    - [ be32,0x002C1D28,0x4082002C]
+    - [ be32,0x002C1D2C,0xA104FF0C]
+    - [ be32,0x002C1D30,0x28084C20]
+    - [ be32,0x002C1D34,0x40820020]
+    - [ be32,0x002C1D38,0x390003E7]
+    - [ be32,0x002C1D3C,0xB104000C]
+    - [ be32,0x002C1D40,0x39000063]
+    - [ be32,0x002C1D44,0x99040008]
+    - [ be32,0x002C1D48,0x39000000]
+    - [ be32,0x002C1D4C,0x99040000]
+    - [ be32,0x002C1D50,0x99040002]
+    - [ be32,0x002C1D54,0xE9040008]
+    - [ be32,0x002C1D58,0x4804ADC6]
+    - [ be32,0x0004ADC0,0x482C1D26]
+PPU-ef41953662aae0f7660c52a01c7acfe6f3216dfa:
+  "P1 Infinite Lives":
+    Games:
+      "NEOGEO STATION METAL SLUG 2 (Artemis)":
+        NPEB00681: [ 01.00 ]
+    Author: GuitarMan Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x002C1D70,0x28051270]
+    - [ be32,0x002C1D74,0x40820020]
+    - [ be32,0x002C1D78,0x38E057EE]
+    - [ be32,0x002C1D7C,0x30E757EE]
+    - [ be32,0x002C1D80,0x7CE7222E]
+    - [ be32,0x002C1D84,0x28074C20]
+    - [ be32,0x002C1D88,0x4082000C]
+    - [ be32,0x002C1D8C,0x38E00063]
+    - [ be32,0x002C1D90,0x98E40006]
+    - [ be32,0x002C1D94,0xE8E40000]
+    - [ be32,0x002C1D98,0x4804AD86]
+    - [ be32,0x0004AD80,0x482C1D72]
+PPU-ef41953662aae0f7660c52a01c7acfe6f3216dfa:
+  "Infinite Timer":
+    Games:
+      "NEOGEO STATION METAL SLUG 2 (Artemis)":
+        NPEB00681: [ 01.00 ]
+    Author: GuitarMan Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00AF1D6C,0x39006400]
