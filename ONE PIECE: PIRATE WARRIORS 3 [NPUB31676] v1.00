@@ -1,0 +1,161 @@
+Version: 1.2
+# Title: ONE PIECE: PIRATE WARRIORS 3
+# Serial: NPUB31676
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.00
+Anchors:
+  OPPIRATE3: &OPPIRATE3
+    - [ be32,0x0021ABAC,0x3860E0FF]
+  OPPIRATE32: &OPPIRATE32
+    - [ be32,0x00285248,0x4080000C]
+    - [ be32,0x00285174,0x40820048]
+  OPPIRATE33: &OPPIRATE33
+    - [ be32,0x0027EB64,0x40810008]
+  OPPIRATE34: &OPPIRATE34
+    - [ be32,0x002EAB5C,0x41800008]
+  OPPIRATE35: &OPPIRATE35
+    - [ be32,0x003B587C,0x93790100]
+  OPPIRATE36: &OPPIRATE36
+    - [ be32,0x0027EB68,0x60000000]
+  OPPIRATE37: &OPPIRATE37
+    - [ be32,0x00143618,0x38A00063]
+    - [ be32,0x0021ACF8,0x38A00031]
+    - [ be32,0x0021AD00,0x60000000]
+    - [ be32,0x0021AD78,0x38C00031]
+    - [ be32,0x0021BE10,0x38E00031]
+    - [ be32,0x002F1014,0x7C64392E]
+    - [ be32,0x002FB500,0x7CDD212E]
+  OPPIRATE38: &OPPIRATE38
+    - [ be32,0x0071B520,0x8BA405AF]
+    - [ be32,0x0071B524,0x2C1D0001] 
+    - [ be32,0x0071B528,0x40820020] 
+    - [ be32,0x0071B52C,0x3FA0457A] 
+    - [ be32,0x0071B530,0x93A4062C] 
+    - [ be32,0x0071B534,0x3BA00FA0] 
+    - [ be32,0x0071B538,0xB3A405B8] 
+    - [ be32,0x0071B53C,0xB3A405BA] 
+    - [ be32,0x0071B540,0x60000000] 
+    - [ be32,0x0071B544,0x60000000] 
+    - [ be32,0x0071B548,0x607F0000] 
+    - [ be32,0x0071B54C,0x4E800020]
+    - [ be32,0x003DEC3C,0x4833C8E5]
+  OPPIRATE39: &OPPIRATE39
+    - [ be32,0x0071B560,0x8BA405AF]
+    - [ be32,0x0071B564,0x2C1D0001]
+    - [ be32,0x0071B568,0x41820018]
+    - [ be32,0x0071B56C,0x2C1D0002]
+    - [ be32,0x0071B570,0x41820020]
+    - [ be32,0x0071B574,0x2C1D0003]
+    - [ be32,0x0071B578,0x41820044]
+    - [ be32,0x0071B57C,0x48000050]
+    - [ be32,0x0071B580,0x83C405B0]
+    - [ be32,0x0071B584,0x93C405B4]
+    - [ be32,0x0071B588,0x60000000]
+    - [ be32,0x0071B58C,0x48000040]
+    - [ be32,0x0071B590,0x3FE00086]
+    - [ be32,0x0071B594,0x63FF9A7C]
+    - [ be32,0x0071B598,0x83FF0000]
+    - [ be32,0x0071B59C,0x3FA00001]
+    - [ be32,0x0071B5A0,0x63BD0005]
+    - [ be32,0x0071B5A4,0x7C1DF800]
+    - [ be32,0x0071B5A8,0x40820010]
+    - [ be32,0x0071B5AC,0x83C405B0]
+    - [ be32,0x0071B5B0,0x93C405B4]
+    - [ be32,0x0071B5B4,0x60000000]
+    - [ be32,0x0071B5B8,0x48000014]
+    - [ be32,0x0071B5BC,0x60000000]
+    - [ be32,0x0071B5C0,0x60000000]
+    - [ be32,0x0071B5C4,0x60000000]
+    - [ be32,0x0071B5C8,0x60000000]
+    - [ be32,0x0071B5CC,0x4E800020]
+    - [ be32,0x003DEC38,0x4833C929]
+PPU-313cafd94785cf33ef809ce4cf5575332b1c5b11:
+  "Never Consume Beli When Leveling Up (Growth Only)":
+    Games:
+      "ONE PIECE PIRATE WARRIORS 3 (Artemis)":
+        NPUB31676: [ 01.00 ]
+    Author: JorgeFFC Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *OPPIRATE3 ]
+PPU-313cafd94785cf33ef809ce4cf5575332b1c5b11:
+  "1 Hit For Max Musou + Replenish":
+    Games:
+      "ONE PIECE PIRATE WARRIORS 3 (Artemis)":
+        NPUB31676: [ 01.00 ]
+    Author: JorgeFFC Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *OPPIRATE32 ]
+PPU-313cafd94785cf33ef809ce4cf5575332b1c5b11:
+  "Max Crew Assistance":
+    Games:
+      "ONE PIECE PIRATE WARRIORS 3 (Artemis)":
+        NPUB31676: [ 01.00 ]
+    Author: JorgeFFC Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *OPPIRATE33 ]
+PPU-313cafd94785cf33ef809ce4cf5575332b1c5b11:
+  "Max Kills On Battle In 1":
+    Games:
+      "ONE PIECE PIRATE WARRIORS 3 (Artemis)":
+        NPUB31676: [ 01.00 ]
+    Author: JorgeFFC Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *OPPIRATE34 ]
+PPU-313cafd94785cf33ef809ce4cf5575332b1c5b11:
+  "1 Hit for Instant Max Kizuna Rush":
+    Games:
+      "ONE PIECE PIRATE WARRIORS 3 (Artemis)":
+        NPUB31676: [ 01.00 ]
+    Author: FullCodes Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *OPPIRATE35 ]
+PPU-313cafd94785cf33ef809ce4cf5575332b1c5b11:
+  "Max Crew Assistance":
+    Games:
+      "ONE PIECE PIRATE WARRIORS 3 (Artemis)":
+        NPUB31676: [ 01.00 ]
+    Author: Fullcodes + JorgeFFC Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *OPPIRATE36 ]
+PPU-313cafd94785cf33ef809ce4cf5575332b1c5b11:
+  "Max Level On Growth":
+    Games:
+      "ONE PIECE PIRATE WARRIORS 3 (Artemis)":
+        NPUB31676: [ 01.00 ]
+    Author: JorgeFFC Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *OPPIRATE37 ]
+PPU-313cafd94785cf33ef809ce4cf5575332b1c5b11:
+  "Max Infinite SP":
+    Games:
+      "ONE PIECE PIRATE WARRIORS 3 (Artemis)":
+        NPUB31676: [ 01.00 ]
+    Author: FullCodes Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *OPPIRATE38 ]
+PPU-313cafd94785cf33ef809ce4cf5575332b1c5b11:
+  "Infinite HP":
+    Games:
+      "ONE PIECE PIRATE WARRIORS 3 (Artemis)":
+        NPUB31676: [ 01.00 ]
+    Author: FullCodes Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *OPPIRATE39 ]
