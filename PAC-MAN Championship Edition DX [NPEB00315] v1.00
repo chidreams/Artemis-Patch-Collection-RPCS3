@@ -1,0 +1,45 @@
+Version: 1.2
+# Title: PAC-MAN Championship Edition DX
+# Serial: NPEB00315
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.00
+PPU-221ac28654f37ec47226a20255c3d57e0d4a9fcf:
+  "Unlimited Lives":
+    Games:
+      "PAC-MAN Championship Edition DX (Artemis)":
+        NPEB00315: [ 01.00 ]
+    Author: crapulecorp Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+    - [ be32,0x002CB9D4,0x60000000]
+PPU-221ac28654f37ec47226a20255c3d57e0d4a9fcf:
+  "Time Never Decrease":
+    Games:
+      "PAC-MAN Championship Edition DX (Artemis)":
+        NPEB00315: [ 01.00 ]
+    Author: crapulecorp Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+    - [ be32,0x00122960,0x30630000]
+PPU-221ac28654f37ec47226a20255c3d57e0d4a9fcf:
+  "Bombs Never Decrease":
+    Games:
+      "PAC-MAN Championship Edition DX (Artemis)":
+        NPEB00315: [ 01.00 ]
+    Author: crapulecorp Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+    - [ be32,0x002E7D5C,0x60000000]
+PPU-221ac28654f37ec47226a20255c3d57e0d4a9fcf:
+  "Max Score On Increase":
+    Games:
+      "PAC-MAN Championship Edition DX (Artemis)":
+        NPEB00315: [ 01.00 ]
+    Author: crapulecorp Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+    - [ be32,0x00121E1C,0x93E42C64]
