@@ -1,0 +1,65 @@
+Version: 1.2
+# Title: Earthworm Jim HD
+# Serial: NPUB30120
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.00
+PPU-87a4002091c5598661ea42f97a7447d29567bdac:
+  "Infinite Lives":
+    Games:
+      "Earthworm Jim HD (Artemis)":
+        NPUB30120: [ 01.00 ]
+    Author: optantic Ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+     - [ be32,0x001C8C10,0x60000000]   
+PPU-87a4002091c5598661ea42f97a7447d29567bdac:
+  "Infinite Bullets":
+    Games:
+      "Earthworm Jim HD (Artemis)":
+        NPUB30120: [ 01.00 ]
+    Author: optantic Ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+     - [ be32,0x001AD13C,0x60000000]
+PPU-87a4002091c5598661ea42f97a7447d29567bdac:
+  "Unlimited Lives":
+    Games:
+      "Earthworm Jim HD (Artemis)":
+        NPUB30120: [ 01.00 ]
+    Author: crapulecorp Ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+     - [ be32,0x001C8BF8,0x39290000]
+PPU-87a4002091c5598661ea42f97a7447d29567bdac:
+  "Unlimited Ammo (Normal Gun)":
+    Games:
+      "Earthworm Jim HD (Artemis)":
+        NPUB30120: [ 01.00 ]
+    Author: crapulecorp Ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+     - [ be32,0x001AD13C,0x60000000]
+PPU-87a4002091c5598661ea42f97a7447d29567bdac:
+  "Unlimited Ammo (Plasma)":
+    Games:
+      "Earthworm Jim HD (Artemis)":
+        NPUB30120: [ 01.00 ]
+    Author: crapulecorp Ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+     - [ be32,0x001E6A10,0x38090000]
+PPU-87a4002091c5598661ea42f97a7447d29567bdac:
+  "Unlimited Shields":
+    Games:
+      "Earthworm Jim HD (Artemis)":
+        NPUB30120: [ 01.00 ]
+    Author: crapulecorp Ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+     - [ be32,0x001D86C4,0x39290000]
