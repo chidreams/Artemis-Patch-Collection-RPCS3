@@ -1,0 +1,73 @@
+Version: 1.2
+# Title: Kill Team - Demo
+# Serial: NPUB30473
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.00
+PPU-52f7456b5166a5fbc44766920a03fe238d5417c1:
+  "Infinite Health":
+    Games:
+      "Warhammer 40,000 Kill Team (Artemis)":
+        NPUB30473: [ 01.00 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+    - [ be32,0x00B04968,0xC0290034]
+    - [ be32,0x00B0496C,0xD0290030]
+    - [ be32,0x00B04970,0xC0290030]
+    - [ be32,0x00B04974,0x4B90BAA4]
+    - [ be32,0x00410410,0x486F4558]
+PPU-52f7456b5166a5fbc44766920a03fe238d5417c1:
+  "Infinite Health Alt":
+    Games:
+      "Warhammer 40,000 Kill Team (Artemis)":
+        NPUB30473: [ 01.00 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+    - [ be32,0x003DC470,0x80090034]
+    - [ be32,0x003DC474,0x90090030]
+PPU-52f7456b5166a5fbc44766920a03fe238d5417c1:
+  "Max Point On Gain":
+    Games:
+      "Warhammer 40,000 Kill Team (Artemis)":
+        NPUB30473: [ 01.00 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00260D78,0x3D203B9A]
+    - [ be32,0x00260D84,0x6129C9FF]
+PPU-52f7456b5166a5fbc44766920a03fe238d5417c1:
+  "Ranged Kills Modifiers 1000x":
+    Games:
+      "Warhammer 40,000 Kill Team (Artemis)":
+        NPUB30473: [ 01.00 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00261068,0x392903E7]
+PPU-52f7456b5166a5fbc44766920a03fe238d5417c1:
+  "Melee Kills Modifiers 1000x":
+    Games:
+      "Warhammer 40,000 Kill Team (Artemis)":
+        NPUB30473: [ 01.00 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00261180,0x392903E7]
+PPU-52f7456b5166a5fbc44766920a03fe238d5417c1:
+  "Total Kills Modifiers 1000x":
+    Games:
+      "Warhammer 40,000 Kill Team (Artemis)":
+        NPUB30473: [ 01.00 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00260ED8,0x392903E7]
