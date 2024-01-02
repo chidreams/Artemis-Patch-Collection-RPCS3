@@ -1,0 +1,98 @@
+Version: 1.2
+Anchors:
+  Iso: &Iso
+      - [ be32,0x00EE0AA0,0x813FFCF4]
+      - [ be32,0x00EE0AA4,0x3C004368]
+      - [ be32,0x00EE0AA8,0x60006172]
+      - [ be32,0x00EE0AAC,0x7F890040]
+      - [ be32,0x00EE0AB0,0x409E0008]
+      - [ be32,0x00EE0AB4,0xA0DF001E]
+      - [ be32,0x00EE0AB8,0xB0DF001C]
+      - [ be32,0x00EE0ABC,0x481789AE]
+      - [ be32,0x00EE0AC0,0x80BE0024]
+      - [ be32,0x00EE0AC4,0x80A50004]
+      - [ be32,0x00EE0AC8,0x3C004368]
+      - [ be32,0x00EE0ACC,0x60006172]
+      - [ be32,0x00EE0AD0,0x7F850040]
+      - [ be32,0x00EE0AD4,0x4D9E0020]
+      - [ be32,0x00EE0AD8,0xF821FED1]
+      - [ be32,0x00EE0ADC,0x48198796]
+      - [ be32,0x00EE0AE0,0x80A30024]
+      - [ be32,0x00EE0AE4,0x80A50004]
+      - [ be32,0x00EE0AE8,0x3C004368]
+      - [ be32,0x00EE0AEC,0x60006172]
+      - [ be32,0x00EE0AF0,0x7F850040]
+      - [ be32,0x00EE0AF4,0x4D9E0020]
+      - [ be32,0x00EE0AF8,0xF821FF91]
+      - [ be32,0x00EE0AFC,0x48199A2A]
+      - [ be32,0x00EE0B00,0x80A30024]
+      - [ be32,0x00EE0B04,0x80A50004]
+      - [ be32,0x00EE0B08,0x3C004368]
+      - [ be32,0x00EE0B0C,0x60006172]
+      - [ be32,0x00EE0B10,0x7F850040]
+      - [ be32,0x00EE0B14,0x4D9E0020]
+      - [ be32,0x00EE0B18,0xF821FF41]
+      - [ be32,0x00EE0B1C,0x4819916E]
+      - [ be32,0x00EE0B20,0x80A3FFEC]
+      - [ be32,0x00EE0B24,0x80A50004]
+      - [ be32,0x00EE0B28,0x3C004368]
+      - [ be32,0x00EE0B2C,0x60006172]
+      - [ be32,0x00EE0B30,0x7F850040]
+      - [ be32,0x00EE0B34,0x4D9E0020]
+      - [ be32,0x00EE0B38,0xF821FF91]
+      - [ be32,0x00EE0B3C,0x4808A596]
+      - [ be32,0x001789A8,0x48EE0AA2]
+      - [ be32,0x00198790,0x48EE0AC2]
+      - [ be32,0x00199A24,0x48EE0AE2]
+      - [ be32,0x00199168,0x48EE0B02]
+      - [ be32,0x0008A590,0x48EE0B22]
+  Iso2: &Iso2
+      - [ be32,0x00E73A24,0x38C00000] 
+      - [ be32,0x00E73A28,0x90C5FFFC]
+      - [ be32,0x00E73A2C,0x7C402C0E]
+      - [ be32,0x00E73A30,0x48A39182] 
+      - [ be32,0x00A3917C,0x48E73A26] 
+  Iso3: &Iso3
+      - [ be32,0x00182078,0x808300DC] 
+  Iso4: &Iso4
+      - [ be32,0x00185934,0xC05F0108] 
+PPU-722e92071fb285e30de5bc2d941a24de9130e9d9:
+  Invincibility:
+    Games:
+      "Alien: Isolation (Artemis)":
+        BLES01697: [ 01.00 ]
+    Author: Xtatu Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Iso] 
+PPU-722e92071fb285e30de5bc2d941a24de9130e9d9:
+  Flashlight Battery Never Dies:
+    Games:
+      "Alien: Isolation (Artemis)":
+       BLES01697: [ 01.00 ]
+    Author: Xtatu Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Iso2 ]
+PPU-722e92071fb285e30de5bc2d941a24de9130e9d9:
+  Ammo Never Decreases:
+    Games:
+      "Alien: Isolation (Artemis)":
+       BLES01697: [ 01.00 ]
+    Author: Xtatu Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Iso3 ]
+PPU-722e92071fb285e30de5bc2d941a24de9130e9d9:
+  Flamethrower Never Overheats:
+    Games:
+      "Alien: Isolation (Artemis)":
+        BLES01697: [ 01.00 ]
+    Author: Xtatu Ported by ChIdReamS
+    Notes: (
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Iso4 ]
