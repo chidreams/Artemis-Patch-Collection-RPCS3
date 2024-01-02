@@ -1,0 +1,45 @@
+Version: 1.2
+# Title: Lara Croft and the Guardian of Light
+# Serial: NPUB30225
+# Category: HG
+# Version: APP_VER=01.01 VERSION=01.00
+Anchors:
+  LCGuardian: &LCGuardian
+    - [ be32,0x004AC3D0,0x905D0000]
+  LCGuardian2: &LCGuardian2
+    - [ be32,0x0049FF24,0x60000000]
+  LCGuardian3: &LCGuardian3
+    - [ be32,0x002C211C,0x92830008]
+PPU-ee617fd0c814e3a0d6e4fa2d85d02cc3da7c6910:
+  "Max + Infinite Points On Gain":
+    Games:
+      "Lara Croft and the Guardian of Light (Artemis)":
+        NPUB30225: [ 01.01 ]
+    Author: jgduff1 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+      - [ load, *LCGuardian ]
+PPU-ee617fd0c814e3a0d6e4fa2d85d02cc3da7c6910:
+  "Infinite Ammo":
+    Games:
+      "Lara Croft and the Guardian of Light (Artemis)":
+        NPUB30225: [ 01.01 ]
+    Author: jgduff1 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Group: B
+    Patch:
+      - [ load, *LCGuardian2 ]
+PPU-ee617fd0c814e3a0d6e4fa2d85d02cc3da7c6910:
+  "Infinite Health From Medkits":
+    Games:
+      "Lara Croft and the Guardian of Light (Artemis)":
+        NPUB30225: [ 01.01 ]
+    Author: jgduff1 Ported by ChiDreamS
+    Notes: Infinite Health On Medkit gain, if you approach a Ring Of Life, the health goes back to normal and you need another Medkit for Infinite Health
+    Patch Version: 1.2
+    Group: C
+    Patch:
+      - [ load, *LCGuardian3 ]
