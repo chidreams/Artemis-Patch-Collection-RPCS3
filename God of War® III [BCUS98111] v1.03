@@ -1,0 +1,111 @@
+Version: 1.2
+# Title: God of WarÂ® III
+# Serial: BCUS98111
+# Version: APP_VER=01.00 VERSION=01.03      
+Anchors:
+  GOW3: &GOW3
+    - [ be32,0x00140F10,0xC1A901C0]
+    - [ be32,0x00140F1C,0xD1A901BC]
+  GOW32: &GOW32
+    - [ be32,0x00094458,0x60000000]
+  GOW33: &GOW33
+    - [ be32,0x00096548,0x60000000]
+  GOW34: &GOW34
+    - [ be32,0x0009C528,0x60000000]
+    - [ be32,0x0009F618,0x60000000]
+  GOW35: &GOW35
+    - [ be32,0x00096614,0x60000000]
+  GOW36: &GOW36
+    - [ be32,0x00095278,0x60000000]
+  GOW37: &GOW37
+    - [ be32,0x000CCB94,0x60000000]
+  GOW38: &GOW38
+    - [ be32,0x00096538,0x3C001FFF]
+    - [ be32,0x0009653C,0x60009E3D]
+    - [ be32,0x00096540,0x901F01A4]
+    - [ be32,0x00096544,0x3C007F80]
+    - [ be32,0x00096548,0x901FE95C]
+    - [ be32,0x0009654C,0x901FE960]
+PPU-19724fde16a5b111b7b4d2a065f5dccaf8e01962:
+  "Infinite Health":
+    Games:
+      "God of War_III (Artemis)":
+        BCUS98111: [ 01.03 ]
+    Author: Hiei-YYH Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.5
+    Group: A    
+    Patch:
+      - [ load, *GOW3 ]
+PPU-19724fde16a5b111b7b4d2a065f5dccaf8e01962:
+  "Max Red Orbs On Gain Or Use (999,999)":
+    Games:
+      "God of War_III (Artemis)":
+        BCUS98111: [ 01.03 ]
+    Author: bungholio Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.5
+    Patch:
+      - [ load, *GOW32 ]
+PPU-19724fde16a5b111b7b4d2a065f5dccaf8e01962:
+  "Infinite Magic":
+    Games:
+      "God of War_III (Artemis)":
+        BCUS98111: [ 01.03 ]
+    Author: bungholio Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.5
+    Patch:
+      - [ load, *GOW33 ]
+PPU-19724fde16a5b111b7b4d2a065f5dccaf8e01962:
+  "Unlimited Rage Of Sparta":
+    Games:
+      "God of War_III (Artemis)":
+        BCUS98111: [ 01.03 ]
+    Author: bungholio Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.5
+    Patch:
+      - [ load, *GOW34 ]
+PPU-19724fde16a5b111b7b4d2a065f5dccaf8e01962:
+  "Unlimited Item Meter":
+    Games:
+      "God of War_III (Artemis)":
+        BCUS98111: [ 01.03 ]
+    Author: bungholio Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.5
+    Patch:
+      - [ load, *GOW35 ]
+PPU-19724fde16a5b111b7b4d2a065f5dccaf8e01962:
+  "Item Meter Instantly Fully Recovers":
+    Games:
+      "God of War_III (Artemis)":
+        BCUS98111: [ 01.03 ]
+    Author: bungholio Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.5
+    Patch:
+      - [ load, *GOW36 ]
+PPU-19724fde16a5b111b7b4d2a065f5dccaf8e01962:
+  "Infinite Double Jumping":
+    Games:
+      "God of War_III (Artemis)":
+        BCUS98111: [ 01.03 ]
+    Author: bungholio Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.5
+    Patch:
+      - [ load, *GOW37 ]
+PPU-19724fde16a5b111b7b4d2a065f5dccaf8e01962:
+  "Magic Never Decreases + Use Magic For Infinite Health + Have All Items":
+    Games:
+      "God of War_III (Artemis)":
+        BCUS98111: [ 01.03 ]
+    Author: bungholio Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.5
+    Group:     
+    Patch:
+      - [ load, *GOW38 ]
+
