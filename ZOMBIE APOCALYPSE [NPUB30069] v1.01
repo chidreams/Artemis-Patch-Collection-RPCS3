@@ -1,0 +1,99 @@
+Version: 1.2
+# Title: ZOMBIE APOCALYPSE
+# Serial: NPUB30069
+# Category: HG
+# Version: APP_VER=01.01 VERSION=01.00
+PPU-6ebf2150806bf812daa9669b03e4ac6f61ef605a:
+  "Zombie Grabs And Get 99 Lives":
+    Games:
+      "ZOMBIE APOCALYPSE (Artemis)":
+        NPUB30069: [ 01.01 ]
+    Author: cagao123 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+    - [ be32,0x00176FB8,0x38840063]
+PPU-6ebf2150806bf812daa9669b03e4ac6f61ef605a:
+  "Combo Score Multiplier 999x":
+    Games:
+      "ZOMBIE APOCALYPSE (Artemis)":
+        NPUB30069: [ 01.01 ]
+    Author: cagao123 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+    - [ be32,0x001533CC,0x419D000C]
+PPU-6ebf2150806bf812daa9669b03e4ac6f61ef605a:
+  "Huge Score On Kill":
+    Games:
+      "ZOMBIE APOCALYPSE (Artemis)":
+        NPUB30069: [ 01.01 ]
+    Author: cagao123 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+    - [ be32,0x00157588,0x60000000]
+PPU-6ebf2150806bf812daa9669b03e4ac6f61ef605a:
+  "Kill Increment Multiplier 1000x":
+    Games:
+      "ZOMBIE APOCALYPSE (Artemis)":
+        NPUB30069: [ 01.01 ]
+    Author: cagao123 Ported by ChIdReamS
+    Notes: 0001=Normal;000A=10x;0064=100x;03E8=1000x;2710=10000x
+    Patch Version: 1.2 
+    Patch:
+    - [ be32,0x001782F0,0x392903E8]
+PPU-6ebf2150806bf812daa9669b03e4ac6f61ef605a:
+  "Camera Following Distance Modifier .05":
+    Games:
+      "ZOMBIE APOCALYPSE (Artemis)":
+        NPUB30069: [ 01.01 ]
+    Author: cagao123 Ported by ChIdReamS
+    Notes: 3F800000=Normal;00000000=0x;3F000000=0.5x;3F400000=0.75x;3F600000=0.875x;3FA00000=1.25x;3FC00000=1.5x;3FE00000=1.75x;40000000=2x;40400000=3x;40800000=4x;40A00000=5x
+    Patch Version: 1.2 
+    Patch:
+    - [ be32,0x00ACEB24,0x3F000000]
+PPU-6ebf2150806bf812daa9669b03e4ac6f61ef605a:
+  "Invincible After Dying":
+    Games:
+      "ZOMBIE APOCALYPSE (Artemis)":
+        NPUB30069: [ 01.01 ]
+    Author: cagao123 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+    - [ be32,0x001E984C,0x905F077C]
+PPU-6ebf2150806bf812daa9669b03e4ac6f61ef605a:
+  "Infinite Ammo Increase 999":
+    Games:
+      "ZOMBIE APOCALYPSE (Artemis)":
+        NPUB30069: [ 01.01 ]
+    Author: cagao123 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+    - [ be32,0x002079E8,0x380903E7]
+PPU-6ebf2150806bf812daa9669b03e4ac6f61ef605a:
+  "Game Speed Modifier":
+    Games:
+      "ZOMBIE APOCALYPSE (Artemis)":
+        NPUB30069: [ 01.01 ]
+    Author: cagao123 Ported by ChIdReamS
+    Notes: 3F800000=Normal;3F000000=0.5x;3F400000=0.75x;3F600000=0.875x;3F700000=0.9375x;3FA00000=1.25x;3FC00000=1.5x;3FE00000=1.75x;40000000=2x;40200000=2.5x;40400000=3x;40800000=4x;40A00000=5x
+    Patch Version: 1.2 
+    Patch:
+    - [ be32,0x00ACDE6C,0x3F80000]
+PPU-6ebf2150806bf812daa9669b03e4ac6f61ef605a:
+  "Invincibility":
+    Games:
+      "ZOMBIE APOCALYPSE (Artemis)":
+        NPUB30069: [ 01.01 ]
+    Author: cagao123 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+    - [ be32,0x009AED74,0x3A000001]
+    - [ be32,0x009AED78,0x9A0305A3]
+    - [ be32,0x009AED7C,0x800305A0]
+    - [ be32,0x009AED80,0x4804270E]
+    - [ be32,0x00042708,0x489AED76]
