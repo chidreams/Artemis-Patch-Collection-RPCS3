@@ -1,0 +1,292 @@
+Version: 1.2
+# Title: METAL GEAR SOLID V: THE PHANTOM PAIN
+# Serial: BLES02102
+# Category: GD
+# Version: APP_VER=01.11 VERSION=01.02
+Anchors:
+  SOLIDV: &SOLIDV
+    - [ be32,0x00C7FC74,0x3C607F80]
+    - [ be32,0x00C7FC78,0x907E0098]
+  SOLIDV2: &SOLIDV2
+    - [ be32,0x00C6F758,0x60000000]
+  SOLIDV3: &SOLIDV3
+    - [ be32,0x00C6F3BC,0x48000CCC]
+  SOLIDV4: &SOLIDV4
+    - [ be32,0x02267818,0x60000000]
+  SOLIDV5: &SOLIDV5
+    - [ be32,0x0227E1F8,0x60000000]
+    - [ be32,0x0227D690,0xEC221028]
+  SOLIDV6: &SOLIDV6
+    - [ be32,0x015F4F00,0x1C780002]
+  SOLIDV7: &SOLIDV7
+    - [ be32,0x020004FC,0x1C760002]
+  SOLIDV8: &SOLIDV8
+    - [ be32,0x00DF67E8,0x61260000]
+  SOLIDV9: &SOLIDV9
+    - [ be32,0x00DF6AD0,0x63A60000]
+  SOLIDV10: &SOLIDV10
+    - [ be32,0x00DF6660,0x60C70000]
+  SOLIDV11: &SOLIDV11
+    - [ be32,0x00E1B12C,0x60DE0000]
+  SOLIDV12: &SOLIDV12
+    - [ be32,0x00E1F554,0x607C0000]
+  SOLIDV13: &SOLIDV13
+    - [ be32,0x0226762C,0x7CC700D0]
+  SOLIDV14: &SOLIDV14
+    - [ be32,0x00D5D24C,0x60000000]
+  SOLIDV15: &SOLIDV15
+    - [ be32,0x02090834,0x90A40000]
+    - [ be32,0x02090838,0x7CA407B4]
+  SOLIDV16: &SOLIDV16
+    - [ be32,0x02119E1C,0x3BC00000]
+    - [ be32,0x0211D254,0x38600000]
+    - [ be32,0x02113E20,0x38A00001]
+  SOLIDV17: &SOLIDV17
+    - [ be32,0x020DED7C,0x48000294]
+    - [ be32,0x020DDD94,0x38800000]
+    - [ be32,0x020DDD98,0x909E0000]
+    - [ be32,0x020DDDCC,0x38A00000]
+    - [ be32,0x020DDDD0,0x90BE0004]
+    - [ be32,0x020DDE04,0x38A00000]
+    - [ be32,0x020DDE08,0x90BE0008]
+  SOLIDV18: &SOLIDV18
+    - [ be32,0x01E9EB38,0x7C631810]
+  SOLIDV19: &SOLIDV19
+    - [ be32,0x01E9EBD8,0x38600000]
+  SOLIDV20: &SOLIDV20
+    - [ be32,0x005192A0,0x38A00000]
+  SOLIDV21: &SOLIDV21
+    - [ be32,0x0051A3C4,0x38A00000]
+  SOLIDV22: &SOLIDV22
+    - [ be32,0x0051A104,0x38A00000]
+  SOLIDV23: &SOLIDV23
+    - [ be32,0x00519B34,0x38A00000]
+PPU-aeea78bc803499572d3a72febfe73bbf2bc5718c:
+  "Max Camo":
+    Games:
+      "METAL GEAR SOLID V: THE PHANTOM PAIN (Artemis)":
+        BLES02102: [ 01.11 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *SOLIDV ]
+PPU-aeea78bc803499572d3a72febfe73bbf2bc5718c:
+  "Take No Damage":
+    Games:
+      "METAL GEAR SOLID V: THE PHANTOM PAIN (Artemis)":
+        BLES02102: [ 01.11 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *SOLIDV2 ]
+PPU-aeea78bc803499572d3a72febfe73bbf2bc5718c:
+  "Invincibility":
+    Games:
+      "METAL GEAR SOLID V: THE PHANTOM PAIN (Artemis)":
+        BLES02102: [ 01.11 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *SOLIDV3 ]
+PPU-aeea78bc803499572d3a72febfe73bbf2bc5718c:
+  "Infinite Battery":
+    Games:
+      "METAL GEAR SOLID V: THE PHANTOM PAIN (Artemis)":
+        BLES02102: [ 01.11 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *SOLIDV4 ]
+PPU-aeea78bc803499572d3a72febfe73bbf2bc5718c:
+  "Infinite Item Effect Duration (Use Again To Disable)":
+    Games:
+      "METAL GEAR SOLID V: THE PHANTOM PAIN (Artemis)":
+        BLES02102: [ 01.11 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *SOLIDV5 ]
+PPU-aeea78bc803499572d3a72febfe73bbf2bc5718c:
+  "Max Resources On Sell":
+    Games:
+      "METAL GEAR SOLID V: THE PHANTOM PAIN (Artemis)":
+        BLES02102: [ 01.11 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *SOLIDV6 ]
+PPU-aeea78bc803499572d3a72febfe73bbf2bc5718c:
+  "Max Resources On Gain":
+    Games:
+      "METAL GEAR SOLID V: THE PHANTOM PAIN (Artemis)":
+        BLES02102: [ 01.11 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *SOLIDV7 ]
+PPU-aeea78bc803499572d3a72febfe73bbf2bc5718c:
+  "Infinite Suppressor":
+    Games:
+      "METAL GEAR SOLID V: THE PHANTOM PAIN (Artemis)":
+        BLES02102: [ 01.11 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *SOLIDV8 ]
+PPU-aeea78bc803499572d3a72febfe73bbf2bc5718c:
+  "No Reload":
+    Games:
+      "METAL GEAR SOLID V: THE PHANTOM PAIN (Artemis)":
+        BLES02102: [ 01.11 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *SOLIDV9 ]
+PPU-aeea78bc803499572d3a72febfe73bbf2bc5718c:
+  "Infinite Ammo":
+    Games:
+      "METAL GEAR SOLID V: THE PHANTOM PAIN (Artemis)":
+        BLES02102: [ 01.11 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *SOLIDV10 ]
+PPU-aeea78bc803499572d3a72febfe73bbf2bc5718c:
+  "Infinite Throwing Weapons":
+    Games:
+      "METAL GEAR SOLID V: THE PHANTOM PAIN (Artemis)":
+        BLES02102: [ 01.11 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *SOLIDV11 ]
+PPU-aeea78bc803499572d3a72febfe73bbf2bc5718c:
+  "Infinite Placed Weapons":
+    Games:
+      "METAL GEAR SOLID V: THE PHANTOM PAIN (Artemis)":
+        BLES02102: [ 01.11 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *SOLIDV12 ]
+PPU-aeea78bc803499572d3a72febfe73bbf2bc5718c:
+  "Infinite Items":
+    Games:
+      "METAL GEAR SOLID V: THE PHANTOM PAIN (Artemis)":
+        BLES02102: [ 01.11 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *SOLIDV13 ]
+PPU-aeea78bc803499572d3a72febfe73bbf2bc5718c:
+  "Infinite Tools":
+    Games:
+      "METAL GEAR SOLID V: THE PHANTOM PAIN (Artemis)":
+        BLES02102: [ 01.11 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *SOLIDV14 ]
+PPU-aeea78bc803499572d3a72febfe73bbf2bc5718c:
+  "Max GMP":
+    Games:
+      "METAL GEAR SOLID V: THE PHANTOM PAIN (Artemis)":
+        BLES02102: [ 01.11 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *SOLIDV15 ]
+PPU-aeea78bc803499572d3a72febfe73bbf2bc5718c:
+  "Instant Free Development":
+    Games:
+      "METAL GEAR SOLID V: THE PHANTOM PAIN (Artemis)":
+        BLES02102: [ 01.11 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *SOLIDV16 ]
+PPU-aeea78bc803499572d3a72febfe73bbf2bc5718c:
+  "Instant Free Construction":
+    Games:
+      "METAL GEAR SOLID V: THE PHANTOM PAIN (Artemis)":
+        BLES02102: [ 01.11 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *SOLIDV17 ]
+PPU-aeea78bc803499572d3a72febfe73bbf2bc5718c:
+  "Soldier One Hit Sleep Or Stun":
+    Games:
+      "METAL GEAR SOLID V: THE PHANTOM PAIN (Artemis)":
+        BLES02102: [ 01.11 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *SOLIDV18 ]
+PPU-aeea78bc803499572d3a72febfe73bbf2bc5718c:
+  "Soldier Never Wake Up":
+    Games:
+      "METAL GEAR SOLID V: THE PHANTOM PAIN (Artemis)":
+        BLES02102: [ 01.11 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *SOLIDV19 ]
+PPU-aeea78bc803499572d3a72febfe73bbf2bc5718c:
+  "0 Mission Time":
+    Games:
+      "METAL GEAR SOLID V: THE PHANTOM PAIN (Artemis)":
+        BLES02102: [ 01.11 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *SOLIDV20 ]
+PPU-aeea78bc803499572d3a72febfe73bbf2bc5718c:
+  "0 Alerts":
+    Games:
+      "METAL GEAR SOLID V: THE PHANTOM PAIN (Artemis)":
+        BLES02102: [ 01.11 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *SOLIDV21 ]
+PPU-aeea78bc803499572d3a72febfe73bbf2bc5718c:
+  "0 Kills":
+    Games:
+      "METAL GEAR SOLID V: THE PHANTOM PAIN (Artemis)":
+        BLES02102: [ 01.11 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *SOLIDV22 ]
+PPU-aeea78bc803499572d3a72febfe73bbf2bc5718c:
+  "0 Retries":
+    Games:
+      "METAL GEAR SOLID V: THE PHANTOM PAIN (Artemis)":
+        BLES02102: [ 01.11 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
