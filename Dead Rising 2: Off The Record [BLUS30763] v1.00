@@ -1,0 +1,192 @@
+Version: 1.2
+# Title: Dead Rising 2: Off The Record
+# Serial: BLUS30763
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00
+Anchors:
+  TRecord: &TRecord
+    - [ be32,0x008C39CC,0x60000000]
+  TRecord3: &TRecord3
+    - [ be32,0x005B5DCC,0x4800002C]
+  TRecord4: &TRecord4
+    - [ be32,0x004DDF18,0x4E800020]
+  TRecord5: &TRecord5
+    - [ be32,0x004B6B34,0x4E800020]
+  TRecord6: &TRecord6
+    - [ be32,0x005B6D58,0x60000000]
+  TRecord7: &TRecord7
+    - [ be32,0x001593DC,0xEC210828]
+    - [ be32,0x00C62944,0xD043004C]
+    - [ be32,0x00596C60,0x921F09D8]
+    - [ be32,0x005966C4,0x48000054]
+  TRecord9: &TRecord9
+    - [ be32,0x001E6C7C,0x38600000]
+    - [ be32,0x001E6C44,0xF87900A0]
+    - [ be32,0x001E6C88,0x9079009C]
+  TRecord10: &TRecord10
+    - [ be32,0x003F7E34,0x60000000]
+  TRecord11: &TRecord11
+    - [ be32,0x00591140,0x4E800020]
+  TRecord12: &TRecord12
+    - [ be32,0x0004DBF0,0x80BF0018]
+  TRecord13: &TRecord13
+    - [ be32,0x003ECD70,0x60000000]
+  TRecord14: &TRecord14
+    - [ be32,0x006460A0,0x38600001]
+  TRecord15: &TRecord15
+    - [ be32,0x002C7184,0x7FBF1D2E]
+  TRecord16: &TRecord16
+    - [ be32,0x0051F2B0,0x4E800020]    
+  TRecord17: &TRecord17  
+    - [ be32,0x005F6C98,0x3880000C]
+    - [ be32,0x005F6CA4,0x909D0070]  
+PPU-0478f30f0269fb5347a4571439eca57dae82fd3d:
+  "Health Never Decreases":
+    Games:
+      "Dead Rising 2: Off The Record (Artemis)":
+        BLUS30763: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TRecord ]
+PPU-0478f30f0269fb5347a4571439eca57dae82fd3d:
+  "Zombies Can Not Grab":
+    Games:
+      "Dead Rising 2: Off The Record (Artemis)":
+        BLUS30763: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TRecord3 ]
+PPU-0478f30f0269fb5347a4571439eca57dae82fd3d:
+  "Zombies Can Not Spit":
+    Games:
+      "Dead Rising 2: Off The Record (Artemis)":
+        BLUS30763: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TRecord4 ]
+PPU-0478f30f0269fb5347a4571439eca57dae82fd3d:
+  "Zombies Make No Noise":
+    Games:
+      "Dead Rising 2: Off The Record (Artemis)":
+        BLUS30763: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TRecord5 ]
+PPU-0478f30f0269fb5347a4571439eca57dae82fd3d:
+  "Zombies Can Not Hit Or Grab + Dumb AI":
+    Games:
+      "Dead Rising 2: Off The Record (Artemis)":
+        BLUS30763: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TRecord6 ]
+PPU-0478f30f0269fb5347a4571439eca57dae82fd3d:
+  "Enemies Die From Any Damage":
+    Games:
+      "Dead Rising 2: Off The Record (Artemis)":
+        BLUS30763: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TRecord7 ]
+PPU-0478f30f0269fb5347a4571439eca57dae82fd3d:
+  "Allies Never Defect":
+    Games:
+      "Dead Rising 2: Off The Record (Artemis)":
+        BLUS30763: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TRecord9 ]
+PPU-0478f30f0269fb5347a4571439eca57dae82fd3d:
+  "Weapons Never Break v1":
+    Games:
+      "Dead Rising 2: Off The Record (Artemis)":
+        BLUS30763: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: This can break a few missions, activate v2 for those.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TRecord10 ]
+PPU-0478f30f0269fb5347a4571439eca57dae82fd3d:
+  "Invincible Player + Survivors + Psychopaths":
+    Games:
+      "Dead Rising 2: Off The Record (Artemis)":
+        BLUS30763: [ 01.00 ]
+    Author: xtatu Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TRecord11 ]      
+PPU-0478f30f0269fb5347a4571439eca57dae82fd3d:
+  "Ammo Never Decreases":
+    Games:
+      "Dead Rising 2: Off The Record (Artemis)":
+        BLUS30763: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TRecord12 ]
+PPU-0478f30f0269fb5347a4571439eca57dae82fd3d:
+  "Percentage Weapons Last Forever":
+    Games:
+      "Dead Rising 2: Off The Record (Artemis)":
+        BLUS30763: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TRecord13 ]
+PPU-0478f30f0269fb5347a4571439eca57dae82fd3d:
+  "Have All Book Effects Active":
+    Games:
+      "Dead Rising 2: Off The Record (Artemis)":
+        BLUS30763: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TRecord14 ]
+PPU-0478f30f0269fb5347a4571439eca57dae82fd3d:
+  "Stacey Robo Boss Dies From Any Damage":
+    Games:
+      "Dead Rising 2: Off The Record (Artemis)":
+        BLUS30763: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TRecord15 ]
+PPU-0478f30f0269fb5347a4571439eca57dae82fd3d:
+  "Invincible + Cannot Be Grabbed By Zombies":
+    Games:
+      "Dead Rising 2: Off The Record (Artemis)":
+        BLUS30763: [ 01.00 ]
+    Author: xtatu Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TRecord16 ]    
+PPU-0478f30f0269fb5347a4571439eca57dae82fd3d:
+  "Max Item Slots":
+    Games:
+      "Dead Rising 2: Off The Record (Artemis)":
+        BLUS30763: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TRecord17 ]
