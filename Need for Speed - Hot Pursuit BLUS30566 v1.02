@@ -1,0 +1,61 @@
+Version: 1.2
+PPU-ebf30dddb8c06560d16f82d5ff334aff25038c70:
+  "ASM Infinite Nitro":
+    Games:
+      "Need for Speed - Hot Pursuit (Artemis)":
+        BLUS30566: [ 01.02]
+    Author: "jgduff Ported by ChIdReamS1"
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x002736E8,0x60000000]
+PPU-ebf30dddb8c06560d16f82d5ff334aff25038c70:
+  "ASM Infinite Car Damage In Racer Mode":
+    Games:
+      "Need for Speed - Hot Pursuit (Artemis)":
+        BLUS30566: [ 01.02]
+    Author: "jgduff Ported by ChIdReamS1"
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x00344BBC,0x60000000]
+PPU-ebf30dddb8c06560d16f82d5ff334aff25038c70:
+  "ASM Max Wanted Rang On 1 Race":
+    Games:
+      "Need for Speed - Hot Pursuit (Artemis)":
+        BLUS30566: [ 01.02]
+    Author: "jgduff Ported by ChIdReamS1"
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x0019DE6C,0x905F001C]
+PPU-ebf30dddb8c06560d16f82d5ff334aff25038c70:
+  "ASM Infinite Devices":
+    Games:
+      "Need for Speed - Hot Pursuit (Artemis)":
+        BLUS30566: [ 01.02]
+    Author: "jgduff Ported by ChIdReamS1"
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x001CDC1C,0x396B0000]
+PPU-ebf30dddb8c06560d16f82d5ff334aff25038c70:
+  "ASM No Waiting Time For Use Devices":
+    Games:
+      "Need for Speed - Hot Pursuit (Artemis)":
+        BLUS30566: [ 01.02]
+    Author: "jgduff Ported by ChIdReamS"
+    Notes: Bars do not visually work correctly, but the code works fine for Racer.
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x008D2E98,0xD0490000]
+PPU-ebf30dddb8c06560d16f82d5ff334aff25038c70:
+  "ASM Max SCPD Rang On 1 Race":
+    Games:
+      "Need for Speed - Hot Pursuit (Artemis)":
+        BLUS30566: [ 01.02]
+    Author: "jgduff Ported by ChIdReamS"
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x0019E02C,0x905F0018]
