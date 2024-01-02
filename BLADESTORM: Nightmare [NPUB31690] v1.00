@@ -1,0 +1,65 @@
+Version: 1.2
+# Title: BLADESTORM: Nightmare
+# Serial: NPUB31690
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.01
+PPU-d66f63bc9c3fde08e925d30c7ce0331e042e5e67:
+  "Max Units + Points + Troops + Squad Level + SP":
+    Games:
+      "BLADESTORM: Nightmare (Artemis)":
+        NPUB31690: [ 01.00 ]
+    Author: jgduff Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0002BCAC,0x901E001C]
+PPU-d66f63bc9c3fde08e925d30c7ce0331e042e5e67:
+  "Max Level On 1 Hit + High Strength":
+    Games:
+      "BLADESTORM: Nightmare (Artemis)":
+        NPUB31690: [ 01.00 ]
+    Author: jgduff Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00031E50,0x7C60E814]
+PPU-d66f63bc9c3fde08e925d30c7ce0331e042e5e67:
+  "No Waiting Time For Action":
+    Games:
+      "BLADESTORM: Nightmare (Artemis)":
+        NPUB31690: [ 01.00 ]
+    Author: jgduff Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x001102F0,0x60000000]
+PPU-d66f63bc9c3fde08e925d30c7ce0331e042e5e67:
+  "Infinite Heavy Strike Time":
+    Games:
+      "BLADESTORM: Nightmare (Artemis)":
+        NPUB31690: [ 01.00 ]
+    Author: jgduff Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00110644,0x60000000]
+PPU-d66f63bc9c3fde08e925d30c7ce0331e042e5e67:
+  "Infinite Shield Time":
+    Games:
+      "BLADESTORM: Nightmare (Artemis)":
+        NPUB31690: [ 01.00 ]
+    Author: jgduff Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00110B50,0x60000000]
+PPU-d66f63bc9c3fde08e925d30c7ce0331e042e5e67:
+  "Infinite Arrow":
+    Games:
+      "BLADESTORM: Nightmare (Artemis)":
+        NPUB31690: [ 01.00 ]
+    Author: jgduff Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x000E1A3C,0x30C40000]
