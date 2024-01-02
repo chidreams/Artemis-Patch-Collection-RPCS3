@@ -1,0 +1,27 @@
+Version: 1.2
+# Title: Alien Rage
+# Serial: NPUB30863
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.00
+PPU-6e30ead323ab649d1cff1502a90d910ea3a9d963:
+  "Health Never Decreases":
+    Games:
+      "Alien Rage (Artemis)":
+        NPUB30863: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00C1AA38,0x807B0308]
+    - [ be32,0x00C1AA3C,0x907B0304]
+PPU-6e30ead323ab649d1cff1502a90d910ea3a9d963:
+  "Ammo Does Not Decrease":
+    Games:
+      "Alien Rage (Artemis)":
+        NPUB30863: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00C1C86C,0x60000000]
+    - [ be32,0x00C1C870,0x60000000]
