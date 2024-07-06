@@ -1,0 +1,121 @@
+Anchors:
+  DORA5LR: &DORA5LR
+    - [ be32,0x0108F5C0,0x2C1F0000]
+    - [ be32,0x0108F5C4,0x40820008]
+    - [ be32,0x0108F5C8,0x4E800020]
+    - [ be32,0x0108F5CC,0xB09E002C]
+    - [ be32,0x0108F5D0,0x4E800020]
+    - [ be32,0x0031BFB4,0x48D7360D]
+  DORA5LR2: &DORA5LR2
+    - [ be32,0x0108F6B0,0x3DC002AE]
+    - [ be32,0x0108F6B4,0x930EEFD8]
+    - [ be32,0x0108F6B8,0x3A200001]
+    - [ be32,0x0108F6BC,0x9A38009C]
+    - [ be32,0x0108F6C0,0x8878002A]
+    - [ be32,0x0108F6C4,0x4E800020]
+    - [ be32,0x0108F6F8,0xA019002C]
+    - [ be32,0x0108F6FC,0x2F830000]
+    - [ be32,0x0108F700,0x4D9E0020]
+    - [ be32,0x0108F704,0xF821FEF1]
+    - [ be32,0x0108F708,0x48355326]
+    - [ be32,0x0108F6D4,0x3F2002AE]
+    - [ be32,0x0108F6D8,0x8339EFD8]
+    - [ be32,0x0108F6DC,0x7C19F800]
+    - [ be32,0x0108F6E0,0x4D820020]
+    - [ be32,0x0108F6E4,0xF821FE91]
+    - [ be32,0x0108F6E8,0x483579CE]
+    - [ be32,0x002B9460,0x48DD6251]
+    - [ be32,0x003579C8,0x4908F6D6]
+    - [ be32,0x00355320,0x4908F6FA]
+  DORA5LR3: &DORA5LR3
+    - [ be32,0x0108F5C0,0x2C1E0001]
+    - [ be32,0x0108F5C4,0x4082001C]
+    - [ be32,0x0108F5C8,0x3E000167]
+    - [ be32,0x0108F5CC,0x8A10BA72]
+    - [ be32,0x0108F5D0,0x2C100008]
+    - [ be32,0x0108F5D4,0x4082000C]
+    - [ be32,0x0108F5D8,0x3A000000]
+    - [ be32,0x0108F5DC,0xB21D002C]
+    - [ be32,0x0108F5E0,0x63C30000]
+    - [ be32,0x0108F5E4,0x4E800020]
+    - [ be32,0x0033B328,0x48D54299]
+  DORA5LR4: &DORA5LR4
+    - [ be32,0x002E503C,0x60000000]
+  DORA5LR5: &DORA5LR5
+    - [ be32,0x0108FD38,0x2C1D0001]
+    - [ be32,0x0108FD3C,0x4082000C]
+    - [ be32,0x0108FD40,0x38000000]
+    - [ be32,0x0108FD44,0x981C0003]
+    - [ be32,0x0108FD48,0x887C0004]
+    - [ be32,0x0108FD4C,0x4E800020]
+    - [ be32,0x005BB7D8,0x48AD4561]
+  DORA5LR6: &DORA5LR6 
+    - [ be32,0x0108FD38,0x2C1D0001]
+    - [ be32,0x0108FD3C,0x4082000C]
+    - [ be32,0x0108FD40,0x38000001]
+    - [ be32,0x0108FD44,0x981C0003]
+    - [ be32,0x0108FD48,0x887C0004]
+    - [ be32,0x0108FD4C,0x4E800020]
+    - [ be32,0x005BB7D8,0x48AD4561]  
+PPU-8c484a626b44e673ff862ebc6ded01b75184da4f:
+  "All Players Infinite Health":
+    Games:
+      "DEAD OR ALIVE 5 Last Round (Artemis)":
+        BLJM61258: [ 01.05 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ load, *DORA5LR ]
+PPU-8c484a626b44e673ff862ebc6ded01b75184da4f:
+  "1P Invincibility From Melee Attack":
+    Games:
+      "DEAD OR ALIVE 5 Last Round (Artemis)":
+        BLJM61258: [ 01.05 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ load, *DORA5LR2 ]
+PPU-8c484a626b44e673ff862ebc6ded01b75184da4f:
+  "Kills 2P Anytimes (Press R3)":
+    Games:
+      "DEAD OR ALIVE 5 Last Round (Artemis)":
+        BLJM61258: [ 01.05 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ load, *DORA5LR3 ]
+PPU-8c484a626b44e673ff862ebc6ded01b75184da4f:
+  "Stop Timer":
+    Games:
+      "DEAD OR ALIVE 5 Last Round (Artemis)":
+        BLJM61258: [ 01.05 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ load, *DORA5LR4 ]
+PPU-8c484a626b44e673ff862ebc6ded01b75184da4f:
+  "Control Type Modifiers CPU Player ":
+    Games:
+      "DEAD OR ALIVE 5 Last Round (Artemis)":
+        BLJM61258: [ 01.05 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: CPU Control
+    Patch Version: 1.1
+    Group: Aa
+    Patch:
+      - [ load, *DORA5LR5 ]
+PPU-8c484a626b44e673ff862ebc6ded01b75184da4f:
+  "Control Type Modifiers Player":
+    Games:
+      "DEAD OR ALIVE 5 Last Round (Artemis)":
+        BLJM61258: [ 01.05 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: Player Contol
+    Patch Version: 1.1
+    Group: Aa
+    Patch:
+      - [ load, *DORA5LR6 ]
