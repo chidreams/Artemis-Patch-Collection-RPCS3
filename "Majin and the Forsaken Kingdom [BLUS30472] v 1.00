@@ -1,0 +1,93 @@
+PPU-389a97d4b84ec3eba954fd5b7b034d32dd7fa9c0:
+  "Invincible":
+    Games:
+      "Majin and the Forsaken Kingdom (Artemis)":
+        BLUS30472: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x001E1CFC,0xE8410028]
+      - [ be32,0x001E1D00,0x4BFFFEE8]
+      - [ be32,0x001E1D00,0x4E800020]	  
+PPU-389a97d4b84ec3eba954fd5b7b034d32dd7fa9c0:
+  "Health Never Decreases":
+    Games:
+      "Majin and the Forsaken Kingdom (Artemis)":
+        BLUS30472: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x001C6B80,0x60000000]	
+PPU-389a97d4b84ec3eba954fd5b7b034d32dd7fa9c0:
+  "Majin Health Never Decreases":
+    Games:
+      "Majin and the Forsaken Kingdom (Artemis)":
+        BLUS30472: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x001CDAD8,0x60000000]	
+PPU-389a97d4b84ec3eba954fd5b7b034d32dd7fa9c0:
+  "Enemies Die From Any Damage":
+    Games:
+      "Majin and the Forsaken Kingdom (Artemis)":
+        BLUS30472: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x001BDD64,0x480001E4]	
+PPU-389a97d4b84ec3eba954fd5b7b034d32dd7fa9c0:
+  "Max Life And Friendship Shards On Gain":
+    Games:
+      "Majin and the Forsaken Kingdom (Artemis)":
+        BLUS30472: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x0016971C,0x913A000C]		
+PPU-389a97d4b84ec3eba954fd5b7b034d32dd7fa9c0:
+  "Combination Attack Meter Never Decreases":
+    Games:
+      "Majin and the Forsaken Kingdom (Artemis)":
+        BLUS30472: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x002E31D0,0x60000000]	
+PPU-389a97d4b84ec3eba954fd5b7b034d32dd7fa9c0:
+  "Majin Magic Never Decreases":
+    Games:
+      "Majin and the Forsaken Kingdom (Artemis)":
+        BLUS30472: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x0020E1A8,0x60000000]
+      - [ be32,0x0020E880,0x60000000]	  
+PPU-389a97d4b84ec3eba954fd5b7b034d32dd7fa9c0:
+  "Majin Magic Full On Gain":
+    Games:
+      "Majin and the Forsaken Kingdom (Artemis)":
+        BLUS30472: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x0020E214,0x4800077C]	
+PPU-389a97d4b84ec3eba954fd5b7b034d32dd7fa9c0:
+  "AoB Majin Food Never Decreases":
+    Games:
+      "Majin and the Forsaken Kingdom (Artemis)":
+        BLUS30472: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x0020E214,0x60000000]
