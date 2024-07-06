@@ -1,0 +1,76 @@
+Anchors:
+  Thegodfat2: &Thegodfat2
+    - [ be32,0x00C364E4,0x3FA000F0]
+    - [ be32,0x00C364E8,0x63BD5C61]
+    - [ be32,0x00C364EC,0x8BBD0000]
+    - [ be32,0x00C364F0,0x2E1D0021]
+    - [ be32,0x00C364F4,0x2E9D0022]
+    - [ be32,0x00C364F8,0x2F1D0024]
+    - [ be32,0x00C364FC,0x2F9D0028]
+    - [ be32,0x00C36500,0x3FA000D8]
+    - [ be32,0x00C36504,0x63BDCFB0]
+    - [ be32,0x00C36508,0x4192000C]
+    - [ be32,0x00C3650C,0x41960014]
+    - [ be32,0x00C36510,0x4800001C]
+    - [ be32,0x00C36514,0x3BC00001]
+    - [ be32,0x00C36518,0x9BDD0000]
+    - [ be32,0x00C3651C,0x4E800020]
+    - [ be32,0x00C36520,0x3BC00000]
+    - [ be32,0x00C36524,0x9BDD0000]
+    - [ be32,0x00C36528,0x4E800020]
+    - [ be32,0x00C3652C,0x3FA000E5]
+    - [ be32,0x00C36530,0x63BD4758]
+    - [ be32,0x00C36534,0x419A0018]
+    - [ be32,0x00C36538,0x419E0020]
+    - [ be32,0x00C3653C,0x8BDD0000]
+    - [ be32,0x00C36540,0x2F1E0001]
+    - [ be32,0x00C36544,0x419A0020]
+    - [ be32,0x00C36548,0x4E800020]
+    - [ be32,0x00C3654C,0x3BC00001]
+    - [ be32,0x00C36550,0x9BDD0000]
+    - [ be32,0x00C36554,0x4E800020]
+    - [ be32,0x00C36558,0x3BC00000]
+    - [ be32,0x00C3655C,0x9BDD0000]
+    - [ be32,0x00C36560,0x4E800020]
+    - [ be32,0x00C36564,0x3FA0308E]
+    - [ be32,0x00C36568,0x63BD85C4]
+    - [ be32,0x00C3656C,0x83BD0000]
+    - [ be32,0x00C36570,0xC01D0014]
+    - [ be32,0x00C36574,0xD01D0010]
+    - [ be32,0x00C36578,0x4E800020]
+    - [ be32,0x00374E58,0x488C168D]
+  Thegodfat21: &Thegodfat21
+    - [ jump,0x0009A6C4,0x0009A6C4]  
+    - [ be32,0x0009A6C4,0x60000000]
+  Thegodfat21: &Thegodfat22    
+    - [ be32,0x00322FE8,0xD17F0100]
+PPU-880fe5d46b1704b89cab09b087de24f14c7d5e0c:
+  "Health Regeneration + Freeze NPCs":
+    Games:
+      "The Godfather™ II (Artemis)":
+        BLUS30261: [ 01.00 ]
+    Author: Wulf2k
+    Notes: X + Left = Health Regeneration On X + Right = Health Regeneration Off X + Up = Unfreeze NPCs X + Down = Freeze NPCs
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Thegodfat2 ]
+PPU-880fe5d46b1704b89cab09b087de24f14c7d5e0c:
+  "Never Reload":
+    Games:
+      "The Godfather™ II (Artemis)":
+        BLUS30261: [ 01.00 ]
+    Author: Wulf2k
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Thegodfat21 ] 
+PPU-880fe5d46b1704b89cab09b087de24f14c7d5e0c:
+  "Max Money On Pickup":
+    Games:
+      "The Godfather™ II (Artemis)":
+        BLUS30261: [ 01.00 ]
+    Author: Wulf2k
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Thegodfat22 ]
