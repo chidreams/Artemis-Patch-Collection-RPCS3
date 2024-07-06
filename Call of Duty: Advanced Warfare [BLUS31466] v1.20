@@ -1,0 +1,40 @@
+Anchors:
+  RIDRAC: &RIDRAC
+     - [ be32,0x003F2368,0x386003E7]
+  RIDRAC1: &RIDRAC1 
+     - [ be32,0x003E93A4,0x38800063]
+  RIDRAC2: &RIDRAC2
+     - [ be32,0x00292230,0x38602710]
+     - [ be32,0x00292234,0x907B015C]
+     - [ be32,0x00292238,0x907B0160]
+PPU-1afe336d50699697af1482c45201d1185bf73f32:
+  Infinite Ammo:
+    Games:
+      "Call of Duty: Advanced Warfare (Artemis)":
+        NPUB31553: [ 01.20 ]
+        BLUS31466: [ ALL] 
+    Author: dron_3 Ported by ChIdReamS,
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *RIDRAC ]
+PPU-1afe336d50699697af1482c45201d1185bf73f32:
+  No Reload:
+    Games:
+      "Call of Duty: Advanced Warfare (Artemis)":
+        NPUB31553: [ 01.20 ]
+    Author: jgduff Ported by ChIdReamS1
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *RIDRAC1 ]
+PPU-1afe336d50699697af1482c45201d1185bf73f32:
+  Infinite Health:
+    Games:
+      "Call of Duty: Advanced Warfare (Artemis)":
+        NPUB31553: [ 01.20 ]
+    Author: jgduff Ported by ChIdReamS1
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *RIDRAC2 ]
