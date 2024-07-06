@@ -1,0 +1,28 @@
+PPU-5788d66f73f09f50b8d34129fa44681d9d13b0c5:
+  Infinite Health:
+    Games:
+      "The House Of The Dead 4 (Artemis)":
+        NPUB30603: [ 01.00 ]
+    Author: Serp87
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+     - [ be32,0x000CC138,0x39290000]
+  Infinite Ammo:
+    Games:
+      "The House Of The Dead 4 (Artemis)":
+        NPUB30603: [ 01.00 ]
+    Author: Serp87
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+     - [ be32,0x000CCB80,0x60000000]
+  Infinite Grenade:
+    Games:
+      "The House Of The Dead 4 (Artemis)":
+        NPUB30603: [ 01.00 ]
+    Author: Serp87
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+     - [ be32,0x000CBBF4,0x60000000]
