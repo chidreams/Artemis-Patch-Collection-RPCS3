@@ -1,0 +1,76 @@
+PPU-1110c5acb136f09c22ca1c3bb5350db8d3de0ae0:
+  "Infinite HP + Infinite S.C. Gauge + Infinite Revenge Gauge":
+    Games:
+      "ULTRA STREET FIGHTER IV (Artemis)":
+        BLUS31218: [ 01.12 ]
+    Author: Randy97Killa
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00B3A998,0x3DC000C6]
+    - [ be32,0x00B3A99C,0x61CE455C]
+    - [ be32,0x00B3A9A0,0x81CE0000]
+    - [ be32,0x00B3A9A4,0x81CE0008]
+    - [ be32,0x00B3A9A8,0x7C0EF040]
+    - [ be32,0x00B3A9AC,0x40820034]
+    - [ be32,0x00B3A9B0,0x28110000]
+    - [ be32,0x00B3A9B4,0x40820004]
+    - [ be32,0x00B3A9B8,0xA23E6C68]
+    - [ be32,0x00B3A9BC,0xB23E6C20]
+    - [ be32,0x00B3A9C0,0xB23E6C24]
+    - [ be32,0x00B3A9C4,0xB23E6C30]
+    - [ be32,0x00B3A9C8,0xB23E6C34]
+    - [ be32,0x00B3A9CC,0xB23E6C38]
+    - [ be32,0x00B3A9D0,0x28110000]
+    - [ be32,0x00B3A9D4,0x40820004]
+    - [ be32,0x00B3A9D8,0xA23E6C50]
+    - [ be32,0x00B3A9DC,0xB23E6C4C]
+    - [ be32,0x00B3A9E0,0x63C30000]
+    - [ be32,0x00B3A9E4,0x48146896]
+    - [ be32,0x00146890,0x48B3A99A]
+PPU-1110c5acb136f09c22ca1c3bb5350db8d3de0ae0:
+  "CPU No Attack":
+    Games:
+      "ULTRA STREET FIGHTER IV (Artemis)":
+        BLUS31218: [ 01.12 ]
+    Author: Randy97Killa
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00B3AA60,0x3DE000C6]
+    - [ be32,0x00B3AA64,0x61EF455C]
+    - [ be32,0x00B3AA68,0x81EF0000]
+    - [ be32,0x00B3AA6C,0x81EF000C]
+    - [ be32,0x00B3AA70,0x7C0FF040]
+    - [ be32,0x00B3AA74,0x4082000C]
+    - [ be32,0x00B3AA78,0x801E02C4]
+    - [ be32,0x00B3AA7C,0x901E02C8]
+    - [ be32,0x00B3AA80,0x63C30000]
+    - [ be32,0x00B3AA84,0x481468A2]
+    - [ be32,0x0014689C,0x48B3AA62]
+PPU-1110c5acb136f09c22ca1c3bb5350db8d3de0ae0:
+  "Press Select To Low CPU Health":
+    Games:
+      "ULTRA STREET FIGHTER IV (Artemis)":
+        BLUS31218: [ 01.12 ]
+    Author: Randy97Killa
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00B3BBB4,0x3F2000C6]
+    - [ be32,0x00B3BBB8,0x6339455C]
+    - [ be32,0x00B3BBBC,0x83390000]
+    - [ be32,0x00B3BBC0,0x8339000C]
+    - [ be32,0x00B3BBC4,0x7C19F040]
+    - [ be32,0x00B3BBC8,0x40820024]
+    - [ be32,0x00B3BBCC,0x3E0000C6]
+    - [ be32,0x00B3BBD0,0x621010E6]
+    - [ be32,0x00B3BBD4,0x8A100000]
+    - [ be32,0x00B3BBD8,0x28100020]
+    - [ be32,0x00B3BBDC,0x40820010]
+    - [ be32,0x00B3BBE0,0x3A000000]
+    - [ be32,0x00B3BBE4,0x921E6C20]
+    - [ be32,0x00B3BBE8,0x921E6C30]
+    - [ be32,0x00B3BBEC,0x63C30000]
+    - [ be32,0x00B3BBF0,0x4814675A]
+    - [ be32,0x00146754,0x48B3BBB6] 
