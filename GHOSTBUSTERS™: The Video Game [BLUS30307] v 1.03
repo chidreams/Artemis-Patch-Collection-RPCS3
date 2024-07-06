@@ -1,0 +1,41 @@
+PPU-cd22f1ce3b6f08b023c085a30772da1202f6d807:
+  "No Damage Cost":
+    Games:
+      "GHOSTBUSTERS™: The Video Game (Artemis)":
+        BLUS30307: [ 01.03]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x00047FC0,0x9B996754] 
+PPU-cd22f1ce3b6f08b023c085a30772da1202f6d807:
+  "Unlimited Ammo (No Overheating)":
+    Games:
+      "GHOSTBUSTERS™: The Video Game (Artemis)":
+        BLUS30307: [ 01.03]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x0003CEA4,0x913D01DC] 
+PPU-cd22f1ce3b6f08b023c085a30772da1202f6d807:
+  "God Mode":
+    Games:
+      "GHOSTBUSTERS™: The Video Game (Artemis)":
+        BLUS30307: [ 01.03]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x0003CEAC,0x913D01BC] 
+PPU-cd22f1ce3b6f08b023c085a30772da1202f6d807:
+  "Max Money On Gain":
+    Games:
+      "GHOSTBUSTERS™: The Video Game (Artemis)":
+        BLUS30307: [ 01.03]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x001328D4,0x3D207F80]
+      - [ be32,0x001328E0,0x91230380]
