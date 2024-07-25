@@ -1,0 +1,95 @@
+Version: 1.2
+# Title: DARK SOULS
+# Serial: BLUS30782
+# Category: GD
+# Version: APP_VER=01.09 VERSION=01.00  
+Anchors:
+  DARK_SOULS: &DARK_SOULS
+    - [ be32,0x00402070,0x38000001]
+    - [ be32,0x00402074,0x98090000]
+  DARK_SOULS2: &DARK_SOULS2
+    - [ be32,0x00403D34,0x38000001]
+  DARK_SOULS3: &DARK_SOULS3
+    - [ be32,0x003ED9280,0x38000001]
+    - [ be32,0x003ED92C0,0x98090000]
+    - [ be32,0x003ED9300,0x48000020]
+  DARK_SOULS4: &DARK_SOULS4
+    - [ be32,0x003F1358,0x38000001]
+    - [ be32,0x003F135C,0x98090000]
+  DARK_SOULS5: &DARK_SOULS5
+    - [ be32,0x00AFFAF4,0x60000000]
+  DARK_SOULS6: &DARK_SOULS6
+    - [ be32,0x00B2197C,0x48000070]
+  DARK_SOULS7: &DARK_SOULS7
+    - [ be32,0x00B00D80,0x60000000]
+    - [ be32,0x00B00E00,0x4BFFFFB4]
+PPU-61606645abb9cc39f48072166c04df8da629fb99:
+  "Player Never Die":
+    Games:
+      "DARK SOULS (Artemis)":
+        BLUS30782: [ 01.09 ]
+    Author: Hacked by dron_3
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DARK_SOULS ]   
+PPU-61606645abb9cc39f48072166c04df8da629fb99:
+  "One Hit Kill":
+    Games:
+      "DARK SOULS (Artemis)":
+        BLUS30782: [ 01.09 ]
+    Author: Hacked by dron_3
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DARK_SOULS2 ] 
+PPU-61606645abb9cc39f48072166c04df8da629fb99:
+  "Stamina Never Decreases":
+    Games:
+      "DARK SOULS (Artemis)":
+        BLUS30782: [ 01.09 ]
+    Author: Hacked by dron_3
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DARK_SOULS3 ] 
+PPU-61606645abb9cc39f48072166c04df8da629fb99:
+  "Magic Never Decreases":
+    Games:
+      "DARK SOULS (Artemis)":
+        BLUS30782: [ 01.09 ]
+    Author: Hacked by dron_3
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DARK_SOULS4 ] 
+PPU-61606645abb9cc39f48072166c04df8da629fb99:
+  "Durability Never Decreases":
+    Games:
+      "DARK SOULS (Artemis)":
+        BLUS30782: [ 01.09 ]
+    Author: Hacked by dron_3
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DARK_SOULS5 ] 
+PPU-61606645abb9cc39f48072166c04df8da629fb99:
+  "Max Souls (originally hacked by Skiller & Medo)":
+    Games:
+      "DARK SOULS (Artemis)":
+        BLUS30782: [ 01.09 ]
+    Author: Hacked by dron_3
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DARK_SOULS6 ] 
+PPU-61606645abb9cc39f48072166c04df8da629fb99:
+  "Max Items (originally hacked by Medo)":
+    Games:
+      "DARK SOULS (Artemis)":
+        BLUS30782: [ 01.09 ]
+    Author: Hacked by dron_3
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DARK_SOULS7 ]  
