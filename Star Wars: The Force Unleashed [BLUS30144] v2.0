@@ -1,0 +1,26 @@
+Version: 1.2
+# Title: Star Wars: The Force Unleashed - Update
+# Serial: BLUS30144
+# Category: GD
+# Version: APP_VER=02.00 VERSION=01.01
+PPU-819e89a83a4a38ce8d7269ef5ba3eaf07ec71a05:
+  "Infinite Force":
+    Games:
+      "Star Wars: The Force Unleashed (Artemis)":
+        BLUS30144: [ 02.00 ]
+    Author: dron_3
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x007F0874,0xC2A30008]
+    - [ be32,0x007F0878,0xD2A30004]    
+PPU-819e89a83a4a38ce8d7269ef5ba3eaf07ec71a05:
+  "Infinite Health":
+    Games:
+      "Star Wars: The Force Unleashed (Artemis)":
+        BLUS30144: [ 02.00 ]
+    Author: dron_3
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x006C1C7C,0xD0030004] 
