@@ -1,0 +1,48 @@
+Version: 1.2
+# Title: The Legend of Spyro™: Dawn of the Dragon
+# Serial: BLUS30205
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.01
+PPU-2e9cfdbe91197d4dd6ea56a5a99e7888f0d8ae37:
+  "Max + Infinite Health On Change For Cinder + Infinite MP For Spyro":
+    Games:
+      "The Legend of Spyro: Dawn of the Dragon (Artemis)":
+        BLUS30205: [ 01.00 ]
+    Author: jgduff1
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x004FDACC,0x90430054]
+    - [ be32,0x004FE140,0x903D0054]    
+PPU-2e9cfdbe91197d4dd6ea56a5a99e7888f0d8ae37:
+  "Easy Max Orbs":
+    Games:
+      "The Legend of Spyro: Dawn of the Dragon (Artemis)":
+        BLUS30205: [ 01.00 ]
+    Author: jgduff1
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x005005BC,0x7C0B0214]
+PPU-2e9cfdbe91197d4dd6ea56a5a99e7888f0d8ae37:
+  "Max + Infinite Magic On Change For Spyro":
+    Games:
+      "The Legend of Spyro: Dawn of the Dragon (Artemis)":
+        BLUS30205: [ 01.00 ]
+    Author: jgduff1
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x004FD87C,0x91030064]
+    - [ be32,0x004FDE0C,0x917D0064] 
+PPU-2e9cfdbe91197d4dd6ea56a5a99e7888f0d8ae37:
+  "Max + Infinite Magic On Change For Cinder":
+    Games:
+      "The Legend of Spyro: Dawn of the Dragon (Artemis)":
+        BLUS30205: [ 01.00 ]
+    Author: jgduff1
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x004FD8CC,0x9023006C]
+    - [ be32,0x004FDEF0,0x903D006C] 
