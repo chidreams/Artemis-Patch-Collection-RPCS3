@@ -1,0 +1,46 @@
+Version: 1.2
+# Title: LittleBigPlanet™3 Digital Version
+# Serial: NPUA81116
+# Category: HG
+# Version: APP_VER=01.02 VERSION=01.00
+PPU-25a152166d12f3eac1c35198f1b975bfb3fff1db:
+  "Max Score":
+    Games:
+      "LittleBigPlanet 3 (Artemis)":
+        NPUA81116: [ 01.02 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x003DA404,0xD07F0030]
+PPU-25a152166d12f3eac1c35198f1b975bfb3fff1db:
+  "Infinite Respawn":
+    Games:
+      "LittleBigPlanet 3 (Artemis)":
+        NPUA81116: [ 01.02 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0007EAE8,0x30630000]
+PPU-25a152166d12f3eac1c35198f1b975bfb3fff1db:
+  "No Lives Lost":
+    Games:
+      "LittleBigPlanet 3 (Artemis)":
+        NPUA81116: [ 01.02 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00094658,0x38A00000]
+PPU-25a152166d12f3eac1c35198f1b975bfb3fff1db:
+  "Infinite Collectibells":
+    Games:
+      "LittleBigPlanet 3 (Artemis)":
+        NPUA81116: [ 01.02 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x007CA248,0x38602710]
+    - [ be32,0x007CA37C,0x38802710]
