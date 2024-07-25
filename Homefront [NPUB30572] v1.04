@@ -1,0 +1,93 @@
+# Title: Homefront
+# Serial: NPUB30572
+# Category: HG
+# Version: APP_VER=01.04 VERSION=01.01
+Anchors:
+  Homefront: &Homefront
+    - [ be32,0x00996FA8,0xC33F0410]
+    - [ be32,0x00996FAC,0x60000000]
+    - [ be32,0x00996FB0,0xD33F0414]
+  Homefront2: &Homefront2
+    - [ be32,0x00B8C4D0,0x48000004]
+  Homefront3: &Homefront3
+    - [ be32,0x0099C8A0,0x60000000]
+    - [ be32,0x00B99E0C,0x60000000]
+    - [ be32,0x00B9AB00,0x60000000]
+  Homefront4: &Homefront4
+    - [ be32,0x00B87DF8,0x3B6003E7]
+  Homefront5: &Homefront5
+    - [ be32,0x00B909C8,0x60000000]
+  Homefront6: &Homefront6
+    - [ be32,0x00B7AD5C,0x48000004]
+  Homefront7: &Homefront7
+    - [ be32,0x009AFBBC,0x40000000]
+PPU-12ea02928fa87c63367ef31d2ba22e8e355f2679:
+  "Infinite Health":
+    Games:
+      "Homefront (Artemis)":
+        NPUB30572: [ 01.04 ]
+    Author: Randy97Killa
+    Notes: The health code has been fixed so there should be no more weird effects on the screen when you look up or jump. 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Homefront ]    
+PPU-12ea02928fa87c63367ef31d2ba22e8e355f2679:
+  "Immunity Against Bullets":
+    Games:
+      "Homefront (Artemis)":
+        NPUB30572: [ 01.04 ]
+    Author: Randy97Killa
+    Notes: Melee attacks can still hurt you.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Homefront2 ] 
+PPU-12ea02928fa87c63367ef31d2ba22e8e355f2679:
+  "No Recoil + Perfect Accuracy":
+    Games:
+      "Homefront (Artemis)":
+        NPUB30572: [ 01.04 ]
+    Author: Randy97Killa
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Homefront3 ] 
+PPU-12ea02928fa87c63367ef31d2ba22e8e355f2679:
+  "Infinite Ammo Usage":
+    Games:
+      "Homefront (Artemis)":
+        NPUB30572: [ 01.04 ]
+    Author: Randy97Killa
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Homefront4 ] 
+PPU-12ea02928fa87c63367ef31d2ba22e8e355f2679:
+  "Infinite Ammo No Reload":
+    Games:
+      "Homefront (Artemis)":
+        NPUB30572: [ 01.04 ]
+    Author: Randy97Killa
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Homefront5 ] 
+PPU-12ea02928fa87c63367ef31d2ba22e8e355f2679:
+  "Infinite Grenades + Infinite C4":
+    Games:
+      "Homefront (Artemis)":
+        NPUB30572: [ 01.04 ]
+    Author: Randy97Killa
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Homefront6 ] 
+PPU-12ea02928fa87c63367ef31d2ba22e8e355f2679:
+  "Look Sensitivity Modifiers (2x)":
+    Games:
+      "Homefront (Artemis)":
+        NPUB30572: [ 01.04 ]
+    Author: Randy97Killa
+    Notes: 3F800000=normal;3FA00000=1.25x;3FC00000=1.5x;3FE00000=1.75x;40000000=2x;40200000=2.5x;40400000=3x;40800000=4x;40A00000=5x;40C00000=6x;4120000=10x
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Homefront7 ]  
