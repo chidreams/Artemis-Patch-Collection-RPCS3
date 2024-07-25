@@ -1,0 +1,36 @@
+Version: 1.2
+# Title: RaymanÂ® Origins
+# Serial: NPUB30661
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.00
+PPU-87c865ad03148e01013c5aa56c95cfaa83d70c2e:
+  "Max Lums On Gain":
+    Games:
+      "Rayman Origins (Artemis)":
+        NPUB30661: [ 01.00 ]
+    Author: Serp87
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0024E228,0x38A003E7] # orig-code 7CA5F014
+PPU-87c865ad03148e01013c5aa56c95cfaa83d70c2e:
+  "Freeze Level Time":
+    Games:
+      "Rayman Origins (Artemis)":
+        NPUB30661: [ 01.00 ]
+    Author: Serp87
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00056758,0x60000000] # orig-code D03F1008
+PPU-87c865ad03148e01013c5aa56c95cfaa83d70c2e:
+  "Infinite Health":
+    Games:
+      "Rayman Origins (Artemis)":
+        NPUB30661: [ 01.00 ]
+    Author: Serp87
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x000402F8,0x60000000] # orig-code 93C400DC
+    - [ be32,0x00040304,0x60000000] # orig-code 90A400DC 
