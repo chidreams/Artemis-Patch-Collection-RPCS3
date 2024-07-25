@@ -1,0 +1,16 @@
+Version: 1.2
+# Title: Black Knight Sword 
+# Serial: NPEB00859
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.02
+PPU-2906daff22ed8bd1dbcef94ef8e1ec79b73dba5e:
+  "Infinite Health + Max Heart + Buy Life Get the Most + Max and Infinite Special Attack":
+    Games:
+      "Black Knight Sword (Artemis)":
+        NPEB00859: [ 01.00 ]
+    Author: Serp87
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x000AA180,0x60000000] # orig-code 41810008    
+     
