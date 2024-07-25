@@ -1,0 +1,15 @@
+Version: 1.2
+# Title: LittleBigPlanet™
+# Serial: NPUA80472
+# Category: HG
+# Version: APP_VER=01.30 VERSION=01.00
+PPU-545c1abbf1c562d60fca7435401f020beab76b53:
+  "Unlimited Respawn":
+    Games:
+      "LittleBigPlanet (Artemis)":
+        NPUA80472: [ 01.30 ]
+    Author: dron_3
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0006BBF8,0x39200000]  
