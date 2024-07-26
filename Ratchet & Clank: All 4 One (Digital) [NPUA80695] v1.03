@@ -1,0 +1,126 @@
+# Title: Ratchet & Clank: All 4 One (Digital)
+# Serial: NPUA80695
+# Category: HG
+# Version: APP_VER=01.03 VERSION=01.00
+Anchors:
+  RatchetCAll4: &RatchetCAll4
+    - [ be32,0x004B8D90,0xFC22106E] # orig-code FC23106E
+  RatchetCAll42: &RatchetCAll42
+    - [ be32,0x00559900,0xE8830000] # orig-code E8630000
+    - [ be32,0x00559904,0x7C842B78] # orig-code 7C632838
+    - [ be32,0x00559908,0xF8830000] # orig-code 2C230000
+    - [ be32,0x0055990C,0x60000000] # orig-code 408200C4
+  RatchetCAll43: &RatchetCAll43
+    - [ be32,0x0054786C,0xE9270000] # orig-code E8E70000
+    - [ be32,0x00547870,0x7CC64B78] # orig-code 7CE63038
+    - [ be32,0x00547874,0xF8C70000] # orig-code 2C260000
+    - [ be32,0x00547878,0x60000000] # orig-code 41820008
+  RatchetCAll44: &RatchetCAll44
+    - [ be32,0x001EA5E8,0x7C832014] # orig-code 7C632014
+    - [ be32,0x001EA5EC,0x3084072C] # orig-code 3063072C
+    - [ be32,0x001EA5F0,0x3860002A] # orig-code 78630020
+    - [ be32,0x001EA5F4,0xB0640000] # orig-code A0630000
+    - [ be32,0x0030D41C,0xE8050000] # orig-code E8A50000
+    - [ be32,0x0030D420,0x7C002378] # orig-code 7CA52038
+    - [ be32,0x0030D424,0xF8050000] # orig-code 7C242800
+    - [ be32,0x0030D428,0x60000000] # orig-code 40820008
+  RatchetCAll45: &RatchetCAll45
+    - [ be32,0x002B71C4,0x7CC5F814] # orig-code 7CC6F814
+  RatchetCAll46: &RatchetCAll46
+    - [ be32,0x00047144,0x4086FF94] # orig-code 4186FF94
+  RatchetCAll47: &RatchetCAll47
+    - [ be32,0x00140DF0,0x7F800000] # orig-code 40A00000
+  RatchetCAll48: &RatchetCAll48
+    - [ be32,0x001EA4A8,0x38E003E7] # orig-code 7CE7F814
+  RatchetCAll49: &RatchetCAll49
+    - [ be32,0x00456C64,0xC03E0028] # orig-code EC3E0828
+PPU-5fd631b4c6903c20ef2dedae06469beb880935d3:
+  "Infinite Ammo":
+    Games:
+      "Ratchet & Clank: All 4 One (Artemis)":
+        NPUA80695: [ 01.03 ]
+    Author: Serp87 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RatchetCAll4 ]
+PPU-5fd631b4c6903c20ef2dedae06469beb880935d3:
+  "Unlock Cheats":
+    Games:
+      "Ratchet & Clank: All 4 One (Artemis)":
+        NPUA80695: [ 01.03 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RatchetCAll42 ]
+PPU-5fd631b4c6903c20ef2dedae06469beb880935d3:
+  "Have All Skill Points":
+    Games:
+      "Ratchet & Clank: All 4 One (Artemis)":
+        NPUA80695: [ 01.03 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RatchetCAll43 ]
+PPU-5fd631b4c6903c20ef2dedae06469beb880935d3:
+  "Have All Gold Bolts":
+    Games:
+      "Ratchet & Clank: All 4 One (Artemis)":
+        NPUA80695: [ 01.03 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RatchetCAll44 ]
+PPU-5fd631b4c6903c20ef2dedae06469beb880935d3:
+  "Maximum Bolts":
+    Games:
+      "Ratchet & Clank: All 4 One (Artemis)":
+        NPUA80695: [ 01.03 ]
+    Author: Serp87 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RatchetCAll45 ]
+PPU-5fd631b4c6903c20ef2dedae06469beb880935d3:
+  "Infinite Health":
+    Games:
+      "Ratchet & Clank: All 4 One (Artemis)":
+        NPUA80695: [ 01.03 ]
+    Author: Serp87 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RatchetCAll46 ]
+PPU-5fd631b4c6903c20ef2dedae06469beb880935d3:
+  "Infinite Sprint":
+    Games:
+      "Ratchet & Clank: All 4 One (Artemis)":
+        NPUA80695: [ 01.03 ]
+    Author: Serp87 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RatchetCAll47 ]
+PPU-5fd631b4c6903c20ef2dedae06469beb880935d3:
+  "Max Critters":
+    Games:
+      "Ratchet & Clank: All 4 One (Artemis)":
+        NPUA80695: [ 01.03 ]
+    Author: Serp87 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RatchetCAll48 ]
+PPU-5fd631b4c6903c20ef2dedae06469beb880935d3:
+  "Infinite Health Robot":
+    Games:
+      "Ratchet & Clank: All 4 One (Artemis)":
+        NPUA80695: [ 01.03 ]
+    Author: Serp87 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RatchetCAll49 ]
