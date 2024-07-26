@@ -1,0 +1,335 @@
+# Title: Ratchet & Clank: Full Frontal Assault™
+# Serial: BCUS98380
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.05
+Anchors:
+  FFAssault: &FFAssault
+    - [ be32,0x00C76AD0,0x3CA04280]
+    - [ be32,0x00C76AD4,0x80A50F44]
+    - [ be32,0x00C76AD8,0x7F992840]
+    - [ be32,0x00C76ADC,0x4D9E0020]
+    - [ be32,0x00C76AE0,0xF821FA71]
+    - [ be32,0x00C76AE4,0x4805046E]
+    - [ be32,0x00050468,0x48C76AD2]
+  FFAssault2: &FFAssault2
+    - [ be32,0x00C76AB0,0x63E00000]
+    - [ be32,0x00C76AB4,0x3FE04280]
+    - [ be32,0x00C76AB8,0x83FF0F44]
+    - [ be32,0x00C76ABC,0x7F9FC840]
+    - [ be32,0x00C76AC0,0x601F0000]
+    - [ be32,0x00C76AC4,0x409E0008]
+    - [ be32,0x00C76AC8,0xC3FF00C8]
+    - [ be32,0x00C76ACC,0x4854A7A2]
+    - [ be32,0x0054A79C,0x48C76AB2]
+    - [ be32,0x0054A7A0,0xD3FF0024]
+  FFAssault3: &FFAssault3
+    - [ be32,0x004D28C4,0x60000000]
+  FFAssault5: &FFAssault5
+    - [ be32,0x004D2BC4,0xD03F0008]
+    - [ be32,0x004D2BC8,0xC3FF0008]
+  FFAssault6: &FFAssault6
+    - [ be32,0x00C79360,0x3C00001C]
+    - [ be32,0x00C79364,0x6000D8D0]
+    - [ be32,0x00C79368,0xF841FFF8]
+    - [ be32,0x00C7936C,0x80410094]
+    - [ be32,0x00C79370,0x7F820040]
+    - [ be32,0x00C79374,0xE841FFF8]
+    - [ be32,0x00C79378,0x409E0014]
+    - [ be32,0x00C7937C,0x2F9D0000]
+    - [ be32,0x00C79380,0x409D000C]
+    - [ be32,0x00C79384,0x3FE03B9A]
+    - [ be32,0x00C79388,0x63FFC9FF]
+    - [ be32,0x00C7938C,0x4854A2B2]
+    - [ be32,0x0054A2AC,0x48C79362]
+    - [ be32,0x0054A2B0,0x93FE0024]
+  FFAssault7: &FFAssault7
+    - [ be32,0x00C79360,0x3C00001C]
+    - [ be32,0x00C79364,0x6000D8D0]
+    - [ be32,0x00C79368,0xF841FFF8]
+    - [ be32,0x00C7936C,0x80410094]
+    - [ be32,0x00C79370,0x7F820040]
+    - [ be32,0x00C79374,0xE841FFF8]
+    - [ be32,0x00C79378,0x409E0018]
+    - [ be32,0x00C7937C,0x2F9D0000]
+    - [ be32,0x00C79380,0x409D0010]
+    - [ be32,0x00C79384,0x83FE0024]
+    - [ be32,0x00C79388,0x1FBD03E8]
+    - [ be32,0x00C7938C,0x7FFDFA14]
+    - [ be32,0x00C79390,0x4854A2B2]
+    - [ be32,0x0054A2AC,0x48C79362]
+    - [ be32,0x0054A2B0,0x93FE0024]
+  FFAssault8: &FFAssault8
+    - [ be32,0x0031D64C,0x81210078]
+    - [ be32,0x0031D654,0x55291838]
+    - [ be32,0x0031D658,0x7C7F482A]
+    - [ be32,0x0031D65C,0x7C632378]
+    - [ be32,0x0031D660,0x7C7F492A]
+    - [ be32,0x0031D664,0x60830000]
+  FFAssault9: &FFAssault9
+    - [ be32,0x00C3AA3C,0x80030820]
+    - [ be32,0x00C3AA40,0x64000307]
+    - [ be32,0x00C3AA44,0x60000777]
+    - [ be32,0x00C3AA48,0x48000020]
+    - [ be32,0x00C3AA68,0x90030820]
+    - [ be32,0x00C3AA6C,0x80630820]
+    - [ be32,0x00C3AA70,0x482C2F12]
+    - [ be32,0x002C2F0C,0x48C3AA3E]
+    - [ be32,0x002C2F18,0x4800000C]
+  FFAssault10: &FFAssault10
+    - [ be32,0x00C3AA94,0x7C002378]
+    - [ be32,0x00C3AA98,0xF8050000]
+    - [ be32,0x00C3AA9C,0xE8A50000]
+    - [ be32,0x00C3AAA0,0x4831FD36]
+    - [ be32,0x0031FD2C,0xE8050000]
+    - [ be32,0x0031FD30,0x48C3AA96]
+    - [ be32,0x00C3AAC0,0x83D9081C]
+    - [ be32,0x00C3AAC4,0x67DE0005]
+    - [ be32,0x00C3AAC8,0x63DE0555]
+    - [ be32,0x00C3AACC,0x48000020]
+    - [ be32,0x00C3AAEC,0x93D9081C]
+    - [ be32,0x00C3AAF0,0x4856C034]
+    - [ be32,0x0056C034,0x48C3AAC2]
+  FFAssault11: &FFAssault11
+    - [ be32,0x004E1A4C,0x48000008]
+  FFAssault12: &FFAssault12
+    - [ be32,0x002C30E8,0x44FA0000]
+  FFAssault13: &FFAssault13
+    - [ be32,0x00111BD0,0x60A50001]
+    - [ be32,0x00111BD4,0x98BB0010]
+    - [ be32,0x00111BD8,0x38A00001]
+    - [ be32,0x00C895A0,0x7C0802A6]
+    - [ be32,0x00C895A4,0x3C60001F]
+    - [ be32,0x00C895A8,0x60638DE0]
+    - [ be32,0x00C895AC,0x7F830040]
+    - [ be32,0x00C895B0,0x409E0030]
+    - [ be32,0x00C895B4,0x3C6000FD]
+    - [ be32,0x00C895B8,0x3863E160]
+    - [ be32,0x00C895BC,0x80040004]
+    - [ be32,0x00C895C0,0x78001764]
+    - [ be32,0x00C895C4,0x7C63002E]
+    - [ be32,0x00C895C8,0x8063003C]
+    - [ be32,0x00C895CC,0x386300E0]
+    - [ be32,0x00C895D0,0x88040011]
+    - [ be32,0x00C895D4,0x540015BA]
+    - [ be32,0x00C895D8,0x7C23042E]
+    - [ be32,0x00C895DC,0xD024000C]
+    - [ be32,0x00C895E0,0x3C60000A]
+    - [ be32,0x00C895E4,0x481F8876]
+    - [ be32,0x001F8870,0x48C895A2]
+    - [ be32,0x00C895E8,0x38E00006]
+    - [ be32,0x00C895EC,0x90E30000]
+    - [ be32,0x00C895F0,0x38E00008]
+    - [ be32,0x00C895F4,0x90E30004]
+    - [ be32,0x00C895F8,0x38E0000A]
+    - [ be32,0x00C895FC,0x90E30008]
+    - [ be32,0x00C89600,0x38E0000B]
+    - [ be32,0x00C89604,0x90E3000C]
+    - [ be32,0x00C89608,0x38E0000C]
+    - [ be32,0x00C8960C,0x90E30010]
+    - [ be32,0x00C89610,0x38E0000D]
+    - [ be32,0x00C89614,0x90E30014]
+    - [ be32,0x00C89618,0x38E0000E]
+    - [ be32,0x00C8961C,0x90E30018]
+    - [ be32,0x00C89620,0x38E0000F]
+    - [ be32,0x00C89624,0x90E3001C]
+    - [ be32,0x00C89628,0x38E00000]
+    - [ be32,0x00C8962C,0x4831DCDE]
+    - [ be32,0x0031DCD8,0x48C895EA]
+    - [ be32,0x00C7CA50,0x3C6000FD]
+    - [ be32,0x00C7CA54,0x3863E160]
+    - [ be32,0x00C7CA58,0x80040004]
+    - [ be32,0x00C7CA5C,0x78001764]
+    - [ be32,0x00C7CA60,0x7C63002E]
+    - [ be32,0x00C7CA64,0x8063003C]
+    - [ be32,0x00C7CA68,0x386300E0]
+    - [ be32,0x00C7CA6C,0x88040011]
+    - [ be32,0x00C7CA70,0x540015BA]
+    - [ be32,0x00C7CA74,0x7C23042E]
+    - [ be32,0x00C7CA78,0xD024000C]
+    - [ be32,0x00C7CA7C,0x3C60000A]
+    - [ be32,0x00C7CA80,0x484DD3F2]
+    - [ be32,0x004DD3EC,0x48C7CA52]
+  FFAssault14: &FFAssault14
+    - [ be32,0x0056B7F0,0xC02600A4]
+    - [ be32,0x0056B7F8,0xD0240000]
+  FFAssault15: &FFAssault15
+    - [ be32,0x00C3A98C,0x807D0058]
+    - [ be32,0x00C3A990,0x3CA00169]
+    - [ be32,0x00C3A994,0x9065F000]
+    - [ be32,0x00C3A998,0x48577522]
+    - [ be32,0x00C3A9B8,0x3FA00169]
+    - [ be32,0x00C3A9BC,0xA07DF002]
+    - [ be32,0x00C3A9C0,0x70630004]
+    - [ be32,0x00C3A9C4,0x48000020]
+    - [ be32,0x00C3A9E4,0x2B830004]
+    - [ be32,0x00C3A9E8,0x409E0030]
+    - [ be32,0x00C3A9EC,0x3C6041C0] # <--- This is the gravity increment amount to hover, 41C0 allows you to really fly.
+    - [ be32,0x00C3A9F0,0x48000020]
+    - [ be32,0x00C3AA10,0x907DF004]
+    - [ be32,0x00C3AA14,0xC3FDF004]
+    - [ be32,0x00C3AA18,0x33C100C0]
+    - [ be32,0x00C3AA1C,0x482D289E]
+    - [ be32,0x0057751C,0x48C3A98E]
+    - [ be32,0x002D2898,0x48C3A9BA]
+    - [ be32,0x001C1344,0x4800003C]
+PPU-a6cf430925b076125e5349a62dc6d646cb342a30:
+  "Ratchet Is Invincible":
+    Games:
+      "Ratchet & Clank Full Frontal Assault (Artemis)":
+        BCUS98380: [ 01.05 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFAssault ]
+PPU-a6cf430925b076125e5349a62dc6d646cb342a30:
+  "Ratchets Health Never Decreases":
+    Games:
+      "Ratchet & Clank Full Frontal Assault (Artemis)":
+        BCUS98380: [ 01.05 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFAssault2 ]
+PPU-a6cf430925b076125e5349a62dc6d646cb342a30:
+  "Ammo Never Decreases":
+    Games:
+      "Ratchet & Clank Full Frontal Assault (Artemis)":
+        BCUS98380: [ 01.05 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFAssault3 ]
+PPU-a6cf430925b076125e5349a62dc6d646cb342a30:
+  "Use A Weapon On An Enemy To Max Its Level alternative":
+    Games:
+      "Ratchet & Clank Full Frontal Assault (Artemis)":
+        BCUS98380: [ 01.05 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+      - [ load, *FFAssault5 ]
+PPU-a6cf430925b076125e5349a62dc6d646cb342a30:
+  "Max Bolts":
+    Games:
+      "Ratchet & Clank Full Frontal Assault (Artemis)":
+        BCUS98380: [ 01.05 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFAssault6 ]
+#[Z]000A=10x;0064=100x;03E8=1000x;2710=10000x[/Z]      
+PPU-a6cf430925b076125e5349a62dc6d646cb342a30:
+  "Bolt Multiplier (100x)":
+    Games:
+      "Ratchet & Clank Full Frontal Assault (Artemis)":
+        BCUS98380: [ 01.05 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: Chanes in cheat file  000A=10x;0064=100x;03E8=1000x;2710=10000x
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFAssault7 ]
+PPU-a6cf430925b076125e5349a62dc6d646cb342a30:
+  "Enter Unlockables To Obtain All Skill Points":
+    Games:
+      "Ratchet & Clank Full Frontal Assault (Artemis)":
+        BCUS98380: [ 01.05 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFAssault8 ]
+PPU-a6cf430925b076125e5349a62dc6d646cb342a30:
+  "Unlock Cheats":
+    Games:
+      "Ratchet & Clank Full Frontal Assault (Artemis)":
+        BCUS98380: [ 01.05 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFAssault9 ]
+PPU-a6cf430925b076125e5349a62dc6d646cb342a30:
+  "Have All Gold Bolts":
+    Games:
+      "Ratchet & Clank Full Frontal Assault (Artemis)":
+        BCUS98380: [ 01.05 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFAssault10 ]
+# The 1st set of lines runs constantly while in a level, and will make the gold bolts on that level vanish. It only does the level you are currently on, so you will need to have this on at some point on each level.
+# The 2nd set activates any time you access Hero Profile and gives you all of them for all levels.
+# Use both to make things look normal or you will end up picking up more gold bolts than the game actually has.      
+PPU-a6cf430925b076125e5349a62dc6d646cb342a30:
+  "All Weapons Are Manual Rapid Have":
+    Games:
+      "Ratchet & Clank Full Frontal Assault (Artemis)":
+        BCUS98380: [ 01.05 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: Think of how the Warmonger or Cryoshot require you to repeatedly press fire instead of just holding it to fire. All weapons will have that behavior but can fire as fast as you can press it.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFAssault11 ]
+PPU-a6cf430925b076125e5349a62dc6d646cb342a30:
+  "Ratchet Has A Massive Damage Scale":
+    Games:
+      "Ratchet & Clank Full Frontal Assault (Artemis)":
+        BCUS98380: [ 01.05 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFAssault12 ]
+PPU-a6cf430925b076125e5349a62dc6d646cb342a30:
+  "Have All Weapons":
+    Games:
+      "Ratchet & Clank Full Frontal Assault (Artemis)":
+        BCUS98380: [ 01.05 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFAssault13 ]
+# The 1st set of lines activates a bit that allows you to choose the weapon.
+# The 2nd set of lines activates when you access weapon select, and gives every weapon full ammo so you can even use Mr. Zurkon.
+# The 3rd set puts everything except the Combuster, Warmonger, and Cryoshot in the Weapon Wheel.
+# The 4th set allows you to use the Combuster with <, the Warmonger with ^, and the Cryoshot with >.   
+# Weapon Values:
+# 5 = Combuster
+# 6 = Thundersmack
+# 7 = Warmonger
+# 8 = Plasmabomb Launcher
+# 9 = Cryoshot
+# A = Pyro Blaster
+# B = Dopplebanger
+# C = Mr. Zurkon
+# D = Groovitron
+# E = Buzz Blades
+# F = Sonic Eruptor   
+PPU-a6cf430925b076125e5349a62dc6d646cb342a30:
+  "Time Never Increases":
+    Games:
+      "Ratchet & Clank Full Frontal Assault (Artemis)":
+        BCUS98380: [ 01.05 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFAssault14 ]
+PPU-a6cf430925b076125e5349a62dc6d646cb342a30:
+  "Hold X To Fly":
+    Games:
+      "Ratchet & Clank Full Frontal Assault (Artemis)":
+        BCUS98380: [ 01.05 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: Don't stay in the air for more than a few seconds at a time or the game will kill you
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFAssault15 ]
