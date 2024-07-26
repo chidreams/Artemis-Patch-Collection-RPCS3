@@ -1,0 +1,35 @@
+# Title: Dragon Age II
+# Serial: BLUS30645
+# Category: GD
+# Version: APP_VER=01.05 VERSION=01.01
+PPU-797b8841f7ba0752e1282e7af730b95b4949ae1c:
+  "Lot Of Items On Gain (Need At Least 2)":
+    Games:
+      "Dragon Age II (Artemis)":
+        BLUS30645: [ 01.05 ]
+    Author: jgduff1 Ported by ChIdReamS
+    Notes: Remove after you have all of the items you want and then turn it off because it causes problems with blue and bronze pieces.
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00114AB8,0x919F0480]   #[Z]919F0480=On;90BF0480=Off[/Z]
+PPU-797b8841f7ba0752e1282e7af730b95b4949ae1c:
+  "Infinite + No Waiting Time For Magic + Potions":
+    Games:
+      "Dragon Age II (Artemis)":
+        BLUS30645: [ 01.05 ]
+    Author: jgduff1 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00116044,0x60000000]
+PPU-797b8841f7ba0752e1282e7af730b95b4949ae1c:
+  "Lot Of Exp On Gain":
+    Games:
+      "Dragon Age II (Artemis)":
+        BLUS30645: [ 01.05 ]
+    Author: jgduff1 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00179D08,0xD2E4001C]
+    - [ be32,0x0011B2DC,0xD09C005C]
