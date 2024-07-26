@@ -1,0 +1,235 @@
+# Title: Tales of Xillia
+# Serial: NPUB31136
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.00
+Anchors:
+  TfXillia: &TfXillia
+    - [ be32,0x00204FA8,0x60000000]
+  TfXillia2: &TfXillia2
+    - [ be32,0x00229DF0,0x60000000]
+    - [ be32,0x00229E1C,0x60000000]
+    - [ be32,0x00229E20,0x60000000]
+    - [ be32,0x00229E24,0x60000000]
+    - [ be32,0x00229E28,0x60000000]
+    - [ be32,0x00229E2C,0x60000000]
+    - [ be32,0x00229E30,0x60000000]
+    - [ be32,0x00229E34,0x3C6000E4]
+    - [ be32,0x00229E38,0x6063DCF0]
+    - [ be32,0x00229E3C,0x80630000]
+    - [ be32,0x00229E40,0x3CE0006C]
+    - [ be32,0x00229E44,0x7F833840]
+    - [ be32,0x00229E48,0x419E0008]
+    - [ be32,0x00229E4C,0x48000040]
+    - [ be32,0x00229E50,0x3E2000E4]
+    - [ be32,0x00229E54,0x62310F8C]
+    - [ be32,0x00229E58,0x82310000]
+    - [ be32,0x00229E5C,0x3A310040]
+    - [ be32,0x00229E60,0x3F606363]
+    - [ be32,0x00229E64,0x637B6363]
+    - [ be32,0x00229E68,0x3F8000E4]
+    - [ be32,0x00229E6C,0x639C0F8C]
+    - [ be32,0x00229E70,0x839C0000]
+    - [ be32,0x00229E74,0x3B9C10CC]
+    - [ be32,0x00229E78,0x7F9DE378]
+    - [ be32,0x00229E7C,0x3A310004]
+    - [ be32,0x00229E80,0x9371FFFC]
+    - [ be32,0x00229E84,0x7C9D8840]
+    - [ be32,0x00229E88,0x4086FFF4]
+    - [ be32,0x00229E8C,0x60000000]
+    - [ be32,0x00229E90,0x60000000]
+    - [ be32,0x00229E94,0x60000000]
+    - [ be32,0x00229E98,0x60000000]
+    - [ be32,0x0048C5E0,0x68800001]
+  TfXillia3: &TfXillia3
+    - [ be32,0x0021C990,0x3980270F]
+  TfXillia4: &TfXillia4
+    - [ be32,0x00218BE0,0x388001F4]
+  TfXillia5: &TfXillia5
+    - [ be32,0x0021E794,0x7D244B78]
+  TfXillia6: &TfXillia6
+    - [ be32,0x0048C588,0x38600063]
+    - [ be32,0x0048C5E0,0x68800063]
+  TfXillia7: &TfXillia7
+    - [ be32,0x002052E8,0x3E20447A]
+    - [ be32,0x002052EC,0x92290028]
+  TfXillia8: &TfXillia8
+    - [ be32,0x0048ED10,0x60000000]
+  TfXillia9: &TfXillia9
+    - [ be32,0x0048ECF0,0x60000000]
+  TfXillia10: &TfXillia10
+    - [ be32,0x000C63F8,0x1C8403E8]
+  TfXillia11: &TfXillia11
+    - [ be32,0x000C3B38,0x1C8403E8]
+  TfXillia12: &TfXillia12
+    - [ be32,0x000E3EBC,0x60000000]
+    - [ be32,0x000E3EF4,0x60000000]
+  TfXillia13: &TfXillia13
+    - [ be32,0x000E3F78,0x3FC00000]
+    - [ be32,0x000E3F7C,0x93DB0080]
+  TfXillia14: &TfXillia14
+    - [ be32,0x0020722C,0x60000000]
+    - [ be32,0x00207270,0x60000000]
+  TfXillia15: &TfXillia15
+    - [ be32,0x00218B64,0x60000000]
+  TfXillia16: &TfXillia16
+    - [ be32,0x00218B94,0x60000000]   
+PPU-a7f26bbbcb13fd5f554d0612f490861feec78e8f:
+  "Max Gald":
+    Games:
+      "Tales of Xillia (Artemis)":
+        NPUB31136: [ 01.00 ]
+    Author: Medo Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TfXillia ]
+PPU-a7f26bbbcb13fd5f554d0612f490861feec78e8f:
+  "All Items + Max All Items (Press L2+R2+L1+R1)":
+    Games:
+      "Tales of Xillia (Artemis)":
+        NPUB31136: [ 01.00 ]
+    Author: Medo Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TfXillia2 ]
+PPU-a7f26bbbcb13fd5f554d0612f490861feec78e8f:
+  "Max Arte Count On Use":
+    Games:
+      "Tales of Xillia (Artemis)":
+        NPUB31136: [ 01.00 ]
+    Author: Medo Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TfXillia3 ]
+PPU-a7f26bbbcb13fd5f554d0612f490861feec78e8f:
+  "Max GP On Spend":
+    Games:
+      "Tales of Xillia (Artemis)":
+        NPUB31136: [ 01.00 ]
+    Author: Medo Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TfXillia4 ]
+PPU-a7f26bbbcb13fd5f554d0612f490861feec78e8f:
+  "Max Exp On Gain - Use After Alwin Joins The Party":
+    Games:
+      "Tales of Xillia (Artemis)":
+        NPUB31136: [ 01.00 ]
+    Author: Medo Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TfXillia5 ]
+PPU-a7f26bbbcb13fd5f554d0612f490861feec78e8f:
+  "Have All Items + Infinite All Items":
+    Games:
+      "Tales of Xillia (Artemis)":
+        NPUB31136: [ 01.00 ]
+    Author: Medo Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TfXillia6 ]
+PPU-a7f26bbbcb13fd5f554d0612f490861feec78e8f:
+  "Max + Infinite Overdrive":
+    Games:
+      "Tales of Xillia (Artemis)":
+        NPUB31136: [ 01.00 ]
+    Author: Medo Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TfXillia7 ]
+PPU-a7f26bbbcb13fd5f554d0612f490861feec78e8f:
+  "Infinite Items Only":
+    Games:
+      "Tales of Xillia (Artemis)":
+        NPUB31136: [ 01.00 ]
+    Author: Medo Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TfXillia8 ]
+PPU-a7f26bbbcb13fd5f554d0612f490861feec78e8f:
+  "Max Items On Gain + Discard + Use":
+    Games:
+      "Tales of Xillia (Artemis)":
+        NPUB31136: [ 01.00 ]
+    Author: Medo Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TfXillia9 ]
+PPU-a7f26bbbcb13fd5f554d0612f490861feec78e8f:
+  "Gained Gald Multiplier (1000X)":
+    Games:
+      "Tales of Xillia (Artemis)":
+        NPUB31136: [ 01.00 ]
+    Author: Medo Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TfXillia10 ]
+PPU-a7f26bbbcb13fd5f554d0612f490861feec78e8f:
+  "Gained Exp Multiplier (1000x)":
+    Games:
+      "Tales of Xillia (Artemis)":
+        NPUB31136: [ 01.00 ]
+    Author: Medo Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TfXillia11 ]
+PPU-a7f26bbbcb13fd5f554d0612f490861feec78e8f:
+  "Freeze Hourglass Timer":
+    Games:
+      "Tales of Xillia (Artemis)":
+        NPUB31136: [ 01.00 ]
+    Author: Medo Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TfXillia12 ]
+PPU-a7f26bbbcb13fd5f554d0612f490861feec78e8f:
+  "Item Use Timer 0":
+    Games:
+      "Tales of Xillia (Artemis)":
+        NPUB31136: [ 01.00 ]
+    Author: Medo Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TfXillia13 ]
+PPU-a7f26bbbcb13fd5f554d0612f490861feec78e8f:
+  "Freeze Game Timer":
+    Games:
+      "Tales of Xillia (Artemis)":
+        NPUB31136: [ 01.00 ]
+    Author: Medo Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TfXillia14 ]
+PPU-a7f26bbbcb13fd5f554d0612f490861feec78e8f:
+  "Infinite TP":
+    Games:
+      "Tales of Xillia (Artemis)":
+        NPUB31136: [ 01.00 ]
+    Author: Medo Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TfXillia15 ]
+PPU-a7f26bbbcb13fd5f554d0612f490861feec78e8f:
+  "Infinite AC":
+    Games:
+      "Tales of Xillia (Artemis)":
+        NPUB31136: [ 01.00 ]
+    Author: Medo Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TfXillia16 ]
