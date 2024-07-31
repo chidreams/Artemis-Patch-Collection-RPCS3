@@ -1,0 +1,58 @@
+PPU-815bc45026a59ec7bd8792f40b610452f7ce3ed6:
+  Infinite Lives:
+    Games:
+      "Burn Zombie Burn! (Artemis)":
+        NPUB30046: [ 01.03]
+    Author: jgduff Ported by ChIdReamS
+    Notes: (Type Code ASM)
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x000912E4,0x396B0000]
+      - [ be32,0x000912EC,0x60000000]
+  Infinite Health:
+    Games:
+      "Burn Zombie Burn! (Artemis)":
+        NPUB30046: [ 01.03]
+    Author: jgduff Ported by ChIdReamS1
+    Notes: (Type Code ASM)
+    Patch Version: 1.0
+    Patch:
+     - [ be32, 0x00090E24,0x60000000]
+     - [ be32, 0x00090E2C,0x60000000]
+  Infinite Special Weapon:
+    Games:
+      "Burn Zombie Burn! (Artemis)":
+        NPUB30046: [ 01.03]
+    Author: jgduff Ported by ChIdReamS
+    Notes: (Type Code ASM)
+    Patch Version: 1.0
+    Patch:
+     - [ be32, 0x00135A38,0x60000000]
+     - [ be32, 0x00135A40,0x60000000] 
+  Infinite Guns:
+    Games:
+      "Burn Zombie Burn! (Artemis)":
+        NPUB30046: [ 01.03]
+    Author: jgduff Ported by ChIdReamS
+    Notes: (Type Code ASM)
+    Patch Version: 1.0
+    Patch:
+     - [ be32, 0x0013479C,0x60000000]
+  Invincible After Die One Time:
+    Games:
+      "Burn Zombie Burn! (Artemis)":
+        NPUB30046: [ 01.03]
+    Author: jgduff Ported by ChIdReamS
+    Notes: (Type Code ASM)
+    Patch Version: 1.0
+    Patch:
+     - [ be32, 0x000D6DEC,0x60000000]
+  Max Score On Gain:
+    Games:
+      "Burn Zombie Burn! (Artemis)":
+        NPUB30046: [ 01.03]
+    Author: jgduff Ported by ChIdReamS
+    Notes: (Type Code ASM)
+    Patch Version: 1.0
+    Patch:
+     - [ be32, 0x00311108, 0x7D655A14]
