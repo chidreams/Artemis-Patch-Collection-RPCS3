@@ -1,0 +1,81 @@
+Anchors:
+  TTroopers: &TTroopers
+    - [ be32,0x00D8E360,0x3CE00287]
+    - [ be32,0x00D8E364,0x9067EFD8]
+    - [ be32,0x00D8E368,0x7C7A1B78]
+    - [ be32,0x00D8E36C,0x4E800020]
+    - [ be32,0x023F48CC,0x4A999A95]
+  TTroopers2: &TTroopers2
+    - [ be32,0x00D8E374,0x3DC00287]
+    - [ be32,0x00D8E378,0x81CEEFD8]
+    - [ be32,0x00D8E37C,0x7C0EC800]
+    - [ be32,0x00D8E380,0x40820008]
+    - [ be32,0x00D8E384,0xC039001C]
+    - [ be32,0x00D8E388,0xD0390018]
+    - [ be32,0x00D8E38C,0x4E800020]
+    - [ be32,0x022EF93C,0x4AA9EA39]
+  TTroopers3: &TTroopers3
+    - [ be32,0x00D8E39C,0x3E000287]
+    - [ be32,0x00D8E3A0,0x8210EFD8]
+    - [ be32,0x00D8E3A4,0x7C101800]
+    - [ be32,0x00D8E3A8,0x4D9E0020]
+    - [ be32,0x00D8E3AC,0xF821FF51]
+    - [ be32,0x00D8E3B0,0x49656890]
+    - [ be32,0x023E4C48,0x4A9A9754]
+  TTroopers4: &TTroopers4
+    - [ be32,0x0233C474,0x386003E7]
+  TTroopers5: &TTroopers5
+    - [ be32,0x0231FB4C,0x3C803B9A]
+    - [ be32,0x0231FB50,0x6084C9FF]
+    - [ be32,0x0231FC00,0x3C803B9A]
+    - [ be32,0x0231FC04,0x6084C9FF]
+PPU-a31b54c21682252c501ba388ddcf8ae64ed1f5a3:
+  "Enable Codes":
+    Games:
+      "Tiny Troopers Joint Ops(Artemis)":
+        NPUB31483: [ 01.00 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: (Must Be On)
+    Patch Version: 1.0
+    Patch:
+      - [ load, *TTroopers ]
+PPU-a31b54c21682252c501ba388ddcf8ae64ed1f5a3:
+  "Infinite Health":
+    Games:
+      "Tiny Troopers Joint Ops(Artemis)":
+        NPUB31483: [ 01.00 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: (Requires Enable Codes)
+    Patch Version: 1.0
+    Patch:
+      - [ load, *TTroopers2 ]
+PPU-a31b54c21682252c501ba388ddcf8ae64ed1f5a3:
+  "Invincible":
+    Games:
+      "Tiny Troopers Joint Ops(Artemis)":
+        NPUB31483: [ 01.00 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: (Requires Enable Codes)
+    Patch Version: 1.0
+    Patch:
+      - [ load, *TTroopers3 ]
+PPU-a31b54c21682252c501ba388ddcf8ae64ed1f5a3:
+  "Infinite Grenades, Rockets":
+    Games:
+      "Tiny Troopers Joint Ops(Artemis)":
+        NPUB31483: [ 01.00 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *TTroopers4 ]
+PPU-a31b54c21682252c501ba388ddcf8ae64ed1f5a3:
+  "Max Gold On Gain":
+    Games:
+      "Tiny Troopers Joint Ops(Artemis)":
+        NPUB31483: [ 01.00 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *TTroopers5 ]
