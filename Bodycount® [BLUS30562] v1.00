@@ -1,0 +1,28 @@
+PPU-2b484d1a99acf3c91e2629f2935c6a27528a7c00:
+  Infinite Ammo + No Reload:
+    Games:
+      "Bodycount (Artemis)":
+        BLUS30562: [ 01.00]
+    Author: CodeFreak/PS3UserCheat
+    Notes: (Type Code ASM)
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x00425390,0x90030008]
+  Infinite Health:
+    Games:
+      "Bodycount (Artemis)":
+        BLUS30562: [ 01.00]
+    Author: jgduff Ported by ChIdReamS1
+    Notes: (Type Code ASM)
+    Patch Version: 1.0
+    Patch:
+     - [ be32, 0x009F5E98,0xEC224028]
+  Infinite Grenades:
+    Games:
+      "Bodycount (Artemis)":
+        BLUS30562: [ 01.00]
+    Author: bungholio Ported by ChIdReamS
+    Notes: (Type Code ASM)
+    Patch Version: 1.0
+    Patch:
+     - [ be32, 0x000D46CC, 0x60000000]
