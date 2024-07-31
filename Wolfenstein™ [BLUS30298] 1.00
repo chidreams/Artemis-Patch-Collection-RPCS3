@@ -1,0 +1,53 @@
+# Title: Wolfenstein™
+# Serial: BLUS30298
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00
+PPU-12237e198da5fc2939b39d895f9d818ec076d50d:
+  "Infinite Health":
+    Games:
+      "Wolfenstein (Artemis)":
+        BLUS30298: [ 01.00 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0052315C,0x3C007F80]
+    - [ be32,0x00523160,0x901F00D8]
+    - [ be32,0x00523164,0x901F00DC]
+    - [ be32,0x00EF7B80,0x3C0078F0]
+    - [ be32,0x00EF7B84,0x901B00D8]
+    - [ be32,0x00EF7B88,0x901B00DC]
+    - [ be32,0x00EF7B8C,0x48000020]
+    - [ be32,0x00EF7BAC,0xC1BB00D8]
+    - [ be32,0x00EF7BB0,0x4B62486C]
+    - [ be32,0x0051C418,0x489DB768]
+PPU-12237e198da5fc2939b39d895f9d818ec076d50d:
+  "Ammo And Grenades Never Decrease":
+    Games:
+      "Wolfenstein (Artemis)":
+        BLUS30298: [ 01.00 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x005BE1B4,0x60000000]
+PPU-12237e198da5fc2939b39d895f9d818ec076d50d:
+  "Veil Energy Never Decreases":
+    Games:
+      "Wolfenstein (Artemis)":
+        BLUS30298: [ 01.00 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0061B36C,0xC003000C]
+PPU-12237e198da5fc2939b39d895f9d818ec076d50d:
+  "Max Gold On Pickup":
+    Games:
+      "Wolfenstein (Artemis)":
+        BLUS30298: [ 01.00 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0052E860,0x48000060] 
