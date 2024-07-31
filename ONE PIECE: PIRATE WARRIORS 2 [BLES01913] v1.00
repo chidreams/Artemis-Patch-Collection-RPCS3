@@ -1,0 +1,141 @@
+#Title: ONE PIECE: PIRATE WARRIORS 2
+#Serial: BLES01913
+#Category: DG
+#Version: APP_VER=01.00 VERSION=01.00
+PPU-49695ddc72aea406d3a8b3e29bc82abcf1a4ebf2:
+  "Hit Range Size (1000x)":
+    Games:
+      "ONE PIECE: PIRATE WARRIORS 2 (Artemis)":
+        BLES01913: [ 01.00 ]
+    Author: xtatu
+    Notes: 000A=10x;0064=100x;03E8=1000x;2710=10000x
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00205F74,0x388003E8] 
+PPU-49695ddc72aea406d3a8b3e29bc82abcf1a4ebf2:
+  "Max Exp On Gain":
+    Games:
+      "ONE PIECE: PIRATE WARRIORS 2 (Artemis)":
+        BLES01913: [ 01.00 ]
+    Author: Medo
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0026E9E0,0x40810008] 
+PPU-49695ddc72aea406d3a8b3e29bc82abcf1a4ebf2:
+  "Infinite Health For Luffi + Sanji":
+    Games:
+      "ONE PIECE: PIRATE WARRIORS 2 (Artemis)":
+        BLES01913: [ 01.00 ]
+    Author: Medo
+    Notes: You will need to disable it if you fight them.
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00214CC8,0x60000000]
+PPU-49695ddc72aea406d3a8b3e29bc82abcf1a4ebf2:
+  "Max Special On Gain":
+    Games:
+      "ONE PIECE: PIRATE WARRIORS 2 (Artemis)":
+        BLES01913: [ 01.00 ]
+    Author: Medo
+    Notes: 
+    Patch Version: 1.2
+    Group: B    
+    Patch:
+    - [ be32,0x00209ABC,0x38E00FA0]
+PPU-49695ddc72aea406d3a8b3e29bc82abcf1a4ebf2:
+  "Infinite Special":
+    Games:
+      "ONE PIECE: PIRATE WARRIORS 2 (Artemis)":
+        BLES01913: [ 01.00 ]
+    Author: Medo
+    Notes: 
+    Patch Version: 1.2
+    Group: B    
+    Patch:
+    - [ be32,0x00227FE4,0x60000000] 
+PPU-49695ddc72aea406d3a8b3e29bc82abcf1a4ebf2:
+  "Max Transform (Luffy)":
+    Games:
+      "ONE PIECE: PIRATE WARRIORS 2 (Artemis)":
+        BLES01913: [ 01.00 ]
+    Author: Medo
+    Notes: 
+    Patch Version: 1.2
+    Group: A    
+    Patch:
+    - [ be32,0x0021CD48,0x3DE0463B]
+    - [ be32,0x0021CD4C,0x61EF8000]
+    - [ be32,0x0021CD50,0x91FE04F8]
+PPU-49695ddc72aea406d3a8b3e29bc82abcf1a4ebf2:
+  "Infinite Transform (Luffy)":
+    Games:
+      "ONE PIECE: PIRATE WARRIORS 2 (Artemis)":
+        BLES01913: [ 01.00 ]
+    Author: Medo
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+    - [ be32,0x0021C754,0x60000000]
+    - [ be32,0x0021D028,0x60000000]    
+    PPU-49695ddc72aea406d3a8b3e29bc82abcf1a4ebf2:
+  "Movement Speed Modifier (2x)":
+    Games:
+      "ONE PIECE: PIRATE WARRIORS 2 (Artemis)":
+        BLES01913: [ 01.00 ]
+    Author: xtatu
+    Notes: 3F80=Normal;4000=2x;4040=3x;4080=4x;40A0=5x
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x001E762C,0x3CC04000]
+PPU-49695ddc72aea406d3a8b3e29bc82abcf1a4ebf2:
+  "Movement Speed 1P Mode (2x)":
+    Games:
+      "ONE PIECE: PIRATE WARRIORS 2 (Artemis)":
+        BLES01913: [ 01.00 ]
+    Author: xtatu
+    Notes: 3F80=Normal;4000=2x;4040=3x;4080=4x;40A0=5x
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0021D464,0x3D204000]    
+PPU-49695ddc72aea406d3a8b3e29bc82abcf1a4ebf2:
+  "When Enemy Hits Infinite HP (Phase 3 Code Does Not Handle)":
+    Games:
+      "ONE PIECE: PIRATE WARRIORS 2 (Artemis)":
+        BLES01913: [ 01.00 ]
+    Author: xtatu
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x003318A8,0xBC23D70A]    
+PPU-49695ddc72aea406d3a8b3e29bc82abcf1a4ebf2:
+  "Luffy Mode Style Full Auto Mode":
+    Games:
+      "ONE PIECE: PIRATE WARRIORS 2 (Artemis)":
+        BLES01913: [ 01.00 ]
+    Author: xtatu
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0021B47C,0x4082043C]    
+PPU-49695ddc72aea406d3a8b3e29bc82abcf1a4ebf2:
+  "Max Money":
+    Games:
+      "ONE PIECE: PIRATE WARRIORS 2 (Artemis)":
+        BLES01913: [ 01.00 ]
+    Author: xtatu
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0026D3E4,0x7CC53378]    
+PPU-49695ddc72aea406d3a8b3e29bc82abcf1a4ebf2:
+  "K.O. 1,000,000":
+    Games:
+      "ONE PIECE: PIRATE WARRIORS 2 (Artemis)":
+        BLES01913: [ 01.00 ]
+    Author: xtatu
+    Notes: 
+    Patch Version: 1.2
+    Patch:    
+    - [ be32,0x00343AFC,0x2C080000]    
