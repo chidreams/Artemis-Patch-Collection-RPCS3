@@ -1,0 +1,109 @@
+PPU-98af44a0b9e296d01619c79bced9a1985b4b6908:
+  "Max Nitro":
+    Games:
+      "Need for Speed Most Wanted":
+        BLUS31010: [ 01.00 ]
+    Author: vosman
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+    - [ be32,0x0025B4C4,0xFC22DEEE]
+PPU-98af44a0b9e296d01619c79bced9a1985b4b6908:
+  "Infinite Nitro":
+    Games:
+      "Need for Speed Most Wanted":
+        BLUS31010: [ 01.00 ]
+    Author: vosman
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+    - [ be32,0x0025C024,0x60000000]
+PPU-98af44a0b9e296d01619c79bced9a1985b4b6908:
+  "Max SP":
+    Games:
+      "Need for Speed Most Wanted":
+        BLUS31010: [ 01.00 ]
+    Author: vosman
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+    - [ be32,0x002E4958,0x3FC03B9A]
+    - [ be32,0x002E495C,0x63DEC9FF]
+PPU-98af44a0b9e296d01619c79bced9a1985b4b6908:
+  "Max And Infinite Nitro":
+    Games:
+      "Need for Speed Most Wanted":
+        BLUS31010: [ 01.00 ]
+    Author: FBML
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+    - [ be32,0x0025BB74,0xFC20E090]
+PPU-98af44a0b9e296d01619c79bced9a1985b4b6908:
+  "Max And Infinite Nitro v2":
+    Games:
+      "Need for Speed Most Wanted":
+        BLUS31010: [ 01.00 ]
+    Author: FBML
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+    - [ be32,0x0025BEF0,0x60000000]
+PPU-98af44a0b9e296d01619c79bced9a1985b4b6908:
+  "Max Nitro On Gain":
+    Games:
+      "Need for Speed Most Wanted":
+        BLUS31010: [ 01.00 ]
+    Author: FBML
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+    - [ be32,0x0025B178,0xFC20E090]
+    - [ be32,0x0025B2B0,0xFC20E090]
+    - [ be32,0x0025B4C8,0xFC20E090]
+    - [ be32,0x0025B59C,0xFC20E018]
+    - [ be32,0x0025B61C,0xFC20E090]
+    - [ be32,0x0025B7E4,0xFC20E090]
+    - [ be32,0x0025B9A8,0xFC20E090]
+    - [ be32,0x0025CA90,0xFCA02090]
+    - [ be32,0x0025CB34,0xFCA02090]
+PPU-98af44a0b9e296d01619c79bced9a1985b4b6908:
+  "Heat Level Always Low And Instantly Evade Pursuit On Cooldown":
+    Games:
+      "Need for Speed Most Wanted":
+        BLUS31010: [ 01.00 ]
+    Author: FBML
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+    - [ be32,0x0029239C,0xC03F03B0]
+PPU-98af44a0b9e296d01619c79bced9a1985b4b6908:
+  "Instantly Evade Pursuit On Cooldown":
+    Games:
+      "Need for Speed Most Wanted":
+        BLUS31010: [ 01.00 ]
+    Author: FBML
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+    - [ be32,0x0029659C,0xFC201090]
+PPU-98af44a0b9e296d01619c79bced9a1985b4b6908:
+  "Police Can Never Arrest You":
+    Games:
+      "Need for Speed Most Wanted":
+        BLUS31010: [ 01.00 ]
+    Author: FBML
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+    - [ be32,0x002369EC,0xFC201890]
+PPU-98af44a0b9e296d01619c79bced9a1985b4b6908:
+  "Max Speed Points (Ranking) On Gain":
+    Games:
+      "Need for Speed Most Wanted":
+        BLUS31010: [ 01.00 ]
+    Author: FBML
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+    - [ be32,0x002E4940,0x7CA62B78]
