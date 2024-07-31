@@ -1,0 +1,80 @@
+PPU-93a545fee68108c289cc5b4e7cc4d9588b4fa1b1:
+  "1P Infinite Health":
+    Games:
+      " SOULCALIBUR IV (Artemis)":
+        BLUS30160: [ 01.03 ]
+    Author: Randy97Killa
+    Notes: 
+    Patch Version: 1.5
+    Patch:
+    - [ be32,0x009C2820,0x3DE000D4]
+    - [ be32,0x009C2824,0x61EF5120]
+    - [ be32,0x009C2828,0x7C0F1840]
+    - [ be32,0x009C282C,0x4082000C]
+    - [ be32,0x009C2830,0xC1A90030]
+    - [ be32,0x009C2834,0xD1A9002C]
+    - [ be32,0x009C2838,0xEC0C682A]
+    - [ be32,0x009C283C,0x4E800020]
+    - [ be32,0x00111B00,0x488B0D21]
+PPU-93a545fee68108c289cc5b4e7cc4d9588b4fa1b1:
+  "Button Enable Codes [Must Be On]":
+    Games:
+      " SOULCALIBUR IV (Artemis)":
+        BLUS30160: [ 01.03 ]
+    Author: Randy97Killa
+    Notes: 
+    Patch Version: 1.5
+    Patch:
+    - [ be32,0x009C2720,0x2C1A0000]
+    - [ be32,0x009C2724,0x4082000C]
+    - [ be32,0x009C2728,0x3DC00174]
+    - [ be32,0x009C272C,0x93EEFFFC]
+    - [ be32,0x009C2730,0x915F001C]
+    - [ be32,0x009C2734,0x3E000174]
+    - [ be32,0x009C2738,0x8230FFFC]
+    - [ be32,0x009C273C,0x8231001C]
+    - [ be32,0x009C2740,0x9230FFF4]
+    - [ be32,0x009C2744,0x4E800020]
+    - [ be32,0x00613A6C,0x483AECB5]
+PPU-93a545fee68108c289cc5b4e7cc4d9588b4fa1b1:
+  "Kills CPU Anytimes (Press L3 + X)":
+    Games:
+      " SOULCALIBUR IV (Artemis)":
+        BLUS30160: [ 01.03 ]
+    Author: Randy97Killa
+    Notes: [Requires Button Enable Codes]
+    Patch Version: 1.5
+    Patch:
+    - [ be32,0x009C274C,0x3FA000D9]
+    - [ be32,0x009C2750,0x63BDFAF0]
+    - [ be32,0x009C2754,0x7C1D1840]
+    - [ be32,0x009C2758,0x4082001C]
+    - [ be32,0x009C275C,0x3DE00174]
+    - [ be32,0x009C2760,0xA1EFFFF6]
+    - [ be32,0x009C2764,0x2C0F4002]
+    - [ be32,0x009C2768,0x4082000C]
+    - [ be32,0x009C276C,0x3DE0BF00]
+    - [ be32,0x009C2770,0x91E9002C]
+    - [ be32,0x009C2774,0xC1A90034]
+    - [ be32,0x009C2778,0x4E800020]
+    - [ be32,0x000356C4,0x4898D089]
+PPU-93a545fee68108c289cc5b4e7cc4d9588b4fa1b1:
+  "Freeze Stage Timer":
+    Games:
+      " SOULCALIBUR IV (Artemis)":
+        BLUS30160: [ 01.03 ]
+    Author: Randy97Killa
+    Notes: 
+    Patch Version: 1.5
+    Patch:
+    - [ be32,0x00164AB0,0x48000004]
+PPU-93a545fee68108c289cc5b4e7cc4d9588b4fa1b1:
+  "Freeze vs Timer":
+    Games:
+      " SOULCALIBUR IV (Artemis)":
+        BLUS30160: [ 01.03 ]
+    Author: Randy97Killa
+    Notes: 
+    Patch Version: 1.5
+    Patch:
+    - [ be32,0x00164B0C,0x48000004]
