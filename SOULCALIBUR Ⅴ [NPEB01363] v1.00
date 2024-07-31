@@ -1,0 +1,32 @@
+PPU-60c754823a1d0fef3eac5f98f25574cabc73232d:
+  1P Infinite Health:
+    Games:
+      "SOULCALIBUR V (Artemis)":
+        NPEB01363: [ 01.00 ]
+    Author: Randy97Killa
+    Notes: (Type Code ASM)
+    Patch Version: 1.0
+    Patch:
+      - [ be32, 0x0016BC44, 0xC0292688 ]
+      - [ be32, 0x0016BC48, 0xD029268C ]      
+  Stop Fighting-Timer:
+    Games:
+      "SOULCALIBUR V (Artemis)":
+        NPEB01363: [ 01.00 ]
+    Author: Randy97Killa
+    Notes: (Type Code ASM)
+    Patch Version: 1.0
+    Group: AA
+    Patch:
+     - [ be32, 0x000CD73C, 0x48000044 ]
+  Max Player Point Gain:
+    Games:
+      "SOULCALIBUR V (Artemis)":
+        NPEB01363: [ 01.00 ]
+    Author: Randy97Killa
+    Notes: (Type Code ASM)
+    Patch Version: 1.0
+    Group: AB
+    Patch:
+     - [ be32, 0x0002C190, 0x91AB0BF8 ]
+     - [ be32, 0x0002BB84, 0x91A60BF8 ]
