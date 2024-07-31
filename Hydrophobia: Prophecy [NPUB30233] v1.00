@@ -1,0 +1,34 @@
+PPU-5f8cc1d69a2d32cd0a25a9e03957c88235c5db7f:
+  "Infinite HP":
+    Games:
+      "Hydrophobia Prophecy (Artemis)":
+        NPUB30233: [ 01.00 ]
+    Author: Randy97Killa
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x00946C68,0x3C004F00]
+      - [ be32,0x00946C6C,0x9009056C]
+      - [ be32,0x00946C70,0x90090568]
+      - [ be32,0x00946C74,0x4B80F264]
+      - [ be32,0x00155ED4,0x487F0D94]
+PPU-5f8cc1d69a2d32cd0a25a9e03957c88235c5db7f:
+  "Infinite Breath-Underwater":
+    Games:
+      "Hydrophobia Prophecy (Artemis)":
+        NPUB30233: [ 01.00 ]
+    Author: Randy97Killa
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x0027C844,0x60000000]
+PPU-5f8cc1d69a2d32cd0a25a9e03957c88235c5db7f:
+  "Infinite Ammo-No Reload":
+    Games:
+      "Hydrophobia Prophecy (Artemis)":
+        NPUB30233: [ 01.00 ]
+    Author: Randy97Killa
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x00176B0C,0x4800000C]
