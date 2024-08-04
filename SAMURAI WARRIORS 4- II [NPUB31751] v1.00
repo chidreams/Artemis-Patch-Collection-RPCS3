@@ -1,0 +1,77 @@
+# Title: SAMURAI WARRIORS 4- II
+# Serial: NPUB31751
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.00
+Anchors:
+  SWARRIORS42: &SWARRIORS42
+      - [ be32,0x00888850,0x81030030]
+      - [ be32,0x00888854,0x91030034]
+      - [ be32,0x00888858,0x80630034]
+      - [ be32,0x0088885C,0x4E800020]
+      - [ be32,0x00284080,0x486047D1]
+  SWARRIORS422: &SWARRIORS422
+      - [ be32,0x0088888C,0xC03C0038]
+      - [ be32,0x00888890,0xD03C003C]
+      - [ be32,0x00888894,0xC03C003C]
+      - [ be32,0x00888898,0x4E800020]
+      - [ be32,0x000B3FB4,0x487D48D9]
+  SWARRIORS423: &SWARRIORS423
+      - [ be32,0x00888878,0xC03C0040]
+      - [ be32,0x0088887C,0xD03C0044]
+      - [ be32,0x00888880,0xC03C0044]
+      - [ be32,0x00888884,0x4E800020]
+      - [ be32,0x000B3FBC,0x487D48BD]
+  SWARRIORS424: &SWARRIORS424
+      - [ be32,0x000A1B3C,0x60000000]
+  SWARRIORS425: &SWARRIORS425
+      - [ be32,0x0003CE08,0x939F0050]
+PPU-e17d482e7a541eac4a0766aed9ef5e2579326cc7:
+  "Infinite HP For Currently-Controlled Character":
+    Games:
+      "SAMURAI WARRIORS 4-II (Artemis)":
+        NPUB31751: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SWARRIORS42 ]
+PPU-e17d482e7a541eac4a0766aed9ef5e2579326cc7:
+  "Max-Infinite Musou":
+    Games:
+      "SAMURAI WARRIORS 4-II (Artemis)":
+        NPUB31751: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SWARRIORS422 ]
+PPU-e17d482e7a541eac4a0766aed9ef5e2579326cc7:
+  "Max-Infinite Rage":
+    Games:
+      "SAMURAI WARRIORS 4-II (Artemis)":
+        NPUB31751: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SWARRIORS423 ]
+PPU-e17d482e7a541eac4a0766aed9ef5e2579326cc7:
+  "Total Combo Always x9999":
+    Games:
+      "SAMURAI WARRIORS 4-II (Artemis)":
+        NPUB31751: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SWARRIORS424 ]
+PPU-e17d482e7a541eac4a0766aed9ef5e2579326cc7:
+  "Total K.o.s Always x9999":
+    Games:
+      "SAMURAI WARRIORS 4-II (Artemis)":
+        NPUB31751: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SWARRIORS425 ]
