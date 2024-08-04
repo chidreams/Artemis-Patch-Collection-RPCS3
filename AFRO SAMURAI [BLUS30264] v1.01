@@ -1,0 +1,62 @@
+# Title: AFRO SAMURAI
+# Serial: BLUS30264
+# Category: GD
+# Version: APP_VER=01.01 VERSION=01.00
+Anchors:
+  SAMURAI: &SAMURAI
+    - [ be32,0x007C2130,0xC0230030]
+    - [ be32,0x007C2134,0xD0230000] # 60000000 Disable Infinite Health 
+    - [ be32,0x007C2138,0xC3E30004]
+    - [ be32,0x007C213C,0x280A0001]
+    - [ be32,0x007C2140,0x40800018]
+    - [ be32,0x007C2144,0x3D4000B9]
+    - [ be32,0x007C2148,0x894A2771]
+    - [ be32,0x007C214C,0x280A0002]
+    - [ be32,0x007C2150,0x40820008]
+    - [ be32,0x007C2154,0xD0230004]
+    - [ be32,0x007C2158,0x485E6D8E]
+    - [ be32,0x005E6D88,0x481DB3A8]
+  SAMURAI2: &SAMURAI2
+    - [ be32,0x007C20B0,0x913FFF24]
+    - [ be32,0x007C20B4,0x806B07AC]
+    - [ be32,0x007C20B8,0x4828D826]
+    - [ be32,0x007C20BC,0x3CE000B9]
+    - [ be32,0x007C20C0,0x80E78720]
+    - [ be32,0x007C20C4,0x7C071800]
+    - [ be32,0x007C20C8,0x4D820020] # 60000000 Disable Invincibility 
+    - [ be32,0x007C20CC,0xF821FEB1]
+    - [ be32,0x007C20D0,0x4823764A]
+    - [ be32,0x0028D820,0x487C20B2]
+    - [ be32,0x00237644,0x487C20BE]
+  SAMURAI3: &SAMURAI3
+    - [ be32,0x002230C4,0x419C0008]
+PPU-3debae0bdbf78e402587426f9c126b2b59b78440:
+  "Infinite Health + Full Power":
+    Games:
+      "AFRO SAMURAI (Artemis)":
+        BLUS30264: [ 01.01 ]
+    Author: GuitarMan ported by ChiDreamS
+    Notes: (L3 = Restore Power)
+    Patch Version: 1.3
+    Patch:
+      - [ load, *SAMURAI ]
+PPU-3debae0bdbf78e402587426f9c126b2b59b78440:
+  "Invincibility Against Physical Attacks":
+    Games:
+      "AFRO SAMURAI (Artemis)":
+        BLUS30264: [ 01.01 ]
+    Author: GuitarMan ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *SAMURAI2 ]
+PPU-3debae0bdbf78e402587426f9c126b2b59b78440:
+  "1 Hit Kill Enemies":
+    Games:
+      "AFRO SAMURAI (Artemis)":
+        BLUS30264: [ 01.01 ]
+    Author: GuitarMan ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *SAMURAI3 ]
