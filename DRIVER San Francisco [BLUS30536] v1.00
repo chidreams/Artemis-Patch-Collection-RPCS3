@@ -1,0 +1,26 @@
+# Title: DRIVER San Francisco
+# Serial: BLUS30536
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.01
+PPU-757a971c30a33495e22b47f9999bc25e15112856:
+  "Lot Of WP On Gain":
+    Games:
+      "DRIVER San Francisco (Artemis)":
+        BLUS30536: [ 01.01 ]
+    Author: jgduff Ported by ChIdReamS Ported by ChiDreamS
+    Notes: Save Your Game Immediately When You Have Lot Of WP.
+    Patch Version: 1.1
+    Group: A
+    Patch:
+    - [ be32,0x0013D260,0x91E30000]
+PPU-757a971c30a33495e22b47f9999bc25e15112856:
+  "Infinite WP":
+    Games:
+      "DRIVER San Francisco (Artemis)":
+        BLUS30536: [ 01.01 ]
+    Author: jgduff Ported by ChIdReamS Ported by ChiDreamS
+    Notes: Take "Infinite WP" After Gain Lot Of WP With "Lot Of WP On Gain" 
+    Patch Version: 1.1
+    Group: A
+    Patch:
+    - [ be32,0x0013D260,0x60000000]
