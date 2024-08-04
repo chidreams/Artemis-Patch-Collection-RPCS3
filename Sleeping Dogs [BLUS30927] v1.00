@@ -1,0 +1,175 @@
+# Title: Sleeping Dogs™
+# Serial: BLUS30927
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00
+Anchors:
+  SleepDogs: &SleepDogs
+    - [ be32,0x00577C88,0x3F8005F5]
+    - [ be32,0x00577C8C,0x639CE0FF]
+    - [ be32,0x00577C90,0x93830000]
+  SleepDogs2: &SleepDogs2
+    - [ be32,0x00F9E1B0,0x3FC0011D]
+    - [ be32,0x00F9E1B4,0x63DE3B1C]
+    - [ be32,0x00F9E1B8,0x83DE0000]
+    - [ be32,0x00F9E1BC,0x83DE0040]
+    - [ be32,0x00F9E1C0,0x7C1EF800]
+    - [ be32,0x00F9E1C4,0x41820008]
+    - [ be32,0x00F9E1C8,0x4B71C864]
+    - [ be32,0x00F9E1CC,0xC03F0034]
+    - [ be32,0x00F9E1D0,0xD03F002C]
+    - [ be32,0x00F9E1D4,0x4B71C858]
+    - [ be32,0x00F9E1E0,0x3FC0011A]
+    - [ be32,0x00F9E1E4,0x3BDEDCEC]
+    - [ be32,0x00F9E1E8,0x83DE0000]
+    - [ be32,0x00F9E1EC,0x3B800063]
+    - [ be32,0x00F9E1F0,0x939E0314]
+    - [ be32,0x00F9E1F4,0x939E0318]
+    - [ be32,0x00F9E1F8,0x939E031C]
+    - [ be32,0x00F9E1FC,0x3B802710]
+    - [ be32,0x00F9E200,0x939E033C]
+    - [ be32,0x00F9E204,0x939E0340]
+    - [ be32,0x00F9E208,0x3B8055F0]
+    - [ be32,0x00F9E20C,0x939E0344]
+    - [ be32,0x00F9E210,0x3B800005]
+    - [ be32,0x00F9E214,0x939E0328]
+    - [ be32,0x00F9E218,0x939E032C]
+    - [ be32,0x00F9E21C,0x939E0334]
+    - [ be32,0x00F9E220,0x939E0338]
+    - [ be32,0x00F9E224,0x3B800006]
+    - [ be32,0x00F9E228,0x939E0320]
+    - [ be32,0x00F9E22C,0x3B800007]
+    - [ be32,0x00F9E230,0x939E0324]
+    - [ be32,0x00F9E234,0x3B800000]
+    - [ be32,0x00F9E238,0x4B71C800]
+    - [ be32,0x006BAA18,0x488E3798]
+    - [ be32,0x006BAA30,0x488E37B0]
+  SleepDogs3: &SleepDogs3
+    - [ be32,0x006CFCC0,0x60000000]
+  SleepDogs4: &SleepDogs4
+    - [ be32,0x003E8164,0x60000000]
+    - [ be32,0x003E81B4,0x60000000]
+  SleepDogs5: &SleepDogs5
+    - [ be32,0x0067464C,0x60000000]
+  SleepDogs6: &SleepDogs6
+    - [ be32,0x006BB688,0xC3FF0034]
+    - [ be32,0x006BB68C,0xD3FF002C]
+  SleepDogs7: &SleepDogs7
+    - [ be32,0x006CFA88,0x48000008]
+  SleepDogs8: &SleepDogs8
+    - [ be32,0x006D03CC,0x48000008]
+  SleepDogs9: &SleepDogs9
+    - [ be32,0x005A50BC,0x3D003B9A]
+    - [ be32,0x005A50C0,0x6108C9FF]
+    - [ be32,0x005B8B58,0x3D003B9A]
+    - [ be32,0x005B8B5C,0x6108C9FF]
+    - [ be32,0x005B93E4,0x3D003B9A]
+    - [ be32,0x005B93E8,0x6108C9FF]
+  SleepDogs10: &SleepDogs10
+    - [ be32,0x005723E4,0x3CC03B9A]
+    - [ be32,0x005723E8,0x60C6C9FF]
+    - [ be32,0x005724F4,0x3CC03B9A]
+    - [ be32,0x005724F8,0x60C6C9FF]
+    - [ be32,0x005733D8,0x3CC03B9A]
+    - [ be32,0x005733DC,0x60C6C9FF]
+PPU-fdee1f86077b3fee48c24b7a5f0c44631ee7ca07:
+  "Max Cash On Use Except From Drinking From The Refrigerator":
+    Games:
+      "Sleeping Dogs (Artemis)":
+        BLUS30927: [ 01.00 ]
+    Author: FBML ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SleepDogs ]
+PPU-fdee1f86077b3fee48c24b7a5f0c44631ee7ca07:
+  "Infinite Health":
+    Games:
+      "Sleeping Dogs (Artemis)":
+        BLUS30927: [ 01.00 ]
+    Author: FBML ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SleepDogs2 ]
+PPU-fdee1f86077b3fee48c24b7a5f0c44631ee7ca07:
+  "Infinite Ammo":
+    Games:
+      "Sleeping Dogs (Artemis)":
+        BLUS30927: [ 01.00 ]
+    Author: FBML ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SleepDogs3 ]
+PPU-fdee1f86077b3fee48c24b7a5f0c44631ee7ca07:
+  "No Melee Attack To You":
+    Games:
+      "Sleeping Dogs (Artemis)":
+        BLUS30927: [ 01.00 ]
+    Author: FBML ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SleepDogs4 ]
+PPU-fdee1f86077b3fee48c24b7a5f0c44631ee7ca07:
+  "Jump To Training Room From Anywhere":
+    Games:
+      "Sleeping Dogs (Artemis)":
+        BLUS30927: [ 01.00 ]
+    Author: FBML ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SleepDogs5 ]
+PPU-fdee1f86077b3fee48c24b7a5f0c44631ee7ca07:
+  "Max + Infinite Health":
+    Games:
+      "Sleeping Dogs (Artemis)":
+        BLUS30927: [ 01.00 ]
+    Author: FBML ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SleepDogs6 ]
+PPU-fdee1f86077b3fee48c24b7a5f0c44631ee7ca07:
+  "Max + Infinite Ammo In Clip":
+    Games:
+      "Sleeping Dogs (Artemis)":
+        BLUS30927: [ 01.00 ]
+    Author: FBML ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SleepDogs7 ]
+PPU-fdee1f86077b3fee48c24b7a5f0c44631ee7ca07:
+  "Max + Infinite Ammo In Inventory":
+    Games:
+      "Sleeping Dogs (Artemis)":
+        BLUS30927: [ 01.00 ]
+    Author: FBML ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SleepDogs8 ]
+PPU-fdee1f86077b3fee48c24b7a5f0c44631ee7ca07:
+  "999,999,999 Money After Spending Some Money":
+    Games:
+      "Sleeping Dogs (Artemis)":
+        BLUS30927: [ 01.00 ]
+    Author: FBML ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Group: D
+    Patch:
+      - [ load, *SleepDogs9 ]
+PPU-fdee1f86077b3fee48c24b7a5f0c44631ee7ca07:
+  "999,999,999 Money On Gain":
+    Games:
+      "Sleeping Dogs (Artemis)":
+        BLUS30927: [ 01.00 ]
+    Author: FBML ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Group: D
+    Patch:
+      - [ load, *SleepDogs10 ]
