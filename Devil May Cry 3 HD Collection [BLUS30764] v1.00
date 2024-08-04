@@ -1,0 +1,260 @@
+# Title: Devil May Cry® HD Collection
+# Serial: BLUS30764
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00
+# converted notes: " gully"
+# DMC1 PPU-a4b022f2678d3e9a5f12b332600080167e45a0d9
+# DMC2 PPU-7501376898fe6826158d1f0f366513ef278cb132
+# DMC3 PPU-1da6c6ce584ccacad283dc57640438f2fae33314
+Anchors:
+  DevilMC1: &DevilMC1
+    - [be32,0x0015BFDC,0x60000000]
+  DevilMC1: &DevilMC12
+    - [be32,0x00164330,0x38A003E7]
+  DevilMC1: &DevilMC13
+    - [be32,0x00038410,0x60000000]
+  DevilMC2: &DevilMC2
+    - [be32,0x0028EEB8,0x409D0048]
+  DevilMC22: &DevilMC22
+    - [be32,0x000379F4,0x39604E20]
+  DevilMC23: &DevilMC23
+    - [be32,0x002E4430,0x301F042E]
+  DevilMC3: &DevilMC3
+    - [be32,0x0030CF10,0x60000000]
+  DevilMC32: &DevilMC32
+    - [be32,0x003E7A98,0x90A90004]
+  DevilMC33: &DevilMC33
+    - [be32,0x006DB1B0,0x3D0047C3]
+    - [be32,0x006DB1B4,0x61085000]
+    - [be32,0x006DB1B8,0x911F4108]
+    - [be32,0x006DB1BC,0x48323A7A]
+    - [be32,0x00323A74,0x486DB1B2]
+  DevilMC34: &DevilMC34
+    - [be32,0x003FDBC0,0x98C9000F]
+    - [be32,0x003FDBD8,0x811133F0]
+    - [be32,0x003FDC18,0x98C8004A]
+  DevilMC35: &DevilMC35
+    - [be32,0x006DB1D0,0x61500000]
+    - [be32,0x006DB1D4,0xD1B02CF0]
+    - [be32,0x006DB1D8,0xD1B02CF8]
+    - [be32,0x006DB1DC,0xD1B02CFC]
+    - [be32,0x006DB1E0,0x3E200002]
+    - [be32,0x006DB1E4,0x62310007]
+    - [be32,0x006DB1E8,0x92302CEC]
+    - [be32,0x006DB1EC,0xC00A2CF8]
+    - [be32,0x006DB1F0,0x483E6C6E]
+    - [be32,0x003E6C68,0x486DB1D2]
+  DevilMC36: &DevilMC36
+    - [be32,0x00309E50,0x99FF4100]
+  DevilMC37: &DevilMC37
+    - [be32,0x00301648,0x60000000]
+    - [be32,0x00301708,0x60000000]
+    - [be32,0x00301794,0x60000000]
+  DevilMC38: &DevilMC38
+    - [be32,0x002F27B8,0x39200007]
+    - [be32,0x002F27C8,0x913F4274]
+    - [be32,0x003E3048,0x60000000]
+  DevilMC39: &DevilMC39
+    - [be32,0x002AD1DC,0x7C021214]
+    - [be32,0x002AD1E8,0x90090094]
+  DevilMC310: &DevilMC310
+    - [be32,0x000A3920,0x409E0008]
+  DevilMC311: &DevilMC311
+    - [be32,0x002FE07C,0x60000000]
+  DevilMC312: &DevilMC312
+    - [be32,0x0031E288,0x3CE0469C]
+    - [be32,0x0031E294,0x60E74000]
+    - [be32,0x0031E2A0,0x90FF2F28]
+  DevilMC313: &DevilMC313
+    - [be32,0x0031E218,0x3D6012C8]
+    - [be32,0x0031E224,0x917F2E68] 
+PPU-a4b022f2678d3e9a5f12b332600080167e45a0d9:
+  "Max + Infinite Red Orbs":
+    Games:
+      "Devil May Cry HD Collection (Artemis)":
+        BLUS30764: [ 01.00 ]
+    Author: Medo ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DevilMC1 ]
+PPU-a4b022f2678d3e9a5f12b332600080167e45a0d9:
+  "Max + Infinite Yellow Orbs":
+    Games:
+      "Devil May Cry HD Collection (Artemis)":
+        BLUS30764: [ 01.00 ]
+    Author: Medo ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DevilMC12 ]
+PPU-a4b022f2678d3e9a5f12b332600080167e45a0d9:
+  "Infinite Health":
+    Games:
+      "Devil May Cry HD Collection (Artemis)":
+        BLUS30764: [ 01.00 ]
+    Author: Medo ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DevilMC13 ]
+PPU-7501376898fe6826158d1f0f366513ef278cb132:
+  "Max Red Orbs":
+    Games:
+      "Devil May Cry 2 HD Collection (Artemis)":
+        BLUS30764: [ 01.00 ]
+    Author: Medo ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DevilMC2 ]
+PPU-7501376898fe6826158d1f0f366513ef278cb132:
+  "Infinite Health":
+    Games:
+      "Devil May Cry 2 HD Collection (Artemis)":
+        BLUS30764: [ 01.00 ]
+    Author: Medo ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DevilMC22 ]
+PPU-7501376898fe6826158d1f0f366513ef278cb132:
+  "Infinite Devil Trigger":
+    Games:
+      "Devil May Cry 2 HD Collection (Artemis)":
+        BLUS30764: [ 01.00 ]
+    Author: Medo ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DevilMC23 ]
+PPU-1da6c6ce584ccacad283dc57640438f2fae33314:
+  "Invincibility":
+    Games:
+      "Devil May Cry 3 HD Collection (Artemis)":
+        BLUS30764: [ 01.00 ]
+    Author: GuitarMan ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DevilMC3 ]
+PPU-1da6c6ce584ccacad283dc57640438f2fae33314:
+  "Max Red Orbs":
+    Games:
+      "Devil May Cry 3 HD Collection (Artemis)":
+        BLUS30764: [ 01.00 ]
+    Author: GuitarMan ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DevilMC32 ]
+PPU-1da6c6ce584ccacad283dc57640438f2fae33314:
+  "Max Style Xp On Gain":
+    Games:
+      "Devil May Cry 3 HD Collection (Artemis)":
+        BLUS30764: [ 01.00 ]
+    Author: GuitarMan ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DevilMC33 ]
+PPU-1da6c6ce584ccacad283dc57640438f2fae33314:
+  "Infinite Blue Orbs On Shop":
+    Games:
+      "Devil May Cry 3 HD Collection (Artemis)":
+        BLUS30764: [ 01.00 ]
+    Author: GuitarMan ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DevilMC34 ]
+PPU-1da6c6ce584ccacad283dc57640438f2fae33314:
+  "Max + Infinite Devil Trigger For Dante + Vergil":
+    Games:
+      "Devil May Cry 3 HD Collection (Artemis)":
+        BLUS30764: [ 01.00 ]
+    Author: GuitarMan ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DevilMC35 ]
+PPU-1da6c6ce584ccacad283dc57640438f2fae33314:
+  "Unlimited Trickster Dash For Dante":
+    Games:
+      "Devil May Cry 3 HD Collection (Artemis)":
+        BLUS30764: [ 01.00 ]
+    Author: GuitarMan ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DevilMC36 ]
+PPU-1da6c6ce584ccacad283dc57640438f2fae33314:
+  "Unlimited Sky Star, Air Trick, Trick Up, & Trick Down For Dante + Vergil":
+    Games:
+      "Devil May Cry 3 HD Collection (Artemis)":
+        BLUS30764: [ 01.00 ]
+    Author: GuitarMan ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DevilMC37 ]
+PPU-1da6c6ce584ccacad283dc57640438f2fae33314:
+  "Always SSS Stylish":
+    Games:
+      "Devil May Cry 3 HD Collection (Artemis)":
+        BLUS30764: [ 01.00 ]
+    Author: GuitarMan ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DevilMC38 ]
+PPU-1da6c6ce584ccacad283dc57640438f2fae33314:
+  "Max Red Orbs On Gain":
+    Games:
+      "Devil May Cry 3 HD Collection (Artemis)":
+        BLUS30764: [ 01.00 ]
+    Author: GuitarMan ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DevilMC39 ]
+PPU-1da6c6ce584ccacad283dc57640438f2fae33314:
+  "Infinite Item Usage":
+    Games:
+      "Devil May Cry 3 HD Collection (Artemis)":
+        BLUS30764: [ 01.00 ]
+    Author: GuitarMan ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DevilMC310 ]
+PPU-1da6c6ce584ccacad283dc57640438f2fae33314:
+  "Infinite Jumps (AirHike)":
+    Games:
+      "Devil May Cry 3 HD Collection (Artemis)":
+        BLUS30764: [ 01.00 ]
+    Author: GuitarMan ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DevilMC311 ]
+PPU-1da6c6ce584ccacad283dc57640438f2fae33314:
+  "Infinite Health For Dante + Vergil":
+    Games:
+      "Devil May Cry 3 HD Collection (Artemis)":
+        BLUS30764: [ 01.00 ]
+    Author: GuitarMan ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DevilMC312 ]
+PPU-1da6c6ce584ccacad283dc57640438f2fae33314:
+  "Sword Attack Power Modifier For Dante + Vergil":
+    Games:
+      "Devil May Cry 3 HD Collection (Artemis)":
+        BLUS30764: [ 01.00 ]
+    Author: GuitarMan ported by ChiDreamS
+    Notes: 4120=10x;42C8=100x;447A=1,000x
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DevilMC313 ]
