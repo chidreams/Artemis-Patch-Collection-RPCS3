@@ -1,0 +1,80 @@
+# Title: DmC Devil May Cry
+# Serial: BLUS30723
+# Category: DG
+# Version: APP_VER=01.01 VERSION=01.00
+Anchors:
+  DmC5: &DmC5
+    - [ be32,0x007A5F34,0xC0A30844]
+    - [ be32,0x007A5F38,0x60000000]
+    - [ be32,0x007A5F3C,0xFCC11028]
+    - [ be32,0x007A5F40,0xFCE12028]
+    - [ be32,0x007A5F44,0xFC2608AE]
+    - [ be32,0x007A5F48,0xFC27206E]
+    - [ be32,0x007A5F4C,0xEC23287A]
+    - [ be32,0x007A5F50,0xD0230840]
+Anchors:
+  DmC52: &DmC52
+    - [ be32,0x00661F90,0x60000000]
+    - [ be32,0x00661F94,0x3C80000F]
+    - [ be32,0x00661F98,0x60844240]
+Anchors:
+  DmC53: &DmC53
+    - [ be32,0x0079C934,0x48C1AC31]
+    - [ be32,0x013B7564,0x80BF0080] 
+    - [ be32,0x013B7568,0x90BF0084] 
+    - [ be32,0x013B756C,0x90BF0088] 
+    - [ be32,0x013B7570,0x7FE3FB78] 
+    - [ be32,0x013B7574,0x4E800020]
+Anchors:
+  DmC54: &DmC54
+    - [ be32,0x007B630C,0x48C01279]
+    - [ be32,0x013B7584,0x3CE04CBE]
+    - [ be32,0x013B7588,0x60E7BC20]
+    - [ be32,0x013B758C,0x90E30360]
+    - [ be32,0x013B7590,0x80A30344]
+    - [ be32,0x013B7594,0x2F850000]
+    - [ be32,0x013B7598,0x419E000C]
+    - [ be32,0x013B759C,0x38A00007]
+    - [ be32,0x013B75A0,0x90A30344]
+    - [ be32,0x013B75A4,0x38A00000]
+    - [ be32,0x013B75A8,0x4E800020] 
+PPU-2e7188a894c2120b78d0468fc3f27a7d4acd7789:
+  "Infinite Health ":
+    Games:
+      "DmC Devil May Cry (Artemis)":
+        BLUS30723: [ 01.01 ]
+    Author: wreckognize Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DmC5 ]
+PPU-2e7188a894c2120b78d0468fc3f27a7d4acd7789:
+  "MAX Red Orbs 999,999 (WHEN GET) ":
+    Games:
+      "DmC Devil May Cry (Artemis)":
+        BLUS30723: [ 01.01 ]
+    Author: wreckognize Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DmC52 ]
+PPU-2e7188a894c2120b78d0468fc3f27a7d4acd7789:
+  "Infinite Devil Trigger ":
+    Games:
+      "DmC Devil May Cry (Artemis)":
+        BLUS30723: [ 01.01 ]
+    Author: wreckognize Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DmC53 ]
+PPU-2e7188a894c2120b78d0468fc3f27a7d4acd7789:
+  "STYLE POINTS SSS ":
+    Games:
+      "DmC Devil May Cry (Artemis)":
+        BLUS30723: [ 01.01 ]
+    Author: wreckognize Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DmC54 ]
