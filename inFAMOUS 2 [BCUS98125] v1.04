@@ -1,0 +1,166 @@
+# Title: inFAMOUS™ 2 Additional Content
+# Serial: BCUS98125
+# Category: GD
+# Version: APP_VER=01.04 VERSION=01.00
+#  PPU executable hash: PPU-41a7d047c573c78c0307506c9d1b52d15a66e4f5 v1.04
+Anchors:
+  inFAMOUS4: &inFAMOUS4
+    - [ be32,0x001F4764,0x3C000000]
+  inFAMOUS42: &inFAMOUS42
+    - [ be32,0x001D99BC,0x3CC03E80]
+  inFAMOUS43: &inFAMOUS43
+    - [ be32,0x0022A104,0x3C004000]
+  inFAMOUS44: &inFAMOUS44
+    - [ be32,0x00154DAC,0x60000000]
+  inFAMOUS45: &inFAMOUS45
+    - [ be32,0x00155F18,0x60000000]
+  inFAMOUS46: &inFAMOUS46
+    - [ be32,0x0017AC50,0x3C007F7F]
+    - [ be32,0x0017AC54,0x900907EC]
+    - [ be32,0x0017AC58,0x900907F0]
+  inFAMOUS47: &inFAMOUS47
+    - [ be32,0x0017AC7C,0x60000000]
+  inFAMOUS48: &inFAMOUS48
+    - [ be32,0x001582F4,0x60000000]
+  inFAMOUS49: &inFAMOUS49
+    - [ be32,0x0012FE34,0xEC210028]
+  inFAMOUS410: &inFAMOUS410
+    - [ be32,0x0012FE58,0x60000000]
+  inFAMOUS411: &inFAMOUS411
+    - [ be32,0x0012FE50,0x60000000]
+  inFAMOUS412: &inFAMOUS412
+    - [ be32,0x0012FE6C,0x480000C0]
+  inFAMOUS413: &inFAMOUS413
+    - [ be32,0x0012FE6C,0x60000000]
+PPU-41a7d047c573c78c0307506c9d1b52d15a66e4f5:
+  "Most Enemies Never Attack":
+    Games:
+      "inFAMOUS 2 (Artemis)":
+        BCUS98125: [ 01.04 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFAMOUS4 ]
+PPU-41a7d047c573c78c0307506c9d1b52d15a66e4f5:
+  "AI Movement Speed Modifier":
+    Games:
+      "inFAMOUS 2 (Artemis)":
+        BCUS98125: [ 01.04 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFAMOUS42 ]
+PPU-41a7d047c573c78c0307506c9d1b52d15a66e4f5:
+  "Jump Height Multiplier":
+    Games:
+      "inFAMOUS 2 (Artemis)":
+        BCUS98125: [ 01.04 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFAMOUS43 ]
+PPU-41a7d047c573c78c0307506c9d1b52d15a66e4f5:
+  "Electrical Attacks Do Not Decrease Electricity":
+    Games:
+      "inFAMOUS 2 (Artemis)":
+        BCUS98125: [ 01.04 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFAMOUS44 ]
+PPU-41a7d047c573c78c0307506c9d1b52d15a66e4f5:
+  "Zooming For A Sniper Shot Does Not Decrease Electricity":
+    Games:
+      "inFAMOUS 2 (Artemis)":
+        BCUS98125: [ 01.04 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFAMOUS45 ]
+PPU-41a7d047c573c78c0307506c9d1b52d15a66e4f5:
+  "Cole Never Dies":
+    Games:
+      "inFAMOUS 2 (Artemis)":
+        BCUS98125: [ 01.04 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFAMOUS46 ]
+PPU-41a7d047c573c78c0307506c9d1b52d15a66e4f5:
+  "Cole Does Not React To Harm":
+    Games:
+      "inFAMOUS 2 (Artemis)":
+        BCUS98125: [ 01.04 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: Do not use this without the code "Cole Never Dies" or the screen will go black right about where you would normally die.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFAMOUS47 ]
+PPU-41a7d047c573c78c0307506c9d1b52d15a66e4f5:
+  "Ionic Charges Never Decrease":
+    Games:
+      "inFAMOUS 2 (Artemis)":
+        BCUS98125: [ 01.04 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFAMOUS48 ]
+PPU-41a7d047c573c78c0307506c9d1b52d15a66e4f5:
+  "Instant Karma Changes Version 1":
+    Games:
+      "inFAMOUS 2 (Artemis)":
+        BCUS98125: [ 01.04 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+      - [ load, *inFAMOUS49 ]
+PPU-41a7d047c573c78c0307506c9d1b52d15a66e4f5:
+  "Instant Karma Changes Version 2":
+    Games:
+      "inFAMOUS 2 (Artemis)":
+        BCUS98125: [ 01.04 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+      - [ load, *inFAMOUS410 ]
+PPU-41a7d047c573c78c0307506c9d1b52d15a66e4f5:
+  "Nothing Changes Karma":
+    Games:
+      "inFAMOUS 2 (Artemis)":
+        BCUS98125: [ 01.04 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFAMOUS411 ]
+PPU-41a7d047c573c78c0307506c9d1b52d15a66e4f5:
+  "Can Only Gain Evil Karma":
+    Games:
+      "inFAMOUS 2 (Artemis)":
+        BCUS98125: [ 01.04 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFAMOUS412 ]
+PPU-41a7d047c573c78c0307506c9d1b52d15a66e4f5:
+  "Can Only Gain Good Karma":
+    Games:
+      "inFAMOUS 2 (Artemis)":
+        BCUS98125: [ 01.04 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFAMOUS413 ]
