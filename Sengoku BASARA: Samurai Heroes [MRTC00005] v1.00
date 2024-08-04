@@ -1,0 +1,222 @@
+# Title: Sengoku BASARA: Samurai Heroes
+# Serial: MRTC00005
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00
+Anchors:
+  Basara3: &Basara3
+    - [ be32,0x001748F0,0x60000000]
+  Basara32: &Basara32
+    - [ be32,0x0009FFB0,0x60000000]
+  Basara33: &Basara33
+    - [ be32,0x000A3C6C,0x60000000]
+  Basara34: &Basara34
+    - [ be32,0x00587D34,0x60000000]
+    - [ be32,0x00587D50,0x60000000]
+  Basara35: &Basara35
+    - [ be32,0x0008F550,0x7F9C4A14]
+  Basara36: &Basara36
+    - [ be32,0x0006CA90,0x409D0050]
+  Basara37: &Basara37
+    - [ be32,0x000A5254,0x60000000]
+  Basara38: &Basara38
+    - [ be32,0x000AA70C,0x60000000]
+    - [ be32,0x0037DB6C,0x60000000]
+    - [ be32,0x00080088,0x7D3D4B78]
+  Basara39: &Basara39
+    - [ be32,0x00D465A0,0x3E004F00]
+    - [ be32,0x00D465A4,0x92030224]
+    - [ be32,0x00D465A8,0x92030220]
+    - [ be32,0x00D465AC,0x92030228]
+    - [ be32,0x00D465B0,0x9203022C]
+    - [ be32,0x00D465B4,0x80010090]
+    - [ be32,0x00D465B8,0x4E800020]
+    - [ be32,0x0016E16C,0x48BD8435]
+  Basara310: &Basara310
+    - [ be32,0x0016E19C,0x8009026C]
+  Basara311: &Basara311
+    - [ be32,0x00DBBB18,0x80030240]
+    - [ be32,0x00DBBB1C,0x9003023C]
+    - [ be32,0x00DBBB20,0x80030240]
+    - [ be32,0x00DBBB24,0x90030244]
+    - [ be32,0x00DBBB28,0x8063023C]
+    - [ be32,0x00DBBB2C,0x4B3BA764]
+    - [ be32,0x0017628C,0x48C4588C]
+  Basara312: &Basara312
+    - [ be32,0x00CCD4D0,0x2C040013]
+    - [ be32,0x00CCD4D4,0x40820010]
+    - [ be32,0x00CCD4D8,0x3DC0015A]
+    - [ be32,0x00CCD4DC,0x912EEFD8]
+    - [ be32,0x00CCD4E0,0x930EEFDC]
+    - [ be32,0x00CCD4E4,0x63030000]
+    - [ be32,0x00CCD4E8,0x4E800020]
+    - [ be32,0x001711A4,0x48B5C32D]
+  Basara313: &Basara313
+    - [ be32,0x00CCD514,0x3DE0015A]
+    - [ be32,0x00CCD518,0x81EFEFD8]
+    - [ be32,0x00CCD51C,0x7C0FD800]
+    - [ be32,0x00CCD520,0x40820038]
+    - [ be32,0x00CCD524,0x28000000]
+    - [ be32,0x00CCD528,0x40820004]
+    - [ be32,0x00CCD52C,0x801B0224]
+    - [ be32,0x00CCD530,0x901B0220]
+    - [ be32,0x00CCD534,0x28000000]
+    - [ be32,0x00CCD538,0x40820004]
+    - [ be32,0x00CCD53C,0x801B0240]
+    - [ be32,0x00CCD540,0x901B023C]
+    - [ be32,0x00CCD544,0x901B0244]
+    - [ be32,0x00CCD548,0x28000000]
+    - [ be32,0x00CCD54C,0x40820004]
+    - [ be32,0x00CCD550,0x3C003F80]
+    - [ be32,0x00CCD554,0x901B06A8]
+    - [ be32,0x00CCD558,0x801B0220]
+    - [ be32,0x00CCD55C,0x4E800020]
+    - [ be32,0x001823F0,0x48B4B125]
+  Basara314: &Basara314
+    - [ be32,0x00CCD4F0,0x3E00015A]
+    - [ be32,0x00CCD4F4,0x8210EFDC]
+    - [ be32,0x00CCD4F8,0x7C10C800]
+    - [ be32,0x00CCD4FC,0x40820008]
+    - [ be32,0x00CCD500,0x4D820020]
+    - [ be32,0x00CCD504,0xF821FEA1]
+    - [ be32,0x00CCD508,0x4816DEDA]
+    - [ be32,0x0016DED4,0x48CCD4F2]
+PPU-06a41e923a3b04beac5121d0174c82bfffb8bd2a:
+  "P1 Sengoku Boost Max While Increasing":
+    Games:
+      "Sengoku BASARA: Samurai Heroes (Artemis)":
+        MRTC00005: [ 01.00 ]
+    Author: ChaosZage Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Basara3 ]
+PPU-06a41e923a3b04beac5121d0174c82bfffb8bd2a:
+  "Koku 99999 In Battle":
+    Games:
+      "Sengoku BASARA: Samurai Heroes (Artemis)":
+        MRTC00005: [ 01.00 ]
+    Author: ChaosZage Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Basara32 ]
+PPU-06a41e923a3b04beac5121d0174c82bfffb8bd2a:
+  "Hits 99999 In Battle":
+    Games:
+      "Sengoku BASARA: Samurai Heroes (Artemis)":
+        MRTC00005: [ 01.00 ]
+    Author: ChaosZage Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Basara33 ]
+PPU-06a41e923a3b04beac5121d0174c82bfffb8bd2a:
+  "K.O.9999 In Battle":
+    Games:
+      "Sengoku BASARA: Samurai Heroes (Artemis)":
+        MRTC00005: [ 01.00 ]
+    Author: ChaosZage Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Basara34 ]
+PPU-06a41e923a3b04beac5121d0174c82bfffb8bd2a:
+  "Max Level After 2 Battles":
+    Games:
+      "Sengoku BASARA: Samurai Heroes (Artemis)":
+        MRTC00005: [ 01.00 ]
+    Author: ChaosZage Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Basara35 ]
+PPU-06a41e923a3b04beac5121d0174c82bfffb8bd2a:
+  "999 Materials After A Battle":
+    Games:
+      "Sengoku BASARA: Samurai Heroes (Artemis)":
+        MRTC00005: [ 01.00 ]
+    Author: ChaosZage Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Basara36 ]
+PPU-06a41e923a3b04beac5121d0174c82bfffb8bd2a:
+  "Max Hit Combo":
+    Games:
+      "Sengoku BASARA: Samurai Heroes (Artemis)":
+        MRTC00005: [ 01.00 ]
+    Author: Skiller Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Basara37 ]
+PPU-06a41e923a3b04beac5121d0174c82bfffb8bd2a:
+  "Max Money After Battle 99999":
+    Games:
+      "Sengoku BASARA: Samurai Heroes (Artemis)":
+        MRTC00005: [ 01.00 ]
+    Author: Skiller Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Basara38 ]
+PPU-06a41e923a3b04beac5121d0174c82bfffb8bd2a:
+  "Infinite Health":
+    Games:
+      "Sengoku BASARA: Samurai Heroes (Artemis)":
+        MRTC00005: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreamS
+    Notes: Combine it with infinite health.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Basara39 ]
+PPU-06a41e923a3b04beac5121d0174c82bfffb8bd2a:
+  "Invincible From Melee Attacks":
+    Games:
+      "Sengoku BASARA: Samurai Heroes (Artemis)":
+        MRTC00005: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Basara310 ]
+PPU-06a41e923a3b04beac5121d0174c82bfffb8bd2a:
+  "Infinite Musou + Infinite Basara":
+    Games:
+      "Sengoku BASARA: Samurai Heroes (Artemis)":
+        MRTC00005: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Basara311 ]
+PPU-06a41e923a3b04beac5121d0174c82bfffb8bd2a:
+  "Enable Codes (Must Be On)":
+    Games:
+      "Sengoku BASARA: Samurai Heroes (Artemis)":
+        MRTC00005: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Basara312 ]
+PPU-06a41e923a3b04beac5121d0174c82bfffb8bd2a:
+  "Full Health + Full Musou + Full Rages + Speed Hack (Requires Enable Codes )":
+    Games:
+      "Sengoku BASARA: Samurai Heroes (Artemis)":
+        MRTC00005: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Basara313 ]
+PPU-06a41e923a3b04beac5121d0174c82bfffb8bd2a:
+  "Invincibility (Requires Enable Codes )":
+    Games:
+      "Sengoku BASARA: Samurai Heroes (Artemis)":
+        MRTC00005: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Basara314 ]
