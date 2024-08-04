@@ -1,0 +1,244 @@
+# Title: CLASH OF THE TITANS
+# Serial: BLUS30505
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00
+Anchors:
+  CTITANS: &CTITANS
+    - [ be32,0x0006C2CC,0x4E800020]
+  CTITANS2: &CTITANS2
+    - [ be32,0x0043C8FC,0xC0450618]
+    - [ be32,0x0043B2A8,0xD045061C]
+  CTITANS3: &CTITANS3
+    - [ be32,0x00A367C0,0xC00535FC]
+    - [ be32,0x00A367C4,0x2805FFFF]
+    - [ be32,0x00A367C8,0x40810010]
+    - [ be32,0x00A367CC,0xC2030000]
+    - [ be32,0x00A367D0,0xEE300272]
+    - [ be32,0x00A367D4,0xD22535FC]
+    - [ be32,0x00A367D8,0x482CFBFA]
+    - [ be32,0x002CFBF4,0x48A367C2]
+    - [ be32,0x000A1A00,0x60000000]
+  CTITANS4: &CTITANS4
+    - [ be32,0x002D2254,0x38600001]
+    - [ be32,0x0029FAE0,0x39400001]
+    - [ be32,0x002AE980,0x38800001]
+    - [ be32,0x0053EC40,0x39600001]
+    - [ be32,0x0053EA90,0x38800001]
+    - [ be32,0x002ADB4C,0x3BE00001]
+    - [ be32,0x002AD5B4,0x39600001]
+    - [ be32,0x002A9F30,0x39600001]
+    - [ be32,0x002B4F5C,0x38800001]
+    - [ be32,0x002AD8CC,0x39800001]
+    - [ be32,0x002B0DD4,0x39600001]
+    - [ be32,0x002B5220,0x39800001]
+    - [ be32,0x002A44B0,0x3BE00001]
+    - [ be32,0x002A9D7C,0x39600001]
+    - [ be32,0x002B5788,0x38A00001]
+    - [ be32,0x002D22B4,0x39600001]
+    - [ be32,0x002D2314,0x3B800001]
+    - [ be32,0x002AC084,0x39800001]
+    - [ be32,0x002B5A38,0x39600001]
+    - [ be32,0x002A995C,0x39600001]
+    - [ be32,0x002B2CFC,0x39600001]
+    - [ be32,0x002B6740,0x38800001]
+    - [ be32,0x002A945C,0x39600001]
+    - [ be32,0x002B5EC8,0x3BA00001]
+    - [ be32,0x002ACCC8,0x39C00001]
+    - [ be32,0x002ACC4C,0x38000001]
+    - [ be32,0x003A9D2C,0x3BC00001]
+    - [ be32,0x002B09BC,0x39600001]
+    - [ be32,0x002B54D0,0x38A00001]
+    - [ be32,0x002D21F4,0x38600001]
+    - [ be32,0x002AA1F0,0x39600001]
+    - [ be32,0x00A36830,0x82080010]
+    - [ be32,0x00A36834,0x28100076]
+    - [ be32,0x00A36838,0x40820008]
+    - [ be32,0x00A3683C,0x48577E2E]
+    - [ be32,0x00A36840,0x28100075]
+    - [ be32,0x00A36844,0x40820008]
+    - [ be32,0x00A36848,0x48577E2E]
+    - [ be32,0x00A3684C,0x2810006C]
+    - [ be32,0x00A36850,0x40820008]
+    - [ be32,0x00A36854,0x48577E2E]
+    - [ be32,0x00A36858,0x281000D0]
+    - [ be32,0x00A3685C,0x40820008]
+    - [ be32,0x00A36860,0x48577E2E]
+    - [ be32,0x00A36864,0x281000D4]
+    - [ be32,0x00A36868,0x40820008]
+    - [ be32,0x00A3686C,0x48577E2E]
+    - [ be32,0x00A36870,0x281000D1]
+    - [ be32,0x00A36874,0x40820008]
+    - [ be32,0x00A36878,0x48577E2E]
+    - [ be32,0x00A3687C,0x281000D5]
+    - [ be32,0x00A36880,0x40820008]
+    - [ be32,0x00A36884,0x48577E2E]
+    - [ be32,0x00A36888,0x28100139]
+    - [ be32,0x00A3688C,0x40820008]
+    - [ be32,0x00A36890,0x48577E2E]
+    - [ be32,0x00A36894,0x28100137]
+    - [ be32,0x00A36898,0x40820008]
+    - [ be32,0x00A3689C,0x48577E2E]
+    - [ be32,0x00A368A0,0x2810013A]
+    - [ be32,0x00A368A4,0x40820008]
+    - [ be32,0x00A368A8,0x48577E2E]
+    - [ be32,0x00A368AC,0x28100136]
+    - [ be32,0x00A368B0,0x40820008]
+    - [ be32,0x00A368B4,0x48577E2E]
+    - [ be32,0x00A368B8,0x28100134]
+    - [ be32,0x00A368BC,0x40820008]
+    - [ be32,0x00A368C0,0x48577E2E]
+    - [ be32,0x00A368C4,0x281001F9]
+    - [ be32,0x00A368C8,0x40820008]
+    - [ be32,0x00A368CC,0x48577E2E]
+    - [ be32,0x00A368D0,0x2810025A]
+    - [ be32,0x00A368D4,0x40820008]
+    - [ be32,0x00A368D8,0x48577E2E]
+    - [ be32,0x00A368DC,0x2810025D]
+    - [ be32,0x00A368E0,0x40820008]
+    - [ be32,0x00A368E4,0x48577E2E]
+    - [ be32,0x00A368E8,0x281002C0]
+    - [ be32,0x00A368EC,0x40820008]
+    - [ be32,0x00A368F0,0x48577E2E]
+    - [ be32,0x00A368F4,0x2810038C]
+    - [ be32,0x00A368F8,0x40820008]
+    - [ be32,0x00A368FC,0x48577E2E]
+    - [ be32,0x00A36900,0x28100326]
+    - [ be32,0x00A36904,0x40820008]
+    - [ be32,0x00A36908,0x48577E2E]
+    - [ be32,0x00A3690C,0x28100323]
+    - [ be32,0x00A36910,0x40820008]
+    - [ be32,0x00A36914,0x48577E2E]
+    - [ be32,0x00A36918,0x281004B1]
+    - [ be32,0x00A3691C,0x40820008]
+    - [ be32,0x00A36920,0x48577E2E]
+    - [ be32,0x00A36924,0x281004B3]
+    - [ be32,0x00A36928,0x40820008]
+    - [ be32,0x00A3692C,0x48577E2E]
+    - [ be32,0x00A36930,0x80880010]
+    - [ be32,0x00A36934,0x48577E26]
+    - [ be32,0x00577E20,0x48A36832]
+  CTITANS6: &CTITANS6
+    - [ be32,0x00A36940,0x39600001]
+    - [ be32,0x00A36944,0x917F351C]
+    - [ be32,0x00A36948,0x917F3520]
+    - [ be32,0x00A3694C,0x917F3524]
+    - [ be32,0x00A36950,0x917F352C]
+    - [ be32,0x00A36954,0x917F357C]
+    - [ be32,0x00A36958,0x917F3588]
+    - [ be32,0x00A3695C,0x83A10074]
+    - [ be32,0x00A36960,0x4807B2CA]
+    - [ be32,0x0007B2C0,0x48A36942]
+  CTITANS7: &CTITANS7
+    - [ be32,0x003922B0,0x3BE02710]
+  CTITANS8: &CTITANS8
+    - [ be32,0x00A3697C,0xC1BE3204]
+    - [ be32,0x00A36980,0x3CE000B6]
+    - [ be32,0x00A36984,0x60E7C5C4]
+    - [ be32,0x00A36988,0x80E72BAC]
+    - [ be32,0x00A3698C,0x80E70000]
+    - [ be32,0x00A36990,0x80E70248]
+    - [ be32,0x00A36994,0x7C07F000]
+    - [ be32,0x00A36998,0x40820018]
+    - [ be32,0x00A3699C,0x38E00064]
+    - [ be32,0x00A369A0,0xF8E1000C]
+    - [ be32,0x00A369A4,0xC9A1000C]
+    - [ be32,0x00A369A8,0xFDA06E9C]
+    - [ be32,0x00A369AC,0xD1BE3204]
+    - [ be32,0x00A369B0,0x4804A3CE]
+    - [ be32,0x0004A2C8,0x480000FC]
+    - [ be32,0x0004A3C8,0x48A3697E]
+  CTITANS9: &CTITANS9
+    - [ be32,0x0007BD6C,0xFD89482A]
+  CTITANS10: &CTITANS10
+    - [ be32,0x002ABE0C,0x39407FFF]
+    - [ be32,0x002ABE14,0x915E0008]
+PPU-da73890b8b01e031758cd551255d38ef77083f3a:
+  "Invincibility":
+    Games:
+      "CLASH OF THE TITANS (Artemis)":
+        BLUS30505: [ 01.00 ]
+    Author: GuitarMan  ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *CTITANS ]
+PPU-da73890b8b01e031758cd551255d38ef77083f3a:
+  "Infinite HP":
+    Games:
+      "CLASH OF THE TITANS (Artemis)":
+        BLUS30505: [ 01.00 ]
+    Author: GuitarMan  ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *CTITANS2 ]
+PPU-da73890b8b01e031758cd551255d38ef77083f3a:
+  "Infinite Soul Gauge":
+    Games:
+      "CLASH OF THE TITANS (Artemis)":
+        BLUS30505: [ 01.00 ]
+    Author: GuitarMan  ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *CTITANS3 ]
+PPU-da73890b8b01e031758cd551255d38ef77083f3a:
+  "Have All Weapons":
+    Games:
+      "CLASH OF THE TITANS (Artemis)":
+        BLUS30505: [ 01.00 ]
+    Author: GuitarMan  ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *CTITANS4 ]
+PPU-da73890b8b01e031758cd551255d38ef77083f3a:
+  "Can Attack Anywhere":
+    Games:
+      "CLASH OF THE TITANS (Artemis)":
+        BLUS30505: [ 01.00 ]
+    Author: GuitarMan  ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *CTITANS6 ]
+PPU-da73890b8b01e031758cd551255d38ef77083f3a:
+  "10000 Gifts on Gain":
+    Games:
+      "CLASH OF THE TITANS (Artemis)":
+        BLUS30505: [ 01.00 ]
+    Author: GuitarMan  ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *CTITANS7 ]
+PPU-da73890b8b01e031758cd551255d38ef77083f3a:
+  "Attack Power Modifier 100x":
+    Games:
+      "CLASH OF THE TITANS (Artemis)":
+        BLUS30505: [ 01.00 ]
+    Author: GuitarMan  ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *CTITANS8 ]
+PPU-da73890b8b01e031758cd551255d38ef77083f3a:
+  "Hight Speed Instantly Charged":
+    Games:
+      "CLASH OF THE TITANS (Artemis)":
+        BLUS30505: [ 01.00 ]
+    Author: GuitarMan  ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *CTITANS9 ]
+PPU-da73890b8b01e031758cd551255d38ef77083f3a:
+  "Max Seize Points":
+    Games:
+      "CLASH OF THE TITANS (Artemis)":
+        BLUS30505: [ 01.00 ]
+    Author: GuitarMan  ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *CTITANS10 ]
