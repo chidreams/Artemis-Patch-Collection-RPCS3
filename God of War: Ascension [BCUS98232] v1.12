@@ -1,0 +1,521 @@
+# Title: God of War: Ascension™
+# Serial: BCUS98232
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.12 
+Anchors:
+  GOWASC: &GOWASC
+     - [ be32,0x00687320,0xA2FF42A6]
+     - [ be32,0x00687324,0x3F0000D8]
+     - [ be32,0x00687328,0xB2F8F004]
+     - [ be32,0x0068732C,0x72E01400]
+     - [ be32,0x00687330,0xA338F006]
+     - [ be32,0x00687334,0xB018F006]
+     - [ be32,0x00687338,0x2B801400]
+     - [ be32,0x0068733C,0x409E0018]
+     - [ be32,0x00687340,0x7F990040]
+     - [ be32,0x00687344,0x419E0010]
+     - [ be32,0x00687348,0x8818F00E]
+     - [ be32,0x0068734C,0x68000001]
+     - [ be32,0x00687350,0x9818F00E]
+     - [ be32,0x00687354,0x72E02400]
+     - [ be32,0x00687358,0xA338F008]
+     - [ be32,0x0068735C,0xB018F008]
+     - [ be32,0x00687360,0x2B802400]
+     - [ be32,0x00687364,0x409E0018]
+     - [ be32,0x00687368,0x7F990040]
+     - [ be32,0x0068736C,0x419E0010]
+     - [ be32,0x00687370,0x8818F00E]
+     - [ be32,0x00687374,0x68000002]
+     - [ be32,0x00687378,0x9818F00E]
+     - [ be32,0x0068737C,0x72E04400]
+     - [ be32,0x00687380,0xA338F00A]
+     - [ be32,0x00687384,0xB018F00A]
+     - [ be32,0x00687388,0x2B804400]
+     - [ be32,0x0068738C,0x409E0018]
+     - [ be32,0x00687390,0x7F990040]
+     - [ be32,0x00687394,0x419E0010]
+     - [ be32,0x00687398,0x8818F00E]
+     - [ be32,0x0068739C,0x68000004]
+     - [ be32,0x006873A0,0x9818F00E]
+     - [ be32,0x006873A4,0x72E08400]
+     - [ be32,0x006873A8,0xA338F00C]
+     - [ be32,0x006873AC,0xB018F00C]
+     - [ be32,0x006873B0,0x2B808400]
+     - [ be32,0x006873B4,0x409E0018]
+     - [ be32,0x006873B8,0x7F990040]
+     - [ be32,0x006873BC,0x419E0010]
+     - [ be32,0x006873C0,0x8818F00E]
+     - [ be32,0x006873C4,0x68000008]
+     - [ be32,0x006873C8,0x9818F00E]
+     - [ be32,0x006873CC,0xE80100F0]
+     - [ be32,0x006873D0,0x4E800020]
+     - [ be32,0x002EAB8C,0x48687323]
+  GOWASC1: &GOWASC1 
+     - [ be32,0x006E59AC,0xC0440000]
+     - [ be32,0x006E59B0,0x3C6000D8]
+     - [ be32,0x006E59B4,0x8863F00E]
+     - [ be32,0x006E59B8,0x70630004]
+     - [ be32,0x006E59BC,0x2B830004]
+     - [ be32,0x006E59C0,0x409E003C]
+     - [ be32,0x006E59C4,0x807F1304]
+     - [ be32,0x006E59C8,0x2B830000]
+     - [ be32,0x006E59CC,0x419E0030]
+     - [ be32,0x006E59D0,0x80630000]
+     - [ be32,0x006E59D4,0x80630010]
+     - [ be32,0x006E59D8,0x80630000]
+     - [ be32,0x006E59DC,0x80630000]
+     - [ be32,0x006E59E0,0x3CA04E80]
+     - [ be32,0x006E59E4,0x60A50020]
+     - [ be32,0x006E59E8,0x7F851840]
+     - [ be32,0x006E59EC,0x409E0010]
+     - [ be32,0x006E59F0,0x3C603FF0]
+     - [ be32,0x006E59F4,0x9061FFFC]
+     - [ be32,0x006E59F8,0xC041FFFC]
+     - [ be32,0x006E59FC,0x4E800020]
+     - [ be32,0x000882EC,0x486E59AF]
+  GOWASC2: &GOWASC2
+     - [ be32,0x006D19B4,0xFC4320AE]
+     - [ be32,0x006D19B8,0x3C8000D8]
+     - [ be32,0x006D19BC,0x8884F00E]
+     - [ be32,0x006D19C0,0x70840002]
+     - [ be32,0x006D19C4,0x2B840002]
+     - [ be32,0x006D19C8,0x409E0034]
+     - [ be32,0x006D19CC,0x809F1304]
+     - [ be32,0x006D19D0,0x2B840000]
+     - [ be32,0x006D19D4,0x419E0024]
+     - [ be32,0x006D19D8,0x80840000]
+     - [ be32,0x006D19DC,0x80840010]
+     - [ be32,0x006D19E0,0x80840000]
+     - [ be32,0x006D19E4,0x80840000]
+     - [ be32,0x006D19E8,0x3CA04E80]
+     - [ be32,0x006D19EC,0x60A50020]
+     - [ be32,0x006D19F0,0x7F842840]
+     - [ be32,0x006D19F4,0x419E0008]
+     - [ be32,0x006D19F8,0xEC421028]
+     - [ be32,0x006D19FC,0x4E800020]
+     - [ be32,0x00087598,0x486D19B7]
+     - [ be32,0x000845E4,0x486D19B7] # This line causes them to die on spawn, so if you want to not have this effect then leave this line out.
+  GOWASC3: &GOWASC3 
+     - [ be32,0x0068FA70,0x807F1304]
+     - [ be32,0x0068FA74,0x2B830000]
+     - [ be32,0x0068FA78,0x419E0028]
+     - [ be32,0x0068FA7C,0x3CA04E80]
+     - [ be32,0x0068FA80,0x60A50020]
+     - [ be32,0x0068FA84,0x80630000]
+     - [ be32,0x0068FA88,0x80630010]
+     - [ be32,0x0068FA8C,0x80630000]
+     - [ be32,0x0068FA90,0x80630000]
+     - [ be32,0x0068FA94,0x7F851840]
+     - [ be32,0x0068FA98,0x409E0008]
+     - [ be32,0x0068FA9C,0xC03F0218]
+     - [ be32,0x0068FAA0,0xD03F0224]
+     - [ be32,0x0068FAA4,0x4E800020]
+     - [ be32,0x0068FAA8,0x3F0000D8]
+     - [ be32,0x0068FAAC,0x8B18F00E]
+     - [ be32,0x0068FAB0,0x73180001]
+     - [ be32,0x0068FAB4,0x2B980001]
+     - [ be32,0x0068FAB8,0x409E004C]
+     - [ be32,0x0068FABC,0x831C1304]
+     - [ be32,0x0068FAC0,0x2B980000]
+     - [ be32,0x0068FAC4,0x419E0040]
+     - [ be32,0x0068FAC8,0x3C004E80]
+     - [ be32,0x0068FACC,0x60000020]
+     - [ be32,0x0068FAD0,0x83180000]
+     - [ be32,0x0068FAD4,0x83180010]
+     - [ be32,0x0068FAD8,0x83180000]
+     - [ be32,0x0068FADC,0x83180000]
+     - [ be32,0x0068FAE0,0x7F980040]
+     - [ be32,0x0068FAE4,0x409E0020]
+     - [ be32,0x0068FAE8,0x83010220]
+     - [ be32,0x0068FAEC,0x2B980000]
+     - [ be32,0x0068FAF0,0x409E0010]
+     - [ be32,0x0068FAF4,0x831B0000]
+     - [ be32,0x0068FAF8,0x2B983C00]
+     - [ be32,0x0068FAFC,0x419E0008]
+     - [ be32,0x0068FB00,0x48159CF6]
+     - [ be32,0x0068FB04,0x60780000]
+     - [ be32,0x0068FB08,0x4E800020]
+     - [ be32,0x000875E4,0x4868FA73]
+     - [ be32,0x00159718,0x4868FAAF] 
+  GOWASC4: &GOWASC4
+     - [ be32,0x00686E48,0x80830000]
+     - [ be32,0x00686E4C,0x80841304]
+     - [ be32,0x00686E50,0x2B840000]
+     - [ be32,0x00686E54,0x419E0024]
+     - [ be32,0x00686E58,0x80840000]
+     - [ be32,0x00686E5C,0x80840010]
+     - [ be32,0x00686E60,0x80840000]
+     - [ be32,0x00686E64,0x80840000]
+     - [ be32,0x00686E68,0x3C004E80]
+     - [ be32,0x00686E6C,0x60000020]
+     - [ be32,0x00686E70,0x7F840040]
+     - [ be32,0x00686E74,0x4D9E0020]
+     - [ be32,0x00686E78,0xF821FE61]
+     - [ be32,0x00686E7C,0x48154B2E]
+     - [ be32,0x00154B28,0x48686E4A]
+  GOWASC5: &GOWASC5
+     - [ be32,0x00686E48,0x80830000]
+     - [ be32,0x00686E4C,0x80841304]
+     - [ be32,0x00686E50,0x2B840000]
+     - [ be32,0x00686E54,0x419E0024]
+     - [ be32,0x00686E58,0x80840000]
+     - [ be32,0x00686E5C,0x80840010]
+     - [ be32,0x00686E60,0x80840000]
+     - [ be32,0x00686E64,0x80840000]
+     - [ be32,0x00686E68,0x3C004E80]
+     - [ be32,0x00686E6C,0x60000020]
+     - [ be32,0x00686E70,0x7F840040]
+     - [ be32,0x00686E74,0x4D9E0020]
+     - [ be32,0x00686E78,0xF821FE61]
+     - [ be32,0x00686E7C,0x48154B2E]
+     - [ be32,0x00154B28,0x48686E4A]
+  GOWASC6: &GOWASC6
+     - [ be32,0x005AA614,0x80051E80]
+     - [ be32,0x005AA618,0x7C042378]
+     - [ be32,0x005AA61C,0x90851E80]
+     - [ be32,0x005AA620,0x60000000]
+  GOWASC7: &GOWASC7
+     - [ be32,0x00247F98,0x60000000]  
+  GOWASC8: &GOWASC8
+     - [ be32,0x002481F0,0xD0230020]
+     - [ be32,0x00248218,0xD0230020]   
+  GOWASC9: &GOWASC9
+     - [ be32,0x0066A6C0,0xFC20E01E]
+     - [ be32,0x0066A6C4,0xD3830010]
+     - [ be32,0x0066A6C8,0x4E800020]
+     - [ be32,0x000992B0,0x4866A6C3]   
+  GOWASC10: &GOWASC10
+     - [ be32,0x00271428,0x60000000]
+  GOWASC11: &GOWASC11
+    - [ be32,0x00686E00,0x809F1304]
+    - [ be32,0x00686E04,0x2B840000]
+    - [ be32,0x00686E08,0x419E0028]
+    - [ be32,0x00686E0C,0x80840000]
+    - [ be32,0x00686E10,0x80840010]
+    - [ be32,0x00686E14,0x80840000]
+    - [ be32,0x00686E18,0x80840000]
+    - [ be32,0x00686E1C,0x3CA04E80]
+    - [ be32,0x00686E20,0x60A50020]
+    - [ be32,0x00686E24,0x7F842840]
+    - [ be32,0x00686E28,0x409E0008]
+    - [ be32,0x00686E2C,0xFC402090]
+    - [ be32,0x00686E30,0xD05F0214]
+    - [ be32,0x00686E34,0x4E800020]
+    - [ be32,0x0008759C,0x485FF865]
+  GOWASC12: &GOWASC12
+    - [ be32,0x001EDDDC,0x60000000]
+  GOWASC13: &GOWASC13
+    - [ be32,0x0024A6F4,0x60000000]
+  GOWASC14: &GOWASC14
+    - [ be32,0x0067ED04,0x3C6000D8]
+    - [ be32,0x0067ED08,0x3CA042C8]
+    - [ be32,0x0067ED0C,0x90A3F000]
+    - [ be32,0x0067ED10,0xC043F000]
+    - [ be32,0x0067ED14,0xEFFF00B2]
+    - [ be32,0x0067ED18,0x63E30000]
+    - [ be32,0x0067ED1C,0x4E800020]
+    - [ be32,0x0024A7BC,0x4867ED07]
+  GOWASC15: &GOWASC15
+    - [ be32,0x0024AA4C,0x38600000]
+    - [ be32,0x0024AA50,0x907F001C]
+  GOWASC16: &GOWASC16
+    - [ be32,0x006D1AB0,0xFC4520AE]
+    - [ be32,0x006D1AB4,0x809F10D0]
+    - [ be32,0x006D1AB8,0x2B840000]
+    - [ be32,0x006D1ABC,0x419E0028]
+    - [ be32,0x006D1AC0,0x80840000]
+    - [ be32,0x006D1AC4,0x80840010]
+    - [ be32,0x006D1AC8,0x80840000]
+    - [ be32,0x006D1ACC,0x80840000]
+    - [ be32,0x006D1AD0,0x3C004E80]
+    - [ be32,0x006D1AD4,0x60000020]
+    - [ be32,0x006D1AD8,0x7F840040]
+    - [ be32,0x006D1ADC,0x409E0008]
+    - [ be32,0x006D1AE0,0xEC421028]
+    - [ be32,0x006D1AE4,0x4E800020]
+    - [ be32,0x00222BEC,0x486D1AB3]
+  GOWASC17: &GOWASC17
+    - [ be32,0x006E57C8,0xEC43102A]
+    - [ be32,0x006E57CC,0x809F10D0]
+    - [ be32,0x006E57D0,0x2B840000]
+    - [ be32,0x006E57D4,0x419E0024]
+    - [ be32,0x006E57D8,0x80840000]
+    - [ be32,0x006E57DC,0x80840010]
+    - [ be32,0x006E57E0,0x80840000]
+    - [ be32,0x006E57E4,0x80840000]
+    - [ be32,0x006E57E8,0x3C004E80]
+    - [ be32,0x006E57EC,0x60000020]
+    - [ be32,0x006E57F0,0x7F840040]
+    - [ be32,0x006E57F4,0x419E0008]
+    - [ be32,0x006E57F8,0xFC400890]
+    - [ be32,0x006E57FC,0x4E800020]
+    - [ be32,0x00222BF0,0x486E57CB]
+    - [ be32,0x00087544,0x38600000]
+  GOWASC18: &GOWASC18
+    - [ be32,0x006DB648,0xEC220828]
+    - [ be32,0x006DB64C,0x809A1304]
+    - [ be32,0x006DB650,0x2B840000]
+    - [ be32,0x006DB654,0x419E0028]
+    - [ be32,0x006DB658,0x80840000]
+    - [ be32,0x006DB65C,0x80840010]
+    - [ be32,0x006DB660,0x80840000]
+    - [ be32,0x006DB664,0x80840000]
+    - [ be32,0x006DB668,0x3C004E80]
+    - [ be32,0x006DB66C,0x60000020]
+    - [ be32,0x006DB670,0x7F840040]
+    - [ be32,0x006DB674,0x419E0008]
+    - [ be32,0x006DB678,0xFC201090]
+    - [ be32,0x006DB67C,0x4E800020]
+    - [ be32,0x0022239C,0x486DB64B]
+  GOWASC19: &GOWASC19
+    - [ be32,0x006C3ECC,0x80830610]
+    - [ be32,0x006C3ED0,0x2B840000]
+    - [ be32,0x006C3ED4,0x419E0024]
+    - [ be32,0x006C3ED8,0x80840000]
+    - [ be32,0x006C3EDC,0x80840010]
+    - [ be32,0x006C3EE0,0x80840000]
+    - [ be32,0x006C3EE4,0x80840000]
+    - [ be32,0x006C3EE8,0x3C004E80]
+    - [ be32,0x006C3EEC,0x60000020]
+    - [ be32,0x006C3EF0,0x7F840040]
+    - [ be32,0x006C3EF4,0x4C9E0020]
+    - [ be32,0x006C3EF8,0xF821FF71]
+    - [ be32,0x006C3EFC,0x48220BAE]
+    - [ be32,0x00220BA8,0x486C3ECE]
+  GOWASC20: &GOWASC20
+    - [ be32,0x001CE6F4,0xD3DF0034]
+  GOWASC21: &GOWASC21
+    - [ be32,0x0057908C,0x63840000]  
+  GOWASC22: &GOWASC22
+     - [ bef32,0x003a52b4,1000]
+     - [ bef32,0x002d024c,6667]    
+PPU-3a0b43e4a5f4bfea64f53612ee7c5d990f88129c:
+  (B) Button Enable Code:
+    Games:
+      "God of War: Ascension (Artemis)":
+        BCUS98232: [ 01.12 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *GOWASC ]
+PPU-3a0b43e4a5f4bfea64f53612ee7c5d990f88129c:
+  (B) Toggle Animation Speed Increase With R3 + \/:
+    Games:
+      "God of War: Ascension (Artemis)":
+        BCUS98232: [ 01.12 ]
+    Author: wulf2k
+    Notes: 3F80=default;3F90=1.125x;3FA0=1.25x;3FB0=1.375x;3F C0=1.5x;3FD0=1.625x;3FE0=1.75x;3FF0=1.875x;4000=2x
+    Patch Version: 1.0
+    Patch:
+      - [ load, *GOWASC1 ]
+PPU-3a0b43e4a5f4bfea64f53612ee7c5d990f88129c:
+  (B) Press R3 + > To Toggle Enemies Die From Any Damage Or Die On Spawn:
+    Games:
+      "God of War: Ascension (Artemis)":
+        BCUS98232: [ 01.12 ]
+    Author: wulf2k
+    Notes: Enemies dying on spawn can definitely break the game, Enemies dying from 1 hit also breaks game
+    Patch Version: 1.0
+    Patch:
+      - [ load, *GOWASC2 ]
+PPU-3a0b43e4a5f4bfea64f53612ee7c5d990f88129c:
+  (B) Toggle Invincibility From Melee Attacks And Grabs With R3 + ^:
+    Games:
+      "God of War: Ascension (Artemis)":
+        BCUS98232: [ 01.12 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: If you encounter some parts of the game not functioning correctly, toggle this off and retry
+    Patch Version: 1.0
+    Patch:
+      - [ load, *GOWASC3 ]
+PPU-3a0b43e4a5f4bfea64f53612ee7c5d990f88129c:
+  Invincibility From Explosions And Various Other Things:
+    Games:
+      "God of War: Ascension (Artemis)":
+        BCUS98232: [ 01.12 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *GOWASC4 ]
+PPU-3a0b43e4a5f4bfea64f53612ee7c5d990f88129c:
+  Invincibility From Explosions And Various Other Things:
+    Games:
+      "God of War: Ascension (Artemis)":
+        BCUS98232: [ 01.12 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *GOWASC5 ]
+PPU-3a0b43e4a5f4bfea64f53612ee7c5d990f88129c:
+  Have All Artifacts:
+    Games:
+      "God of War: Ascension (Artemis)":
+        BCUS98232: [ 01.12 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: Check your Artifacts screen to trigger the code, and then enter your Options and change things to make the game save them.
+    Patch Version: 1.0
+    Patch:
+      - [ load, *GOWASC6 ]
+PPU-3a0b43e4a5f4bfea64f53612ee7c5d990f88129c:
+  Max Red Orbs On Load Or Gain:
+    Games:
+      "God of War: Ascension (Artemis)":
+        BCUS98232: [ 01.12 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *GOWASC7 ]
+PPU-3a0b43e4a5f4bfea64f53612ee7c5d990f88129c:
+  Rage Is Always Full:
+    Games:
+      "God of War: Ascension (Artemis)":
+        BCUS98232: [ 01.12 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *GOWASC8 ]
+PPU-3a0b43e4a5f4bfea64f53612ee7c5d990f88129c:
+  Magic Is Always Full:
+    Games:
+      "God of War: Ascension (Artemis)":
+        BCUS98232: [ 01.12 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: If you notice that magic is not full for anything other than the Fire Of Ares, it is because the other 3 elemental weapons require you to upgrade them to be able to use their magic abilities.
+    Patch Version: 1.0
+    Patch:
+      - [ load, *GOWASC9 ]
+PPU-3a0b43e4a5f4bfea64f53612ee7c5d990f88129c:
+  Infinite Double Jumping:
+    Games:
+      "God of War: Ascension (Artemis)":
+        BCUS98232: [ 01.12 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *GOWASC10 ] 
+PPU-3a0b43e4a5f4bfea64f53612ee7c5d990f88129c:
+  Damage Fully Refills Health:
+    Games:
+      "God of War: Ascension (Artemis)":
+        BCUS98232: [ 01.12 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *GOWASC11 ] 
+PPU-03a0b43e4a5f4bfea64f53612ee7c5d990f88129c:
+  "Upgrading Does Not Decrease Red Orbs":
+    Games:
+      "God of War: Ascension (Artemis)":
+        BCUS98232: [ 01.12 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *GOWASC12 ]
+PPU-03a0b43e4a5f4bfea64f53612ee7c5d990f88129c:
+  "Max 999,999 Combo From 1 Hit":
+    Games:
+      "God of War: Ascension (Artemis)":
+        BCUS98232: [ 01.12 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *GOWASC13 ] 
+PPU-03a0b43e4a5f4bfea64f53612ee7c5d990f88129c:
+  "Combo Multiplier 100x":
+    Games:
+      "God of War: Ascension (Artemis)":
+        BCUS98232: [ 01.12 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 4120=10x;42C8=100x;447A=1,000x
+    Patch Version: 1.0
+    Patch:
+      - [ load, *GOWASC14 ] 
+PPU-03a0b43e4a5f4bfea64f53612ee7c5d990f88129c:
+  "Combo Time Lasts Forever":
+    Games:
+      "God of War: Ascension (Artemis)":
+        BCUS98232: [ 01.12 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *GOWASC15 ] 
+PPU-03a0b43e4a5f4bfea64f53612ee7c5d990f88129c:
+  "Cannot Be Turned To Stone":
+    Games:
+      "God of War: Ascension (Artemis)":
+        BCUS98232: [ 01.12 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *GOWASC16 ] 
+PPU-03a0b43e4a5f4bfea64f53612ee7c5d990f88129c:
+  "Enemies Are Instantly Frozen, Slowed, Or Turned To Stone":
+    Games:
+      "God of War: Ascension (Artemis)":
+        BCUS98232: [ 01.12 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *GOWASC17 ] 
+PPU-03a0b43e4a5f4bfea64f53612ee7c5d990f88129c:
+  "Freeze, Slow, And Petrify Durations Last Forever For Enemies":
+    Games:
+      "God of War: Ascension (Artemis)":
+        BCUS98232: [ 01.12 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *GOWASC18 ] 
+PPU-03a0b43e4a5f4bfea64f53612ee7c5d990f88129c:
+  "Attacks Do Not End The Freeze, Slow, Or Petrify Effect For Enemies":
+    Games:
+      "God of War: Ascension (Artemis)":
+        BCUS98232: [ 01.12 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *GOWASC19 ] 
+PPU-03a0b43e4a5f4bfea64f53612ee7c5d990f88129c:
+  "Amulets Never Have A Cooldown":
+    Games:
+      "God of War: Ascension (Artemis)":
+        BCUS98232: [ 01.12 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *GOWASC20 ]
+PPU-03a0b43e4a5f4bfea64f53612ee7c5d990f88129c:
+  "Picked Up Weapons You Throw Never Decrease":
+    Games:
+      "God of War: Ascension (Artemis)":
+        BCUS98232: [ 01.12 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: It is mainly useful for throwing spears and slings. Unfortunately it does not work if you use L1 + O to throw a weapon.
+    Patch Version: 1.0
+    Patch:
+      - [ load, *GOWASC21 ] 
+PPU-3a0b43e4a5f4bfea64f53612ee7c5d990f88129c:
+  Unlock FPS:
+    Games:
+      "God of War: Ascension (Artemis)":
+        BCUS98232: [ 01.12 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *GOWASC22 ]      
