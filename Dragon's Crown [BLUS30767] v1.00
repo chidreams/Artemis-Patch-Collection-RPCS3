@@ -1,0 +1,102 @@
+# Title: Dragon's Crown
+# Serial: BLUS30767
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00
+PPU-60f7a7f5e0de894da8e5de235609228c40e70197:
+  "Infinite HP":
+    Games:
+      "Dragons Crown (Artemis)":
+        BLUS30767: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+    - [ be32,0x0053F300,0x83BD0010]
+    - [ be32,0x0053F30C,0x48000018]
+    - [ be32,0x0053F338,0x93A4000C]
+PPU-60f7a7f5e0de894da8e5de235609228c40e70197:
+  "Max Gold After Buying Something":
+    Games:
+      "Dragons Crown (Artemis)":
+        BLUS30767: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+    - [ be32,0x0057744C,0x60000000]
+    - [ be32,0x005AE7B4,0x60000000]
+PPU-60f7a7f5e0de894da8e5de235609228c40e70197:
+  "Score Multiplier 100x ":
+    Games:
+      "Dragons Crown (Artemis)":
+        BLUS30767: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChIdReamS
+    Notes: 000A=10x;0064=100x;03E8=1000x;2710=10000x
+    Patch Version: 1.0
+    Patch:
+    - [ be32,0x008FB400,0x1C840064]
+    - [ be32,0x008FB404,0x7C882014]
+    - [ be32,0x008FB408,0x4BBFC288]
+    - [ be32,0x004F768C,0x48403D74]
+PPU-60f7a7f5e0de894da8e5de235609228c40e70197:
+  "Infinite Ammo":
+    Games:
+      "Dragons Crown (Artemis)":
+        BLUS30767: [ 01.00 ]
+    Author: games24.blog.fc2.com Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+    - [ be32,0x001D37B4,0x60000000] 
+    - [ be32,0x0019FE44,0x30A40000]
+PPU-60f7a7f5e0de894da8e5de235609228c40e70197:
+  "Infinite Items":
+    Games:
+      "Dragons Crown (Artemis)":
+        BLUS30767: [ 01.00 ]
+    Author: games24.blog.fc2.com Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+    - [ be32,0x000297B4,0x60000000] 
+PPU-60f7a7f5e0de894da8e5de235609228c40e70197:
+  "99999999 Score":
+    Games:
+      "Dragons Crown (Artemis)":
+        BLUS30767: [ 01.00 ]
+    Author: games24.blog.fc2.com Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+    - [ be32,0x004F76A4,0x60000000] 
+PPU-60f7a7f5e0de894da8e5de235609228c40e70197:
+  "Infinite MP":
+    Games:
+      "Dragons Crown (Artemis)":
+        BLUS30767: [ 01.00 ]
+    Author: games24.blog.fc2.com Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+    - [ be32,0x000E9074,0x60000000] 
+    - [ be32,0x003AC380,0x60000000]
+PPU-60f7a7f5e0de894da8e5de235609228c40e70197:
+  "Infinite Skill Points":
+    Games:
+      "Dragons Crown (Artemis)":
+        BLUS30767: [ 01.00 ]
+    Author: games24.blog.fc2.com Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+    - [ be32,0x0057DDE8,0x7F84E378]
+PPU-60f7a7f5e0de894da8e5de235609228c40e70197:
+  "Max Gold On Gain":
+    Games:
+      "Dragons Crown (Artemis)":
+        BLUS30767: [ 01.00 ]
+    Author: Medo Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+    - [ be32,0x004BCEA0,0x60000000]
