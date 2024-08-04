@@ -1,0 +1,45 @@
+# Title: The Simpsons™ Game
+# Serial: BLUS30065
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00      
+PPU-cfa4d1b380b8ebfa5acd59fa9378c50e3059865c:
+  "Invincibility":
+    Games:
+      "The Simpsons Game (Artemis)":
+        BLUS30065: [ 01.00 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00285028,0x38600001]
+PPU-cfa4d1b380b8ebfa5acd59fa9378c50e3059865c:
+  "Infinite Power (except Lisa Hand of Buddha)":
+    Games:
+      "The Simpsons Game (Artemis)":
+        BLUS30065: [ 01.00 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x000FB114,0xC023FFEC]
+    - [ be32,0x001C0F08,0xC03FFFEC]
+PPU-cfa4d1b380b8ebfa5acd59fa9378c50e3059865c:
+  "Enemies Do Not Attack":
+    Games:
+      "The Simpsons Game (Artemis)":
+        BLUS30065: [ 01.00 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00AFB990,0x40800000]
+PPU-cfa4d1b380b8ebfa5acd59fa9378c50e3059865c:
+  "Running Speed Modifier":
+    Games:
+      "The Simpsons Game (Artemis)":
+        BLUS30065: [ 01.00 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 3F800000=Normal;40000000=2x;40400000=3x;40800000=4x;40A00000=5x;40C00000=6x;40E00000=7x;41000000=8x;41100000=9x;41200000=10x
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00AFA124,0x3F800000]
