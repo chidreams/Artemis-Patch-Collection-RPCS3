@@ -1,0 +1,151 @@
+# Title: Yaiba: Ninja Gaiden Z
+# Serial: BLUS31203
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.02
+Anchors:
+  GaidenZ: &GaidenZ
+    - [be32,0x0173F2C8,0x3CC0020C]
+    - [be32,0x0173F2CC,0x9086F004]
+    - [be32,0x0173F2D0,0x607C0000]
+    - [be32,0x0173F2D4,0x3A400350]
+    - [be32,0x0173F2D8,0x9244031C]
+    - [be32,0x0173F2DC,0x489FC17A]
+    - [be32,0x0173F2E0,0x3D60020C]
+    - [be32,0x0173F2E4,0x816BF004]
+    - [be32,0x0173F2E8,0x7F845840]
+    - [be32,0x0173F2EC,0x4D9E0020]
+    - [be32,0x0173F2F0,0xF821FF01]
+    - [be32,0x0173F2F4,0x496188BA]
+    - [be32,0x016188B4,0x4973F2E2]
+    - [be32,0x009FC174,0x4973F2CA]
+  GaidenZ2: &GaidenZ2
+    - [be32,0x009BEF2C,0x4E800020]
+  GaidenZ3: &GaidenZ3
+    - [be32,0x003D1F8C,0x38800320]
+    - [be32,0x003D1F90,0x9083031C]
+  GaidenZ4: &GaidenZ4
+    - [be32,0x01726B24,0x3DE0020C]
+    - [be32,0x01726B28,0x906FF008]
+    - [be32,0x01726B2c,0x63DF0000]
+    - [be32,0x01726B30,0x48563D86]
+    - [be32,0x01726B60,0x3E00020C]
+    - [be32,0x01726B64,0x8210F008]
+    - [be32,0x01726B68,0x32100118]
+    - [be32,0x01726B6C,0x82100000]
+    - [be32,0x01726B70,0x28100E7F]
+    - [be32,0x01726B74,0x40820010]
+    - [be32,0x01726B78,0x3E20447A]
+    - [be32,0x01726B7C,0x92231950]
+    - [be32,0x01726B80,0x607F0000]
+    - [be32,0x01726B84,0x28100E80]
+    - [be32,0x01726B88,0x4082000C]
+    - [be32,0x01726B8C,0x3E003F80]
+    - [be32,0x01726B90,0x92031950]
+    - [be32,0x01726B94,0x607F0000]
+    - [be32,0x01726B98,0x489FF8E6]
+    - [be32,0x009FF8E0,0x49726B62]
+    - [be32,0x00563D80,0x49726B26]
+  GaidenZ5: &GaidenZ5
+    - [be32,0x017E4574,0x39C00064]
+    - [be32,0x017E4578,0x91DC0728]
+    - [be32,0x017E457C,0x63830000]
+    - [be32,0x017E4580,0x4890EB6E]
+    - [be32,0x0090EB68,0x497E4576]
+  GaidenZ6: &GaidenZ6
+    - [be32,0x017F159C,0x3E00009E]
+    - [be32,0x017F15A0,0x32103C88]
+    - [be32,0x017F15A4,0x7F858040]
+    - [be32,0x017F15A8,0x4D9E0020]
+    - [be32,0x017F15AC,0x60000000]
+    - [be32,0x017F15B0,0xF821FF71]
+    - [be32,0x017F15B4,0x489E3C8E]
+    - [be32,0x009E3C88,0x497F159E]
+  GaidenZ7: &GaidenZ7
+    - [be32,0x0173DE10,0x926310A4]
+    - [be32,0x0173DE14,0x9263108C]
+    - [be32,0x0173DE18,0x9A630ED9]
+    - [be32,0x0173DE1C,0xF821FF41]
+    - [be32,0x0173DE20,0x489FF196]
+    - [be32,0x009FF190,0x4973DE12]
+  GaidenZ8: &GaidenZ8
+    - [be32, 0x009FF1EC,0xD05C02F0]
+PPU-e0d1cb983c09ccdad4cb91335287bfd47e6afb44:
+  "Infinite Health + Invincible Against Physical Attacks":
+    Games:
+      "Yaiba: Ninja Gaiden Z (Artemis)":
+        BLUS31203: [ 01.00 ]
+    Author: Markin_Mods ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ load, *GaidenZ ]
+PPU-e0d1cb983c09ccdad4cb91335287bfd47e6afb44:
+  "Enemies Never Attack":
+    Games:
+      "Yaiba: Ninja Gaiden Z (Artemis)":
+        BLUS31203: [ 01.00 ]
+    Author: Markin_Mods ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ load, *GaidenZ2 ]
+PPU-e0d1cb983c09ccdad4cb91335287bfd47e6afb44:
+  "Infinite Health Alternative":
+    Games:
+      "Yaiba: Ninja Gaiden Z (Artemis)":
+        BLUS31203: [ 01.00 ]
+    Author: Markin_Mods ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ load, *GaidenZ3 ]
+PPU-e0d1cb983c09ccdad4cb91335287bfd47e6afb44:
+  "Bloodlust Full Gauge D-Pad Up, Bloodlust Empty Gauge D-Pad Down":
+    Games:
+      "Yaiba: Ninja Gaiden Z (Artemis)":
+        BLUS31203: [ 01.00 ]
+    Author: Markin_Mods ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ load, *GaidenZ4 ]
+PPU-e0d1cb983c09ccdad4cb91335287bfd47e6afb44:
+  "Weapons Never Break":
+    Games:
+      "Yaiba: Ninja Gaiden Z (Artemis)":
+        BLUS31203: [ 01.00 ]
+    Author: Markin_Mods ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ load, *GaidenZ5 ]
+PPU-e0d1cb983c09ccdad4cb91335287bfd47e6afb44:
+  "Max Attack 1 Hit Can Execute":
+    Games:
+      "Yaiba: Ninja Gaiden Z (Artemis)":
+        BLUS31203: [ 01.00 ]
+    Author: Markin_Mods ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ load, *GaidenZ6 ]
+PPU-e0d1cb983c09ccdad4cb91335287bfd47e6afb44:
+  "Protection Against Electric Attacks, Fire Attacks, Bile Attacks":
+    Games:
+      "Yaiba: Ninja Gaiden Z (Artemis)":
+        BLUS31203: [ 01.00 ]
+    Author: Markin_Mods ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ load, *GaidenZ7 ]
+PPU-e0d1cb983c09ccdad4cb91335287bfd47e6afb44:
+  "Faster Movement Speed":
+    Games:
+      "Yaiba: Ninja Gaiden Z (Artemis)":
+        BLUS31203: [ 01.00 ]
+    Author: Markin_Mods ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ load, *GaidenZ8 ]
