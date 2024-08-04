@@ -1,0 +1,67 @@
+# Title: Dragon Ball Z: Battle of Z
+# Serial: BLUS31314
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00
+PPU-898a4952b8e3b003eb4619e7e40917d83fc740b5:
+  "Max Exp After Battle":
+    Games:
+      "Dragon Ball Z: Battle of Z (Artemis)":
+        BLUS31314: [ 01.00 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00405524,0x60000000]
+PPU-898a4952b8e3b003eb4619e7e40917d83fc740b5:
+  "Max DP After Battle":
+    Games:
+      "Dragon Ball Z: Battle of Z (Artemis)":
+        BLUS31314: [ 01.00 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0040559C,0x60000000]
+PPU-898a4952b8e3b003eb4619e7e40917d83fc740b5:
+  "Max PP After Battle":
+    Games:
+      "Dragon Ball Z: Battle of Z (Artemis)":
+        BLUS31314: [ 01.00 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00405610,0x60000000]
+PPU-898a4952b8e3b003eb4619e7e40917d83fc740b5:
+  "Infinite HP":
+    Games:
+      "Dragon Ball Z: Battle of Z (Artemis)":
+        BLUS31314: [ 01.00 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0031F85C,0xC02306CC]
+    - [ be32,0x0031F86C,0xD02306C8]
+PPU-898a4952b8e3b003eb4619e7e40917d83fc740b5:
+  "Infinite SP (All)":
+    Games:
+      "Dragon Ball Z: Battle of Z (Artemis)":
+        BLUS31314: [ 01.00 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x000B3F50,0x60000000]
+PPU-898a4952b8e3b003eb4619e7e40917d83fc740b5:
+  "Max + Infinite SP (Player)":
+    Games:
+      "Dragon Ball Z: Battle of Z (Artemis)":
+        BLUS31314: [ 01.00 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x000FCC2C,0x60670000]
+    - [ be32,0x000FCC34,0x60000000]
+    - [ be32,0x000FCC40,0xD06706F0]
