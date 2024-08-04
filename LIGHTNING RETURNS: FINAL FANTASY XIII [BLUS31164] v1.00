@@ -1,0 +1,64 @@
+# Title: LIGHTNING RETURNS: FINAL FANTASY XIII
+# Serial: BLUS31164
+# Category: GD
+# Version: APP_VER=01.01 VERSION=01.00
+PPU-e1da92f782b6258f2fbb678f4d1f511d6e3d6c94:
+  "Enemies Do Not Do Anything":
+    Games:
+      " LIGHTNING RETURNS: FINAL FANTASY XIII (Artemis)":
+        BLUS31164: [ 01.01 ]
+    Author: puzzle, xtatu Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+    - [ be32,0x000E200C,0x40800028] 
+PPU-e1da92f782b6258f2fbb678f4d1f511d6e3d6c94:
+  "99999999 Attack Daamge":
+    Games:
+      " LIGHTNING RETURNS: FINAL FANTASY XIII (Artemis)":
+        BLUS31164: [ 01.01 ]
+    Author: puzzle, xtatu Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+    - [ be32,0x001303A0,0x3F000000] 
+PPU-e1da92f782b6258f2fbb678f4d1f511d6e3d6c94:
+  "1P Invincible + Can Use Magic":
+    Games:
+      " LIGHTNING RETURNS: FINAL FANTASY XIII (Artemis)":
+        BLUS31164: [ 01.01 ]
+    Author: puzzle, xtatu Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+    - [ be32,0x00107268,0x807E0030] 
+PPU-e1da92f782b6258f2fbb678f4d1f511d6e3d6c94:
+  "1P Infinite Gil":
+    Games:
+      " LIGHTNING RETURNS: FINAL FANTASY XIII (Artemis)":
+        BLUS31164: [ 01.01 ]
+    Author: games24 blog.fc2.com Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+    - [ be32,0x00641DE4,0x7D034378] 
+PPU-e1da92f782b6258f2fbb678f4d1f511d6e3d6c94:
+  "Infinite Dash Gauge":
+    Games:
+      " LIGHTNING RETURNS: FINAL FANTASY XIII (Artemis)":
+        BLUS31164: [ 01.01 ]
+    Author: games24 blog.fc2.com Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+    - [ be32,0x00219838,0xD0440014]
+PPU-e1da92f782b6258f2fbb678f4d1f511d6e3d6c94:
+  "Infinite Remodeling":
+    Games:
+      " LIGHTNING RETURNS: FINAL FANTASY XIII (Artemis)":
+        BLUS31164: [ 01.01 ]
+    Author: puzzle, xtatu Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+    - [ be32,0x0055E310,0x60000000]
