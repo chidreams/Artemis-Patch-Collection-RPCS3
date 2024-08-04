@@ -1,0 +1,47 @@
+# Title: Super Street Fighter 2 Turbo HD
+# Serial: NPUB30034
+# Category: HG
+# Version: APP_VER=01.10 VERSION=01.01
+PPU-b1ebef2c751455e7a7d6447b6f5288ab7dfa5429:
+  "P1 Infinite Health + Super Meter":
+    Games:
+      "Super Street Fighter 2 Turbo HD (Artemis)":
+        NPUB30034: [ 01.10 ]
+    Author:  Markin_Mods ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+    - [ be32,0x00F9D91C,0x38600090] 
+    - [ be32,0x00F9D920,0xB069072C] 
+    - [ be32,0x00F9D924,0xB069072E] 
+    - [ be32,0x00F9D928,0xA009072C] 
+    - [ be32,0x00F9D92C,0x3A000030] 
+    - [ be32,0x00F9D930,0x9A0909B4] 
+    - [ be32,0x00F9D934,0x4812886E] 
+    - [ be32,0x00128868,0x48F9D91E]
+PPU-b1ebef2c751455e7a7d6447b6f5288ab7dfa5429:
+  "P2 Easy Knockout":
+    Games:
+      "Super Street Fighter 2 Turbo HD (Artemis)":
+        NPUB30034: [ 01.10 ]
+    Author:  Markin_Mods ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+    - [ be32,0x00F9D940,0x38C000FF]
+    - [ be32,0x00F9D944,0x98CA0B5D] 
+    - [ be32,0x00F9D948,0x98CA0B5F] 
+    - [ be32,0x00F9D94C,0x8807005A] 
+    - [ be32,0x00F9D950,0x4824F676] 
+    - [ be32,0x0024F670,0x48F9D942]
+PPU-b1ebef2c751455e7a7d6447b6f5288ab7dfa5429:
+  "P1 Invincible To Physical Attacks And Moves":
+    Games:
+      "Super Street Fighter 2 Turbo HD (Artemis)":
+        NPUB30034: [ 01.10 ]
+    Author:  Markin_Mods ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+    - [ be32,0x00094D18,0x60000000]
+    - [ be32,0x00094EB8,0x60000000]
