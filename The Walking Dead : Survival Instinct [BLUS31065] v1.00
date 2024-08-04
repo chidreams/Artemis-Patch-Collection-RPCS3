@@ -1,0 +1,185 @@
+# Title: The Walking Dead : Survival Instinct
+# Serial: BLUS31065
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00
+Anchors:
+  Walking: &Walking
+    - [be32,0x00B5DBB4,0x447A0000]
+  Walking2: &Walking2
+    - [be32,0x00B59C08,0x4E6E6B28]
+  Walking3: &Walking3
+    - [be32,0x000E111C,0x60000000]
+  Walking4: &Walking4
+    - [be32,0x000E2CE4,0x60000000]
+  Walking5: &Walking5
+    - [be32,0x000806E4,0xC01E3698]
+    - [be32,0x0007C04C,0x4E800020]
+    - [be32,0x00093094,0x4E800020]
+    - [be32,0x0040ED40,0x4E800020]
+  Walking6: &Walking6
+    - [be32,0x00075374,0xC0033B8C]
+  Walking7: &Walking7
+    - [be32,0x00868AB0,0x3C400007]
+    - [be32,0x00868AB4,0x6042A84C]
+    - [be32,0x00868AB8,0x48000020]
+    - [be32,0x00868AD8,0x812101A4]
+    - [be32,0x00868ADC,0x7F891040]
+    - [be32,0x00868AE0,0x409E00DC]
+    - [be32,0x00868AE4,0x48000020]
+    - [be32,0x00868B04,0x7C4802A6]
+    - [be32,0x00868B08,0x3D200004]
+    - [be32,0x00868B0C,0x61298268]
+    - [be32,0x00868B10,0x48000020]
+    - [be32,0x00868B30,0x7F891040]
+    - [be32,0x00868B34,0x409E0088]
+    - [be32,0x00868B38,0x3C400180]
+    - [be32,0x00868B3C,0x48000020]
+    - [be32,0x00868B5C,0x80420200]
+    - [be32,0x00868B60,0x88420153]
+    - [be32,0x00868B64,0x2B820000]
+    - [be32,0x00868B68,0x48000020]
+    - [be32,0x00868B88,0x419E0034]
+    - [be32,0x00868B8C,0x3C404100]
+    - [be32,0x00868B90,0x9043FE58]
+    - [be32,0x00868B94,0x48000020]
+    - [be32,0x00868BB4,0x90430000]
+    - [be32,0x00868BB8,0xC0230000]
+    - [be32,0x00868BBC,0x78690020]
+    - [be32,0x00868BC0,0x4856B5F2]
+    - [be32,0x00868BE0,0x3D200180]
+    - [be32,0x00868BE4,0x93490200]
+    - [be32,0x00868BE8,0x7C09FE70]
+    - [be32,0x00868BEC,0x485ECCF2]
+    - [be32,0x0056B5EC,0x48868AB2]
+    - [be32,0x005ECCEC,0x48868BE2]
+    - [be32,0x00048324,0x60000000]
+  Walking9: &Walking8
+    - [be32,0x00069A14,0x480001C8]
+  Walking9: &Walking9
+    - [be32,0x0006A28C,0x60000000]
+  Walking10: &Walking10
+    - [be32,0x0007EF98,0x60000000]
+  Walking11: &Walking11
+    - [be32,0x00700A24,0x60000000]
+  Walking12: &Walking12
+    - [be32,0x00171A34,0x60000000]
+PPU-912e772bbeb532f771cf27914d9ae9fcaef4b203:
+  "Zombie No Attack":
+    Games:
+      "The Walking Dead : Survival Instinct (Artemis)":
+        BLUS31065: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Walking ]
+PPU-912e772bbeb532f771cf27914d9ae9fcaef4b203:
+  "Player Health Modifier X999999999":
+    Games:
+      "The Walking Dead : Survival Instinct (Artemis)":
+        BLUS31065: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Walking2 ]
+PPU-912e772bbeb532f771cf27914d9ae9fcaef4b203:
+  "Reserve Ammo Never Decreases":
+    Games:
+      "The Walking Dead : Survival Instinct (Artemis)":
+        BLUS31065: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Walking3 ]
+PPU-912e772bbeb532f771cf27914d9ae9fcaef4b203:
+  "Loaded Ammo Never Decreases, No Reload":
+    Games:
+      "The Walking Dead : Survival Instinct (Artemis)":
+        BLUS31065: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Walking4 ]
+PPU-912e772bbeb532f771cf27914d9ae9fcaef4b203:
+  "Health Never Decreases":
+    Games:
+      "The Walking Dead : Survival Instinct (Artemis)":
+        BLUS31065: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: You can still be grabbed, but it is now far easier to break out of the grab and they can not damage your health.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Walking5 ]
+PPU-912e772bbeb532f771cf27914d9ae9fcaef4b203:
+  "Stamina Never Decreases":
+    Games:
+      "The Walking Dead : Survival Instinct (Artemis)":
+        BLUS31065: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Walking6 ]
+PPU-912e772bbeb532f771cf27914d9ae9fcaef4b203:
+  "Hold X To Fly":
+    Games:
+      "The Walking Dead : Survival Instinct (Artemis)":
+        BLUS31065: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Walking7 ]
+PPU-912e772bbeb532f771cf27914d9ae9fcaef4b203:
+  "Max Items On Gain Of More Than 1":
+    Games:
+      "The Walking Dead : Survival Instinct (Artemis)":
+        BLUS31065: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: If you have no MREs and you pick up 1, you will have 1 MRE. You pick up another MRE and you will have 9.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Walking8 ]
+PPU-912e772bbeb532f771cf27914d9ae9fcaef4b203:
+  "Consumed Items Never Decrease":
+    Games:
+      "The Walking Dead : Survival Instinct (Artemis)":
+        BLUS31065: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes:  Energy drinks, MREs, those sort of things.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Walking9 ]
+PPU-912e772bbeb532f771cf27914d9ae9fcaef4b203:
+  "Thrown Items Never Decrease":
+    Games:
+      "The Walking Dead : Survival Instinct (Artemis)":
+        BLUS31065: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: Flares, grenades, those sort of things.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Walking10 ]
+PPU-912e772bbeb532f771cf27914d9ae9fcaef4b203:
+  "MREs Never Decrease When Used On Survivors":
+    Games:
+      "The Walking Dead : Survival Instinct (Artemis)":
+        BLUS31065: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Walking11 ]
+PPU-912e772bbeb532f771cf27914d9ae9fcaef4b203:
+  "1 MRE Fully Restores A Survivor":
+    Games:
+      "The Walking Dead : Survival Instinct (Artemis)":
+        BLUS31065: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Walking12 ]
