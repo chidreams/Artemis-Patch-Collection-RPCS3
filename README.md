@@ -27,6 +27,10 @@ We welcome contributions! If you have a cheat that isn't in our database or if y
 
 ## Disclaimer
 
+While we make every effort to deliver high quality products, we do not guarantee that our products are free from defects. Our software is provided 'as is' and you use the software at your own risk.
+
+## Note
+
 Please note that these cheats are provided for single-player games only. We do not support or condone cheating in multiplayer games.
 
 ## License
