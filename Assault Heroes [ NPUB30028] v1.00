@@ -1,0 +1,62 @@
+Version: 1.2
+PPU-4bcd2185175c3f5047d64c292dd2f3fe17b12ac9:
+  Infinite Health:
+    Games:
+      "Assault Heroes (Artemis)":
+        NPUB30028: [ 01.00 ]
+    Author: jgduff1 Ported by chidreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x00323840,0x60000000]
+      - [ be32,0x00323848,0x60000000]
+      - [ be32,0x00337E54,0x60000000]
+      - [ be32,0x00337E5C,0x60000000]
+      - [ be32,0x0033831C,0x60000000]
+      - [ be32,0x00338308,0x60000000]        
+PPU-4bcd2185175c3f5047d64c292dd2f3fe17b12ac9:
+  Infinite Grenades:
+    Games:
+      "Assault Heroes (Artemis)":
+        NPUB30028: [ 01.00 ]
+    Author: jgduff1 Ported by chidreams
+    Notes: 
+    Patch Version: 1.0
+    Group: AA
+    Patch:
+     - [ be32,0x003252C4,0x39290000]
+     - [ be32,0x003252CC,0x913E0FD0]
+PPU-4bcd2185175c3f5047d64c292dd2f3fe17b12ac9:
+  Infinite Bombs:
+    Games:
+      "Assault Heroes (Artemis)":
+        NPUB30028: [ 01.00 ]
+    Author: jgduff1 Ported by chidreams
+    Notes: 
+    Patch Version: 1.0
+    Group: AB
+    Patch:
+     - [ be32,0x00324C30,0x39290000]
+     - [ be32,0x00324C3C,0x913F0FD4] 
+PPU-4bcd2185175c3f5047d64c292dd2f3fe17b12ac9:
+  Big Score On Gain:
+    Games:
+      "Assault Heroes (Artemis)":
+        NPUB30028: [ 01.00 ]
+    Author: jgduff1 Ported by chidreams
+    Notes: 
+    Patch Version: 1.0
+    Group: AC
+    Patch:
+     - [ be32,0x00328618,0x905F0AC0]  
+PPU-4bcd2185175c3f5047d64c292dd2f3fe17b12ac9:
+  Instant Max Ammo Strength When Gain Upgrade (In 4x4 Only):
+    Games:
+      "Assault Heroes (Artemis)":
+        NPUB30028: [ 01.00 ]
+    Author: jgduff1 Ported by chidreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+     - [ be32,0x00324D38,0x60000000]
+     - [ be32,0x00324D3C,0x90490008] 
