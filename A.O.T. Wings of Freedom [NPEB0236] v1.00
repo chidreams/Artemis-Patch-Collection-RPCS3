@@ -1,0 +1,102 @@
+Version: 1.2
+Anchors:
+  WOFreedom: &WOFreedom
+     - [ be32,0x0007B414,0xFC403090]
+  WOFreedom2: &WOFreedom2
+     - [ be32,0x0005A8E8,0xFC202090]
+     - [ be32,0x0007B5B8,0x60000000]
+     - [ be32,0x0007B660,0x60000000]
+     - [ be32,0x0007B800,0xFC201090]
+     - [ be32,0x0007BE30,0x60000000]
+     - [ be32,0x0007BF8C,0x60000000]
+  WOFreedom3: &WOFreedom3
+     - [ be32,0x000A9094,0x60000000]
+     - [ be32,0x00696734,0x60000000]
+  WOFreedom4: &WOFreedom4
+     - [ be32,0x0007CF64,0x4800004C]
+  WOFreedom5: &WOFreedom5
+     - [ be32,0x0020C82C,0x48000024]
+     - [ be32,0x0020C850,0x48000034]
+  WOFreedom6: &WOFreedom6
+     - [ be32,0x0013D010,0x312903E8]
+  WOFreedom7: &WOFreedom7
+     - [ be32,0x001E5F14,0x60000000] # Max Rescued After Rescuing 1 To Get Grade S
+     - [ be32,0x0007CCD4,0x60000000] # Max And Infinite Gas
+     - [ be32,0x0007CD88,0xC0231914] # Max And Infinite Gas
+     - [ be32,0x0007D300,0xC03E178C] # Max And Infinite Wire Length
+     - [ be32,0x0069685C,0xC02301BC] # Max And Infinite Blade Solidity
+     - [ be32,0x0077436C,0x4803DD3D] # Max And Infinite Dash And Smash After Gaining Skills
+     - [ be32,0x00139550,0x60000000] # Max And Infinite Items On Gain Or Use
+     - [ be32,0x0023F648,0x48000018] # Infinite Cannonballs
+     - [ be32,0x002A214C,0x48000008] # Max Money On Gain (999,999,999)
+     - [ be32,0x00282E28,0x48000008] # Max Money After Selling Gears (999,999,999)
+PPU-5df88cbfb15c501d7c7b6b130cccb08c1fb31689:
+  "Infinite Health For Player":
+    Games:
+      "A.O.T. Wings of Freedom (Artemis)":
+        NPEB02365: [ 01.00 ]
+    Author: FBML Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WOFreedom ]
+PPU-5df88cbfb15c501d7c7b6b130cccb08c1fb31689:
+  "Max And Infinite Special Power After 1 Hit For Players And Titans":
+    Games:
+      "A.O.T. Wings of Freedom (Artemis)":
+        NPEB02365: [ 01.00 ]
+    Author: FBML & games24.blog.fc2.com/blog-entry-328.html
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WOFreedom2 ]
+PPU-5df88cbfb15c501d7c7b6b130cccb08c1fb31689:
+  "Max And Infinite Super Punch After 1 Hit For Titans":
+    Games:
+      "A.O.T. Wings of Freedom (Artemis)":
+        NPEB02365: [ 01.00 ]
+    Author: FBML Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WOFreedom3 ]
+PPU-5df88cbfb15c501d7c7b6b130cccb08c1fb31689:
+  "Infinite Horse Stamina":
+    Games:
+      "A.O.T. Wings of Freedom (Artemis)":
+        NPEB02365: [ 01.00 ]
+    Author: FBML Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WOFreedom4 ]
+PPU-5df88cbfb15c501d7c7b6b130cccb08c1fb31689:
+  "Freeze Timer To Get Grade S":
+    Games:
+      "A.O.T. Wings of Freedom (Artemis)":
+        NPEB02365: [ 01.00 ]
+    Author: FBML Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WOFreedom5 ]
+PPU-5df88cbfb15c501d7c7b6b130cccb08c1fb31689:
+  "Slaughter Multiplier (100x)":
+    Games:
+      "A.O.T. Wings of Freedom (Artemis)":
+        NPEB02365: [ 01.00 ]
+    Author: FBML Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WOFreedom6 ]
+PPU-5df88cbfb15c501d7c7b6b130cccb08c1fb31689:
+  "Max And Infinite everthing":
+    Games:
+      "A.O.T. Wings of Freedom (Artemis)":
+        NPEB02365: [ 01.00 ]
+    Author: FBML Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WOFreedom7 ] 
