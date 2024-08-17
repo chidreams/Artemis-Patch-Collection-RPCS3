@@ -1,0 +1,238 @@
+Version: 1.2
+Anchors:
+  HSword: &HSword
+      - [ be32,0x00010064,0x00E81000]
+      - [ be32,0x0001006C,0x00E81000]
+      - [ be32,0x00E90E1C,0x3C6000F7]
+      - [ be32,0x00E90E20,0x9123A000]
+      - [ be32,0x00E90E24,0x4E800020]
+      - [ be32,0x00E90E28,0x3D2000F7]
+      - [ be32,0x00E90E2C,0x8809A009]
+      - [ be32,0x00E90E30,0x2B800000]
+      - [ be32,0x00E90E34,0x419E0010]
+      - [ be32,0x00E90E38,0x8129A000]
+      - [ be32,0x00E90E3C,0x7F9F4840]
+      - [ be32,0x00E90E40,0x4D9E0020]
+      - [ be32,0x00E90E44,0xF821FF01]
+      - [ be32,0x00E90E48,0x483C101A]
+      - [ be32,0x00E90E4C,0x3D2000F7]
+      - [ be32,0x00E90E50,0x93E9A014]
+      - [ be32,0x00E90E54,0x8809A00A]
+      - [ be32,0x00E90E58,0x2B800000]
+      - [ be32,0x00E90E5C,0x419E0010]
+      - [ be32,0x00E90E60,0x801F0288]
+      - [ be32,0x00E90E64,0x1C00003C]
+      - [ be32,0x00E90E68,0x901F0008]
+      - [ be32,0x00E90E6C,0x813F0288]
+      - [ be32,0x00E90E70,0x4840003E]
+      - [ be32,0x00E90E74,0x3C6000F7]
+      - [ be32,0x00E90E78,0xA123A010]
+      - [ be32,0x00E90E7C,0xA17F0006]
+      - [ be32,0x00E90E80,0x71600024]
+      - [ be32,0x00E90E84,0xB003A010]
+      - [ be32,0x00E90E88,0x7F804840]
+      - [ be32,0x00E90E8C,0x419E0018]
+      - [ be32,0x00E90E90,0x2B800024]
+      - [ be32,0x00E90E94,0x409E0010]
+      - [ be32,0x00E90E98,0x8803A009]
+      - [ be32,0x00E90E9C,0x68000001]
+      - [ be32,0x00E90EA0,0x9803A009]
+      - [ be32,0x00E90EA4,0xA123A012]
+      - [ be32,0x00E90EA8,0x71600021]
+      - [ be32,0x00E90EAC,0xB003A012]
+      - [ be32,0x00E90EB0,0x7F804840]
+      - [ be32,0x00E90EB4,0x419E0030]
+      - [ be32,0x00E90EB8,0x2B800021]
+      - [ be32,0x00E90EBC,0x409E0028]
+      - [ be32,0x00E90EC0,0x8123A014]
+      - [ be32,0x00E90EC4,0x2B890000]
+      - [ be32,0x00E90EC8,0x419E001C]
+      - [ be32,0x00E90ECC,0x80890288]
+      - [ be32,0x00E90ED0,0x38840001]
+      - [ be32,0x00E90ED4,0x2B840003]
+      - [ be32,0x00E90ED8,0x409D0008]
+      - [ be32,0x00E90EDC,0x38800000]
+      - [ be32,0x00E90EE0,0x90890288]
+      - [ be32,0x00E90EE4,0xA123A014]
+      - [ be32,0x00E90EE8,0x71600022]
+      - [ be32,0x00E90EEC,0xB003A014]
+      - [ be32,0x00E90EF0,0x7F804840]
+      - [ be32,0x00E90EF4,0x419E0018]
+      - [ be32,0x00E90EF8,0x2B800022]
+      - [ be32,0x00E90EFC,0x409E0010]
+      - [ be32,0x00E90F00,0x8803A00A]
+      - [ be32,0x00E90F04,0x68000001]
+      - [ be32,0x00E90F08,0x9803A00A]
+      - [ be32,0x00E90F0C,0xA123A016]
+      - [ be32,0x00E90F10,0x71600028]
+      - [ be32,0x00E90F14,0xB003A016]
+      - [ be32,0x00E90F18,0x7F804840]
+      - [ be32,0x00E90F1C,0x419E0018]
+      - [ be32,0x00E90F20,0x2B800028]
+      - [ be32,0x00E90F24,0x409E0010]
+      - [ be32,0x00E90F28,0x8803A00B]
+      - [ be32,0x00E90F2C,0x68000001]
+      - [ be32,0x00E90F30,0x9803A00B]
+      - [ be32,0x00E90F34,0x813F0004]
+      - [ be32,0x00E90F38,0x48659F2E]
+      - [ be32,0x00E90F3C,0x3C6000F7]
+      - [ be32,0x00E90F40,0x8863A00B]
+      - [ be32,0x00E90F44,0x2B830000]
+      - [ be32,0x00E90F48,0x409E0008]
+      - [ be32,0x00E90F4C,0xD0090044]
+      - [ be32,0x00E90F50,0x48634742]
+      - [ be32,0x005E0AE4,0x48E90E1E]
+      - [ be32,0x003C1014,0x48E90E2A]
+      - [ be32,0x00400038,0x48E90E4E]
+      - [ be32,0x00659F28,0x48E90E76]
+      - [ be32,0x0063473C,0x48E90F3E]
+  HSword2: &HSword2
+      - [ be32,0x00225EEC,0xC1A302D8]
+      - [ be32,0x00225EF4,0x60000000]
+  HSword3: &HSword3
+      - [ be32,0x00E90B88,0x1D2903E8]
+      - [ be32,0x00E90B8C,0x7C004A14]
+      - [ be32,0x00E90B90,0x483FFA8E]
+      - [ be32,0x003FFA88,0x48E90B8A]
+  HSword4: &HSword4
+      - [ be32,0x00E90BB0,0x3C4000F4]
+      - [ be32,0x00E90BB4,0xA0026404]
+      - [ be32,0x00E90BB8,0x7F830040]
+      - [ be32,0x00E90BBC,0x48000020]
+      - [ be32,0x00E90BDC,0x409D0034]
+      - [ be32,0x00E90BE0,0x7C601850]
+      - [ be32,0x00E90BE4,0x1C6303E8]
+      - [ be32,0x00E90BE8,0x48000020]
+      - [ be32,0x00E90C08,0x7C630214]
+      - [ be32,0x00E90C0C,0xB06B0006]
+      - [ be32,0x00E90C10,0xB0626404]
+      - [ be32,0x00E90C14,0x4E800020]
+      - [ be32,0x0072151C,0x48E90BB2]
+  HSword5: &HSword5
+      - [ be32,0x004002A4,0x601F0000]
+  HSword6: &HSword6
+      - [ be32,0x0040051C,0x801F0008]
+  HSword7: &HSword7
+      - [ be32,0x003135C0,0x812B0178]
+  HSword8: &HSword8
+      - [ be32,0x001C7D80,0xD01F02D4]
+  HSword9: &HSword9
+      - [ be32,0x00191AE4,0xC0221E00]
+  HSword10: &HSword10 
+      - [ be32,0x00E90C34,0x813D0010]
+      - [ be32,0x00E90C38,0x3C005000]
+      - [ be32,0x00E90C3C,0x7F890040]
+      - [ be32,0x00E90C40,0x48000020]
+      - [ be32,0x00E90C60,0x419C005C]
+      - [ be32,0x00E90C64,0x3C005B30]
+      - [ be32,0x00E90C68,0x7F890040]
+      - [ be32,0x00E90C6C,0x48000020]
+      - [ be32,0x00E90C8C,0x419D0030]
+      - [ be32,0x00E90C90,0xA0090013]
+      - [ be32,0x00E90C94,0x2B806C48]
+      - [ be32,0x00E90C98,0x48000020]
+      - [ be32,0x00E90CB8,0x419E0008]
+      - [ be32,0x00E90CBC,0xF97D0000]
+      - [ be32,0x00E90CC0,0x48394E52]
+      - [ be32,0x00394E4C,0x48E90C36]
+      - [ be32,0x00394E50,0x81380008]
+PPU-4b7d01f72325d0da3b42bec6f2e45f28a3a0dc10:
+  "SuperStyle + Invincibility + Timer Controllers":
+    Games:
+      "Heavenly Sword (Artemis)":
+        BCUS98132: [ 01.10 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: Select + Left = Toggle Invincibility, Select + Up = Cycle Up Through Superstyle Levels, Select + Down = Toggle Full Superstyle,Select + Right = Toggle Timers 
+    Patch Version: 1.1
+    Patch:
+      - [ load, *HSword ]
+PPU-4b7d01f72325d0da3b42bec6f2e45f28a3a0dc10:
+  "Health Never Decreases":
+    Games:
+      "Heavenly Sword (Artemis)":
+        BCUS98132: [ 01.10 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ load, *HSword2 ]
+PPU-4b7d01f72325d0da3b42bec6f2e45f28a3a0dc10:
+  "Combo Increment Multiplier":
+    Games:
+      "Heavenly Sword (Artemis)":
+        BCUS98132: [ 01.10 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ load, *HSword3 ]
+PPU-4b7d01f72325d0da3b42bec6f2e45f28a3a0dc10:
+  "Cannon Kill Increment Multiplier":
+    Games:
+      "Heavenly Sword (Artemis)":
+        BCUS98132: [ 01.10 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ load, *HSword4 ]
+PPU-4b7d01f72325d0da3b42bec6f2e45f28a3a0dc10:
+  "SuperStyle Full On Gain":
+    Games:
+      "Heavenly Sword (Artemis)":
+        BCUS98132: [ 01.10 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ load, *HSword5 ]
+PPU-4b7d01f72325d0da3b42bec6f2e45f28a3a0dc10:
+  "SuperStyle Never Decreases":
+    Games:
+      "Heavenly Sword (Artemis)":
+        BCUS98132: [ 01.10 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ load, *HSword6 ]
+PPU-4b7d01f72325d0da3b42bec6f2e45f28a3a0dc10:
+  "Fire Rockets Never Decrease":
+    Games:
+      "Heavenly Sword (Artemis)":
+        BCUS98132: [ 01.10 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ load, *HSword7 ]
+PPU-4b7d01f72325d0da3b42bec6f2e45f28a3a0dc10:
+  "Enemies Die From Any Damage":
+    Games:
+      "Heavenly Sword (Artemis)":
+        BCUS98132: [ 01.10 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ load, *HSword8 ]
+PPU-4b7d01f72325d0da3b42bec6f2e45f28a3a0dc10:
+  "Bosses Die From Any Damage":
+    Games:
+      "Heavenly Sword (Artemis)":
+        BCUS98132: [ 01.10 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ load, *HSword9 ]
+PPU-4b7d01f72325d0da3b42bec6f2e45f28a3a0dc10:
+  "Fortress Wall Health Never Decreases":
+    Games:
+      "Heavenly Sword (Artemis)":
+        BCUS98132: [ 01.10 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ load, *HSword10 ]   
