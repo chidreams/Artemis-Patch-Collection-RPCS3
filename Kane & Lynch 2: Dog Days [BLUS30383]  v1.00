@@ -1,0 +1,31 @@
+Version: 1.2
+PPU-58c1ac21c900a1a9616ac564d501d311ce84039a:
+  "Infinite Health":
+    Games:
+      "Kane & Lynch 2: Dog Days (Artemis)":
+        BLUS30383: [ 01.00 ]
+    Author: 
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x000A6210,0x60000000 ]  
+PPU-58c1ac21c900a1a9616ac564d501d311ce84039a:
+  "Infinite Ammo No Reload":
+    Games:
+      "Kane & Lynch 2: Dog Days (Artemis)":
+        BLUS30383: [ 01.00 ]
+    Author: 
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x00604C78,0x6004270F ]  
+PPU-58c1ac21c900a1a9616ac564d501d311ce84039a:
+  "Max Ammo On Pickup":
+    Games:
+      "Kane & Lynch 2: Dog Days (Artemis)":
+        BLUS30383: [ 01.00 ]
+    Author: 
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x00604C8C,0x6004270F ]  
