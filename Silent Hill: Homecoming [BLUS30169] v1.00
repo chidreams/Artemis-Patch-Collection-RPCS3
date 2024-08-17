@@ -1,0 +1,313 @@
+Version: 1.2
+Anchors:
+  Homecoming: &Homecoming
+     - [ be32,0x00765340,0x60000000]
+  Homecoming2: &Homecoming2
+     - [ be32,0x0030FB80,0x60000000]
+  Homecoming3: &Homecoming3
+     - [ be32,0x002C17D0,0x60000000]
+  Homecoming4: &Homecoming4
+     - [ be32,0x00203ED4,0x1C000006]
+  Homecoming5: &Homecoming5
+     - [ be32,0x00FB70F0,0x3D6001AC]
+     - [ be32,0x00FB70F4,0x7D2902A6]
+     - [ be32,0x00FB70F8,0x3929FFFF]
+     - [ be32,0x00FB70FC,0x2B89000F]
+     - [ be32,0x00FB7100,0x409E000C]
+     - [ be32,0x00FB7104,0x3D400000]
+     - [ be32,0x00FB7108,0xB14BF000]
+     - [ be32,0x00FB710C,0x7C004830]
+     - [ be32,0x00FB7110,0xA14BF000]
+     - [ be32,0x00FB7114,0x7D4A0378]
+     - [ be32,0x00FB7118,0xB14BF000]
+     - [ be32,0x00FB711C,0x2B890000]
+     - [ be32,0x00FB7120,0x409E00A4]
+     - [ be32,0x00FB7124,0x71400208]
+     - [ be32,0x00FB7128,0xA12BF002]
+     - [ be32,0x00FB712C,0xB00BF002]
+     - [ be32,0x00FB7130,0x2B800208]
+     - [ be32,0x00FB7134,0x409E0018]
+     - [ be32,0x00FB7138,0x7F890040]
+     - [ be32,0x00FB713C,0x419E0010]
+     - [ be32,0x00FB7140,0x880BF00A]
+     - [ be32,0x00FB7144,0x68000001]
+     - [ be32,0x00FB7148,0x980BF00A]
+     - [ be32,0x00FB714C,0x71400204]
+     - [ be32,0x00FB7150,0xA12BF004]
+     - [ be32,0x00FB7154,0xB00BF004]
+     - [ be32,0x00FB7158,0x2B800204]
+     - [ be32,0x00FB715C,0x409E0018]
+     - [ be32,0x00FB7160,0x7F890040]
+     - [ be32,0x00FB7164,0x419E0010]
+     - [ be32,0x00FB7168,0x880BF00A]
+     - [ be32,0x00FB716C,0x68000002]
+     - [ be32,0x00FB7170,0x980BF00A]
+     - [ be32,0x00FB7174,0x71400202]
+     - [ be32,0x00FB7178,0xA12BF006]
+     - [ be32,0x00FB717C,0xB00BF006]
+     - [ be32,0x00FB7180,0x2B800202]
+     - [ be32,0x00FB7184,0x409E0018]
+     - [ be32,0x00FB7188,0x7F890040]
+     - [ be32,0x00FB718C,0x419E0010]
+     - [ be32,0x00FB7190,0x880BF00A]
+     - [ be32,0x00FB7194,0x68000004]
+     - [ be32,0x00FB7198,0x980BF00A]
+     - [ be32,0x00FB719C,0x71400201]
+     - [ be32,0x00FB71A0,0xA12BF008]
+     - [ be32,0x00FB71A4,0xB00BF008]
+     - [ be32,0x00FB71A8,0x2B800201]
+     - [ be32,0x00FB71AC,0x409E0018]
+     - [ be32,0x00FB71B0,0x7F890040]
+     - [ be32,0x00FB71B4,0x419E0010]
+     - [ be32,0x00FB71B8,0x880BF00A]
+     - [ be32,0x00FB71BC,0x68000008]
+     - [ be32,0x00FB71C0,0x980BF00A]
+     - [ be32,0x00FB71C4,0x39280BB0]
+     - [ be32,0x00FB71C8,0x4E800020]
+     - [ be32,0x0005BDEC,0x48FB70F3]
+  Homecoming6: &Homecoming6
+     - [ be32,0x00FB7200,0x3CC001AC]
+     - [ be32,0x00FB7204,0x8006F00C]
+     - [ be32,0x00FB7208,0x38C90030]
+     - [ be32,0x00FB720C,0x7F860040]
+     - [ be32,0x00FB7210,0x409E007C]
+     - [ be32,0x00FB7214,0x3CC001AC]
+     - [ be32,0x00FB7218,0x3C003F00] # Speed of hori,0xontal movement     
+     - [ be32,0x00FB721C,0x9006F010]
+     - [ be32,0x00FB7220,0xC026F010]
+     - [ be32,0x00FB7224,0xA0C6F000]
+     - [ be32,0x00FB7228,0x70C00100]
+     - [ be32,0x00FB722C,0x2B800100]
+     - [ be32,0x00FB7230,0x409E000C]
+     - [ be32,0x00FB7234,0x80090034]
+     - [ be32,0x00FB7238,0x90040004]
+     - [ be32,0x00FB723C,0xC0040008]
+     - [ be32,0x00FB7240,0x70C00108]
+     - [ be32,0x00FB7244,0x2B800108]
+     - [ be32,0x00FB7248,0x409E0008]
+     - [ be32,0x00FB724C,0xEC00082A]
+     - [ be32,0x00FB7250,0x70C00102]
+     - [ be32,0x00FB7254,0x2B800102]
+     - [ be32,0x00FB7258,0x409E0008]
+     - [ be32,0x00FB725C,0xEC000828]
+     - [ be32,0x00FB7260,0xD0040008]
+     - [ be32,0x00FB7264,0xC0040000]
+     - [ be32,0x00FB7268,0x70C00104]
+     - [ be32,0x00FB726C,0x2B800104]
+     - [ be32,0x00FB7270,0x409E0008]
+     - [ be32,0x00FB7274,0xEC00082A]
+     - [ be32,0x00FB7278,0x70C00101]
+     - [ be32,0x00FB727C,0x2B800101]
+     - [ be32,0x00FB7280,0x409E0008]
+     - [ be32,0x00FB7284,0xEC000828]
+     - [ be32,0x00FB7288,0xD0040000]
+     - [ be32,0x00FB728C,0x7C0020CE]
+     - [ be32,0x00FB7290,0x4E800020]
+     - [ be32,0x00B9B3DC,0x48FB7203] # Gravity and save/load position related parts */
+     - [ be32,0x00FB7294,0x3F6001AC]
+     - [ be32,0x00FB7298,0x807BF00C]
+     - [ be32,0x00FB729C,0x7F891840]
+     - [ be32,0x00FB72A0,0x409E0070]
+     - [ be32,0x00FB72A4,0x3C603E00] # Speed of height increase */
+     - [ be32,0x00FB72A8,0x907BF014]
+     - [ be32,0x00FB72AC,0xC03BF014]
+     - [ be32,0x00FB72B0,0xA15BF000]
+     - [ be32,0x00FB72B4,0x71430100]
+     - [ be32,0x00FB72B8,0x2B830100]
+     - [ be32,0x00FB72BC,0x409E000C]
+     - [ be32,0x00FB72C0,0x80690004]
+     - [ be32,0x00FB72C4,0x907C0004]
+     - [ be32,0x00FB72C8,0x71430180]
+     - [ be32,0x00FB72CC,0x2B830180]
+     - [ be32,0x00FB72D0,0x409E0010]
+     - [ be32,0x00FB72D4,0xC01C0004]
+     - [ be32,0x00FB72D8,0xEC00082A]
+     - [ be32,0x00FB72DC,0xD01C0004]
+     - [ be32,0x00FB72E0,0x3B7BF020]
+     - [ be32,0x00FB72E4,0x71430120]
+     - [ be32,0x00FB72E8,0x2B830120]
+     - [ be32,0x00FB72EC,0x409E000C]
+     - [ be32,0x00FB72F0,0x7C00E0CE]
+     - [ be32,0x00FB72F4,0x7C00D9CE]
+     - [ be32,0x00FB72F8,0x71430110]
+     - [ be32,0x00FB72FC,0x2B830110]
+     - [ be32,0x00FB7300,0x409E000C]
+     - [ be32,0x00FB7304,0x7C00D8CE]
+     - [ be32,0x00FB7308,0x7C00E1CE]
+     - [ be32,0x00FB730C,0x7C00E0CE]
+     - [ be32,0x00FB7310,0x7C0049CE]
+     - [ be32,0x00FB7314,0x4E800020]
+     - [ be32,0x00B9BCBC,0x48FB7297] # /* Dump your position */
+     - [ be32,0x00FB7318,0xF821FF91]
+     - [ be32,0x00FB731C,0x7C0802A6]
+     - [ be32,0x00FB7320,0xF8010070]
+     - [ be32,0x00FB7324,0xF8610068]
+     - [ be32,0x00FB7328,0x48182CF3]
+     - [ be32,0x00FB732C,0x809F000C]
+     - [ be32,0x00FB7330,0x7F841840]
+     - [ be32,0x00FB7334,0x409E001C]
+     - [ be32,0x00FB7338,0x3C8001AC]
+     - [ be32,0x00FB733C,0x813F00F0]
+     - [ be32,0x00FB7340,0x81290030]
+     - [ be32,0x00FB7344,0x81290018]
+     - [ be32,0x00FB7348,0x39290030]
+     - [ be32,0x00FB734C,0x9124F00C]
+     - [ be32,0x00FB7350,0xE8010070]
+     - [ be32,0x00FB7354,0x7C0803A6]
+     - [ be32,0x00FB7358,0xE8610068]
+     - [ be32,0x00FB735C,0x38210070]
+     - [ be32,0x00FB7360,0x78640020]
+     - [ be32,0x00FB7364,0x4E800020]
+     - [ be32,0x0006979C,0x48FB731B]
+  Homecoming7: &Homecoming7
+     - [ be32,0x0111F330,0x3C6001AC]
+     - [ be32,0x0111F334,0x8863F00A]
+     - [ be32,0x0111F338,0x70630004]
+     - [ be32,0x0111F33C,0x2B830004]
+     - [ be32,0x0111F340,0x409E0038]
+     - [ be32,0x0111F344,0xF821FF91]
+     - [ be32,0x0111F348,0x7C0802A6]
+     - [ be32,0x0111F34C,0xF8010070]
+     - [ be32,0x0111F350,0x48182CF3]
+     - [ be32,0x0111F354,0x7F9F1840]
+     - [ be32,0x0111F358,0x419E0014]
+     - [ be32,0x0111F35C,0x3C6001AC]
+     - [ be32,0x0111F360,0x39200000]
+     - [ be32,0x0111F364,0x9123F018]
+     - [ be32,0x0111F368,0xC183F018]
+     - [ be32,0x0111F36C,0xE8010070]
+     - [ be32,0x0111F370,0x7C0803A6]
+     - [ be32,0x0111F374,0x38210070]
+     - [ be32,0x0111F378,0xC1610070]
+     - [ be32,0x0111F37C,0x4E800020]
+     - [ be32,0x00213A98,0x4911F333]
+  Homecoming8: &Homecoming8
+     - [ be32,0x0111E810,0xEC00F82A]
+     - [ be32,0x0111E814,0xF821FF91]
+     - [ be32,0x0111E818,0x7C0802A6]
+     - [ be32,0x0111E81C,0xF8010080]
+     - [ be32,0x0111E820,0xF8610060]
+     - [ be32,0x0111E824,0x48182CF3]
+     - [ be32,0x0111E828,0x7F9F1840]
+     - [ be32,0x0111E82C,0x409E0008]
+     - [ be32,0x0111E830,0xC01F0154]
+     - [ be32,0x0111E834,0xE8010080]
+     - [ be32,0x0111E838,0x7C0803A6]
+     - [ be32,0x0111E83C,0xE8610060]
+     - [ be32,0x0111E840,0x38210070]
+     - [ be32,0x0111E844,0x4E800020]
+     - [ be32,0x001FE01C,0x4911E813]
+  Homecoming9: &Homecoming9
+     - [ be32,0x00075B1C,0x60000000]
+     - [ be32,0x00075B58,0x60000000]
+     - [ be32,0x00075B90,0x60000000]
+     - [ be32,0x00075BC4,0x60000000]
+     - [ be32,0x00075BF8,0x60000000]
+     - [ be32,0x00075C2C,0x60000000]
+     - [ be32,0x00075C64,0x60000000]
+     - [ be32,0x00075C94,0x60000000]
+     - [ be32,0x00075CC4,0x60000000]
+  Homecoming10: &Homecoming10
+     - [ be32,0x007F4968,0x48000008]
+     - [ be32,0x007F4AC8,0x48000008]
+     - [ be32,0x007F4AE8,0x48000008]
+PPU-c423a041b450bd0b19e95958733a99c1b95e5b41:
+  "Invincibility":
+    Games:
+      "Silent Hill: Homecoming (Artemis)":
+        BLUS30169: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Homecoming ]
+PPU-c423a041b450bd0b19e95958733a99c1b95e5b41:
+  "Reloading Loads All Ammo Into Guns":
+    Games:
+      "Silent Hill: Homecoming (Artemis)":
+        BLUS30169: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Homecoming2 ]
+PPU-c423a041b450bd0b19e95958733a99c1b95e5b41:
+  "Press X Button Once To Complete X Button Masher":
+    Games:
+      "Silent Hill: Homecoming (Artemis)":
+        BLUS30169: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: Not Working 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Homecoming3 ]
+PPU-c423a041b450bd0b19e95958733a99c1b95e5b41:
+  "Attack Damage Multiplier 6X":
+    Games:
+      "Silent Hill: Homecoming (Artemis)":
+        BLUS30169: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Homecoming4 ]
+PPU-c423a041b450bd0b19e95958733a99c1b95e5b41:
+  "(B) Button Enable Code":
+    Games:
+      "Silent Hill: Homecoming (Artemis)":
+        BLUS30169: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Homecoming5 ]
+PPU-c423a041b450bd0b19e95958733a99c1b95e5b41:
+  "Position Modifier":
+    Games:
+      "Silent Hill: Homecoming (Artemis)":
+        BLUS30169: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: Not Working 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Homecoming6 ]
+PPU-c423a041b450bd0b19e95958733a99c1b95e5b41:
+  "Toggle Enemies Not Moving With L2 + \/":
+    Games:
+      "Silent Hill: Homecoming (Artemis)":
+        BLUS30169: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Homecoming7 ]
+PPU-c423a041b450bd0b19e95958733a99c1b95e5b41:
+  "Damage Fully Refills Your Health":
+    Games:
+      "Silent Hill: Homecoming (Artemis)":
+        BLUS30169: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Homecoming8 ]
+PPU-c423a041b450bd0b19e95958733a99c1b95e5b41:
+  "Weird Facial Expressions":
+    Games:
+      "Silent Hill: Homecoming (Artemis)":
+        BLUS30169: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Homecoming9 ]
+PPU-c423a041b450bd0b19e95958733a99c1b95e5b41:
+  "Display Brightness Limit Removed":
+    Games:
+      "Silent Hill: Homecoming (Artemis)":
+        BLUS30169: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: You can control the brightness from the Options Menu with this.
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Homecoming10 ]  
