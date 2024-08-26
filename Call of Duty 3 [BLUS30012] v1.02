@@ -1,0 +1,70 @@
+Version: 1.2
+# Title: Call of Duty 3
+# Serial: BLES00016
+# Category: DG
+# Version: APP_VER=1.00 VERSION=01.02     
+Anchors:
+  CallofDuty3: &CallofDuty3
+    - [ be32,0x0006C9900,0x60000000]
+    - [ be32,0x0006C9980,0x60000000]
+    - [ be32,0x0006C99C0,0x60000000]
+  CallofDuty32: &CallofDuty32
+    - [ be32,0x0029B6A8,0x380003E7]
+  CallofDuty33: &CallofDuty33
+    - [ be32,0x002AAD2C,0x68000000]
+  CallofDuty34: &CallofDuty34
+    - [ be32,0x002A9FF0,0x68000000]
+  CallofDuty35: &CallofDuty35
+    - [ be32,0x001E07B8,0x3800000E]
+    - [ be32,0x001E07BC,0x90090014]
+    - [ be32,0x001E07C0,0x60000000]
+PPU-9c0d4079af9107fa762bbcba4d2c69478f5484a6:
+  "Infinite Health":
+    Games:
+      "Call of Duty 3 (Artemis)":
+        BLES00016: [ 01.02 ]
+    Author: jgduff1
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *CallofDuty3 ]  
+PPU-9c0d4079af9107fa762bbcba4d2c69478f5484a6:
+  "Infinite Ammo-Usage":
+    Games:
+      "Call of Duty 3 (Artemis)":
+        BLES00016: [ 01.02 ]
+    Author: Randy97Killa
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *CallofDuty32 ] 
+PPU-9c0d4079af9107fa762bbcba4d2c69478f5484a6:
+  "Infinite Ammo-No Reload":
+    Games:
+      "Call of Duty 3 (Artemis)":
+        BLES00016: [ 01.02 ]
+    Author: Randy97Killa
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *CallofDuty33 ] 
+PPU-9c0d4079af9107fa762bbcba4d2c69478f5484a6:
+  "Infinite Grenades":
+    Games:
+      "Call of Duty 3 (Artemis)":
+        BLES00016: [ 01.02 ]
+    Author: Randy97Killa
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *CallofDuty34 ] 
+PPU-9c0d4079af9107fa762bbcba4d2c69478f5484a6:
+  "Unlock All Chapter + Bonus Material":
+    Games:
+      "Call of Duty 3 (Artemis)":
+        BLES00016: [ 01.02 ]
+    Author: Randy97Killa
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *CallofDuty35 ]       
