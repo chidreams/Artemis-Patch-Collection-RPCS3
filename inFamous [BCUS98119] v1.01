@@ -1,0 +1,450 @@
+Version: 1.2
+# Title: inFamous
+# Serial: BCUS98119
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.01
+Anchors:
+  inFamousaltv: &inFamousaltv
+    - [ be32,0x00127CB0,0x4E800020]
+  inFamousaltv2: &inFamousaltv2
+    - [ be32,0x00564DB8,0x800100F4]
+    - [ be32,0x00564DBC,0x3D600012]
+    - [ be32,0x00564DC0,0x616B7F0C]
+    - [ be32,0x00564DC4,0x48000020]
+    - [ be32,0x00564DE4,0x7F8B0040]
+    - [ be32,0x00564DE8,0x409E0008]
+    - [ be32,0x00564DEC,0xC3FD0750]
+    - [ be32,0x00564DF0,0x482AEDF6]
+    - [ be32,0x002AEDF0,0x48564DBA]
+  inFamousaltv3: &inFamousaltv3
+    - [ be32,0x00124420,0xD1840008]
+  inFamousaltv4: &inFamousaltv4
+    - [ be32,0x001623c8,0x1FBD0064]
+  inFamousaltv5: &inFamousaltv5
+    - [ be32,0x00162E0C,0xFDA00A10]
+  inFamousaltv6: &inFamousaltv6
+    - [ be32,0x00564E10,0x3C6042C8]
+    - [ be32,0x00564E14,0x9061FFFC]
+    - [ be32,0x00564E18,0xC021FFFC]
+    - [ be32,0x00564E1C,0x48000020]
+    - [ be32,0x00564E3C,0xEDAD0072]
+    - [ be32,0x00564E40,0xFC206890]
+    - [ be32,0x00564E44,0x481630B2]
+    - [ be32,0x001630AC,0x48564E12]
+  inFamousaltv7: &inFamousaltv7
+    - [ be32,0x00564E68,0x3D204448]
+    - [ be32,0x00564E6C,0x9121FFFC]
+    - [ be32,0x00564E70,0xC3E1FFFC]
+    - [ be32,0x00564E74,0x482D5D7E]
+    - [ be32,0x002D5D78,0x48564E6A]
+  inFamousaltv8: &inFamousaltv8
+    - [ be32,0x00134D10,0xEC210828]
+  inFamousaltv9: &inFamousaltv9
+    - [ be32,0x0010862C,0x7C832214]
+    - [ be32,0x00108630,0x80640004]
+    - [ be32,0x00108634,0x60630001]
+    - [ be32,0x00108638,0x90640004]
+    - [ be32,0x0010863C,0x4E800020]
+    - [ be32,0x00124674,0x7C632B78]
+    - [ be32,0x00124678,0x90640004]
+    - [ be32,0x0012467C,0x4E800020]
+    - [ be32,0x002D5D94,0x60000000]
+  inFamousaltv10: &inFamousaltv10
+    - [ be32,0x00125438,0x7C63EB78]
+  inFamousaltv11: &inFamousaltv11
+    - [ be32,0x00219CDC,0x38600001]
+  inFamousaltv12: &inFamousaltv12
+    - [ be32,0x00219D18,0x38600000]
+  inFamousaltv13: &inFamousaltv13
+    - [ be32,0x00219D78,0x38600000]
+  inFamousaltv14: &inFamousaltv14
+    - [ be32,0x00126CF8,0x38600000]
+  inFamousaltv15: &inFamousaltv15
+    - [ be32,0x0012726C,0x38600003]
+  inFamousaltv16: &inFamousaltv16
+    - [ be32,0x002DAF1C,0x48000008]
+  inFamousaltv17: &inFamousaltv17
+    - [ be32,0x002DAF48,0x4E800020]
+  inFamousaltv18: &inFamousaltv18
+    - [ be32,0x001F1B74,0x60000000]
+  inFamousaltv19: &inFamousaltv19
+    - [ be32,0x000D8038,0x60000000]
+  inFamousaltv20: &inFamousaltv20
+    - [ be32,0x000D84F4,0x60000000]
+  inFamousaltv21: &inFamousaltv21
+    - [ be32,0x0070F520,0x3FE00095]
+    - [ be32,0x0070F524,0x907FF000]
+    - [ be32,0x0070F528,0x4828C4CA]
+    - [ be32,0x0070F52C,0x3F800095]
+    - [ be32,0x0070F530,0x70050220]
+    - [ be32,0x0070F534,0xB0BCF004]
+    - [ be32,0x0070F538,0xA0FCF006]
+    - [ be32,0x0070F53C,0x70050300]
+    - [ be32,0x0070F540,0xB0BCF006]
+    - [ be32,0x0070F544,0x2B850300]
+    - [ be32,0x0070F548,0x409E0018]
+    - [ be32,0x0070F54C,0x7F872840]
+    - [ be32,0x0070F550,0x419E0010]
+    - [ be32,0x0070F554,0x88BCF00E]
+    - [ be32,0x0070F558,0x68A50001]
+    - [ be32,0x0070F55C,0x98BCF00E]
+    - [ be32,0x0070F560,0xA0FCF008]
+    - [ be32,0x0070F564,0x70054200]
+    - [ be32,0x0070F568,0xB0BCF008]
+    - [ be32,0x0070F56C,0x2B854200]
+    - [ be32,0x0070F570,0x409E0018]
+    - [ be32,0x0070F574,0x7F872840]
+    - [ be32,0x0070F578,0x419E0010]
+    - [ be32,0x0070F57C,0x88BCF00E]
+    - [ be32,0x0070F580,0x68A50002]
+    - [ be32,0x0070F584,0x98BCF00E]
+    - [ be32,0x0070F588,0x70052000]
+    - [ be32,0x0070F58C,0xB0BCF00A]
+    - [ be32,0x0070F590,0x70056000]
+    - [ be32,0x0070F594,0x2B856000]
+    - [ be32,0x0070F598,0x409E0020]
+    - [ be32,0x0070F59C,0x3C9C0010]
+    - [ be32,0x0070F5A0,0x38A00008]
+    - [ be32,0x0070F5A4,0x7CA903A6]
+    - [ be32,0x0070F5A8,0x38A00000]
+    - [ be32,0x0070F5AC,0xF8BCF000]
+    - [ be32,0x0070F5B0,0x3B9C0008]
+    - [ be32,0x0070F5B4,0x4200FFF8]
+    - [ be32,0x0070F5B8,0x38E00000]
+    - [ be32,0x0070F5BC,0x4815317E]
+    - [ be32,0x0070F5C0,0x7C1D01CE]
+    - [ be32,0x0070F5C4,0x3D200095]
+    - [ be32,0x0070F5C8,0xA009F004]
+    - [ be32,0x0070F5CC,0x2B800220]
+    - [ be32,0x0070F5D0,0x409E0018]
+    - [ be32,0x0070F5D4,0x8009F000]
+    - [ be32,0x0070F5D8,0x7F840040]
+    - [ be32,0x0070F5DC,0x409E000C]
+    - [ be32,0x0070F5E0,0x3C004480]
+    - [ be32,0x0070F5E4,0x901D0018]
+    - [ be32,0x0070F5E8,0x4835106E]
+    - [ be32,0x0070F5EC,0x38600000]
+    - [ be32,0x0070F5F0,0x3C800095]
+    - [ be32,0x0070F5F4,0x8884F00E]
+    - [ be32,0x0070F5F8,0x70840001]
+    - [ be32,0x0070F5FC,0x2B840000]
+    - [ be32,0x0070F600,0x419E0008]
+    - [ be32,0x0070F604,0x38600006]
+    - [ be32,0x0070F608,0x481253EA]
+    - [ be32,0x0070F60C,0x3C600095]
+    - [ be32,0x0070F610,0x8863F00E]
+    - [ be32,0x0070F614,0x70630001]
+    - [ be32,0x0070F618,0x2B830000]
+    - [ be32,0x0070F61C,0xFC200910]
+    - [ be32,0x0070F620,0x419E0008]
+    - [ be32,0x0070F624,0xFC200A10]
+    - [ be32,0x0070F628,0x4E800020]
+    - [ be32,0x0070F62C,0x3C003F80]
+    - [ be32,0x0070F630,0x3D600095]
+    - [ be32,0x0070F634,0x896BF00E]
+    - [ be32,0x0070F638,0x716B0002]
+    - [ be32,0x0070F63C,0x2B8B0000]
+    - [ be32,0x0070F640,0x419E0008]
+    - [ be32,0x0070F644,0x3C000000]
+    - [ be32,0x0070F648,0x4817E94E]
+    - [ be32,0x0070F64C,0x911F0010]
+    - [ be32,0x0070F650,0x3D400095]
+    - [ be32,0x0070F654,0xA06AF00A]
+    - [ be32,0x0070F658,0x2B832000]
+    - [ be32,0x0070F65C,0x409E002C]
+    - [ be32,0x0070F660,0x392A0010]
+    - [ be32,0x0070F664,0x38600010]
+    - [ be32,0x0070F668,0x7C6903A6]
+    - [ be32,0x0070F66C,0x8069F000]
+    - [ be32,0x0070F670,0x2B830000]
+    - [ be32,0x0070F674,0x409E000C]
+    - [ be32,0x0070F678,0x93E9F000]
+    - [ be32,0x0070F67C,0x4800000C]
+    - [ be32,0x0070F680,0x39290004]
+    - [ be32,0x0070F684,0x4200FFE8]
+    - [ be32,0x0070F688,0x394A0010]
+    - [ be32,0x0070F68C,0x38600010]
+    - [ be32,0x0070F690,0x7C6903A6]
+    - [ be32,0x0070F694,0x39200000]
+    - [ be32,0x0070F698,0x806AF000]
+    - [ be32,0x0070F69C,0x7F9F1840]
+    - [ be32,0x0070F6A0,0x409E0008]
+    - [ be32,0x0070F6A4,0x913F0010]
+    - [ be32,0x0070F6A8,0x394A0004]
+    - [ be32,0x0070F6AC,0x4200FFEC]
+    - [ be32,0x0070F6A0,0x4806964A]
+    - [ be32,0x0028C4C4,0x4870F522]
+    - [ be32,0x00153178,0x4870F52E]
+  inFamousaltv22: &inFamousaltv22
+    - [ be32,0x00351068,0x4870F5C2]
+  inFamousaltv23: &inFamousaltv23
+    - [ be32,0x00344424,0x3D603FA0] 
+  inFamousaltv24: &inFamousaltv24
+    - [ be32,0x001253E4,0x4870F5EE]
+    - [ be32,0x00132284,0x4870F60F]
+    - [ be32,0x001322B4,0x4870F60F]
+  inFamousaltv25: &inFamousaltv25
+    - [ be32,0x0017E948,0x4870F62E]
+  inFamousaltv26: &inFamousaltv26
+    - [ be32,0x00069644,0x4870F64E]
+PPU-d0c3e2a107c47d20d3316325ce6f75464a8f4f1d:
+  "Invincibility":
+    Games:
+      "inFamous v1.01 (Artemis)":
+        BCUS98119: [ 01.00 ]
+    Author: bungholio ported by Chidreams
+    Notes: Be careful when going into water, some of it has no bottom so you will fall forever unless you quit or use the code to fly.
+    Patch Version: 1.2
+    Group: AB
+    Patch:
+      - [ load, *inFamousaltv ]   
+PPU-d0c3e2a107c47d20d3316325ce6f75464a8f4f1d:
+  "Health Never Decreases":
+    Games:
+      "inFamous v1.01 (Artemis)":
+        BCUS98119: [ 01.00 ]
+    Author: bungholio ported by Chidreams
+    Notes: Be careful when going into water, some of it has no bottom so you will fall forever unless you quit or use the code to fly.
+    Patch Version: 1.2
+    Group: AB 
+      - [ load, *inFamousaltv2 ] 
+PPU-d0c3e2a107c47d20d3316325ce6f75464a8f4f1d:
+  "Electricity Never Decreases":
+    Games:
+      "inFamous v1.01 (Artemis)":
+        BCUS98119: [ 01.00 ]
+    Author: bungholio ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFamousaltv3 ] 
+PPU-d0c3e2a107c47d20d3316325ce6f75464a8f4f1d:
+  "XP Gained Multiplier (100x) (See notes)":
+    Games:
+      "inFamous v1.01 (Artemis)":
+        BCUS98119: [ 01.00 ]
+    Author: bungholio ported by Chidreams
+    Notes: Change value to get 000A=10x;0064=100x;03E8=1,000x;2710=10,000x
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFamousaltv4 ] 
+PPU-d0c3e2a107c47d20d3316325ce6f75464a8f4f1d:
+  "All Karma Gained Is Good Or Evil Modifier (See notes) ":
+    Games:
+      "inFamous v1.01 (Artemis)":
+        BCUS98119: [ 01.00 ]
+    Author: bungholio ported by Chidreams
+    Notes: Change value to get FDA00A10=Good;FDA00910=Evil
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFamousaltv5 ] 
+PPU-d0c3e2a107c47d20d3316325ce6f75464a8f4f1d:
+  "Karma Gained Multiplier (100x) (See notes)":
+    Games:
+      "inFamous v1.01 (Artemis)":
+        BCUS98119: [ 01.00 ]
+    Author: bungholio ported by Chidreams
+    Notes: 4120=10x;=100x;447A=1,000x
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFamousaltv6 ] 
+PPU-d0c3e2a107c47d20d3316325ce6f75464a8f4f1d:
+  "Karma Limit Modifier":
+    Games:
+      "inFamous v1.01 (Artemis)":
+        BCUS98119: [ 01.00 ]
+    Author: bungholio ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFamousaltv7 ] 
+PPU-d0c3e2a107c47d20d3316325ce6f75464a8f4f1d:
+  "Karmic Overdrive Never Modifies Karma":
+    Games:
+      "inFamous v1.01 (Artemis)":
+        BCUS98119: [ 01.00 ]
+    Author: bungholio ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFamousaltv8 ] 
+PPU-d0c3e2a107c47d20d3316325ce6f75464a8f4f1d:
+  "Have All Powers":
+    Games:
+      "inFamous v1.01 (Artemis)":
+        BCUS98119: [ 01.00 ]
+    Author: bungholio ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFamousaltv9 ] 
+PPU-d0c3e2a107c47d20d3316325ce6f75464a8f4f1d:
+  "Can Use All Powers":
+    Games:
+      "inFamous v1.01 (Artemis)":
+        BCUS98119: [ 01.00 ]
+    Author: bungholio ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFamousaltv10 ] 
+PPU-d0c3e2a107c47d20d3316325ce6f75464a8f4f1d:
+  "Have Both Electrical Effects Active At The Same Time":
+    Games:
+      "inFamous v1.01 (Artemis)":
+        BCUS98119: [ 01.00 ]
+    Author: bungholio ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFamousaltv11 ] 
+PPU-d0c3e2a107c47d20d3316325ce6f75464a8f4f1d:
+  "Electricity Color Modifier Evil ":
+    Games:
+      "inFamous v1.01 (Artemis)":
+        BCUS98119: [ 01.00 ]
+    Author: bungholio ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFamousaltv12 ] 
+PPU-d0c3e2a107c47d20d3316325ce6f75464a8f4f1d:
+  "Hand And Electric Impact Color Modifiers Evil":
+    Games:
+      "inFamous v1.01 (Artemis)":
+        BCUS98119: [ 01.00 ]
+    Author: bungholio ported by Chidreams
+    Notes: 0=Evil;3=Good
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFamousaltv13 ] 
+PPU-d0c3e2a107c47d20d3316325ce6f75464a8f4f1d:
+  "Cole Karma Appearance Modifier Evil":
+    Games:
+      "inFamous v1.01 (Artemis)":
+        BCUS98119: [ 01.00 ]
+    Author: bungholio ported by Chidreams
+    Notes: 0=Evil;3=Good
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFamousaltv14 ] 
+PPU-d0c3e2a107c47d20d3316325ce6f75464a8f4f1d:
+  "Electric Bar And Crosshair Color Modifier Good":
+    Games:
+      "inFamous v1.01 (Artemis)":
+        BCUS98119: [ 01.00 ]
+    Author: bungholio ported by Chidreams
+    Notes: 0=Evil 3=Good 7=Neutral and no crosshair
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFamousaltv15 ] 
+PPU-d0c3e2a107c47d20d3316325ce6f75464a8f4f1d:
+  "Enemies Never Shoot":
+    Games:
+      "inFamous v1.01 (Artemis)":
+        BCUS98119: [ 01.00 ]
+    Author: bungholio ported by Chidreams
+    Notes: They might still throw grenades, but this exact branch has to do with them figuring out whether they need to reload their weapons or not and it kind of tells them they need to reload but they never reload so they never shoot.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFamousaltv16 ] 
+PPU-d0c3e2a107c47d20d3316325ce6f75464a8f4f1d:
+  "Disable Enemy AI":
+    Games:
+      "inFamous v1.01 (Artemis)":
+        BCUS98119: [ 01.00 ]
+    Author: bungholio ported by Chidreams
+    Notes: Enemies will not move or do anything at all, they just turn to face you but can still be killed. If they are in turrets they will still attack.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFamousaltv17 ] 
+PPU-d0c3e2a107c47d20d3316325ce6f75464a8f4f1d:
+  "Civilians Are Invincible And Can Not Decrease Karma":
+    Games:
+      "inFamous v1.01 (Artemis)":
+        BCUS98119: [ 01.00 ]
+    Author: bungholio ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFamousaltv18 ] 
+PPU-d0c3e2a107c47d20d3316325ce6f75464a8f4f1d:
+  "Objects Never Run Out Of Electricity":
+    Games:
+      "inFamous v1.01 (Artemis)":
+        BCUS98119: [ 01.00 ]
+    Author: bungholio ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFamousaltv19 ] 
+PPU-d0c3e2a107c47d20d3316325ce6f75464a8f4f1d:
+  "Instantly Absorb All Electricity From Objects":
+    Games:
+      "inFamous v1.01 (Artemis)":
+        BCUS98119: [ 01.00 ]
+    Author: bungholio ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFamousaltv20 ] 
+PPU-d0c3e2a107c47d20d3316325ce6f75464a8f4f1d:
+  "(b) Button Enable Code":
+    Games:
+     "inFamous v1.01 (Artemis)":
+        BCUS98119: [ 01.00 ]
+    Author: bungholio ported by Chidreams
+    Notes: This needs to be activated before holding L2 + X to fly, toggling between Arc Lightning and Overload Burst with L2 + L1, toggling AI movement with L2 + L3, and making certain objects invincible.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFamousaltv21 ] 
+PPU-d0c3e2a107c47d20d3316325ce6f75464a8f4f1d:
+  "(b) Hold L2 + X To Fly":
+    Games:
+      "inFamous v1.01 (Artemis)":
+        BCUS98119: [ 01.00 ]
+    Author: bungholio ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFamousaltv22 ] 
+PPU-d0c3e2a107c47d20d3316325ce6f75464a8f4f1d:
+  "Game Brightness Modifier 1.25x":
+    Games:
+      "inFamous v1.01 (Artemis)":
+        BCUS98119: [ 01.00 ]
+    Author: bungholio ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFamousaltv23 ] 
+PPU-d0c3e2a107c47d20d3316325ce6f75464a8f4f1d:
+  "(b) Toggle Between Arc Lightning And Overload Burst With L1 + L2":
+    Games:
+      "inFamous v1.01 (Artemis)":
+        BCUS98119: [ 01.00 ]
+    Author: bungholio ported by Chidreams
+    Notes: When you have the codes on to have all powers and to be able to use powers from both good and evil sides at the same time, the same still applies where you get Overload Burst with good karma and Arc Lightning with evil karma.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFamousaltv24 ] 
+PPU-d0c3e2a107c47d20d3316325ce6f75464a8f4f1d:
+  "(b) Toggle AI Movement With L2 + L3":
+    Games:
+      "inFamous v1.01 (Artemis)":
+        BCUS98119: [ 01.00 ]
+    Author: bungholio ported by Chidreams
+    Notes: People might not instantly stop, but once they do they will stay stopped until you toggle the code off.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFamousaltv25 ] 
+PPU-d0c3e2a107c47d20d3316325ce6f75464a8f4f1d:
+  "(b) Can Mark Certain Objects For Invincibility (Hold Select And Damage It, Press Select + L3 To Unmark)":
+    Games:
+      "inFamous v1.01 (Artemis)":
+        BCUS98119: [ 01.00 ]
+    Author: bungholio ported by Chidreams
+    Notes: Just hold select and then damage whatever it is that you want to mark to prevent its health from decreasing.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *inFamousaltv26 ]       
