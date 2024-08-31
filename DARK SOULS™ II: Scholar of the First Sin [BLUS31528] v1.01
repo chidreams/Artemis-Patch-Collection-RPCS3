@@ -1,0 +1,188 @@
+Version: 1.2
+Anchors:
+  DARKSOULII: &DARKSOULII
+    - [ be32,0x0056CA34,0x60000000]
+  DARKSOULII2: &DARKSOULII2
+    - [ be32,0x00699CC4,0x60000000]
+  DARKSOULII3: &DARKSOULII3
+    - [ be32,0x0061434C,0x60000000]
+    - [ be32,0x00614358,0x60000000]
+  DARKSOULII4: &DARKSOULII4
+    - [ be32,0x005E4110,0x906900FC]
+  DARKSOULII5: &DARKSOULII5
+    - [ be32,0x00B460AC,0x39200001]
+    - [ be32,0x00B460B8,0x91230000]
+  DARKSOULII6: &DARKSOULII6
+    - [ be32,0x00B460AC,0x39200000]
+    - [ be32,0x00B460B8,0x91230000]
+  DARKSOULII7: &DARKSOULII7
+    - [ be32,0x00555884,0x48000008]
+    - [ be32,0x0055588C,0x38000063]
+  DARKSOULII8: &DARKSOULII8
+    - [ be32,0x0055FB00,0x38000063]
+  DARKSOULII9: &DARKSOULII9
+    - [ be32,0x008A8764,0x419D004C]
+  DARKSOULII10: &DARKSOULII10
+    - [ be32,0x008A68B4,0x7D405378]
+  DARKSOULII11: &DARKSOULII11
+    - [ be32,0x004A591C,0x60000000]
+  DARKSOULII12: &DARKSOULII12
+    - [ be32,0x00808DF8,0x60000000]
+  DARKSOULII13: &DARKSOULII13
+    - [ be32,0x005554E8,0x60000000]
+    - [ be32,0x00838988,0x60000000]
+  DARKSOULII14: &DARKSOULII14
+    - [ be32,0x0055FAD8,0x60000000]
+    - [ be32,0x0055FB00,0x60000000]
+  DARKSOULII15: &DARKSOULII15
+    - [ be32,0x005578A0,0x60000000]
+PPU-e2da49d8c8b32cdddd8639ca215b6b5c00ff64b0:
+  "Infinite Torch Time":
+    Games:
+      "DARK SOULS™ II: Scholar of the First Sin (Artemis)":
+        BLUS31528: [ 01.01 ]
+    Author: youchiro3000 Ported by winwin
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DARKSOULII ]
+PPU-e2da49d8c8b32cdddd8639ca215b6b5c00ff64b0:
+  "Souls don't Disappear After Death":
+    Games:
+      "DARK SOULS™ II: Scholar of the First Sin (Artemis)":
+        BLUS31528: [ 01.01 ]
+    Author: youchiro3000 Ported by winwin
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DARKSOULII2 ]
+PPU-e2da49d8c8b32cdddd8639ca215b6b5c00ff64b0:
+  "Infinite Buff Time":
+    Games:
+      "DARK SOULS™ II: Scholar of the First Sin (Artemis)":
+        BLUS31528: [ 01.01 ]
+    Author: youchiro3000 Ported by winwin
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DARKSOULII3 ]
+PPU-e2da49d8c8b32cdddd8639ca215b6b5c00ff64b0:
+  "Infinite HP":
+    Games:
+      "DARK SOULS™ II: Scholar of the First Sin (Artemis)":
+        BLUS31528: [ 01.01 ]
+    Author: youchiro3000 Ported by winwin
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DARKSOULII4 ]
+PPU-e2da49d8c8b32cdddd8639ca215b6b5c00ff64b0:
+  "1 Hit Kill Locked Target (Can't be used with Instant Kill)":
+    Games:
+      "DARK SOULS™ II: Scholar of the First Sin (Artemis)":
+        BLUS31528: [ 01.01 ]
+    Author: youchiro3000 Ported by winwin
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DARKSOULII5 ]
+PPU-e2da49d8c8b32cdddd8639ca215b6b5c00ff64b0:
+  "Instant Kill Locked Target (Can't be used with 1 Hit Kill)":
+    Games:
+      "DARK SOULS™ II: Scholar of the First Sin (Artemis)":
+        BLUS31528: [ 01.01 ]
+    Author: youchiro3000 Ported by winwin
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DARKSOULII6 ]
+PPU-e2da49d8c8b32cdddd8639ca215b6b5c00ff64b0:
+  "Max Items on Gain":
+    Games:
+      "DARK SOULS™ II: Scholar of the First Sin (Artemis)":
+        BLUS31528: [ 01.01 ]
+    Author: youchiro3000 Ported by winwin
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DARKSOULII7 ]
+PPU-e2da49d8c8b32cdddd8639ca215b6b5c00ff64b0:
+  "Max Items on Use/Discard/Deposit (Must have at least 2 items)":
+    Games:
+      "DARK SOULS™ II: Scholar of the First Sin (Artemis)":
+        BLUS31528: [ 01.01 ]
+    Author: youchiro3000 Ported by winwin
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DARKSOULII8 ]
+PPU-e2da49d8c8b32cdddd8639ca215b6b5c00ff64b0:
+  "Max Souls on Gain":
+    Games:
+      "DARK SOULS™ II: Scholar of the First Sin (Artemis)":
+        BLUS31528: [ 01.01 ]
+    Author: youchiro3000 Ported by winwin
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DARKSOULII9 ]
+PPU-e2da49d8c8b32cdddd8639ca215b6b5c00ff64b0:
+  "Max Souls on Buy":
+    Games:
+      "DARK SOULS™ II: Scholar of the First Sin (Artemis)":
+        BLUS31528: [ 01.01 ]
+    Author: youchiro3000 Ported by winwin
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DARKSOULII10 ]
+PPU-e2da49d8c8b32cdddd8639ca215b6b5c00ff64b0:
+  "Status Immunity(Petrification etc.)":
+    Games:
+      "DARK SOULS™ II: Scholar of the First Sin (Artemis)":
+        BLUS31528: [ 01.01 ]
+    Author: youchiro3000 Ported by winwin
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DARKSOULII11 ]
+PPU-e2da49d8c8b32cdddd8639ca215b6b5c00ff64b0:
+  "Infinite Stamina":
+    Games:
+      "DARK SOULS™ II: Scholar of the First Sin (Artemis)":
+        BLUS31528: [ 01.01 ]
+    Author: youchiro3000 Ported by winwin
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DARKSOULII12 ]
+PPU-e2da49d8c8b32cdddd8639ca215b6b5c00ff64b0:
+  "Infinite Durability":
+    Games:
+      "DARK SOULS™ II: Scholar of the First Sin (Artemis)":
+        BLUS31528: [ 01.01 ]
+    Author: youchiro3000 Ported by winwin
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DARKSOULII13 ]
+PPU-e2da49d8c8b32cdddd8639ca215b6b5c00ff64b0:
+  "Items Never Decrease (Can't be used with Max Items)":
+    Games:
+      "DARK SOULS™ II: Scholar of the First Sin (Artemis)":
+        BLUS31528: [ 01.01 ]
+    Author: youchiro3000 Ported by winwin
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DARKSOULII14 ]
+PPU-e2da49d8c8b32cdddd8639ca215b6b5c00ff64b0:
+  "Infinite Magic":
+    Games:
+      "DARK SOULS™ II: Scholar of the First Sin (Artemis)":
+        BLUS31528: [ 01.01 ]
+    Author: youchiro3000 Ported by winwin
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DARKSOULII15 ]
