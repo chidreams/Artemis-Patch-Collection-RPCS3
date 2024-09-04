@@ -1,0 +1,225 @@
+#Title: Tales of Graces f
+#Serial: NPUB31133
+#Category: HG
+#Version: APP_VER=01.00 VERSION=01.00
+Anchors:
+  TGracesf: &TGracesf
+    - [ be32,0x0017F3F0,0x48000054]
+    - [ be32,0x001A5360,0x916976D4]
+    - [ be32,0x001A53A8,0x60000000]
+  TGracesf2: &TGracesf2
+    - [ be32,0x001CCDD8,0x1FA403E8]
+  TGracesf3: &TGracesf3
+    - [ be32,0x001CCDC8,0x3FA00660]
+  TGracesf4: &TGracesf4
+    - [ be32,0x001CC89C,0x60000000]
+  TGracesf5: &TGracesf5
+    - [ be32,0x001A6830,0x3800000F]
+  TGracesf6: &TGracesf6
+    - [ be32,0x0005C3D0,0x60000000]
+  TGracesf7: &TGracesf7
+    - [ be32,0x001BA5CC,0x60000000]
+  TGracesf8: &TGracesf8
+    - [ be32,0x00024338,0x7D204B78]
+  TGracesf9: &TGracesf9
+    - [ be32,0x001C3478,0x912AB9DC]
+  TGracesf10: &TGracesf10
+    - [ be32,0x001C4198,0x4800001]
+    - [ be32,0x001C8A00,0x6000000]
+  TGracesf11: &TGracesf11
+    - [ be32,0x00043660,0x38000009] 
+    - [ be32,0x004520BC,0x38000009]
+  TGracesf12: &TGracesf12
+    - [ be32,0x001D2A50,0x60000000]
+  TGracesf13: &TGracesf13
+    - [ be32,0x001C7A4C,0x48000028]
+  TGracesf14: &TGracesf14
+    - [ be32,0x0006C158,0x396003E7]
+  TGracesf15: &TGracesf15
+    - [ be32,0x001BC774,0x48000048]
+    - [ be32,0x001BC920,0x48000048]
+    - [ be32,0x001BCACC,0x48000048]
+    - [ be32,0x001BDAA0,0x48000048]
+    - [ be32,0x001BDC4C,0x48000048]
+    - [ be32,0x001BDDF8,0x48000048]
+    - [ be32,0x001C7F44,0x48000048]
+    - [ be32,0x001C813C,0x48000048]
+    - [ be32,0x001C8334,0x48000048]
+    - [ be32,0x001C852C,0x48000048]
+    - [ be32,0x001C8724,0x48000048]
+    - [ be32,0x001C891C,0x48000048]
+    - [ be32,0x001BC854,0x48000038]
+    - [ be32,0x001BCA00,0x48000038]
+    - [ be32,0x001BCBAC,0x48000038]
+    - [ be32,0x001BDB80,0x48000038]
+    - [ be32,0x001BDD2C,0x48000038]
+    - [ be32,0x001BDED8,0x48000038]
+    - [ be32,0x0043E53C,0x48000038]
+    - [ be32,0x001D27A8,0x60000000]
+    - [ be32,0x001D280C,0x60000000]
+    - [ be32,0x00180B9C,0x60000000]
+    - [ be32,0x00180BB8,0x60000000]
+    - [ be32,0x001CE514,0x60000000]
+    - [ be32,0x0024499C,0x60000000]
+    - [ be32,0x002449DC,0x60000000]
+    - [ be32,0x00244A1C,0x60000000]
+    - [ be32,0x00244A5C,0x60000000]
+    - [ be32,0x00244A9C,0x60000000]
+    - [ be32,0x00244ADC,0x60000000]
+    - [ be32,0x002AAB94,0x60000000]
+    - [ be32,0x00244BD4,0x60000000]
+    - [ be32,0x00244C14,0x60000000]
+    - [ be32,0x00244C54,0x60000000]
+    - [ be32,0x00244C94,0x60000000]
+    - [ be32,0x00244CD4,0x60000000]
+PPU-b8943beb705272fcbd97057092caf91d2e51989f:
+  " Max Gald On Gain + Use":
+    Games:
+      "Tales of Graces f (Artemis)":
+        NPUB31133: [ 01.00 ]
+    Author: ChaosZage, Hiei-YYH ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *TGracesf ]
+PPU-b8943beb705272fcbd97057092caf91d2e51989f:
+  "Exp Multiplier (1000x)":
+    Games:
+      "Tales of Graces f (Artemis)":
+        NPUB31133: [ 01.00 ]
+    Author:  ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *TGracesf2 ]
+#[Z]000A=10x;0064=100x;03E8=1000x;2710=10000x[/Z]
+PPU-b8943beb705272fcbd97057092caf91d2e51989f:
+  "Max Level":
+    Games:
+      "Tales of Graces f (Artemis)":
+        NPUB31133: [ 01.00 ]
+    Author:  ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *TGracesf3 ]
+PPU-b8943beb705272fcbd97057092caf91d2e51989f:
+  "SP Max":
+    Games:
+      "Tales of Graces f (Artemis)":
+        NPUB31133: [ 01.00 ]
+    Author:  ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *TGracesf4 ]
+PPU-b8943beb705272fcbd97057092caf91d2e51989f:
+  "Max Item On Usage":
+    Games:
+      "Tales of Graces f (Artemis)":
+        NPUB31133: [ 01.00 ]
+    Author:  ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *TGracesf5 ]
+PPU-b8943beb705272fcbd97057092caf91d2e51989f:
+  "Always Material Drop":
+    Games:
+      "Tales of Graces f (Artemis)":
+        NPUB31133: [ 01.00 ]
+    Author:  ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *TGracesf6 ]
+PPU-b8943beb705272fcbd97057092caf91d2e51989f:
+  "Always Dark Crystal Ball Drop":
+    Games:
+      "Tales of Graces f (Artemis)":
+        NPUB31133: [ 01.00 ]
+    Author: Hiei-YYH ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *TGracesf7 ]
+PPU-b8943beb705272fcbd97057092caf91d2e51989f:
+  "Infinite CC":
+    Games:
+      "Tales of Graces f (Artemis)":
+        NPUB31133: [ 01.00 ]
+    Author: Hiei-YYH ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *TGracesf8 ]
+PPU-b8943beb705272fcbd97057092caf91d2e51989f:
+  "Max Energy Consumption":
+    Games:
+      "Tales of Graces f (Artemis)":
+        NPUB31133: [ 01.00 ]
+    Author: ChaosZage, Hiei-YYH ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *TGracesf9 ]
+PPU-b8943beb705272fcbd97057092caf91d2e51989f:
+  "Max Eleth Pot Points":
+    Games:
+      "Tales of Graces f (Artemis)":
+        NPUB31133: [ 01.00 ]
+    Author: Hiei-YYH ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *TGracesf10 ]
+PPU-b8943beb705272fcbd97057092caf91d2e51989f:
+  "Max Eleth Burst Gauge":
+    Games:
+      "Tales of Graces f (Artemis)":
+        NPUB31133: [ 01.00 ]
+    Author: Hiei-YYH ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *TGracesf11 ]
+PPU-b8943beb705272fcbd97057092caf91d2e51989f:
+  "Max Grade":
+    Games:
+      "Tales of Graces f (Artemis)":
+        NPUB31133: [ 01.00 ]
+    Author: Medo ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *TGracesf12 ]
+PPU-b8943beb705272fcbd97057092caf91d2e51989f:
+  "Max Arte Count Upon Use":
+    Games:
+      "Tales of Graces f (Artemis)":
+        NPUB31133: [ 01.00 ]
+    Author: Medo ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *TGracesf13 ]
+PPU-b8943beb705272fcbd97057092caf91d2e51989f:
+  "999 Hits":
+    Games:
+      "Tales of Graces f (Artemis)":
+        NPUB31133: [ 01.00 ]
+    Author: Hiei-YYH ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *TGracesf14 ]
+PPU-b8943beb705272fcbd97057092caf91d2e51989f:
+  "Max All Stats, Max Hit Count, Max Grade Shop Categories, Max Dualize Stats":
+    Games:
+      "Tales of Graces f (Artemis)":
+        NPUB31133: [ 01.00 ]
+    Author: Medo ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *TGracesf15 ]
