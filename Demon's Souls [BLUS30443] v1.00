@@ -1,0 +1,75 @@
+Anchors:
+  DemonsSouls: &DemonsSouls
+      - [ be32,0x017D41AC,0x781D0020]
+      - [ be32,0x017D41B0,0xC03A03C8]
+      - [ be32,0x017D41B4,0xD03A03C4]
+      - [ be32,0x017D41B8,0xC03A03D0]
+      - [ be32,0x017D41BC,0xD03A03CC]
+      - [ be32,0x017D41C0,0xC03A03D8]
+      - [ be32,0x017D41C4,0xD03A03D4]
+      - [ be32,0x017D41C8,0x4AAFD488]
+      - [ be32,0x002D164C,0x49502B60]
+  DemonsSouls2: &DemonsSouls2
+      - [ be32,0x017D4010,0x2B800000]
+      - [ be32,0x017D4014,0x409E0004]
+      - [ be32,0x017D4018,0x3A002710]
+      - [ be32,0x017D401C,0x92190010]
+      - [ be32,0x017D4020,0x92190014]
+      - [ be32,0x017D4024,0x92190020]
+      - [ be32,0x017D4028,0x92190030]
+      - [ be32,0x017D402C,0x9219003C]
+      - [ be32,0x017D4030,0x92190044]
+      - [ be32,0x017D4034,0x9219004C]
+      - [ be32,0x017D4038,0x92190054]
+      - [ be32,0x017D403C,0x9219005C]
+      - [ be32,0x017D4040,0x92190064]
+      - [ be32,0x017D4044,0x9219006C]
+      - [ be32,0x017D4048,0x92190074]
+      - [ be32,0x017D404C,0x80190010]
+      - [ be32,0x017D4050,0x4AFDED94]
+      - [ be32,0x007B2DE0,0x49021230]
+  DemonsSouls3: &DemonsSouls3
+      - [ be32,0x0091B8CC,0x3C003B9A]
+      - [ be32,0x0091B8D0,0x6000C9FF]
+  DemonsSouls4: &DemonsSouls4
+      - [ be32,0x009004BC,0x3B800063]
+PPU-83681f6110d33442329073b72b8dc88a2f677172:
+  "Infinite HP + Infinite MP + Infinite SP":
+    Games:
+      "Demons Souls (Artemis)":
+        BLUS30443: [ 01.00 ]
+    Author: Randy97Killa
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DemonsSouls ]
+PPU-83681f6110d33442329073b72b8dc88a2f677172:
+  "Max Player Status (W.I.P)":
+    Games:
+      "Demons Souls (Artemis)":
+        BLUS30443: [ 01.00 ]
+    Author: Randy97Killa
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DemonsSouls2 ]
+PPU-83681f6110d33442329073b72b8dc88a2f677172:
+  "Max Soul On Gain (999,999,999)":
+    Games:
+      "Demons Souls (Artemis)":
+        BLUS30443: [ 01.00 ]
+    Author: Randy97Killa
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DemonsSouls3 ]
+PPU-83681f6110d33442329073b72b8dc88a2f677172:
+  "Infinite Items":
+    Games:
+      "Demons Souls (Artemis)":
+        BLUS30443: [ 01.00 ]
+    Author: Randy97Killa
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DemonsSouls4 ]
