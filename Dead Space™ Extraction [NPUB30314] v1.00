@@ -1,0 +1,69 @@
+# Title: Dead Space™ Extraction
+# Serial: NPUB30314
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.00
+Anchors:
+  DSExtraction: &DSExtraction
+    - [ be32,0x00124000,0xC00309B4]
+    - [ be32,0x00124004,0xD00309B0]
+  DSExtraction2: &DSExtraction2
+    - [ be32,0x0025C568,0x60000000]
+    - [ be32,0x0025C594,0x60000000]
+  DSExtraction3: &DSExtraction3
+    - [ be32,0x0028465C,0x4BFFFFC8]
+  DSExtraction4: &DSExtraction4
+    - [ be32,0x0011A7E4,0x60000000]
+    - [ be32,0x0011A7FC,0x60000000]
+    - [ be32,0x0011A808,0x60000000]
+  DSExtraction5: &DSExtraction5
+    - [ be32,0x00162854,0x60000000]
+PPU-0afc1a90a68e68328ff30471d2e023eedb517008:
+  "Health Does Not Decrease For You":
+    Games:
+      "Dead Space Extraction (Artemis)":
+        NPUB30314: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DSExtraction ]
+PPU-0afc1a90a68e68328ff30471d2e023eedb517008:
+  "Ammo Does Not Decrease":
+    Games:
+      "Dead Space Extraction (Artemis)":
+        NPUB30314: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DSExtraction2 ]
+PPU-0afc1a90a68e68328ff30471d2e023eedb517008:
+  "Rapid Fire":
+    Games:
+      "Dead Space Extraction (Artemis)":
+        NPUB30314: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DSExtraction3 ]
+PPU-0afc1a90a68e68328ff30471d2e023eedb517008:
+  "Infinite Stasis Duration":
+    Games:
+      "Dead Space Extraction (Artemis)":
+        NPUB30314: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DSExtraction4 ]
+PPU-0afc1a90a68e68328ff30471d2e023eedb517008:
+  "Turret Health Does Not Decrease":
+    Games:
+      "Dead Space Extraction (Artemis)":
+        NPUB30314: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DSExtraction5 ]
