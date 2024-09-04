@@ -1,0 +1,50 @@
+# Title: Rocket Knight
+# Serial: NPUB30123
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.00
+PPU-0d49c6006942a5bebd88e5d7892a785b8b689c4a:
+  "Infinity Life":
+    Games:
+      "Rocket Knight (Artemis)":
+        NPUB30123: [ 01.00 ]
+    Author: Serp87 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+    - [ be32,0x00127464,0x60000000] # orig-code 90830068
+PPU-0d49c6006942a5bebd88e5d7892a785b8b689c4a:
+  "Infinity Energy":
+    Games:
+      "Rocket Knight (Artemis)":
+        NPUB30123: [ 01.00 ]
+    Author: Serp87 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+    - [ be32,0x00096258,0x60000000] # orig-code D0630018
+PPU-0d49c6006942a5bebd88e5d7892a785b8b689c4a:
+  "Max Score":
+    Games:
+      "Rocket Knight (Artemis)":
+        NPUB30123: [ 01.00 ]
+    Author: Serp87 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+    - [ be32,0x001287A8,0x907F0008] # orig-code 90FF0008
+PPU-0d49c6006942a5bebd88e5d7892a785b8b689c4a:
+  "Infinite HP":
+    Games:
+      "Rocket Knight (Artemis)":
+        NPUB30123: [ 01.00 ]
+    Author: Serp87 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+    - [ be32,0x00010100,0x3C804100]
+    - [ be32,0x00010104,0x81C30014]
+    - [ be32,0x00010108,0x7F847000]
+    - [ be32,0x0001010C,0x419E0008]
+    - [ be32,0x00010110,0xEC21F828]
+    - [ be32,0x00010114,0x480BD034]
+    - [ be32,0x000CD144,0x4BF42FBC]
