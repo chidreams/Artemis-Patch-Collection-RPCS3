@@ -1,0 +1,34 @@
+# Title: Ratchet & Clank™: Up Your Arsenal
+# Serial: NPUA80645
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.00
+PPU-835dc9b413a3f538ddb52f24382b93e3fad5164d:
+  "Max Bolts":
+    Games:
+      "Ratchet & Clank: Up Your Arsenal":
+        NPUA80645: [ 01.00 ]
+    Author: Serp87 ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00288008,0x7CA22814] #orig-code 7CA62814
+PPU-835dc9b413a3f538ddb52f24382b93e3fad5164d:
+  "Infinite Ammo":
+    Games:
+      "Ratchet & Clank: Up Your Arsenal":
+        NPUA80645: [ 01.00 ]
+    Author: Serp87 ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00182C10,0x7C85212E] #orig-code 7C85312E
+PPU-835dc9b413a3f538ddb52f24382b93e3fad5164d:
+  "Infinite Health":
+    Games:
+      "Ratchet & Clank: Up Your Arsenal":
+        NPUA80645: [ 01.00 ]
+    Author: Serp87 ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x001536C0,0x60000000] #orig-code 93FE2850
