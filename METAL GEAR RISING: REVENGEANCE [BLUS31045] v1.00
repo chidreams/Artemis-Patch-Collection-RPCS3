@@ -1,0 +1,640 @@
+# Title: METAL GEAR RISING: REVENGEANCE
+# Serial: BLUS31045
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.01
+Anchors:
+  MGRISING: &MGRISING
+    - [ be32,0x006BDA38,0x3C6005F5]
+    - [ be32,0x006BDA3C,0x6063E0FF]
+  MGRISING2: &MGRISING2
+    - [ be32,0x004A25D4,0x38800000]
+  MGRISING3: &MGRISING3
+    - [ be32,0x0124EFD0,0x3C8001C3]
+    - [ be32,0x0124EFD4,0xA0043050]
+    - [ be32,0x0124EFD8,0x70008000]
+    - [ be32,0x0124EFDC,0x2B808000]
+    - [ be32,0x0124EFE0,0x4C9E0020]
+    - [ be32,0x0124EFE4,0xA0043052]
+    - [ be32,0x0124EFE8,0x70000110]
+    - [ be32,0x0124EFEC,0x2B800110]
+    - [ be32,0x0124EFF0,0x4C9E0020]
+    - [ be32,0x0124EFF4,0xA0043054]
+    - [ be32,0x0124EFF8,0x70000100]
+    - [ be32,0x0124EFFC,0x2B800100]
+    - [ be32,0x0124F000,0x4C9E0020]
+    - [ be32,0x0124F004,0xF821FD61]
+    - [ be32,0x0124F008,0x4B3DFD14]
+    - [ be32,0x0062ED18,0x48C202B8]
+  MGRISING4: &MGRISING4
+    - [ be32,0x01263DE0,0x7C842810]
+    - [ be32,0x01263DE4,0x3CA001C3]
+    - [ be32,0x01263DE8,0xA0E53050]
+    - [ be32,0x01263DEC,0x70E78000]
+    - [ be32,0x01263DF0,0x2B878000]
+    - [ be32,0x01263DF4,0x409E0024]
+    - [ be32,0x01263DF8,0xA0E53052]
+    - [ be32,0x01263DFC,0x70E70110]
+    - [ be32,0x01263E00,0x2B870110]
+    - [ be32,0x01263E04,0x409E0014]
+    - [ be32,0x01263E08,0xA0E53054]
+    - [ be32,0x01263E0C,0x70E70100]
+    - [ be32,0x01263E10,0x2B870100]
+    - [ be32,0x01263E14,0x419E002C]
+    - [ be32,0x01263E18,0x80830844]
+    - [ be32,0x01263E1C,0x3CA00198]
+    - [ be32,0x01263E20,0x80A56D08]
+    - [ be32,0x01263E24,0x2B850000]
+    - [ be32,0x01263E28,0x38E00000]
+    - [ be32,0x01263E2C,0x419E0008]
+    - [ be32,0x01263E30,0x80E500F4]
+    - [ be32,0x01263E34,0x80A31CAC]
+    - [ be32,0x01263E38,0x7CE729D6]
+    - [ be32,0x01263E3C,0x7C843814]
+    - [ be32,0x01263E40,0x4B3DB564]
+    - [ be32,0x0063F3A0,0x48C24A40]
+  MGRISING5: &MGRISING5
+    - [ be32,0x012122F8,0x3C600254]
+    - [ be32,0x012122FC,0x93E3F010]
+    - [ be32,0x01212300,0x63E30000]
+    - [ be32,0x01212304,0x4E800020]
+    - [ be32,0x002D9958,0x48F389A1]
+  MGRISING6: &MGRISING6
+    - [ be32,0x01212324,0x3C600254]
+    - [ be32,0x01212328,0x93E3F014]
+    - [ be32,0x0121232C,0x807C0000]
+    - [ be32,0x01212330,0x4E800020]
+    - [ be32,0x000F3988,0x4911E99D]
+  MGRISING7: &MGRISING7
+    - [ be32,0x0126D660,0x38A00000]
+    - [ be32,0x0126D664,0x3CC00254]
+    - [ be32,0x0126D668,0x8006F010]
+    - [ be32,0x0126D66C,0x2B800000]
+    - [ be32,0x0126D670,0x419E000C]
+    - [ be32,0x0126D674,0x90A6F010]
+    - [ be32,0x0126D678,0x4E800020]
+    - [ be32,0x0126D67C,0x8006F014]
+    - [ be32,0x0126D680,0x2B800000]
+    - [ be32,0x0126D684,0x419E000C]
+    - [ be32,0x0126D688,0x90A6F014]
+    - [ be32,0x0126D68C,0x4E800020]
+    - [ be32,0x0126D690,0x7CA4E810]
+    - [ be32,0x0126D694,0x4E800020]
+    - [ be32,0x002D92C4,0x48F9439D]
+  MGRISING8: &MGRISING8
+    - [ be32,0x0124D530,0x7C872014]
+    - [ be32,0x0124D534,0x3CA00254]
+    - [ be32,0x0124D538,0x38000000]
+    - [ be32,0x0124D53C,0x80C5F010]
+    - [ be32,0x0124D540,0x7F833040]
+    - [ be32,0x0124D544,0x409E000C]
+    - [ be32,0x0124D548,0x80860844]
+    - [ be32,0x0124D54C,0x9005F010]
+    - [ be32,0x0124D550,0x80C5F014]
+    - [ be32,0x0124D554,0x7F833040]
+    - [ be32,0x0124D558,0x409E000C]
+    - [ be32,0x0124D55C,0x80860844]
+    - [ be32,0x0124D560,0x9005F014]
+    - [ be32,0x0124D564,0x4B255090]
+    - [ be32,0x004A25F0,0x48DAAF40]
+  MGRISING9: &MGRISING9
+    - [ be32,0x005F6C6C,0x48000020]
+    - [ be32,0x0062FE44,0x60000000]
+    - [ be32,0x0062FE48,0x48000040]
+  MGRISING10: &MGRISING10
+    - [ be32,0x00598DEC,0x38E00000]
+  MGRISING11: &MGRISING11
+    - [ be32,0x0058D574,0x38600001]
+  MGRISING12: &MGRISING12
+    - [ be32,0x00214190,0x60000000]
+    - [ be32,0x002141A8,0x60000000]
+  MGRISING13: &MGRISING13
+    - [ be32,0x000E9990,0x60000000]
+  MGRISING14: &MGRISING14
+    - [ be32,0x000B8CA8,0x60000000]
+  MGRISING15: &MGRISING15
+    - [ be32,0x00095544,0x60000000]
+  MGRISING16: &MGRISING16
+    - [ be32,0x00197C58,0x60000000]
+  MGRISING17: &MGRISING17
+    - [ be32,0x0124EF60,0xF861FFF8]
+    - [ be32,0x0124EF64,0x3C6001BE]
+    - [ be32,0x0124EF68,0x80635394]
+    - [ be32,0x0124EF6C,0x800335B8]
+    - [ be32,0x0124EF70,0x7C0903A6]
+    - [ be32,0x0124EF74,0x806335B0]
+    - [ be32,0x0124EF78,0x8003000C]
+    - [ be32,0x0124EF7C,0x90030004]
+    - [ be32,0x0124EF80,0x38630018]
+    - [ be32,0x0124EF84,0x4200FFF4]
+    - [ be32,0x0124EF88,0xE861FFF8]
+    - [ be32,0x0124EF8C,0x4B39FAD4]
+    - [ be32,0x005EEA5C,0x48C60504]
+  MGRISING18: &MGRISING18
+    - [ be32,0x01263FB8,0xF821FFF9]
+    - [ be32,0x01263FBC,0x7C0802A6]
+    - [ be32,0x01263FC0,0xF8010000]
+    - [ be32,0x01263FC4,0x3FE00000]
+    - [ be32,0x01263FC8,0x3FC001BD]
+    - [ be32,0x01263FCC,0x83DEDB84]
+    - [ be32,0x01263FD0,0x3FA001BD]
+    - [ be32,0x01263FD4,0x83BDDFA4]
+    - [ be32,0x01263FD8,0x63BC0000]
+    - [ be32,0x01263FDC,0x807E0000]
+    - [ be32,0x01263FE0,0x3863FFF8]
+    - [ be32,0x01263FE4,0x80830010]
+    - [ be32,0x01263FE8,0x80BC0000]
+    - [ be32,0x01263FEC,0x2B850000]
+    - [ be32,0x01263FF0,0x419E0018]
+    - [ be32,0x01263FF4,0x80A50010]
+    - [ be32,0x01263FF8,0x7F842840]
+    - [ be32,0x01263FFC,0x419E0010]
+    - [ be32,0x01264000,0x3B9C0004]
+    - [ be32,0x01264004,0x4BFFFFE4]
+    - [ be32,0x01264008,0x48366217]
+    - [ be32,0x0126400C,0x3BFF0001]
+    - [ be32,0x01264010,0x3BDE0004]
+    - [ be32,0x01264014,0x2B9F000B]
+    - [ be32,0x01264018,0x419CFFC0]
+    - [ be32,0x0126401C,0xE8010000]
+    - [ be32,0x01264020,0x7C0803A6]
+    - [ be32,0x01264024,0x38210008]
+    - [ be32,0x01264028,0xE80100C0]
+    - [ be32,0x0126402C,0x4E800020]
+    - [ be32,0x003663DC,0x4081002C]
+    - [ be32,0x0036A6B8,0x48EF9901]
+  MGRISING19: &MGRISING19
+    - [ be32,0x0036F444,0x80830058]
+    - [ be32,0x003712F0,0x3909FFFF]
+  MGRISING20: &MGRISING20
+    - [ be32,0x0036A668,0x38600001]
+  MGRISING21: &MGRISING21
+    - [ be32,0x006D9A94,0x38600000]
+  MGRISING22: &MGRISING22
+    - [ be32,0x01248E84,0x1C630064]
+    - [ be32,0x01248E88,0x7C63E814]
+    - [ be32,0x01248E8C,0x4B490C5C]
+    - [ be32,0x006D9AE4,0x48B6F3A0]
+  MGRISING23: &MGRISING23
+    - [ be32,0x0124D530,0x1C840064]
+    - [ be32,0x0124D534,0x7FC4F014]
+    - [ be32,0x0124D538,0x4B48C5D4]
+    - [ be32,0x006D9B08,0x48B73A28]
+  MGRISING24: &MGRISING24
+    - [ be32,0x0124D574,0x1C840064]
+    - [ be32,0x0124D578,0x7C641814]
+    - [ be32,0x0124D57C,0x4B48C604]
+    - [ be32,0x006D9B7C,0x48B739F8]  
+  MGRISING25: &MGRISING25
+    - [ be32,0x006D9AAC,0x60000000]
+    - [ be32,0x006D9AB4,0x3C600000]  
+  MGRISING26: &MGRISING26
+    - [ be32,0x003D2190,0x38800000]  
+  MGRISING27: &MGRISING27
+    - [ be32,0x003C1C88,0x60000000]
+  MGRISING28: &MGRISING28
+    - [ be32,0x012120EC,0x7FDE5B78]
+    - [ be32,0x012120F0,0x93C6000C]
+    - [ be32,0x012120F4,0x4B188EE4]
+    - [ be32,0x0039AFD4,0x48E77118]  
+  MGRISING29: &MGRISING29
+    - [ be32,0x01212114,0x7F8C6378]
+    - [ be32,0x01212118,0x91860004]
+    - [ be32,0x0121211C,0x4B188F1C]
+    - [ be32,0x0039B034,0x48E770E0]  
+  MGRISING30: &MGRISING30
+    - [ be32,0x01212140,0x7F8C6378]
+    - [ be32,0x01212144,0x91860008]
+    - [ be32,0x01212148,0x4B188F68]
+    - [ be32,0x0039B0AC,0x48E77094]  
+  MGRISING31: &MGRISING31
+    - [ be32,0x0121216C,0x7FAB5B78]
+    - [ be32,0x01212170,0x91660000]
+    - [ be32,0x01212174,0x4B188FB4]
+    - [ be32,0x0039B124,0x48E77048]  
+  MGRISING32: &MGRISING32
+    - [ be32,0x003C1C4C,0x38600001]  
+  MGRISING33: &MGRISING33
+    - [ be32,0x01212198,0x7C05202E]
+    - [ be32,0x0121219C,0x7C031B78]
+    - [ be32,0x012121A0,0x7C65212E]
+    - [ be32,0x012121A4,0x4B1B2FD4]
+    - [ be32,0x003C5174,0x48E4D024]
+    - [ be32,0x003C5178,0x7C031838]  
+  MGRISING34: &MGRISING34
+    - [ be32,0x003C2204,0x38600001]  
+  MGRISING35: &MGRISING35
+    - [ be32,0x0121221C,0x38000001]
+    - [ be32,0x01212220,0x7C03212E]
+    - [ be32,0x01212224,0x7C63202E]
+    - [ be32,0x01212228,0x4B1BFA20]
+    - [ be32,0x01212248,0x38000001]
+    - [ be32,0x0121224C,0x7C07212E]
+    - [ be32,0x01212250,0x7CE7202E]
+    - [ be32,0x01212254,0x4B1BFA24]
+    - [ be32,0x003D1C44,0x48E405D8]
+    - [ be32,0x003D1C74,0x48E405D4]  
+  MGRISING36: &MGRISING36
+    - [ be32,0x012121C4,0x38600004]
+    - [ be32,0x012121C8,0x90641EE0]
+    - [ be32,0x012121CC,0x38600001]
+    - [ be32,0x012121D0,0x48000020]
+    - [ be32,0x012121F0,0x90641F98]
+    - [ be32,0x012121F4,0x90642888]
+    - [ be32,0x012121F8,0x38600005]
+    - [ be32,0x012121FC,0x4B1B08D8]
+    - [ be32,0x003C2AD0,0x48E4F6F4]
+  MGRISING37: &MGRISING37
+    - [ be32,0x003C224C,0x60000000]  
+  MGRISING38: &MGRISING38
+    - [ be32,0x01264070,0x2C040001]
+    - [ be32,0x01264074,0x388000C8]
+    - [ be32,0x01264078,0x7C8903A6]
+    - [ be32,0x0126407C,0x3C8001BD]
+    - [ be32,0x01264080,0x6084BB54]
+    - [ be32,0x01264084,0x88A40000]
+    - [ be32,0x01264088,0x60A50003]
+    - [ be32,0x0126408C,0x98A40000]
+    - [ be32,0x01264090,0x38840006]
+    - [ be32,0x01264094,0x4200FFF0]
+    - [ be32,0x01264098,0x4E800020]
+    - [ be32,0x003AC6C0,0x48EB79B1]  
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Infinite BP (99,999,999)":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: Medo Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "1-Hit Kills":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: CodeUnique3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING2 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Invincibility":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING3 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Damage Fully Refills Health":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: It also works for the health upgrades now too, so it is no longer always 100%.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING4 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Marker For The Dwarf Gekko That Raiden Controls In Chapter 2":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: In Chapter 2, you will encounter a spot where you will need to control a Dwarf Gekko to continue on, and this works for it without marking the other Drawf Gekkos around
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING5 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Marker For The Turrets That Raiden Can Control In Chapter 4":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: In the very beginning room in Chapter 4 after you go up the steps but before you get on the elevator, there are 2 turrets you can use on the enemies.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING6 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Invincibility For Things Raiden Controls":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: Requires the Marker codes for either the Dwarf Gekko in Chapter 2 or the Turrets in Chapter 4 or this will do nothing. The only unwanted effect of the code is that 1 enemy might not respond to damage for the 1st time they take damage, but after that the effect is gone again until you either control the Dwarf Gekko or Turrets again.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING7 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Damage Fully Refills Health For Things Raiden Controls":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: Requires the Marker codes for either the Dwarf Gekko in Chapter 2 or the Turrets in Chapter 4 or this will do nothing. The only unwanted effect of the code is that 1 enemy might not respond to damage for the 1st time they take damage, but after that the effect is gone again until you either control the Dwarf Gekko or Turrets again.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING8 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Raiden Cannot Be Stunned":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING9 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Any Damage Breaks Enemy Shields":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING10 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Any Damage Stuns Cyborgs":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING11 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Any Damage Stuns Fenrirs":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING12 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Any Damage Stuns GRADs":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING13 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Any Damage Stuns Mastiffs":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING14 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Any Damage Stuns Raptors":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING15 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Any Damage Stuns Hammerheads":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING16 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Max Fuel Cell Gauge On Use":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING17 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Max Items From Use":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING18 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Have All Items":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING19 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Pick Up All Items Automatically":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: Normally as soon as the game completely generates an item into the level somewhere, like a Hand Grenade always being in a certain spot in the level or the special green left arm the game creates after you correctly chop one off, this will cause it to instantly be picked up without you needing to walk over it.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING20 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Always Get A No Kills Bonus At The End Of A Chapter":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING21 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Total Chapter BP Multiplier (100x)":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 000A=10x;0064=100x;03E8=1,000x;2710=10,000x
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING22 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Total Chapter Zandatsu Multiplier (100x)":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 000A=10x;0064=100x;03E8=1,000x;2710=10,000x
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING23 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Total Chapter Kills Multiplier (100x)":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 000A=10x;0064=100x;03E8=1,000x;2710=10,000x You can still kill as many enemies as you want and this will still work.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING24 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Total Chapter Time Never Increases":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING25 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "No Chapter Failures":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING26 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Can Access The Collection Menu From The Main Menu Without Having Any Of Them Unlocked":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING27 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Enter The Collection Menu To Unlock All Titles":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING28 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Enter The Collection Menu To Unlock All IDs":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING29 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Enter The Collection Menu To Unlock All Men In Boxes":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING30 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Enter The Collection Menu To Unlock All Data":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: It also includes Data Storage 21 to 23, I'm not certain if they can be unlocked a normal way.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING31 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Can Access The VR Missions Menu From The Main Menu Without Having Any Of Them Unlocked":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING32 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Enter The VR Missions Menu To Unlock All VR Missions":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING33 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Can Access The Chapters Menu Without Having Any Of Them Unlocked":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING34 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Enter The Chapters Menu To Unlock All Chapters On All Difficulties":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: Enter the Chapters menu to trigger it, enter the game, and trigger a save and they will stay unlocked permanently. If you do not see Very Hard or Revengeance difficulties, use the code to unlock all difficulties to make those 2 appear in the chapters menu.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING35 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Enter The New Game Menu To Unlock All Difficulties":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING36 ]
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Can Access The Customize Menu Without Having Anything Unlocked":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING37 ]   
+PPU-cd1eced9b38a25ebce7b86d818dbe65df815859e:
+  "Enter The Customization Menu To Unlock All Equipment":
+    Games:
+      "METAL GEAR RISING REVENGEANCE (Artemis)":
+        BLUS31045: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: Enter the Customization Menu to access everything, and save to keep them.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MGRISING38 ]   
