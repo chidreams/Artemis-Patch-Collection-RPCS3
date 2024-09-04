@@ -1,0 +1,265 @@
+# Title: Dead Space™
+# Serial: BLUS30177
+# Category: DG
+# Version: APP_VER=01.01 VERSION=01.01  
+Anchors:
+  DeadSpace: &DeadSpace
+      - [be32,0x00197C70,0x4E800020]
+  DeadSpace2: &DeadSpace2
+      - [be32,0x001494C8,0x60000000]
+  DeadSpace3: &DeadSpace3
+      - [be32,0x00060A24,0xD01F0120]
+  DeadSpace4: &DeadSpace4
+      - [be32,0x00142F3C,0x3C607F7F]
+      - [be32,0x00142F44,0x907F07F0]
+  DeadSpace5: &DeadSpace5
+      - [be32,0x0018C6C0,0x3C607F7F]
+      - [be32,0x0018C6C8,0x907F0C60]
+  DeadSpace6: &DeadSpace6
+      - [be32,0x00175F34,0x388003E7]
+      - [be32,0x001F0D00,0x388003E7]
+  DeadSpace7: &DeadSpace7
+      - [be32,0x00210154,0x3BA00019]
+      - [be32,0x00210178,0x93A9000C]
+      - [be32,0x0021017C,0x93BF0250]
+  DeadSpace8: &DeadSpace8
+      - [be32,0x0027CB18,0x60000000]
+      - [be32,0x0027CD2C,0x60000000]      
+  DeadSpace9: &DeadSpace9
+      - [be32,0x001A54FB,0x60000000] # orig-code D03F0070
+  DeadSpace10: &DeadSpace10
+      - [be32,0x0018C6DC,0x60000000] 
+  DeadSpace11: &DeadSpace11
+    - [be32,0x00176040,0x7D234B78] # orig-code 7C630214
+    - [be32,0x00242ED0,0x7D405378] # orig-code 7C1B4A14
+    - [be32,0x0024352C,0x7D405378] # orig-code 7C1D0050
+  DeadSpace12: &DeadSpace12
+      - [be32,0x0005F184,0x60000000]
+  DeadSpace13: &DeadSpace13
+      - [be32,0x0005F7EC,0x60000000]
+  DeadSpace14: &DeadSpace14
+      - [be32,0x0027D264,0x60000000]
+  DeadSpace15: &DeadSpace15
+      - [be32,0x00165654,0x60000000]
+  DeadSpace16: &DeadSpace16
+      - [be32,0x0015FD7C,0x388003E7]
+  DeadSpace17: &DeadSpace17
+      - [be32,0x0013AA98,0x3BA00019]
+  DeadSpace18: &DeadSpace18
+      - [be32,0x00142F78,0x3C607F7F]
+  DeadSpace19: &DeadSpace19
+      - [be32,0x0014AC1C,0x3C004100]
+  DeadSpace20: &DeadSpace20
+      - [be32,0x0013F188,0x3FA07F7F]
+  DeadSpace21: &DeadSpace21
+      - [be32,0x005148F0,0x60000000]
+PPU-ade4c30b0c6701258bdce104b11ee74f199ebee8:
+  "Invincibility":
+    Games:
+      "Dead Space (Artemis)":
+        BLUS30177: [ 01.01 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DeadSpace ]
+PPU-ade4c30b0c6701258bdce104b11ee74f199ebee8:
+  "Ammo does not decrease":
+    Games:
+      "Dead Space (Artemis)":
+        BLUS30177: [ 01.01 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DeadSpace2 ]
+PPU-ade4c30b0c6701258bdce104b11ee74f199ebee8:
+  "Anything Dies From 1 Hit":
+    Games:
+      "Dead Space (Artemis)":
+        BLUS30177: [ 01.01 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DeadSpace3 ]
+PPU-ade4c30b0c6701258bdce104b11ee74f199ebee8:
+  "Weapons Do Massive Damage":
+    Games:
+      "Dead Space (Artemis)":
+        BLUS30177: [ 01.01 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DeadSpace4 ]
+PPU-ade4c30b0c6701258bdce104b11ee74f199ebee8:
+  "Infinite Stasis Duration":
+    Games:
+      "Dead Space (Artemis)":
+        BLUS30177: [ 01.01 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DeadSpace5 ]
+PPU-ade4c30b0c6701258bdce104b11ee74f199ebee8:
+  "Infinite Power Nodes":
+    Games:
+      "Dead Space (Artemis)":
+        BLUS30177: [ 01.01 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DeadSpace6 ]
+PPU-ade4c30b0c6701258bdce104b11ee74f199ebee8:
+  "Open Inventory For 25 Slots":
+    Games:
+      "Dead Space (Artemis)":
+        BLUS30177: [ 01.01 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DeadSpace7 ]
+PPU-ade4c30b0c6701258bdce104b11ee74f199ebee8:
+  "Hull Integrity Does Not Decrease":
+    Games:
+      "Dead Space (Artemis)":
+        BLUS30177: [ 01.01 ]
+    Author: Serp87 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DeadSpace8 ]
+PPU-ade4c30b0c6701258bdce104b11ee74f199ebee8:
+  "Infinite Oxygen":
+    Games:
+      "Dead Space (Artemis)":
+        BLUS30177: [ 01.01 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DeadSpace9 ]
+PPU-ade4c30b0c6701258bdce104b11ee74f199ebee8:
+  "Max Kinesis Range":
+    Games:
+      "Dead Space (Artemis)":
+        BLUS30177: [ 01.01 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DeadSpace10 ]
+PPU-ade4c30b0c6701258bdce104b11ee74f199ebee8:
+  "Infinite Credits":
+    Games:
+      "Dead Space (Artemis)":
+        BLUS30177: [ 01.01 ]
+    Author: Skiller Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DeadSpace11 ]
+PPU-ade4c30b0c6701258bdce104b11ee74f199ebee8:
+  "Health Does Not Decrease":
+    Games:
+      "Dead Space (Artemis)":
+        BLUS30177: [ 01.01 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DeadSpace12 ]
+PPU-ade4c30b0c6701258bdce104b11ee74f199ebee8:
+  "Stasis Does Not Decrease":
+    Games:
+      "Dead Space (Artemis)":
+        BLUS30177: [ 01.01 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DeadSpace13 ]
+PPU-ade4c30b0c6701258bdce104b11ee74f199ebee8:
+  "Turrets Do Not Overheat":
+    Games:
+      "Dead Space (Artemis)":
+        BLUS30177: [ 01.01 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DeadSpace14 ]
+PPU-ade4c30b0c6701258bdce104b11ee74f199ebee8:
+  "Rapid Fire":
+    Games:
+      "Dead Space (Artemis)":
+        BLUS30177: [ 01.01 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DeadSpace15 ]
+PPU-ade4c30b0c6701258bdce104b11ee74f199ebee8:
+  "Ripper Infinite Duration":
+    Games:
+      "Dead Space (Artemis)":
+        BLUS30177: [ 01.01 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DeadSpace16 ]
+PPU-ade4c30b0c6701258bdce104b11ee74f199ebee8:
+  "Contact Beam 0 Charge Time":
+    Games:
+      "Dead Space (Artemis)":
+        BLUS30177: [ 01.01 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DeadSpace17 ]
+PPU-ade4c30b0c6701258bdce104b11ee74f199ebee8:
+  "Line Gun Max Mine":
+    Games:
+      "Dead Space (Artemis)":
+        BLUS30177: [ 01.01 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DeadSpace18 ]
+PPU-ade4c30b0c6701258bdce104b11ee74f199ebee8:
+  "Line Gun Increased Width":
+    Games:
+      "Dead Space (Artemis)":
+        BLUS30177: [ 01.01 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DeadSpace19 ]
+PPU-ade4c30b0c6701258bdce104b11ee74f199ebee8:
+  "Flamethrower Max Duration":
+    Games:
+      "Dead Space (Artemis)":
+        BLUS30177: [ 01.01 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DeadSpace20 ]
+PPU-ade4c30b0c6701258bdce104b11ee74f199ebee8:
+  "Target Practice Blue Targets Do Not Decrease Score":
+    Games:
+      "Dead Space (Artemis)":
+        BLUS30177: [ 01.01 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DeadSpace21 ]
