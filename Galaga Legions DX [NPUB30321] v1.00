@@ -1,0 +1,34 @@
+# Title: Galaga Legions DX
+# Serial: NPUB30321
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.01
+PPU-48c095d9f10bd9f0943026f4d8dbcfc2f400d86e:
+  "Unlimited Lives":
+    Games:
+      "Galaga Legions DX (Artemis)":
+        NPUB30321: [ 01.00]
+    Author: wreckognize Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x000E5D1C,0x30840000]
+PPU-48c095d9f10bd9f0943026f4d8dbcfc2f400d86e:
+  "Unlimited Time":
+    Games:
+      "Galaga Legions DX (Artemis)":
+        NPUB30321: [ 01.00]
+    Author: wreckognize Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x000E7C88,0x30630000]
+PPU-48c095d9f10bd9f0943026f4d8dbcfc2f400d86e:
+  "Unlimited Time (Time Attack Mode)":
+    Games:
+      "Galaga Legions DX (Artemis)":
+        NPUB30321: [ 01.00]
+    Author: wreckognize Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x000E7C68,0x30630000]
