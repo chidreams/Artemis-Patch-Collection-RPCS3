@@ -1,0 +1,154 @@
+# Title: Dead Space™ 3
+# Serial: BLES01733
+# Category: GD
+# Version: APP_VER=01.02 VERSION=01.00
+Anchors:
+  D3space: &D3space
+      - [ be32,0x004F7F38,0x60000000]
+  D3space2: &D3space2
+      - [ be32,0x0038B170,0x60000000]
+  D3space3: &D3space3
+      - [ be32,0x005260A8,0x60000000]  
+      - [ be32,0x005260C4,0x60000000]
+  D3space4: &D3space4
+      - [ be32,0x00314A7C,0x60000000] 
+  D3space5: &D3space5
+      - [ be32,0x0024A770,0x3C00000F]  
+      - [ be32,0x0024A774,0x6000423F]
+  D3space6: &D3space6
+      - [ be32,0x0019AC88,0x913F00F8]  
+      - [ be32,0x0019AC98,0x913F00F4]
+  D3space7: &D3space7
+      - [ be32,0x004EF344,0x48000008]
+  D3space9: &D3space9
+      - [ be32,0x005D40A4,0x60000000] 
+  D3space10: &D3space10
+      - [ be32,0x006052A4,0x60000000]
+  D3space11: &D3space11
+      - [ be32,0x0035B90C,0x3D207F80]
+      - [ be32,0x0035B910,0x9121009C]
+  D3space12: &D3space12
+      - [ be32,0x0059D2F4,0x60000000]
+      - [ be32,0x0059D330,0x60000000]
+  D3space13: &D3space13
+      - [ be32,0x0005C0F0,0x60000000]       
+PPU-89d424bcd7eff2c87f346b71f71f8600cf6a6e58:
+  "Infinite Ammo + Bottomless Clip":
+    Games:
+      "Dead Space™ 3 (Artemis)":
+        BLES01733: [ 01.02 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D3space ]
+PPU-89d424bcd7eff2c87f346b71f71f8600cf6a6e58:
+  "Infinite Health":
+    Games:
+      "Dead Space™ 3 (Artemis)":
+        BLES01733: [ 01.02 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D3space2 ]
+PPU-89d424bcd7eff2c87f346b71f71f8600cf6a6e58:
+  "Body Temperature Does Not Decrease":
+    Games:
+      "Dead Space™ 3 (Artemis)":
+        BLES01733: [ 01.02 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D3space3 ]
+PPU-89d424bcd7eff2c87f346b71f71f8600cf6a6e58:
+  "Oxygen Does Not Decrease":
+    Games:
+      "Dead Space™ 3 (Artemis)":
+        BLES01733: [ 01.02 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D3space4 ]
+PPU-89d424bcd7eff2c87f346b71f71f8600cf6a6e58:
+  "Max Resource On Sell":
+    Games:
+      "Dead Space™ 3 (Artemis)":
+        BLES01733: [ 01.02 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D3space5 ]
+PPU-89d424bcd7eff2c87f346b71f71f8600cf6a6e58:
+  "Enemies Die From Any Damage":
+    Games:
+      "Dead Space™ 3 (Artemis)":
+        BLES01733: [ 01.02 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D3space6 ]
+PPU-89d424bcd7eff2c87f346b71f71f8600cf6a6e58:
+  "Rapid Fire":
+    Games:
+      "Dead Space™ 3 (Artemis)":
+        BLES01733: [ 01.02 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D3space7 ]
+PPU-89d424bcd7eff2c87f346b71f71f8600cf6a6e58:
+  "Ship Health Never Decreases":
+    Games:
+      "Dead Space™ 3 (Artemis)":
+        BLES01733: [ 01.02 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D3space9 ]
+PPU-89d424bcd7eff2c87f346b71f71f8600cf6a6e58:
+  "Ship Health Timer Never Decreases":
+    Games:
+      "Dead Space™ 3 (Artemis)":
+        BLES01733: [ 01.02 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: When inside the ship and flying to the planet, there's a moment where Isaac gets out of the seat to go to the back of the ship to lock those 3 canisters in place. The game normally gives you exactly 60 seconds to do it and if you don't you instantly die.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D3space10 ]
+PPU-89d424bcd7eff2c87f346b71f71f8600cf6a6e58:
+  "Infinite Stasis Length":
+    Games:
+      "Dead Space™ 3 (Artemis)":
+        BLES01733: [ 01.02 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D3space11 ]
+PPU-89d424bcd7eff2c87f346b71f71f8600cf6a6e58:
+  "Hacking Timer Never Decreases":
+    Games:
+      "Dead Space™ 3 (Artemis)":
+        BLES01733: [ 01.02 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D3space12 ]
+PPU-89d424bcd7eff2c87f346b71f71f8600cf6a6e58:
+  "Instantly Complete Enemy Escape Button Mashers":
+    Games:
+      "Dead Space™ 3 (Artemis)":
+        BLES01733: [ 01.02 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: If an enemy grabs you this will instantly complete the button masher for you. This won't work on sequences like the train in the beginning or other things like that, I was too lazy to try finding those.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D3space13 ]
