@@ -1,0 +1,560 @@
+# Title: Dead Space™ 2 Standard
+# Serial: BLUS30717
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00
+Anchors:
+  D2Space: &D2Space
+    - [ be32,0x0045F114,0x38600000]
+    - [ be32,0x0045F154,0x39200000]
+  D2Space2: &D2Space2
+    - [ be32,0x0027EAB0,0x38600004]
+    - [ be32,0x003FD94C,0x38600004]
+  D2Space3: &D2Space3
+    - [ be32,0x002CE764,0x4E800020]
+  D2Space4: &D2Space4
+    - [ be32,0x000BD094,0x60000000]
+  D2Space5: &D2Space5
+    - [ be32,0x0099C658,0x3D405D5F]
+    - [ be32,0x0099C65C,0x914300E4]
+    - [ be32,0x0099C660,0x914300E8]
+    - [ be32,0x0099C664,0x914300F0]
+    - [ be32,0x0099C668,0x914300F4]
+    - [ be32,0x0099C66C,0x4B70A4EC]
+    - [ be32,0x000A6B54,0x488F5B04]
+  D2Space6: &D2Space6
+    - [ be32,0x00223E04,0x60000000]
+  D2Space7: &D2Space7
+    - [ be32,0x001D41FC,0x60000000]
+  D2Space8: &D2Space8
+    - [ be32,0x001F82A0,0x3C007FFF]
+  D2Space9: &D2Space9
+    - [ be32,0x00226B34,0x60000000]
+  D2Space10: &D2Space10
+    - [ be32,0x0007366C,0x60000000]
+  D2Space11: &D2Space11
+    - [ be32,0x002A4DC8,0x3C807F7F]
+    - [ be32,0x002A4DD8,0x90980BC8]
+    - [ be32,0x002A4DF0,0x3C007F7F]
+    - [ be32,0x002A4E04,0x90180BC8]
+  D2Space12: &D2Space12
+    - [ be32,0x001D38E8,0x7D204B78]
+    - [ be32,0x00226AC4,0x7D234B78]
+    - [ be32,0x002368F0,0x3C00000F]
+    - [ be32,0x002368F4,0x6000423F]
+  D2Space13: &D2Space13
+    - [ be32,0x00226960,0x3880270F]
+    - [ be32,0x00392404,0x3880270F]
+    - [ be32,0x002AF370,0x3880270F]
+  D2Space14: &D2Space14
+    - [ be32,0x001F82C4,0x3C807F7F]
+    - [ be32,0x001F82CC,0x909F03D8]
+    - [ be32,0x001F82DC,0x3C807F7F]
+    - [ be32,0x001F82E4,0x909F03DC]
+  D2Space15: &D2Space15
+    - [ be32,0x00224034,0x4BFFFEF8]
+  D2Space16: &D2Space16
+    - [ be32,0x001F86F0,0x3C604080]
+    - [ be32,0x001F86F8,0x907B0428]
+  D2Space17: &D2Space17
+    - [ be32,0x001F870C,0x3C600000]
+    - [ be32,0x001F8714,0x907B042C]
+  D2Space18: &D2Space18
+    - [ be32,0x001F8660,0x3C007F7F]
+    - [ be32,0x001F8664,0x901F0404]
+    - [ be32,0x001F8670,0xE80100A0]
+    - [ be32,0x001F8674,0x7C0803A6]
+  D2Space19: &D2Space19
+    - [ be32,0x001F887C,0x3C000000]
+    - [ be32,0x001F8880,0x901F0404]
+    - [ be32,0x001F888C,0xE80100A0]
+    - [ be32,0x001F8890,0x7C0803A6]
+  D2Space20: &D2Space20
+    - [ be32,0x0099C658,0x3D003083]
+    - [ be32,0x0099C65C,0xA108A4BC]
+    - [ be32,0x0099C660,0x71080200]
+    - [ be32,0x0099C664,0x2F880200]
+    - [ be32,0x0099C668,0x419E0008]
+    - [ be32,0x0099C66C,0x4B714E7C]
+    - [ be32,0x0099C670,0x4B714BBC]
+    - [ be32,0x000B1228,0x488EB430]
+  D2Space21: &D2Space21
+    - [ be32,0x00D91C9C,0x39200019]
+  D2Space22: &D2Space22
+    - [ be32,0x003D3338,0x60000000]
+    - [ be32,0x003D3364,0x60000000]
+  D2Space23: &D2Space23
+    - [ be32,0x0029ACBC,0x3C003FA0]
+  D2Space24: &D2Space24
+    - [ be32,0x0008A99C,0x3F607FFF]
+  D2Space25: &D2Space25
+    - [ be32,0x002BCAB0,0x3C000000]
+  D2Space26: &D2Space26
+    - [ be32,0x00118548,0x3C000000]
+    - [ be32,0x00119014,0x3D400000]
+  D2Space27: &D2Space27
+    - [ be32,0x00118758,0x3D400000]
+    - [ be32,0x00119014,0x3D400000]
+    - [ be32,0x00119F8C,0x3EA00000]
+  D2Space28: &D2Space28
+    - [ be32,0x0011F080,0x3FE00000]
+  D2Space29: &D2Space29
+    - [ be32,0x0011F4A8,0x60000000]
+  D2Space30: &D2Space30
+    - [ be32,0x0011F5CC,0x60000000]
+  D2Space31: &D2Space31
+    - [ be32,0x0011E2B4,0x60000000]
+  D2Space32: &D2Space32
+    - [ be32,0x0011D348,0x60000000]
+  D2Space33: &D2Space33
+    - [ be32,0x0011C0C4,0x60000000]
+  D2Space34: &D2Space34
+    - [ be32,0x00119E30,0x60000000]
+  D2Space35: &D2Space35
+    - [ be32,0x00118F14,0x60000000]
+  D2Space36: &D2Space36
+    - [ be32,0x0011BF18,0x00000074]
+    - [ be32,0x0011BF1C,0x00000074]
+  D2Space37: &D2Space37
+    - [ be32,0x0011BF0C,0x00000074]
+    - [ be32,0x0011BF10,0x00000074]
+    - [ be32,0x0011BF14,0x00000074]
+    - [ be32,0x0011BF18,0x00000074]
+    - [ be32,0x0011BF1C,0x00000074]
+    - [ be32,0x0011BF20,0x00000074]
+    - [ be32,0x0011BF24,0x00000074]
+    - [ be32,0x0011BF28,0x00000074]
+    - [ be32,0x0011BF2C,0x00000074]
+    - [ be32,0x0011BF30,0x00000074]
+    - [ be32,0x0011BF34,0x00000074]
+  D2Space38: &D2Space38
+    - [ be32,0x00143850,0x000000E4]
+    - [ be32,0x00143854,0x000000E4]
+    - [ be32,0x00143858,0x000000E4]
+    - [ be32,0x0014385C,0x000000E4]
+    - [ be32,0x00143860,0x000000E4]
+    - [ be32,0x00143864,0x000000E4]
+    - [ be32,0x00143868,0x000000E4]
+    - [ be32,0x0014386C,0x000000E4]
+    - [ be32,0x00143870,0x000000E4]
+    - [ be32,0x00143874,0x000000E4]
+    - [ be32,0x00143878,0x000000E4]
+    - [ be32,0x0014387C,0x000000E4]
+    - [ be32,0x00143880,0x000000E4]
+    - [ be32,0x00143884,0x000000E4]
+  D2Space39: &D2Space39
+    - [ be32,0x00117E28,0x60000000]
+    - [ be32,0x00117E1C,0x60000000]
+  D2Space40: &D2Space40
+    - [ be32,0x000A6E9C,0x60000000]
+  D2Space41: &D2Space41
+    - [ be32,0x002D37F4,0x60000000]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Hardcore Mode Save Count Never Decreases":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Beat The Game On Any Difficulty To Unlock The Hand Cannon":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space2 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Invincibility":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space3 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Health Does Not Decrease For Isaac":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space4 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Load Game For Insanely High Health + Stasis":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space5 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Ammo Does Not Decrease":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space6 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Inventory Ammo Never Decreases Nor Disappears":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space7 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Mega Sized Weapon Clips":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space8 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Infinite Use Of Med Packs + Stasis Packs":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space9 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Stasis Does Not Decrease":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space10 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Max Stasis Duration":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space11 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Infinite Credits":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space12 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Infinite Power Nodes":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space13 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Weapons Have Max Damage":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space14 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Rapid Fire":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space15 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Line Gun Has Large Width":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space16 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Line Gun Alt Fire Duration 0":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space17 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Ripper Has Max Duration":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space18 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Contact Beam Has No Charge Time":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space19 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Hold L2 For Zero Gravity":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space20 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Open Inventory For 25 Slots":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space21 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Hacking Timer Never Decreases":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space22 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Movement + Aiming Speed Modifier":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 3F80=Normal;3FA0=1.25x;3FC0=1.5x;3FE0=1.75;4000=2x;4020=2.5x;4040=3x
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space23 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Disable Some Collision Checks":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space24 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Headless Isaac":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space25 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Stalkers Can Not Move And Disappear":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space26 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Leapers Can Not Move And Disappear":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space27 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Pukers Can Not Spit Long Range Nor Close Range":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space28 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Pukers Can Not Spit Long Range":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space29 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Spitters Never Spit":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space30 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Stalkers Never Shoot":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space31 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Leapers, Stalkers, And Pack Get Stuck On The Ground If They Jump":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space32 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Knocked Down Enemies Can Not Get Back Up":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space33 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "The Pregnant Necromorph Does Not Release Swarmers":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space34 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Leapers + Swarmers Get Stuck In The Air After They Jump":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space35 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Enemies Can Not Attack":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space36 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Enemies Do Not Move Nor Attack":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space37 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Enemies Never Approach You":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space38 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "All Enemies Approach You A Lot Lesser":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space39 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Enemies Die From 1 Hit":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space40 ]
+PPU-2b977bc7235249f7d3d212a1de2806e08d5ee9f1:
+  "Oxygen Does Not Decrease":
+    Games:
+      "Dead Space 2 Standard (Artemis)":
+        BLUS30717: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *D2Space41 ]
