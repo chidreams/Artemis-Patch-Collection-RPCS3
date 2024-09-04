@@ -1,0 +1,24 @@
+# Title: SUPER STARDUST™ HD
+# Serial: NPEA00014
+# Category: HG
+# Version: APP_VER=06.00 VERSION=07.00
+PPU-9e7581bfed0de0fde1d8a3a7aaa77b3adc3b1468:
+  "Infinite Life":
+    Games:
+      "SUPER STARDUST HD (Artemis)":
+        NPEA00014: [ 06.00 ]
+    Author: Serp87 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x004FD9C8,0x38090000]
+PPU-9e7581bfed0de0fde1d8a3a7aaa77b3adc3b1468:
+  "Infinite Bomb":
+    Games:
+      "SUPER STARDUST HD (Artemis)":
+        NPEA00014: [ 06.00 ]
+    Author: Serp87 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x00502E50,0x38090000]
