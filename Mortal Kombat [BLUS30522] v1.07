@@ -1,0 +1,78 @@
+# Title: Mortal Kombat
+# Serial: BLUS30522
+# Category: GD
+# Version: APP_VER=01.07 VERSION=01.00
+PPU-390f51a1c8cb1cb84b1b83690c51a0034840fcc1:
+  "Infinite Health P1":
+    Games:
+      "Mortal Kombat 9 (Artemis)":
+        BLUS30522: [ 01.07 ]
+    Author:  ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ be32,0x00175B6C,0xC3C47708]
+      - [ be32,0x00175B74,0xD3C478C0]
+PPU-390f51a1c8cb1cb84b1b83690c51a0034840fcc1:
+  "Fast X-Ray Power P1":
+    Games:
+      "Mortal Kombat 9 (Artemis)":
+        BLUS30522: [ 01.07 ]
+    Author:  ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ be32,0x0017B52C,0x3063357C]
+      - [ be32,0x0017B530,0x3C803F80]
+      - [ be32,0x0017B534,0x90830C14]
+      - [ be32,0x0017B538,0x60000000]
+PPU-390f51a1c8cb1cb84b1b83690c51a0034840fcc1:
+  "Hit X-Ray Power":
+    Games:
+      "Mortal Kombat 9 (Artemis)":
+        BLUS30522: [ 01.07 ]
+    Author:  ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ be32,0x001A30E8,0x3C804480]
+PPU-390f51a1c8cb1cb84b1b83690c51a0034840fcc1:
+  "Hit X-Ray Power Max":
+    Games:
+      "Mortal Kombat 9 (Artemis)":
+        BLUS30522: [ 01.07 ]
+    Author:  ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ be32,0x001A3140,0x4082000C]
+PPU-390f51a1c8cb1cb84b1b83690c51a0034840fcc1:
+  " Auto Fatality":
+    Games:
+      "Mortal Kombat 9 (Artemis)":
+        BLUS30522: [ 01.07 ]
+    Author: opticky ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+    - [ be32,0x018CD188,0x0000000A]
+PPU-390f51a1c8cb1cb84b1b83690c51a0034840fcc1:
+  " Koins 999999999":
+    Games:
+      "Mortal Kombat 9 (Artemis)":
+        BLUS30522: [ 01.07 ]
+    Author: opticky ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+    - [ be32,0x018DB054,0x0098967F]
+PPU-390f51a1c8cb1cb84b1b83690c51a0034840fcc1:
+  "Punches Double Damage":
+    Games:
+      "Mortal Kombat 9 (Artemis)":
+        BLUS30522: [ 01.07 ]
+    Author:  ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ be32,0x00175E80,0x91442F74]
