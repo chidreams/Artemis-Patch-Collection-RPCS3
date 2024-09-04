@@ -1,0 +1,243 @@
+# Title: DOOM Classic Complete
+# Serial: NPUB30808
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.00
+Anchors:
+  DOOMCLASSIC: &DOOMCLASSIC
+    - [ be32,0x00127548,0x60000002]
+    - [ be32,0x00127550,0x900A00C4]
+  DOOMCLASSIC2: &DOOMCLASSIC2
+    - [ be32,0x001283EC,0x38000001]
+    - [ be32,0x001283F0,0x900B0044]
+  DOOMCLASSIC3: &DOOMCLASSIC3
+    - [ be32,0x00128418,0x38000001]
+    - [ be32,0x00128420,0x90090050]
+  DOOMCLASSIC4: &DOOMCLASSIC4
+    - [ be32,0x00128438,0x38000001]
+    - [ be32,0x0012843C,0x900B0048]
+  DOOMCLASSIC5: &DOOMCLASSIC5
+    - [ be32,0x00128464,0x38000001]
+    - [ be32,0x0012846C,0x90090054]
+  DOOMCLASSIC6: &DOOMCLASSIC6
+    - [ be32,0x00128484,0x38000001]
+    - [ be32,0x00128488,0x900B004C]
+  DOOMCLASSIC7: &DOOMCLASSIC7
+    - [ be32,0x001284B0,0x38000001]
+    - [ be32,0x001284B8,0x90090058]
+  DOOMCLASSIC8: &DOOMCLASSIC8
+    - [ be32,0x0011B844,0x38000001]
+    - [ be32,0x0011B84C,0x90090008]
+  DOOMCLASSIC9: &DOOMCLASSIC9
+    - [ be32,0x0011B55C,0x39207F7F]
+  DOOMCLASSIC10: &DOOMCLASSIC10
+    - [ be32,0x0011B548,0x39200001]
+    - [ be32,0x0011B54C,0x913F0030]
+  DOOMCLASSIC11: &DOOMCLASSIC11
+    - [ be32,0x0011B570,0x39207F7F]
+    - [ be32,0x0011B578,0x913F0034]
+  DOOMCLASSIC12: &DOOMCLASSIC12
+    - [ be32,0x0011B5B4,0x39207F7F]
+    - [ be32,0x0011B5BC,0x913F0038]
+  DOOMCLASSIC13: &DOOMCLASSIC13
+    - [ be32,0x0013C350,0x38000001]
+    - [ be32,0x0013C358,0x9009003C]
+  DOOMCLASSIC14: &DOOMCLASSIC14
+    - [ be32,0x0011B5A0,0x39207F7F]
+    - [ be32,0x0011B5A8,0x913F0040]
+  DOOMCLASSIC15: &DOOMCLASSIC15
+    - [ be32,0x0010DD4C,0x38000000]
+  DOOMCLASSIC16: &DOOMCLASSIC16
+    - [ be32,0x00972ACC,0x3BE00064]
+    - [ be32,0x00972AD0,0x93EB0000]
+    - [ be32,0x00972AD4,0x481437B6]
+    - [ be32,0x001437B0,0x48972ACE]
+  DOOMCLASSIC17: &DOOMCLASSIC17
+    - [ be32,0x009729F0,0x3D6000BC]
+    - [ be32,0x009729F4,0x880B3201]
+    - [ be32,0x009729F8,0x3FE0015C]
+    - [ be32,0x009729FC,0x48000020]
+    - [ be32,0x00972A1C,0x897F17A0]
+    - [ be32,0x00972A20,0x981F17A0]
+    - [ be32,0x00972A24,0x7F8B0040]
+    - [ be32,0x00972A28,0x48000020]
+    - [ be32,0x00972A48,0x419E0058]
+    - [ be32,0x00972A4C,0x2F800001]
+    - [ be32,0x00972A50,0x409E0050]
+    - [ be32,0x00972A54,0x48000020]
+    - [ be32,0x00972A74,0x816300C4]
+    - [ be32,0x00972A78,0x696B0001]
+    - [ be32,0x00972A7C,0x916300C4]
+    - [ be32,0x00972A80,0x48000020]
+    - [ be32,0x00972AA0,0x800300C4]
+    - [ be32,0x00972AA4,0x4811B3C6]
+    - [ be32,0x0011B3C0,0x489729F2]  
+PPU-20310df93cf3117bbb48414040a553c16c4f14d8:
+  "God Mode":
+    Games:
+      "DOOM Classic Complete (Artemis)":
+        NPUB30808: [ 01.00 ]
+    Author:  Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DOOMCLASSIC ]
+PPU-20310df93cf3117bbb48414040a553c16c4f14d8:
+  "Have Blue Key":
+    Games:
+      "DOOM Classic Complete (Artemis)":
+        NPUB30808: [ 01.00 ]
+    Author:  Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DOOMCLASSIC2 ]
+PPU-20310df93cf3117bbb48414040a553c16c4f14d8:
+  "Have Blue Skull":
+    Games:
+      "DOOM Classic Complete (Artemis)":
+        NPUB30808: [ 01.00 ]
+    Author:  Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DOOMCLASSIC3 ]
+PPU-20310df93cf3117bbb48414040a553c16c4f14d8:
+  "Have Yellow Key":
+    Games:
+      "DOOM Classic Complete (Artemis)":
+        NPUB30808: [ 01.00 ]
+    Author:  Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DOOMCLASSIC4 ]
+PPU-20310df93cf3117bbb48414040a553c16c4f14d8:
+  "Have Yellow Skull":
+    Games:
+      "DOOM Classic Complete (Artemis)":
+        NPUB30808: [ 01.00 ]
+    Author:  Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DOOMCLASSIC5 ]
+PPU-20310df93cf3117bbb48414040a553c16c4f14d8:
+  "Have Red Key":
+    Games:
+      "DOOM Classic Complete (Artemis)":
+        NPUB30808: [ 01.00 ]
+    Author:  Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DOOMCLASSIC6 ]
+PPU-20310df93cf3117bbb48414040a553c16c4f14d8:
+  "Have Red Skull":
+    Games:
+      "DOOM Classic Complete (Artemis)":
+        NPUB30808: [ 01.00 ]
+    Author:  Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DOOMCLASSIC7 ]
+PPU-20310df93cf3117bbb48414040a553c16c4f14d8:
+  "Have All Weapons":
+    Games:
+      "DOOM Classic Complete (Artemis)":
+        NPUB30808: [ 01.00 ]
+    Author:  Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DOOMCLASSIC8 ]
+PPU-20310df93cf3117bbb48414040a553c16c4f14d8:
+  "Have Invulnerability Sphere Active":
+    Games:
+      "DOOM Classic Complete (Artemis)":
+        NPUB30808: [ 01.00 ]
+    Author:  Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DOOMCLASSIC9 ]
+PPU-20310df93cf3117bbb48414040a553c16c4f14d8:
+  "Have Berserk Sphere Active":
+    Games:
+      "DOOM Classic Complete (Artemis)":
+        NPUB30808: [ 01.00 ]
+    Author:  Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DOOMCLASSIC10 ]
+PPU-20310df93cf3117bbb48414040a553c16c4f14d8:
+  "Have Invisibility Sphere Active":
+    Games:
+      "DOOM Classic Complete (Artemis)":
+        NPUB30808: [ 01.00 ]
+    Author:  Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DOOMCLASSIC11 ]
+PPU-20310df93cf3117bbb48414040a553c16c4f14d8:
+  "Have Radiation Suit Active":
+    Games:
+      "DOOM Classic Complete (Artemis)":
+        NPUB30808: [ 01.00 ]
+    Author:  Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DOOMCLASSIC12 ]
+PPU-20310df93cf3117bbb48414040a553c16c4f14d8:
+  "Have Automap":
+    Games:
+      "DOOM Classic Complete (Artemis)":
+        NPUB30808: [ 01.00 ]
+    Author:  Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DOOMCLASSIC13 ]
+PPU-20310df93cf3117bbb48414040a553c16c4f14d8:
+  "Have Light Amplifier Active":
+    Games:
+      "DOOM Classic Complete (Artemis)":
+        NPUB30808: [ 01.00 ]
+    Author:  Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DOOMCLASSIC14 ]
+PPU-20310df93cf3117bbb48414040a553c16c4f14d8:
+  "Rapid Fire":
+    Games:
+      "DOOM Classic Complete (Artemis)":
+        NPUB30808: [ 01.00 ]
+    Author:  Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DOOMCLASSIC15 ]
+PPU-20310df93cf3117bbb48414040a553c16c4f14d8:
+  "Infinite Ammo":
+    Games:
+      "DOOM Classic Complete (Artemis)":
+        NPUB30808: [ 01.00 ]
+    Author:  Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DOOMCLASSIC16 ]
+PPU-20310df93cf3117bbb48414040a553c16c4f14d8:
+  "Toggle No Clip Mode With Select":
+    Games:
+      "DOOM Classic Complete (Artemis)":
+        NPUB30808: [ 01.00 ]
+    Author:  Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DOOMCLASSIC17 ]
