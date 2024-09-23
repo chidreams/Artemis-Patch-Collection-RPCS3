@@ -1,0 +1,40 @@
+Version: 1.2
+# Title: Midnight Club: Los Angeles
+# Serial: BLUS30442
+# Category: DG
+# Version: APP_VER=01.06 VERSION=01.03   
+PPU-9d8f7464991444526c6f9ca001dc1eb061fe367b:
+  "Freeze Race Timer":
+    Games:
+      "Midnight Club: Los Angeles (Artemis)":
+        BLUS30442: [ 01.06 ]
+    Author: vosman
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00226960,0x39600000]
+PPU-9d8f7464991444526c6f9ca001dc1eb061fe367b:
+  "Infinite Nitro":
+    Games:
+      "Midnight Club: Los Angeles (Artemis)":
+        BLUS30442: [ 01.06 ]
+    Author: vosman
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x002B155C,0x38000005]
+    - [ be32,0x002B1564,0xB0090012]
+PPU-9d8f7464991444526c6f9ca001dc1eb061fe367b:
+  "Money 999999999 After Going To Garage":
+    Games:
+      "Midnight Club: Los Angeles (Artemis)":
+        BLUS30442: [ 01.06 ]
+    Author: vosman
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x000100C0,0x3CC005F5]
+    - [ be32,0x000100C4,0x60C6E0FF]
+    - [ be32,0x000100C8,0x90C901FC]
+    - [ be32,0x000100CC,0x4E800020]
+    - [ be32,0x003DBC2C,0x4BC34495]
