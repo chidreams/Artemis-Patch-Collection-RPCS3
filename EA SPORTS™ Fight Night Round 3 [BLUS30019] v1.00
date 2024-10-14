@@ -1,0 +1,15 @@
+Version: 1.2
+# Title: EA SPORTS™ Fight Night Round 3
+# Serial: BLUS30019
+# Category: DG
+# Version: APP_VER=Unknown VERSION=01.00  
+PPU-b84046fb82cd48bd2d093c06bb73d3e031b20199:
+  "(Career Mode) Cash Increases With Purchase ":
+    Games:
+      "EA SPORTS™ Fight Night Round 3 (Artemis)":
+        BLUS30019: [ 01.00 ]
+    Author: ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00243904,0x916A0170] 
