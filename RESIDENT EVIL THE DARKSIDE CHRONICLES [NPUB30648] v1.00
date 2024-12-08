@@ -1,0 +1,205 @@
+Version: 1.2
+# Title: RESIDENT EVIL THE DARKSIDE CHRONICLES
+# Serial: NPUB30648
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.00      
+Anchors:
+  DARKSIDE: &DARKSIDE
+      - [ be32,0x0002F604,0x4082FF4C]
+  DARKSIDE2: &DARKSIDE2
+      - [ be32,0x00240DC0,0x4182014C]
+  DARKSIDE3: &DARKSIDE3
+      - [ be32,0x00A752A0,0x3C804248]
+      - [ be32,0x00A752A4,0x90850000]
+      - [ be32,0x00A752A8,0xC0450000]
+      - [ be32,0x00A752AC,0x4B7B48E8]
+      - [ be32,0x00229B90,0x4884B710]
+  DARKSIDE4: &DARKSIDE4
+      - [ be32,0x002337EC,0x60000000]
+  DARKSIDE5: &DARKSIDE5
+      - [ be32,0x002A5DAC,0x3C007FFF]
+      - [ be32,0x002A5DB0,0x90030000]
+      - [ be32,0x002A5DB4,0x80630000]
+  DARKSIDE6: &DARKSIDE6
+      - [ be32,0x00266678,0x30A30000]
+      - [ be32,0x002A5B38,0x60000000]
+  DARKSIDE7: &DARKSIDE7
+      - [ be32,0x002A5B38,0x60000000]
+  DARKSIDE8: &DARKSIDE8
+      - [ be32,0x002669AC,0x3BC00001]
+  DARKSIDE9: &DARKSIDE9
+      - [ be32,0x002A863C,0x3084000A]
+  DARKSIDE10: &DARKSIDE10
+      - [ be32,0x002DB774,0x38C0270F]
+  DARKSIDE11: &DARKSIDE11
+      - [ be32,0x002A8684,0x30A5000A]
+  DARKSIDE12: &DARKSIDE12
+      - [ be32,0x002DB78C,0x3880270F]
+  DARKSIDE13: &DARKSIDE13
+      - [ be32,0x002A1AA0,0x38600000]
+  DARKSIDE14: &DARKSIDE14
+      - [ be32,0x00A3FB98,0x38007162]
+      - [ be32,0x00A3FB9C,0x90050090]
+      - [ be32,0x00A3FBA0,0xC0450000]
+      - [ be32,0x00A3FBA4,0x48229B96]
+      - [ be32,0x00A3FBC4,0x80040090]
+      - [ be32,0x00A3FBC8,0x2B807162]
+      - [ be32,0x00A3FBCC,0x419E0028]
+      - [ be32,0x00A3FBD0,0x48000020]
+      - [ be32,0x00A3FBF0,0xD0440000]
+      - [ be32,0x00A3FBF4,0x48022FC6]
+      - [ be32,0x00229B90,0x48A3FB9A]
+      - [ be32,0x00022FB8,0xEC410828]
+      - [ be32,0x00022FC0,0x48A3FBC6]
+  DARKSIDE15: &DARKSIDE15
+      - [ be32,0x00035214,0xC023000C]
+PPU-31191d1af19987410112b51edf0452d937af9879:
+  "Zombie Freezer Mode":
+    Games:
+      "RESIDENT EVIL THE DARKSIDE CHRONICLES (Artemis)":
+        NPUB30648: [ 01.00]
+    Author: xtatu Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *DARKSIDE ]
+PPU-31191d1af19987410112b51edf0452d937af9879:
+  "Infinite Health For Player":
+    Games:
+      "RESIDENT EVIL THE DARKSIDE CHRONICLES (Artemis)":
+        NPUB30648: [ 01.00]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *DARKSIDE2 ]
+PPU-31191d1af19987410112b51edf0452d937af9879:
+  "Infinite Health For Partner":
+    Games:
+      "RESIDENT EVIL THE DARKSIDE CHRONICLES (Artemis)":
+        NPUB30648: [ 01.00]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *DARKSIDE3 ]
+PPU-31191d1af19987410112b51edf0452d937af9879:
+  "Partner Health Does Not Drain While Grabbed":
+    Games:
+      "RESIDENT EVIL THE DARKSIDE CHRONICLES (Artemis)":
+        NPUB30648: [ 01.00]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *DARKSIDE4 ]
+PPU-31191d1af19987410112b51edf0452d937af9879:
+  "Infinite Gold, Herbs, And Health Sprays":
+    Games:
+      "RESIDENT EVIL THE DARKSIDE CHRONICLES (Artemis)":
+        NPUB30648: [ 01.00]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *DARKSIDE5 ]
+PPU-31191d1af19987410112b51edf0452d937af9879:
+  "Infinite Ammo And No Reload All Weapons":
+    Games:
+      "RESIDENT EVIL THE DARKSIDE CHRONICLES (Artemis)":
+        NPUB30648: [ 01.00]
+    Author: Hiei-YYH Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *DARKSIDE6 ]
+PPU-31191d1af19987410112b51edf0452d937af9879:
+  "Total Ammo Never Increases":
+    Games:
+      "RESIDENT EVIL THE DARKSIDE CHRONICLES (Artemis)":
+        NPUB30648: [ 01.00]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *DARKSIDE7 ]
+PPU-31191d1af19987410112b51edf0452d937af9879:
+  "Rapid Fire":
+    Games:
+      "RESIDENT EVIL THE DARKSIDE CHRONICLES (Artemis)":
+        NPUB30648: [ 01.00]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *DARKSIDE8 ]
+PPU-31191d1af19987410112b51edf0452d937af9879:
+  "10x Enemies Killed Multiplier":
+    Games:
+      "RESIDENT EVIL THE DARKSIDE CHRONICLES (Artemis)":
+        NPUB30648: [ 01.00]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *DARKSIDE9 ]
+PPU-31191d1af19987410112b51edf0452d937af9879:
+  "Always 9,999 Enemies Killed":
+    Games:
+      "RESIDENT EVIL THE DARKSIDE CHRONICLES (Artemis)":
+        NPUB30648: [ 01.00]
+    Author: bungholio Ported by ChIdReamS
+    Notes: Works even if you do not kill 1 enemy.
+    Patch Version: 1.0
+    Patch:
+      - [ load, *DARKSIDE10 ]
+PPU-31191d1af19987410112b51edf0452d937af9879:
+  "10x Headshots Multiplier":
+    Games:
+      "RESIDENT EVIL THE DARKSIDE CHRONICLES (Artemis)":
+        NPUB30648: [ 01.00]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *DARKSIDE11 ]
+PPU-31191d1af19987410112b51edf0452d937af9879:
+  "Always 9,999 Headshots":
+    Games:
+      "RESIDENT EVIL THE DARKSIDE CHRONICLES (Artemis)":
+        NPUB30648: [ 01.00]
+    Author: bungholio Ported by ChIdReamS
+    Notes: Works even if you do not do 1 headshot.
+    Patch Version: 1.0
+    Patch:
+      - [ load, *DARKSIDE12 ]
+PPU-31191d1af19987410112b51edf0452d937af9879:
+  "Time Never Decreases":
+    Games:
+      "RESIDENT EVIL THE DARKSIDE CHRONICLES (Artemis)":
+        NPUB30648: [ 01.00]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *DARKSIDE13 ]
+PPU-31191d1af19987410112b51edf0452d937af9879:
+  "Enemies Die From Any Damage":
+    Games:
+      "RESIDENT EVIL THE DARKSIDE CHRONICLES (Artemis)":
+        NPUB30648: [ 01.00]
+    Author: bungholio Ported by ChIdReamS
+    Notes: Used Hiei-YYH Ported by ChIdReamS's code for partner health to create a marker to separate your AI partner from enemies otherwise they would die from any damage too.
+    Patch Version: 1.0
+    Patch:
+      - [ load, *DARKSIDE14 ]
+PPU-31191d1af19987410112b51edf0452d937af9879:
+  "Complex Dies From Any Damage":
+    Games:
+      "RESIDENT EVIL THE DARKSIDE CHRONICLES (Artemis)":
+        NPUB30648: [ 01.00]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *DARKSIDE15 ]
