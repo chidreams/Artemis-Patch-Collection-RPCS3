@@ -1,0 +1,15 @@
+Version: 1.2
+# Title: NBA JAM: 1990's On Fire Edition
+# Serial: NPUB19910
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.01
+PPU-b349d5cd9a628087980d071382f6ac071f6a3ced:
+  "Turbo Players 1 & 2":
+    Games:
+      "NBA JAM 1990s On Fire Edition (Artemis) ":
+        NPUB19910: [ 01.00 ]
+    Author: Chidreams
+    Notes: testing 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x006B9858,0x60000000]
