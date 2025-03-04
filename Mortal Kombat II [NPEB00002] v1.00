@@ -1,0 +1,45 @@
+Version: 1.2
+# Title: Mortal Kombat II
+# Serial: NPEB00002
+# Category: HG
+# Version: APP_VER=Unknown VERSION=01.00      
+PPU-3f58b3615679169a7dc1094efd216f5e5e6d199c:
+  "Infinite Health P1":
+    Games:
+      "Mortal Kombat II (Artemis)":
+        NPEB00002: [ 01.00 ]
+    Author: Markin_Mods ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0014ED60,0x280AC05A]
+    - [ be32,0x0014ED64,0x4082000C]
+    - [ be32,0x0014ED68,0x390000A1]
+    - [ be32,0x0014ED6C,0x99090004]
+    - [ be32,0x0014ED70,0x81690000]
+    - [ be32,0x0014ED74,0x480175A6]
+    - [ be32,0x000175A0,0x4814ED62]     
+PPU-3f58b3615679169a7dc1094efd216f5e5e6d199c:
+  "Infinite Time and Fatality time ":
+    Games:
+      "Mortal Kombat II (Artemis)":
+        NPEB00002: [ 01.00 ]
+    Author: Markin_Mods ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0014EDD0,0xA3670008]
+    - [ be32,0x0014EDD4,0x281B0B00]
+    - [ be32,0x0014EDD8,0x40820028]
+    - [ be32,0x0014EDDC,0x836B000A]
+    - [ be32,0x0014EDE0,0x281B109F]
+    - [ be32,0x0014EDE4,0x4082000C]
+    - [ be32,0x0014EDE8,0x3A40000A]
+    - [ be32,0x0014EDEC,0x9A4B0000]
+    - [ be32,0x0014EDF0,0x281BE0F4]
+    - [ be32,0x0014EDF4,0x4082000C]
+    - [ be32,0x0014EDF8,0x3A400009]
+    - [ be32,0x0014EDFC,0x9A470000]
+    - [ be32,0x0014EE00,0x81270000]
+    - [ be32,0x0014EE04,0x48036C8E]
+    - [ be32,0x00036C88,0x4814EDD2]  
