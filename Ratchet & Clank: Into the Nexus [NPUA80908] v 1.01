@@ -1,0 +1,45 @@
+Version: 1.2
+# Title: Ratchet & Clank: Into the Nexus™
+# Serial: NPUA80908
+# Category: HG
+# Version: APP_VER=01.01 VERSION=01.00     
+PPU-fadb0af6fb7bd0113e88fb9af3eb78fe3be05d08:
+  "Freeze fix":
+    Games:
+      "Ratchet & Clank: Into the Nexus (Artemis)":
+        NPUA80908: [ 01.01 ]
+    Author: "Juhn"
+    Notes: "Fixes game crashes/freezes."
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x005f8ca8, 0x4082fff4 ]
+PPU-fadb0af6fb7bd0113e88fb9af3eb78fe3be05d08:
+  "Infinite Health":
+    Games:
+      "Ratchet & Clank: Into the Nexus (Artemis)":
+        NPUA80908: [ 01.01 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x001E7354,0xD3BD0000]
+PPU-fadb0af6fb7bd0113e88fb9af3eb78fe3be05d08:
+  "Infinite Ammo":
+    Games:
+      "Ratchet & Clank: Into the Nexus (Artemis)":
+        NPUA80908: [ 01.01 ]
+    Author: flynhigh09 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00496EA8,0x60000000]
+PPU-fadb0af6fb7bd0113e88fb9af3eb78fe3be05d08:
+  "Infinite Raritanium":
+    Games:
+      "Ratchet & Clank: Into the Nexus (Artemis)":
+        NPUA80908: [ 01.01 ]
+    Author: flynhigh09 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x004F0D2C,0x60000000]
