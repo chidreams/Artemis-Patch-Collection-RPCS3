@@ -1,0 +1,37 @@
+#I have modified the patch to downgrade to version 1.01. Simply download and install the patch, then run the cheats. If you want to revert to the normal version, you can delete the following folder: \dev_hdd0\game\BLUS30001.
+Version: 1.2
+PPU-ebebfe6d986100683b17fe3700d525f7d4936f60:
+  "Instant + Infinite Nitro":
+    Games:
+      "RIDGE RACER 7 (Artemis) ":
+        BLUS30001: [ 01.01 ]
+    Author: jgduff Ported by ChIdReamS1
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x002A7FB8,0xEC05002A]
+PPU-ebebfe6d986100683b17fe3700d525f7d4936f60:
+  "Lot PP On One Race":
+    Games:
+      "RIDGE RACER 7 (Artemis)":
+        BLUS30001: [ 01.01 ]
+    Author: jgduff Ported by ChIdReamS1
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x00040CB4,0x93A60004]
+      - [ be32,0x00040D5C,0x93A60000]
+PPU-ebebfe6d986100683b17fe3700d525f7d4936f60:
+  "ASM Lot + Infinite CR On One Race":
+    Games:
+      "RIDGE RACER 7 (Artemis) ":
+        BLUS30001: [ 01.01 ]
+    Author: jgduff Ported by ChIdReamS1
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x00040C08,0x90DF242C]
+      - [ be32,0x00040C1C,0x90DF2428]
+      - [ be32,0x00040CD0,0x90DF2428]
+      - [ be32,0x00044C3C,0x92632428]
+      - [ be32,0x00044C40,0x9043242C]
