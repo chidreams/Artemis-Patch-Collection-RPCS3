@@ -1,4 +1,5 @@
 #I have modified the patch to downgrade to version 1.01. Simply download and install the patch, then run the cheats. If you want to revert to the normal version, you can delete the following folder: \dev_hdd0\game\BLUS30001.
+# Here the file location https://bit.ly/3L6KsHo 
 Version: 1.2
 PPU-ebebfe6d986100683b17fe3700d525f7d4936f60:
   "Instant + Infinite Nitro":
