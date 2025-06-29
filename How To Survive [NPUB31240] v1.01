@@ -1,0 +1,222 @@
+Version: 1.2 
+# Title: How To Survive
+# Serial: NPUB31240
+# Category: HG
+# Version: APP_VER=01.01 VERSION=01.00
+Anchors:
+  HowToS: &HowToS
+    - [ be32,0x004C3454,0x60000000]
+    - [ be32,0x004D0A24,0x60000000]
+  HowToS2: &HowToS2
+    - [ be32,0x004D9874,0x60000000]
+  HowToS3: &HowToS3
+    - [ be32,0x004DB4F0,0x60000000]
+  HowToS4: &HowToS4
+    - [ be32,0x004C336C,0x60000000]
+  HowToS5: &HowToS5
+    - [ be32,0x004EC7E4,0x38A003E7]
+    - [ be32,0x004EC80C,0x30840000]
+  HowToS6: &HowToS6
+    - [ be32,0x005E7B38,0x30840000]
+  HowToS7: &HowToS7
+    - [ be32,0x004D4BF4,0x60000000]
+    - [ be32,0x004D5074,0x60000000]
+    - [ be32,0x004D507C,0x60000000]
+  HowToS8: &HowToS8
+    - [ be32,0x004E26B8,0x60000000]
+  HowToS9: &HowToS9
+    - [ be32,0x004C3790,0x60000000]
+  HowToS10: &HowToS10
+    - [ be32,0x00587B70,0x386003E7]
+  HowToS11: &HowToS11
+    - [ be32,0x00601CA8,0x3CA03B9A]
+    - [ be32,0x00601CD4,0x60A5C9FF]
+  HowToS12: &HowToS12
+    - [ be32,0x004BEE94,0x40000000]
+  HowToS13: &HowToS13
+    - [ be32,0x0078E0F4,0x2C1E0001]
+    - [ be32,0x0078E0F8,0x4082000C]
+    - [ be32,0x0078E0FC,0x3DC000A2]
+    - [ be32,0x0078E100,0x93EEAE10]
+    - [ be32,0x0078E104,0x63E30000]
+    - [ be32,0x0078E108,0x4E800020]
+    - [ be32,0x004C9730,0x482C49C5]
+  HowToS14: &HowToS14
+    - [ be32,0x0078E110,0x2C1B0001]
+    - [ be32,0x0078E114,0x4082000C]
+    - [ be32,0x0078E118,0x3DE00118]
+    - [ be32,0x0078E11C,0x93EFFFFC]
+    - [ be32,0x0078E120,0xA07F0090]
+    - [ be32,0x0078E124,0x3E000118]
+    - [ be32,0x0078E128,0x8230FFFC]
+    - [ be32,0x0078E12C,0x82310090]
+    - [ be32,0x0078E130,0x9230FFF4]
+    - [ be32,0x0078E134,0x4E800020]
+    - [ be32,0x006CA188,0x480C3F89]
+  HowToS15: &HowToS15
+    - [ be32,0x0078E200,0x3F8000A2]
+    - [ be32,0x0078E204,0x839CAE10]
+    - [ be32,0x0078E208,0x7C1CF800]
+    - [ be32,0x0078E20C,0x40820024]
+    - [ be32,0x0078E210,0x3E800117]
+    - [ be32,0x0078E214,0x6294FFF5]
+    - [ be32,0x0078E218,0x8A940000]
+    - [ be32,0x0078E21C,0x72940002]
+    - [ be32,0x0078E220,0x2C140002]
+    - [ be32,0x0078E224,0x4082000C]
+    - [ be32,0x0078E228,0x3E8044E0]
+    - [ be32,0x0078E22C,0x929F0544]
+    - [ be32,0x0078E230,0xC03F0054]
+    - [ be32,0x0078E234,0x4E800020]
+    - [ be32,0x004569CC,0x48337835]
+    - [ be32,0x004569CC,0x48337835]
+PPU-64a581133b349f908360c17973841ba8846b9576:
+  "Infinite Health ":
+    Games:
+      "How To Survive (Artemis)":
+        NPUB31240: [ 01.01 ]
+    Author: J_Heartfillia ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *HowToS ]  
+PPU-64a581133b349f908360c17973841ba8846b9576:
+  "Invincibility":
+    Games:
+      "How To Survive (Artemis)":
+        NPUB31240: [ 01.01 ]
+    Author: J_Heartfillia ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *HowToS2 ] 
+PPU-64a581133b349f908360c17973841ba8846b9576:
+  "Infinite Stamina":
+    Games:
+      "How To Survive (Artemis)":
+        NPUB31240: [ 01.01 ]
+    Author: J_Heartfillia ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *HowToS3 ] 
+PPU-64a581133b349f908360c17973841ba8846b9576:
+  "No Lack Of Food + No Lack Of Water + No Tiredness":
+    Games:
+      "How To Survive (Artemis)":
+        NPUB31240: [ 01.01 ]
+    Author: J_Heartfillia ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *HowToS4 ] 
+PPU-64a581133b349f908360c17973841ba8846b9576:
+  "Infinite Ammo + No Reload + Infinite Grenades":
+    Games:
+      "How To Survive (Artemis)":
+        NPUB31240: [ 01.01 ]
+    Author: J_Heartfillia ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *HowToS5 ] 
+PPU-64a581133b349f908360c17973841ba8846b9576:
+  "Infinite Medical Items":
+    Games:
+      "How To Survive (Artemis)":
+        NPUB31240: [ 01.01 ]
+    Author: J_Heartfillia ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *HowToS6 ] 
+PPU-64a581133b349f908360c17973841ba8846b9576:
+  "Infinite Flame Stick":
+    Games:
+      "How To Survive (Artemis)":
+        NPUB31240: [ 01.01 ]
+    Author: J_Heartfillia ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *HowToS7 ] 
+PPU-64a581133b349f908360c17973841ba8846b9576:
+  "Infinite Chain-Saw":
+    Games:
+      "How To Survive (Artemis)":
+        NPUB31240: [ 01.01 ]
+    Author: J_Heartfillia ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *HowToS8 ] 
+PPU-64a581133b349f908360c17973841ba8846b9576:
+  "No Cooldown For Special Skills":
+    Games:
+      "How To Survive (Artemis)":
+        NPUB31240: [ 01.01 ]
+    Author: J_Heartfillia ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *HowToS9 ] 
+PPU-64a581133b349f908360c17973841ba8846b9576:
+  "Max Skill Point":
+    Games:
+      "How To Survive (Artemis)":
+        NPUB31240: [ 01.01 ]
+    Author: J_Heartfillia ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *HowToS10 ] 
+PPU-64a581133b349f908360c17973841ba8846b9576:
+  "Max XP On Gain":
+    Games:
+      "How To Survive (Artemis)":
+        NPUB31240: [ 01.01 ]
+    Author: J_Heartfillia ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *HowToS11 ] 
+PPU-64a581133b349f908360c17973841ba8846b9576:
+  "Movement Speed Modifiers (2x)":
+    Games:
+      "How To Survive (Artemis)":
+        NPUB31240: [ 01.01 ]
+    Author: J_Heartfillia ported by ChiDreamS
+    Notes: 3F800000=Normal;40000000=2x;40400000=3x;40800000=4x;40B00000=5x
+    Patch Version: 1.2
+    Patch:
+      - [ load, *HowToS12 ] 
+PPU-64a581133b349f908360c17973841ba8846b9576:
+  "Master Codes (Must Be On)":
+    Games:
+      "How To Survive (Artemis)":
+        NPUB31240: [ 01.01 ]
+    Author: J_Heartfillia ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *HowToS13 ] 
+PPU-64a581133b349f908360c17973841ba8846b9576:
+  "Joker Pad (Must Be On)":
+    Games:
+      "How To Survive (Artemis)":
+        NPUB31240: [ 01.01 ]
+    Author: J_Heartfillia ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *HowToS14 ] 
+PPU-64a581133b349f908360c17973841ba8846b9576:
+  "Hold L3 To Move Up (Requires Master Code + Joker pad)":
+    Games:
+      "How To Survive (Artemis)":
+        NPUB31240: [ 01.01 ]
+    Author: J_Heartfillia ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *HowToS15 ]       
