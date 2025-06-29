@@ -1,0 +1,150 @@
+Version: 1.2
+# Title: Valkyria Chronicles
+# Serial: BLUS30196
+# Category: GD
+# Version: APP_VER=01.20 VERSION=01.00  
+Anchors:
+  ValkyriaC: &ValkyriaC
+    - [ be32,0x00C609BC,0x80690004]
+    - [ be32,0x00C609C0,0x7D292214]
+    - [ be32,0x00C609C4,0x2C030000]
+    - [ be32,0x00C609C8,0x40820014]
+    - [ be32,0x00C609CC,0x3860270F]
+    - [ be32,0x00C609D0,0x90690008]
+    - [ be32,0x00C609D4,0x38600000]
+    - [ be32,0x00C609D8,0x98690016]
+    - [ be32,0x00C609DC,0x4BF2878C]
+    - [ be32,0x00B89164,0x480D7858]
+  ValkyriaC2: &ValkyriaC2
+    - [ be32,0x00508548,0x7F64DB78]
+  ValkyriaC3: &ValkyriaC3
+    - [ be32,0x004D7068,0x7C641B78]
+  ValkyriaC4: &ValkyriaC4
+    - [ be32,0x001B8798,0x38A00000]
+  ValkyriaC5: &ValkyriaC5
+    - [ be32,0x000CEA9C,0xC1A90308]
+    - [ be32,0x000CEAA4,0xD1A90310]
+  ValkyriaC6: &ValkyriaC6
+    - [ be32,0x001AB0B8,0x3BE00014]
+    - [ be32,0x001AB0BC,0x93E9000C]
+    - [ be32,0x001AB0C0,0x4BFFFED8]
+  ValkyriaC7: &ValkyriaC7
+    - [ be32,0x0052DE5C,0x60000000]
+  ValkyriaC8: &ValkyriaC8
+    - [ be32,0x0053E0C4,0x60000000] 
+  ValkyriaC9: &ValkyriaC9
+    - [ be32,0x0052F60C,0x4800000C]
+  ValkyriaC10: &ValkyriaC10
+    - [ be32,0x0053E088,0x60000000] 
+  ValkyriaC11: &ValkyriaC11
+    - [ be32,0x0018A30C,0x60000000]    
+PPU-20a65a1ec0d97c2a6640bb9948bea9a13d0e1fa8:
+  "Infinite HP + Can Always Act":
+    Games:
+      "Valkyria Chronicles (Artemis)":
+        BLUS30196: [ 01.20 ]
+    Author: Ported by chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *ValkyriaC ]  
+PPU-20a65a1ec0d97c2a6640bb9948bea9a13d0e1fa8:
+  "Infinite Exp":
+    Games:
+      "Valkyria Chronicles (Artemis)":
+        BLUS30196: [ 01.20 ]
+    Author: Ported by chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *ValkyriaC2 ]       
+PPU-20a65a1ec0d97c2a6640bb9948bea9a13d0e1fa8:
+  "Infinite DCT":
+    Games:
+      "Valkyria Chronicles (Artemis)":
+        BLUS30196: [ 01.20 ]
+    Author: Ported by chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *ValkyriaC3 ]  
+PPU-20a65a1ec0d97c2a6640bb9948bea9a13d0e1fa8:
+  "Infinite Ammo":
+    Games:
+      "Valkyria Chronicles (Artemis)":
+        BLUS30196: [ 01.20 ]
+    Author: Ported by chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *ValkyriaC4 ]        
+PPU-20a65a1ec0d97c2a6640bb9948bea9a13d0e1fa8:
+  "Infinite AP":
+    Games:
+      "Valkyria Chronicles (Artemis)":
+        BLUS30196: [ 01.20 ]
+    Author: Ported by chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *ValkyriaC5 ]  
+PPU-20a65a1ec0d97c2a6640bb9948bea9a13d0e1fa8:
+  "Max CP":
+    Games:
+      "Valkyria Chronicles (Artemis)":
+        BLUS30196: [ 01.20 ]
+    Author: Ported by chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *ValkyriaC6 ]  
+PPU-20a65a1ec0d97c2a6640bb9948bea9a13d0e1fa8:
+  "Reenter Camp For Max Exp":
+    Games:
+      "Valkyria Chronicles (Artemis)":
+        BLUS30196: [ 01.20 ]
+    Author: Ported by chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *ValkyriaC7 ]  
+PPU-20a65a1ec0d97c2a6640bb9948bea9a13d0e1fa8:
+  "Max Exp After Battle":
+    Games:
+      "Valkyria Chronicles (Artemis)":
+        BLUS30196: [ 01.20 ]
+    Author: Ported by chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *ValkyriaC8 ] 
+PPU-20a65a1ec0d97c2a6640bb9948bea9a13d0e1fa8:
+  "Max DCT On Use (Go back in and out of workshop)":
+    Games:
+      "Valkyria Chronicles (Artemis)":
+        BLUS30196: [ 01.20 ]
+    Author: Ported by chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *ValkyriaC9 ]   
+PPU-20a65a1ec0d97c2a6640bb9948bea9a13d0e1fa8:
+  "Max DCT On Gain (After battle)":
+    Games:
+      "Valkyria Chronicles (Artemis)":
+        BLUS30196: [ 01.20 ]
+    Author: Ported by chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *ValkyriaC10 ]     
+PPU-20a65a1ec0d97c2a6640bb9948bea9a13d0e1fa8:
+  "Infinite CP (Command Points)":
+    Games:
+      "Valkyria Chronicles (Artemis)":
+        BLUS30196: [ 01.20 ]
+    Author: Ported by chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *ValkyriaC11 ]
