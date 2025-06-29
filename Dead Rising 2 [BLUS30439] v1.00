@@ -1,0 +1,127 @@
+Version: 1.2
+PPU-f041429abd9abc4f0974ba0675fadc400a3d26f6:
+  "Max Health":
+    Games:
+      "Dead Rising 2":
+        BLUS30439: [ 01.00 ]
+    Author: Jaz
+    Notes: 
+    Patch Version: 1.5
+    Patch:
+      - [ be32, 0x006DF04C, 0xD1A3002C ]
+PPU-f041429abd9abc4f0974ba0675fadc400a3d26f6:
+  "Infinite Health":
+    Games:
+      "Dead Rising 2":
+        BLUS30439: [ 01.00 ]
+    Author: Jaz
+    Notes: 
+    Patch Version: 1.5
+    Patch:
+      - [ be32, 0x006E0864, 0x60000000 ]
+PPU-f041429abd9abc4f0974ba0675fadc400a3d26f6:
+  "Max Money":
+    Games:
+      "Dead Rising 2":
+        BLUS30439: [ 01.00 ]
+    Author: Jaz
+    Notes: 
+    Patch Version: 1.5
+    Patch:
+      - [ be32, 0x33A01150, 0x3B9AC9FF ]
+PPU-f041429abd9abc4f0974ba0675fadc400a3d26f6:
+  "PP Max":
+    Games:
+      "Dead Rising 2":
+        BLUS30439: [ 01.00 ]
+    Author: Jaz
+    Notes: 
+    Patch Version: 1.5
+    Patch:
+      - [ be32, 0x33A01104, 0x3B9AC9FF ]
+PPU-f041429abd9abc4f0974ba0675fadc400a3d26f6:
+  "Life Recovery":
+    Games:
+      "Dead Rising 2":
+        BLUS30439: [ 01.00 ]
+    Author: Jaz
+    Notes: 
+    Patch Version: 1.5
+    Patch:
+      - [ be32, 0x33A0110C, 0x44960000 ]
+PPU-f041429abd9abc4f0974ba0675fadc400a3d26f6:
+  "Weapon Strength Mod":
+    Games:
+      "Dead Rising 2":
+        BLUS30439: [ 01.00 ]
+    Author: Jaz
+    Notes: 
+    Patch Version: 1.5
+    Patch:
+      - [ be32, 0x003783D8, 0x60000000 ]
+      - [ be32, 0x00128C4C, 0x60000000 ]
+      - [ be32, 0x003595E0, 0xD1A300F4 ]
+PPU-f041429abd9abc4f0974ba0675fadc400a3d26f6:
+  "Ammo Never Decreases":
+    Games:
+      "Dead Rising 2":
+        BLUS30439: [ 01.00 ]
+    Author: Jaz
+    Notes: 
+    Patch Version: 1.5
+    Patch:
+      - [ be32, 0x003595E0, 0x60000000 ]
+PPU-f041429abd9abc4f0974ba0675fadc400a3d26f6:
+  "Weapons Never Break":
+    Games:
+      "Dead Rising 2":
+        BLUS30439: [ 01.00 ]
+    Author: Jaz
+    Notes: 
+    Patch Version: 1.5
+    Patch:
+      - [ be32, 0x00A91A20, 0x60000000 ]
+PPU-f041429abd9abc4f0974ba0675fadc400a3d26f6:
+  "Health Never Decreases":
+    Games:
+      "Dead Rising 2":
+        BLUS30439: [ 01.00 ]
+    Author: Jaz
+    Notes: 
+    Patch Version: 1.5
+    Patch:
+      - [ be32, 0x006DF04C, 0xD1A3002C ]
+PPU-f041429abd9abc4f0974ba0675fadc400a3d26f6:
+  "Auto-Escape Button Grabs":
+    Games:
+      "Dead Rising 2":
+        BLUS30439: [ 01.00 ]
+    Author: Jaz
+    Notes: 
+    Patch Version: 1.5
+    Patch:
+      - [ be32, 0x00272D78, 0x3BA00003 ]
+      - [ be32, 0x00272D84, 0x3B600001 ]
+      - [ be32, 0x00272FDC, 0x38000001 ]
+      - [ be32, 0x00272FE8, 0x39000000 ]
+PPU-f041429abd9abc4f0974ba0675fadc400a3d26f6:
+  "Zombies Die From Any Damage":
+    Games:
+      "Dead Rising 2":
+        BLUS30439: [ 01.00 ]
+    Author: Jaz
+    Notes: 
+    Patch Version: 1.5
+    Patch:
+      - [ be32, 0x001D67A0, 0xD09F0044 ]
+PPU-f041429abd9abc4f0974ba0675fadc400a3d26f6:
+  "Lot Of Money On Gain":
+    Games:
+      "Dead Rising 2":
+        BLUS30439: [ 01.00 ]
+    Author: Jaz
+    Notes: 
+    Patch Version: 1.5
+    Patch:
+      - [ be32, 0x006E71FC, 0x90430070 ]
+      - [ be32, 0x006E7238, 0x905F0074 ]
