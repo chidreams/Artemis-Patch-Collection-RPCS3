@@ -1,0 +1,136 @@
+
+# Title: DYNASTY WARRIORS 8 Empires
+# Serial: NPUB31656
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.02
+# PPU executable hash: PPU-298cffa7991b6d742ebb41db55e0d6187d6f9bcd 
+# Version: APP_VER=01.04 VERSION=01.00
+# PPU executable hash: PPU-cd7949391c041762edbd68b77c1ff468f284bbdc
+Anchors:
+  DynWar8E: &DynWar8E
+    - [ be32,0x00C60214,0x447A0000]
+  DynWar8E2: &DynWar8E2
+    - [ be32,0x00384400,0x90A30020]
+  DynWar8E3: &DynWar8E3
+    - [ be32,0x0037CE14,0x90830000]
+    - [ be32,0x0037CECC,0x90830004]
+    - [ be32,0x0037CF90,0x90830008] # Max Gold on gain
+  DynWar8E4: &DynWar8E4
+    - [ be32,0x00124614,0x60000000]
+  DynWar8E5: &DynWar8E5
+    - [ be32,0x00123958,0x60000000]
+  DynWar8E6: &DynWar8E6
+    - [ be32,0x00C91A2C,0x2C060000]
+    - [ be32,0x00C91A30,0x4082000C]
+    - [ be32,0x00C91A34,0xC027001C]
+    - [ be32,0x00C91A38,0xD0270014]
+    - [ be32,0x00C91A3C,0xC0270014]
+    - [ be32,0x00C91A40,0x4B432B38]
+    - [ be32,0x000C4574,0x48BCD4B8]
+  DynWar8E7: &DynWar8E7
+    - [ be32,0x00C91A7C,0x88AB0009]
+    - [ be32,0x00C91A80,0x98AB0008]
+    - [ be32,0x00C91A84,0x4B40D970]
+    - [ be32,0x0009F3F0,0x48BF268C]
+  DynWar8E8: &DynWar8E8
+    - [ be32,0x00C91A48,0x80BF01F8]
+    - [ be32,0x00C91A4C,0x90BF01F4]
+    - [ be32,0x00C91A50,0x835F01F4]
+    - [ be32,0x00C91A54,0x4E800020]
+    - [ be32,0x0009F3FC,0x48BF264D]
+  DynWar8E9: &DynWar8E9
+    - [ be32,0x00C91A90,0x3C803B9A]
+    - [ be32,0x00C91A94,0x6084C9FF]
+    - [ be32,0x00C91A98,0x90830000]
+    - [ be32,0x00C91A9C,0x4B6EB76C]
+    - [ be32,0x0037D204,0x4891488C]
+PPU-cd7949391c041762edbd68b77c1ff468f284bbdc:
+  "1000x Hit Range Modifier":
+    Games:
+      "DYNASTY WARRIORS 8 Empires (Artemis)":
+        NPUB31656: [ 01.04 ]
+    Author: xtatu ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DynWar8E ]    
+PPU-cd7949391c041762edbd68b77c1ff468f284bbdc:
+  "Lot Of Merits On Gain Or Buying Something + Max Level + High Stats":
+    Games:
+      "DYNASTY WARRIORS 8 Empires (Artemis)":
+        NPUB31656: [ 01.04 ]
+    Author: jgduff1 ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DynWar8E2 ]  
+PPU-cd7949391c041762edbd68b77c1ff468f284bbdc:
+  "All Food + Money Max On Start (999,999)":
+    Games:
+      "DYNASTY WARRIORS 8 Empires (Artemis)":
+        NPUB31656: [ 01.04 ]
+    Author: jgduff1 ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DynWar8E3 ]  
+PPU-cd7949391c041762edbd68b77c1ff468f284bbdc:
+  "Infinite Stratagem":
+    Games:
+      "DYNASTY WARRIORS 8 Empires (Artemis)":
+        NPUB31656: [ 01.04 ]
+    Author: jgduff1 ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DynWar8E4 ]  
+PPU-cd7949391c041762edbd68b77c1ff468f284bbdc:
+  "Infinite Musou":
+    Games:
+      "DYNASTY WARRIORS 8 Empires (Artemis)":
+        NPUB31656: [ 01.04 ]
+    Author: jgduff1 ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DynWar8E5 ]  
+PPU-cd7949391c041762edbd68b77c1ff468f284bbdc:
+  "1P Infinite Health":
+    Games:
+      "DYNASTY WARRIORS 8 Empires (Artemis)":
+        NPUB31656: [ 01.04 ]
+    Author: Randy97Killa ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DynWar8E6 ]  
+PPU-cd7949391c041762edbd68b77c1ff468f284bbdc:
+  "Max + Infinite Musou ":
+    Games:
+      "DYNASTY WARRIORS 8 Empires (Artemis)":
+        NPUB31656: [ 01.04 ]
+    Author: Randy97Killa ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DynWar8E7 ]  
+PPU-cd7949391c041762edbd68b77c1ff468f284bbdc:
+  "Max + Infinite Rage":
+    Games:
+      "DYNASTY WARRIORS 8 Empires (Artemis)":
+        NPUB31656: [ 01.04 ]
+    Author: Randy97Killa ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DynWar8E8 ]  
+PPU-cd7949391c041762edbd68b77c1ff468f284bbdc:
+  "Max Material On Gain":
+    Games:
+      "DYNASTY WARRIORS 8 Empires (Artemis)":
+        NPUB31656: [ 01.04 ]
+    Author: Randy97Killa ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DynWar8E9 ]        
