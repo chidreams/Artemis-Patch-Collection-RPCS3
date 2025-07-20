@@ -75,4 +75,26 @@ PPU-390f51a1c8cb1cb84b1b83690c51a0034840fcc1:
     Notes: 
     Patch Version: 1.1
     Patch:
-      - [ be32,0x00175E80,0x91442F74]
+      - [ be32,0x00175E80,0x91442F74] 
+PPU-390f51a1c8cb1cb84b1b83690c51a0034840fcc1:
+  "Hyperspeed (2x)":
+    Games:
+      "Mortal Kombat 9 (Artemis)":
+        BLUS30522: [ 01.07 ]
+    Author: ChiDreamS
+    Notes: 
+    Patch Version: 1.1
+    Group: A
+    Patch:
+      - [ be32,0x00012A30,0x40000000]
+PPU-390f51a1c8cb1cb84b1b83690c51a0034840fcc1:
+  "Hyperspeed (3x)":
+    Games:
+      "Mortal Kombat 9 (Artemis)":
+        BLUS30522: [ 01.07 ]
+    Author: ChiDreamS
+    Notes: 
+    Patch Version: 1.1
+    Group: A    
+    Patch:
+      - [ be32,0x00012A30,0x40400000]      
