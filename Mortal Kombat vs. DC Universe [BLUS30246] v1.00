@@ -1,0 +1,37 @@
+Version: 1.2 
+# Title: Mortal Kombat vs. DC Universe
+# Serial: BLUS30246
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.02
+PPU-3aca69ed04efe83f6340ec311f72bb03a8cd7357:
+  "P1 Full Health And Rage, Press Select To Empty P2 Health":
+    Games:
+      "Mortal Kombat vs. DC Universe (Artemis)":
+        BLUS30246: [ 01.00 ]
+    Author: Wulf2k converted by chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x007D6168,0x494D6C12]     
+      - [ be32,0x014D6C10,0x3EC03F80]
+      - [ be32,0x014D6C14,0x3E000193]
+      - [ be32,0x014D6C18,0x6210C98C]
+      - [ be32,0x014D6C1C,0x92D00000]
+      - [ be32,0x014D6C20,0x92D013DC]
+      - [ be32,0x014D6C24,0x3E000192]
+      - [ be32,0x014D6C28,0x6210CFE8]
+      - [ be32,0x014D6C2C,0x82100000]
+      - [ be32,0x014D6C30,0x3A200200]
+      - [ be32,0x014D6C34,0x2C100200]
+      - [ be32,0x014D6C38,0x41820008]
+      - [ be32,0x014D6C3C,0x487D616E]
+      - [ be32,0x014D6C40,0x3E400194]
+      - [ be32,0x014D6C44,0x6252A428]
+      - [ be32,0x014D6C48,0x82320000]
+      - [ be32,0x014D6C4C,0x7E3089D6]
+      - [ be32,0x014D6C50,0x92320000]
+      - [ be32,0x014D6C54,0x3A000000]
+      - [ be32,0x014D6C58,0x3A200000]
+      - [ be32,0x014D6C5C,0x3A400000]
+      - [ be32,0x014D6C60,0x3AC00000]
+      - [ be32,0x014D6C64,0x487D616E] 
