@@ -1,0 +1,87 @@
+Version: 1.2
+# Title: Shadows of the Damned™
+# Serial: BLUS30653
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00
+PPU-888f4088d305a6add6f83728bdf917c8245fb72c:
+  "Infinite White Jewels":
+    Games:
+      "Shadows of the Damned (Artemis)":
+        BLUS30653: [ 01.00 ]
+    Author: Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0006AB40,0x498F82E0]
+    - [ be32,0x01962E20,0x2C060000]
+    - [ be32,0x01962E24,0x40820008] 
+    - [ be32,0x01962E28,0x38800000] 
+    - [ be32,0x01962E2C,0x807C0000] 
+    - [ be32,0x01962E30,0x4A707D14] 
+    - [ be32,0x01962E34,0x496E6620]
+    - [ be32,0x01962E38,0x42756C6C] 
+    - [ be32,0x01962E3C,0x65740000]
+PPU-888f4088d305a6add6f83728bdf917c8245fb72c:
+  "Infinite Ammo + No Reload":
+    Games:
+      "Shadows of the Damned (Artemis)":
+        BLUS30653: [ 01.00 ]
+    Author: Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0006B258,0x499678F9]
+    - [ be32,0x019D2B50,0x3C6001C3] 
+    - [ be32,0x019D2B54,0x6063EF54]
+    - [ be32,0x019D2B58,0x80630000] 
+    - [ be32,0x019D2B5C,0x806301F4] 
+    - [ be32,0x019D2B60,0x806302D0] 
+    - [ be32,0x019D2B64,0x386302F8] 
+    - [ be32,0x019D2B68,0x60000000] 
+    - [ be32,0x019D2B6C,0x7C03F800] 
+    - [ be32,0x019D2B70,0x40820008]
+    - [ be32,0x019D2B74,0x90A10070] 
+    - [ be32,0x019D2B78,0x80610070] 
+    - [ be32,0x019D2B7C,0x4E800020]    
+PPU-888f4088d305a6add6f83728bdf917c8245fb72c:
+  "Infinite Health":
+    Games:
+      "Shadows of the Damned (Artemis)":
+        BLUS30653: [ 01.00 ]
+    Author: Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0006A994,0x499ED99C]
+    - [ be32,0x01A58330,0x3C6001C4]
+    - [ be32,0x01A58334,0x8063EF54] 
+    - [ be32,0x01A58338,0x806301F4] 
+    - [ be32,0x01A5833C,0x4BFE2254]
+    - [ be32,0x01A3A590,0x806302D0] 
+    - [ be32,0x01A3A594,0x2C030000] 
+    - [ be32,0x01A3A598,0x41820060] 
+    - [ be32,0x01A3A59C,0x60000000] 
+    - [ be32,0x01A3A5A0,0x60000000] 
+    - [ be32,0x01A3A5A4,0x48000024] 
+    - [ be32,0x01A3A5A8,0x7C04E000] 
+    - [ be32,0x01A3A5AC,0x41820044] 
+    - [ be32,0x01A3A5B0,0x38840004] 
+    - [ be32,0x01A3A5B4,0x7C04E000] 
+    - [ be32,0x01A3A5B8,0x41820038] 
+    - [ be32,0x01A3A5BC,0x38840004] 
+    - [ be32,0x01A3A5C0,0x7C04E000] 
+    - [ be32,0x01A3A5C4,0x60000000] 
+    - [ be32,0x01A3A5C8,0x80830A54] 
+    - [ be32,0x01A3A5CC,0x7C04E000] 
+    - [ be32,0x01A3A5D0,0x41820020] 
+    - [ be32,0x01A3A5D4,0x38840004] 
+    - [ be32,0x01A3A5D8,0x7C04E000] 
+    - [ be32,0x01A3A5DC,0x41820014] 
+    - [ be32,0x01A3A5E0,0x38840004] 
+    - [ be32,0x01A3A5E4,0x7C04E000] 
+    - [ be32,0x01A3A5E8,0x41820008] 
+    - [ be32,0x01A3A5EC,0x4800000C] 
+    - [ be32,0x01A3A5F0,0x386003E8]
+    - [ be32,0x01A3A5F4,0x907C0000] 
+    - [ be32,0x01A3A5F8,0x807E0018] 
+    - [ be32,0x01A3A5FC,0x4A63039C]   
