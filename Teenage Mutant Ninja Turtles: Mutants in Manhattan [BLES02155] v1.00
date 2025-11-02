@@ -1,0 +1,55 @@
+version 1.2
+PPU-bfe677c6416525cc09738be6b22e3765be33a3b3:
+  "Invincibility":
+    Games:
+      "Teenage Mutant Ninja Turtles™: Danger of the Ooze (Artemis)":
+        BLUS31435: [ 01.00 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x005C78C0,0x48000014]
+PPU-51b31157c3456c2665fc582349c5e15fc2d857d4:
+  "Infinite HP":
+    Games:
+      "Teenage Mutant Ninja Turtles Mutants in Manhattan (Artemis)":
+        BLES02155: [ 01.00 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0019A33C,0x807E0554]
+    - [ be32,0x0019A340,0x907E0550]
+    - [ be32,0x0019A344,0x4800000C]
+PPU-51b31157c3456c2665fc582349c5e15fc2d857d4:
+  "Max BP":
+    Games:
+      "Teenage Mutant Ninja Turtles Mutants in Manhattan (Artemis)":
+        BLES02155: [ 01.00 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00416808,0x3D203B9A]
+    - [ be32,0x0041680C,0x6129C9FF]
+PPU-51b31157c3456c2665fc582349c5e15fc2d857d4:
+  "Instant Max + Infinite Special":
+    Games:
+      "Teenage Mutant Ninja Turtles Mutants in Manhattan (Artemis)":
+        BLES02155: [ 01.00 ]
+    Author: jgduff1 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x001CC8E8,0xD07A0004]
+PPU-51b31157c3456c2665fc582349c5e15fc2d857d4:
+  "Infinite Stamina":
+    Games:
+      "Teenage Mutant Ninja Turtles Mutants in Manhattan (Artemis)":
+        BLES02155: [ 01.00 ]
+    Author: jgduff1 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x001A3070,0x60000000]
+    - [ be32,0x001A3074,0x60000000]    
