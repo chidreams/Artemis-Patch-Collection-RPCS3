@@ -1,0 +1,70 @@
+Version: 1.2 
+# Title: ARSLAN: THE WARRIORS OF LEGEND
+# Serial: NPUB31797
+# Category: HG
+# Version: APP_VER=01.01 VERSION=01.00     
+Anchors:
+  ARSLANWOL: &ARSLANWOL
+    - [ be32,0x0074B7BC,0x48370A0D]
+    - [ be32,0x00ABC1C8,0x28030000]
+    - [ be32,0x00ABC1CC,0x40820004]
+    - [ be32,0x00ABC1D0,0xC03C0010]
+    - [ be32,0x00ABC1D4,0xD03C0010]
+    - [ be32,0x00ABC1D8,0x807C000C]
+    - [ be32,0x00ABC1DC,0x4E800020]
+  ARSLANWOL2: &ARSLANWOL2
+    - [ be32,0x001C286C,0x48000010]
+    - [ be32,0x001C285C,0x48000010]
+    - [ be32,0x001C2880,0x91A30000]
+  ARSLANWOL3: &ARSLANWOL3
+    - [ be32,0x001F1BA0,0x488CA671]
+    - [ be32,0x00ABC210,0x3A00270F]
+    - [ be32,0x00ABC214,0x921A01D8]
+    - [ be32,0x00ABC218,0x83BA01D8]
+    - [ be32,0x00ABC21C,0x4E800020]
+  ARSLANWOL4: &ARSLANWOL4
+    - [ be32,0x002AADF4,0x488113FD]
+    - [ be32,0x00ABC1F0,0x3A00270F]
+    - [ be32,0x00ABC1F4,0x92030158]
+    - [ be32,0x00ABC1F8,0x80630158]
+    - [ be32,0x00ABC1FC,0x4E800020]
+PPU-6ad768dd1ea9dfb99e91eeb82b5e022b5659b23e:
+  "Infinite Health":
+    Games:
+      "ARSLAN: THE WARRIORS OF LEGEND (Artemis)":
+        NPUB31797: [ 01.01 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *ARSLANWOL ]
+PPU-6ad768dd1ea9dfb99e91eeb82b5e022b5659b23e:
+  "Instant Max Musou On Gain":
+    Games:
+      "ARSLAN: THE WARRIORS OF LEGEND (Artemis)":
+        NPUB31797: [ 01.01 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *ARSLANWOL2 ]
+PPU-6ad768dd1ea9dfb99e91eeb82b5e022b5659b23e:
+  "Max Total Combo Chain":
+    Games:
+      "ARSLAN: THE WARRIORS OF LEGEND (Artemis)":
+        NPUB31797: [ 01.01 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *ARSLANWOL3 ]
+PPU-6ad768dd1ea9dfb99e91eeb82b5e022b5659b23e:
+  "Max Total K.O. Count":
+    Games:
+      "ARSLAN: THE WARRIORS OF LEGEND (Artemis)":
+        NPUB31797: [ 01.01 ]
+    Author: Randy97Killa Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *ARSLANWOL4 ]
