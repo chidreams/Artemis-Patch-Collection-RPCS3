@@ -1,3 +1,4 @@
+Version: 1.2 
 # Title: Mortal Kombat
 # Serial: BLUS30522
 # Category: GD
@@ -61,11 +62,14 @@ PPU-390f51a1c8cb1cb84b1b83690c51a0034840fcc1:
     Games:
       "Mortal Kombat 9 (Artemis)":
         BLUS30522: [ 01.07 ]
-    Author: opticky ported by ChiDreamS
+    Author: ChiDreamS
     Notes: 
     Patch Version: 1.1
     Patch:
-    - [ be32,0x018DB054,0x0098967F]
+      - [be32, 0x001E21F4, 0x3C600098]  # lis r3, 0x0098
+      - [be32, 0x001E21F8, 0x6063967F]  # ori r3, r3, 0x967F
+      - [be32, 0x001E21FC, 0x907C0144]  # stw r3, 0x144(r28)
+      - [be32, 0x001E2200, 0x48000018]  # b 0x001E221C
 PPU-390f51a1c8cb1cb84b1b83690c51a0034840fcc1:
   "Punches Double Damage":
     Games:
@@ -97,4 +101,4 @@ PPU-390f51a1c8cb1cb84b1b83690c51a0034840fcc1:
     Patch Version: 1.1
     Group: A    
     Patch:
-      - [ be32,0x00012A30,0x40400000]      
+      - [ be32,0x00012A30,0x40400000]
