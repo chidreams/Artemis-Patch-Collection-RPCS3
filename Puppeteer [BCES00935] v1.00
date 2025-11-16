@@ -1,0 +1,67 @@
+Version: 1.2
+# Title: Puppeteer
+# Serial: BCES00935
+# Category:
+# Version: APP_VER=01.00 VERSION=01.00
+PPU-db9cef9215ebe29a73ca63ef69481de39f112b16:
+  "Invincible":
+    Games:
+      "Puppeteer":
+        BCES00935: [ 01.00 ]
+    Author: Tiger
+    Notes: (Requires Nothing)
+    Patch Version: 1.0
+    Patch:
+      - [be32,0x001F4C80,0x2C030005]
+      - [be32,0x001F4C84,0x41820120]
+      - [be32,0x0011558C,0x60000000]
+      - [be32,0x001204C4,0x60000000]
+      - [be32,0x0012051C,0x60000000]
+      - [be32,0x00120548,0x60000000]
+      - [be32,0x009903A4,0x00000000]    
+  "Low Jump Gravity":
+    Games:
+      "Puppeteer":
+        BCES00935: [ 01.00 ]
+    Author: Luc-it
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [be32,0x009901AC,0x41300000]   
+  "Max Spark - Max Life":
+    Games:
+      "Puppeteer":
+        BCES00935: [ 01.00 ]
+    Author: Serp87
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x000C1740,0x998302C0]
+  "Double the Walk Move Speed":
+    Games:
+      "Puppeteer":
+        BCES00935: [ 01.00 ]
+    Author: Luc-it
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00990A44,0x41026666]
+  "Double the Air Move Speed":
+    Games:
+      "Puppeteer":
+        BCES00935: [ 01.00 ]
+    Author: Luc-it
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00990AD4,0x4101999A]
+  "Infinite shield power":
+    Games:
+      "Puppeteer":
+        BCES00935: [ 01.00 ]
+    Author: Luc-it
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00122F5C,0x38600001]
+    - [ be32,0x00122FB0,0x38600001]
