@@ -1,0 +1,119 @@
+Version: 1.2
+# Title: Dragon Ball: Raging Blast
+# Serial: BLUS30431
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00
+PPU-3de340701cfb52769efd69f65dabed7bc61afeff:
+  "P1 health (Please Read Note)":
+    Games:
+      "Dragon Ball: Raging Blast":
+        BLUS30431: [ 01.00 ]
+    Author: ChiDreamS
+    Notes: Infinite Heal activates after the first power is drained, but the effect will remain active afterward.
+    Group: A
+    Patch Version: 1.2
+    Patch:
+          # Hook: 0x00063484 -> 0x00647494
+      - [ be32, 0x00063484, 0x485E4010 ]
+      # Cave @ 0x00647494
+      # 0) run original instruction (keeps game logic stable)
+      - [ be32, 0x00647494, 0xD01B001C ] # stfs f0,0x1C(r27)
+      # 1) r10 = dest = r27 + 0x1C
+      - [ be32, 0x00647498, 0x395B001C ] # addi r10,r27,0x1C
+      # 2) r11 = *(u32*)0x00788660
+      - [ be32, 0x0064749C, 0x3D600078 ] # lis  r11,0x0078
+      - [ be32, 0x006474A0, 0x616B8660 ] # ori  r11,r11,0x8660
+      - [ be32, 0x006474A4, 0x816B0000 ] # lwz  r11,0(r11)
+      # 3) if (r11 == 0) return
+      - [ be32, 0x006474A8, 0x2C0B0000 ] # cmpwi r11,0
+      - [ be32, 0x006474AC, 0x41820018 ] # beq  ret
+      # 4) r11 = P1dest = r11 + 0x94
+      - [ be32, 0x006474B0, 0x396B0094 ] # addi r11,r11,0x94
+      # 5) if (dest != P1dest) return
+      - [ be32, 0x006474B4, 0x7C0A5840 ] # cmplw r10,r11
+      - [ be32, 0x006474B8, 0x4082000C ] # bne  ret
+      # 6) overwrite P1 dest with 0x471C4000
+      - [ be32, 0x006474BC, 0x3D80471C ] # lis  r12,0x471C
+      - [ be32, 0x006474C0, 0x618C4000 ] # ori  r12,r12,0x4000
+      - [ be32, 0x006474C4, 0x918A0000 ] # stw  r12,0(r10)
+      - [ be32, 0x006474C8, 0x4BA1BFC0 ] # b 0x00063488
+PPU-3de340701cfb52769efd69f65dabed7bc61afeff:
+  "P1 health and Power Recharge (Please Read Note)":
+    Games:
+      "Dragon Ball: Raging Blast":
+        BLUS30431: [ 01.00 ]
+    Author: ChiDreamS
+    Notes: Infinite Heal activates after the first power is drained, but the effect will remain active afterward. Power chare during fighting  
+    Group: A
+    Patch Version: 1.2
+    Patch:
+      # Hook: 0x00063484 -> 0x00647494
+      - [ be32, 0x00063484, 0x485E4010 ]
+      # Cave @ 0x00647494
+      - [ be32, 0x00647494, 0xD01B001C ] # stfs f0,0x1C(r27)  (original)
+      # r11 = *(u32*)0x00788660 (P1 base)
+      - [ be32, 0x00647498, 0x3D600078 ] # lis  r11,0x0078
+      - [ be32, 0x0064749C, 0x616B8660 ] # ori  r11,r11,0x8660
+      - [ be32, 0x006474A0, 0x816B0000 ] # lwz  r11,0(r11)
+      # if (r11 == 0) return
+      - [ be32, 0x006474A4, 0x2C0B0000 ] # cmpwi r11,0
+      - [ be32, 0x006474A8, 0x4182001C ] # beq  ret
+      # r12 = 0x471C4000
+      - [ be32, 0x006474AC, 0x3D80471C ] # lis  r12,0x471C
+      - [ be32, 0x006474B0, 0x618C4000 ] # ori  r12,r12,0x4000
+      # *(p1base + 0x94) = r12
+      - [ be32, 0x006474B4, 0x918B0094 ] # stw  r12,0x94(r11)
+      # *(p1base + 0x98) = r12
+      - [ be32, 0x006474B8, 0x918B0098 ] # stw  r12,0x98(r11)
+      # ret: back to 0x00063488
+      - [ be32, 0x006474BC, 0x4BA1BFCC ] # b 0x00063488
+PPU-3de340701cfb52769efd69f65dabed7bc61afeff:
+  "P1 health and Power Recharge v1 (Please Read Note)":
+    Games:
+      "Dragon Ball: Raging Blast":
+        BLUS30431: [ 01.00 ]
+    Author: ChiDreamS
+    Notes: Infinite Heal activates after the first power is drained, but the effect will remain active afterward. Power chare during fighting   
+    Group: A
+    Patch Version: 1.2
+    Patch:
+      # Hook: 0x00063484 -> 0x00647494
+      - [ be32, 0x00063484, 0x485E4010 ]
+      # Cave @ 0x00647494
+      - [ be32, 0x00647494, 0xD01B001C ] # stfs f0,0x1C(r27)  (original)
+      # r11 = *(u32*)0x00788660 (P1 base)
+      - [ be32, 0x00647498, 0x3D600078 ] # lis  r11,0x0078
+      - [ be32, 0x0064749C, 0x616B8660 ] # ori  r11,r11,0x8660
+      - [ be32, 0x006474A0, 0x816B0000 ] # lwz  r11,0(r11)
+      # if (r11 == 0) return
+      - [ be32, 0x006474A4, 0x2C0B0000 ] # cmpwi r11,0
+      - [ be32, 0x006474A8, 0x41820024 ] # beq  ret
+      # r12 = 0x471C4000 (your big value)
+      - [ be32, 0x006474AC, 0x3D80471C ] # lis  r12,0x471C
+      - [ be32, 0x006474B0, 0x618C4000 ] # ori  r12,r12,0x4000
+      - [ be32, 0x006474B4, 0x918B0094 ] # stw  r12,0x94(r11)
+      # r12 = 0x42C80000 (100.0f max/cap)
+      - [ be32, 0x006474B8, 0x3D8042C8 ] # lis  r12,0x42C8
+      - [ be32, 0x006474BC, 0x618C0000 ] # ori  r12,r12,0x0000
+      - [ be32, 0x006474C0, 0x918B0098 ] # stw  r12,0x98(r11)
+      # ret: back to 0x00063488
+      - [ be32, 0x006474C4, 0x4BA1BFC4 ] # b 0x00063488
+PPU-3de340701cfb52769efd69f65dabed7bc61afeff:
+  "Money 9999999 Cap And Set":
+    Games:
+      "Dragon Ball: Raging Blast":
+        BLUS30431: [ 01.00 ]
+    Author: ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      # Set cap r10 = 0x0098967F (9,999,999)
+      - [ be32, 0x00406220, 0x3D400098 ] # lis r10,0x0098
+      - [ be32, 0x00406228, 0x614A967F ] # ori r10,r10,0x967F
+      
+      # Force 'mr r0,r10' to always execute by NOPing the conditional branch
+      # Original at 0x00406244: 409D0008  ble cr7,0x0040624C
+      - [ be32, 0x00406244, 0x60000000 ] # nop
+      
+      # Optional: set current money immediately (so you see it without needing to earn/spend)
+      - [ be32, 0x340BD434, 0x0098967F ]
