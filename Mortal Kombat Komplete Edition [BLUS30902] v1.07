@@ -1,0 +1,105 @@
+# Title: Mortal Kombat Komplete Edition
+# Serial: BLUS30902
+# Category: GD
+# Version: APP_VER=01.07 VERSION=01.00
+PPU-eec5f9f7db2ca154761d14cb54f1ed8a45954d62:
+  " Koins 999999999":
+    Games:
+      "Mortal Kombat Komplete Edition (Artemis)":
+        BLUS30902: [ 01.07 ]
+    Author: ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [be32, 0x001E1F7C, 0x3C603B9A]  # lis r3, 0x3B9A
+      - [be32, 0x001E1F80, 0x6063C9FF]  # ori r3, r3, 0xC9FF  => r3=0x3B9AC9FF
+      - [be32, 0x001E1F84, 0x907C0144]  # stw r3, 0x144(r28)
+      - [be32, 0x001E1F88, 0x4800000C]  # b 0x001E1F94
+      - [be32, 0x001E1F8C, 0x60000000]  # nop (padding)
+PPU-eec5f9f7db2ca154761d14cb54f1ed8a45954d62:
+  "Infinite time 666":
+    Games:
+      "Mortal Kombat Komplete Edition (Artemis)":
+        BLUS30902: [ 01.07 ]
+    Author: ChiDreamS
+    Notes: does not work right now
+    Patch Version: 1.2
+    Patch:
+      - [be32, 0x006C6204, 0x80630000]  # lwz r3,0(r3)
+      - [be32, 0x006C6208, 0x3884029A]  # li  r4,0x29A (666)
+      - [be32, 0x006C620C, 0x90830000]  # stw r4,0(r3)
+PPU-eec5f9f7db2ca154761d14cb54f1ed8a45954d62:
+  "Auto Fatality":
+    Games:
+      "Mortal Kombat Komplete Edition (Artemis)":
+        BLUS30902: [ 01.07 ]
+    Author: ChiDreamS
+    Notes:   
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x018CD188,0x0000000A]
+PPU-eec5f9f7db2ca154761d14cb54f1ed8a45954d62:
+  "P1 Infinite Health, Invincible, Infinite X Ray":
+    Games:
+      "Mortal Kombat Komplete Edition (Artemis)":
+        BLUS30902: [ 01.07 ]
+    Author: ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x014B2FF8,0x926478C0]
+    - [ be32,0x014B2FFC,0x927B0E1C]
+    - [ be32,0x014B3000,0x3860FFFF]
+    - [ be32,0x014B3004,0xB06475FA]
+    - [ be32,0x014B3008,0xC3C478C4]
+    - [ be32,0x014B300C,0x48175BFA]
+    - [ be32,0x00175BF4,0x494B2FFA]
+PPU-eec5f9f7db2ca154761d14cb54f1ed8a45954d62:
+  "P1 Press L1 To Kill P2":
+    Games:
+      "Mortal Kombat Komplete Edition (Artemis)":
+        BLUS30902: [ 01.07 ]
+    Author: ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x014B3D4C,0x3CE00192]
+    - [ be32,0x014B3D50,0x93870000]
+    - [ be32,0x014B3D54,0x809C0000]
+    - [ be32,0x014B3D58,0x4864C966]
+    - [ be32,0x014B3D5C,0x3C600192]
+    - [ be32,0x014B3D60,0x80630000]
+    - [ be32,0x014B3D64,0x80630000]
+    - [ be32,0x014B3D68,0x28031000]
+    - [ be32,0x014B3D6C,0x4082000C]
+    - [ be32,0x014B3D70,0xD0A478C0]
+    - [ be32,0x014B3D74,0xC3C478C4]
+    - [ be32,0x014B3D78,0x48174782]
+    - [ be32,0x0017477C,0x494B3D5E]
+    - [ be32,0x0064C960,0x494B3D4E]    
+PPU-eec5f9f7db2ca154761d14cb54f1ed8a45954d62:
+  "P1 High Damage":
+    Games:
+      "Mortal Kombat Komplete Edition (Artemis)":
+        BLUS30902: [ 01.07 ]
+    Author: ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x001758CC,0X92C52F74]    
+PPU-eec5f9f7db2ca154761d14cb54f1ed8a45954d62:
+  "P2 Infinite Health, Invincible, Infinite X Ray":
+    Games:
+      "Mortal Kombat Komplete Edition (Artemis)":
+        BLUS30902: [ 01.07 ]
+    Author: ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x014B587C,0x926478C0]
+    - [ be32,0x014B5880,0xD09C0C14]
+    - [ be32,0x014B5884,0x3860FFFF]
+    - [ be32,0x014B5888,0xB06475FA]
+    - [ be32,0x014B588C,0xC3C478C0]
+    - [ be32,0x014B5890,0x48174262]
+    - [ be32,0x0017425C,0x494B587E]    
