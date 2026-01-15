@@ -1,0 +1,27 @@
+Version: 1.2
+# Title: James Cameron's AVATAR™: THE GAME
+# Serial: BLUS30374
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.01
+# this is a Work In Progress this in not complete 
+PPU-7eb68b132788bbcad11bc4b4bf51577f47feba7f:
+  "Max XP On Gain":
+    Games:
+      "James Cameron AVATAR THE GAME (Artemis)":
+        BLUS30374: [ 01.00 ]
+    Author: crapulecorp ported by Chidreams 
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32,0x0059EE20,0x921C4FD4]
+PPU-7eb68b132788bbcad11bc4b4bf51577f47feba7f:
+  "Unlimited Ammo& No Reload":
+    Games:
+      "James Camerons AVATAR THE GAME (Artemis)":
+        BLUS30374: [ 01.00 ]
+    Author: crapulecorp ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x005E0640,0x60000000]
+      - [ be32,0x00540DFC,0x60000000] 
