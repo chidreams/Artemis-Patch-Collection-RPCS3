@@ -1,0 +1,158 @@
+Version: 1.2
+# Title: The Legend of Korra
+# Serial: NPEB02082
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.00
+PPU-337df400e4ec631d1b4789ee2c2d7d91496e8ca7:
+  "Health Never Decreases ":
+    Games:
+      "The Legend of Korra (Artemis)":
+        NPEB02082: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+    - [ be32,0x007DE994,0x8A030001]
+    - [ be32,0x007DE998,0x2C100082]
+    - [ be32,0x007DE99C,0x40820010]
+    - [ be32,0x007DE9A0,0x82030548]
+    - [ be32,0x007DE9A4,0x92030544]
+    - [ be32,0x007DE9A8,0x4E800020]
+    - [ be32,0x007DE9AC,0x80A30544]
+    - [ be32,0x007DE9B0,0x48186422] 
+    - [ be32,0x0018641C,0x487DE996]
+PPU-337df400e4ec631d1b4789ee2c2d7d91496e8ca7:
+  "Invincibility":
+    Games:
+      "The Legend of Korra (Artemis)":
+        NPEB02082: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x00107FDC,0x60000000]
+PPU-337df400e4ec631d1b4789ee2c2d7d91496e8ca7:
+  "1 Hit Kills For Most Enemies":
+    Games:
+      "The Legend of Korra (Artemis)":
+        NPEB02082: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x0018641C,0x3C800000]
+PPU-337df400e4ec631d1b4789ee2c2d7d91496e8ca7:
+  "Easy Kills":
+    Games:
+      "The Legend of Korra (Artemis)":
+        NPEB02082: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+    - [ be32,0x007DE9B8,0x88030001]
+    - [ be32,0x007DE9BC,0x2C000081]
+    - [ be32,0x007DE9C0,0x40820010]
+    - [ be32,0x007DE9C4,0x7E318810]
+    - [ be32,0x007DE9C8,0x92230544]
+    - [ be32,0x007DE9CC,0x4E800020]
+    - [ be32,0x007DE9D0,0x90830544]
+    - [ be32,0x007DE9D4,0x4818643E] 
+    - [ be32,0x00186438,0x487DE9BA]
+PPU-337df400e4ec631d1b4789ee2c2d7d91496e8ca7:
+  "9,999,999 Spirit Energy Points On Gain":
+    Games:
+      "The Legend of Korra (Artemis)":
+        NPEB02082: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x00270330,0x3CA005F5]
+      - [ be32,0x00270334,0x60A5E0FF]
+PPU-337df400e4ec631d1b4789ee2c2d7d91496e8ca7:
+  "(M) Joker Pad (Must Be On)":
+    Games:
+      "The Legend of Korra (Artemis)":
+        NPEB02082: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+    - [ be32,0x007CDBB4,0x3DC000E2]
+    - [ be32,0x007CDBB8,0x93EEFFFC]
+    - [ be32,0x007CDBBC,0x809F0BC8]
+    - [ be32,0x007CDBC0,0x3E0000E2]
+    - [ be32,0x007CDBC4,0x8230FFFC]
+    - [ be32,0x007CDBC8,0x82310BC8]
+    - [ be32,0x007CDBCC,0x9230FFF0]
+    - [ be32,0x007CDBD0,0x4E800020]
+    - [ be32,0x002B3198,0x4851AA1D]
+PPU-337df400e4ec631d1b4789ee2c2d7d91496e8ca7:
+  "(M) Hold X To Moon Jump (Requires Joker Pad)":
+    Games:
+      "The Legend of Korra (Artemis)":
+        NPEB02082: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+    - [ be32,0x007CDBD8,0x281F0001]
+    - [ be32,0x007CDBDC,0x40820024]
+    - [ be32,0x007CDBE0,0x3E4000E1]
+    - [ be32,0x007CDBE4,0x6252FFF3]
+    - [ be32,0x007CDBE8,0x8A520000]
+    - [ be32,0x007CDBEC,0x72520010]
+    - [ be32,0x007CDBF0,0x28120010]
+    - [ be32,0x007CDBF4,0x4082000C]
+    - [ be32,0x007CDBF8,0x3E4041E0]
+    - [ be32,0x007CDBFC,0x92430054]
+    - [ be32,0x007CDC00,0x80630544]
+    - [ be32,0x007CDC04,0x480FCB32] 
+    - [ be32,0x000FCB2C,0x487CDBDA]
+PPU-337df400e4ec631d1b4789ee2c2d7d91496e8ca7:
+  "Infinite HP (Naga)":
+    Games:
+      "The Legend of Korra (Artemis)":
+        NPEB02082: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x002C2078,0x83BE0548]
+      - [ be32,0x002C2088,0x93BE0544] 
+PPU-337df400e4ec631d1b4789ee2c2d7d91496e8ca7:
+  "Infinite Chi":
+    Games:
+      "The Legend of Korra (Artemis)":
+        NPEB02082: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x000F1768,0xC07E0028]
+      - [ be32,0x000F1780,0xFC201890]
+PPU-337df400e4ec631d1b4789ee2c2d7d91496e8ca7:
+  "Infinite Items":
+    Games:
+      "The Legend of Korra (Artemis)":
+        NPEB02082: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x002665A8,0x30A40000]
+PPU-337df400e4ec631d1b4789ee2c2d7d91496e8ca7:
+  "Avatar Gauge Always Full":
+    Games:
+      "The Legend of Korra (Artemis)":
+        NPEB02082: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x000F5DEC,0x60000000]
+      - [ be32,0x000F652C,0xD05F0014]
+      - [ be32,0x000F6530,0x60000000]
+      - [ be32,0x000F659C,0xC07F001C]
+      - [ be32,0x000F65A0,0xFC201890]  
