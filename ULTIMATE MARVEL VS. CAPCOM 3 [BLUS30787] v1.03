@@ -1,0 +1,39 @@
+# Title: ULTIMATE MARVEL VS. CAPCOM 3
+# Serial: BLUS30787
+# Category: GD
+# Version: APP_VER=01.03 VERSION=01.00
+PPU-bcc19b68bcb1e61f6fc5bbc70bc119ce13a528b2:
+  "P1 Infinite Health & Special v3":
+    Games:
+      "ULTIMATE MARVEL VS. CAPCOM 3":
+        BLUS30787: [ 01.03 ]
+    Author: Pulled from Eboot.BIN by chidreams 
+    Notes: Dont change options far as time seems to be a bug woking on fixing "Chidreams"
+    Patch Version: 1.2
+    Patch:      
+      - [ be32, 0x00025798, 0x48CB4D49 ]
+      - [ be32, 0x0004B650, 0x48C8EE58 ]
+      - [ be32, 0x00CDA4A8, 0x2C0C0000 ]
+      - [ be32, 0x00CDA4AC, 0x4082000C ]
+      - [ be32, 0x00CDA4B0, 0x3C6047C3 ]
+      - [ be32, 0x00CDA4B4, 0x907F0050 ]
+      - [ be32, 0x00CDA4B8, 0xC03F0050 ]
+      - [ be32, 0x00CDA4BC, 0x4B371198 ]
+      - [ be32, 0x00CDA4C0, 0x60000000 ]
+      - [ be32, 0x00CDA4C4, 0x60000000 ]
+      - [ be32, 0x00CDA4C8, 0x60000000 ]
+      - [ be32, 0x00CDA4CC, 0x60000000 ]
+      - [ be32, 0x00CDA4D0, 0x60000000 ]
+      - [ be32, 0x00CDA4D4, 0x60000000 ]
+      - [ be32, 0x00CDA4D8, 0x60000000 ]
+      - [ be32, 0x00CDA4DC, 0x60000000 ]
+      - [ be32, 0x00CDA4E0, 0x60000000 ]  
+      - [ be32, 0x00CDA4E4, 0x60000000 ]
+      - [ be32, 0x00CDA4E8, 0x2C1A0000 ]
+      - [ be32, 0x00CDA4EC, 0x40820014 ]
+      - [ be32, 0x00CDA4F0, 0xCB630EF4 ]
+      - [ be32, 0x00CDA4F4, 0xFF60DE9C ]
+      - [ be32, 0x00CDA4F8, 0xFF60D818 ]
+      - [ be32, 0x00CDA4FC, 0xD3630EFC ]
+      - [ be32, 0x00CDA500, 0x38800000 ]
+      - [ be32, 0x00CDA504, 0x4E800020 ]       
