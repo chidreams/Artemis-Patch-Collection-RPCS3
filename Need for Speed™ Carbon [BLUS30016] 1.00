@@ -1,0 +1,39 @@
+# Title: Need for Speed™ Carbon
+# Serial: BLUS30016
+# Category: DG
+# Version: APP_VER=Unknown VERSION=01.00    
+PPU-5295c6de0b3fd1b48517255ce710002c174b18f5:
+  "Infinite Nitro":
+    Games:
+      "Need for Speed™ Carbon (Artemis)":
+        BLUS30016: [ 01.00 ]
+    Author: Pulled from Eboot.BIN by chidreams 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x00462CC0, 0x60000000 ]
+PPU-5295c6de0b3fd1b48517255ce710002c174b18f5:
+  "Infinite Bullet Time":
+    Games:
+      "Need for Speed™ Carbon (Artemis)":
+        BLUS30016: [ 01.00 ]
+    Author: Pulled from Eboot.BIN by chidreams 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x005015B4, 0x60000000 ]
+      - [ be32, 0x005015B8, 0x409D000C ]
+      - [ be32, 0x005015BC, 0x60000000 ]
+      - [ be32, 0x005015C0, 0x4BFFFF24 ]
+      - [ be32, 0x005015C4, 0xFC006890 ]
+      - [ be32, 0x005015C8, 0x60000000 ]     
+PPU-5295c6de0b3fd1b48517255ce710002c174b18f5:
+  "Lot + Infinite Money":
+    Games:
+      "Need for Speed™ Carbon (Artemis)":
+        BLUS30016: [ 01.00 ]
+    Author: Pulled from Eboot.BIN by chidreams 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x0013CDEC, 0x91630058 ]  
