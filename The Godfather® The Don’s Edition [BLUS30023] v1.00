@@ -1,0 +1,103 @@
+Version: 1.2
+# Title: The Godfather® The Don’s Edition
+# Serial: BLUS30023
+# Category: DG
+# Version: APP_VER=Unknown VERSION=01.00
+# Serial: BLUS30023
+# Category: DG
+# Version: APP_VER=Unknown VERSION=01.00     
+PPU-b86a6fb6b4f5cf3572b3132391e5c4b02045d870:
+  Max And Infinite Money:
+    Games:
+      "The Godfather® The Don’s Edition (Artemis)":
+        BLUS30023: [ 01.00 ]
+    Author: chidreams
+    Notes: 
+    Patch Version: 1.0
+    Group: A
+    Patch:
+      - [ be32, 0x002EA850, 0x3D203B9A ]
+      - [ be32, 0x002EA854, 0x6129C9FF ] 
+      - [ be32, 0x002EB790, 0x3D203B9A ]
+      - [ be32, 0x002EB794, 0x6129C9FF ] 
+      - [ be32, 0x002EC60C, 0x60000000 ]
+PPU-b86a6fb6b4f5cf3572b3132391e5c4b02045d870:
+  Infinite Ammo (Fire / Clip Ammo):
+    Games:
+      "The Godfather® The Don’s Edition (Artemis)":
+        BLUS30023: [ 01.00 ]
+    Author:  Chidreams
+    Notes: not working (WIP)
+    Patch Version: 1.0
+    Group: AC
+    Patch:
+      - [ be32, 0x000AA924, 0x48279544 ]  # b 0x00323E68
+      # Issues with r12 need to find ne register 
+      # Fire/Clip cave @ 0x00323E68
+      - [ be32, 0x00323E68, 0x800300E4 ]  # lwz r0,0xE4(r3)
+      - [ be32, 0x00323E6C, 0x900300E4 ]  # stw r0,0xE4(r3)
+      - [ be32, 0x00323E70, 0x4BD86AB8 ]  # b 0x000AA928
+PPU-b86a6fb6b4f5cf3572b3132391e5c4b02045d870:
+  Infinite Ammo (Reload / Reserve Ammo):
+    Games:
+      "The Godfather® The Don’s Edition (Artemis)":
+        BLUS30023: [ 01.00 ]
+    Author:  Chidreams
+    Notes: 
+    Patch Version: 1.0
+    Group: AC
+    Patch:
+      - [ be32, 0x00323E68, 0x800300E4 ]  # lwz r0,0xE4(r3)
+      - [ be32, 0x00323E6C, 0x900300E4 ]  # stw r0,0xE4(r3)
+      - [ be32, 0x00323E70, 0x4BD86AB8 ]  # b 0x000AA928
+      
+      # -----------------------------
+      # B) RELOAD / RESERVE: block decreases only
+      - [ be32, 0x000A1888, 0x4828263C ]  # b 0x00323EC4
+      
+      # Reserve clamp cave @ 0x00323EC4
+      - [ be32, 0x00323EC4, 0x81890004 ]  # lwz  r12,0x4(r9)   ; old reserve
+      - [ be32, 0x00323EC8, 0x7C036000 ]  # cmpw r3,r12        ; new vs old
+      - [ be32, 0x00323ECC, 0x41800008 ]  # blt  block
+      - [ be32, 0x00323ED0, 0x90690004 ]  # stw  r3,0x4(r9)    ; store new
+      - [ be32, 0x00323ED4, 0x4BD7D9B8 ]  # b    0x000A188C    ; return
+      
+      # block:
+      - [ be32, 0x00323ED8, 0x91890004 ]  # stw  r12,0x4(r9)   ; restore old
+      - [ be32, 0x00323EDC, 0x4BD7D9B0 ]  # b    0x000A188C    ; return
+PPU-b86a6fb6b4f5cf3572b3132391e5c4b02045d870:
+  Infinite Health (No Damage):
+    Games:
+      "The Godfather® The Don’s Edition (Artemis)":
+        BLUS30023: [ 01.00 ]
+    Author:  Chidreams
+    Notes:  Just Know there can be only one 
+    Patch Version: 1.0
+    Group: C
+    Patch:   
+      - [ be32, 0x001B4AD4, 0x4816F3D0 ]  # b 0x00323EA4
+      - [ be32, 0x00323EA4, 0xC01D14C8 ]  # lfs   f0,0x14C8(r29)   ; old
+      - [ be32, 0x00323EA8, 0xFC010000 ]  # fcmpu cr0,f1,f0        ; new vs old
+      - [ be32, 0x00323EAC, 0x4180000C ]  # blt   block            ; if new < old
+      - [ be32, 0x00323EB0, 0xD03D14C8 ]  # stfs  f1,0x14C8(r29)   ; store new
+      - [ be32, 0x00323EB4, 0x4BE90C24 ]  # b     0x001B4AD8       ; return
+      - [ be32, 0x00323EB8, 0xFC200090 ]  # fmr   f1,f0            ; keep old
+      - [ be32, 0x00323EBC, 0xD03D14C8 ]  # stfs  f1,0x14C8(r29)   ; store old
+      - [ be32, 0x00323EC0, 0x4BE90C18 ]  # b     0x001B4AD8       ; return 
+  Skill Points = 99.0:
+    Games:
+      "The Godfather® The Don’s Edition (Artemis)":
+        BLUS30023: [ 01.00 ]
+    Author:  Chidreams
+    Notes: 
+    Patch Version: 1.0
+    Group: 
+    Patch:
+      # Hook: replace original stfs with branch to cave
+      - [ be32, 0x002F8A9C, 0x4BD17694 ]  # b 0x00010130
+      - [ be32, 0x00010130, 0x3D8042C6 ]  # lis r12,0x42C6
+      - [ be32, 0x00010134, 0x618C0000 ]  # ori r12,r12,0
+      - [ be32, 0x00010138, 0x91810070 ]  # stw r12,0x70(r1)
+      - [ be32, 0x0001013C, 0xC0210070 ]  # lfs f1,0x70(r1)
+      - [ be32, 0x00010140, 0xD0240008 ]  # stfs f1,0x8(r4)  (original store)
+      - [ be32, 0x00010144, 0x482E895C ]  # b 0x002F8AA0
