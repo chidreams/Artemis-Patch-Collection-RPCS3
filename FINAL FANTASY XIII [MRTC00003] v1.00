@@ -1,0 +1,159 @@
+# Title: FINAL FANTASY XIII 
+# Serial: MRTC00003
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00
+# Localized Title: FINAL FANTASY XIII 
+Anchors:
+  FFXIII: &FFXIII
+      - [ be32,0x0059EB40,0x48000008]
+  FFXIII3: &FFXIII3
+      - [ be32,0x005A22D4,0x48000004]
+  FFXIII4: &FFXIII4
+      - [ be32,0x005898A0,0x48000008]
+  FFXIII5: &FFXIII5
+      - [ be32,0x005893FC,0x3E203B9A]  
+      - [ be32,0x00589414,0x6231C9FF]
+  FFXIII6: &FFXIII6
+      - [ be32,0x005898A0,0x92370018] 
+      - [ be32,0x005898A4,0x9237001C]
+  FFXIII7: &FFXIII7
+      - [ be32,0x00591440,0x60000000]
+  FFXIII8: &FFXIII8
+      - [ be32,0x0059139C,0x60000000] 
+      - [ be32,0x005913A0,0x60000000]
+      - [ be32,0x005913A4,0x38A00063] 
+      - [ be32,0x005913AC,0x60000000]
+  FFXIII9: &FFXIII9
+      - [ be32,0x000879E8,0x3C000000] 
+      - [ be32,0x000879EC,0x60000000]
+  FFXIII10: &FFXIII10
+      - [ be32,0x00087ACC,0x3FE00098] 
+      - [ be32,0x00087AD0,0x63FF967F]
+  FFXIII11: &FFXIII11
+      - [ be32,0x005913A4,0x38A00063] 
+  FFXIII12: &FFXIII12
+      - [ be32,0x005914A0,0x2B800000] 
+  FFXIII13: &FFXIII13
+      - [ be32,0x0041CA60,0x93830014]
+PPU-2845afa9e4dc56df06a61f2e51463468e9a557c7:
+  "Max Gil On Buy Or Sell":
+    Games:
+      "FINAL FANTASY XIII (Artemis)":
+        MRTC00003: [ 01.00 ]
+    Author: hyper2k Ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFXIII ]
+PPU-2845afa9e4dc56df06a61f2e51463468e9a557c7:
+  "Max CP After Battle":
+    Games:
+      "FINAL FANTASY XIII (Artemis)":
+        MRTC00003: [ 01.00 ]
+    Author: Hazado Ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFXIII3 ]
+PPU-2845afa9e4dc56df06a61f2e51463468e9a557c7:
+  "Max HP (99,999)":
+    Games:
+      "FINAL FANTASY XIII (Artemis)":
+        MRTC00003: [ 01.00 ]
+    Author: Hazado Ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFXIII4 ]
+PPU-2845afa9e4dc56df06a61f2e51463468e9a557c7:
+  "999,999,999 HP Max":
+    Games:
+      "FINAL FANTASY XIII (Artemis)":
+        MRTC00003: [ 01.00 ]
+    Author: Skiller Ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+      - [ load, *FFXIII5 ]
+PPU-2845afa9e4dc56df06a61f2e51463468e9a557c7:
+  "Max HP + MAG + STR (99,999)":
+    Games:
+      "FINAL FANTASY XIII (Artemis)":
+        MRTC00003: [ 01.00 ]
+    Author: Hazado Ported by Chidreams
+    Notes: Use this with 999,999,999 HP Max Mod and you can set your Stats over 99,999. Do not use this with Max HP Code.
+    Patch Version: 1.2
+    Group: A
+    Patch:
+      - [ load, *FFXIII6 ]
+PPU-2845afa9e4dc56df06a61f2e51463468e9a557c7:
+  "Get Item For Max":
+    Games:
+      "FINAL FANTASY XIII (Artemis)":
+        MRTC00003: [ 01.00 ]
+    Author: Hazado Ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFXIII7 ]
+PPU-2845afa9e4dc56df06a61f2e51463468e9a557c7:
+  "Max Item Usage":
+    Games:
+      "FINAL FANTASY XIII (Artemis)":
+        MRTC00003: [ 01.00 ]
+    Author: Skiller Ported by Chidreams
+    Notes: You can not sell all your accessories or weapons. Delete the game from xmb and start from the disc, then after that just activate the code again.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFXIII8 ]
+PPU-2845afa9e4dc56df06a61f2e51463468e9a557c7:
+  "Jump To Max Attack (Max Attack Trigger)":
+    Games:
+      "FINAL FANTASY XIII (Artemis)":
+        MRTC00003: [ 01.00 ]
+    Author: Skiller Ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFXIII9 ]
+PPU-2845afa9e4dc56df06a61f2e51463468e9a557c7:
+  "Max Attack Hit Damage 9,999,999":
+    Games:
+      "FINAL FANTASY XIII (Artemis)":
+        MRTC00003: [ 01.00 ]
+    Author: Skiller Ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFXIII10 ]
+PPU-2845afa9e4dc56df06a61f2e51463468e9a557c7:
+  "Max Materials 99":
+    Games:
+      "FINAL FANTASY XIII (Artemis)":
+        MRTC00003: [ 01.00 ]
+    Author: CodeFreak Ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFXIII11 ]
+PPU-2845afa9e4dc56df06a61f2e51463468e9a557c7:
+  "Battle Item And Material 99":
+    Games:
+      "FINAL FANTASY XIII (Artemis)":
+        MRTC00003: [ 01.00 ]
+    Author: CodeFreak Ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFXIII12 ]
+PPU-2845afa9e4dc56df06a61f2e51463468e9a557c7:
+  "Upgrade Weapon Exp Max":
+    Games:
+      "FINAL FANTASY XIII (Artemis)":
+        MRTC00003: [ 01.00 ]
+    Author: CodeFreak Ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFXIII13 ]      
