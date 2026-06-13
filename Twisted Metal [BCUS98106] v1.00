@@ -1,0 +1,34 @@
+# Title: Twisted Metal™
+# Serial: BCUS98106
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00
+# Localized Title: Twisted Metal™     
+PPU-424b7d9815818fceff287387f84a8f92e27a1230:
+  "Infinite Health":
+    Games:
+      "Twisted Metal v1.00 (Artemis)":
+        BCUS98106: [ 01.00 ]
+    Author: Skiller Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x0050837C,0xC0430010]
+      - [ be32,0x00508380,0xD0430028]   
+  "Infinite Ammo":
+    Games:
+      "Twisted Metal v1.00 (Artemis)":
+        BCUS98106: [ 01.00 ]
+    Author: Skiller Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x0031FBA8,0x60000000]       
+  "Infinite Turbo":
+    Games:
+      "Twisted Metal v1.00 (Artemis)":
+        BCUS98106: [ 01.00 ]
+    Author: Skiller Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x001C9EBC,0x60000000] 
