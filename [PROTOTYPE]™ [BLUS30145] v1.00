@@ -1,0 +1,262 @@
+
+# Title: [PROTOTYPE]™
+# Serial: BLUS30145
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00
+Anchors:
+  PRTY: &PRTY
+    - [ be32,0x0028DE80,0x3C000000]
+    - [ be32,0x0028DE88,0x901F0200]
+    - [ be32,0x0028DE8C,0x419E0084]
+  PRTY2: &PRTY2
+    - [ be32,0x0028F758,0x60000000]
+  PRTY3: &PRTY3
+    - [ be32,0x002923AC,0x60000000]
+  PRTY4: &PRTY4
+    - [ be32,0x00292720,0x60000000]
+  PRTY5: &PRTY5
+    - [ be32,0x002927D4,0x60000000]
+  PRTY6: &PRTY6
+    - [ be32,0x00BF7038,0x38000000]
+    - [ be32,0x00BF7040,0x901F000C]
+  PRTY7: &PRTY7
+    - [ be32,0x004D07B4,0x38600001]
+  PRTY8: &PRTY8
+    - [ be32,0x00305430,0x4E800020]
+  PRTY9: &PRTY9
+    - [ be32,0x00B3BE10,0x4E800020]
+  PRTY10: &PRTY10
+    - [ be32,0x01021D6C,0x3D203593]
+    - [ be32,0x01021D70,0x8009540C]
+    - [ be32,0x01021D74,0x3D20018D]
+    - [ be32,0x01021D78,0x48000020]
+    - [ be32,0x01021D98,0x89690280]
+    - [ be32,0x01021D9C,0x7F8B0040]
+    - [ be32,0x01021DA0,0x98090280]
+    - [ be32,0x01021DA4,0x48000020]
+    - [ be32,0x01021DC4,0x419E0058]
+    - [ be32,0x01021DC8,0x2F800002]
+    - [ be32,0x01021DCC,0x409E0050]
+    - [ be32,0x01021DD0,0x48000020]
+    - [ be32,0x01021DF0,0x88090281]
+    - [ be32,0x01021DF4,0x68000001]
+    - [ be32,0x01021DF8,0x98090281]
+    - [ be32,0x01021DFC,0x48000020]
+    - [ be32,0x01021E1C,0x88090281]
+    - [ be32,0x01021E20,0x2F800000]
+    - [ be32,0x01021E24,0x419E0024]
+    - [ be32,0x01021E28,0x4E800020]
+    - [ be32,0x01021E48,0xF821FD01]
+    - [ be32,0x01021E4C,0x48B3BE16]
+    - [ be32,0x00B3BE10,0x49021D6E]
+  PRTY11: &PRTY11
+    - [ be32,0x002925F4,0x60000000]
+  PRTY12: &PRTY12
+    - [ be32,0x001F9078,0x60000000]
+  PRTY13: &PRTY13
+    - [ be32,0x0025F64,0x60000000]
+  PRTY14: &PRTY14
+    - [ be32,0x0042B978,0x60000000]
+  PRTY15: &PRTY15
+    - [ be32,0x0042B9CC,0x60000000]
+  PRTY16: &PRTY16
+    - [ be32,0x00305C04,0x80030378]
+  PRTY17: &PRTY17
+    - [ be32,0x00305434,0xF86100C0]
+    - [ be32,0x00305438,0xF8810120]
+    - [ be32,0x0030543C,0x3C80300D]
+    - [ be32,0x00305440,0x3C600F0F]
+    - [ be32,0x00305444,0x60630F0F]
+    - [ be32,0x00305448,0x906483C0]
+    - [ be32,0x0030544C,0x906483C4]
+    - [ be32,0x00305450,0xE86483C0]
+    - [ be32,0x00305454,0xF86483C8]
+    - [ be32,0x00305458,0xF86483D0]
+    - [ be32,0x0030545C,0xF86483D8]
+    - [ be32,0x00305460,0xF86483E0]
+    - [ be32,0x00305464,0xF86483E8]
+    - [ be32,0x00305468,0xF86483F0]
+    - [ be32,0x0030546C,0xF86483F8]
+    - [ be32,0x00305470,0xF8648400]
+    - [ be32,0x00305474,0xF8648408]
+    - [ be32,0x00305478,0xF8648410]
+    - [ be32,0x0030547C,0xF8648418]
+    - [ be32,0x00305480,0xF8648420]
+    - [ be32,0x00305484,0xF8648428]
+    - [ be32,0x00305488,0xF8648430]
+    - [ be32,0x0030548C,0xF8648438]
+    - [ be32,0x00305490,0x90648440]
+    - [ be32,0x00305494,0x3C80300B]
+    - [ be32,0x00305498,0x3C603B9A]
+    - [ be32,0x0030549C,0x6063C9FF]
+    - [ be32,0x003054A0,0x90646A30]
+    - [ be32,0x003054A4,0xE86100C0]
+    - [ be32,0x003054A8,0xE8810120]
+    - [ be32,0x003054AC,0x38210110]
+    - [ be32,0x003054B0,0x4E800020]
+  PRTY18: &PRTY18
+    - [ be32,0x010B9C64,0x52454C45]
+    - [ be32,0x010B9C68,0x41534500]     
+PPU-38656a143a665d48c38ae914e7c826d059efd291:
+  "Health Never Reduces To 0, Infinite Devastators While Health Is Low":
+    Games:
+      "PROTOTYPE (Artemis)":
+        BLUS30145: [ 01.00 ]
+    Author: bungholio (converted for RPCS3)
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *PRTY ]
+  "Tank And Helicopter Health Never Decrease (Player Only)":
+    Games:
+      "PROTOTYPE (Artemis)":
+        BLUS30145: [ 01.00 ]
+    Author: bungholio (converted for RPCS3)
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *PRTY2 ]
+  "Health Never Decreases":
+    Games:
+      "PROTOTYPE (Artemis)":
+        BLUS30145: [ 01.00 ]
+    Author: bungholio (converted for RPCS3)
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *PRTY3 ]
+  "Unlimited Devastators While Health Is Low":
+    Games:
+      "PROTOTYPE (Artemis)":
+        BLUS30145: [ 01.00 ]
+    Author: bungholio (converted for RPCS3)
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *PRTY4 ]
+  "Using Devastator Attacks Does Not Decrease Health":
+    Games:
+      "PROTOTYPE (Artemis)":
+        BLUS30145: [ 01.00 ]
+    Author: bungholio (converted for RPCS3)
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *PRTY5 ]
+  "Everything Dies From Any Damage (Turn On Health Never Decreases)":
+    Games:
+      "PROTOTYPE (Artemis)":
+        BLUS30145: [ 01.00 ]
+    Author: bungholio (converted for RPCS3)
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *PRTY6 ]
+  "Infinite Air Dashes, Rapid Jump Kicks":
+    Games:
+      "PROTOTYPE (Artemis)":
+        BLUS30145: [ 01.00 ]
+    Author: bungholio (converted for RPCS3)
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *PRTY7 ]
+  "Military Always Ignores You":
+    Games:
+      "PROTOTYPE (Artemis)":
+        BLUS30145: [ 01.00 ]
+    Author: bungholio (converted for RPCS3)
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *PRTY8 ]
+  "Walk On Air":
+    Games:
+      "PROTOTYPE (Artemis)":
+        BLUS30145: [ 01.00 ]
+    Author: bungholio (converted for RPCS3)
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *PRTY9 ]
+  "Press L3 To Toggle Walking In Air":
+    Games:
+      "PROTOTYPE (Artemis)":
+        BLUS30145: [ 01.00 ]
+    Author: bungholio (converted for RPCS3)
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *PRTY10 ]
+  "Black And White Mode":
+    Games:
+      "PROTOTYPE (Artemis)":
+        BLUS30145: [ 01.00 ]
+    Author: bungholio (converted for RPCS3)
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *PRTY11 ]
+  "Enemy Tanks Do Not Fire Cannons":
+    Games:
+      "PROTOTYPE (Artemis)":
+        BLUS30145: [ 01.00 ]
+    Author: bungholio (converted for RPCS3)
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *PRTY12 ]
+  "Only Military Bases And Infected Buildings Are Not Deserted":
+    Games:
+      "PROTOTYPE (Artemis)":
+        BLUS30145: [ 01.00 ]
+    Author: bungholio (converted for RPCS3)
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *PRTY13 ]
+  "Ammo Never Decreases":
+    Games:
+      "PROTOTYPE (Artemis)":
+        BLUS30145: [ 01.00 ]
+    Author: bungholio (converted for RPCS3)
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *PRTY14 ]
+  "Helicopters And Tanks Do Not Overheat":
+    Games:
+      "PROTOTYPE (Artemis)":
+        BLUS30145: [ 01.00 ]
+    Author: bungholio (converted for RPCS3)
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *PRTY15 ]
+  "Artillery Strikes Never Decrease":
+    Games:
+      "PROTOTYPE (Artemis)":
+        BLUS30145: [ 01.00 ]
+    Author: bungholio (converted for RPCS3)
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *PRTY16 ]
+  "Acquire All Upgrades + 999,999,999 EP Points":
+    Games:
+      "PROTOTYPE (Artemis)":
+        BLUS30145: [ 01.00 ]
+    Author: bungholio (converted for RPCS3)
+    Notes: Get A Military Or Police Unit's Attention To Acquire All Upgrades + 999,999,999 EP Points, And They Will Ignore You
+    Patch Version: 1.2
+    Patch:
+      - [ load, *PRTY17 ]      
+  "DEV MENU":
+    Games:
+      "PROTOTYPE (Artemis)":
+        BLUS30145: [ 01.00 ]
+    Author: bungholio (converted for RPCS3)
+    Notes: DEV MENU (In Main Menu) + Debug Menu (Press SELECT In Pause Menu)
+    Patch Version: 1.2
+    Patch:
+      - [ load, *PRTY18 ]      
