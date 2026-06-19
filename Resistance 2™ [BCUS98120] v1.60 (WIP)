@@ -1,0 +1,25 @@
+# Title: Resistance 2™
+# Serial: BCUS98120
+# Category: GD
+# Version: APP_VER=01.60 VERSION=01.00
+PPU-ee7a0a8f83814fd2570ac65e744951cf59264491:
+  "Infinite health":
+    Games:
+      "Resistance 2 (Artemis)":
+        BCUS98120: [ 01.60 ]
+    Author: "Chidreams"
+    Notes:
+    Patch Version: 1.0
+    Patch:
+      - [ be32, 0x00118AB4, 0x3D807F80 ] 
+      - [ be32, 0x00118AB8, 0x918300E0 ] 
+      - [ be32, 0x00118ABC, 0x38600000 ]           
+  "Endless ammo":
+    Games:
+      "Resistance 2 (Artemis)":
+        BCUS98120: [ 01.60 ]
+    Author: "Chidreams"
+    Notes:
+    Patch Version: 1.0
+    Patch:
+      - [ be32, 0x004F72A4, 0x60000000 ] # nop
