@@ -1,0 +1,37 @@
+# Title: Alien Breed: Impact
+# Serial: NPUB30141
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.02
+# Localized Title: Alien Breed: Impact      
+PPU-2580a96527bf97f39f63adedf58305cd77136301:
+  "Infinite Ammo":
+    Games:
+      "Alien Breed: Impact (Artemis)":
+        NPUB30141: [ 01.00 ]
+    Author: dron_3 Ported by Chidreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32,0x000F9548,0x380003E7]
+      - [ be32,0x000F954C,0x90060330]
+      - [ be32,0x000F9550,0x9006032C]
+  "Infinite Items":
+    Games:
+      "Alien Breed: Impact (Artemis)":
+        NPUB30141: [ 01.00 ]
+    Author: dron_3 Ported by Chidreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32,0x000FACC0,0x38A00063]
+      - [ be32,0x000FACCC,0x90A30264]
+  "Infinite Health":
+    Games:
+      "Alien Breed: Impact (Artemis)":
+        NPUB30141: [ 01.00 ]
+    Author: dron_3 Ported by Chidreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32,0x00059C6C,0x38A003E8]
+      - [ be32,0x00059C70,0x90BF02D8]      
