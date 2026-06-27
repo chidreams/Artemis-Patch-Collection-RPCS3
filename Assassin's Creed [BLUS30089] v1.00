@@ -1,0 +1,115 @@
+Anchors:
+  ACreed: &ACreed
+    - [ be32,0x01133A6C,0x809D0000]
+    - [ be32,0x01133A70,0x80840004]
+    - [ be32,0x01133A74,0x80840004]
+    - [ be32,0x01133A78,0x48000020]
+    - [ be32,0x01133A98,0x3C006000]
+    - [ be32,0x01133A9C,0x7F840000]
+    - [ be32,0x01133AA0,0x419C002C]
+    - [ be32,0x01133AA4,0x48000020]
+    - [ be32,0x01133AC4,0x80840004]
+    - [ be32,0x01133AC8,0x7F840000]
+    - [ be32,0x01133ACC,0x419C0050]
+    - [ be32,0x01133AD0,0x48000020]
+    - [ be32,0x01133AF0,0x80840970]
+    - [ be32,0x01133AF4,0x3C001000]
+    - [ be32,0x01133AF8,0x7F840000]
+    - [ be32,0x01133AFC,0x48000020]
+    - [ be32,0x01133B1C,0x419C005C]
+    - [ be32,0x01133B20,0x80840014]
+    - [ be32,0x01133B24,0x80840000]
+    - [ be32,0x01133B28,0x48000020]
+    - [ be32,0x01133B48,0x3C000008]
+    - [ be32,0x01133B4C,0x60004070]
+    - [ be32,0x01133B50,0x7F840040]
+    - [ be32,0x01133B54,0x48000020]
+    - [ be32,0x01133B74,0x419E000C]
+    - [ be32,0x01133B78,0x817D0000]
+    - [ be32,0x01133B7C,0x4899207E]
+    - [ be32,0x01133B80,0x489920B6]
+    - [ be32,0x00992078,0x49133A6E]
+  ACreed2: &ACreed2
+    - [ be32,0x0017EF90,0x931C0014]
+  ACreed3: &ACreed3
+    - [ be32,0x000E8AEC,0x381D0000]
+    - [ be32,0x000E8B24,0x381B0000]
+    - [ be32,0x000E8B5C,0x381C0000]
+  ACreed4: &ACreed4
+    - [ be32,0x00010064,0x01124400]
+    - [ be32,0x0001006C,0x01124400]
+    - [ be32,0x01133C60,0x3CA00120]
+    - [ be32,0x01133C64,0x38000000]
+    - [ be32,0x01133C68,0x2B840000]
+    - [ be32,0x01133C6C,0x409E0008]
+    - [ be32,0x01133C70,0xB005F000]
+    - [ be32,0x01133C74,0xA005F000]
+    - [ be32,0x01133C78,0x892B0008]
+    - [ be32,0x01133C7C,0x7D292030]
+    - [ be32,0x01133C80,0x7D200378]
+    - [ be32,0x01133C84,0xB005F000]
+    - [ be32,0x01133C88,0x892B0008]
+    - [ be32,0x01133C8C,0x48CF4466]
+    - [ be32,0x01133C90,0x3D200120]
+    - [ be32,0x01133C94,0xA129F000]
+    - [ be32,0x01133C98,0x71294000]
+    - [ be32,0x01133C9C,0x2B894000]
+    - [ be32,0x01133CA0,0x409E0010]
+    - [ be32,0x01133CA4,0xA003015C]
+    - [ be32,0x01133CA8,0x7000FFF7]
+    - [ be32,0x01133CAC,0xB003015C]
+    - [ be32,0x01133CB0,0x38030158]
+    - [ be32,0x01133CB4,0x481FE0D6]
+    - [ be32,0x00CF4460,0x49133C62]
+  ACreed5: &ACreed5
+    - [ be32,0x001FE0D0,0x49133C92]
+PPU-087937163dc1accb85f7302401f62f0f0a93b9e8:
+  "Invincibility + Enemies Can Not Lock You Into Combat":
+    Games:
+      "Assassins Creed (Artemis)":
+        BLUS30089: [ 01.00 ]
+    Author: bungholio "Ported to RPCS3 Chidreams"
+    Notes: Better than the synchronization bar code, enemy attacks go through you without affecting you while you can still hit them.
+    Patch Version: 1.0
+    Patch:
+      - [ load, *ACreed ]      
+PPU-087937163dc1accb85f7302401f62f0f0a93b9e8:
+  "Taking Any Damage Fully Refills Your Synchronization Bar":
+    Games:
+      "Assassins Creed (Artemis)":
+        BLUS30089: [ 01.00 ]
+    Author: bungholio "Ported to RPCS3 Chidreams"
+    Notes: It is your health.
+    Patch Version: 1.0
+    Patch:
+      - [ load, *ACreed2 ]      
+PPU-087937163dc1accb85f7302401f62f0f0a93b9e8:
+  "Throwing Knives Never Decrease":
+    Games:
+      "Assassins Creed (Artemis)":
+        BLUS30089: [ 01.00 ]
+    Author: bungholio "Ported to RPCS3 Chidreams"
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *ACreed3 ]      
+PPU-087937163dc1accb85f7302401f62f0f0a93b9e8:
+  "Button Enable Code":
+    Games:
+      "Assassins Creed (Artemis)":
+        BLUS30089: [ 01.00 ]
+    Author: Medo + bungholio "Ported to RPCS3 Chidreams"
+    Notes: Required to make enemies ignore you by pressing L3. Turn on 1st or the game will crash.
+    Patch Version: 1.0
+    Patch:
+      - [ load, *ACreed4 ]      
+PPU-087937163dc1accb85f7302401f62f0f0a93b9e8:
+  "Press L3 To Stop Pursuit":
+    Games:
+      "Assassins Creed (Artemis)":
+        BLUS30089: [ 01.00 ]
+    Author: bungholio "Ported to RPCS3 Chidreams"
+    Notes: Requires the Button Enable Code to be activated once before this or the game will instantly freeze.
+    Patch Version: 1.0
+    Patch:
+      - [ load, *ACreed5 ]
