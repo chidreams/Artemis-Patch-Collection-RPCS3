@@ -1,4 +1,4 @@
-# Aldo's PS3 Cheat Database to RPCS3 Patching System
+# Aldo's PS3 Cheat Database to RPCS3 Patching System By ChiDreams 
 
 ## Introduction
 
