@@ -1,0 +1,33 @@
+# Title: ENCHANTED ARMS
+# Serial: BLUS30028
+# Category: DG
+# Version: APP_VER=Unknown VERSION=01.00
+# Localized Title: ENCHANTED ARMS      
+PPU-468afc77950251216d1a180296c8f6c9223d8179:
+  "Max Money On Buy Or Sell":
+    Games:
+      "ENCHANTED ARMS (Artemis)":
+        BLUS30028: [ 01.00 ]
+    Author: ChiDreams 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [be32, 0x002C557C, 0x2B090000]
+  "Max CP On Buy Or Exchange":
+    Games:
+      "ENCHANTED ARMS (Artemis)":
+        BLUS30028: [ 01.00 ]
+    Author: ChiDreams 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [be32, 0x002C1C8C, 0x60000000]
+  "Max SP On Use":
+    Games:
+      "ENCHANTED ARMS (Artemis)":
+        BLUS30028: [ 01.00 ]
+    Author: ChiDreams 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [be32, 0x002C557C, 0x60000000]
