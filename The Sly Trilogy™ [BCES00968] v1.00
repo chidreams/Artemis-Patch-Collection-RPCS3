@@ -1,0 +1,276 @@
+# Title: The Sly Trilogy™
+# Serial: BCES00968
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00           
+Anchors:
+  SlyCooper1: &SlyCooper1
+    - [ be32,0x000B7320,0x39290000]
+  SlyCooper12: &SlyCooper12
+    - [ be32,0x000C0F7C,0x39290014]
+  SlyCooper13: &SlyCooper13
+    - [ be32,0x00126c30,0x4E800020]
+  SlyCooper14: &SlyCooper14
+    - [ be32,0x00134A70,0x4E800020]
+  SlyCooper15: &SlyCooper15
+    - [ be32,0x00086C20,0x4E800020]
+  SlyCooper16: &SlyCooper16
+    - [ be32,0x000B7320,0x39290000]
+  SlyCooper17: &SlyCooper17
+    - [ be32,0x000B3F5C,0x4800008C]
+  SlyCooper18: &SlyCooper18
+    - [ be32,0x0004D2F8,0x4E800020]
+  SlyCooper19: &SlyCooper19
+    - [ be32,0x0004CD14,0x39290064]
+  SlyCooper110: &SlyCooper110
+    - [ be32,0x000d2B8C,0x39290064]
+  SlyCooper111: &SlyCooper111
+    - [ be32,0x000CED10,0x38000000]
+  SlyCooper112: &SlyCooper112
+    - [ be32,0x000D0BE4,0x813F03C4] 
+  SlyCooper113: &SlyCooper113
+    - [ be32,0x000D3E70,0x39200000]
+  SlyCooper114: &SlyCooper114
+    - [ be32,0x0004EF84,0x39290064]
+  SlyCooper115: &SlyCooper115
+    - [ be32,0x0012B038,0x38000063]
+    - [ be32,0x0012B03C,0x901E0848] 
+  SlyCooper116: &SlyCooper116
+    - [ be32,0x000800FC,0x3800003F]
+    - [ be32,0x00080100,0x90090008]
+    - [ be32,0x001558D0,0x7C0B482E]
+    - [ be32,0x001558D4,0x60000001]
+    - [ be32,0x001558D8,0x7C0B492E]
+  SlyCooper117: &SlyCooper117
+    - [ be32,0x0009EBD0,0x4E800020]
+  SlyCooper2: &SlyCooper2
+    - [ be32,0x000AC768,0x912A0028]  
+  SlyCooper22: &SlyCooper22
+    - [ be32,0x000DA1FC,0x913C001E]
+  SlyCooper3: &SlyCooper3
+    - [ be32,0x0010E1B0,0x60000000]  
+  SlyCooper32: &SlyCooper32
+    - [ be32,0x006CC808,0x000F423F]
+  SlyCooper33: &SlyCooper33
+    - [ be32,0x006CC7F8,0xFFFFFFFF]
+    - [ be32,0x006CC7FC,0xFFFFFFFF]
+    - [ be32,0x006CC800,0xFFFFFFFF]
+PPU-fdf46d02bc2fb1280522dba3fdb3deafe1a3936c:
+  "Infinite Health":
+    Games:
+      "Sly 2 Band of Thieves (Artemis)":
+        BCES00968: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: It also affects enemies.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SlyCooper2 ]
+PPU-fdf46d02bc2fb1280522dba3fdb3deafe1a3936c:
+  "Max Bottles":
+    Games:
+      "Sly 2 Band of Thieves (Artemis)":
+        BCES00968: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SlyCooper22 ]
+PPU-13932d8da097d1efd6287820f72f9773bffac191:
+  "Infinite Health":
+    Games:
+      "Sly 3 Honor Among Thieves (Artemis)":
+        BCES00968: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: It also affects enemies.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SlyCooper3 ]
+PPU-13932d8da097d1efd6287820f72f9773bffac191:
+  "Max Money":
+    Games:
+      "Sly 3 Honor Among Thieves (Artemis)":
+        BCES00968: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SlyCooper32 ]
+PPU-13932d8da097d1efd6287820f72f9773bffac191:
+  "Have All Gadgets":
+    Games:
+      "Sly 3 Honor Among Thieves (Artemis)":
+        BCES00968: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SlyCooper33 ]
+PPU-e4cc14e35e7916b0ddc20631692494ece22823ee:
+  "Infinite Health":
+    Games:
+      "Sly Cooper 1 (Artemis)":
+        BCES00968: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SlyCooper1 ]
+PPU-e4cc14e35e7916b0ddc20631692494ece22823ee:
+  "Max Bottles":
+    Games:
+      "Sly Cooper 1 (Artemis)":
+        BCES00968: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SlyCooper12 ]
+PPU-e4cc14e35e7916b0ddc20631692494ece22823ee:
+  "Invincibility V2":
+    Games:
+      "Sly Cooper 1 (Artemis)":
+        BCES00968: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SlyCooper13 ]
+PPU-e4cc14e35e7916b0ddc20631692494ece22823ee:
+  "Invincibility In The A Ghastly Voyage + Rapid Fire Assault Missions":
+    Games:
+      "Sly Cooper 1 (Artemis)":
+        BCES00968: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SlyCooper14 ]
+PPU-e4cc14e35e7916b0ddc20631692494ece22823ee:
+  "Invincibility In The A Strange Reunion Mission":
+    Games:
+      "Sly Cooper 1 (Artemis)":
+        BCES00968: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SlyCooper15 ]
+PPU-e4cc14e35e7916b0ddc20631692494ece22823ee:
+  "Lucky Charms Never Decrease":
+    Games:
+      "Sly Cooper 1 (Artemis)":
+        BCES00968: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SlyCooper16 ]
+PPU-e4cc14e35e7916b0ddc20631692494ece22823ee:
+  "Murray Does Not Die From Your Shots In The Murrays Big Gamble Mission If You Have Lucky Charms":
+    Games:
+      "Sly Cooper 1 (Artemis)":
+        BCES00968: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SlyCooper17 ]
+PPU-e4cc14e35e7916b0ddc20631692494ece22823ee:
+  "Max Lives On Gain":
+    Games:
+      "Sly Cooper 1 (Artemis)":
+        BCES00968: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SlyCooper18 ]
+PPU-e4cc14e35e7916b0ddc20631692494ece22823ee:
+  "Coins Gained Multiplier (100x)":
+    Games:
+      "Sly Cooper 1 (Artemis)":
+        BCES00968: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SlyCooper19 ]
+PPU-e4cc14e35e7916b0ddc20631692494ece22823ee:
+  "Treasure Chests Gained (100x)":
+    Games:
+      "Sly Cooper 1 (Artemis)":
+        BCES00968: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SlyCooper110 ]
+PPU-e4cc14e35e7916b0ddc20631692494ece22823ee:
+  "Never Fail From A Crab Stealing A Treasure Chest":
+    Games:
+      "Sly Cooper 1 (Artemis)":
+        BCES00968: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SlyCooper111 ]
+PPU-e4cc14e35e7916b0ddc20631692494ece22823ee:
+  "Stolen Treasure Chests Count As Gained":
+    Games:
+      "Sly Cooper 1 (Artemis)":
+        BCES00968: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SlyCooper112 ]
+PPU-e4cc14e35e7916b0ddc20631692494ece22823ee:
+  "Unlimited Treasure Chests":
+    Games:
+      "Sly Cooper 1 (Artemis)":
+        BCES00968: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: Without this, the game will only spawn a total of 40 treasure chests and then you will be stuck
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SlyCooper113 ]
+PPU-e4cc14e35e7916b0ddc20631692494ece22823ee:
+  "Nitros Gained Multiplier (100x)":
+    Games:
+      "Sly Cooper 1 (Artemis)":
+        BCES00968: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: This is for the missions named "At the Dog Track" and "A Desperate Race"
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SlyCooper114 ]
+PPU-e4cc14e35e7916b0ddc20631692494ece22823ee:
+  "Nitros Never Decrease":
+    Games:
+      "Sly Cooper 1 (Artemis)":
+        BCES00968: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SlyCooper115 ]
+PPU-e4cc14e35e7916b0ddc20631692494ece22823ee:
+  "Can Access All Levels":
+    Games:
+      "Sly Cooper 1 (Artemis)":
+        BCES00968: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SlyCooper116 ]
+PPU-e4cc14e35e7916b0ddc20631692494ece22823ee:
+  "Invincibility In The A Hazardous Path Mission":
+    Games:
+      "Sly Cooper 1 (Artemis)":
+        BCES00968: [ 01.00 ]
+    Author: bungholio Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SlyCooper117 ]
