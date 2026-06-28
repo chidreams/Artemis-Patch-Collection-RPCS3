@@ -1,0 +1,131 @@
+# Title: NARUTO SHIPPUDEN™: Ultimate Ninja® STORM 3 Full Burst
+# Serial: BLUS31350
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00
+PPU-60718100fb43cd5ad98563c0604b0b179152700e:
+  "Infinite Items During Battle":
+    Games:
+      "NARUTO SHIPPUDEN Ultimate Ninja® STORM 3 Full Burst (Artemis)":
+        BLUS31350: [ 01.00 ]
+    Author: tekman Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x008CB618,0x3B600009]
+PPU-60718100fb43cd5ad98563c0604b0b179152700e:
+  "Infinite Substitution Gauge":
+    Games:
+      "NARUTO SHIPPUDEN Ultimate Ninja® STORM 3 Full Burst (Artemis)":
+        BLUS31350: [ 01.00 ]
+    Author: tekman Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x009E9A84,0x60000000]
+PPU-60718100fb43cd5ad98563c0604b0b179152700e:
+  "Chackras Fragments Reappear (Gekomatsu's Quest)":
+    Games:
+      "NARUTO SHIPPUDEN Ultimate Ninja® STORM 3 Full Burst (Artemis)":
+        BLUS31350: [ 01.00 ]
+    Author: tekman Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x008CC088,0x60000000]
+PPU-60718100fb43cd5ad98563c0604b0b179152700e:
+  "Max Ryo On Buy + Sell":
+    Games:
+      "NARUTO SHIPPUDEN Ultimate Ninja® STORM 3 Full Burst (Artemis)":
+        BLUS31350: [ 01.00 ]
+    Author: Medo Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00C1511C,0x7D405378]
+PPU-60718100fb43cd5ad98563c0604b0b179152700e:
+  "Max Level Legend On Gain":
+    Games:
+      "NARUTO SHIPPUDEN Ultimate Ninja® STORM 3 Full Burst (Artemis)":
+        BLUS31350: [ 01.00 ]
+    Author: Medo Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x000ABC8C,0x7C040378]
+PPU-60718100fb43cd5ad98563c0604b0b179152700e:
+  "Max Level Hero On Gain":
+    Games:
+      "NARUTO SHIPPUDEN Ultimate Ninja® STORM 3 Full Burst (Artemis)":
+        BLUS31350: [ 01.00 ]
+    Author: Medo Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x000ABC44,0x7C040378]      
+# Title: NARUTO SHIPPUDEN™: Ultimate Ninja® STORM 3
+# Serial: BLUS31350
+# Category: GD
+# Version: APP_VER=01.01 VERSION=01.00
+PPU-4469537ebea4ce460909d82737516aa8e96528ef:
+  "Max And Infinite Ryos":
+    Games:
+      "NARUTO SHIPPUDEN Ultimate Ninja® STORM 3 Full Burst (Artemis)":
+        BLUS31350: [ 01.01 ]
+    Author: tekman Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00C15230,0x3C003B9A]
+    - [ be32,0x00C15234,0x6000C9FF]
+PPU-4469537ebea4ce460909d82737516aa8e96528ef:
+  "Max Hero Level":
+    Games:
+      "NARUTO SHIPPUDEN Ultimate Ninja® STORM 3 Full Burst (Artemis)":
+        BLUS31350: [ 01.01 ]
+    Author: tekman Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x000ABC48,0x938341FC]
+PPU-4469537ebea4ce460909d82737516aa8e96528ef:
+  "Legend Max Level":
+    Games:
+      "NARUTO SHIPPUDEN Ultimate Ninja® STORM 3 Full Burst (Artemis)":
+        BLUS31350: [ 01.01 ]
+    Author: tekman Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x000ABC90,0x93834200]
+PPU-4469537ebea4ce460909d82737516aa8e96528ef:
+  "Max And Infinite Items":
+    Games:
+      "NARUTO SHIPPUDEN Ultimate Ninja® STORM 3 Full Burst (Artemis)":
+        BLUS31350: [ 01.01 ]
+    Author: tekman Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x000A85D8,0x38000063]
+    - [ be32,0x000A8708,0x38000063]
+    - [ be32,0x001B9928,0x39090000]
+PPU-4469537ebea4ce460909d82737516aa8e96528ef:
+  "Max And Infinite Ninja Tools":
+    Games:
+      "NARUTO SHIPPUDEN Ultimate Ninja® STORM 3 Full Burst (Artemis)":
+        BLUS31350: [ 01.01 ]
+    Author: tekman Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x008CB6A8,0x3B600005]
+PPU-4469537ebea4ce460909d82737516aa8e96528ef:
+  "Max And Infinite Substitution":
+    Games:
+      "NARUTO SHIPPUDEN Ultimate Ninja® STORM 3 Full Burst (Artemis)":
+        BLUS31350: [ 01.01 ]
+    Author: tekman Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x008CC8C8,0x60000000]
