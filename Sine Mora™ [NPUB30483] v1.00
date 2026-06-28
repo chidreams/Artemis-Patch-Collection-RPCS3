@@ -1,0 +1,72 @@
+Anchors:
+  Sine_Mora: &Sine_Mora
+    - [ be32,0x0003A65C,0x60000000]
+    - [ be32,0x00034F34,0x60000000]
+    - [ be32,0x0003E2D4,0x60000000]
+  Sine_Mora2: &Sine_Mora2
+    - [ be32,0x000303F4,0xFC201090]
+  Sine_Mora3: &Sine_Mora3
+    - [ be32,0x0002FDA4,0x60000000]
+  Sine_Mora4: &Sine_Mora4
+    - [ be32,0x0006EDBC,0x60000000]
+  Sine_Mora5: &Sine_Mora5
+    - [ be32,0x0008A7A0,0x38800009]
+    - [ be32,0x00035610,0x38800009]
+  Sine_Mora6: &Sine_Mora6
+    - [ be32,0x0008A4A0,0x38800009]
+    - [ be32,0x00035610,0x38800009]
+PPU-2a6288ce0650356ee8624445f2251d311c89a515:
+  "Freeze/Max Time":
+    Games:
+      "Sine Mora™ (Artemis)":
+        NPUB30483: [ 01.00]
+    Author: duron_3
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Sine_Mora ]
+  "Invincibility":
+    Games:
+      "Sine Mora™ (Artemis)":
+        NPUB30483: [ 01.00]
+    Author: duron_3
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Sine_Mora2 ]
+  "Infinite Sub-Weapon":
+    Games:
+      "Sine Mora™ (Artemis)":
+        NPUB30483: [ 01.00]
+    Author: duron_3
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Sine_Mora3 ]
+  "Infinite Capsule":
+    Games:
+      "Sine Mora™ (Artemis)":
+        NPUB30483: [ 01.00]
+    Author: duron_3
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Sine_Mora4 ]
+  "Max Firepower on Gain/Lose":
+    Games:
+      "Sine Mora™ (Artemis)":
+        NPUB30483: [ 01.00]
+    Author: duron_3
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Sine_Mora5 ]
+  "Max Firepower on Gain/Lose":
+    Games:
+      "Sine Mora™ (Artemis)":
+        NPUB30483: [ 01.00]
+    Author: duron_3
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Sine_Mora6 ]
