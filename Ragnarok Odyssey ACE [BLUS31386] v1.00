@@ -1,0 +1,72 @@
+# Title: Ragnarok Odyssey ACE
+# Serial: BLUS31386
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.01
+PPU-f71890f2eb88833789f087f3c34a28d0f761e382:
+  "Infinite HP":
+    Games:
+      "Ragnarok Odyssey ACE (Artemis)":
+        BLUS31386: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00E82720,0x3C8047C3]
+    - [ be32,0x00E82724,0x60844F80]
+    - [ be32,0x00E82728,0x908B0060]
+    - [ be32,0x00E8272C,0x908B0068]
+    - [ be32,0x00E82730,0x3880002D]
+    - [ be32,0x00E82734,0x4B381044]
+    - [ be32,0x00203774,0x48C7EFAC]
+PPU-f71890f2eb88833789f087f3c34a28d0f761e382:
+  "Max Zenny (After Buying)":
+    Games:
+      "Ragnarok Odyssey ACE (Artemis)":
+        BLUS31386: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00141E80,0x60000000]
+PPU-f71890f2eb88833789f087f3c34a28d0f761e382:
+  "Infinite AP":
+    Games:
+      "Ragnarok Odyssey ACE (Artemis)":
+        BLUS31386: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0065A83C,0x817F0018] 
+PPU-f71890f2eb88833789f087f3c34a28d0f761e382:
+  "Quick + Infinite Dainsleif":
+    Games:
+      "Ragnarok Odyssey ACE (Artemis)":
+        BLUS31386: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00619E8C,0x388003E8]
+PPU-f71890f2eb88833789f087f3c34a28d0f761e382:
+  "Infinite Item Usage":
+    Games:
+      "Ragnarok Odyssey ACE (Artemis)":
+        BLUS31386: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00491614,0x38840000]
+    - [ be32,0x00340B90,0x60000000]
+PPU-f71890f2eb88833789f087f3c34a28d0f761e382:
+  "Enable Refine Without Required Items":
+    Games:
+      "Ragnarok Odyssey ACE (Artemis)":
+        BLUS31386: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0031E29C,0x60000000]
+       
