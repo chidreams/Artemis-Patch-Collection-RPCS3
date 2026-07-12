@@ -1,0 +1,24 @@
+# Title: TMNT: Turtles In Time Re-Shelled
+# Serial: NPUB30107
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.00 
+# You must clear cache then load in to game to get cheat working      
+PRX-Ppd90X22sC0hKdQTFiopUSLwMCwg-0:
+  "Infinite Lives":
+    Games:
+      "TMNT: Turtles In Time Re-Shelled (Artemis)":
+        NPUB30107: [ 01.00 ]
+    Author: dron_3 ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x000CB1A4, 0x60000000 ]
+  "Infinite Health":
+    Games:
+      "TMNT: Turtles In Time Re-Shelled (Artemis)":
+        NPUB30107: [ 01.00 ]
+    Author: dron_3 ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+     - [ be32, 0x0023FD80, 0x60000000 ]      
