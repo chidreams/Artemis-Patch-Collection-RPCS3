@@ -1,0 +1,33 @@
+# Title: Tom Clancy's Ghost Recon Future Soldier™
+# Serial: BLUS30521
+# Category: GD
+# Version: APP_VER=01.05 VERSION=01.00
+# Localized Title: Tom Clancy's Ghost Recon Future Soldier™
+# You mus clear cache then lauch cheat to get them working 
+PRX-UiacLoroPrvPafZb20wmfS7To0En-0:
+  "Items Never Decrease":
+    Games:
+      "Tom Clancys Ghost Recon Future Soldier (Artemis)":
+        BLUS30521: [ 01.05 ]
+    Author: "ChiDreams"
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x0010D860, 0x60000000 ]
+  "Ammo Never Decrease":
+    Games:
+      "Tom Clancys Ghost Recon Future Soldier (Artemis)":
+        BLUS30521: [ 01.05 ]
+    Author: "ChiDreams"
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x00104744, 0x60000000 ] 
+  "Health Never Decrease":
+    Games:
+      "Tom Clancys Ghost Recon Future Soldier (Artemis)":
+        BLUS30521: [ 01.05 ]
+    Author: "ChiDreams"
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x00008260, 0x801D0010 ]
+      - [ be32, 0x00008264, 0x2F800000 ]
+      - [ be32, 0x00008268, 0x409E000C ]
