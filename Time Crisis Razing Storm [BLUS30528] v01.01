@@ -1,0 +1,41 @@
+PPU-a7a7648bbf85cec6843d7a2f49b8a0eef7437edb:
+  "No Reload + Infinite Grenade":
+    Games:
+      "Time Crisis Razing Storm (Artemis)":
+        BLUS30528: [ 01.01 ]
+    Author: jgduff Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [be32, 0x004de6f0, 0x39290000] 
+  "Infinite Ammo":
+    Games:
+      "Time Crisis Razing Storm (Artemis)":
+        BLUS30528: [ 01.01 ]
+    Author: jgduff Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [be32, 0x0038dc80, 0x60000000]
+      - [be32, 0x004de494, 0x7C003850]
+  "Infinite Health":
+    Games:
+      "Time Crisis Razing Storm (Artemis)":
+        BLUS30528: [ 01.01 ]
+    Author: jgduff Ported by ChiDreams
+    Notes: Big explosions can kill you.
+    Patch Version: 1.2
+    Patch:
+      - [be32, 0x003e22c0, 0x60000000]
+      - [be32, 0x004c65e4, 0xC3C307F8] 
+  "Max Score On 1 Kill":
+    Games:
+      "Time Crisis Razing Storm (Artemis)":
+        BLUS30528: [ 01.01 ]
+    Author: jgduff Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [be32, 0x0038a540, 0x913F0000]
+      - [be32, 0x0038a564, 0x913F0008]
+      - [be32, 0x003c51a4, 0x911B002C]  
