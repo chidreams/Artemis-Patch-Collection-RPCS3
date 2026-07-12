@@ -1,0 +1,179 @@
+Anchors:
+  Splinter: &Splinter
+    - [ be32,0x0006A6C4,0x380000C8]
+    - [ be32,0x0006A6C8,0x90090334]
+  Splinter2: &Splinter2
+    - [ be32,0x0007FC30,0x60000000]
+    - [ be32,0x0007FC4C,0x60000000]
+    - [ be32,0x001BCB60,0x60000000]
+    - [ be32,0x001BCC94,0x48000070]
+  Splinter3: &Splinter3
+    - [ be32,0x00070AF8,0x801F03C0]
+    - [ be32,0x00070AFC,0x901F03BC]
+    - [ be32,0x00070B00,0x801F03C8]
+    - [ be32,0x00070B04,0x901F03C4]
+    - [ be32,0x00070B08,0x48000044]
+  Splinter4: &Splinter4
+    - [ be32,0x00070AF0,0x901F0478]
+    - [ be32,0x00070AF4,0x901F047C]
+  Tomorrow: &Tomorrow
+    - [ be32,0x00030B20,0x3800012C]
+    - [ be32,0x00030B24,0x900903FC]  
+  Tomorrow2: &Tomorrow2    
+    - [ be32,0x0007005C,0x4800000C]
+    - [ be32,0x00070078,0x60000000]
+    - [ be32,0x00070080,0x60000000]
+    - [ be32,0x0049E47C,0x48000204]
+    - [ be32,0x0049E724,0x60000000]  
+  Tomorrow3: &Tomorrow3    
+    - [ be32,0x0005379C,0x801C0504]
+    - [ be32,0x000537A0,0x901C0500]
+    - [ be32,0x000537A4,0x801C050C]
+    - [ be32,0x000537A8,0x901C0508]
+    - [ be32,0x000537AC,0x4800001C] 
+  Tomorrow4: &Tomorrow4    
+    - [ be32,0x00053794,0xD01C05C0]
+    - [ be32,0x00053798,0xD01C05BC]    
+  Theory: &Theory
+    - [ be32,0x002D0614,0x80DC1530]
+    - [ be32,0x002D0618,0x90DC0420]
+  Theory2: &Theory2
+    - [ be32,0x001ADF6C,0x39260000]
+    - [ be32,0x001ADF74,0x38080000]
+  Theory3: &Theory3
+    - [ be32,0x001ABB3C,0xEC210828]
+    - [ be32,0x001ABB40,0xD03F0530]
+    - [ be32,0x001ABB48,0x48000020]
+  Theory4: &Theory4
+    - [ be32,0x0003AC34,0xEC000028]
+    - [ be32,0x007968CC,0x60000000]
+    - [ be32,0x00796BB4,0x60000000]  
+PPU-4a86f947fdc681ff6b057df341a79d84a3ecb7b5: #Splinter Cell HD
+  "Infinite Health":
+    Games:
+      "Splinter Cell (Artemis)":
+        BLUS30761: [ 01.01 ]
+        NPEB00527: [ 01.01 ]
+    Author: dron_3 ported By ChiDreamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Splinter ]
+  "Invisibility":
+    Games:
+      "Splinter Cell (Artemis)":
+        BLUS30761: [ 01.01 ]
+        NPEB00527: [ 01.01 ]
+    Author: dron_3 ported By ChiDreamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Splinter2 ]
+  "Infinite Ammo":
+    Games:
+      "Splinter Cell (Artemis)":
+        BLUS30761: [ 01.01 ]
+        NPEB00527: [ 01.01 ]
+    Author: dron_3 ported By ChiDreamS split by Tiger Fury
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Splinter3 ]
+  "Max Accuracy":
+    Games:
+      "Splinter Cell (Artemis)":
+        BLUS30761: [ 01.01 ]
+        NPEB00527: [ 01.01 ]
+    Author: dron_3 ported By ChiDreamS split by Tiger Fury
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Splinter4 ]     
+PPU-6084cc8127e246fa356f2924c8a8df3b9d9f7b11:
+  "Infinite Health":
+    Games:
+      "Splinter Cell Pandora Tomorrow (Artemis)":
+        BLUS30761: [ 01.01 ]
+        NPEB00528: [ 01.01 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Tomorrow ]
+PPU-6084cc8127e246fa356f2924c8a8df3b9d9f7b11:
+  "Invisibility":
+    Games:
+      "Splinter Cell Pandora Tomorrow (Artemis)":
+        BLUS30761: [ 01.01 ]
+        NPEB00528: [ 01.01 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Tomorrow2 ]
+PPU-6084cc8127e246fa356f2924c8a8df3b9d9f7b11:
+  "Infinite Ammo":
+    Games:
+      "Splinter Cell Pandora Tomorrow (Artemis)":
+        BLUS30761: [ 01.01 ]
+        NPEB00528: [ 01.01 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Tomorrow3 ]
+PPU-6084cc8127e246fa356f2924c8a8df3b9d9f7b11:
+  "Max Accuracy":
+    Games:
+      "Splinter Cell Pandora Tomorrow (Artemis)":
+        BLUS30761: [ 01.01 ]
+        NPEB00528: [ 01.01 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Tomorrow4 ]      
+PPU-e219c746e09c57aa7acd83172537d367c62ae928:
+  "Infinite Health":
+    Games:
+      "Splinter Cell Chaos Theory (Artemis)":
+        BLUS30761: [ 01.01 ]
+        NPEB00557: [ 01.01 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Theory ]
+PPU-e219c746e09c57aa7acd83172537d367c62ae928:
+  "Ammo Never Decreases":
+    Games:
+      "Splinter Cell Chaos Theory (Artemis)":
+        BLUS30761: [ 01.01 ]
+        NPEB00557: [ 01.01 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Theory2 ]
+PPU-e219c746e09c57aa7acd83172537d367c62ae928:
+  "Max Accuracy":
+    Games:
+      "Splinter Cell Chaos Theory (Artemis)":
+        BLUS30761: [ 01.01 ]
+        NPEB00557: [ 01.01 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Theory3 ]
+PPU-e219c746e09c57aa7acd83172537d367c62ae928:
+  "Invisibility":
+    Games:
+      "Splinter Cell Chaos Theory (Artemis)":
+        BLUS30761: [ 01.01 ]
+        NPEB00557: [ 01.01 ]
+    Author: dron_3 Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Theory4 ] 
