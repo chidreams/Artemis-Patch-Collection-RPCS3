@@ -1,0 +1,38 @@
+# Title: Hellboy™: The Science of Evil
+# Serial: BLUS30048
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.01
+PPU-9140d21684619de3a40f4a06d341a4b5298807a9:
+  "Infinite HP":
+    Games:
+      "Hellboy: The Science of Evil (Artemis)":
+        BLUS30048: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x007ac5c4,0x3e004f00]
+    - [ be32,0x007ac5c8,0x920b0004]
+    - [ be32,0x007ac5cc,0x920b0008]
+    - [ be32,0x007ac5d0,0x4B8ebafc]
+    - [ be32,0x000980c8,0x487144fc]
+PPU-9140d21684619de3a40f4a06d341a4b5298807a9:
+  "Infinite Ammo":
+    Games:
+      "Hellboy: The Science of Evil (Artemis)":
+        BLUS30048: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x001D12BC,0x48000070]
+PPU-9140d21684619de3a40f4a06d341a4b5298807a9:
+  " No Reload":
+    Games:
+      "Hellboy: The Science of Evil (Artemis)":
+        BLUS30048: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreamS
+    Notes: Still requires Infinite Ammo.
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x001D1E10,0x419D0010]
