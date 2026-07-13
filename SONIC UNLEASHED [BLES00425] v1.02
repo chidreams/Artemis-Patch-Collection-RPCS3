@@ -1,0 +1,255 @@
+# Title: SONIC UNLEASHED
+# Serial: BLUS30244
+# Category: GD
+# Version: APP_VER=01.02 VERSION=01.00
+Anchors:
+  UNLEASHED: &UNLEASHED
+    - [be32,0x0040E1D8,0x3C003B9A]
+    - [be32,0x0040E1DC,0x6000C9FF]
+    - [be32,0x01088AD8,0x3C003B9A]
+    - [be32,0x01088AE0,0x6000C9FF]
+  UNLEASHED2: &UNLEASHED2
+    - [be32,0x00450A3C,0x60000000]
+  UNLEASHED3: &UNLEASHED3
+    - [be32,0x0040574C,0x48000008]
+  UNLEASHED4: &UNLEASHED4
+    - [be32,0x00446034,0xFFE00090]
+  UNLEASHED5: &UNLEASHED5
+    - [be32,0x00260ED4,0x60000000]
+    - [be32,0x00227D1C,0x39600063]
+  UNLEASHED6: &UNLEASHED6
+    - [be32,0x00227644,0x60000000]
+    - [be32,0x00BA463C,0xFC20F890]
+  UNLEASHED7: &UNLEASHED7
+    - [be32,0x010867C0,0x7C1F0378]
+  UNLEASHED8: &UNLEASHED8
+    - [be32,0x010864C4,0x60000000]
+  UNLEASHED9: &UNLEASHED9
+    - [be32,0x01086498,0xFFE00090]
+  UNLEASHED10: &UNLEASHED10
+    - [be32,0x00228844,0x60000000]
+    - [be32,0x00228870,0x60000000]
+  UNLEASHED11: &UNLEASHED11
+    - [be32,0x00B6CD48,0x60000000]
+    - [be32,0x00C19D4C,0x60000000]
+PPU-c2911b4248ca2090819299f90d1a2d37f50fd5a8:
+  "Max Rings On Gain":
+    Games:
+      "SONIC UNLEASHED (Artemis)":
+        BLUS30244: [ 01.02 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *UNLEASHED ]
+PPU-c2911b4248ca2090819299f90d1a2d37f50fd5a8:
+  "Rings Never Decrease":
+    Games:
+      "SONIC UNLEASHED (Artemis)":
+        BLUS30244: [ 01.02 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *UNLEASHED2 ]
+PPU-c2911b4248ca2090819299f90d1a2d37f50fd5a8:
+  "Max Ring Energy On Gain":
+    Games:
+      "SONIC UNLEASHED (Artemis)":
+        BLUS30244: [ 01.02 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *UNLEASHED3 ]
+PPU-c2911b4248ca2090819299f90d1a2d37f50fd5a8:
+  "Infinite Ring Energy":
+    Games:
+      "SONIC UNLEASHED (Artemis)":
+        BLUS30244: [ 01.02 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *UNLEASHED4 ]
+PPU-c2911b4248ca2090819299f90d1a2d37f50fd5a8:
+  "Max Lives On Gain + Lose":
+    Games:
+      "SONIC UNLEASHED (Artemis)":
+        BLUS30244: [ 01.02 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *UNLEASHED5 ]
+PPU-c2911b4248ca2090819299f90d1a2d37f50fd5a8:
+  "Freeze Time":
+    Games:
+      "SONIC UNLEASHED (Artemis)":
+        BLUS30244: [ 01.02 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *UNLEASHED6 ]
+PPU-c2911b4248ca2090819299f90d1a2d37f50fd5a8:
+  "Werehog Infinite Health":
+    Games:
+      "SONIC UNLEASHED (Artemis)":
+        BLUS30244: [ 01.02 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *UNLEASHED7 ]
+PPU-c2911b4248ca2090819299f90d1a2d37f50fd5a8:
+  "Werehog Max Unleashe On Gain":
+    Games:
+      "SONIC UNLEASHED (Artemis)":
+        BLUS30244: [ 01.02 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *UNLEASHED8 ]
+PPU-c2911b4248ca2090819299f90d1a2d37f50fd5a8:
+  "Werehog Infinite Unleashe":
+    Games:
+      "SONIC UNLEASHED (Artemis)":
+        BLUS30244: [ 01.02 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *UNLEASHED9 ]
+PPU-c2911b4248ca2090819299f90d1a2d37f50fd5a8:
+  "Max Exp On Gain + Spend":
+    Games:
+      "SONIC UNLEASHED (Artemis)":
+        BLUS30244: [ 01.02 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *UNLEASHED10 ]
+PPU-c2911b4248ca2090819299f90d1a2d37f50fd5a8:
+  "Gaia Colossus Infinite Health":
+    Games:
+      "SONIC UNLEASHED (Artemis)":
+        BLUS30244: [ 01.02 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *UNLEASHED11 ]
+#The BLES and BLUS elf files are very different, but by coincidence they have all of these codes in common at the same addresses. "bungholio"
+PPU-dfe27b6a57f3fd01f310e402e97a297836b46ceb:
+  "Max Rings On Gain":
+    Games:
+      "SONIC UNLEASHED (Artemis)":
+        BLES00425: [ 01.02 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *UNLEASHED ]
+PPU-dfe27b6a57f3fd01f310e402e97a297836b46ceb:
+  "Rings Never Decrease":
+    Games:
+      "SONIC UNLEASHED (Artemis)":
+        BLES00425: [ 01.02 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *UNLEASHED2 ]
+PPU-dfe27b6a57f3fd01f310e402e97a297836b46ceb:
+  "Max Ring Energy On Gain":
+    Games:
+      "SONIC UNLEASHED (Artemis)":
+        BLES00425: [ 01.02 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *UNLEASHED3 ]
+PPU-dfe27b6a57f3fd01f310e402e97a297836b46ceb:
+  "Infinite Ring Energy":
+    Games:
+      "SONIC UNLEASHED (Artemis)":
+        BLES00425: [ 01.02 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *UNLEASHED4 ]
+PPU-dfe27b6a57f3fd01f310e402e97a297836b46ceb:
+  "Max Lives On Gain + Lose":
+    Games:
+      "SONIC UNLEASHED (Artemis)":
+        BLES00425: [ 01.02 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *UNLEASHED5 ]
+PPU-dfe27b6a57f3fd01f310e402e97a297836b46ceb:
+  "Freeze Time":
+    Games:
+      "SONIC UNLEASHED (Artemis)":
+        BLES00425: [ 01.02 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *UNLEASHED6 ]
+PPU-dfe27b6a57f3fd01f310e402e97a297836b46ceb:
+  "Werehog Infinite Health":
+    Games:
+      "SONIC UNLEASHED (Artemis)":
+        BLES00425: [ 01.02 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *UNLEASHED7 ]
+PPU-dfe27b6a57f3fd01f310e402e97a297836b46ceb:
+  "Werehog Max Unleashe On Gain":
+    Games:
+      "SONIC UNLEASHED (Artemis)":
+        BLES00425: [ 01.02 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *UNLEASHED8 ]
+PPU-dfe27b6a57f3fd01f310e402e97a297836b46ceb:
+  "Werehog Infinite Unleashe":
+    Games:
+      "SONIC UNLEASHED (Artemis)":
+        BLES00425: [ 01.02 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *UNLEASHED9 ]
+PPU-dfe27b6a57f3fd01f310e402e97a297836b46ceb:
+  "Max Exp On Gain + Spend":
+    Games:
+      "SONIC UNLEASHED (Artemis)":
+        BLES00425: [ 01.02 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *UNLEASHED10 ]
+PPU-dfe27b6a57f3fd01f310e402e97a297836b46ceb:
+  "Gaia Colossus Infinite Health":
+    Games:
+      "SONIC UNLEASHED (Artemis)":
+        BLES00425: [ 01.02 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *UNLEASHED11 ]
