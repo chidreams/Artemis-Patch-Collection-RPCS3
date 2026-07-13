@@ -1,0 +1,44 @@
+# Title: Conan
+# Serial: BLUS30069
+# Category: DG
+# Version: APP_VER=Unknown VERSION=01.01
+PPU-b724d017690f769085e9fa1fb7ea62825eaa6448:
+  "ASM Infinite Health One Hit Kill":
+    Games:
+      "Conan (Artemis)":
+        BLUS30069: [01.01]
+    Author: chidreams
+    Notes: does have minor bar across screen 
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x00207368,0xFC1D0828]
+PPU-b724d017690f769085e9fa1fb7ea62825eaa6448:
+  "Instant Full Health On Green Orbs Gain":
+    Games:
+      "Conan (Artemis)":
+        BLUS30069: [01.01]
+    Author:  
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x00235DB4,0xEFE0082A]
+PPU-b724d017690f769085e9fa1fb7ea62825eaa6448:
+  "ASM Max + Infinite Red Orbs On Gain":
+    Games:
+      "Conan (Artemis)":
+        BLUS30069: [01.01]
+    Author: jgduff1
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x00235DF8,0xEC20002A]
+PPU-b724d017690f769085e9fa1fb7ea62825eaa6448:
+  "Max Red Orbs After Buying Anything":
+    Games:
+      "Conan (Artemis)":
+        BLUS30069: [01.01]
+    Author: jgduff1
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x001D6620,0xEC02582A]
