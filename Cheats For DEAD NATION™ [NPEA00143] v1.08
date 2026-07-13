@@ -1,0 +1,134 @@
+# Title: DEAD NATION™
+# Serial: NPEA00143
+# Category: HG
+# Version: APP_VER=01.08 VERSION=01.00      
+Anchors:
+  DEADNATION: &DEADNATION
+    - [ be32,0x00BD9320,0x3F200195]
+    - [ be32,0x00BD9324,0x9179FFFC]
+    - [ be32,0x00BD9328,0xA00B0004]
+    - [ be32,0x00BD932C,0x4854F6EE]
+    - [ be32,0x00BD9334,0x3FC00113]
+    - [ be32,0x00BD9338,0x63DE1E88]
+    - [ be32,0x00BD933C,0x83DE0000]
+    - [ be32,0x00BD9340,0x83DE1C2C]
+    - [ be32,0x00BD9344,0x7C1EF840]
+    - [ be32,0x00BD9348,0x40820064]
+    - [ be32,0x00BD934C,0x3DC00195]
+    - [ be32,0x00BD9350,0x81EEFFFC]
+    - [ be32,0x00BD9354,0x8A4F0005]
+    - [ be32,0x00BD9358,0x82AFFFF8]
+    - [ be32,0x00BD935C,0x924FFFF8]
+    - [ be32,0x00BD9360,0x7F92A840]
+    - [ be32,0x00BD9364,0x3AA00002]
+    - [ be32,0x00BD9368,0x6A520001]
+    - [ be32,0x00BD936C,0x7E52A838]
+    - [ be32,0x00BD9370,0x7F12A840]
+    - [ be32,0x00BD9374,0x409A0014]
+    - [ be32,0x00BD9378,0x419E0010]
+    - [ be32,0x00BD937C,0x82AEFFF4]
+    - [ be32,0x00BD9380,0x6AB50001]
+    - [ be32,0x00BD9384,0x92AEFFF4]
+    - [ be32,0x00BD9388,0x82AEFFF4]
+    - [ be32,0x00BD938C,0x815F005C]
+    - [ be32,0x00BD9390,0x815F00D0]
+    - [ be32,0x00BD9394,0x2B950001]
+    - [ be32,0x00BD9398,0x409E0014]
+    - [ be32,0x00BD939C,0xC03F0060]
+    - [ be32,0x00BD93A0,0xD03F005C]
+    - [ be32,0x00BD93A4,0xC03F00E0]
+    - [ be32,0x00BD93A8,0xD03F00D0]
+    - [ be32,0x00BD93AC,0x607E0000]
+    - [ be32,0x00BD93B0,0x483C03E6]
+    - [ be32,0x003C03E0,0x48BD9336]
+    - [ be32,0x0054F6E8,0x48BD9322]
+  DEADNATION3: &DEADNATION3
+    - [ be32,0x00BD92D4,0xA00A005A]
+    - [ be32,0x00BD92D8,0x2B800000]
+    - [ be32,0x00BD92DC,0x40820004]
+    - [ be32,0x00BD92E0,0x3C000063]
+    - [ be32,0x00BD92E4,0x6000FFFF]
+    - [ be32,0x00BD92E8,0x900A0058]
+    - [ be32,0x00BD92EC,0x4B4927F0]
+    - [ be32,0x0006BAD8,0x48B6D7FC]
+  DEADNATION4: &DEADNATION4
+    - [ be32,0x00BD9254,0x3CA07FFF]
+    - [ be32,0x00BD9258,0x60A5FFFF]
+    - [ be32,0x00BD925C,0x90A60004]
+    - [ be32,0x00BD9260,0x4B7EFF80]
+    - [ be32,0x003C91DC,0x48810078]
+  DEADNATION5: &DEADNATION5
+    - [ be32,0x00BD9268,0x3C007FFF]
+    - [ be32,0x00BD926C,0x60000FFF]
+    - [ be32,0x00BD9270,0x90030004]
+    - [ be32,0x00BD9274,0x90030008]
+    - [ be32,0x00BD9278,0x4B7EE5DD]
+    - [ be32,0x003C7850,0x48811A18]
+  DEADNATION6: &DEADNATION6
+    - [ be32,0x003C03E4,0xC05F0060]
+    - [ be32,0x003C03EC,0xD05F005C]
+    - [ be32,0x003C03F0,0xEC421024]
+  DEADNATION7: &DEADNATION7
+    - [ be32,0x003C0474,0xC02300E0]
+    - [ be32,0x003C0478,0xD02300D0]
+    - [ be32,0x003C047C,0xEC210824]  
+PPU-832734644c8b66b3d2fef6bb31169778d72c99f7:
+  "Toggle Infinite HP + Infinite Rush On/Off (Press L3)":
+    Games:
+      "DEAD NATION (Artemis)":
+        NPEA00143: [ 01.08 ]
+    Author: Randy97Killa
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *DEADNATION ]
+PPU-832734644c8b66b3d2fef6bb31169778d72c99f7:
+  "Infinite Ammo + Infinite Throwables":
+    Games:
+      "DEAD NATION (Artemis)":
+        NPEA00143: [ 01.08 ]
+    Author: Randy97Killa
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *DEADNATION3 ]
+PPU-832734644c8b66b3d2fef6bb31169778d72c99f7:
+  " Instant Max-Money":
+    Games:
+      "DEAD NATION (Artemis)":
+        NPEA00143: [ 01.08 ]
+    Author: Randy97Killa
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *DEADNATION4 ]
+PPU-832734644c8b66b3d2fef6bb31169778d72c99f7:
+  "Instant Max Score":
+    Games:
+      "DEAD NATION (Artemis)":
+        NPEA00143: [ 01.08 ]
+    Author: Randy97Killa
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *DEADNATION5 ]
+PPU-832734644c8b66b3d2fef6bb31169778d72c99f7:
+  "Infinite Health":
+    Games:
+      "DEAD NATION (Artemis)":
+        NPEA00143: [ 01.08 ]
+    Author: Randy97Killa
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *DEADNATION6 ]      
+PPU-832734644c8b66b3d2fef6bb31169778d72c99f7:
+  "Infinite Stamina":
+    Games:
+      "DEAD NATION (Artemis)":
+        NPEA00143: [ 01.08 ]
+    Author: Randy97Killa
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *DEADNATION7 ]
