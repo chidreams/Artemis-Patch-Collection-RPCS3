@@ -1,0 +1,35 @@
+# Title: STRANGLEHOLD™
+# Serial: BLUS30080
+# Category: DG
+# Version: APP_VER=01.01 VERSION=01.01          
+PPU-db2697fed8876b4762a3524f7b063c6efc87cbfb:
+  "God Mode, Infinite Tequila-Time, Infinite Ammo":
+    Games:
+      "STRANGLEHOLD (Artemis)":
+        BLUS30080: [ 01.01 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+    - [ be32,0x00C3B66C,0x60620000]
+    - [ be32,0x00C3B670,0x4E800421]
+    - [ be32,0x00C3B674,0x2FA30000]
+    - [ be32,0x00C3B678,0x419E0018]
+    - [ be32,0x00C3B67C,0x806201BC]
+    - [ be32,0x00C3B680,0x6463F000]
+    - [ be32,0x00C3B684,0x906201BC]
+    - [ be32,0x00C3B688,0x38600001]
+    - [ be32,0x00C3B68C,0x48000008]
+    - [ be32,0x00C3B690,0x38600000]
+    - [ be32,0x00C3B694,0xE8410028]
+    - [ be32,0x00C3B698,0xE8010080]
+PPU-db2697fed8876b4762a3524f7b063c6efc87cbfb:
+  "Infinite Tequila Points":
+    Games:
+      "STRANGLEHOLD (Artemis)":
+        BLUS30080: [ 01.01 ]
+    Author: dron_3 Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+    - [ be32,0x0039EE58,0x60000000]
