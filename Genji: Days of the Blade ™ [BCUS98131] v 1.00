@@ -1,0 +1,128 @@
+# Title: Genji: Days of the Blade 
+# Serial: BCUS98131
+# Category: DG
+# Version: APP_VER=Unknown VERSION=01.00      
+Anchors:
+  Genji: &Genji
+    - [ be32,0x001DA958,0x484190A9]
+    - [ be32,0x005F3A00,0x800909FC]
+    - [ be32,0x005F3A04,0x3E2010F8]
+    - [ be32,0x005F3A08,0x6231AFB8]
+    - [ be32,0x005F3A0C,0x82310000]
+    - [ be32,0x005F3A10,0x72310040]
+    - [ be32,0x005F3A14,0x28110040]
+    - [ be32,0x005F3A18,0x4082000C]
+    - [ be32,0x005F3A1C,0x3E204100]
+    - [ be32,0x005F3A20,0x92290044]
+    - [ be32,0x005F3A24,0x4E800020]
+  Genji2: &Genji2
+    - [ be32,0x0020B460,0x483E84FD]
+    - [ be32,0x005F395C,0x3F400063]
+    - [ be32,0x005F3960,0x635A0508]
+    - [ be32,0x005F3964,0x835A0000]
+    - [ be32,0x005F3968,0x7C1A4840]
+    - [ be32,0x005F396C,0x4082000C]
+    - [ be32,0x005F3970,0xA009001A]
+    - [ be32,0x005F3974,0xB009001C]
+    - [ be32,0x005F3978,0x63A30000]
+    - [ be32,0x005F397C,0x4E800020]
+  Genji4: &Genji4
+    - [ be32,0x001BAACC,0x485F3942]  
+    - [ be32,0x005F3940,0x801E02DC]
+    - [ be32,0x005F3944,0x2C040000]
+    - [ be32,0x005F3948,0x40820008]
+    - [ be32,0x005F394C,0x4D820020]
+    - [ be32,0x005F3950,0xF821FF31]
+    - [ be32,0x005F3954,0x481BAAD2]
+  Genji5: &Genji5
+    - [ be32,0x00263DEC,0x916A0700]
+  Genji6: &Genji6
+    - [ be32,0x00263E44,0x60000000]
+  Genji7: &Genji7
+    - [ be32,0x00261124,0x3800270F]
+  Genji8: &Genji8
+    - [ be32,0x00261260,0x380003E8] 
+  Genji9: &Genji9
+    - [ be32,0x00263D44,0x60000000]
+    - [ be32,0x00261534,0x60000000]
+PPU-990c727673e64176fc2938b067a37b0c348cd4f2:
+  "Hold X To FLY":
+    Games:
+      "Genji Days Of The Blade (Artemis)":
+        BCUS98131: [ 01.00 ]
+    Author: Randy97Killa PORTED by ChiDreamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Genji2 ]
+PPU-990c727673e64176fc2938b067a37b0c348cd4f2:
+  "Infinite Kamui":
+    Games:
+      "Genji Days Of The Blade (Artemis)":
+        BCUS98131: [ 01.00 ]
+    Author: Randy97Killa PORTED by ChiDreamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Genji2 ]  
+PPU-990c727673e64176fc2938b067a37b0c348cd4f2:
+  "God Mode (Player Only))":
+    Games:
+      "Genji Days Of The Blade (Artemis)":
+        BCUS98131: [ 01.00 ]
+    Author: Randy97Killa PORTED by ChiDreamS
+    Notes: 
+    Patch Version: 1.0
+    Group: A
+    Patch:
+      - [ load, *Genji4 ]    
+PPU-990c727673e64176fc2938b067a37b0c348cd4f2:
+  "Max Mashogane Fragments":
+    Games:
+      "Genji Days Of The Blade (Artemis)":
+        BCUS98131: [ 01.00 ]
+    Author: ChaosZage PORTED by ChiDreamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Genji5 ]
+PPU-990c727673e64176fc2938b067a37b0c348cd4f2:
+  "Max Essence Of Amahagane":
+    Games:
+      "Genji Days Of The Blade (Artemis)":
+        BCUS98131: [ 01.00 ]
+    Author: ChaosZage PORTED by ChiDreamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Genji6 ]
+PPU-990c727673e64176fc2938b067a37b0c348cd4f2:
+  "Upgrade For Max HP":
+    Games:
+      "Genji Days Of The Blade (Artemis)":
+        BCUS98131: [ 01.00 ]
+    Author: ChaosZage PORTED by ChiDreamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Genji7 ]
+PPU-990c727673e64176fc2938b067a37b0c348cd4f2:
+  "Upgrade For Max Kamui":
+    Games:
+      "Genji Days Of The Blade (Artemis)":
+        BCUS98131: [ 01.00 ]
+    Author: ChaosZage PORTED by ChiDreamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Genji8 ]
+PPU-990c727673e64176fc2938b067a37b0c348cd4f2:
+  "Gain 99 Items On Pickup":
+    Games:
+      "Genji Days Of The Blade (Artemis)":
+        BCUS98131: [ 01.00 ]
+    Author: ChaosZage PORTED by ChiDreamS
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Genji9 ]
