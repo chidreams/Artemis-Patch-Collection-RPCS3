@@ -1,0 +1,62 @@
+ Title: Mafia II
+# Serial: BLUS30281
+# Category: DG
+# Version: APP_VER=01.03 VERSION=01.01
+PPU-fe919fb9043861586a6c4c9f1cc5b9d5055cd5f2:
+  "Infinite Ammo + Grenades":
+    Games:
+      "Mafia II (Artemis)":
+        BLUS30281: [ 01.03 ]
+    Author: DANNY G Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Group: A    
+    Patch:
+    - [ be32,0x0087D384,0x60000000]
+PPU-fe919fb9043861586a6c4c9f1cc5b9d5055cd5f2:
+  "Infinite Health":
+    Games:
+      "Mafia II (Artemis)":
+        BLUS30281: [ 01.03 ]
+    Author: Randy97Killa Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+    - [ be32,0x017F19B0,0x3C004F00]
+    - [ be32,0x017F19B4,0x900300C4]
+    - [ be32,0x017F19B8,0x900300C0]
+    - [ be32,0x017F19BC,0x4A8FF6DC]
+    - [ be32,0x000F1094,0x4970091C]
+PPU-fe919fb9043861586a6c4c9f1cc5b9d5055cd5f2:
+  "Infinite Ammo Usage":
+    Games:
+      "Mafia II (Artemis)":
+        BLUS30281: [ 01.03 ]
+    Author: Randy97Killa Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Group: A
+    Patch:
+    - [ be32,0x0087588C,0x3BE003E7]
+PPU-fe919fb9043861586a6c4c9f1cc5b9d5055cd5f2:
+  "No Reload":
+    Games:
+      "Mafia II (Artemis)":
+        BLUS30281: [ 01.03 ]
+    Author: Azagthoth Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Group: 
+    Patch:
+    - [ be32,0x007BBD40,0x60000000]
+PPU-fe919fb9043861586a6c4c9f1cc5b9d5055cd5f2:
+  "Infinite Mission Time":
+    Games:
+      "Mafia II (Artemis)":
+        BLUS30281: [ 01.03 ]
+    Author: Azagthoth Ported by ChiDreamS
+    Notes: 
+    Patch Version: 1.3
+    Group: 
+    Patch:
+    - [ be32,0x000C26E0,0x60000000]
