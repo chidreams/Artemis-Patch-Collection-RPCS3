@@ -1,0 +1,196 @@
+# Title: God Of War® Collection
+# Serial: BCUS98229
+# Category: GD
+# Version: APP_VER=01.01 VERSION=01.00
+# =============================================================================
+# GOD OF WAR 1 HD (Active Game)
+# =============================================================================
+PPU-645f0573d7438e37ddd231377adf9c1205e8a040:
+  "Infinite Health":
+    Games:
+      "God Of War: HD (Artemis)":
+        BCUS98229: [ 01.01 ]
+    Author: Markin_Mods Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32, 0x0016B708, 0x484789D6 ]       # Master Logic Cave Injection Part A
+      - [ be32, 0x004789D4, 0x3CE000C0 ]
+      - [ be32, 0x004789D8, 0x93E7FFFC ]
+      - [ be32, 0x004789DC, 0x801F0D10 ]
+      - [ be32, 0x004789E0, 0x4816B70E ]
+      - [ be32, 0x004789E4, 0x92010000 ]
+      - [ be32, 0x004789E8, 0x3E0000C0 ]
+      - [ be32, 0x004789EC, 0x8210FFFC ]
+      - [ be32, 0x004789F0, 0x8A100D13 ]
+      - [ be32, 0x004789F4, 0x28100006 ]
+      - [ be32, 0x004789F8, 0x40820010 ]
+      - [ be32, 0x004789FC, 0x3E000000 ]
+      - [ be32, 0x00478A00, 0x92030270 ]
+      - [ be32, 0x00478A04, 0x82010000 ]
+      - [ be32, 0x00478A08, 0x4E800421 ]
+      - [ be32, 0x00478A0C, 0x480453D6 ]
+  "Infinite Magic":
+    Games:
+      "God Of War: HD (Artemis)":
+        BCUS98229: [ 01.01 ]
+    Author: Markin_Mods Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be16, 0x000721C0, 0x4800 ]
+  "Max Orbs On Gain":
+    Games:
+      "God Of War: HD (Artemis)":
+        BCUS98229: [ 01.01 ]
+    Author: Markin_Mods Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be16, 0x000727D0, 0x4800 ]
+  "Rage Of The Gods Instantly Refills":
+    Games:
+      "God Of War: HD (Artemis)":
+        BCUS98229: [ 01.01 ]
+    Author: Markin_Mods Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32, 0x00076A1A, 0x0018A33A ]
+      - [ be32, 0x00076A1E, 0x03FC3929 ]
+      - [ be32, 0x00076A22, 0x0010D3BA ]
+      - [ be16, 0x00076A26, 0x03F0 ]
+  "Have All Powers":
+    Games:
+      "God Of War: HD (Artemis)":
+        BCUS98229: [ 01.01 ]
+    Author: Markin_Mods Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32, 0x00076CE4, 0x48476366 ] # Logic Cave 2 Payload for Powers/Blades
+      - [ be32, 0x00476364, 0x38007FFF ]
+      - [ be32, 0x00476368, 0xB01A0416 ]
+      - [ be32, 0x0047636C, 0x38000005 ]
+      - [ be32, 0x00476370, 0x900B0200 ]
+      - [ be32, 0x00476374, 0x901A020C ]
+      - [ be32, 0x00476378, 0xA01A0416 ]
+      - [ be32, 0x0047637C, 0x48076CEA ]
+  "Have Athena´s Blade":
+    Games:
+      "God Of War: HD (Artemis)":
+        BCUS98229: [ 01.01 ]
+    Author: Markin_Mods Ported by ChiDreams
+    Notes: "Shares memory execution cave with Have All Powers."
+    Patch Version: 1.2 
+    Patch:
+      - [ be32, 0x00076CE4, 0x48476366 ]
+      - [ be32, 0x00476364, 0x38007FFF ]
+      - [ be32, 0x00476368, 0xB01A0416 ]
+      - [ be32, 0x0047636C, 0x38000005 ]
+      - [ be32, 0x00476370, 0x900B0200 ]
+      - [ be32, 0x00476374, 0x901A020C ]
+      - [ be32, 0x00476378, 0xA01A0416 ]
+      - [ be32, 0x0047637C, 0x48076CEA ]
+  "Press L1+R2 To Turn Enemies into Stone":
+    Games:
+      "God Of War: HD (Artemis)":
+        BCUS98229: [ 01.01 ]
+    Author: Markin_Mods Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32, 0x000453D0, 0x484789E6 ] # Master Logic Cave Injection Part B
+      - [ be32, 0x0007A628, 0x48478A16 ]
+      - [ be32, 0x00478A10, 0x00000000 ]
+      - [ be32, 0x00478A14, 0x2803FFFF ]
+      - [ be32, 0x00478A18, 0x40810010 ]
+      - [ be32, 0x00478A1C, 0xC1A30168 ]
+      - [ be32, 0x00478A20, 0xD1A30164 ]
+      - [ be32, 0x00478A24, 0xC1A30274 ]
+      - [ be32, 0x00478A28, 0xD1A30270 ]
+      - [ be32, 0x00478A2C, 0x4E800421 ]
+      - [ be32, 0x00478A30, 0x4807A62E ]
+# =============================================================================
+# GOD OF WAR 2 HD
+# =============================================================================      
+PPU-9cd8d28963ebc29b59c79819cb56f3d92e857a37:
+  "Infinite Jumps":
+    Games:
+      "God Of War: II HD (Artemis)":
+        BCUS98229: [ 01.01 ]
+    Author: Markin_Mods Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x0008CDB4, 0x60000000 ] 
+  "Infinite Health":
+    Games:
+      "God Of War: II HD (Artemis)":
+        BCUS98229: [ 01.01 ]
+    Author: Markin_Mods Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x00097004, 0x4842A1D4 ]
+      - [ be32, 0x004C11D8, 0xC01D0170 ]
+      - [ be32, 0x004C11DC, 0xFA01FFF4 ]
+      - [ be32, 0x004C11E0, 0x3E003DCC ]
+      - [ be32, 0x004C11E4, 0x6210CCCD ]
+      - [ be32, 0x004C11E8, 0xFA01FFE4 ]
+      - [ be32, 0x004C11EC, 0xC201FFE8 ]
+      - [ be32, 0x004C11F0, 0xFF900000 ]
+      - [ be32, 0x004C11F4, 0x419D000C ]
+      - [ be32, 0x004C11F8, 0xC01D0174 ]
+      - [ be32, 0x004C11FC, 0xD01D0170 ]
+      - [ be32, 0x004C1200, 0xEA01FFF4 ]
+      - [ be32, 0x004C1204, 0x4BBD5E04 ]
+  "Infinite Magic":
+    Games:
+      "God Of War: II HD (Artemis)":
+        BCUS98229: [ 01.01 ]
+    Author: Markin_Mods Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x00090A38, 0x484307DC ]
+      - [ be32, 0x004C1214, 0xA0090000 ]
+      - [ be32, 0x004C1218, 0xF801FFE0 ]
+      - [ be32, 0x004C121C, 0xCBC1FFE0 ]
+      - [ be32, 0x004C1220, 0xFFC0F69C ]
+      - [ be32, 0x004C1224, 0xD3DA0060 ]
+      - [ be32, 0x004C1228, 0x4BBCF814 ]
+      - [ be32, 0x00090C74, 0x484305BC ]
+      - [ be32, 0x004C1230, 0xC01A0068 ]
+      - [ be32, 0x004C1234, 0xC0029658 ]
+      - [ be32, 0x004C1238, 0xD01A0068 ]
+      - [ be32, 0x004C123C, 0x4BBCFA3C ]
+  "Infinite Rage":
+    Games:
+      "God Of War: II HD (Artemis)":
+        BCUS98229: [ 01.01 ]
+    Author: Markin_Mods Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x003A4A34, 0x4B11C854 ]
+      - [ be32, 0x004C1288, 0xFA01FFE4 ]
+      - [ be32, 0x004C128C, 0x3E000059 ]
+      - [ be32, 0x004C1290, 0x8210A568 ]
+      - [ be32, 0x004C1294, 0x3A1001FC ]
+      - [ be32, 0x004C1298, 0xFA21FFDC ]
+      - [ be32, 0x004C129C, 0x3E200087 ]
+      - [ be32, 0x004C12A0, 0x8A315273 ]
+      - [ be32, 0x004C12A4, 0x7F90F800 ]
+      - [ be32, 0x004C12A8, 0x409E0020 ]
+      - [ be32, 0x004C12AC, 0x893F036B ]
+      - [ be32, 0x004C12B0, 0x2B890004 ]
+      - [ be32, 0x004C12B4, 0x409E0014 ]
+      - [ be32, 0x004C12B8, 0x2B910040 ]
+      - [ be32, 0x004C12BC, 0x409E000C ]
+      - [ be32, 0x004C12C0, 0x3A200000 ]
+      - [ be32, 0x004C12C4, 0x9A3F036B ]
+      - [ be32, 0x004C12C8, 0x813F0368 ]
+      - [ be32, 0x004C12CC, 0xEA01FFE4 ]
+      - [ be32, 0x004C12D0, 0xEA21FFDC ]
+      - [ be32, 0x004C12D4, 0x4BEE3764 ]
