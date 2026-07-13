@@ -1,0 +1,62 @@
+# Title: Naughty Bear Gold Edition
+# Serial: NPUB31067
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.00
+# Localized Title: Naughty Bear Gold Edition      
+PPU-285fed097ed88cce45b52026de5bae120db23ad3:
+  "(Must Be On) Enable Code ":
+    Games:
+      "Naughty Bear Gold Edition (Artemis)":
+        NPUB31067: [ 01.00 ]
+    Author: Randy97Killa ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32,0x0135C9FC,0x3C6035C9] #
+      - [ be32,0x0135CA00,0x3E000186] #
+      - [ be32,0x0135CA04,0x93F0EFD8] #
+      - [ be32,0x0135CA08,0x4E800020] #
+      - [ be32,0x00EEF51C,0x4846D4E1] # 
+  "(Requires Enable Code) Infinite HP":
+    Games:
+      "Naughty Bear Gold Edition (Artemis)":
+        NPUB31067: [ 01.00 ]
+    Author: Randy97Killa ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32,0x0135CA0C,0x3E000186] #
+      - [ be32,0x0135CA10,0x8210EFD8] #
+      - [ be32,0x0135CA14,0x7F90E840] #
+      - [ be32,0x0135CA18,0x409E0014] #
+      - [ be32,0x0135CA1C,0xC0300030] #
+      - [ be32,0x0135CA20,0xD0300034] #
+      - [ be32,0x0135CA24,0x4E800020] #
+      - [ be32,0x0135CA28,0xEC210828] #
+      - [ be32,0x0135CA2C,0xD03D0034] #
+      - [ be32,0x0135CA30,0x4E800020] #
+      - [ be32,0x006BF8E4,0x48C9D129] #
+  "(Requires Enable Code) Invincibility":
+    Games:
+      "Naughty Bear Gold Edition (Artemis)":
+        NPUB31067: [ 01.00 ]
+    Author: Randy97Killa ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32,0x0135CA40,0x3E000186] #
+      - [ be32,0x0135CA44,0x8210EFD8] #
+      - [ be32,0x0135CA48,0x7F901840] #
+      - [ be32,0x0135CA4C,0x4D9E0020] #
+      - [ be32,0x0135CA50,0xF821FEF1] #
+      - [ be32,0x0135CA54,0x486C02AE] # 
+      - [ be32,0x006C02A8,0x4935CA42] #
+  "Infinite Ammo":
+    Games:
+      "Naughty Bear Gold Edition (Artemis)":
+        NPUB31067: [ 01.00 ]
+    Author: Randy97Killa ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32,0x00F48D20,0x60000000] #]  
