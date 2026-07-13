@@ -1,0 +1,141 @@
+# Title: God of War® Collection: Volume II
+# Serial: BCES01277
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00   
+# =============================================================================
+# God of War®: God of War Chains of Olympus
+# =============================================================================   
+PPU-168c7ab864617c1801fbcf358e0c0b8b65c293c8:
+  "Infinite Health and Magic":
+    Games:
+      "God of War: God of War Chains of Olympus (Artemis)":
+        BCES01277: [ 01.00 ]
+    Author: Hacked By Hiei-YYH Ported by ChiDreams
+    Notes: Do not activate with (Standalone)
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x00150E38, 0x3C60447A ]
+      - [ be32, 0x00150E3C, 0x90640064 ]
+      - [ be32, 0x00150E40, 0xC0240064 ]
+      - [ be32, 0x00150E44, 0x48308809 ]
+      - [ be32, 0x00150E48, 0x3C604348 ]
+      - [ be32, 0x00150E4C, 0x907F00D8 ]
+      - [ be32, 0x00150E50, 0x63C30000 ]
+      - [ be32, 0x00150E54, 0x48308801 ]
+      - [ be32, 0x0045964C, 0x63C30000 ]
+      - [ be32, 0x00459650, 0x4BD3B8F8 ]
+      - [ be32, 0x00459654, 0xC03F00D8 ]
+      - [ be32, 0x00459658, 0x4BD3BB38 ]
+  "Combo Multiplier (100x)":
+    Games:
+      "God of War: God of War Chains of Olympus (Artemis)":
+        BCES01277: [ 01.00 ]
+    Author: Hacked By sesiom316 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x001519E8, 0x30640064 ]
+  "Red Orbs Do Not Decrease From Use":
+    Games:
+      "God of War: God of War Chains of Olympus (Artemis)":
+        BCES01277: [ 01.00 ]
+    Author: Hacked By sesiom316 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: B
+    Patch:
+      - [ be32, 0x0015111C, 0x60000000 ]
+  "Max Red Orbs On Gain":
+    Games:
+      "God of War: God of War Chains of Olympus (Artemis)":
+        BCES01277: [ 01.00 ]
+    Author: Hacked By dron_3, sesiom316 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: B    
+    Patch:
+      - [ be32, 0x00151000, 0x41810008 ]
+      - [ be32, 0x00151004, 0x6084967F ]  
+  "Infinite Health (Standalone)":
+    Games:
+      "God of War: God of War Chains of Olympus (Artemis)":
+        BCES01277: [ 01.00 ]
+    Author: Hacked By GuitarMan Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: A    
+    Patch:
+      - [ be32, 0x000DB284, 0xD0230064 ]
+  "Infinite Magic (Standalone)":
+    Games:
+      "God of War: God of War Chains of Olympus (Artemis)":
+        BCES01277: [ 01.00 ]
+    Author: Hacked By GuitarMan Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x00150E44, 0x38A00001 ]
+      - [ be32, 0x00150E54, 0x90BF00DC ]
+# =============================================================================
+# God of War: Ghost of Sparta HD
+# =============================================================================      
+PPU-1c50a21c2c3903674183d57ee43b8290b0993375:
+  "Infinite Health + Magic":
+    Games:
+      "God of War: Ghost of Sparta HD (Artemis)":
+        BCES01277: [ 01.00 ]
+    Author: Hacked By Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x002179D8, 0xC0240070 ]
+      - [ be32, 0x002179DC, 0xD0240064 ]
+      - [ be32, 0x002179E0, 0x4807B381 ]
+      - [ be32, 0x002179E4, 0x3C604348 ]
+      - [ be32, 0x002179E8, 0x907D00F4 ]
+      - [ be32, 0x002179EC, 0xC03D00F4 ]
+      - [ be32, 0x002179F0, 0x4807B48D ]
+      - [ be32, 0x00292E7C, 0x63C30000 ]
+PPU-1c50a21c2c3903674183d57ee43b8290b0993375:
+  "Infinite Theras Bane":
+    Games:
+      "God of War: Ghost of Sparta HD (Artemis)":
+        BCES01277: [ 01.00 ]
+    Author: Hacked By Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x001FDCF0, 0xC05F0174 ]
+      - [ be32, 0x001FDD14, 0xC03F0174 ]
+      - [ be32, 0x001FDD18, 0xD03F0170 ]
+      - [ be32, 0x001FDD1C, 0x4BFFB085 ]
+PPU-1c50a21c2c3903674183d57ee43b8290b0993375:
+  "Max Red Orbs on Gain":
+    Games:
+      "God of War: Ghost of Sparta HD (Artemis)":
+        BCES01277: [ 01.00 ]
+    Author: Hacked By Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x002195B4, 0x60000000 ]
+PPU-1c50a21c2c3903674183d57ee43b8290b0993375:
+  "Combo Multiplier (100x)":
+    Games:
+      "God of War: Ghost of Sparta HD (Artemis)":
+        BCES01277: [ 01.00 ]
+    Author: Hacked By Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x0021A194, 0x30640064 ]      
+  "Infinite Jumps":
+    Games:
+      "God of War: Ghost of Sparta HD (Artemis)":
+        BCES01277: [ 01.00 ]
+    Author: Hacked By Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      # NOPs out the conditional register storage check for jumping
+      - [ be32, 0x002179DC, 0x60000000 ]   
