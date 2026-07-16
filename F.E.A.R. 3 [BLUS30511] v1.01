@@ -1,0 +1,53 @@
+# Title: F.E.A.R. 3
+# Serial: BLUS30511
+# Category: GD
+# Version: APP_VER=01.01 VERSION=01.00
+# Localized Title: F.E.A.R. 3
+PPU-1817acf3207d81feda9c82306d97a98ffbd32140:
+  "Without Recharging":
+    Games:
+      "F.E.A.R. 3 (Artemis)":
+        BLUS30511: [ 01.01 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be16, 0x004260D3, 0x10D3 ]  # Modifies timing/cooldown checks
+      - [ byte, 0x004260D5, 0xFF ]
+      - [ be16, 0x0050092C, 0x4800 ]
+      - [ be32, 0x014E71E0, 0x487C5CC4 ]       # Code Injection hook
+      - [ be32, 0x01CACE9C, 0x813E0004 ]       # Injected Refill Logic
+      - [ be32, 0x01CACEA0, 0x4BFFFFB0 ]
+      - [ be32, 0x01CACEA4, 0x801D00A4 ]
+      - [ be32, 0x01CACEA8, 0x60000000 ]
+      - [ be32, 0x01CACEAC, 0x2F800000 ]
+      - [ be32, 0x01CACEB0, 0x409E0008 ]
+      - [ be32, 0x01CACEB4, 0xC01D0058 ]
+      - [ be32, 0x01CACEB8, 0xD01D0054 ]
+      - [ be32, 0x01CACEBC, 0x4B83A328 ]
+  "Infinite Health":
+    Games:
+      "F.E.A.R. 3 (Artemis)":
+        BLUS30511: [ 01.01 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x003AB0F4, 0x901D0004 ]
+      - [ be32, 0x003AB124, 0x3C007F7F ] # Loads Max Float
+      - [ be32, 0x003AB128, 0xD01D000C ]
+      - [ be32, 0x003AB12C, 0xD1BD0010 ]
+      - [ be32, 0x003AB130, 0xD19D0014 ]
+      - [ be32, 0x003AB134, 0xD17D0018 ]
+      - [ be16, 0x003AB138, 0x901D ]
+      - [ be32, 0x0065C31C, 0x60000000 ] # NOP for damage taken
+  "Endless Ammo":
+    Games:
+      "F.E.A.R. 3 (Artemis)":
+        BLUS30511: [ 01.01 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x0050C274, 0x60000000 ] # NOP subtract instruction
+      - [ be32, 0x01459654, 0x60000000 ] # Likely a secondary ammo/item NOP      
