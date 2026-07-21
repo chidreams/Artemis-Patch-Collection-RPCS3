@@ -1,0 +1,32 @@
+# Title: Killzone®2
+# Serial: BCUS98116
+# Category: GD
+# Version: APP_VER=01.29 VERSION=01.00
+PPU-3a4e272eff128f7fa40bf722961a0c6de81bfc5a:
+  "God Mode":
+    Games:
+      "Killzone 2 (Artemis)":
+        BCUS98116: [ 01.29 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x000CE7EC, 0x60000000 ]      
+  "Infinite Ammo":
+    Games:
+      "Killzone 2 (Artemis)":
+        BCUS98116: [ 01.29 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be16, 0x0020053A, 0x0000 ] 
+  "Infinite Grenade":
+    Games:
+      "Killzone 2 (Artemis)":
+        BCUS98116: [ 01.29 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be16,0x00193872, 0x0000] 
