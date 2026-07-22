@@ -1,0 +1,46 @@
+PPU-4f5ef92b0175310104dc0c1dd7f9d0f387c818ea:
+  "Endless Blood":
+    Games:
+      "inFAMOUS™: Festival of Blood":
+        NPUA80657: [ 01.00 ]
+    Author: "Jordy_Indo_Mods Ported by ChiDreams"
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x001324C8, 0x48000008 ]
+      - [ be32, 0x001324CC, 0xFDAC006E ]
+      - [ be32, 0x001324D0, 0x3C00447A ]
+      - [ be32, 0x001324D4, 0x90090980 ]
+      - [ be32, 0x001324D8, 0xC0090980 ]
+      - [ be32, 0x001324DC, 0x48000008 ]
+      - [ be32, 0x001324E0, 0x4E800020 ]
+      - [ be32, 0x001324E4, 0xEBC1FFF0 ]
+      - [ be32, 0x001324E8, 0xD009097C ]
+      - [ be32, 0x001324EC, 0x4BFFFDE4 ]
+      - [ be32, 0x001324F0, 0x7C691B78 ]
+      - [ be32, 0x001324F4, 0xC0090980 ]
+      - [ be32, 0x0048431C, 0x60000000 ]
+
+  "Infinite Electricity":
+    Games:
+      "inFAMOUS™: Festival of Blood":
+        NPUA80657: [ 01.00 ]
+    Author: "Jordy_Indo_Mods Ported by ChiDreams"
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x0015D190, 0x60000000 ]
+
+  "Infinite Health":
+    Games:
+      "inFAMOUS™: Festival of Blood":
+        NPUA80657: [ 01.00 ]
+    Author: "Jordy_Indo_Mods Ported by ChiDreams"
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x0015FE44, 0x3C604E6E ]
+      - [ be32, 0x0015FE48, 0x907D07F0 ]
+      - [ be32, 0x0015FE4C, 0xC01D07F0 ]
+      - [ be32, 0x0015FE50, 0x60000000 ]
+      - [ be32, 0x0015FE54, 0x60000000 ]
