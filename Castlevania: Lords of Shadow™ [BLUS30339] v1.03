@@ -1,0 +1,71 @@
+# Title: Castlevania: Lords of Shadow™
+# Serial: BLUS30339
+# Category: GD
+# Version: APP_VER=01.03 VERSION=01.00
+# Localized Title: Castlevania: Lords of Shadow™      
+PPU-a50af7ba3aaf63dbb1e1722c788941341770e856: 
+  "Infinite Health":
+    Games:
+      "Castlevania Lord of Shadow (Artemis) ":
+        BLUS30339: [ 01.03 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32,0x0015B77C, 0x907B0488]
+  "Max EXP":
+    Games:
+      "Castlevania Lord of Shadow (Artemis) ":
+        BLUS30339: [ 01.03 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32,0x0015FDD8, 0x3C607FFF]
+      - [ be32,0x0015FDDC, 0x6063FFFF]
+      - [ be32,0x0015FDE0, 0x9064002C] 
+  "Infinite Daggers":
+    Games:
+      "Castlevania Lord of Shadow (Artemis) ":
+        BLUS30339: [ 01.03 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32,0x0015B2EC, 0x38C00005]
+      - [ be32,0x0015B2F0, 0x90C5002C]
+      - [ be32,0x0013B2F4, 0x80A5002C] 
+  "Infinite Crystals":
+    Games:
+      "Castlevania Lord of Shadow (Artemis) ":
+        BLUS30339: [ 01.03 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32,0x0015B2B4, 0x38800004]
+      - [ be32,0x0015B2B8, 0x9083002C]
+      - [ be32,0x0015B2BC, 0x8063002C] 
+  "Infinite Holy Water":
+    Games:
+      "Castlevania Lord of Shadow (Artemis) ":
+        BLUS30339: [ 01.03 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32,0x0015B2D0, 0x38A00063]
+      - [ be32,0x0015B2D4, 0x90A4002C]
+      - [ be32,0x0015B2D8, 0x8084002C]      
+  "Infinite Magic":
+    Games:
+      "Castlevania Lord of Shadow (Artemis) ":
+        BLUS30339: [ 01.03 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32,0x00158AAC, 0xD026002C]
+      - [ be32,0x00158AB8, 0xD047002C]
+      - [ be32,0x00158AD8, 0xD03C0274]
+      - [ be32,0x00158ADC, 0xD05C027C] 
