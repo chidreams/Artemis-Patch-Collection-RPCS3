@@ -1,0 +1,767 @@
+# Title: Disgaea D2
+# Serial: BLES01939
+# Category: DG
+# Version: APP_VER=01.30 VERSION=01.00      
+Anchors:
+  Disgaea2D: &Disgaea2D
+    - [ be32,0x001F7758,0x38000000]
+    - [ be32,0x001F7768,0x60000000]
+  Disgaea2D2: &Disgaea2D2 
+    - [ be32,0x001E513C,0x39200064]
+    - [ be32,0x001ECA20,0x3B800009]
+  Disgaea2D3: &Disgaea2D3
+    - [ be32,0x000153AC,0x2F800000]
+  Disgaea2D4: &Disgaea2D4
+    - [ be32,0x002516CC,0x3C000099]
+  Disgaea2D5: &Disgaea2D5
+    - [ be32,0x001088BC,0x3D200099]
+  Disgaea2D6: &Disgaea2D6
+    - [ be32,0x00230470,0x48000010]
+    - [ be32,0x002324D0,0x480002F8]
+  Disgaea2D7: &Disgaea2D7
+    - [ be32,0x0023045C,0x907D0944]
+  Disgaea2D8: &Disgaea2D8
+    - [ be32,0x000E893C,0x881A06EB]
+    - [ be32,0x000E8944,0x409E000C]
+    - [ be32,0x000E8948,0xE8071080]
+    - [ be32,0x000E894C,0x48000008]
+    - [ be32,0x000E8950,0x38000000]
+    - [ be32,0x000E8954,0xF8071070]
+  Disgaea2D9: &Disgaea2D9
+    - [ be32,0x000F2A20,0x893B06EB]
+    - [ be32,0x000F2A2C,0x2F890000]
+    - [ be32,0x000F2A30,0x409E000C]
+    - [ be32,0x000F2A34,0xE9231088]
+    - [ be32,0x000F2A38,0x48000008]
+    - [ be32,0x000F2A3C,0x39200000]
+    - [ be32,0x000F2A40,0xF9231078]
+  Disgaea2D10: &Disgaea2D10
+    - [ be32,0x000F2A38,0x7C090378]
+  Disgaea2D11: &Disgaea2D11
+    - [ be32,0x001AD228,0x60000000]
+    - [ be32,0x00276214,0x60000000]
+  Disgaea2D12: &Disgaea2D12
+    - [ be32,0x0001A1A4,0x60000000]
+  Disgaea2D13: &Disgaea2D13
+    - [ be32,0x0001A220,0x60000000]
+  Disgaea2D14: &Disgaea2D14
+    - [ be32,0x0001A204,0x1FDE0010]
+  Disgaea2D15: &Disgaea2D15
+    - [ be32,0x0002FFA8,0x60000000]
+  Disgaea2D16: &Disgaea2D16
+    - [ be32,0x0002FFE0,0x60000000]
+  Disgaea2D17: &Disgaea2D17
+    - [ be32,0x000F1B8C,0x60000000]
+  Disgaea2D18: &Disgaea2D18
+    - [ be32,0x00020C10,0x60000000]
+    - [ be32,0x00020C1C,0x3800007F]
+  Disgaea2D19: &Disgaea2D19
+    - [ be32,0x000F1BBC,0x60000000]
+  Disgaea2D20: &Disgaea2D20
+    - [ be32,0x00019F8C,0x60000000]
+  Disgaea2D21: &Disgaea2D21
+    - [ be32,0x00019F20,0x3D807F7F]
+  Disgaea2D22: &Disgaea2D22
+    - [ be32,0x00200D4C,0x38000000]
+  Disgaea2D23: &Disgaea2D23
+    - [ be32,0x0027BA1C,0x3BA07F7F]
+    - [ be32,0x0027BA50,0x39407F7F]
+  Disgaea2D24: &Disgaea2D24
+    - [ be32,0x0027C820,0x60000000]
+  Disgaea2D25: &Disgaea2D25
+    - [ be32,0x001BE660,0x4800067C]
+  Disgaea2D26: &Disgaea2D26
+    - [ be32,0x001BE688,0x480006BC]
+  Disgaea2D27: &Disgaea2D27
+    - [ be32,0x001BE6B0,0x480006FC]
+  Disgaea2D28: &Disgaea2D28
+    - [ be32,0x001BE700,0x48000574]
+  Disgaea2D29: &Disgaea2D29
+    - [ be32,0x001BE790,0x60000000]
+  Disgaea2D30: &Disgaea2D30
+    - [ be32,0x001BE80C,0x60000000]
+  Disgaea2D31: &Disgaea2D31
+    - [ be32,0x001BE888,0x60000000]
+  Disgaea2D32: &Disgaea2D32
+    - [ be32,0x001BE904,0x60000000]
+  Disgaea2D33: &Disgaea2D33
+    - [ be32,0x001BE980,0x60000000]
+  Disgaea2D34: &Disgaea2D34
+    - [ be32,0x001BE9FC,0x60000000]
+  Disgaea2D35: &Disgaea2D35
+    - [ be32,0x001BEA78,0x60000000]
+  Disgaea2D36: &Disgaea2D36
+    - [ be32,0x001BEAF4,0x60000000]
+  Disgaea2D37: &Disgaea2D37
+    - [ be32,0x001BEB70,0x60000000]
+    - [ be32,0x001BEB8C,0x60000000]
+  Disgaea2D38: &Disgaea2D38
+    - [ be32,0x001BEC08,0x60000000]
+  Disgaea2D39: &Disgaea2D39
+    - [ be32,0x0002F1D8,0x60000000]
+    - [ be32,0x0002F1E0,0x60000000]
+    - [ be32,0x0002F200,0x4800002C]
+  Disgaea2D40: &Disgaea2D40
+    - [ be32,0x00279214,0x38000919]
+    - [ be32,0x0027921C,0x780007C6]
+  Disgaea2D41: &Disgaea2D41
+    - [ be32,0x00275378,0x60000000]
+  Disgaea2D42: &Disgaea2D42
+    - [ be32,0x00062334,0x60000000]
+    - [ be32,0x00062338,0x38600002]
+  Disgaea2D43: &Disgaea2D43
+    - [ be32,0x000623F4,0x60000000]
+    - [ be32,0x000623FC,0x60000000]
+    - [ be32,0x00062410,0x60000000]
+  Disgaea2D44: &Disgaea2D44
+    - [ be32,0x000624D8,0x2F9A0006]
+    - [ be32,0x000624DC,0x419D0034]
+  Disgaea2D45: &Disgaea2D45
+    - [ be32,0x00062280,0x3920007F]
+  Disgaea2D46: &Disgaea2D46
+    - [ be32,0x00062288,0x3800007F]
+  Disgaea2D47: &Disgaea2D47
+    - [ be32,0x00062290,0x3920007F]
+  Disgaea2D48: &Disgaea2D48
+    - [ be32,0x000622AC,0x3800007F]
+  Disgaea2D49: &Disgaea2D49
+    - [ be32,0x000622B4,0x3920007F]
+  Disgaea2D50: &Disgaea2D50
+    - [ be32,0x000623E0,0x3800270F]
+  Disgaea2D51: &Disgaea2D51
+    - [ be32,0x00060BA8,0x38604E1E]
+  Disgaea2D52: &Disgaea2D52
+    - [ be32,0x00060B08,0x98BF0007]
+  Disgaea2D53: &Disgaea2D53
+    - [ be32,0x00060B7C,0x38000004]
+    - [ be32,0x00060B84,0xB01F0004]
+    - [ be32,0x00060B88,0x482DF351]
+  Disgaea2D54: &Disgaea2D54
+    - [ be32,0x002AA450,0x60000000]
+    - [ be32,0x002AA464,0x4BFFFDA8]
+  Disgaea2D55: &Disgaea2D55
+    - [ be32,0x002AA1A8,0x60000000]
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Can Dispatch An Unlimited Amount Of Units On Stage":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D ]  
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Bonus Gauge At 9":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D2 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Max Mana After Killing An Enemy":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D3 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Enter The Reincarnation Menu For Max Mana":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D4 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Reincarnated Or Newly Created Characters Start With Max Mana":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D5 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Can Control Anything (Geoblocks and Treasure can freeze game)":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D6 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Infinite Actions (Does not work on mounted units)":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D7 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Health Never Decreases For Your Units, Enemies Die From Any Damage":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D8 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Use SP For Full Refill, Enemies SP Reduced To 0 From 1 Use":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D9 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "SP Never Decreases":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D10 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Remove Limit of Assembly Counts From Item World":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D11 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Use A Weapon To Master It":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D12 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Gain EXP To Max Out At Level 9999":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D13 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "EXP Multiplier (16x)":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 0002=2x;0004=4x;0008=8x;0010=16x;0020=32x;0040=64x;0080=128x;0100=256x;0200=512x;0400=1024x;
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D14 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Stage Bonuses Have Large Amounts Of HL":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D15 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Stage Bonuses Have Large Amounts Of EXP":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D16 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Special Skill Ranges Are At Normal Max":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D17 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Special Skill Ranges Are At Abnormal Max":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D18 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "All Special Skill Formations Are Available":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D19 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "All Skills Gain EXP From Using A Skill":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D20 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Use A Special Skill To Max It At Level 99":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D21 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Win The Instant A Stage Starts":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D22 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "All Senators Love You":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D23 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "No Senators At The Dark Assembly":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D24 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Unlock Cheat Item World: Geo Count":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D25 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Unlock Cheat Item World: Map Size":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D26 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Unlock Cheat Item World: Pirates And Treasure Rate":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D27 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Unlock Cheat Prinny: Everyone Is A Bomb":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D28 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Unlock Cheat Prinny: Explosion Range":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D29 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Unlock Cheat Prinny: Prinny Day Every Day":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D30 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Unlock Cheat Item World: Search Route":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D31 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Unlock Cheat Fun: Auto Heal At Base":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D32 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Unlock Cheat Battle Dialogue: Protect":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D33 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Unlock Cheat Battle Dialogue: Support Attack":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D34 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Unlock Cheat Battle Dialogue: Rasetsu Mode":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D35 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Unlock Cheat Battle Dialogue: LoC Mode":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D36 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Unlock Cheat All You Can Take Titles":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D37 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Unlock Cheat Battle Dialogue: Battle Dialogue":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D38 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Max HL Upon Gain Or Buying":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D39 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Max HL By Losing It Trying To Bribe The Dark Assembly":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D40 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Max HL By Extorting It From The Dark Assembly":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D41 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "New Item Are Legendary":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D42 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "All New Item Population Capacities Are 6":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D43 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "All New Items Have 6 Innocents":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D44 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "All New Item Attack Ranges Are Max":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D45 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "All New Item Counter Attacks Are Max":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D46 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "All New Item Critical Percentages Are Max":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D47 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "All New Item Move Ranges Are Max":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D48 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "All New Item Jump Heights Are Max":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D49 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "All New Items Have A Max Of 9999 Many Levels":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D50 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "All New Item Innocents Are At Max Levels":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D51 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "All New Item Innocents Are Transferable":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D52 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "All New Item Innocents Modifier":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 0001=Dietician (Add bonus points to an item's HP.);0002=Master (Add bonus points to an item's SP.);0003=Gladiator (Add bonus points to an item's ATK.);0004=Sentry (Add bonus points to an item's DEF.);0005=Tutor (Add bonus points to an item's INT.);0006=Coach (Add bonus points to an item's RES.);0007=Marksman (Add bonus points to an item's HIT.);0008=Physician (Add bonus points to an item's SPD.);000B=Muscleman (Add bonus points to an item's ATK and HP.);000C=Sprinter (Add bonus points to an item's ATK and SPD.);000D=Nerd (Add bonus points to an item's INT and SP.);000E=Hard Worker (Add bonus points to an item's ATK and INT.);000F=Patient (Add bonus points to an item's DEF and RES.);0010=Pugilist (Add bonus points to an item's ATK and HIT.);0011=Sniper (Add bonus points to an item's HIT and SPD.);0015=Alchemist (Inflict Poison status upon attack.);0016=Hypnotist (Inflict Sleep status upon attack.);0017=Witch Doctor (Inflict Paralysis status upon attack.);0018=Amnesiac (Inflict Amnesia status upon attack.);0019=Gangster (Inflict Depraved status upon attack.);001A=Professional (Inflict Criticals upon attack.);0029=Pharmacist (Increase Poison resistance.);002A=Coffee Maker (Increase Sleep resistance.);002B=Medicine Man (Increase Paralysis resistance.);002C=Psychologist (Increase Amnesia resistance.);002D=Social Worker (Increase Depraved resistance.);002E=Firefighter (Increase Fire resistance.);002F=Aeronaut (Increase Wind resistance.);0030=Cryophile (Increase Water resistance.) <---The developers probably meant "Ice" instead of "Water".;003C=Guardian (Gain more ability when equipping armor.);003D=Broker (Obtain more money upon defeating enemies.);003E=Statistician (Obtain more EXP upon defeating enemies.);003F=Manager (Obtain more Mana upon defeating enemies.);0040=Sparring Partner (Increase rate of Weapon Mastery.);0041=Trainer (Increase rate of Skill Mastery.);0083=Item General;0084=Item King;0085=Item God;0086=Item God 2;00C9=Kinder Gardener (Decrease damage by 25%.);00CA=Berry Picker (Raise the chances of a Team Attack to 100%.);00CB=Secret Trainer (Boost stat increase when leveling up by 10%.);00CC=Chalkboard Scraper (Decrease accuravy of enemy attacks on you by 25%.);00CD=High Spiriter (Release the target from ailment upon a normal attack.);00CE=Glutton (Damage from normal attacks converts to recover effect.);00CF=Punisher (Halve the target's HP with a normal attack from behind.);00D0=Sweet Tempter (Recover 50% of your HP at the end of your turn.);00D1=Mana Robber (Increase Mana earned by 10% with a normal attack.);00D2=Cat Burglar (20% chance to steal from defeated enemy. (Except against Senators));00D3=All Digger (Inflict Paralysis status with a normal attack from behind.);00D4=Trash Talker (Inflict Poison status with a normal attack from behind.);00D5=Rubber (Perform two normal attacks in a row.);00D6=Sensationalist (Inflict Depraved status with a normal attack from behind.);00D7=Wuss (Decrease physical attack damage by 40%.);00D8=Town Crier (Increase counter attacks by 5.);00D9=Sun Bather (Inflict Sleep status with a normal attack from behind.);00DA=Joke Slapper (Inflict Amnesia status with a normal attack from behind.);00DB=Motivator (Decrease magic attack damage by 40%.);00DC=Sumo Wrestler (Increase damage of an ally monster by 20%.);00DD=Hand Shaker (Never miss a target.);00DE=Beggar (Decrease stats of adjacent enemy by 20%.);00DF=Partier (Geo Effect and Geo Chain damage will heal instead.);00E0=Mode Changer (Odd-turn physical attacks and even-turn magic attacks will be nullified.);00E1=Eraser (50% chance to deathblow enemies under 25% HP.);00E2=Killer (Deathblow enemies under 25% SP.);00E3=Heart's Shadow (Increase stats by 1% per unit with 0 likeability.);00FA=Dengeki PS Shop (Increase EXP, Mana and HL earned by 1% for every hour played. (Max 99%));00FB=Famitsu Shop (Increase EXP, Mana and HL earned by 50% for first 30 minutes of play.);00FC=Love Love Shop (Temporarily share max likeability with units equipped with the same Innocent.);00FD=Tsun Tsun Shop (Temporarily share minimum likeability with units equipped with the same Innocent.);00FE=Revival! Shop (Revive at the Base Panel when you are defeated.);00FF=Fold Shop (Move around the map regardless of height differences and obstacles.);0100=Energy Shop (Recover 10% of your HP and SP at the end of your turn.)
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D53 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Sold Items At Shop Can Be Bought Back Endlessly":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D54 ] 
+PPU-25d904bc8511c6ef3fde84a4e7e53f72478852b0:
+  "Buy An Item To Fill Your Entire Remaining Inventory With Copies Of That Item":
+    Games:
+      "Disgaea D2 (Artemis)":
+        BLES01939: [ 01.30 ]
+    Author: bungholio
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Disgaea2D55 ] 
+# Title: Persona 5
+# Serial: BLUS31604
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00      
+PPU-e72e715d646a94770d1902364bc66fe33b1b6606:
+  "ASM Max + Infinite Items On Use":
+    Games:
+      "Persona 5 (Artemis)":
+        BLUS31604: [ 01.00 ]
+    Author: jgduff1
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00261A00,0x98A30A00]
+PPU-e72e715d646a94770d1902364bc66fe33b1b6606:
+  "HP + SP Never Decrease When Using Persona Skill":
+    Games:
+      "Persona 5 (Artemis)":
+        BLUS31604: [ 01.00 ]
+    Author: jgduff1
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x006D3F54,0x4800022C] 
+PPU-e72e715d646a94770d1902364bc66fe33b1b6606:
+  "HP + Knowledge + Dexterity + Softness + Attractiveness At 999":
+    Games:
+      "Persona 5 (Artemis)":
+        BLUS31604: [ 01.00 ]
+    Author: jgduff1
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00258E1C,0x60000000]
+PPU-e72e715d646a94770d1902364bc66fe33b1b6606:
+  "Experience Multiplier (100x)":
+    Games:
+      "Persona 5 (Artemis)":
+        BLUS31604: [ 01.00 ]
+    Author: jgduff1
+    Notes: 000A=10x;0064=100x;03E8=1,000x;2710=10,000
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0063D418,0x1C630064]
+PPU-e72e715d646a94770d1902364bc66fe33b1b6606:
+  "Material Can Be Synthesized":
+    Games:
+      "Persona 5 (Artemis)":
+        BLUS31604: [ 01.00 ]
+    Author: jgduff1
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x005FD8D8,0x48000010]
+PPU-e72e715d646a94770d1902364bc66fe33b1b6606:
+  "Max Material On Gain":
+    Games:
+      "Persona 5 (Artemis)":
+        BLUS31604: [ 01.00 ]
+    Author: jgduff1
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x001020F0,0x60000000] 
+PPU-e72e715d646a94770d1902364bc66fe33b1b6606:
+  "Limit Release During Persona Synthesis":
+    Games:
+      "Persona 5 (Artemis)":
+        BLUS31604: [ 01.00 ]
+    Author: jgduff1
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x001EEC08,0x1C79270F]
