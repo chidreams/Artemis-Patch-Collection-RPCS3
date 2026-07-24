@@ -1,0 +1,76 @@
+# Title: RESIDENT EVIL® Operation Raccoon City
+# Serial: BLUS30750
+# Category: GD
+# Version: APP_VER=01.03 VERSION=01.01   
+PPU-d54581a8d7a2748728be4cbcee1686de6e0c468d:
+  "1P Infinite Health ":
+    Games:
+      "RESIDENT EVIL® Operation Raccoon City (Artemis)":
+        BLUS30750: [ 01.03 ]
+    Author: bungholio Ported by ChiDreams__Ported By Randy97Killa
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x00350760,0xC0230090]
+      - [ be32,0x0035077C,0xD0230080]
+PPU-d54581a8d7a2748728be4cbcee1686de6e0c468d:
+  "Infinite Ammo + Infinite Items + Infinite Throwables":
+    Games:
+      "RESIDENT EVIL® Operation Raccoon City (Artemis)":
+        BLUS30750: [ 01.03 ]
+    Author: bungholio Ported by ChiDreams__Ported By Randy97Killa
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x002B9EFC,0x30840000]
+PPU-d54581a8d7a2748728be4cbcee1686de6e0c468d:
+  "Improved Accuracy":
+    Games:
+      "RESIDENT EVIL® Operation Raccoon City (Artemis)":
+        BLUS30750: [ 01.03 ]
+    Author: bungholio Ported by ChiDreams__Ported By Randy97Killa
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x00319BE4,0x39400000]
+      - [ be32,0x00319BE8,0x915F0068]
+PPU-d54581a8d7a2748728be4cbcee1686de6e0c468d:
+  "Infinite Special":
+    Games:
+      "RESIDENT EVIL® Operation Raccoon City (Artemis)":
+        BLUS30750: [ 01.03 ]
+    Author: Medo Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x00128350,0x60000000 ]
+PPU-d54581a8d7a2748728be4cbcee1686de6e0c468d:
+  "Infinite Exp":
+    Games:
+      "RESIDENT EVIL® Operation Raccoon City (Artemis)":
+        BLUS30750: [ 01.03 ]
+    Author: Medo Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ byte,0x000A816E8,0x30 ]
+PPU-d54581a8d7a2748728be4cbcee1686de6e0c468d:
+  "All Enemies Are Displayed On The Map":
+    Games:
+      "RESIDENT EVIL® Operation Raccoon City (Artemis)":
+        BLUS30750: [ 01.03 ]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x00318688,0x60000000]
+PPU-d54581a8d7a2748728be4cbcee1686de6e0c468d:
+  "Nothing Moves":
+    Games:
+      "RESIDENT EVIL® Operation Raccoon City (Artemis)":
+        BLUS30750: [ 01.03 ]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x004C0A60,0x60000000]
