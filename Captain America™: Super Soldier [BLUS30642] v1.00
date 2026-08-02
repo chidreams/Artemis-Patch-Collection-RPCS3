@@ -2,60 +2,68 @@
 # Serial: BLUS30642
 # Category: DG
 # Version: APP_VER=01.00 VERSION=01.00
+# Localized Title: Captain America™: Super Soldier
 PPU-0e5cf068859287fa06e6ee2b09d892c42ee911a2:
-  Infinite Health:
+  "Infinite Health":
     Games:
-      "Captain America™: Super Soldier (Artemis)":
-        BLUS30642: [ 01.00]
-    Author: CodeFreak/PS3UserCheat
-    Notes: (Type Code ASM)
-    Patch Version: 1.0
+      "Captain America: Super Soldier (Artemis)":
+        BLUS30642: [ 01.00 ]
+    Author:  Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
     Patch:
-      - [ be32,0x000CE560,0x60000000]
-  Lot Of Info Points On Gain:
+      - [ be32,0x000CE560,0x60000000]  
+  "Lot Of Info Points On Gain":
     Games:
-      "Captain America™: Super Soldier (Artemis)":
-        BLUS30642: [ 01.00]
-    Author: jgduff Ported by ChiDreams1
-    Notes: (Type Code ASM)
-    Patch Version: 1.0
+      "Captain America: Super Soldier (Artemis)":
+        BLUS30642: [ 01.00 ]
+    Author:  Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
     Patch:
-     - [ be32, 0x001E8450,0x90050008]
-  Infinite Focus:
+      - [ be32, 0x001E8450,0x90050008]
+  "Infinite Focus":
     Games:
-      "Captain America™: Super Soldier (Artemis)":
-        BLUS30642: [ 01.00]
-    Author: bungholio Ported by ChiDreams
-    Notes: (Type Code ASM)
-    Patch Version: 1.0
+      "Captain America: Super Soldier (Artemis)":
+        BLUS30642: [ 01.00 ]
+    Author:  Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
     Patch:
-     - [ be32, 0x000D46CC, 0x60000000]
-  Instant Max Focus On Dodge:
+      - [ be32, 0x000D46CC, 0x60000000] 
+  "Instant Max Focus On Dodge":
     Games:
-      "Captain America™: Super Soldier (Artemis)":
-        BLUS30642: [ 01.00]
-    Author: bungholio Ported by ChiDreams
-    Notes: (Type Code ASM)
-    Patch Version: 1.0
+      "Captain America: Super Soldier (Artemis)":
+        BLUS30642: [ 01.00 ]
+    Author:  Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
     Patch:
-     - [ be32, 0x000D4E18, 0xD3FF0008]
-  Max Intel Points:
+      - [ be32, 0x000D4E18, 0xD3FF0008] 
+  "Max Intel Points":
     Games:
-      "Captain America™: Super Soldier (Artemis)":
-        BLUS30642: [ 01.00]
-    Author: bungholio Ported by ChiDreams
-    Notes: (Type Code ASM)
-    Patch Version: 1.0
-    Group: AQ
+      "Captain America: Super Soldier (Artemis)":
+        BLUS30642: [ 01.00 ]
+    Author:  Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
     Patch:
-     - [ be32, 0x001ECBEC, 0x3C607F7F]
-  Puzzle Keypad Timer Never Decreases:
+      - [ be32, 0x001ECBEC, 0x3C607F7F] 
+  "Puzzle Keypad Timer Never Decreases":
     Games:
-      "Captain America™: Super Soldier (Artemis)":
-        BLUS30642: [ 01.00]
-    Author: bungholio Ported by ChiDreams
-    Notes: (Type Code ASM)
-    Patch Version: 1.0
-    Group: 
+      "Captain America: Super Soldier (Artemis)":
+        BLUS30642: [ 01.00 ]
+    Author:  Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
     Patch:
-      - [ be32,0x000F4DA8,0x60000000] 
+      - [ be32,0x000F4DA8,0x60000000]        
+  "1 Hit Kill":
+    Games:
+      "Captain America: Super Soldier (Artemis)":
+        BLUS30642: [ 01.00 ]
+    Author: GuitarMan Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x000CE544, 0xEC210828]       
