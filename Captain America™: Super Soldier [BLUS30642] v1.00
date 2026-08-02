@@ -12,7 +12,7 @@ PPU-0e5cf068859287fa06e6ee2b09d892c42ee911a2:
     Notes: 
     Patch Version: 1.2
     Patch:
-      - [ be32,0x000CE560,0x60000000]  
+      - [ be32,0x000CE560, 0x60000000 ]  
   "Lot Of Info Points On Gain":
     Games:
       "Captain America: Super Soldier (Artemis)":
@@ -21,7 +21,7 @@ PPU-0e5cf068859287fa06e6ee2b09d892c42ee911a2:
     Notes: 
     Patch Version: 1.2
     Patch:
-      - [ be32, 0x001E8450,0x90050008]
+      - [ be32, 0x001E8450, 0x90050008 ]
   "Infinite Focus":
     Games:
       "Captain America: Super Soldier (Artemis)":
@@ -30,7 +30,7 @@ PPU-0e5cf068859287fa06e6ee2b09d892c42ee911a2:
     Notes: 
     Patch Version: 1.2
     Patch:
-      - [ be32, 0x000D46CC, 0x60000000] 
+      - [ be32, 0x000D46CC, 0x60000000 ] 
   "Instant Max Focus On Dodge":
     Games:
       "Captain America: Super Soldier (Artemis)":
@@ -39,7 +39,7 @@ PPU-0e5cf068859287fa06e6ee2b09d892c42ee911a2:
     Notes: 
     Patch Version: 1.2
     Patch:
-      - [ be32, 0x000D4E18, 0xD3FF0008] 
+      - [ be32, 0x000D4E18, 0xD3FF0008 ] 
   "Max Intel Points":
     Games:
       "Captain America: Super Soldier (Artemis)":
@@ -48,7 +48,7 @@ PPU-0e5cf068859287fa06e6ee2b09d892c42ee911a2:
     Notes: 
     Patch Version: 1.2
     Patch:
-      - [ be32, 0x001ECBEC, 0x3C607F7F] 
+      - [ be32, 0x001ECBEC, 0x3C607F7F ] 
   "Puzzle Keypad Timer Never Decreases":
     Games:
       "Captain America: Super Soldier (Artemis)":
@@ -57,7 +57,7 @@ PPU-0e5cf068859287fa06e6ee2b09d892c42ee911a2:
     Notes: 
     Patch Version: 1.2
     Patch:
-      - [ be32,0x000F4DA8,0x60000000]        
+      - [ be32, 0x000F4DA8, 0x60000000 ]        
   "1 Hit Kill":
     Games:
       "Captain America: Super Soldier (Artemis)":
@@ -66,4 +66,36 @@ PPU-0e5cf068859287fa06e6ee2b09d892c42ee911a2:
     Notes: 
     Patch Version: 1.2
     Patch:
-      - [ be32, 0x000CE544, 0xEC210828]       
+      - [ be32, 0x000CE544, 0xEC210828 ]
+  "Invincibility":
+    Games:
+      "Captain America: Super Soldier (Artemis)":
+        BLUS30642: [ 01.00 ]
+    Author: GuitarMan Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x007E6C30, 0x3F000091 ]
+      - [ be32,0x007E6C34, 0x83181FE4 ]
+      - [ be32,0x007E6C38, 0x3318FEE0 ]
+      - [ be32,0x007E6C3C, 0x7C18E800 ]
+      - [ be32,0x007E6C40, 0x41820008 ]
+      - [ be32,0x007E6C44, 0x4BC6CE0D ]
+      - [ be32,0x007E6C48, 0x480B9A2E ]
+      - [ be32,0x000B9A28, 0x487E6C32 ]       
+  "Press L3 To Fully Refills Focus Meter":
+    Games:
+      "Captain America: Super Soldier (Artemis)":
+        BLUS30642: [ 01.00 ]
+    Author: GuitarMan Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x007E6C70, 0xC0430008 ]
+      - [ be32, 0x007E6C74, 0x3CA0302E ]
+      - [ be32, 0x007E6C78, 0x88A5A282 ]
+      - [ be32, 0x007E6C7C, 0x2C050001 ]
+      - [ be32, 0x007E6C80, 0x40820008 ]
+      - [ be32, 0x007E6C84, 0xD0230008 ]
+      - [ be32, 0x007E6C88, 0x480D473A ]
+      - [ be32, 0x000D4734, 0x487E6C72 ]
