@@ -1,0 +1,468 @@
+# Title: RESIDENT EVIL THE UMBRELLA CHRONICLES
+# Serial: NPUB30650
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.02
+# Localized Title: RESIDENT EVIL THE UMBRELLA CHRONICLES
+# Vulkan SDK Revision: 341      
+Anchors:
+  RESIDENTEVILTUC: &RESIDENTEVILTUC
+    - [ be32,0x002C73E0,0x38000000]
+    - [ be32,0x002C73E4,0x90030000]
+  RESIDENTEVILTUC2: &RESIDENTEVILTUC2
+    - [ be32,0x002CDC0C,0x60000000]
+  RESIDENTEVILTUC3: &RESIDENTEVILTUC3 
+    - [ be32,0x0023892C,0x60000000]
+  RESIDENTEVILTUC4: &RESIDENTEVILTUC4
+    - [ be32,0x002CDC58,0x60000000]
+    - [ be32,0x002CDD7C,0x60000000]
+    - [ be32,0x002C2914,0x60000000]
+    - [ be32,0x002CDB8C,0x60000000]
+  RESIDENTEVILTUC5: &RESIDENTEVILTUC5
+    - [ be32,0x005EDB54,0x83FE0480]
+    - [ be32,0x005EDB58,0x2F990004]
+    - [ be32,0x005EDB5C,0x409E0058]
+    - [ be32,0x005EDB60,0x48000020]
+    - [ be32,0x005EDB80,0x2F9F0000]
+    - [ be32,0x005EDB84,0x409E0028]
+    - [ be32,0x005EDB88,0x3BE00014]
+    - [ be32,0x005EDB8C,0x4800007C]
+    - [ be32,0x005EDBAC,0x3BFFFFFF]
+    - [ be32,0x005EDBB0,0x48000058]
+    - [ be32,0x005EDBB4,0x2F9F0014]
+    - [ be32,0x005EDBB8,0x48000020]
+    - [ be32,0x005EDBD8,0x409E002C]
+    - [ be32,0x005EDBDC,0x3BE00000]
+    - [ be32,0x005EDBE0,0x48000028]
+    - [ be32,0x005EDC04,0x3BFF0001]
+    - [ be32,0x005EDC08,0x63E30000]
+    - [ be32,0x005EDC0C,0x609F0000]
+    - [ be32,0x005EDC10,0x482CDF06]
+    - [ be32,0x002CDF00,0x485EDB56]
+  RESIDENTEVILTUC6: &RESIDENTEVILTUC6
+    - [ be32,0x001C8FD0,0xEC631828]
+  RESIDENTEVILTUC7: &RESIDENTEVILTUC7
+    - [ be32,0x0011C074,0xEC210828]
+  RESIDENTEVILTUC8: &RESIDENTEVILTUC8
+    - [ be32,0x0020BD80,0xEC210828]
+  RESIDENTEVILTUC9: &RESIDENTEVILTUC9
+    - [ be32,0x001EBD1C,0xEC210828]
+  RESIDENTEVILTUC10: &RESIDENTEVILTUC10
+    - [ be32,0x001B7A38,0xEC210828]
+  RESIDENTEVILTUC11: &RESIDENTEVILTUC11
+    - [ be32,0x001ACDC8,0xEC210828]
+  RESIDENTEVILTUC12: &RESIDENTEVILTUC12
+    - [ be32,0x00188A98,0xEC210828]
+  RESIDENTEVILTUC13: &RESIDENTEVILTUC13
+    - [ be32,0x0019C688,0xEC210828]
+  RESIDENTEVILTUC14: &RESIDENTEVILTUC14
+    - [ be32,0x001D397C,0xEC210828]
+  RESIDENTEVILTUC15: &RESIDENTEVILTUC15
+    - [ be32,0x001E18C8,0xEFDEF028]
+  RESIDENTEVILTUC16: &RESIDENTEVILTUC16
+    - [ be32,0x001FC3B8,0xEC210828]
+  RESIDENTEVILTUC17: &RESIDENTEVILTUC17
+    - [ be32,0x001BE344,0xEC210828]
+  RESIDENTEVILTUC18: &RESIDENTEVILTUC18
+    - [ be32,0x0010EB78,0xEC210828]
+  RESIDENTEVILTUC19: &RESIDENTEVILTUC19
+    - [ be32,0x00179F5C,0xEC210828]
+  RESIDENTEVILTUC20: &RESIDENTEVILTUC20
+    - [ be32,0x000F559C,0xEC210828]
+  RESIDENTEVILTUC21: &RESIDENTEVILTUC21
+    - [ be32,0x00112EF8,0xEC210828]
+  RESIDENTEVILTUC22: &RESIDENTEVILTUC22
+    - [ be32,0x0022F460,0x30A5000A]
+  RESIDENTEVILTUC23: &RESIDENTEVILTUC23
+    - [ be32,0x0022F5C8,0x30A5000A]
+  RESIDENTEVILTUC24: &RESIDENTEVILTUC24
+    - [ be32,0x0022F514,0x30A5000A]
+  RESIDENTEVILTUC25: &RESIDENTEVILTUC25
+    - [ be32,0x0022F388,0x60000000]
+    - [ be32,0x0022F3B8,0x920301E0]
+  RESIDENTEVILTUC26: &RESIDENTEVILTUC26
+    - [ be32,0x002A86B8,0x3860270F]
+  RESIDENTEVILTUC27: &RESIDENTEVILTUC27
+    - [ be32,0x00290F28,0x38600001]
+    - [ be32,0x002A3100,0x38800001]
+    - [ be32,0x002A3AD4,0x38600001]
+  RESIDENTEVILTUC28: &RESIDENTEVILTUC28
+    - [ be32,0x002A3298,0x3BC00001]
+  RESIDENTEVILTUC29: &RESIDENTEVILTUC29
+    - [ be32,0x002A3550,0x38600001]
+  RESIDENTEVILTUC30: &RESIDENTEVILTUC30
+    - [ be32,0x002A3810,0x38600001]
+  RESIDENTEVILTUC31: &RESIDENTEVILTUC31
+    - [ be32,0x002A3C00,0x38600001]
+  RESIDENTEVILTUC32: &RESIDENTEVILTUC32
+    - [ be32,0x0028BA9C,0x3BE00003]
+    - [ be32,0x0028BAA0,0x93FA0000]
+    - [ be32,0x0028BAA4,0x4800003C]
+  RESIDENTEVILTUC33: &RESIDENTEVILTUC33
+    - [ be32,0x0028AFA8,0x3BE00007]
+    - [ be32,0x0028AFAC,0x93F90000]
+    - [ be32,0x0028AFB0,0x4800003C]
+  RESIDENTEVILTUC34: &RESIDENTEVILTUC34
+    - [ be32,0x0028D27C,0x38600001]
+    - [ be32,0x0028D280,0x7C7FC1AE]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "Health Never Decreases":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "Never Reload":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC2 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "Total Ammo Never Decreases":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC3 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "Rapid Fire":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC4 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "Weapon Modifier":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: The displayed weapon name will be different than what you are actually using. This code will change your weapon type so you can use any type.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC5 ]
+# The weapons are ordered like this
+# 0000 = Samurai Edge 2
+# 0001 = Assault Shotgun
+# 0002 = Submachine Gun
+# 0003 = Unknown
+# 0004 = MRL
+# 0005 = Hand Grenade
+# 0006 = Nothing
+# 0007 = Grenade Launcher
+# 0008 = Magnum Revolver
+# 0009 = Shotgun
+# 000A = Automatic Pistol
+# 000B = Grenade Launcher AT
+# 000C = Magnum AT
+# 000D = Rocket Launcher
+# 000E = Shotgun SA
+# 000F = Submachine Gun HP
+# 0010 = Grenade Launcher HP
+# 0011 = Hand Cannon
+# 0012 = Anti-tank Gun
+# 0013 = Unknown
+# 0014 = Unknown
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "Boss Scorpion Dies From Any Damage":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC6 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "Boss Bat Dies From Any Damage":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC7 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "Boss Snake Dies From Any Damage":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC8 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "Boss Tyrant Dies From Any Damage":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC9 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "Boss Leech Final Fight Dies From Any Damage":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC10 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "Boss Plant Dies From Any Damage":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC11 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "Boss Worm Dies From Any Damage":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC12 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "Boss Nemesis Dies From Any Damage":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC13 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "Boss Talos Form 1 Dies From Any Damage":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC14 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "Boss Talos Form 2 Dies From Any Damage":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC15 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "Boss Twins Die From Any Damage":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC16 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "Boss White-Haired Guy Dies From Any Damage":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC17 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "Leech Zombies Die From Any Damage":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC18 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "Zombies + Crimson Zombies + Dogs + Full Hunters + Chimeras + Lickers + Tyrants + Nemesis + Lisa Trevor Die From Any Damage":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC19 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "Eliminators Die From Any Damage":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC20 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "Spiders Die From Any Damage":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC21 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "10x Enemies Killed Multiplier":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC22 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "10x Items Broken Multiplier":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC23 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "10x Critical Hits Multiplier":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC24 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "Time Never Increases":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC25 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "9,999 Stars On Use":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: This does not save.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC26 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "Can Access All Chapters":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: This does not save.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC27 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "Can Access Archives":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: This does not save.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC28 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "Can Access Customize":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: This does not save.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC29 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "Can Access Results":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: This does not save.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC30 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "Can Access Credits":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: This does not save.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC31 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "Can Access All Archive Items":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: This does not save.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC32 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "Can Access All Archive Books":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: This does not save.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC33 ]
+PPU-f0618d75a06af4bd5df8c1499ccc0cc5dbc0acd5:
+  "Can Access All Archive Chapters":
+    Games:
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES (Artemis)":
+        NPUB30650: [ 01.00]
+    Author: bungholio Ported by ChiDreams
+    Notes: This does not save.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RESIDENTEVILTUC34 ] 
