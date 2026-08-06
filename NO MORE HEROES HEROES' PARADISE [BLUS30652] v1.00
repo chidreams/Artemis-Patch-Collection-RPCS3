@@ -1,0 +1,34 @@
+# Title: NO MORE HEROES HEROES' PARADISE
+# Serial: BLUS30652
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.01
+PPU-5d42a6d30c89d449eb2ba9988d5c76eb8cc0cd6c:
+  "Max Money":
+    Games:
+      "NO MORE HEROES HEROES PARADISE (Artemis)":
+        BLUS30652: [ 01.00 ]
+    Author: Serp87 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+    - [ be32,0x002EFC14,0x90431FBC]
+PPU-5d42a6d30c89d449eb2ba9988d5c76eb8cc0cd6c:
+  "Infinite Electricity":
+    Games:
+      "NO MORE HEROES HEROES PARADISE (Artemis)":
+        BLUS30652: [ 01.00 ]
+    Author: Serp87 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+    - [ be32,0x002EA54C,0xB0250000]
+PPU-5d42a6d30c89d449eb2ba9988d5c76eb8cc0cd6c:
+  "Infinite Health":
+    Games:
+      "NO MORE HEROES HEROES PARADISE (Artemis)":
+        BLUS30652: [ 01.00 ]
+    Author: Serp87 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+    - [ be32,0x002FBF54,0x60000000]
