@@ -1,0 +1,165 @@
+# Title: Silent Hill Downpour
+# Serial: BLUS30565
+# Category: GD
+# Version: APP_VER=01.01 VERSION=01.01      
+PPU-11f50d10f4626cdd59837e2fe44b701a9d9bfeac:
+  "Endless ammo":
+    Games:
+      "Silent Hill Downpour (Artemis)":
+        BLUS30565: [ 01.01 ]
+    Author: Ported By ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x008AA17C, 0x498D75F6 ]
+      - [ be32, 0x018D75F4, 0x2B870002 ]
+      - [ be32, 0x018D75F8, 0x409E0008 ]
+      - [ be32, 0x018D75FC, 0x38E00001 ]
+      - [ be32, 0x018D7600, 0x90FB02E8 ]
+      - [ be32, 0x018D7604, 0x488AA182 ]      
+  "Infinite health":
+    Games:
+      "Silent Hill Downpour (Artemis)":
+        BLUS30565: [ 01.01 ]
+    Author: Ported By ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x00B52768, 0x498D7642 ]
+      - [ be32, 0x018D7640, 0x7F9A1840 ]
+      - [ be32, 0x018D7644, 0x409E0008 ]
+      - [ be32, 0x018D7648, 0x3880270F ]
+      - [ be32, 0x018D764C, 0x909A006C ]
+      - [ be32, 0x018D7650, 0x48B5276E ]
+      - [ be32, 0x00A2D338, 0x498D76B6 ]
+      - [ be32, 0x018D76B4, 0x7F9F1840 ]
+      - [ be32, 0x018D76B8, 0x409E0008 ]
+      - [ be32, 0x018D76BC, 0x3900270F ]
+      - [ be32, 0x018D76C0, 0x911F02E8 ]
+      - [ be32, 0x018D76C4, 0x48A2D33E ]     
+  "Rapid Fire":
+    Games:
+      "Silent Hill Downpour (Artemis)":
+        BLUS30565: [ 01.01 ]
+    Author: Mulit Ported By ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32, 0x00AEFFF0, 0x60000000 ]
+  "Weapons Never Break":
+    Games:
+      "Silent Hill Downpour (Artemis)":
+        BLUS30565: [ 01.01 ]
+    Author: Mulit Ported By ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32, 0x0089BB18, 0x60000000 ]
+  "Flashlights Always Have UV Light Option":
+    Games:
+      "Silent Hill Downpour (Artemis)":
+        BLUS30565: [ 01.01 ]
+    Author: Mulit Ported By ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32, 0x008A3948, 0x38600002 ]
+      - [ be32, 0x008A4158, 0x38800002 ]
+  "Increased Flashlight Beam Brightness":
+    Games:
+      "Silent Hill Downpour (Artemis)":
+        BLUS30565: [ 01.01 ]
+    Author: Mulit Ported By ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32, 0x008A3AA0, 0x3C804080 ]
+      - [ be32, 0x008A3AA4, 0x90830100 ]
+  "Increased Flashlight Light Radius":
+    Games:
+      "Silent Hill Downpour (Artemis)":
+        BLUS30565: [ 01.01 ]
+    Author: Mulit Ported By ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32, 0x008A3AC4, 0x3C80447A ]
+      - [ be32, 0x008A3Ac8, 0x90830228 ]
+  "Increased Flashlight Beam Distance":
+    Games:
+      "Silent Hill Downpour (Artemis)":
+        BLUS30565: [ 01.01 ]
+    Author: Mulit Ported By ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32, 0x008A3AD0, 0x3C804700 ]
+      - [ be32, 0x008A3AD4, 0x908301AC ]
+  "Increased UV Light Brightness":
+    Games:
+      "Silent Hill Downpour (Artemis)":
+        BLUS30565: [ 01.01 ]
+    Author: Mulit Ported By ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32, 0x008A3AB0, 0x3CA04080 ]
+      - [ be32, 0x008A3AB8, 0x90A30100 ] 
+  "Increased UV Light Radius":
+    Games:
+      "Silent Hill Downpour (Artemis)":
+        BLUS30565: [ 01.01 ]
+    Author: Mulit Ported By ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32, 0x008A39D8, 0x3CA0447A ]
+      - [ be32, 0x008A39DC, 0x90A30228 ]
+  "Increased UV Light Beam Distance":
+    Games:
+      "Silent Hill Downpour (Artemis)":
+        BLUS30565: [ 01.01 ]
+    Author: Mulit Ported By ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32, 0x008A39E4, 0x3CA04700 ]
+      - [ be32, 0x008A39E8, 0x90A301AC ]
+  "Enemies Do Not Chase You":
+    Games:
+      "Silent Hill Downpour (Artemis)":
+        BLUS30565: [ 01.01 ]
+    Author: Mulit Ported By ChiDreams
+    Notes: They will still attempt to attack if you get close enough to them.
+    Patch Version: 1.2 
+    Patch:
+      - [ be32, 0x0037DA68, 0x38600001 ]
+  "Can Fire Weapons Without Ammo":
+    Games:
+      "Silent Hill Downpour (Artemis)":
+        BLUS30565: [ 01.01 ]
+    Author: Mulit Ported By ChiDreams
+    Notes: Ammo still decreases. I found it for the purpose of testing a picked up weapon modifier.
+    Patch Version: 1.2 
+    Patch:
+      - [ be32, 0x00ACF598, 0x60000000 ]
+  "Infinite Ammo":
+    Games:
+      "Silent Hill Downpour (Artemis)":
+        BLUS30565: [ 01.01 ]
+    Author: Mulit Ported By ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32, 0x0087E0E0, 0x60000000 ]
+  "Items Do Not Decrease":
+    Games:
+      "Silent Hill Downpour (Artemis)":
+        BLUS30565: [ 01.01 ]
+    Author: Mulit Ported By ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32, 0x008784B8, 0x60000000 ]
+      - [ be32, 0x008784C0, 0x60000000 ]
+      - [ be32, 0x008784D4, 0x30630000 ] 
