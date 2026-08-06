@@ -1,0 +1,279 @@
+# Title: Persona 5
+# Serial: NPUB31848
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.00
+Anchors:
+  Persona5: &Persona5
+    - [ be32,0x0024B35C,0x48000008]
+    - [ be32,0x0024B3A0,0x60000000]
+  Persona52: &Persona52
+    - [ be32,0x002619F0,0x48000008]
+    - [ be32,0x00261B38,0x48000008] # This line affects Skill Cards. 
+  Persona53: &Persona53
+    - [ be32,0x0025B564,0x60000000]
+  Persona54: &Persona54
+    - [ be32,0x001EEC40,0x38A000C8]
+  Persona55: &Persona55
+    - [ be32,0x000491C0,0x60000000]
+  Persona56: &Persona56
+    - [ be32,0x00048F84,0x60000000]
+    - [ be32,0x0004A6E4,0x60000000]
+  Persona57: &Persona57
+    - [ be32,0x00549D2C,0x1C8403E8]
+  Persona58: &Persona58
+    - [ be32,0x0025B874,0x38A00063]
+  Persona59: &Persona59
+    - [ be32,0x0073F81C,0x1C6303E8]
+  Persona510: &Persona510
+    - [ be32,0x003FA988,0x809F0004]
+    - [ be32,0x003FA98C,0x1C8403E8]
+  Persona511: &Persona511
+    - [ be32,0x00B65120,0x1C8403E8]
+    - [ be32,0x00B65124,0x7C852014]
+    - [ be32,0x00B65128,0x4B6F6E64]
+    - [ be32,0x0025BF88,0x48909198]
+  Persona512: &Persona512
+    - [ be32,0x00B65100,0x2C080000]
+    - [ be32,0x00B65104,0x41820010]
+    - [ be32,0x00B65108,0x386003E7]
+    - [ be32,0x00B6510C,0x9068000C]
+    - [ be32,0x00B65110,0x90680010]
+    - [ be32,0x00B65114,0x80660008]
+    - [ be32,0x00B65118,0x4B72B604]
+    - [ be32,0x00290718,0x488D49E8]
+  Persona513: &Persona513
+    - [ be32,0x00B65130,0x2C03020C]
+    - [ be32,0x00B65134,0x40820008]
+    - [ be32,0x00B65138,0x38800000]
+    - [ be32,0x00B6513C,0x7C85192E]
+    - [ be32,0x00B65140,0x4B6E6920]
+    - [ be32,0x0024BA5C,0x489196D4]
+  Persona514: &Persona514
+    - [ be32,0x00B65160,0x2C1F0000]
+    - [ be32,0x00B65164,0x41820044]
+    - [ be32,0x00B65168,0x2C1F00D0]
+    - [ be32,0x00B6516C,0x4182003C]
+    - [ be32,0x00B65170,0x2C1F00D1]
+    - [ be32,0x00B65174,0x41820034]
+    - [ be32,0x00B65178,0x2C1F010E]
+    - [ be32,0x00B6517C,0x4182002C]
+    - [ be32,0x00B65180,0x2C1F0135]
+    - [ be32,0x00B65184,0x41820024]
+    - [ be32,0x00B65188,0x2C1F013E]
+    - [ be32,0x00B6518C,0x4182001C]
+    - [ be32,0x00B65190,0x2C1F014F]
+    - [ be32,0x00B65194,0x41820014]
+    - [ be32,0x00B65198,0x2C1F0170]
+    - [ be32,0x00B6519C,0x40800014]
+    - [ be32,0x00B651A0,0x38000063]
+    - [ be32,0x00B651A4,0x98031100]
+    - [ be32,0x00B651A8,0x88631100]
+    - [ be32,0x00B651AC,0x4E800020]
+    - [ be32,0x00B651B0,0x2C1F0181]
+    - [ be32,0x00B651B4,0x4081FFF4]
+    - [ be32,0x00B651B8,0x4BFFFFE8]
+    - [ be32,0x00261808,0x48903959]
+  Persona515: &Persona515
+    - [ be32,0x00B65200,0x2C080000]
+    - [ be32,0x00B65204,0x41820054]
+    - [ be32,0x00B65208,0x2C080040]
+    - [ be32,0x00B6520C,0x41820058]
+    - [ be32,0x00B65210,0x2C080080]
+    - [ be32,0x00B65214,0x4182005C]
+    - [ be32,0x00B65218,0x2C0800C0]
+    - [ be32,0x00B6521C,0x41820060]
+    - [ be32,0x00B65220,0x2C080100]
+    - [ be32,0x00B65224,0x41820064]
+    - [ be32,0x00B65228,0x2C080140]
+    - [ be32,0x00B6522C,0x41820068]
+    - [ be32,0x00B65230,0x2C080180]
+    - [ be32,0x00B65234,0x4182006C]
+    - [ be32,0x00B65238,0x2C0801C0]
+    - [ be32,0x00B6523C,0x41820070]
+    - [ be32,0x00B65240,0x2C080200]
+    - [ be32,0x00B65244,0x41820074]
+    - [ be32,0x00B65248,0x2C080240]
+    - [ be32,0x00B6524C,0x41820078]
+    - [ be32,0x00B65250,0x80870000]
+    - [ be32,0x00B65254,0x4BA7C0A4]
+    - [ be32,0x00B65258,0x388000FD]
+    - [ be32,0x00B6525C,0x90870004]
+    - [ be32,0x00B65260,0x4BFFFFF0]
+    - [ be32,0x00B65264,0x388000FD]
+    - [ be32,0x00B65268,0x90870004]
+    - [ be32,0x00B6526C,0x4BFFFFE4]
+    - [ be32,0x00B65270,0x388000FD]
+    - [ be32,0x00B65274,0x90870004]
+    - [ be32,0x00B65278,0x4BFFFFD8]
+    - [ be32,0x00B6527C,0x388000FD]
+    - [ be32,0x00B65280,0x90870004]
+    - [ be32,0x00B65284,0x4BFFFFCC]
+    - [ be32,0x00B65288,0x388000FD]
+    - [ be32,0x00B6528C,0x90870004]
+    - [ be32,0x00B65290,0x4BFFFFC0]
+    - [ be32,0x00B65294,0x388000FD]
+    - [ be32,0x00B65298,0x90870004]
+    - [ be32,0x00B6529C,0x4BFFFFB4]
+    - [ be32,0x00B652A0,0x388000FD]
+    - [ be32,0x00B652A4,0x90870004]
+    - [ be32,0x00B652A8,0x4BFFFFA8]
+    - [ be32,0x00B652AC,0x388000FD]
+    - [ be32,0x00B652B0,0x90870004]
+    - [ be32,0x00B652B4,0x4BFFFF9C]
+    - [ be32,0x00B652B8,0x388000FD]
+    - [ be32,0x00B652BC,0x90870004]
+    - [ be32,0x00B652C0,0x4BFFFF90]
+    - [ be32,0x00B652C4,0x388000FD]
+    - [ be32,0x00B652C8,0x90870004]
+    - [ be32,0x00B652CC,0x4BFFFF84]
+    - [ be32,0x005E12F4,0x48583F0C]
+PPU-e72e715d646a94770d1902364bc66fe33b1b6606:
+  "Max Money On Change":
+    Games:
+      "Persona 5 (Artemis)":
+        NPUB31848: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: Money might appear as 0 in in the shop windows if you turn this on while playing. That can be fixed closing and re-entering the shop windows.
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *Persona5 ]
+PPU-e72e715d646a94770d1902364bc66fe33b1b6606:
+  "Max Items On Change Or Gain":
+    Games:
+      "Persona 5 (Artemis)":
+        NPUB31848: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: It also affects rented stuff in the story, and you get to keep the extras you normally get from paying the fee if you forgot to bring the dvd or whatever back.
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *Persona52 ]
+PPU-e72e715d646a94770d1902364bc66fe33b1b6606:
+  "100% Drop Rate":
+    Games:
+      "Persona 5 (Artemis)":
+        NPUB31848: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: Max All MC Social Parameters After Change
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *Persona53 ]
+PPU-e72e715d646a94770d1902364bc66fe33b1b6606:
+  "Max All MC Social Parameters After Change":
+    Games:
+      "Persona 5 (Artemis)":
+        NPUB31848: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *Persona54 ]
+PPU-e72e715d646a94770d1902364bc66fe33b1b6606:
+  "Stop Day Date Advance":
+    Games:
+      "Persona 5 (Artemis)":
+        NPUB31848: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: This code helps make the date loop on the same day, so an event that happened in this day will keep repeating itself without affecting the end of the story giving you free time during afternoons or other moments to boost arcana and so on. De-activate it to continue story mode.
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *Persona55 ]
+PPU-e72e715d646a94770d1902364bc66fe33b1b6606:
+  "Stop Time Flow":
+    Games:
+      "Persona 5 (Artemis)":
+        NPUB31848: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: This is the same Stop Day Date Advance, but will only lock in the time you activated it at, like mid afternoon or evening then it will keep on a loop in this time. Both lacks a button combo to be activated or deactivated mid-game without netcheat. It is safe to use and de-activate through netcheat any time.
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *Persona56 ]
+PPU-e72e715d646a94770d1902364bc66fe33b1b6606:
+  "Arcana Experience Multiplier (Vows And Friendship)":
+    Games:
+      "Persona 5 (Artemis)":
+        NPUB31848: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: Only tested to x16 times, it boosts friendship gained through events making it easier to boost arcana and vow levels faster.
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *Persona57 ]
+PPU-e72e715d646a94770d1902364bc66fe33b1b6606:
+  "Infinite Ammo In Dungeon":
+    Games:
+      "Persona 5 (Artemis)":
+        NPUB31848: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: Only infinite amount, not infinite shooting per turn until enemy dies.
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *Persona58 ]
+PPU-e72e715d646a94770d1902364bc66fe33b1b6606:
+  "Money Gained Per Battle Multiplier":
+    Games:
+      "Persona 5 (Artemis)":
+        NPUB31848: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: This one shows the amount gained after battle(already multiplied).
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *Persona59 ]
+PPU-e72e715d646a94770d1902364bc66fe33b1b6606:
+  "MC And Protagonist Exp Gained Multiplier":
+    Games:
+      "Persona 5 (Artemis)":
+        NPUB31848: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: Protagonist gained exp is usually not visible after battle but added later.
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *Persona510 ]
+PPU-e72e715d646a94770d1902364bc66fe33b1b6606:
+  "Persona + Partners And Other Exp Gained Multiplier":
+    Games:
+      "Persona 5 (Artemis)":
+        NPUB31848: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *Persona511 ]
+PPU-e72e715d646a94770d1902364bc66fe33b1b6606:
+  "Infinite HP + SP v2":
+    Games:
+      "Persona 5 (Artemis)":
+        NPUB31848: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: It has a minor visual glitch when attacked usually on the character in the left, the heart icon will appear with a half-heart near it or something, but game is playable with this active
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *Persona512 ]
+PPU-e72e715d646a94770d1902364bc66fe33b1b6606:
+  "Detection Gauge Always 0":
+    Games:
+      "Persona 5 (Artemis)":
+        NPUB31848: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: This code helps with palace exploration, but once you are ready to send the calling card, de-activate this one or the game will lock in a loop trying to fill the detection gauge to 99 since all boss parts it needs to force detection to the highest.
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *Persona513 ]
+PPU-e72e715d646a94770d1902364bc66fe33b1b6606:
+  "Have All Cards (No dummy cards)":
+    Games:
+      "Persona 5 (Artemis)":
+        NPUB31848: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *Persona514 ]
+PPU-e72e715d646a94770d1902364bc66fe33b1b6606:
+  "Fused Persona Result Modifier":
+    Games:
+      "Persona 5 (Artemis)":
+        NPUB31848: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *Persona515]
