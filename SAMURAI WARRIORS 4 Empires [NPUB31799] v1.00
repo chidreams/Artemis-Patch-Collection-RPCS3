@@ -1,0 +1,65 @@
+# Title: SAMURAI WARRIORS 4 Empires
+# Serial: NPUB31799
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.01
+PPU-d2b8b61ff1de957ffefe3838e03addb842675c66:
+  "Infinite HP":
+    Games:
+      "SAMURAI WARRIORS 4 Empires (Artemis)":
+        NPUB31799: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0081EDF0,0x80A30030]
+    - [ be32,0x0081EDF4,0x90A30034]
+    - [ be32,0x0081EDF8,0x80630034]
+    - [ be32,0x0081EDFC,0x4E800020]
+    - [ be32,0x003227E8,0x484FC609]
+  "Max-Infinite Musou":
+    Games:
+      "SAMURAI WARRIORS 4 Empires (Artemis)":
+        NPUB31799: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0081EF1C,0xC03C0038]
+    - [ be32,0x0081EF20,0xD03C003C]
+    - [ be32,0x0081EF24,0xC03C003C]
+    - [ be32,0x0081EF28,0x4E800020]
+    - [ be32,0x00327568,0x484F79B5]
+  "Max-Infinite Rage":
+    Games:
+      "SAMURAI WARRIORS 4 Empires (Artemis)":
+        NPUB31799: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0081F03C,0xC0360040]
+    - [ be32,0x0081F040,0xD0360044]
+    - [ be32,0x0081F044,0xC0360044]
+    - [ be32,0x0081F048,0x4E800020]
+    - [ be32,0x003222DC,0x484FCD61]
+  "Total Combo-Chain Always X9999":
+    Games:
+      "SAMURAI WARRIORS 4 Empires (Artemis)":
+        NPUB31799: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00119298,0x60000000]
+  "Total Enemies K.O.s Always X9999":
+    Games:
+      "SAMURAI WARRIORS 4 Empires (Artemis)":
+        NPUB31799: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0081F40C,0x38A0270F]
+    - [ be32,0x0081F410,0x90BD005C]
+    - [ be32,0x0081F414,0x4E800020]
+    - [ be32,0x0004EBF4,0x487D0819]
