@@ -1,0 +1,53 @@
+# Title: Gatling Gears
+# Serial: NPUB30454
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.00
+PPU-4d0a2910ebf1c1fa5169c91227b45b3d4520ce2f:
+  "Infinite Life + Grenades + Missiles + Spark Shots":
+    Games:
+      "Gatling Gears (Artemis)":
+        NPUB30454: [ 01.00 ]
+    Author: jgduff1 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+    - [ be32,0x002E7204,0x7C0E0050]
+    - [ be32,0x002E720C,0x90090008]
+  "Infinite Health":
+    Games:
+      "Gatling Gears (Artemis)":
+        NPUB30454: [ 01.00 ]
+    Author: jgduff1 Ported by ChiDreams
+    Notes: Also affects enemies, but the Spark Shot can still kill various enemies.
+    Patch Version: 1.2 
+    Patch:
+    - [ be32,0x002E5BF8,0x60000000]
+    - [ be32,0x002E5C00,0x7C0E0050]
+  "Lots Of Bolt On Gain":
+    Games:
+      "Gatling Gears (Artemis)":
+        NPUB30454: [ 01.00 ]
+    Author: jgduff1 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+    - [ be32,0x002DF60C,0xF9A30038]
+  "Max + Infinite Gold On Buy":
+    Games:
+      "Gatling Gears (Artemis)":
+        NPUB30454: [ 01.00 ]
+    Author: jgduff1 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+    - [ be32,0x0003D4A0,0x7D440214]
+    - [ be32,0x0003D4A4,0x91430008]
+  "Max XP On Gain + Unlock All":
+    Games:
+      "Gatling Gears (Artemis)":
+        NPUB30454: [ 01.00 ]
+    Author: jgduff1 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+    - [ be32,0x002DF9D8,0x904302FC]
