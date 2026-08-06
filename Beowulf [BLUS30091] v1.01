@@ -1,0 +1,44 @@
+# Title: Beowulf
+# Serial: BLUS30091
+# Category: DG
+# Version: APP_VER=01.01 VERSION=01.01
+PPU-b823ea0c3c8b825c5ca5ceadf1453de4d091a63a:
+  "Infinite Health":
+    Games:
+      "Beowulf (Artemis)":
+        BLUS30091: [ 01.01 ]
+    Author: jgduff1 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+    - [ be32,0x00B2ADF4,0x60000000]
+  "Instant Max Heroic Spheres":
+    Games:
+      "Beowulf (Artemis)":
+        BLUS30091: [ 01.01 ]
+    Author: jgduff1 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+    - [ be32,0x00A41C24,0xEC3F082A]
+  "Heroic Effect Always On":
+    Games:
+      "Beowulf (Artemis)":
+        BLUS30091: [ 01.01 ]
+    Author: jgduff1 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+    - [ be32,0x00A41C34,0xD3DD0000]
+  "Never Lose Warriors":
+    Games:
+      "Beowulf (Artemis)":
+        BLUS30091: [ 01.01 ]
+    Author: jgduff1 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+    - [ be32,0x0002AF1C,0x90030004]
+    - [ be32,0x0002C1D0,0x90FC0004]
+    - [ be32,0x0002C510,0x7CBA3850]
+    - [ be32,0x0002C514,0x90FC0004]
