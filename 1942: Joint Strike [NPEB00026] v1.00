@@ -1,0 +1,32 @@
+# Title: 1942: Joint Strike
+# Serial: NPEB00026
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.02
+PPU-163549855707b25d166599b09731a4bd83f1db8a:
+  "Infinite Strike":
+    Games:
+      "1942: Joint Strike (Artemis)":
+        NPEB00026: [ 01.00 ]
+    Author: optantic Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+     - [ be32,0x0009A2F4,0x60000000]
+  "Infinite Health":
+    Games:
+      "1942: Joint Strike (Artemis)":
+        NPEB00026: [ 01.00 ]
+    Author: optantic Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+     - [ be32,0x0009A800,0x60000000]
+  "Add Charged Attack To Firepower":
+    Games:
+      "1942: Joint Strike (Artemis)":
+        NPEB00026: [ 01.00 ]
+    Author: optantic Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+     - [ be32,0x0009DF20,0xD13F0D8C]
