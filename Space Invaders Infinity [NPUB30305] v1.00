@@ -1,0 +1,55 @@
+# Title: SPACE INVADERS INFINITY GENE
+# Serial: NPUB30305
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.00
+PPU-e4acdea9ec14549b10ddadaa90625cd9c3cc4cad:
+  "Max Score":
+    Games:
+      "SPACE INVADERS INFINITY GENE (Artemis)":
+        NPUB30305: [ 01.00 ]
+    Author: dron_3 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+    - [ be32,0x00130788,0x60000000]
+    - [ be32,0x0013079C,0x60000000]
+PPU-e4acdea9ec14549b10ddadaa90625cd9c3cc4cad:
+  "Max Chain":
+    Games:
+      "SPACE INVADERS INFINITY GENE (Artemis)":
+        NPUB30305: [ 01.00 ]
+    Author: dron_3 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+    - [ be32,0x0013080C,0x60000000]
+PPU-e4acdea9ec14549b10ddadaa90625cd9c3cc4cad:
+  "Max Nagoya Attacks":
+    Games:
+      "SPACE INVADERS INFINITY GENE (Artemis)":
+        NPUB30305: [ 01.00 ]
+    Author: dron_3 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+    - [ be32,0x00130958,0x60000000]
+PPU-e4acdea9ec14549b10ddadaa90625cd9c3cc4cad:
+  "Infinite Lives":
+    Games:
+      "SPACE INVADERS INFINITY GENE (Artemis)":
+        NPUB30305: [ 01.00 ]
+    Author: dron_3 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+    - [ be32,0x000ECBBC,0x60000000]
+PPU-e4acdea9ec14549b10ddadaa90625cd9c3cc4cad:
+  "Invincibility":
+    Games:
+      "SPACE INVADERS INFINITY GENE (Artemis)":
+        NPUB30305: [ 01.00 ]
+    Author: dron_3 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+    - [ be32,0x000EAFCC,0x60000000]
