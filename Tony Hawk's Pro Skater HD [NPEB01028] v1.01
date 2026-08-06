@@ -1,0 +1,23 @@
+# Title: Tony Hawk's Pro Skater HD
+# Serial: NPEB01028
+# Category: HG
+# Version: APP_VER=01.01 VERSION=01.00
+PPU-5e4a312f2ff7f2b4875691775d111250793d7553:
+  "Lot Of Money After Gain":
+    Games:
+      "Tony Hawk Pro Skater HD (Artemis)":
+        NPEB01028: [ 01.01 ]
+    Author: jgduff1 Ported by ChiDreams
+    Notes: There was some kind of note or warning, I cannot translate it.
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00057684,0x90BC0000]
+  "ASM Timer Never Decrease":
+    Games:
+      "Tony Hawk Pro Skater HD (Artemis)":
+        NPEB01028: [ 01.01 ]
+    Author: jgduff1 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x004F282C,0x92650000]
