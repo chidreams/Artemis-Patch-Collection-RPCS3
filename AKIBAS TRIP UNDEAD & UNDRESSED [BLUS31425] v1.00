@@ -1,0 +1,86 @@
+# Title: AKIBA'S TRIP UNDEAD & UNDRESSED
+# Serial: BLUS31425
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.01
+PPU-4236dbf536005fe20079e0eac51399f3f8a00a6e:
+  "Max Gold in Change":
+    Games:
+      "AKIBAS TRIP UNDEAD & UNDRESSED (Artemis)":
+        BLUS31425: [ 01.00 ]
+    Author: JorgeFFC Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x000DBC84,0x60000000]
+  "Hero Shirt Immune to Normal Attack":
+    Games:
+      "AKIBAS TRIP UNDEAD & UNDRESSED (Artemis)":
+        BLUS31425: [ 01.00 ]
+    Author: JorgeFFC Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00107810,0x60000000]
+  "Hero Bottoms Immune to Normal Attack":
+    Games:
+      "AKIBAS TRIP UNDEAD & UNDRESSED (Artemis)":
+        BLUS31425: [ 01.00 ]
+    Author: JorgeFFC Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00107A04,0x60000000]
+  "Infinite Item Usage":
+    Games:
+      "AKIBAS TRIP UNDEAD & UNDRESSED (Artemis)":
+        BLUS31425: [ 01.00 ]
+    Author: JorgeFFC Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x000E8A34,0x60000000]
+  "Equipped Weapon has High Attack (900.000)":
+    Games:
+      "AKIBAS TRIP UNDEAD & UNDRESSED (Artemis)":
+        BLUS31425: [ 01.00 ]
+    Author: JorgeFFC Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x000E6700,0x3C80000F]
+  "999 Hit Combo":
+    Games:
+      "AKIBAS TRIP UNDEAD & UNDRESSED (Artemis)":
+        BLUS31425: [ 01.00 ]
+    Author: JorgeFFC Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0012A3A4,0x388003E7]
+  "Max Character Experience":
+    Games:
+      "AKIBAS TRIP UNDEAD & UNDRESSED (Artemis)":
+        BLUS31425: [ 01.00 ]
+    Author: JorgeFFC Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0061D40C,0x05F5E0FF]
+  "Max Character Base Attack":
+    Games:
+      "AKIBAS TRIP UNDEAD & UNDRESSED (Artemis)":
+        BLUS31425: [ 01.00 ]
+    Author: JorgeFFC Ported by ChiDreams
+    Notes: Use after max level to keep the value
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0061D408,0x000F423F]
+  "Max Character Base Defense":
+    Games:
+      "AKIBAS TRIP UNDEAD & UNDRESSED (Artemis)":
+        BLUS31425: [ 01.00 ]
+    Author: JorgeFFC Ported by ChiDreams
+    Notes: Use after max level to keep the value
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0061D404,0x000F423F]
