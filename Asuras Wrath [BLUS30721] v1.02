@@ -1,0 +1,78 @@
+# Title: ASURA'S WRATH
+# Serial: BLUS30721
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.02
+Anchors:
+  AsurasW: &AsurasW
+    - [ be32,0x01166744,0x38600001]
+    - [ be32,0x014D69EC,0x38600000]
+    - [ be32,0x0167E460,0x00500053]
+    - [ be32,0x0167E464,0x00330054]
+    - [ be32,0x0167E468,0x004F0043]
+    - [ be32,0x0167E46C,0x002E0054]
+    - [ be32,0x0167E470,0x00580054]
+  AsurasW2: &AsurasW2
+    - [ be32,0x0161DC80,0x807F01E8]
+    - [ be32,0x0161DC84,0x2C030000]
+    - [ be32,0x0161DC88,0x418200A0]
+    - [ be32,0x0161DC8C,0x80A301DC]
+    - [ be32,0x0161DC90,0x54A40FFE]
+    - [ be32,0x0161DC94,0x2C040000]
+    - [ be32,0x0161DC98,0x41820090]
+    - [ be32,0x0161DC9C,0x809F02E0]
+    - [ be32,0x0161DCA0,0x909F02DC]
+    - [ be32,0x0161DCA4,0x64A54000]
+    - [ be32,0x0161DCA8,0x90A301DC]
+    - [ be32,0x0161DCAC,0x80A30458]
+    - [ be32,0x0161DCB0,0x2C050000]
+    - [ be32,0x0161DCB4,0x41820074]
+    - [ be32,0x0161DCB8,0xC005042C]
+    - [ be32,0x0161DCBC,0xC0450428]
+    - [ be32,0x0161DCC0,0xC03F0BEC]
+    - [ be32,0x0161DCC4,0xEC00002A]
+    - [ be32,0x0161DCC8,0xEC000032]
+    - [ be32,0x0161DCCC,0xEC000032]
+    - [ be32,0x0161DCD0,0xEC20083A]
+    - [ be32,0x0161DCD4,0xD03F0BEC]
+    - [ be32,0x0161DCD8,0xC07F0BF4]
+    - [ be32,0x0161DCDC,0xEC42102A]
+    - [ be32,0x0161DCE0,0xEC4200B2]
+    - [ be32,0x0161DCE4,0xEC4200B2]
+    - [ be32,0x0161DCE8,0xEC6218BA]
+    - [ be32,0x0161DCEC,0xD07F0BF4]
+    - [ be32,0x0161DCF0,0x80DF00D4]
+    - [ be32,0x0161DCF4,0x2C060000]
+    - [ be32,0x0161DCF8,0x41820030]
+    - [ be32,0x0161DCFC,0x80C603C0]
+    - [ be32,0x0161DD00,0x2C060000]
+    - [ be32,0x0161DD04,0x41820024]
+    - [ be32,0x0161DD08,0x80C603C0]
+    - [ be32,0x0161DD0C,0x2C060000]
+    - [ be32,0x0161DD10,0x41820018]
+    - [ be32,0x0161DD14,0x3C805000]
+    - [ be32,0x0161DD18,0x908603B8]
+    - [ be32,0x0161DD1C,0x90860328]
+    - [ be32,0x0161DD20,0x3C804000]
+    - [ be32,0x0161DD24,0x908602DC]
+    - [ be32,0x0161DD28,0x807F04C8]
+    - [ be32,0x0161DD2C,0x4B316804]
+    - [ be32,0x0093452C,0x48CE9754]
+PPU-83096111daff850cc92b637aec1780c4079e1c58:
+  "Debug Menu (Press D-pad Left)":
+    Games:
+      "Asuras Wrath (Artemis)":
+        BLUS30721: [ 01.02 ]
+    Author: dron_3 Ported by ChiDreams
+    Notes: If you activate codes after starting the game, trophy cheats will not work unless you go to "Episode Menu" or "Options" or "Extras" and then go back to main menu to activate the debug menu.
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *AsurasW ]
+  "Infinite Health, Fill Unlimited Gauge - Hold L2, Fill Burst Gauge - Hold R2, Max Rank":
+    Games:
+      "Asuras Wrath (Artemis)":
+        BLUS30721: [ 01.02 ]
+    Author: dron_3 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *AsurasW2 ]
