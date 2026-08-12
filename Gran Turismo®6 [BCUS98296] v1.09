@@ -1,0 +1,27 @@
+# Title: Gran Turismo®6
+# Serial: BCUS98296
+# Category: GD
+# Version: APP_VER=01.09 VERSION=01.00  
+# PPU executable hash: PPU-5a03a3b8d9e96b3889a8a3ccfcb3650e8c1b29fc
+# PPU executable hash: PPU-73374434d75583142c17825ad6c63710c7f526e8 <---- EMAIN.elf    
+PPU-73374434d75583142c17825ad6c63710c7f526e8:
+  "Freeze timer driving license":
+    Games:
+      "Gran Turismo 6 (Artemis)":
+        BCUS98296: [ 01.09 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x0040F258, 0x60000000 ]
+      - [ be32, 0x00414C64, 0x60000000 ]
+      - [ be32, 0x00415570, 0x931F024C ]    
+  "win all the races with Gold Medals":
+    Games:
+      "Gran Turismo 6 (Artemis)":
+        BCUS98296: [ 01.09 ]
+    Author: Ported by ChiDreams
+    Notes: Not in championships Race
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x00FCB468, 0x923E0014 ]  
