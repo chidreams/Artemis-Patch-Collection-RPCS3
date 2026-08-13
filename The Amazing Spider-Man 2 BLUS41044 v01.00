@@ -1,0 +1,193 @@
+# Title: The Amazing Spider-Man 2™
+# Serial: BLUS41044
+#  Category: GD
+# Version: APP_VER=01.00 VERSION=01.00  
+Anchors:
+  TA2Spider-Man: &TA2Spider-Man
+      - [ be32, 0x00B96A74, 0x60000000 ]
+  TA2Spider-Man2: &TA2Spider-Man2
+      - [ be32, 0x00BFF91C, 0x937B0438 ]
+  TA2Spider-Man3: &TA2Spider-Man3
+      - [ be32, 0x00A498C4, 0x48000008 ]
+      - [ be32, 0x00A49A28, 0x93DF006C ]
+  TA2Spider-Man4: &TA2Spider-Man4
+      - [ be32, 0x00BFFAAC, 0x93A40088 ]
+  TA2Spider-Man5: &TA2Spider-Man5
+      - [ be32, 0x00BE8BB8, 0x60A30000 ]
+  TA2Spider-Man6: &TA2Spider-Man6
+      - [ be32, 0x00BCAB98, 0x60000000 ]
+      - [ be32, 0x00BCB0D8, 0x60000000 ]
+      - [ be32, 0x00BCB13C, 0x60000000 ]
+  TA2Spider-Man7: &TA2Spider-Man7
+      - [ be32, 0x0103505C, 0x4800000C ]
+  TA2Spider-Man8: &TA2Spider-Man8
+      - [ be32, 0x00BF9490, 0x60000000 ]
+  TA2Spider-Man9: &TA2Spider-Man9
+      - [ be32, 0x00BC3E58, 0x4800000C ]
+  TA2Spider-Man10: &TA2Spider-Man10
+      - [ be32, 0x00BCF28C, 0x60000000 ]
+      - [ be32, 0x00CBD1EC, 0x48000014 ]
+  TA2Spider-Man11: &TA2Spider-Man11
+      - [ be32, 0x00BD77AC, 0x38604E20 ]
+  TA2Spider-Man12: &TA2Spider-Man12
+      - [ be32, 0x010E8EFC, 0x38A00001 ]
+  TA2Spider-Man13: &TA2Spider-Man13
+      - [ be32, 0x00BFF8FC, 0x1F9C03E8 ]
+  TA2Spider-Man14: &TA2Spider-Man14
+      - [ be32, 0x00BFF8FC, 0x1F9C0014 ]
+  TA2Spider-Man15: &TA2Spider-Man15
+      - [ be32, 0x00BFF8FC, 0x1F9C0032 ]
+  TA2Spider-Man16: &TA2Spider-Man16
+      - [ be32, 0x00BFF8FC, 0x1F9C0064 ]    
+PPU-77f59b5e174b863b2f01734462a5d010ab3ba61c:
+  "Infinite Health":
+    Games:
+      "The Amazing Spider-Man 2 (Artemis)":
+        BLUS41044: [ 01.00 ]
+    Author: FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TA2Spider-Man ]    
+  "Max Suit Level When Gaining XP Points":
+    Games:
+      "The Amazing Spider-Man 2 (Artemis)":
+        BLUS41044: [ 01.00 ]
+    Author: FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TA2Spider-Man2 ]  
+  "Max Infinite Reputation To Heroic Level 3 On Change":
+    Games:
+      "The Amazing Spider-Man 2 (Artemis)":
+        BLUS41044: [ 01.00 ]
+    Author: FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TA2Spider-Man3 ]  
+  "Max Upgrade Points On Gain":
+    Games:
+      "The Amazing Spider-Man 2 (Artemis)":
+        BLUS41044: [ 01.00 ]
+    Author: FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: B
+    Patch:
+      - [ load, *TA2Spider-Man4 ]  
+  "Infinite Upgrade Points On Spend":
+    Games:
+      "The Amazing Spider-Man 2 (Artemis)":
+        BLUS41044: [ 01.00 ]
+    Author: FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: B
+    Patch:
+      - [ load, *TA2Spider-Man5 ]  
+  "Infinite Missions Bar Timer":
+    Games:
+      "The Amazing Spider-Man 2 (Artemis)":
+        BLUS41044: [ 01.00 ]
+    Author: FBML Ported by ChiDreams
+    Notes: (Fire, Bomb, Car Chase and Circle Of Threat)
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TA2Spider-Man6 ]  
+  "Infinite Police Truck Health":
+    Games:
+      "The Amazing Spider-Man 2 (Artemis)":
+        BLUS41044: [ 01.00 ]
+    Author: FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TA2Spider-Man7 ]  
+  "Awareness Bar Never Increases":
+    Games:
+      "The Amazing Spider-Man 2 (Artemis)":
+        BLUS41044: [ 01.00 ]
+    Author: FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TA2Spider-Man8 ]  
+  "Special Combo Always On":
+    Games:
+      "The Amazing Spider-Man 2 (Artemis)":
+        BLUS41044: [ 01.00 ]
+    Author: FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TA2Spider-Man9 ]  
+  "No Hit Counter":
+    Games:
+      "The Amazing Spider-Man 2 (Artemis)":
+        BLUS41044: [ 01.00 ]
+    Author: FBML Ported by ChiDreams
+    Notes: Only use it with the Coin-Op Machine on Hit Challenges, it affects the entire game.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TA2Spider-Man10 ]        
+  "Infinite Upgrade Points":
+    Games:
+      "The Amazing Spider-Man 2 (Artemis)":
+        BLUS41044: [ 01.00 ]
+    Author: FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: B
+    Patch:
+      - [ load, *TA2Spider-Man11 ]
+  "1 Hit Kill":
+    Games:
+      "The Amazing Spider-Man 2 (Artemis)":
+        BLUS41044: [ 01.00 ]
+    Author: FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TA2Spider-Man12 ]
+  "Exp Multiplier (1000x)":
+    Games:
+      "The Amazing Spider-Man 2 (Artemis)":
+        BLUS41044: [ 01.00 ]
+    Author: FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+      - [ load, *TA2Spider-Man13 ]
+  "EXP Multiplier x20 ":
+    Games:
+      "The Amazing Spider-Man 2 (Artemis)":
+        BLUS41044: [ 01.00 ]
+    Author: FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+      - [ load, *TA2Spider-Man14 ]
+  "EXP Multiplier x50":
+    Games:
+      "The Amazing Spider-Man 2 (Artemis)":
+        BLUS41044: [ 01.00 ]
+    Author: FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+      - [ load, *TA2Spider-Man15 ]
+  "EXP Multiplier x100 ":
+    Games:
+      "The Amazing Spider-Man 2 (Artemis)":
+        BLUS41044: [ 01.00 ]
+    Author: FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+      - [ load, *TA2Spider-Man16 ]      
