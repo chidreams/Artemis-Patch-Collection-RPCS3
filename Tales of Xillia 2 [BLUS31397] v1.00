@@ -1,0 +1,356 @@
+# Title: Tales of Xillia 2
+# Serial: BLUS31397
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00
+Anchors:
+  TOXillia2: &TOXillia2
+    - [be32,0x0021CFD4,0x38600000]
+    - [be32,0x004554E0,0x80690018]
+    - [be32,0x00456050,0x80690018]
+    - [be32,0x0039571C,0x80690018]
+  TOXillia22: &TOXillia22
+    - [be32,0x00E86380,0x82116EF4]
+    - [be32,0x00E86384,0x92110010]
+    - [be32,0x00E86388,0x4E800020]
+    - [be32,0x0017A7E8,0x48D0BB99]
+  TOXillia23: &TOXillia23
+    - [be32,0x00E861EC,0x80690374]
+    - [be32,0x00E861F0,0x90690370]
+    - [be32,0x00E861F4,0x7C6307B4]
+    - [be32,0x00E861F8,0x4E800020]
+    - [be32,0x0021D890,0x48C6895C]
+    - [be32,0x0021D874,0x60000000]
+  TOXillia24: &TOXillia24
+    - [be32,0x002580D4,0x48000C58]
+  TOXillia25: &TOXillia25
+    - [be32,0x00E86180,0x3C60447A]
+    - [be32,0x00E86184,0x90690028]
+    - [be32,0x00E86188,0x4B2B6720]
+    - [be32,0x0013C8A4,0x48D498DC]
+  TOXillia26: &TOXillia26
+    - [be32,0x00E8618C,0x2C000A01]
+    - [be32,0x00E86190,0x40800010]
+    - [be32,0x00E86194,0x38000063]
+    - [be32,0x00E86198,0x98090001]
+    - [be32,0x00E8619C,0x4B6B8E84]
+    - [be32,0x00E861A0,0x2C000E01]
+    - [be32,0x00E861A4,0x4080FFF0]
+    - [be32,0x00E861A8,0x88090001]
+    - [be32,0x00E861AC,0x4B6B8E74]
+    - [be32,0x0053F01C,0x48947170]
+  TOXillia27: &TOXillia27
+    - [be32,0x0005F9F4,0x3AE000C8]
+  TOXillia28: &TOXillia28
+    - [be32,0x00E861FC,0x839F0010]
+    - [be32,0x00E86200,0x2C1C0001]
+    - [be32,0x00E86204,0x41810008]
+    - [be32,0x00E86208,0x4E800020]
+    - [be32,0x00E8620C,0x3B800000]
+    - [be32,0x00E86210,0x939F0010]
+    - [be32,0x00E86214,0x4E800020]
+    - [be32,0x002689B4,0x48C1D849]
+  TOXillia29: &TOXillia29
+    - [be32,0x00E8638C,0x1C840064]
+    - [be32,0x00E86390,0x7C041A14]
+    - [be32,0x00E86394,0x4B3CFC74]
+    - [be32,0x00256004,0x48C30388]
+  TOXillia210: &TOXillia210
+    - [be32,0x00E86398,0x1CA50064]
+    - [be32,0x00E8639C,0x7C050214]
+    - [be32,0x00E863A0,0x4B3CE2F4]
+    - [be32,0x00254690,0x48C31D08]
+  TOXillia211: &TOXillia211
+    - [be32,0x00220F84,0x60000000]
+  TOXillia212: &TOXillia212
+    - [be32,0x00256024,0x3C807FFF]
+  TOXillia213: &TOXillia213
+    - [be32,0x00240D18,0x4081000C]
+  TOXillia214: &TOXillia214
+    - [be32,0x00542C40,0x40990020]
+  TOXillia215: &TOXillia215
+    - [be32,0x00240CF8,0x31230014]
+  TOXillia216: &TOXillia216
+    - [be32,0x00247424,0x3980270F]
+  TOXillia217: &TOXillia217
+    - [be32,0x00221158,0x60000000]
+    - [be32,0x00221180,0x60000000]
+  TOXillia218: &TOXillia218
+    - [be32,0x0053EF94,0x38600063]
+    - [be32,0x0053EFEC,0x68E00063]
+  TOXillia219: &TOXillia219
+    - [be32,0x0022D780,0x60000000]
+    - [be32,0x0022D7CC,0x60000000]
+  TOXillia220: &TOXillia220
+    - [be32,0x000C930C,0x419D0008]
+  TOXillia221: &TOXillia221
+    - [be32,0x000C6DD4,0x419D0008]
+  TOXillia222: &TOXillia222
+    - [be32,0x00267064,0x40850CF8]
+  TOXillia223: &TOXillia223
+    - [be32,0x002670D4,0x40990C58]
+  TOXillia224: &TOXillia224
+    - [be32,0x002579A4,0x40850EC0]
+  TOXillia225: &TOXillia225
+    - [be32,0x00257998,0x40800010]
+  TOXillia226: &TOXillia226
+    - [be32,0x00258D38,0x48000040]
+PPU-d96e838f10e9730d8ba21659e02663b44488670f:
+  "Bypass Debt Message":
+    Games:
+      "Tales of Xillia 2 (Artemis)":
+        BLUS31397: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TOXillia2 ]
+PPU-d96e838f10e9730d8ba21659e02663b44488670f:
+  "Infinite HP":
+    Games:
+      "Tales of Xillia 2 (Artemis)":
+        BLUS31397: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TOXillia22 ]
+PPU-d96e838f10e9730d8ba21659e02663b44488670f:
+  "Infinite Chromatus Gauge":
+    Games:
+      "Tales of Xillia 2 (Artemis)":
+        BLUS31397: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TOXillia23 ]
+PPU-d96e838f10e9730d8ba21659e02663b44488670f:
+  "Instant Max SP (Skill Point)":
+    Games:
+      "Tales of Xillia 2 (Artemis)":
+        BLUS31397: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TOXillia24 ]
+PPU-d96e838f10e9730d8ba21659e02663b44488670f:
+  "Infinite Overdrive":
+    Games:
+      "Tales of Xillia 2 (Artemis)":
+        BLUS31397: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TOXillia25 ]
+PPU-d96e838f10e9730d8ba21659e02663b44488670f:
+  "Have All Items (No Key Items)":
+    Games:
+      "Tales of Xillia 2 (Artemis)":
+        BLUS31397: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TOXillia26 ]
+PPU-d96e838f10e9730d8ba21659e02663b44488670f:
+  "Instant Get Enemy Kill SP Bonus":
+    Games:
+      "Tales of Xillia 2 (Artemis)":
+        BLUS31397: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TOXillia27 ]
+PPU-d96e838f10e9730d8ba21659e02663b44488670f:
+  "Instant Job Clear (Enemy if it is more than 1)":
+    Games:
+      "Tales of Xillia 2 (Artemis)":
+        BLUS31397: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TOXillia28 ]
+PPU-d96e838f10e9730d8ba21659e02663b44488670f:
+  "Exp Gained Multiplier (100x)":
+    Games:
+      "Tales of Xillia 2 (Artemis)":
+        BLUS31397: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TOXillia29 ]
+PPU-d96e838f10e9730d8ba21659e02663b44488670f:
+  "Element Multiplier (100x)":
+    Games:
+      "Tales of Xillia 2 (Artemis)":
+        BLUS31397: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TOXillia210 ]
+PPU-d96e838f10e9730d8ba21659e02663b44488670f:
+  "Max Gald on Buy, Sell, Or Gain":
+    Games:
+      "Tales of Xillia 2 (Artemis)":
+        BLUS31397: [ 01.00 ]
+    Author: Medo Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TOXillia211 ]
+PPU-d96e838f10e9730d8ba21659e02663b44488670f:
+  "Max Exp On Gain (Level 200)":
+    Games:
+      "Tales of Xillia 2 (Artemis)":
+        BLUS31397: [ 01.00 ]
+    Author: Medo Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TOXillia212 ]
+PPU-d96e838f10e9730d8ba21659e02663b44488670f:
+  "Infinite AC":
+    Games:
+      "Tales of Xillia 2 (Artemis)":
+        BLUS31397: [ 01.00 ]
+    Author: Medo Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TOXillia213 ]
+PPU-d96e838f10e9730d8ba21659e02663b44488670f:
+  "Max Items On Sell, Discard, Buy, Or Gain":
+    Games:
+      "Tales of Xillia 2 (Artemis)":
+        BLUS31397: [ 01.00 ]
+    Author: Medo Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TOXillia214 ]
+PPU-d96e838f10e9730d8ba21659e02663b44488670f:
+  "Infinite TP":
+    Games:
+      "Tales of Xillia 2 (Artemis)":
+        BLUS31397: [ 01.00 ]
+    Author: Medo Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TOXillia215 ]
+PPU-d96e838f10e9730d8ba21659e02663b44488670f:
+  "Max Arte Count On Use":
+    Games:
+      "Tales of Xillia 2 (Artemis)":
+        BLUS31397: [ 01.00 ]
+    Author: Medo Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TOXillia216 ]
+PPU-d96e838f10e9730d8ba21659e02663b44488670f:
+  "Infinite Over Limit (Must Use 1 Arte Link to Gain Max + Infinite)":
+    Games:
+      "Tales of Xillia 2 (Artemis)":
+        BLUS31397: [ 01.00 ]
+    Author: Medo Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TOXillia217 ]
+PPU-d96e838f10e9730d8ba21659e02663b44488670f:
+  "Have All Items + Infinite All Items":
+    Games:
+      "Tales of Xillia 2 (Artemis)":
+        BLUS31397: [ 01.00 ]
+    Author: Medo Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TOXillia218 ]
+PPU-d96e838f10e9730d8ba21659e02663b44488670f:
+  "Freeze Play Time":
+    Games:
+      "Tales of Xillia 2 (Artemis)":
+        BLUS31397: [ 01.00 ]
+    Author: Medo Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TOXillia219 ]
+PPU-d96e838f10e9730d8ba21659e02663b44488670f:
+  "E-Core Max":
+    Games:
+      "Tales of Xillia 2 (Artemis)":
+        BLUS31397: [ 01.00 ]
+    Author: xtatu Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TOXillia220 ]
+PPU-d96e838f10e9730d8ba21659e02663b44488670f:
+  "Exp 99999999":
+    Games:
+      "Tales of Xillia 2 (Artemis)":
+        BLUS31397: [ 01.00 ]
+    Author: xtatu Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TOXillia221 ]
+PPU-d96e838f10e9730d8ba21659e02663b44488670f:
+  "TP 999 Max Not Infinite":
+    Games:
+      "Tales of Xillia 2 (Artemis)":
+        BLUS31397: [ 01.00 ]
+    Author: xtatu Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TOXillia222 ]
+PPU-d96e838f10e9730d8ba21659e02663b44488670f:
+  "SP 999 Max Not Infinite":
+    Games:
+      "Tales of Xillia 2 (Artemis)":
+        BLUS31397: [ 01.00 ]
+    Author: xtatu Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TOXillia223 ]
+PPU-d96e838f10e9730d8ba21659e02663b44488670f:
+  "HP 9999 Max Not Infinite":
+    Games:
+      "Tales of Xillia 2 (Artemis)":
+        BLUS31397: [ 01.00 ]
+    Author: xtatu Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TOXillia224 ]
+PPU-d96e838f10e9730d8ba21659e02663b44488670f:
+  "Auto Death Enemies":
+    Games:
+      "Tales of Xillia 2 (Artemis)":
+        BLUS31397: [ 01.00 ]
+    Author: xtatu Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TOXillia225 ]
+PPU-d96e838f10e9730d8ba21659e02663b44488670f:
+  "1 Hit Kills":
+    Games:
+      "Tales of Xillia 2 (Artemis)":
+        BLUS31397: [ 01.00 ]
+    Author: xtatu Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *TOXillia226 ]
