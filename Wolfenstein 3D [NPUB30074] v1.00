@@ -1,0 +1,41 @@
+# Title: Wolfenstein 3D
+# Serial: NPUB30074
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.00      
+PPU-add54ff14fc07c9c8f72b430bed28704b0cc5e5d:
+  "Infinite Ammo":
+    Games:
+      "Wolfenstein 3D (Artemis)":
+        NPUB30074: [ 01.00 ]
+    Author: jgduff1
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x0004632C,0x39290000] 
+  "Infinite Health":
+    Games:
+      "Wolfenstein 3D (Artemis)":
+        NPUB30074: [ 01.00 ]
+    Author: jgduff1
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x00045E18,0x60000000] 
+  "Big Score On Gain":
+    Games:
+      "Wolfenstein 3D (Artemis)":
+        NPUB30074: [ 01.00 ]
+    Author: jgduff1
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x0004593C,0x913F000C] 
+  "Infinite Lives":
+    Games:
+      "Wolfenstein 3D (Artemis)":
+        NPUB30074: [ 01.00 ]
+    Author: jgduff1
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x0001A940,0x39290000]
