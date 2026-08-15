@@ -1,0 +1,117 @@
+# Title: Dead Island: Riptide
+# Serial: BLUS31052
+# Category: GD
+# Version: APP_VER=01.01 VERSION=01.00     
+PPU-29daccad6db847d9790068762add8ea1de083cde:
+  "Infinite Health":
+    Games:
+      "Dead Island: Riptide (Artemis)":
+        BLUS31052: [ 01.01 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: B
+    Patch:
+      - [ be32, 0x00C067E0, 0x00000000] 
+  "Infinite Health 2":
+    Games:
+      "Dead Island: Riptide (Artemis)":
+        BLUS31052: [ 01.01 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: B
+    Patch:
+      - [ be32, 0x00BF3AF8, 0x496574BF]
+      - [ be32, 0x01658AE4, 0x3E0043AF]
+      - [ be32, 0x01658AE8, 0x921E0884]
+      - [ be32, 0x01658AEC, 0x921E0884]
+      - [ be32, 0x01658AF0, 0x4E800020] 
+  "Invincible":
+    Games:
+      "Dead Island: Riptide (Artemis)":
+        BLUS31052: [ 01.01 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x00C06868, 0x408221D0] 
+  "Max Money":
+    Games:
+      "Dead Island: Riptide (Artemis)":
+        BLUS31052: [ 01.01 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x00BD0864, 0x3C607FFF] 
+  "Max Exp on Gain":
+    Games:
+      "Dead Island: Riptide (Artemis)":
+        BLUS31052: [ 01.01 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x00C525EC, 0x30E3003C] 
+  "Infinite Items & Ammo & No Clip":
+    Games:
+      "Dead Island: Riptide (Artemis)":
+        BLUS31052: [ 01.01 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x00D0D930, 0x60000000]
+      - [ be32, 0x00BCD910, 0x60000000] 
+  "Infinite Stamina":
+    Games:
+      "Dead Island: Riptide (Artemis)":
+        BLUS31052: [ 01.01 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x00BF2690, 0x3E803F8C]
+      - [ be32, 0x00BF2694, 0x929F0914]
+      - [ be32, 0x00BF2698, 0x929F0924] 
+  "Attack  Power Modifier (x100)":
+    Games:
+      "Dead Island: Riptide (Artemis)":
+        BLUS31052: [ 01.01 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+      - [ be32, 0x00BE8404, 0x42C80000 ]  
+  "Attack  Power Modifier (x200)":
+    Games:
+      "Dead Island: Riptide (Artemis)":
+        BLUS31052: [ 01.01 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+      - [ be32, 0x00BE8404, 0x43480000 ]
+  "Attack  Power Modifier (x500)":
+    Games:
+      "Dead Island: Riptide (Artemis)":
+        BLUS31052: [ 01.01 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+      - [ be32, 0x00BE8404, 0x43FA0000 ]
+  "Attack  Power Modifier (x1000)":
+    Games:
+      "Dead Island: Riptide (Artemis)":
+        BLUS31052: [ 01.01 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+      - [ be32, 0x00BE8404, 0x447A0000 ]
