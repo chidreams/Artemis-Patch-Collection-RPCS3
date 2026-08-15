@@ -1,0 +1,64 @@
+# Title: GTA San Andreas
+# Serial: BLUS31584
+# Category: GD
+# Version: APP_VER=01.01 VERSION=01.00     
+PPU-9a4ed8061427dae9218093027362c9fe40f1fc9e:  
+  "Max Health Bar Level":
+    Games:
+      "GTA San Andreas (Artemis)":
+        BLUS31584: [ 01.01 ]
+    Author: jgduff  Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x00114268, 0x60000000 ]
+      - [ be32, 0x0011436C, 0x60000000 ]
+  "Never Have More Than 1 Star":
+    Games:
+      "GTA San Andreas (Artemis)":
+        BLUS31584: [ 01.01 ]
+    Author: jgduff  Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [be32, 0x0038055C, 0x923F002C ]  
+  "Max Money On Start":
+    Games:
+      "GTA San Andreas (Artemis)":
+        BLUS31584: [ 01.01 ]
+    Author: jgduff  Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [be32, 0x0036619C,0x90D700B8]  
+  "Infinite Ammo":
+    Games:
+      "GTA San Andreas (Artemis)":
+        BLUS31584: [ 01.01 ]
+    Author: jgduff  Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [be32, 0x006241E4,0x30650000]
+      - [be32, 0x0062423C,0x30630000]      
+  "Infinite Armor":
+    Games:
+      "GTA San Andreas (Artemis)":
+        BLUS31584: [ 01.01 ]
+    Author: jgduff  Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [be32, 0x002816D4,0xEC211028]
+      - [be32, 0x002816D8,0x60000000]
+      - [be32, 0x002816E4,0xEC220828]      
+  "Cops Ignore You":
+    Games:
+      "GTA San Andreas (Artemis)":
+        BLUS31584: [ 01.01 ]
+    Author: jgduff  Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [be32, 0x00533878, 0x60000000 ]      
+      - [be32, 0x0053387C, 0x3863381C ]       
