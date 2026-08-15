@@ -1,0 +1,45 @@
+# Title: Wolfenstein: The New Order
+# Serial: BLUS31220
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00    
+Anchors:
+  Stein: &Stein
+      - [ be32,0x01728034,0xC3FD0004]
+      - [ be32,0x01728038,0xFC1F1000]
+      - [ be32,0x0172803C,0x48000020]
+      - [ be32,0x0172805C,0x419D0008]
+      - [ be32,0x01728060,0xD03D0004]
+      - [ be32,0x01728064,0x4E800020]
+      - [ be32,0x0096FDE4,0x48DB8251]
+  Stein2: &Stein2
+      - [ be32,0x00E50828,0x60000000] 
+  Stein3: &Stein3  
+      - [ be32,0x010A3A3C,0x60000000]  
+PPU-647d1d26c11d57e5d532678ce615dce9e0685020:
+  "Health Never Decreases":
+    Games:
+      "Wolfenstein: The New Order (Artemis)":
+        BLUS31220: [ 01.00 ]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Stein] 
+  "Ammo And Grenades Never Decrease":
+    Games:
+      "Wolfenstein: The New Order (Artemis)":
+        BLUS31220: [ 01.00 ]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Stein2 ]     
+  "Plane Health Never Decreases":
+    Games:
+      "Wolfenstein: The New Order (Artemis)":
+        BLUS31220: [ 01.00 ]
+    Author: bungholio
+    Notes: It gives metal dogs infinite health too, and possibly other unwanted side effects.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Stein3] 
