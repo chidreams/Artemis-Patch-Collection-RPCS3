@@ -1,0 +1,42 @@
+# Title: Warriors: Legends of Troy
+# Serial: BLES01183
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.03  
+PPU-6e2bf47ce9adad5079d95bc8515c7fb5af727322:
+  "Infinite Health":
+    Games:
+      "Warriors: Legends of Troy (Artemis)":
+        BLES01183: [ 01.00 ]
+    Author: tekman tested by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x0004E098, 0xD3DF07C0 ]
+  "Infinite Rage":
+    Games:
+      "Warriors: Legends of Troy (Artemis)":
+        BLES01183: [ 01.00 ]
+    Author: tekman tested by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x0004E6C8, 0xD3DF07C4 ]
+      - [ be32, 0x0004E714, 0xD3DF07C4 ]
+  "Infinite Kleos (Items Only)":
+    Games:
+      "Warriors: Legends of Troy (Artemis)":
+        BLES01183: [ 01.00 ]
+    Author: tekman tested by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x0013E150, 0x7CCF2010 ]
+  "Max And Total Combat Kleos x9999":
+    Games:
+      "Warriors: Legends of Troy (Artemis)":
+        BLES01183: [ 01.00 ]
+    Author: tekman tested by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x00049948, 0x309D270F ]
