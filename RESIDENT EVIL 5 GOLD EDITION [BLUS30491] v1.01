@@ -1,0 +1,349 @@
+# Title: RESIDENT EVIL 5 GOLD EDITION
+# Serial: BLUS30491
+# Category: GD
+# Version: APP_VER=01.01 VERSION=01.00
+Anchors:
+  RE5GED: &RE5GED
+    - [ be32,0x0085FFEC,0x39202710]
+    - [ be32,0x00860030,0xA13F14A8]     
+    - [ be32,0x00860034,0xB13F14A0]     
+  RE5GED2: &RE5GED2
+    - [ be32,0x001ACA30,0x60000000]
+    - [ be32,0x001A8448,0x3AE003E7]
+    - [ be32,0x001A8AC0,0x3A8003E7]
+    - [ be32,0x009DA144,0x60000000]
+    - [ be32,0x009D9B9C,0x380003E7]
+  RE5GED3: &RE5GED3
+    - [ be32,0x009D4C50,0x38002710]
+  RE5GED4: &RE5GED4
+    - [ be32,0x00AECC44,0x3C800098]
+    - [ be32,0x00AEE018,0x3D200098]
+    - [ be32,0x00AEE01C,0x6129967F]
+  RE5GED5: &RE5GED5
+    - [ be32,0x009BDE00,0x38A02710]
+    - [ be32,0x009BDECC,0x60000000]     
+  RE5GED6: &RE5GED6
+    - [ be32,0x009CA308,0x801700D0]
+    - [ be32,0x009CA30C,0x2F80000F]
+    - [ be32,0x009CA310,0x419D006C]
+  RE5GED7: &RE5GED7
+    - [ be32,0x0150E024,0x2C000000]
+    - [ be32,0x0150E028,0x40820004]
+    - [ be32,0x0150E02C,0x38000001]
+    - [ be32,0x0150E030,0x98030021]
+    - [ be32,0x0150E034,0x2C000000]
+    - [ be32,0x0150E038,0x40820004]
+    - [ be32,0x0150E03C,0x380000FF]
+    - [ be32,0x0150E040,0x98030023]
+    - [ be32,0x0150E044,0x4B34F9EC]
+    - [ be32,0x0150E04C,0x2C000000]
+    - [ be32,0x0150E050,0x40820004]
+    - [ be32,0x0150E054,0x38000001]
+    - [ be32,0x0150E058,0x98180021]
+    - [ be32,0x0150E05C,0x2C000000]
+    - [ be32,0x0150E060,0x40820004]
+    - [ be32,0x0150E064,0x380000FF]
+    - [ be32,0x0150E068,0x98180023]
+    - [ be32,0x0150E06C,0x4AC9A3F4]
+    - [ be32,0x0150E074,0x2C000000]
+    - [ be32,0x0150E078,0x40820004]
+    - [ be32,0x0150E07C,0x38000001]
+    - [ be32,0x0150E080,0x981B0021]
+    - [ be32,0x0150E084,0x2C000000]
+    - [ be32,0x0150E088,0x40820004]
+    - [ be32,0x0150E08C,0x380000FF]
+    - [ be32,0x0150E090,0x981B0023]
+    - [ be32,0x0150E094,0x4AC9AA44]
+    - [ be32,0x001A845C,0x49365BF0]
+    - [ be32,0x001A8AD4,0x493655A0]
+    - [ be32,0x0085DA2C,0x48CB05F8]
+  RE5GED8: &RE5GED8
+    - [ be32,0x00AECC44,0x3C800098]
+    - [ be32,0x00AEE018,0x3D200098]
+    - [ be32,0x00AEE01C,0x6129967F]
+  RE5GED9: &RE5GED9
+    - [ be32,0x001AFB5C,0x48000004]
+  RE5GED10: &RE5GED10
+    - [ be32,0x009BDE00,0x38A02710]
+    - [ be32,0x009BDECC,0x60000000]
+  RE5GED11: &RE5GED11
+    - [ be32,0x009BDE48,0x60000000]
+    - [ be32,0x009BDE84,0x60000000]
+    - [ be32,0x009BDEC4,0x60000000]
+    - [ be32,0x009BDE50,0x91630010]
+  RE5GED12: &RE5GED12
+    - [ be32,0x00077B54,0x60000000]
+  RE5GED13: &RE5GED13
+    - [ be32,0x000A7FDC,0x60000000]
+  RE5GED14: &RE5GED14
+    - [ be32,0x0086CEE4,0x60000000]
+    - [ be32,0x00A1FDFC,0xD1BF002C]
+    - [ be32,0x00A1F9C0,0xD1BF001C]
+    - [ be32,0x00A30264,0x39290000]
+    - [ be32,0x00A305DC,0x39290000]
+    - [ be32,0x00A30420,0x39290000]
+  RE5GED15: &RE5GED15
+    - [ be32,0x00861A20,0xEF63182A]
+    - [ be32,0x00861C54,0xEC7BD82A]
+  RE5GED16: &RE5GED16
+    - [ be32,0x00727ECC,0x60000000]
+  RE5GED17: &RE5GED17
+    - [ be32,0x00889CEC,0xC1BD1DA0]
+  RE5GED18: &RE5GED18
+    - [ be32,0x00A55DF8,0x3C000000]
+    - [ be32,0x00A55DFC,0x900920FC]
+  RE5GED19: &RE5GED19
+    - [ be32,0x013A039C,0x3D000184]
+    - [ be32,0x013A03A0,0x6108F7F0]
+    - [ be32,0x013A03A4,0x7C084840]
+    - [ be32,0x013A03A8,0x41820014]
+    - [ be32,0x013A03AC,0x28110000]
+    - [ be32,0x013A03B0,0x40820004]
+    - [ be32,0x013A03B4,0x3E20C3F7]
+    - [ be32,0x013A03B8,0x92290008]
+    - [ be32,0x013A03BC,0xC1A90024]
+    - [ be32,0x013A03C0,0x4E800020]
+    - [ be32,0x00285C48,0x4911A755]
+  RE5GED20: &RE5GED20
+    - [ be32,0x0139FBCC,0x2C180000]
+    - [ be32,0x0139FBD0,0x4082000C]
+    - [ be32,0x0139FBD4,0x3DC001EE]
+    - [ be32,0x0139FBD8,0x908EFFFC]
+    - [ be32,0x0139FBDC,0x80C40160]
+    - [ be32,0x0139FBE0,0x3E0001EE]
+    - [ be32,0x0139FBE4,0x8230FFFC]
+    - [ be32,0x0139FBE8,0x82310160]
+    - [ be32,0x0139FBEC,0x9230FFF4]
+    - [ be32,0x0139FBF0,0x4E800020]
+    - [ be32,0x00C2EFB0,0x48770C1D]
+  RE5GED21: &RE5GED21
+    - [ be32,0x0139FBF8,0x3DE00192]
+    - [ be32,0x0139FBFC,0x81EFD700]
+    - [ be32,0x0139FC00,0x81EF00F0] # F0=Chris/F4=Sheva 
+    - [ be32,0x0139FC04,0x7C0FF800]
+    - [ be32,0x0139FC08,0x40820024]
+    - [ be32,0x0139FC0C,0x3E4001ED]
+    - [ be32,0x0139FC10,0x6252FFF6]
+    - [ be32,0x0139FC14,0x8A520000]
+    - [ be32,0x0139FC18,0x72520008]
+    - [ be32,0x0139FC1C,0x2C120008]
+    - [ be32,0x0139FC20,0x4082000C]
+    - [ be32,0x0139FC24,0x3E40447A] # ini speed nya
+    - [ be32,0x0139FC28,0x925F0034]
+    - [ be32,0x0139FC2C,0xA01F14A4]
+    - [ be32,0x0139FC30,0x4E800020]
+    - [ be32,0x00840DBC,0x48B5EE3D]
+PPU-a9b0ce57ebd318bd02879751067ceca83b508dd1:
+  "Max/Unlimited Health (1P & 2P)":
+    Games:
+      "Resident Evill 5 Gold Edition (Artemis)":
+        BLUS30491: [ 01.01 ]
+    Author: Skiller
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RE5GED ]
+PPU-a9b0ce57ebd318bd02879751067ceca83b508dd1:
+  "Max/Unlimited Items (Ammo,Herbs,Eggs,Grenades,Mine)":
+    Games:
+      "Resident Evill 5 Gold Edition (Artemis)":
+        BLUS30491: [ 01.01 ]
+    Author: xtatu Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RE5GED2 ]
+PPU-a9b0ce57ebd318bd02879751067ceca83b508dd1:
+  "999 Ammo Never Need To Reload":
+    Games:
+      "Resident Evill 5 Gold Edition (Artemis)":
+        BLUS30491: [ 01.01 ]
+    Author: xtatu Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RE5GED3 ]
+PPU-a9b0ce57ebd318bd02879751067ceca83b508dd1:
+  "Max Money On Buy Or Sell (9,999,999)":
+    Games:
+      "Resident Evill 5 Gold Edition (Artemis)":
+        BLUS30491: [ 01.01 ]
+    Author: puzzle
+    Notes: 
+    Patch Version: 1.2
+    Group: B
+    Patch:
+      - [ load, *RE5GED4 ]
+PPU-a9b0ce57ebd318bd02879751067ceca83b508dd1:
+  "Low Play Times & Make Total Kills (Result)":
+    Games:
+      "Resident Evill 5 Gold Edition (Artemis)":
+        BLUS30491: [ 01.01 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+      - [ load, *RE5GED5 ]
+PPU-a9b0ce57ebd318bd02879751067ceca83b508dd1:
+  "Invincibility":
+    Games:
+      "Resident Evill 5 Gold Edition (Artemis)":
+        BLUS30491: [ 01.01 ]
+    Author: 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RE5GED6 ]
+PPU-a9b0ce57ebd318bd02879751067ceca83b508dd1:
+  "Infinite Ammo + Rapid Fire":
+    Games:
+      "Resident Evill 5 Gold Edition (Artemis)":
+        BLUS30491: [ 01.01 ]
+    Author: 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RE5GED7 ]
+PPU-a9b0ce57ebd318bd02879751067ceca83b508dd1:
+  "Max Money On Buy Or Sell":
+    Games:
+      "Resident Evill 5 Gold Edition (Artemis)":
+        BLUS30491: [ 01.01 ]
+    Author: 
+    Notes: 
+    Patch Version: 1.2
+    Group: B
+    Patch:
+      - [ load, *RE5GED8 ]
+PPU-a9b0ce57ebd318bd02879751067ceca83b508dd1:
+  "Max Score LIN/DE On Gain":
+    Games:
+      "Resident Evill 5 Gold Edition (Artemis)":
+        BLUS30491: [ 01.01 ]
+    Author: 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RE5GED9 ]
+PPU-a9b0ce57ebd318bd02879751067ceca83b508dd1:
+  "Low Play Times & Make Total Kills":
+    Games:
+      "Resident Evill 5 Gold Edition (Artemis)":
+        BLUS30491: [ 01.01 ]
+    Author: 
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+      - [ load, *RE5GED10 ]
+PPU-a9b0ce57ebd318bd02879751067ceca83b508dd1:
+  "Always S Rank":
+    Games:
+      "Resident Evill 5 Gold Edition (Artemis)":
+        BLUS30491: [ 01.01 ]
+    Author: 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RE5GED11 ]
+PPU-a9b0ce57ebd318bd02879751067ceca83b508dd1:
+  "Infinite Missions Timer (Chapter 3-2)":
+    Games:
+      "Resident Evill 5 Gold Edition (Artemis)":
+        BLUS30491: [ 01.01 ]
+    Author: 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RE5GED12 ]
+PPU-a9b0ce57ebd318bd02879751067ceca83b508dd1:
+  "Infinite Timer DE":
+    Games:
+      "Resident Evill 5 Gold Edition (Artemis)":
+        BLUS30491: [ 01.01 ]
+    Author: 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RE5GED13 ]
+PPU-a9b0ce57ebd318bd02879751067ceca83b508dd1:
+  "Infinite Dush Wesker":
+    Games:
+      "Resident Evill 5 Gold Edition (Artemis)":
+        BLUS30491: [ 01.01 ]
+    Author: 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RE5GED14 ]
+PPU-a9b0ce57ebd318bd02879751067ceca83b508dd1:
+  "Fast Movement Speed":
+    Games:
+      "Resident Evill 5 Gold Edition (Artemis)":
+        BLUS30491: [ 01.01 ]
+    Author: 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RE5GED15 ]
+PPU-a9b0ce57ebd318bd02879751067ceca83b508dd1:
+  "Infinite Vehicle Health":
+    Games:
+      "Resident Evill 5 Gold Edition (Artemis)":
+        BLUS30491: [ 01.01 ]
+    Author: 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RE5GED16 ]
+PPU-a9b0ce57ebd318bd02879751067ceca83b508dd1:
+  "No Overheat For Gun-Turret":
+    Games:
+      "Resident Evill 5 Gold Edition (Artemis)":
+        BLUS30491: [ 01.01 ]
+    Author: 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RE5GED17 ]
+PPU-a9b0ce57ebd318bd02879751067ceca83b508dd1:
+  "Instant Remove The Jill Device":
+    Games:
+      "Resident Evill 5 Gold Edition (Artemis)":
+        BLUS30491: [ 01.01 ]
+    Author: 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RE5GED18 ]
+PPU-a9b0ce57ebd318bd02879751067ceca83b508dd1:
+  "Customized Camera (Lke PS4)":
+    Games:
+      "Resident Evill 5 Gold Edition (Artemis)":
+        BLUS30491: [ 01.01 ]
+    Author: 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RE5GED19 ]
+PPU-a9b0ce57ebd318bd02879751067ceca83b508dd1:
+  "(Must Be On) Joker Pad ":
+    Games:
+      "Resident Evill 5 Gold Edition (Artemis)":
+        BLUS30491: [ 01.01 ]
+    Author: 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RE5GED20 ]
+PPU-a9b0ce57ebd318bd02879751067ceca83b508dd1:
+  "(Requires Joker Pad) Hold R2 To Move Up ":
+    Games:
+      "Resident Evill 5 Gold Edition (Artemis)":
+        BLUS30491: [ 01.01 ]
+    Author: 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RE5GED21 ]
