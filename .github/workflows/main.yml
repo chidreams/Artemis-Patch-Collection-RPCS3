@@ -10,11 +10,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Merge extension-less files into imported_patch.yml
+      - name: Show which files will be merged (for debugging)
         run: |
-          # Find files, exclude hidden git/github folders, and exclude files with a dot (extensions)
-          find . -type f ! -path "*/.git/*" ! -path "*/.github/*" ! -name "*.*" -exec cat {} + > imported_patch.yml
-          echo "Merged all files without extensions into imported_patch.yml"
+          echo "Finding patch files containing brackets in the name:"
+          find . -maxdepth 1 -type f -name "*\[*\]*"
+
+      - name: Merge patch files into imported_patch.yml
+        run: |
+          # Finds files in the root directory with "[" and "]" in the name
+          # Uses awk to ensure a clean line break between each merged file
+          find . -maxdepth 1 -type f -name "*\[*\]*" -exec awk 'FNR==1{print ""}1' {} + > imported_patch.yml
+          echo "Merged all game patches into imported_patch.yml"
 
       - name: Upload merged file
         uses: actions/upload-artifact@v4
