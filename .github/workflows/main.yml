@@ -10,10 +10,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Merge all files into imported_patch.yml
+      - name: Merge extension-less files into imported_patch.yml
         run: |
-          find . -type f -not -path "./.git/*" -not -name "imported_patch.yml" -exec cat {} + > imported_patch.yml
-          echo "Merged all files into imported_patch.yml"
+          # Find files, exclude hidden git/github folders, and exclude files with a dot (extensions)
+          find . -type f ! -path "*/.git/*" ! -path "*/.github/*" ! -name "*.*" -exec cat {} + > imported_patch.yml
+          echo "Merged all files without extensions into imported_patch.yml"
 
       - name: Upload merged file
         uses: actions/upload-artifact@v4
