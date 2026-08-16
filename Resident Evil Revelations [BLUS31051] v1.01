@@ -1,0 +1,42 @@
+# Title: Resident Evil Revelations
+# Serial: BLUS31051
+# Category: GD
+# Version: APP_VER=01.01 VERSION=01.00
+PPU-77a6b2ce9093b262e75992c025bb63a5f952daae:
+  "Infinite Reload":
+    Games:
+      "Resident Evil Revelations (Artemis)":
+        BLUS31051: [ 01.01 ]
+    Author: xtatu Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x003EA90C, 0x4082003C ]
+  "Invincible":
+    Games:
+      "Resident Evil Revelations (Artemis)":
+        BLUS31051: [ 01.01 ]
+    Author: xtatu Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x003E6B6C, 0x3880FFFF ]
+      - [ be32, 0x0026A3B8, 0x38800000 ]
+  "1P Hit Kill Ammo Mode":
+    Games:
+      "Resident Evil Revelations (Artemis)":
+        BLUS31051: [ 01.01 ]
+    Author: xtatu Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x002ACEAC, 0x3860270F ]
+  "Quick Shot/Stab Fast":
+    Games:
+      "Resident Evil Revelations (Artemis)":
+        BLUS31051: [ 01.01 ]
+    Author: xtatu Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x002AF570, 0x42C80000 ] 
