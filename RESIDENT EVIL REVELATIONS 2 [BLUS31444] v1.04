@@ -1,0 +1,305 @@
+# Title: RESIDENT EVIL REVELATIONS 2
+# Serial: BLUS31444
+# Category: GD
+# Version: APP_VER=01.04 VERSION=01.04
+# Localized Title: RESIDENT EVIL REVELATIONS 2      
+Anchors:
+  RES2EVR: &RES2EVR
+      - [ be32, 0x0041B3E4, 0x60000000 ]
+      - [ be32, 0x0043A7F8, 0x60000000 ]
+  RES2EVR2: &RES2EVR2
+      - [ be32, 0x00470564, 0x4800003C ]
+  RES2EVR3: &RES2EVR3
+      - [ be32, 0x00416B28, 0x48000004 ]
+  RES2EVR4: &RES2EVR4
+      - [ be32, 0x004318C4, 0x48000028 ]
+  RES2EVR5: &RES2EVR5
+      - [ be32, 0x00823D9C, 0x63C30000 ]
+  RES2EVR6: &RES2EVR6
+      - [ be32, 0x003EA85C, 0x48000004 ]
+  RES2EVR7: &RES2EVR7
+      - [ be32, 0x003EADE0, 0x48000004 ]
+  RES2EVR8: &RES2EVR8
+      - [ be32, 0x002F61E8, 0x3CA0FFFF ]
+  RES2EVR9: &RES2EVR9
+      - [ be32, 0x007FAC78, 0xEC22082A ]
+      - [ be32, 0x007FACD0, 0xEC22082A ]
+  RES2EVR10: &RES2EVR10
+      - [ be32, 0x008B4884, 0x60000000 ]
+      - [ be32, 0x008B4888, 0x60000000 ]
+  RES2EVR11: &RES2EVR11
+      - [ be32, 0x0040E2F8, 0x3BA00064 ]
+  RES2EVR12: &RES2EVR12
+      - [ be32, 0x008B1834, 0x3FE03B9A ]
+      - [ be32, 0x008B1858, 0x63FFC9FF ]
+  RES2EVR13: &RES2EVR13
+      - [ be32, 0x008ADC50, 0x90C300EC ]
+  RES2EVR14: &RES2EVR14
+      - [ be32, 0x00804AA0, 0x3C807FFF ]
+      - [ be32, 0x00804AA4, 0x6084FFFF ]
+  RES2EVR15: &RES2EVR15
+      - [ be32, 0x008C3C50, 0x3C800018 ]
+      - [ be32, 0x008C3C5C, 0x6084069F ]
+  RES2EVR16: &RES2EVR16
+      - [ be32, 0x008C3C50, 0x63640000 ]
+      - [ be32, 0x008C3C5C, 0x7C9DE014 ]
+  RES2EVR17: &RES2EVR17
+      - [ be32, 0x01110544, 0x38A02710]
+  RES2EVR18: &RES2EVR18
+      - [ be32, 0x0040DED0, 0x48000004 ]
+      - [ be32, 0x0040E2D4, 0x91BE0024 ]
+  RES2EVR19: &RES2EVR19
+      - [ be32, 0x007FA524, 0x39200000 ]
+  RES2EVR20: &RES2EVR20
+      - [ be32, 0x0040E2F8, 0x60000000 ]
+  RES2EVR21: &RES2EVR21
+      - [ be32, 0x00802270, 0x3CC0000F ]
+      - [ be32, 0x00802274, 0x60C6423F ]
+  RES2EVR22: &RES2EVR22
+      - [ be32, 0x00364700, 0x40800000 ]
+      - [ be32, 0x00364704, 0x40800000 ]
+      - [ be32, 0x00364708, 0x40800000 ]
+  RES2EVR23: &RES2EVR23
+      - [ be32, 0x001A6F00, 0x40000000 ]
+  RES2EVR24: &RES2EVR24
+      - [ be32, 0x003E9A34, 0x40000000 ]
+  RES2EVR25: &RES2EVR25
+      - [ be32, 0x01110544, 0x38A02710 ]
+  RES2EVR26: &RES2EVR26
+      - [ be32, 0x00F310BC, 0x60000000 ]
+      - [ be32, 0x00F310D0, 0x60000000 ]
+PPU-c675c208fdf21dfc0800b48e4040d3d251682a54:
+  "Infinite Health":
+    Games:
+      "Resident Evil Revelations 2 (Artemis)":
+        BLUS31444: [ 01.04 ]
+    Author: Randy97Killa port by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RES2EVR ]  
+  "Invincible From Melee Attack":
+    Games:
+      "Resident Evil Revelations 2 (Artemis)":
+        BLUS31444: [ 01.04 ]
+    Author: Randy97Killa port by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RES2EVR2 ]
+  "Immunity From Gas [Barry Episode 4]":
+    Games:
+      "Resident Evil Revelations 2 (Artemis)":
+        BLUS31444: [ 01.04 ]
+    Author: Randy97Killa port by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RES2EVR3 ]
+  "Infinite Stamina":
+    Games:
+      "Resident Evil Revelations 2 (Artemis)":
+        BLUS31444: [ 01.04 ]
+    Author: Randy97Killa port by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RES2EVR4 ]
+  "Unlimited Ammo/Items":
+    Games:
+      "Resident Evil Revelations 2 (Artemis)":
+        BLUS31444: [ 01.04 ]
+    Author: Randy97Killa port by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RES2EVR5 ]
+  "No Reload":
+    Games:
+      "Resident Evil Revelations 2 (Artemis)":
+        BLUS31444: [ 01.04 ]
+    Author: Randy97Killa port by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RES2EVR6 ]
+  "Infinite Throwables":
+    Games:
+      "Resident Evil Revelations 2 (Artemis)":
+        BLUS31444: [ 01.04 ]
+    Author: Randy97Killa port by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RES2EVR7 ]
+  "Easy Kills":
+    Games:
+      "Resident Evil Revelations 2 (Artemis)":
+        BLUS31444: [ 01.04 ]
+    Author: Randy97Killa port by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RES2EVR8 ]
+  "Stop Countdown Timer [All Game Mode]":
+    Games:
+      "Resident Evil Revelations 2 (Artemis)":
+        BLUS31444: [ 01.04 ]
+    Author: Randy97Killa port by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RES2EVR9 ]
+  "Freeze Clear Time [Raid Mode]":
+    Games:
+      "Resident Evil Revelations 2 (Artemis)":
+        BLUS31444: [ 01.04 ]
+    Author: Randy97Killa port by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RES2EVR10 ]
+  "Infinite Throwables [Raid Mode]":
+    Games:
+      "Resident Evil Revelations 2 (Artemis)":
+        BLUS31444: [ 01.04 ]
+    Author: Randy97Killa port by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RES2EVR11 ]
+  "Max Gold Coin On Sell Or Buy [Raid Mode]":
+    Games:
+      "Resident Evil Revelations 2 (Artemis)":
+        BLUS31444: [ 01.04 ]
+    Author: Randy97Killa port by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RES2EVR12 ]
+  "Max Skill Points On Use [Raid Mode]":
+    Games:
+      "Resident Evil Revelations 2 (Artemis)":
+        BLUS31444: [ 01.04 ]
+    Author: Randy97Killa port by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RES2EVR13 ]
+  "Max Blue Crystal On Gain/Use [Raid Mode]":
+    Games:
+      "Resident Evil Revelations 2 (Artemis)":
+        BLUS31444: [ 01.04 ]
+    Author: Randy97Killa port by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RES2EVR14 ]
+  "Quick Level Up [Raid Mode]":
+    Games:
+      "Resident Evil Revelations 2 (Artemis)":
+        BLUS31444: [ 01.04 ]
+    Author: Randy97Killa port by ChiDreams
+    Notes: Turn OFF The Code If You Already, Reach Lv100.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RES2EVR15 ]
+  "Quick Level Up OFF [Raid Mode]":
+    Games:
+      "Resident Evil Revelations 2 (Artemis)":
+        BLUS31444: [ 01.04 ]
+    Author: Randy97Killa port by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RES2EVR16 ]
+  "Infinite Protect The Target Health [Raid Mode]":
+    Games:
+      "Resident Evil Revelations 2 (Artemis)":
+        BLUS31444: [ 01.04 ]
+    Author: Randy97Killa port by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RES2EVR17 ]
+  "Stop CountDown Skills Timer [Raid Mode]":
+    Games:
+      "Resident Evil Revelations 2 (Artemis)":
+        BLUS31444: [ 01.04 ]
+    Author: Randy97Killa port by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RES2EVR18 ]  
+  "100 Accuracy, 0 Retries":
+    Games:
+      "Resident Evil Revelations 2 (Artemis)":
+        BLUS31444: [ 01.04 ]
+    Author: dron_3, ported by x_com port by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RES2EVR19 ]
+  "Infinite Bottle":
+    Games:
+      "Resident Evil Revelations 2 (Artemis)":
+        BLUS31444: [ 01.04 ]
+    Author: GelsonSilva from ? ported by x_com port by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RES2EVR20 ]
+  "Max BP On Buy Or Sell":
+    Games:
+      "Resident Evil Revelations 2 (Artemis)":
+        BLUS31444: [ 01.04 ]
+    Author: GelsonSilva from ? ported by x_com port by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RES2EVR21 ]
+  "Big Weapons":
+    Games:
+      "Resident Evil Revelations 2 (Artemis)":
+        BLUS31444: [ 01.04 ]
+    Author: GelsonSilva from ? ported by x_com port by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RES2EVR22 ]
+  "Knife Attack Speed Up":
+    Games:
+      "Resident Evil Revelations 2 (Artemis)":
+        BLUS31444: [ 01.04 ]
+    Author: GelsonSilva from ? ported by x_com port by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RES2EVR23 ]
+  "Gun Attack Speed Up":
+    Games:
+      "Resident Evil Revelations 2 (Artemis)":
+        BLUS31444: [ 01.04 ]
+    Author: GelsonSilva from ? ported by x_com port by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RES2EVR24 ]
+  "Infinite Protect The Target Health [Raid Mode]":
+    Games:
+      "Resident Evil Revelations 2 (Artemis)":
+        BLUS31444: [ 01.04 ]
+    Author: Randy97Killa port by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RES2EVR25 ]      
+  "Unlock FPS":
+    Games:
+      "Resident Evil Revelations 2 (Artemis)":
+        BLUS31444: [ 01.04 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RES2EVR26 ]      
