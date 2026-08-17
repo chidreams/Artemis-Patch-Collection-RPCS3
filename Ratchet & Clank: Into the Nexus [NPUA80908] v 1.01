@@ -1,9 +1,91 @@
-Version: 1.2
 # Title: Ratchet & Clank: Into the Nexus™
 # Serial: NPUA80908
 # Category: HG
-# Version: APP_VER=01.01 VERSION=01.00     
+# Version: APP_VER=01.01 VERSION=01.00       
 PPU-fadb0af6fb7bd0113e88fb9af3eb78fe3be05d08:
+  "Infinite Health":
+    Games:
+      "Ratchet & Clank: Into the Nexus (Artemis)":
+        NPUA80908: [ 01.01 ]
+    Author: dron_3 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x001E7354, 0xD3BD0000 ]
+  "Infinite Ammo":
+    Games:
+      "Ratchet & Clank: Into the Nexus (Artemis)":
+        NPUA80908: [ 01.01 ]
+    Author: flynhigh09, games24.blog.fc2.com Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+     - [ be32, 0x00496EA8, 0x60000000 ]
+  "Infinite Raritanium":
+    Games:
+      "Ratchet & Clank: Into the Nexus (Artemis)":
+        NPUA80908: [ 01.01 ]
+    Author: flynhigh09, games24.blog.fc2.com Ported by ChIdReamS
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+      - [ be32, 0x004F0D2C, 0x60000000 ]
+  "Clank Netherverse 0 Time On (Read Notes)":
+    Games:
+      "Ratchet & Clank: Into the Nexus (Artemis)":
+        NPUA80908: [ 01.01 ]
+    Author: bungholio Ported by ChiDreams
+    Notes: enable it only if your are doing Netherverse missions.
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x006A1E00, 0x90640000 ]
+  "Clank Netherverse Never Took Damage":
+    Games:
+      "Ratchet & Clank: Into the Nexus (Artemis)":
+        NPUA80908: [ 01.01 ]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x00133DA0, 0x38800000 ]
+  "Clank Netherverse 0 Moves":
+    Games:
+      "Ratchet & Clank: Into the Nexus (Artemis)":
+        NPUA80908: [ 01.01 ]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x00369D30, 0x38600000 ]      
+  "Hit An Enemy With A Weapon To Instantly Fully Level It":
+    Games:
+      "Ratchet & Clank: Into the Nexus (Artemis)":
+        NPUA80908: [ 01.01 ]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x004971B4, 0x60000000 ] 
+  "Kill An Enemy To Instantly Max Out Health Cap":
+    Games:
+      "Ratchet & Clank: Into the Nexus (Artemis)":
+        NPUA80908: [ 01.01 ]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x001D9FB8, 0x4800000C ]
+  "9,999 Raritanium After Use":
+    Games:
+      "Ratchet & Clank: Into the Nexus (Artemis)":
+        NPUA80908: [ 01.01 ]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+      - [ be32, 0x004F0D2C, 0x3860270F ]
   "Freeze fix":
     Games:
       "Ratchet & Clank: Into the Nexus (Artemis)":
@@ -13,33 +95,3 @@ PPU-fadb0af6fb7bd0113e88fb9af3eb78fe3be05d08:
     Patch Version: 1.2
     Patch:
       - [ be32, 0x005f8ca8, 0x4082fff4 ]
-PPU-fadb0af6fb7bd0113e88fb9af3eb78fe3be05d08:
-  "Infinite Health":
-    Games:
-      "Ratchet & Clank: Into the Nexus (Artemis)":
-        NPUA80908: [ 01.01 ]
-    Author: dron_3 Ported by ChIdReamS
-    Notes: 
-    Patch Version: 1.2
-    Patch:
-    - [ be32,0x001E7354,0xD3BD0000]
-PPU-fadb0af6fb7bd0113e88fb9af3eb78fe3be05d08:
-  "Infinite Ammo":
-    Games:
-      "Ratchet & Clank: Into the Nexus (Artemis)":
-        NPUA80908: [ 01.01 ]
-    Author: flynhigh09 Ported by ChIdReamS
-    Notes: 
-    Patch Version: 1.2
-    Patch:
-    - [ be32,0x00496EA8,0x60000000]
-PPU-fadb0af6fb7bd0113e88fb9af3eb78fe3be05d08:
-  "Infinite Raritanium":
-    Games:
-      "Ratchet & Clank: Into the Nexus (Artemis)":
-        NPUA80908: [ 01.01 ]
-    Author: flynhigh09 Ported by ChIdReamS
-    Notes: 
-    Patch Version: 1.2
-    Patch:
-    - [ be32,0x004F0D2C,0x60000000]
