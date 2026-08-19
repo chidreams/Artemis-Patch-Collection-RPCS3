@@ -1,4 +1,3 @@
-Version: 1.2
 # Title: The Godfather® The Don’s Edition
 # Serial: BLUS30023
 # Category: DG
@@ -11,7 +10,7 @@ PPU-b86a6fb6b4f5cf3572b3132391e5c4b02045d870:
     Games:
       "The Godfather® The Don’s Edition (Artemis)":
         BLUS30023: [ 01.00 ]
-    Author: chidreams
+    Author: ChiDreams
     Notes: 
     Patch Version: 1.0
     Group: A
@@ -26,7 +25,7 @@ PPU-b86a6fb6b4f5cf3572b3132391e5c4b02045d870:
     Games:
       "The Godfather® The Don’s Edition (Artemis)":
         BLUS30023: [ 01.00 ]
-    Author:  Chidreams
+    Author:  ChiDreams
     Notes: not working (WIP)
     Patch Version: 1.0
     Group: AC
@@ -42,7 +41,7 @@ PPU-b86a6fb6b4f5cf3572b3132391e5c4b02045d870:
     Games:
       "The Godfather® The Don’s Edition (Artemis)":
         BLUS30023: [ 01.00 ]
-    Author:  Chidreams
+    Author:  ChiDreams
     Notes: 
     Patch Version: 1.0
     Group: AC
@@ -70,7 +69,7 @@ PPU-b86a6fb6b4f5cf3572b3132391e5c4b02045d870:
     Games:
       "The Godfather® The Don’s Edition (Artemis)":
         BLUS30023: [ 01.00 ]
-    Author:  Chidreams
+    Author:  ChiDreams
     Notes:  Just Know there can be only one 
     Patch Version: 1.0
     Group: C
@@ -84,20 +83,3 @@ PPU-b86a6fb6b4f5cf3572b3132391e5c4b02045d870:
       - [ be32, 0x00323EB8, 0xFC200090 ]  # fmr   f1,f0            ; keep old
       - [ be32, 0x00323EBC, 0xD03D14C8 ]  # stfs  f1,0x14C8(r29)   ; store old
       - [ be32, 0x00323EC0, 0x4BE90C18 ]  # b     0x001B4AD8       ; return 
-  Skill Points = 99.0:
-    Games:
-      "The Godfather® The Don’s Edition (Artemis)":
-        BLUS30023: [ 01.00 ]
-    Author:  Chidreams
-    Notes: 
-    Patch Version: 1.0
-    Group: 
-    Patch:
-      # Hook: replace original stfs with branch to cave
-      - [ be32, 0x002F8A9C, 0x4BD17694 ]  # b 0x00010130
-      - [ be32, 0x00010130, 0x3D8042C6 ]  # lis r12,0x42C6
-      - [ be32, 0x00010134, 0x618C0000 ]  # ori r12,r12,0
-      - [ be32, 0x00010138, 0x91810070 ]  # stw r12,0x70(r1)
-      - [ be32, 0x0001013C, 0xC0210070 ]  # lfs f1,0x70(r1)
-      - [ be32, 0x00010140, 0xD0240008 ]  # stfs f1,0x8(r4)  (original store)
-      - [ be32, 0x00010144, 0x482E895C ]  # b 0x002F8AA0
