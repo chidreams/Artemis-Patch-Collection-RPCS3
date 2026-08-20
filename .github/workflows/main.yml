@@ -2,10 +2,20 @@ name: Merge All Files
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'imported_patch.yml'
 
 jobs:
   merge-all:
     runs-on: ubuntu-latest
+    
+    # REQUIRED: Grants the runner permission to push code back to the repo
+    permissions:
+      contents: write 
+      
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -27,3 +37,11 @@ jobs:
         with:
           name: imported-patch
           path: imported_patch.yml
+          
+      - name: Commit and push generated patch file
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add imported_patch.yml
+          git commit -m "Auto-compiled imported_patch.yml" || echo "No changes to commit"
+          git push
