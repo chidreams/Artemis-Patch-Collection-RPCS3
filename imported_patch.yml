@@ -16144,6 +16144,84 @@ PPU-cfa4d1b380b8ebfa5acd59fa9378c50e3059865c:
     Patch:
     - [ be32,0x00AFA124,0x3F800000]
 
+# Title: ETERNAL SONATA
+# Serial: BLUS30161
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00      
+PPU-88e0482caa8be54fac6bd3c33ac2716b1a92ae90:
+  "Max Atk (999)":
+    Games:
+      "ETERNAL SONATA (Artemis)":
+        BLUS30161: [ 01.00 ]
+    Author: xilium Ported By ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x001E9370, 0x409D0180 ] 
+  "Max Mag (999)":
+    Games:
+      "ETERNAL SONATA (Artemis)":
+        BLUS30161: [ 01.00 ]
+    Author: xilium Ported By ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x001E937C, 0x409D015C ]
+  "Max Def (999)":
+    Games:
+      "ETERNAL SONATA (Artemis)":
+        BLUS30161: [ 01.00 ]
+    Author: xilium Ported By ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x001E9388, 0x409D0138 ]
+  "Max Spd (999)":
+    Games:
+      "ETERNAL SONATA (Artemis)":
+        BLUS30161: [ 01.00 ]
+    Author: xilium Ported By ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x001E9394, 0x409D0120 ]
+  "Max Strength":
+    Games:
+      "ETERNAL SONATA (Artemis)":
+        BLUS30161: [ 01.00 ]
+    Author: xilium Ported By ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x001E933C, 0x3BE02710 ]
+  "Max Magic":
+    Games:
+      "ETERNAL SONATA (Artemis)":
+        BLUS30161: [ 01.00 ]
+    Author: xilium Ported By ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x001E9340, 0x3BA02710 ]
+  "Max Defense":
+    Games:
+      "ETERNAL SONATA (Artemis)":
+        BLUS30161: [ 01.00 ]
+    Author: xilium Ported By ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x001E9344, 0x3B802710 ]
+  "Max Speed":
+    Games:
+      "ETERNAL SONATA (Artemis)":
+        BLUS30161: [ 01.00 ]
+    Author: xilium Ported By ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x001E9348, 0x3BC02710 ]
+
 Anchors:
   TTroopers: &TTroopers
     - [ be32,0x00D8E360,0x3CE00287]
