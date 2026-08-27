@@ -1,0 +1,150 @@
+# Title: Castlevania: Harmony of Despair
+# Serial: NPEB00563
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.01 
+Anchors:
+  Despair: &Despair
+    - [ be32,0x0028BBAC,0x3CA03010]
+    - [ be32,0x0028BBB0,0x60A517E0]
+    - [ be32,0x0028BBB4,0x3CC03048]
+    - [ be32,0x0028BBB8,0x81250008]
+    - [ be32,0x0028BBBC,0x2F890254]
+    - [ be32,0x0028BBC0,0x419E0014]
+    - [ be32,0x0028BBC4,0x38A50010]
+    - [ be32,0x0028BBC8,0x7F853000]
+    - [ be32,0x0028BBCC,0x409DFFEC]
+    - [ be32,0x0028BBD0,0x4828BBE4]
+    - [ be32,0x0028BBD4,0x3CC0447A]
+    - [ be32,0x0028BBD8,0x90C50014]
+    - [ be32,0x0028BBDC,0x90C50018]
+    - [ be32,0x0028BBE0,0x60000000]
+  Despair2: &Despair2
+    - [ be32,0x00244CD8,0x4E800020]
+  Despair3: &Despair3
+    - [ be32,0x009D1E00,0x3E00447A]
+    - [ be32,0x009D1E04,0x92030008]
+    - [ be32,0x009D1E08,0x92030014]
+    - [ be32,0x009D1E0C,0x3E204B18]
+    - [ be32,0x009D1E10,0x3E404B18]
+    - [ be32,0x009D1E14,0x9223004C]
+    - [ be32,0x009D1E18,0x92230050]
+    - [ be32,0x009D1E1C,0x92230054]
+    - [ be32,0x009D1E20,0x92230058]
+    - [ be32,0x009D1E24,0x9223005C]
+    - [ be32,0x009D1E28,0x92430004]
+    - [ be32,0x009D1E2C,0x92430010]
+    - [ be32,0x009D1E30,0x4875064A]
+    - [ be32,0x00750644,0x489D1E02]
+  Despair4: &Despair4
+    - [ be32,0x009D201C,0x3E00028E]
+    - [ be32,0x009D2020,0x93F0F044]
+    - [ be32,0x009D2024,0x817F0924]
+    - [ be32,0x009D2028,0x482411F6]
+    - [ be32,0x002411F0,0x489D201E]
+    - [ be32,0x009D202C,0x3E40028E]
+    - [ be32,0x009D2030,0x8252F044]
+    - [ be32,0x009D2034,0x80840000]
+    - [ be32,0x009D2038,0x70842000]
+    - [ be32,0x009D203C,0x2B842000]
+    - [ be32,0x009D2040,0x409E0008]
+    - [ be32,0x009D2044,0x93920960]
+    - [ be32,0x009D2048,0x487B231E]
+    - [ be32,0x007B2318,0x489D202E]
+  Despair5: &Despair5
+    - [ be32,0x0028BC00,0x60000000]
+  Despair6: &Despair6
+    - [ be32,0x0077FE84,0x60000000]  
+  Despair7: &Despair7
+    - [ be32,0x0077e000,0x60000000] 
+  Despair8: &Despair8
+    - [ be32,0x0077fe7c,0x60000000]     
+PPU-a5845990bfd8072c61ffa9a4cc6914c0b80ead1c:
+  "Infinite Health/Magic":
+    Games:
+      "Castlevania: Harmony of Despair (Artemis)":
+        NPEB00563: [ 01.00 ]
+        NPUB30505: [ 01.00 ]
+    Author: Tekman PORTED by ChiDreams
+    Notes: 
+    Patch Version: 1.3
+    Group: A
+    Patch:
+      - [ load, *Despair ]
+PPU-a5845990bfd8072c61ffa9a4cc6914c0b80ead1c:
+  "Invincible Against All Enemy Attacks":
+    Games:
+      "Castlevania: Harmony of Despair (Artemis)":
+        NPEB00563: [ 01.00 ]
+        NPUB30505: [ 01.00 ]
+    Author: GuitarMan PORTED by ChiDreams
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *Despair2 ]
+PPU-a5845990bfd8072c61ffa9a4cc6914c0b80ead1c:
+  "Infinite Health, Magic, Max Luck, Max CON, Max INT":
+    Games:
+      "Castlevania: Harmony of Despair (Artemis)":
+        NPEB00563: [ 01.00 ]
+        NPUB30505: [ 01.00 ]
+    Author: GuitarMan PORTED by ChiDreams
+    Notes: 
+    Patch Version: 1.3
+    Group: A
+    Patch:
+      - [ load, *Despair3 ]
+PPU-a5845990bfd8072c61ffa9a4cc6914c0b80ead1c:
+  "Infinite Jumps Hold R2":
+    Games:
+      "Castlevania: Harmony of Despair (Artemis)":
+        NPEB00563: [ 01.00 ]
+        NPUB30505: [ 01.00 ]
+    Author: GuitarMan PORTED by ChiDreams
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *Despair4 ]
+PPU-a5845990bfd8072c61ffa9a4cc6914c0b80ead1c:
+  "Time Left Never Decreasing":
+    Games:
+      "Castlevania: Harmony of Despair (Artemis)":
+        NPEB00563: [ 01.00 ]
+        NPUB30505: [ 01.00 ]
+    Author: GuitarMan PORTED by ChiDreams
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *Despair5 ]
+PPU-a5845990bfd8072c61ffa9a4cc6914c0b80ead1c:
+  "Damage Dealt 99999999":
+    Games:
+      "Castlevania: Harmony of Despair (Artemis)":
+        NPEB00563: [ 01.00 ]
+        NPUB30505: [ 01.00 ]
+    Author: Tekman PORTED by ChiDreams
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *Despair6 ]
+PPU-a5845990bfd8072c61ffa9a4cc6914c0b80ead1c:
+  "Kills 999999":
+    Games:
+      "Castlevania: Harmony of Despair (Artemis)":
+        NPEB00563: [ 01.00 ]
+        NPUB30505: [ 01.00 ]
+    Author: Tekman PORTED by ChiDreams
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *Despair7 ]   
+PPU-a5845990bfd8072c61ffa9a4cc6914c0b80ead1c:
+  "Play Time 999:59:59":
+    Games:
+      "Castlevania: Harmony of Despair (Artemis)":
+        NPEB00563: [ 01.00 ]
+        NPUB30505: [ 01.00 ]
+    Author: Tekman PORTED by ChiDreams
+    Notes: 
+    Patch Version: 1.3
+    Patch:
+      - [ load, *Despair8 ] 
