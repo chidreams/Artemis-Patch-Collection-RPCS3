@@ -1,0 +1,63 @@
+# Title: Dragon Ball Z Ultimate Tenkaichi
+# Serial: BLES01401
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00      
+PPU-654fb814f75c7c639959779f4c6a88b4d47d2bd5:
+  "Infinite Health (P1 Only)":
+    Games:
+      "Dragon Ball Z Ultimate Tenkaichi (Dreams)":
+        BLES01401: [ 01.00 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+      - [ be32,0x00327998,0x483C6D80 ] 
+      - [ be32,0x006EE718,0x4BC480CD ] # bl 0x003367E4 (Run original math)
+      - [ be32,0x006EE71C,0x819E001C ] # lwz r12, 0x1C(r30)
+      - [ be32,0x006EE720,0x2C0C0000 ] # cmpwi r12, 0
+      - [ be32,0x006EE724,0x40820010 ] # bne 0x006EE734 (Skip heal if AI)
+      - [ be32,0x006EE728,0x819E0040 ] # lwz r12, 0x40(r30) (Load Max HP)
+      - [ be32,0x006EE72C,0x919E0044 ] # stw r12, 0x44(r30) (Lock 0x44)
+      - [ be32,0x006EE730,0x919E00B0 ] # stw r12, 0xB0(r30) (Lock 0xB0)
+      - [ be32,0x006EE734,0x4BC39268 ] # b 0x0032799C (Return to engine)
+      - [ be32,0x00327B3C,0x483C6C00 ] 
+      - [ be32,0x006EE73C,0x917F00B0 ] # stw r11, 0xB0(r31) (Run original math)
+      - [ be32,0x006EE740,0x819F001C ] # lwz r12, 0x1C(r31)
+      - [ be32,0x006EE744,0x2C0C0000 ] # cmpwi r12, 0
+      - [ be32,0x006EE748,0x40820010 ] # bne 0x006EE758 (Skip heal if AI)
+      - [ be32,0x006EE74C,0x819F0040 ] # lwz r12, 0x40(r31) (Load Max HP)
+      - [ be32,0x006EE750,0x919F0044 ] # stw r12, 0x44(r31) (Lock 0x44)
+      - [ be32,0x006EE754,0x919F00B0 ] # stw r12, 0xB0(r31) (Lock 0xB0)
+      - [ be32,0x006EE758,0x4BC393E8 ] # b 0x00327B40 (Return to engine)
+  "God Mode (Infinite P1 + 1-Hit Kill AI)":
+    Games:
+      "Dragon Ball Z Ultimate Tenkaichi (Dreams)":
+        BLES01401: [ 01.00 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+      - [ be32,0x00327998,0x483C6D80 ] # b 0x006EE718
+      - [ be32,0x006EE718,0x4BC480CD ] # bl 0x003367E4 (Run original math)
+      - [ be32,0x006EE71C,0x819E001C ] # lwz r12, 0x1C(r30)
+      - [ be32,0x006EE720,0x2C0C0000 ] # cmpwi r12, 0
+      - [ be32,0x006EE724,0x4082000C ] # bne 0x006EE730 (Jump to AI Kill)
+      - [ be32,0x006EE728,0x819E0040 ] # lwz r12, 0x40(r30) (P1: Load Max HP)
+      - [ be32,0x006EE72C,0x48000008 ] # b 0x006EE734 (Jump to Store)
+      - [ be32,0x006EE730,0x39800000 ] # li r12, 0 (AI: Load 0 HP)
+      - [ be32,0x006EE734,0x919E0044 ] # stw r12, 0x44(r30) (Lock 0x44)
+      - [ be32,0x006EE738,0x919E00B0 ] # stw r12, 0xB0(r30) (Lock 0xB0)
+      - [ be32,0x006EE73C,0x4BC39260 ] # b 0x0032799C (Return to engine)
+      - [ be32,0x00327B3C,0x483C6C04 ] # b 0x006EE740
+      - [ be32,0x006EE740,0x917F00B0 ] # stw r11, 0xB0(r31) (Run original math)
+      - [ be32,0x006EE744,0x819F001C ] # lwz r12, 0x1C(r31)
+      - [ be32,0x006EE748,0x2C0C0000 ] # cmpwi r12, 0
+      - [ be32,0x006EE74C,0x4082000C ] # bne 0x006EE758 (Jump to AI Kill)
+      - [ be32,0x006EE750,0x819F0040 ] # lwz r12, 0x40(r31) (P1: Load Max HP)
+      - [ be32,0x006EE754,0x48000008 ] # b 0x006EE75C (Jump to Store)
+      - [ be32,0x006EE758,0x39800000 ] # li r12, 0 (AI: Load 0 HP)
+      - [ be32,0x006EE75C,0x919F0044 ] # stw r12, 0x44(r31) (Lock 0x44)
+      - [ be32,0x006EE760,0x919F00B0 ] # stw r12, 0xB0(r31) (Lock 0xB0)
+      - [ be32,0x006EE764,0x4BC393DC ] # b 0x00327B40 (Return to engine) 
