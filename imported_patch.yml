@@ -6530,6 +6530,70 @@ PPU-d0c3e2a107c47d20d3316325ce6f75464a8f4f1d:
     Patch:
       - [ load, *inFamousaltv26 ]       
 
+# Serial: BLUS30431
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00
+PPU-3de340701cfb52769efd69f65dabed7bc61afeff:
+  "Player 1 Infinite Health & Power":
+    Games:
+      "Dragon Ball: Raging Blast (Dreams)":
+        BLUS30431: [ 01.00 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x00647494,0x3C800078 ] # lis r4, 0x0078
+      - [ be32,0x00647498,0x60848660 ] # ori r4, r4, 0x8660 (r4 = 0x00788660)
+      - [ be32,0x0064749C,0x80840000 ] # lwz r4, 0(r4) (Load Dynamic Base Address into r4)
+      - [ be32,0x006474A0,0x38840078 ] # addi r4, r4, 0x0078 (r4 = Exact P1 r3 Address)
+      - [ be32,0x006474A4,0x7C032000 ] # cmpw cr0, r3, r4 (Is the game reading P1?)
+      - [ be32,0x006474A8,0x4082001C ] # bne +0x1C (If no, skip to the end)
+      - [ be32,0x006474AC,0x3C80471C ] # lis r4, 0x471C
+      - [ be32,0x006474B0,0x60844000 ] # ori r4, r4, 0x4000
+      - [ be32,0x006474B4,0x9083001C ] # stw r4, 0x1C(r3) (Write Max Health)
+      - [ be32,0x006474B8,0x3C8042C8 ] # lis r4, 0x42C8
+      - [ be32,0x006474BC,0x90830020 ] # stw r4, 0x20(r3) (Write Max Power)
+      - [ be32,0x006474C0,0x38800000 ] # li r4, 0 (Clean up r4)
+      - [ be32,0x006474C4,0x38800000 ] # li r4, 0 (Clean up r4 - padding)
+      - [ be32,0x006474C8,0xC1A30018 ] # lfs f13, 0x18(r3) (Original read instruction)
+      - [ be32,0x006474CC,0x4BA9EBC4 ] # b 0x000E6090 (Return Jump)
+      - [ be32,0x000E608C,0x48561408 ] # b 0x00647494
+  "P2 & P3 Instant Death (1-Hit Kill)":
+    Games:
+      "Dragon Ball: Raging Blast (Dreams)":
+        BLUS30431: [ 01.00 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x00647500,0x3C800078 ] # lis r4, 0x0078
+      - [ be32,0x00647504,0x60848660 ] # ori r4, r4, 0x8660
+      - [ be32,0x00647508,0x80840000 ] # lwz r4, 0(r4) (Load Dynamic Base Address)
+      - [ be32,0x0064750C,0x38A407B4 ] # addi r5, r4, 0x07B4 (Calculate P2 Address)
+      - [ be32,0x00647510,0x7C032800 ] # cmpw cr0, r3, r5 (Is it reading P2?)
+      - [ be32,0x00647514,0x41820010 ] # beq +0x10 (If yes, jump to Kill Player)
+      - [ be32,0x00647518,0x38A40924 ] # addi r5, r4, 0x0924 (Calculate P3 Address)
+      - [ be32,0x0064751C,0x7C032800 ] # cmpw cr0, r3, r5 (Is it reading P3?)
+      - [ be32,0x00647520,0x40820008 ] # bne +0x08 (If no, skip Kill Player)
+      - [ be32,0x00647524,0x38A00000 ] # li r5, 0 (Load 0 into r5)
+      - [ be32,0x00647528,0x90A3001C ] # stw r5, 0x1C(r3) (Write 0 to Health)
+      - [ be32,0x0064752C,0xC1A30018 ] # lfs f13, 0x18(r3) (Original Instruction)
+      - [ be32,0x00647530,0x4BA9EB60 ] # b 0x000E6090 (Return Jump)
+      - [ be32,0x000E608C,0x48561474 ] # b 0x00647500 (Jump to Cave)
+  "Max Money (9,999,999)":
+    Games:
+      "Dragon Ball: Raging Blast (Dreams)":
+        BLUS30431: [ 01.00 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:      
+      - [ be32,0x00647540,0x3C000098 ] # lis r0, 0x0098
+      - [ be32,0x00647544,0x6000967F ] # ori r0, r0, 0x967F (r0 = 9,999,999)
+      - [ be32,0x00647548,0x90095C34 ] # stw r0, 0x5C34(r9) (Original write instruction)
+      - [ be32,0x0064754C,0x4BDBED10 ] # b 0x0040625C (Return Jump)
+      - [ be32,0x00406258,0x482412E8 ] # b 0x00647540 (Jump to Cave)  
+
 # Title: Dead Space™ 2 Standard
 # Serial: BLUS30717
 # Category: DG
