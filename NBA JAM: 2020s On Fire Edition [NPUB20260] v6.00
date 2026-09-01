@@ -1,0 +1,35 @@
+# Title: NBA JAM: On Fire Edition
+# Serial: NPUB20260
+# Category: HG
+# Version: APP_VER=06.00 VERSION=01.01
+# Localized Title: NBA JAM: On Fire Edition      
+PPU-036e47ad8b6ea735e0ad9400840a882db64ac44e:
+  "Get The BAG":
+    Games:
+      "NBA JAM: 2020s On Fire Edition (Dreams)":
+        NPUB20260: [ 06.00 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x00E45268, 0x7D8802A6 ]
+      - [ be32, 0x00E4526C, 0x558C843E ]
+      - [ be32, 0x00E45270, 0x2C0C000F ]
+      - [ be32, 0x00E45274, 0x40820018 ]
+      - [ be32, 0x00E45278, 0x2C040004 ]
+      - [ be32, 0x00E4527C, 0x40820010 ]
+      - [ be32, 0x00E45280, 0x3C60000F ]
+      - [ be32, 0x00E45284, 0x6063423F ]
+      - [ be32, 0x00E45288, 0x4E800020 ]
+      - [ be32, 0x00E4528C, 0xF821FF71 ]
+      - [ be32, 0x00E45290, 0x4B2DA2E8 ]
+      - [ be32, 0x0011F574, 0x48D25CF4 ] 
+  "Keep Running My Boy":
+    Games:
+      "NBA JAM: 2020s On Fire Edition (Dreams)":
+        NPUB20260: [ 06.00 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x00099BC0, 0x60000000 ] 
