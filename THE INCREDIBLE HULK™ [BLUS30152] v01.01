@@ -1,0 +1,35 @@
+# Title: THE INCREDIBLE HULK™
+# Serial: BLUS30152
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00
+PPU-01f67c8e0fcd27f7794c977e18b52362cb9b8445:
+  "Infinite Health & Power":
+    Games:
+      "The Incredible Hulk (Dreams)":
+        BLUS30152: [ 01.01 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x008B57DC,0x800305EC ]
+      - [ be32,0x008B57E0,0x2C0003E8 ]
+      - [ be32,0x008B57E4,0x40820010 ]
+      - [ be32,0x008B57E8,0x900305E8 ]
+      - [ be32,0x008B57EC,0x3C0042C8 ] # lis r0, 0x42C8 (Float 100.0)
+      - [ be32,0x008B57F0,0x900305F0 ]
+      - [ be32,0x008B57F4,0x806305E8 ]
+      - [ be32,0x008B57F8,0x4B920B44 ]
+      - [ be32,0x001D6338,0x486DF4A4 ] 
+  "Max Score on Hit":
+    Games:
+      "The Incredible Hulk (Dreams)":
+        BLUS30152: [ 01.01 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x008B57FC,0x3C003B9A ]
+      - [ be32,0x008B5800,0x6000C9FF ]
+      - [ be32,0x008B5804,0x900B0000 ]
+      - [ be32,0x008B5808,0x4B9347AC ]
+      - [ be32,0x001E9FB0,0x486CB84C ]
