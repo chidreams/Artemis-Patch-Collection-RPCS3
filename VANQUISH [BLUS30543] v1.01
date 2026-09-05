@@ -1,0 +1,64 @@
+# Title: VANQUISH
+# Serial: BLUS30543
+# Category: GD
+# Version: APP_VER=01.01 VERSION=01.00
+PPU-7e4dd1e6c3a014983a9ccd4d675a97e390e80e9a:
+  "Infinite Health":
+    Games:
+      "VANQUISH (Dreams)":
+        BLUS30543: [ 01.01 ]
+    Author: xtatu ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x001A8A24,0x60000000]
+  "Infinite Energy":
+    Games:
+      "VANQUISH (Dreams)":
+        BLUS30543: [ 01.01 ]
+    Author: xtatu, predprey ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x0010ABD8,0x60000000]
+      - [ be32,0x0010AD1C,0x60000000]
+      - [ be32,0x0010ADD4,0x60000000]
+      - [ be32,0x0013132C,0x60000000]
+      - [ be32,0x0015C740,0x60000000]
+      - [ be32,0x0015C854,0x60000000]
+      - [ be32,0x00151330,0x60000000]
+      - [ be32,0x0015C404,0x60000000]
+      - [ be32,0x0015C5C8,0x60000000]
+      - [ be32,0x0015C744,0x60000000]
+      - [ be32,0x0015C858,0x60000000]
+      - [ be32,0x0015DAEC,0x60000000]
+      - [ be32,0x0016E090,0x60000000]
+  "Infinite Energy For Laser Cannon":
+    Games:
+      "VANQUISH (Dreams)":
+        BLUS30543: [ 01.01 ]
+    Author: predprey ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x0015DAE8,0x60000000]
+  "Infinite Ammo":
+    Games:
+      "VANQUISH (Dreams)":
+        BLUS30543: [ 01.01 ]
+    Author: xtatu ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x00109FAC,0x60000000]
+      - [ be32,0x00109FCC,0x60000000]
+      - [ be32,0x00109FE0,0x60000000]     
+  "Max Score After Battle":
+    Games:
+      "VANQUISH (Dreams)":
+        BLUS30543: [ 01.01 ]
+    Author: Skiller ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x00492058,0x60000000]
