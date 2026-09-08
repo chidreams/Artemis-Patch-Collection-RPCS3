@@ -14595,7 +14595,6 @@ PPU-3a4e272eff128f7fa40bf722961a0c6de81bfc5a:
     Patch:
       - [ be16,0x00193872, 0x0000] 
 
-Version: 1.2
 PPU-58c1ac21c900a1a9616ac564d501d311ce84039a:
   "Infinite Health":
     Games:
