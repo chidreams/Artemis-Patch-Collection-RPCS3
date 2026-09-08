@@ -8928,7 +8928,6 @@ PPU-0afc1a90a68e68328ff30471d2e023eedb517008:
     Patch:
       - [ load, *DSExtraction5 ]
 
-Version: 1.2
 # Title: Midnight Club: Los Angeles
 # Serial: BLUS30442
 # Category: DG
