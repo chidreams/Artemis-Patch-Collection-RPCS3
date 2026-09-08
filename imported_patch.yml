@@ -14794,7 +14794,6 @@ PPU-11f50d10f4626cdd59837e2fe44b701a9d9bfeac:
       - [ be32, 0x008784C0, 0x60000000 ]
       - [ be32, 0x008784D4, 0x30630000 ] 
 
-Version: 1.2 
 # Title: How To Survive
 # Serial: NPUB31240
 # Category: HG
