@@ -17403,7 +17403,6 @@ PPU-6ebf2150806bf812daa9669b03e4ac6f61ef605a:
     - [ be32,0x009AED80,0x4804270E]
     - [ be32,0x00042708,0x489AED76]
 
-Version: 1.2
 Anchors:
   HSword: &HSword
       - [ be32,0x00010064,0x00E81000]
