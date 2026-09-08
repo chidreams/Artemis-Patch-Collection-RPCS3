@@ -17634,7 +17634,6 @@ PPU-4b7d01f72325d0da3b42bec6f2e45f28a3a0dc10:
     Patch:
       - [ load, *HSword10 ]   
 
-Version: 1.2 
 # Title: Mortal Kombat
 # Serial: BLUS30522
 # Category: GD
