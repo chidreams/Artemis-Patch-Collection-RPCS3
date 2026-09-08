@@ -12872,7 +12872,6 @@ PPU-5788d66f73f09f50b8d34129fa44681d9d13b0c5:
     Patch:
      - [ be32,0x000CBBF4,0x60000000]
 
-Version: 1.2
 # Title: Kill Team - Demo
 # Serial: NPUB30473
 # Category: HG
