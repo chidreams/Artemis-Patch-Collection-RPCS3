@@ -3901,7 +3901,7 @@ PPU-1817acf3207d81feda9c82306d97a98ffbd32140:
       - [ be32, 0x0050C274, 0x60000000 ] # NOP subtract instruction
       - [ be32, 0x01459654, 0x60000000 ] # Likely a secondary ammo/item NOP      
 
- Title: Mafia II
+# Title: Mafia II
 # Serial: BLUS30281
 # Category: DG
 # Version: APP_VER=01.03 VERSION=01.01
