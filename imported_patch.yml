@@ -17236,8 +17236,7 @@ PPU-743a14a759541f0337505bd7755a414795dfcb9f:
     Notes: 
     Patch Version: 1.0
     Patch:
-      
-[ be32,0x0069C8B0,0x60000000]
+      - [ be32,0x0069C8B0,0x60000000]
 
 # Title: Lara Croft and the Guardian of Light
 # Serial: NPUB30225
