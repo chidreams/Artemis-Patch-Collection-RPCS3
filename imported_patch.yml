@@ -9315,7 +9315,6 @@ PPU-285fed097ed88cce45b52026de5bae120db23ad3:
     Patch:
       - [ be32,0x00F48D20,0x60000000] #]  
 
-Version: 1.2
 # Title: DARK SOULS
 # Serial: BLUS30782
 # Category: GD
