@@ -4888,7 +4888,6 @@ PPU-19724fde16a5b111b7b4d2a065f5dccaf8e01962:
       - [ load, *GOW38 ]
 
 
-Version: 1.2
 Anchors:
   Homecoming: &Homecoming
      - [ be32,0x00765340,0x60000000]
