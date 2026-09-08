@@ -12715,7 +12715,6 @@ PPU-db2697fed8876b4762a3524f7b063c6efc87cbfb:
     Patch:
     - [ be32,0x0039EE58,0x60000000]
 
-Version: 1.2 
 # Title: Mortal Kombat vs. DC Universe
 # Serial: BLUS30246
 # Category: DG
