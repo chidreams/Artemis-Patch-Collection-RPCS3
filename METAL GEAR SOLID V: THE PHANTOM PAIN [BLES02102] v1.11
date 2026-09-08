@@ -289,3 +289,4 @@ PPU-aeea78bc803499572d3a72febfe73bbf2bc5718c:
     Notes: 
     Patch Version: 1.3
     Patch:
+      - [ load, *SOLIDV23 ]
