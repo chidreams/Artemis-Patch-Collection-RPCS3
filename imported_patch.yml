@@ -8381,7 +8381,6 @@ PPU-9e7581bfed0de0fde1d8a3a7aaa77b3adc3b1468:
     Patch:
       - [ be32,0x00502E50,0x38090000]
 
-Version: 1.2
 # Title: Mortal Kombat II
 # Serial: NPEB00002
 # Category: HG
