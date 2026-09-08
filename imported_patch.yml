@@ -18641,7 +18641,6 @@ PPU-98af44a0b9e296d01619c79bced9a1985b4b6908:
     Patch:
     - [ be32,0x002E4940,0x7CA62B78]
 
-Version: 1.2
 # Title: Dante's Inferno™
 # Serial: BLUS30405
 # Category: GD
