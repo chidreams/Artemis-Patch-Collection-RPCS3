@@ -1,4 +1,3 @@
-Version: 1.2
 Anchors:
   DORA5LR: &DORA5LR
     - [ be32,0x0108F5C0,0x2C1F0000]
