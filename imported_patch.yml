@@ -12460,7 +12460,6 @@ PPU-287b6a695f4f3865f4d005f53caca4415d534b27:
     Patch:
     - [ be32,0x0006CB64,0xEC21F828]
 
-Version: 1.2
 # Title: James Cameron's AVATAR™: THE GAME
 # Serial: BLUS30374
 # Category: DG
