@@ -2833,7 +2833,6 @@ PPU-221ac28654f37ec47226a20255c3d57e0d4a9fcf:
     Patch:
     - [ be32,0x00121E1C,0x93E42C64]
 
-Version: 1.2
 # Title: inFamous
 # Serial: BCUS98119
 # Category: DG
