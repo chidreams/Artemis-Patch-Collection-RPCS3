@@ -8461,7 +8461,6 @@ PPU-163549855707b25d166599b09731a4bd83f1db8a:
     Patch:
      - [ be32,0x0009DF20,0xD13F0D8C]
 
-Version: 1.2
 PPU-f041429abd9abc4f0974ba0675fadc400a3d26f6:
   "Max Health":
     Games:
