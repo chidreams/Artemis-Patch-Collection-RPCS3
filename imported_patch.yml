@@ -4777,7 +4777,6 @@ PPU-819e89a83a4a38ce8d7269ef5ba3eaf07ec71a05:
     Patch:
     - [ be32,0x006C1C7C,0xD0030004] 
 
-Version: 1.2
 # Title: God of WarÂ® III
 # Serial: BCUS98111
 # Version: APP_VER=01.00 VERSION=01.03      
