@@ -20297,7 +20297,6 @@ PPU-d2b8b61ff1de957ffefe3838e03addb842675c66:
     - [ be32,0x0081F414,0x4E800020]
     - [ be32,0x0004EBF4,0x487D0819]
 
-Version: 1.2
 # Title: Puppeteer
 # Serial: BCES00935
 # Category:
