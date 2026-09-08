@@ -10493,7 +10493,6 @@ PPU-ade4c30b0c6701258bdce104b11ee74f199ebee8:
     Patch:
       - [ load, *DeadSpace21 ]
 
-Version: 1.2
 # Title: LittleBigPlanet™3 Digital Version
 # Serial: NPUA81116
 # Category: HG
