@@ -1,4 +1,3 @@
-Version: 1.2
 Anchors:
   HardCrP: &HardCrP
       - [ be32,0x009513F4,0x60000000]
