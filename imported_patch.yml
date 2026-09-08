@@ -15990,7 +15990,6 @@ PPU-9cd8d28963ebc29b59c79819cb56f3d92e857a37:
       - [ be32, 0x004C12D0, 0xEA21FFDC ]
       - [ be32, 0x004C12D4, 0x4BEE3764 ]
 
-Version: 1.2
 # Title: Valkyria Chronicles
 # Serial: BLUS30196
 # Category: GD
