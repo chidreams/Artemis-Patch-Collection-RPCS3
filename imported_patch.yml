@@ -8298,7 +8298,6 @@ PPU-cfa4d1b380b8ebfa5acd59fa9378c50e3059865c:
     Patch:
     - [ be32,0x00AFA124,0x3F800000]
 
-version 1.2
 PPU-bfe677c6416525cc09738be6b22e3765be33a3b3:
   "Invincibility":
     Games:
