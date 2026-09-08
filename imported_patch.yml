@@ -16296,7 +16296,6 @@ PPU-ef41953662aae0f7660c52a01c7acfe6f3216dfa:
     Patch:
     - [ be32,0x00AF1D6C,0x39006400]
 
-Version: 1.2
 # Title: Earthworm Jim HD
 # Serial: NPUB30120
 # Category: HG
