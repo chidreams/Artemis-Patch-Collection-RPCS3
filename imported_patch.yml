@@ -19776,7 +19776,6 @@ PPU-6e2bf47ce9adad5079d95bc8515c7fb5af727322:
     Patch:
       - [ be32, 0x00049948, 0x309D270F ]
 
-Version: 1.2
 # Title: The Legend of Korra
 # Serial: NPEB02082
 # Category: HG
