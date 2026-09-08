@@ -1,4 +1,3 @@
-Version: 1.2
 Anchors:
   HSword: &HSword
       - [ be32,0x00010064,0x00E81000]
