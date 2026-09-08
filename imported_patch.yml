@@ -432,7 +432,6 @@ PPU-fadb0af6fb7bd0113e88fb9af3eb78fe3be05d08:
     Patch:
       - [ be32, 0x005f8ca8, 0x4082fff4 ]
 
-Version: 1.2
 PPU-4bcd2185175c3f5047d64c292dd2f3fe17b12ac9:
   Infinite Health:
     Games:
