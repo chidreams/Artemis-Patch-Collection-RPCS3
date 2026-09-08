@@ -9627,7 +9627,6 @@ PPU-0478f30f0269fb5347a4571439eca57dae82fd3d:
     Patch:
       - [ load, *TRecord17 ]
 
-Version: 1.2
 # Title: inFAMOUS™ 2
 # Serial: BCUS98125
 # Category: DG
