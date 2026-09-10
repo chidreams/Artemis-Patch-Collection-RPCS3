@@ -1,0 +1,143 @@
+Anchors:
+  KnightsC: &KnightsC
+    - [ be32,0x001E5E30,0x7C8B4A14]
+  KnightsC2: &KnightsC2
+    - [ be32,0x001E6B84,0x7F822214]
+    - [ be32,0x001E6B88,0x915D0008] 
+  KnightsC3: &KnightsC3
+    - [ be32,0x00195090,0xEC0DF828]
+  KnightsC4: &KnightsC4
+    - [ be32,0x001E5E84,0x91230014]
+  KnightsC5: &KnightsC5
+    - [ be32,0x001E62C0,0x60000000]
+  KnightsC6: &KnightsC6
+    - [ be32,0x00DBBF14,0x3DE0010F]
+    - [ be32,0x00DBBF18,0x61EFA920]
+    - [ be32,0x00DBBF1C,0x81EF0000]
+    - [ be32,0x00DBBF20,0x39EF0B6C]
+    - [ be32,0x00DBBF24,0x7C0FE800]
+    - [ be32,0x00DBBF28,0x40820014]
+    - [ be32,0x00DBBF2C,0x817D000C]
+    - [ be32,0x00DBBF30,0x917D0008]
+    - [ be32,0x00DBBF34,0x817D0018]
+    - [ be32,0x00DBBF38,0x917D0014]
+    - [ be32,0x00DBBF3C,0x807F0DC4]
+    - [ be32,0x00DBBF40,0x4E800020]
+    - [ be32,0x00DBBF48,0x3CA0010F]
+    - [ be32,0x00DBBF4C,0x60A5A974]
+    - [ be32,0x00DBBF50,0x80A50000]
+    - [ be32,0x00DBBF54,0x38A5014C]
+    - [ be32,0x00DBBF58,0x7C051800]
+    - [ be32,0x00DBBF5C,0x40820014]
+    - [ be32,0x00DBBF60,0x8083000C]
+    - [ be32,0x00DBBF64,0x90830008]
+    - [ be32,0x00DBBF68,0x80830018]
+    - [ be32,0x00DBBF6C,0x90830014]
+    - [ be32,0x00DBBF70,0x80C30008]
+    - [ be32,0x00DBBF74,0x481E6276]
+    - [ be32,0x001E6270,0x48DBBF4A]
+    - [ be32,0x007A3D30,0x486181E5]
+  KnightsC7: &KnightsC7
+    - [ be32,0x00DBBF48,0x3F200144]
+    - [ be32,0x00DBBF4C,0x93F9FFFC]
+    - [ be32,0x00DBBF50,0x90BF00A4]
+    - [ be32,0x00DBBF54,0x3E000144]
+    - [ be32,0x00DBBF58,0x8230FFFC]
+    - [ be32,0x00DBBF5C,0x823100A0]
+    - [ be32,0x00DBBF60,0x9230FFE0]
+    - [ be32,0x00DBBF64,0x4E800020]
+    - [ be32,0x0031B010,0x48AA0F39]
+  KnightsC8: &KnightsC8
+    - [ be32,0x00DBBEE4,0x3DC0010F]
+    - [ be32,0x00DBBEE8,0x61CEA920]
+    - [ be32,0x00DBBEEC,0x81CE0000]
+    - [ be32,0x00DBBEF0,0x7C0EF800]
+    - [ be32,0x00DBBEF4,0x40820014]
+    - [ be32,0x00DBBEF8,0x3C004000]
+    - [ be32,0x00DBBEFC,0x901F00F0]
+    - [ be32,0x00DBBF00,0x901F00F4]
+    - [ be32,0x00DBBF04,0x901F00F8]
+    - [ be32,0x00DBBF08,0x807F0D3C]
+    - [ be32,0x00DBBF0C,0x4E800020]
+    - [ be32,0x007A6CC8,0x4861521D]
+    - [ be32,0x007B21F4,0x60000000]
+PPU-200eb99b6d3efff4ea345afc646df32695eba12f:
+  "Heinrich Fast Regeneration":
+    Games:
+      "Knights Contract (Artemis)":
+        BLES01001: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *KnightsC ]
+PPU-200eb99b6d3efff4ea345afc646df32695eba12f:
+  "Lot Of Orbs When Gain":
+    Games:
+      "Knights Contract (Artemis)":
+        BLES01001: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *KnightsC2 ]
+PPU-200eb99b6d3efff4ea345afc646df32695eba12f:
+  "No Waiting Time For Magic":
+    Games:
+      "Knights Contract (Artemis)":
+        BLES01001: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *KnightsC3 ]
+PPU-200eb99b6d3efff4ea345afc646df32695eba12f:
+  "Instant Max Berserker":
+    Games:
+      "Knights Contract (Artemis)":
+        BLES01001: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *KnightsC4 ]
+PPU-200eb99b6d3efff4ea345afc646df32695eba12f:
+  "Infinite Berserker":
+    Games:
+      "Knights Contract (Artemis)":
+        BLES01001: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *KnightsC5 ]
+PPU-200eb99b6d3efff4ea345afc646df32695eba12f:
+  "Infinite HP":
+    Games:
+      "Knights Contract (Artemis)":
+        BLES01001: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *KnightsC6 ]
+PPU-200eb99b6d3efff4ea345afc646df32695eba12f:
+  " Button Enable Codes":
+    Games:
+      "Knights Contract (Artemis)":
+        BLES01001: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *KnightsC7 ]
+PPU-200eb99b6d3efff4ea345afc646df32695eba12f:
+  "Player Size Modifier (2x)":
+    Games:
+      "Knights Contract (Artemis)":
+        BLES01001: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *KnightsC8 ]
