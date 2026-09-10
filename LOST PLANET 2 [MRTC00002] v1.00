@@ -1,0 +1,85 @@
+Anchors:
+  LOSTPLANET2: &LOSTPLANET2
+     - [ be32,0x003EF21C,0x60000000]
+  LOSTPLANET22: &LOSTPLANET22
+     - [ be32,0x0040EC00,0x4E800020]
+     - [ be32,0x0081B578,0x4E800020]
+     - [ be32,0x01CA36F8,0x3E0044C8]
+     - [ be32,0x01CA36FC,0x921B1934]
+     - [ be32,0x01CA3700,0x921B1938]
+     - [ be32,0x01CA3704,0x921B193C]
+     - [ be32,0x01CA3708,0x921B1940]
+     - [ be32,0x01CA370C,0x921B1944]
+     - [ be32,0x01CA3710,0x48C63E0A]
+     - [ be32,0x00C63E04,0x49CA36FA]
+  LOSTPLANET23: &LOSTPLANET23
+     - [ be32,0x00843E90,0x60000000]
+     - [ be32,0x00843FB0,0x60000000]
+  LOSTPLANET24: &LOSTPLANET24
+     - [ be32,0x0023B844,0x3D600018]
+     - [ be32,0x0023B84C,0x616B967F]
+     - [ be32,0x0023B860,0x91690004]
+     - [ be32,0x0023B864,0x9161008C]
+  LOSTPLANET25: &LOSTPLANET25
+     - [ be32,0x01AB6658,0x3E00028C]
+     - [ be32,0x01AB665C,0x9370F004]
+     - [ be32,0x01AB6660,0xC19B1938]
+     - [ be32,0x01AB6664,0x48C63E0A]
+     - [ be32,0x00C63E04,0x49AB665A]
+     - [ be32,0x01AB6668,0x3E40028C]
+     - [ be32,0x01AB666C,0x8252F004]
+     - [ be32,0x01AB6670,0x7F9A9040]
+     - [ be32,0x01AB6674,0x4D9E0020]
+     - [ be32,0x01AB6678,0xF821FEE1]
+     - [ be32,0x01AB667C,0x483F3F06]
+     - [ be32,0x003F3F00,0x49AB666A]
+PPU-1522e6cc293a72bfd9a42f6f9f9b3d5444fc6f24:
+  "T-Eng Supplier Never Descreases":
+    Games:
+      "LOST PLANET 2 (Artemis)":
+        MRTC00002: [ 01.00 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *LOSTPLANET2 ]
+PPU-1522e6cc293a72bfd9a42f6f9f9b3d5444fc6f24:
+  "Infinite Health + Partial Invincibility":
+    Games:
+      "LOST PLANET 2 (Artemis)":
+        MRTC00002: [ 01.00 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *LOSTPLANET22 ]
+PPU-1522e6cc293a72bfd9a42f6f9f9b3d5444fc6f24:
+  "Infinite Ammo, Grenades + Bottomless Clip":
+    Games:
+      "LOST PLANET 2 (Artemis)":
+        MRTC00002: [ 01.00 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *LOSTPLANET23 ]
+PPU-1522e6cc293a72bfd9a42f6f9f9b3d5444fc6f24:
+  "Infinite B Gauge":
+    Games:
+      "LOST PLANET 2 (Artemis)":
+        MRTC00002: [ 01.00 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *LOSTPLANET24 ]
+PPU-1522e6cc293a72bfd9a42f6f9f9b3d5444fc6f24:
+  "Invincibility":
+    Games:
+      "LOST PLANET 2 (Artemis)":
+        MRTC00002: [ 01.00 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *LOSTPLANET25 ]
