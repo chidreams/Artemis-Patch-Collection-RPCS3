@@ -1,0 +1,28 @@
+PPU-891a67a5b923b8900a41f9ecb737769a66e44d55:
+  Invincibility:
+    Games:
+      "Just Cause 2 (Artemis)":
+        BLUS30400: [ 01.02]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+     - [ be32,0x00715A64,0xED800028]
+  No Reload:
+    Games:
+      "Just Cause 2 (Artemis)":
+        BLUS30400: [ 01.02]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+     - [ be32,0x0039A148,0x39290000] 
+  Infinite Explosives:
+    Games:
+      "Just Cause 2 (Artemis)":
+        BLUS30400: [ 01.02]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+     - [ be32,0x002BD358,0x38A00009]
