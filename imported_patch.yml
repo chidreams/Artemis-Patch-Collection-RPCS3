@@ -15402,6 +15402,151 @@ PPU-e1da92f782b6258f2fbb678f4d1f511d6e3d6c94:
     Patch:
     - [ be32,0x0055E310,0x60000000]
 
+Anchors:
+  THEDARKNESS: &THEDARKNESS
+     - [ be32,0x00D7D67C,0x800B0002]
+     - [ be32,0x00D7D680,0x900B0000]
+  THEDARKNESS2: &THEDARKNESS2
+     - [ be32,0x00B642F8,0x7C040050]
+  THEDARKNESS3: &THEDARKNESS3
+     - [ be32,0x00D7E944,0x38807FFF]
+     - [ be32,0x00D7E948,0x4BDE5965]
+  THEDARKNESS4: &THEDARKNESS4
+      - [ be32,0x00B8E88C,0x60000000]
+  THEDARKNESS5: &THEDARKNESS5
+     - [ be32,0x01047D54,0x3CC0010B]
+     - [ be32,0x01047D58,0x93C65700]
+     - [ be32,0x01047D5C,0xA0DE001C]
+     - [ be32,0x01047D60,0x4812AADE]
+     - [ be32,0x01047D80,0x3C60010B]
+     - [ be32,0x01047D84,0x91235704]
+     - [ be32,0x01047D88,0xC18B0008]
+     - [ be32,0x01047D8C,0x48CD637E]
+     - [ be32,0x01047C50,0x3C60010B]
+     - [ be32,0x01047C54,0x80635700]
+     - [ be32,0x01047C58,0x48000020]
+     - [ be32,0x01047C78,0x2B830000]
+     - [ be32,0x01047C7C,0x419E00AC]
+     - [ be32,0x01047C80,0x8063001C]
+     - [ be32,0x01047C84,0x48000020]
+     - [ be32,0x01047CA4,0x70630010]
+     - [ be32,0x01047CA8,0x2B830010]
+     - [ be32,0x01047CAC,0x409E007C]
+     - [ be32,0x01047CB0,0x48000020]
+     - [ be32,0x01047CD0,0x3C60010B]
+     - [ be32,0x01047CD4,0x80635704]
+     - [ be32,0x01047CD8,0x7F9B1840]
+     - [ be32,0x01047CDC,0x48000020]
+     - [ be32,0x01047CFC,0x409E002C]
+     - [ be32,0x01047D00,0x3C6040A0]
+     - [ be32,0x01047D04,0x907B0008]
+     - [ be32,0x01047D08,0x48A042AE]
+     - [ be32,0x01047D28,0xD17B0008]
+     - [ be32,0x01047D2C,0x48A042AE]
+     - [ be32,0x0012AAD8,0x49047D56]
+     - [ be32,0x00CD6378,0x49047D82]
+     - [ be32,0x00A042A8,0x49047C52]
+     - [ be32,0x00A042AC,0xFF805000]
+  THEDARKNESS6: &THEDARKNESS6
+     - [ be32,0x00DE0808,0x881C0000]
+     - [ be32,0x00DE01B4,0x897C0000]
+     - [ be32,0x00DDFC30,0x894B0381]
+     - [ be32,0x00D79188,0x894B0381]
+     - [ be32,0x00D77768,0x880B0381]
+     - [ be32,0x00DDFBAC,0x894B0381]
+  THEDARKNESS7: &THEDARKNESS7
+     - [ be32,0x01047DAC,0x81012494]
+     - [ be32,0x01047DB0,0x3D2000D2]
+     - [ be32,0x01047DB4,0x6129D51C]
+     - [ be32,0x01047DB8,0x48000020]
+     - [ be32,0x01047DD8,0x7F894040]
+     - [ be32,0x01047DDC,0x419E0008]
+     - [ be32,0x01047DE0,0xB00B0000]
+     - [ be32,0x01047DE4,0x48B64302]
+     - [ be32,0x00B642FC,0x49047DAE]
+  THEDARKNESS8: &THEDARKNESS8
+      - [ be32,0x00CFDDD4,0x38807FFF]
+PPU-9ef94f24f84f5923f9c88557e33c2ffab380fb7b:
+  "Damage Fully Refills Health":
+    Games:
+      "The Darkness (Artemis)":
+        BLUS30035: [ 01.03 ]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.02
+    Patch:
+      - [ load, *THEDARKNESS ]
+PPU-9ef94f24f84f5923f9c88557e33c2ffab380fb7b:
+  "Anything Dies":
+    Games:
+      "The Darkness (Artemis)":
+        BLUS30035: [ 01.03 ]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.02
+    Patch:
+      - [ load, *THEDARKNESS2 ]
+PPU-9ef94f24f84f5923f9c88557e33c2ffab380fb7b:
+  "Enemy Dies":
+    Games:
+      "The Darkness (Artemis)":
+        BLUS30035: [ 01.03 ]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.02
+    Patch:
+      - [ load, *THEDARKNESS3 ]
+PPU-9ef94f24f84f5923f9c88557e33c2ffab380fb7b:
+  "Ammo In Clips Never Decreases":
+    Games:
+      "The Darkness (Artemis)":
+        BLUS30035: [ 01.03 ]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.02
+    Patch:
+      - [ load, *THEDARKNESS4 ]
+PPU-9ef94f24f84f5923f9c88557e33c2ffab380fb7b:
+  "Hold X To Fly":
+    Games:
+      "The Darkness (Artemis)":
+        BLUS30035: [ 01.03 ]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.02
+    Patch:
+      - [ load, *THEDARKNESS5 ]      
+PPU-9ef94f24f84f5923f9c88557e33c2ffab380fb7b:
+  "Darkness Never Decreases":
+    Games:
+      "The Darkness (Artemis)":
+        BLUS30035: [ 01.03 ]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.02
+    Patch:
+      - [ load, *THEDARKNESS6 ]
+PPU-9ef94f24f84f5923f9c88557e33c2ffab380fb7b:
+  "Berserker Never Dies":
+    Games:
+      "The Darkness (Artemis)":
+        BLUS30035: [ 01.03 ]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.02
+    Patch:
+      - [ load, *THEDARKNESS7 ]
+PPU-9ef94f24f84f5923f9c88557e33c2ffab380fb7b:
+  "Max Hearts On Gain":
+    Games:
+      "The Darkness (Artemis)":
+        BLUS30035: [ 01.03 ]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.02
+    Patch:
+      - [ load, *THEDARKNESS8 ]
+
 # Title: NBA JAM: On Fire Edition
 # Serial: NPUB20260
 # Category: HG
