@@ -1638,6 +1638,35 @@ PPU-3de340701cfb52769efd69f65dabed7bc61afeff:
       - [ be32,0x0064754C,0x4BDBED10 ] # b 0x0040625C (Return Jump)
       - [ be32,0x00406258,0x482412E8 ] # b 0x00647540 (Jump to Cave)  
 
+PPU-891a67a5b923b8900a41f9ecb737769a66e44d55:
+  Invincibility:
+    Games:
+      "Just Cause 2 (Artemis)":
+        BLUS30400: [ 01.02]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+     - [ be32,0x00715A64,0xED800028]
+  No Reload:
+    Games:
+      "Just Cause 2 (Artemis)":
+        BLUS30400: [ 01.02]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+     - [ be32,0x0039A148,0x39290000] 
+  Infinite Explosives:
+    Games:
+      "Just Cause 2 (Artemis)":
+        BLUS30400: [ 01.02]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+     - [ be32,0x002BD358,0x38A00009]
+
 # Title: Mortal Kombat Komplete Edition
 # Serial: BLUS30902
 # Category: GD
