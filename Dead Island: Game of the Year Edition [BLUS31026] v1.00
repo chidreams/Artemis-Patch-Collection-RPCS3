@@ -1,0 +1,61 @@
+Anchors:
+  Island: &Island
+      - [ be32,0x00C2CC3C,0xFC200890]
+  Island2: &Island2
+      - [ be32,0x00C4F758,0xFC20F890] 
+  Island3: &Island3
+      - [ be32,0x008E4F00,0x48000024] 
+  Island4: &Island4
+      - [ be32,0x00CF7EB8,0xC3FF002C] 
+  Island5: &Island5
+      - [ be32,0x00D52DC0,0x60000000] 
+PPU-cada3232afafb29325ffdd5d79a865fbf3ac0fc7 :
+  Max And Infinite Health:
+    Games:
+      "Dead Island: Game of the Year Edition (Artemis)":
+         BLUS31026: [ 01.00 ]
+    Author: FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Island] 
+PPU-cada3232afafb29325ffdd5d79a865fbf3ac0fc7 :
+  Max And Infinite Stamina:
+    Games:
+      "Dead Island: Game of the Year Edition (Artemis)":
+        BLUS31026: [ 01.00 ]
+    Author: FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Island2 ]
+PPU-cada3232afafb29325ffdd5d79a865fbf3ac0fc7 :
+  Max And Infinite Durability:
+    Games:
+      "Dead Island: Game of the Year Edition (Artemis)":
+        BLUS31026: [ 01.00 ]
+    Author: FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Island3 ]
+PPU-cada3232afafb29325ffdd5d79a865fbf3ac0fc7 :
+  Max And Infinite Flashlight:
+    Games:
+      "Dead Island: Game of the Year Edition (Artemis)":
+         BLUS31026: [ 01.00 ]
+    Author: FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Island4 ]
+PPU-cada3232afafb29325ffdd5d79a865fbf3ac0fc7 :
+  Infinite Ammo And No Reload:
+    Games:
+      "Dead Island: Game of the Year Edition (Artemis)":
+        BLUS31026: [ 01.00 ]
+    Author: FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *Island5 ]
