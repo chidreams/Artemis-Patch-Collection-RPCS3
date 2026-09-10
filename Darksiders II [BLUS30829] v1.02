@@ -1,0 +1,111 @@
+Anchors:
+  DARKSDIIDesc: &DARKSDIIDesc
+    - [ be32,0x0027EDF0,0x3C007FFF]
+    - [ be32,0x0027EDF4,0x90090028]
+  DARKSDIIDesc2: &DARKSDIIDesc2
+    - [ be32,0x0027D324,0x60000000]
+  DARKSDIIDesc3: &DARKSDIIDesc3
+    - [ be32,0x002213A8,0xC3E90008]
+    - [ be32,0x002213AC,0xEC0CF82A]
+    - [ be32,0x002213B0,0xD0090004]
+  DARKSDIIDesc4: &DARKSDIIDesc4    
+    - [ be32,0x00353F7C,0x3920270F]
+    - [ be32,0x00353F80,0x913D0000]
+  DARKSDIIDesc5: &DARKSDIIDesc5
+    - [ be32,0x002214A4,0x60000000]
+    - [ be32,0x002214A8,0x80090000]
+    - [ be32,0x002214AC,0x7C0007B4]
+    - [ be32,0x002214B0,0xF80100A0]
+    - [ be32,0x002214B4,0xC98100A0]
+    - [ be32,0x002214B8,0x38000000]
+    - [ be32,0x002214BC,0xFD80669C]
+    - [ be32,0x002214C0,0xFC006018]
+    - [ be32,0x002214C4,0xEC006FBA]
+    - [ be32,0x002214C8,0xD00B0008]  
+  DARKSDIIDesc6: &DARKSDIIDesc6
+    - [ be32,0x0027F50C,0x3C007FFF]  
+  DARKSDIIDesc7: &DARKSDIIDesc7
+    - [ be32,0x0027D7E4,0x3C607FFF]  
+  DARKSDIIDesc8: &DARKSDIIDesc8
+    - [ be32,0x002A06D4,0x3C007FFF]
+    - [ be32,0x002A06D8,0x900B002C]  
+PPU-a271a8568714fffed4b8aaaff6e68f77be8bfac1:
+  "Max Coins on Gain":
+    Games:
+      "Darksiders II (Artemis)":
+        BLUS30829: [ 01.02]
+    Author: Medo
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DARKSDIIDesc ]
+PPU-a271a8568714fffed4b8aaaff6e68f77be8bfac1:
+  "Infinite Skill Points (Must have at least 1)":
+    Games:
+      "Darksiders II (Artemis)":
+        BLUS30829: [ 01.02]
+    Author: Medo
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DARKSDIIDesc2 ]
+PPU-a271a8568714fffed4b8aaaff6e68f77be8bfac1:
+  "Max + Infinite Wrath":
+    Games:
+      "Darksiders II (Artemis)":
+        BLUS30829: [ 01.02]
+    Author: Medo
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DARKSDIIDesc3 ]
+PPU-a271a8568714fffed4b8aaaff6e68f77be8bfac1:
+  "Max Stats After 1 Fight (9999)":
+    Games:
+      "Darksiders II (Artemis)":
+        BLUS30829: [ 01.02]
+    Author: Medo
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DARKSDIIDesc4 ]
+PPU-a271a8568714fffed4b8aaaff6e68f77be8bfac1:
+  "Max Reaper Gauge + Infinite Reaper Mode":
+    Games:
+      "Darksiders II (Artemis)":
+        BLUS30829: [ 01.02]
+    Author: Medo
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DARKSDIIDesc5 ]
+PPU-a271a8568714fffed4b8aaaff6e68f77be8bfac1:
+  "Max Yellow Coins After Save":
+    Games:
+      "Darksiders II (Artemis)":
+        BLUS30829: [ 01.02]
+    Author: Medo
+    Notes: Turn code on, load game, save game, quit, and reload.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DARKSDIIDesc6 ]
+PPU-a271a8568714fffed4b8aaaff6e68f77be8bfac1:
+  "Max Coins On Load":
+    Games:
+      "Darksiders II (Artemis)":
+        BLUS30829: [ 01.02]
+    Author: Medo
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DARKSDIIDesc7 ]
+PPU-a271a8568714fffed4b8aaaff6e68f77be8bfac1:
+  "Max Blue Coins After Save":
+    Games:
+      "Darksiders II (Artemis)":
+        BLUS30829: [ 01.02]
+    Author: Medo
+    Notes: Turn code on, load game, save game, quit, and reload.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DARKSDIIDesc8 ]
