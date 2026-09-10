@@ -6295,6 +6295,252 @@ PPU-31191d1af19987410112b51edf0452d937af9879:
     Patch:
       - [ load, *DARKSIDE15 ]
 
+Anchors:
+  ResidentEvil: &ResidentEvil
+      - [ be32,0x00153524,0x60000000]
+  ResidentEvil2: &ResidentEvil2
+      - [ be32,0x001539A0,0x60000000]
+      - [ be32,0x002CEADC,0x60000000]
+  ResidentEvil3: &ResidentEvil3
+      - [ be32,0x00152990,0x60000000]
+  ResidentEvil4: &ResidentEvil4
+      - [ be32,0x001B6E20,0x60000000]
+  ResidentEvil5: &ResidentEvil5
+      - [ be32,0x001B7484,0x60000000]
+  ResidentEvil6: &ResidentEvil6
+      - [ be32,0x001C0290,0x4E800020]
+      - [ be32,0x001C20F8,0x4E800020]
+  ResidentEvil7: &ResidentEvil7
+      - [ be32,0x00A9D744,0x80D90244]
+      - [ be32,0x00A9D748,0x2C06000C]
+      - [ be32,0x00A9D74C,0x4182000C]
+      - [ be32,0x00A9D750,0x80D91044]
+      - [ be32,0x00A9D754,0x4B718CBC]
+      - [ be32,0x00A9D758,0x88D968FB]
+      - [ be32,0x00A9D75C,0x70C60001]
+      - [ be32,0x00A9D760,0x2C060000]
+      - [ be32,0x00A9D764,0x88D968FB]
+      - [ be32,0x00A9D768,0x41820008]
+      - [ be32,0x00A9D76C,0x38C6FFFF]
+      - [ be32,0x00A9D770,0x98D968FB]
+      - [ be32,0x00A9D774,0x38C00001]
+      - [ be32,0x00A9D778,0x98D916FE]
+      - [ be32,0x00A9D77C,0x98D968FA]
+      - [ be32,0x00A9D780,0x38C000FA]
+      - [ be32,0x00A9D784,0x90D91040]
+      - [ be32,0x00A9D788,0x4BFFFFC8]
+      - [ be32,0x001B640C,0x488E7338]
+  ResidentEvil8: &ResidentEvil8
+      - [ be32,0x00198CC0,0x48000024]
+      - [ be32,0x00198750,0x60000000]
+  ResidentEvil9: &ResidentEvil9
+      - [ be32,0x001534E4,0x48000048]
+  ResidentEvil10: &ResidentEvil10
+      - [ be32,0x00312B1C,0x38800000]
+  ResidentEvil11: &ResidentEvil11
+      - [ be32,0x00152EC0,0x60000000]
+  ResidentEvil12: &ResidentEvil12
+      - [ be32,0x0026CDCC,0x60000000]
+  ResidentEvil13: &ResidentEvil13
+      - [ be32,0x002117D8,0x60000000]
+      - [ be32,0x0038BB78,0x60000000]
+  ResidentEvil14: &ResidentEvil14
+      - [ be32,0x00152C48,0x63E30000]
+  ResidentEvil15: &ResidentEvil15
+      - [ be32,0x00A9D78C,0x3A310001]
+      - [ be32,0x00A9D790,0x2C110015]
+      - [ be32,0x00A9D794,0x40810034]
+      - [ be32,0x00A9D798,0x3A200000]
+      - [ be32,0x00A9D79C,0x3E003140]
+      - [ be32,0x00A9D7A0,0x6210B708]
+      - [ be32,0x00A9D7A4,0xA2100002]
+      - [ be32,0x00A9D7A8,0x2C100201]
+      - [ be32,0x00A9D7AC,0x41820024]
+      - [ be32,0x00A9D7B0,0x2C100101]
+      - [ be32,0x00A9D7B4,0x41820038]
+      - [ be32,0x00A9D7B8,0x2C100801]
+      - [ be32,0x00A9D7BC,0x4182004C]
+      - [ be32,0x00A9D7C0,0x2C100401]
+      - [ be32,0x00A9D7C4,0x41820060]
+      - [ be32,0x00A9D7C8,0x80630000]
+      - [ be32,0x00A9D7CC,0x4BF317CC]
+      - [ be32,0x00A9D7D0,0x82030000]
+      - [ be32,0x00A9D7D4,0x3A100001]
+      - [ be32,0x00A9D7D8,0x2C10008D]
+      - [ be32,0x00A9D7DC,0x40810008]
+      - [ be32,0x00A9D7E0,0x3A00008D]
+      - [ be32,0x00A9D7E4,0x92030000]
+      - [ be32,0x00A9D7E8,0x4BFFFFE0]
+      - [ be32,0x00A9D7EC,0x82030000]
+      - [ be32,0x00A9D7F0,0x3A10FFFF]
+      - [ be32,0x00A9D7F4,0x2C100000]
+      - [ be32,0x00A9D7F8,0x40800008]
+      - [ be32,0x00A9D7FC,0x3A000000]
+      - [ be32,0x00A9D800,0x92030000]
+      - [ be32,0x00A9D804,0x4BFFFFC4]
+      - [ be32,0x00A9D808,0x82030000]
+      - [ be32,0x00A9D80C,0x2C100025]
+      - [ be32,0x00A9D810,0x3A00000A]
+      - [ be32,0x00A9D814,0x40810008]
+      - [ be32,0x00A9D818,0x3A000001]
+      - [ be32,0x00A9D81C,0x92030004]
+      - [ be32,0x00A9D820,0x4BFFFFA8]
+      - [ be32,0x00A9D824,0x3A000000]
+      - [ be32,0x00A9D828,0x92030000]
+      - [ be32,0x00A9D82C,0x92030004]
+      - [ be32,0x00A9D830,0x4BFFFF98]
+      - [ be32,0x009CEF94,0x480CE7F8]
+PPU-1c17ceefd7d33372d1eb73d26afd149186950114:
+  "Infinite Ammo + No Reload":
+    Games:
+      "Resident Evil 0 (Artemis)":
+        NPUB31689: [ 01.00]
+    Author: jgduff Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *ResidentEvil ]
+PPU-1c17ceefd7d33372d1eb73d26afd149186950114:
+  "Infinite Ammo":
+    Games:
+      "Resident Evil 0 (Artemis)":
+        NPUB31689: [ 01.00]
+    Author: jgduff Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *ResidentEvil2 ]
+PPU-1c17ceefd7d33372d1eb73d26afd149186950114:
+  "Infinite Ink Ribbons":
+    Games:
+      "Resident Evil 0 (Artemis)":
+        NPUB31689: [ 01.00]
+    Author: jgduff Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *ResidentEvil3 ]
+PPU-1c17ceefd7d33372d1eb73d26afd149186950114:
+  "Zombies Never Attack v1":
+    Games:
+      "Resident Evil 0 (Artemis)":
+        NPUB31689: [ 01.00]
+    Author: jgduff Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *ResidentEvil4 ]
+PPU-1c17ceefd7d33372d1eb73d26afd149186950114:
+  "Zombies Never Attack v2":
+    Games:
+      "Resident Evil 0 (Artemis)":
+        NPUB31689: [ 01.00]
+    Author: jgduff Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *ResidentEvil5 ]
+PPU-1c17ceefd7d33372d1eb73d26afd149186950114:
+  "Hit Anywhere":
+    Games:
+      "Resident Evil 0 (Artemis)":
+        NPUB31689: [ 01.00]
+    Author: xtatu Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *ResidentEvil6 ]
+PPU-1c17ceefd7d33372d1eb73d26afd149186950114:
+  "Infinite Health, Invincible + Never Poisoned":
+    Games:
+      "Resident Evil 0 (Artemis)":
+        NPUB31689: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *ResidentEvil7 ]
+PPU-1c17ceefd7d33372d1eb73d26afd149186950114:
+  "Take No Damage":
+    Games:
+      "Resident Evil 0 (Artemis)":
+        NPUB31689: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *ResidentEvil8 ]
+PPU-1c17ceefd7d33372d1eb73d26afd149186950114:
+  "Infinite Ammo v2":
+    Games:
+      "Resident Evil 0 (Artemis)":
+        NPUB31689: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *ResidentEvil9 ]
+PPU-1c17ceefd7d33372d1eb73d26afd149186950114:
+  "Save 0":
+    Games:
+      "Resident Evil 0 (Artemis)":
+        NPUB31689: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *ResidentEvil10 ]
+PPU-1c17ceefd7d33372d1eb73d26afd149186950114:
+  "Infinite Items":
+    Games:
+      "Resident Evil 0 (Artemis)":
+        NPUB31689: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *ResidentEvil11 ]
+PPU-1c17ceefd7d33372d1eb73d26afd149186950114:
+  "Always Low Time":
+    Games:
+      "Resident Evil 0 (Artemis)":
+        NPUB31689: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *ResidentEvil12 ]
+PPU-1c17ceefd7d33372d1eb73d26afd149186950114:
+  "Stop Countdown Timer":
+    Games:
+      "Resident Evil 0 (Artemis)":
+        NPUB31689: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *ResidentEvil13 ]
+PPU-1c17ceefd7d33372d1eb73d26afd149186950114:
+  "No Key Or Ink Ribbon Needed":
+    Games:
+      "Resident Evil 0 (Artemis)":
+        NPUB31689: [ 01.00]
+    Author: jgduff Ported by ChiDreams
+    Notes: Use with infinite items so no item gets removed when saving. 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *ResidentEvil14 ]
+PPU-1c17ceefd7d33372d1eb73d26afd149186950114:
+  "Real Time Item Modifier":
+    Games:
+      "Resident Evil 0 (Artemis)":
+        NPUB31689: [ 01.00]
+    Author: jgduff Ported by ChiDreams
+    Notes: Select + R1 = Item foward, Select + L1 = Item backward, Select + R2 = Set Ammo to 10, Select + L2 = Erase 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *ResidentEvil15 ]
+
 # Title: RESIDENT EVIL 6
 # Serial: BLUS30855
 # Category: GD
