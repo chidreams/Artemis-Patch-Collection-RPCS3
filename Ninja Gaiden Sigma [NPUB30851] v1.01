@@ -1,0 +1,58 @@
+PPU-4230af63b0a7ebf36351d4fd67eea055ab809962:
+  Infinite Ki:
+    Games:
+      "Ninja Gaiden Sigma (Artemis)":
+        NPUB30851: [ 01.01 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+     - [ be32,0x00129C3C,0xA17F01CC]
+  Infinite Health:
+    Games:
+      "Ninja Gaiden Sigma (Artemis))":
+        NPUB30851: [ 01.01 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+     - [ be32,0x0007F430,0xA39F01C4] 
+     - [ be32,0x0007F438,0xB39F01C6]
+     - [ be32,0x0007F43C,0xB39F0194]
+  Infinite Oxygen:
+    Games:
+      "Ninja Gaiden Sigma (Artemis)":
+        NPUB30851: [ 01.01 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+     - [ be32,0x001291E8,0x409CFFDC]
+  Instant Ultimate Technique:
+    Games:
+      "Ninja Gaiden Sigma (Artemis)":
+        NPUB30851: [ 01.01 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+     - [ be32,0x000F41BC,0x409E0214]  
+  Items Never Decrease:
+    Games:
+      "Ninja Gaiden Sigma (Artemis)":
+        NPUB30851: [ 01.01 ]
+    Author: GuitarMan + Hiei-YYH Ported by ChiDreams + jgduff Ported by ChiDreams1
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+     - [ be32,0x0012DBB8,0x60000000]
+     - [ be32,0x0012F97C,0x60000000]     
+  Attack Power 100x:
+    Games:
+      "Ninja Gaiden Sigma (Artemis)":
+        NPUB30851: [ 01.01 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+     - [ be32,0x001298A8,0xC3A2A7B8]
