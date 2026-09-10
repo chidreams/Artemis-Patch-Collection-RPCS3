@@ -13768,6 +13768,182 @@ PPU-757a971c30a33495e22b47f9999bc25e15112856:
     Patch:
     - [ be32,0x0013D260,0x60000000]
 
+Anchors:
+  residentevil4: &residentevil4
+      - [ be32,0x0060CCF8,0x38800063]
+  residentevil42: &residentevil42
+      - [ be32,0x0060CD50,0xA07E0002]
+      - [ be32,0x0060720C,0xA0650002]
+  residentevil43: &residentevil43
+      - [ be32,0x004B83A8,0x38A00960]
+  residentevil44: &residentevil44
+      - [ be32,0x004A3384,0x60000000]
+      - [ be32,0x004A3394,0x60000000]
+      - [ be32,0x004A2C58,0x60000000]
+  residentevil45: &residentevil45
+      - [ be32,0x018FF8C8,0x05F5E0FF]
+  residentevil46: &residentevil46
+      - [ be32,0x018FF8C4,0x00000000]
+  residentevil47: &residentevil47
+      - [ byte,0x018FF8BC,0x0000]
+  residentevil410: &residentevil410
+      - [ be32,0x00356840,0x4E800020]
+  residentevil411: &residentevil411
+      - [ be32,0x004BBFB0,0x4E800020]
+  residentevil412: &residentevil412
+      - [ be32,0x00612A04,0x91A40024]
+      - [ be32,0x0061292C,0x91840028]
+  residentevil413: &residentevil413
+      - [ be32,0x0060B724,0x30650003]
+  residentevil414: &residentevil414
+      - [ be32,0x0003C8C4,0x90A40374]
+      - [ be32,0x004A258C,0x907F0380]
+  residentevil415: &residentevil415
+      - [ be32,0x001F3F3C,0x921F08D4]
+  residentevil49: &residentevil49
+      - [ be32,0x004BAB68,0x4E800020]    
+      - [ be32,0x004B88C4,0x60000000]     
+PPU-8cdcee42aad6de638d009b615081e304fd4246a1:
+  "Infinite Ammo All Weapons":
+    Games:
+      "Resident Evil 4(Artemis)":
+        NPEB00342: [ 01.00]
+    Author: bitcopa
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *residentevil4 ]
+PPU-8cdcee42aad6de638d009b615081e304fd4246a1:
+  "Infinite Grenades, Rockets, And Arrows":
+    Games:
+      "Resident Evil 4(Artemis)":
+        NPEB00342: [ 01.00]
+    Author: bitcopa
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *residentevil42 ]
+PPU-8cdcee42aad6de638d009b615081e304fd4246a1:
+  "Infinite Health Leon (Can Die in QT Events or Chainsaws)":
+    Games:
+      "Resident Evil 4(Artemis)":
+        NPEB00342: [ 01.00]
+    Author: bitcopa
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *residentevil43 ]
+PPU-8cdcee42aad6de638d009b615081e304fd4246a1:
+  "Mercenaries Infinite Time":
+    Games:
+      "Resident Evil 4(Artemis)":
+        NPEB00342: [ 01.00]
+    Author: Unknown
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *residentevil44 ]
+PPU-8cdcee42aad6de638d009b615081e304fd4246a1:
+  "Peseta 99999999":
+    Games:
+      "Resident Evil 4(Artemis)":
+        NPEB00342: [ 01.00]
+    Author: Unknown
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *residentevil45 ]
+PPU-8cdcee42aad6de638d009b615081e304fd4246a1:
+  "Always Low Time":
+    Games:
+      "Resident Evil 4(Artemis)":
+        NPEB00342: [ 01.00]
+    Author: Unknown
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *residentevil46 ]
+PPU-8cdcee42aad6de638d009b615081e304fd4246a1:
+  "Always 1st  Save":
+    Games:
+      "Resident Evil 4(Artemis)":
+        NPEB00342: [ 01.00]
+    Author: 
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [  load, *residentevil47 ]
+PPU-8cdcee42aad6de638d009b615081e304fd4246a1:
+  "Enemies Freeze After Being Hit":
+    Games:
+      "Resident Evil 4(Artemis)":
+        NPEB00342: [ 01.00]
+    Author: 
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *residentevil410 ]
+PPU-8cdcee42aad6de638d009b615081e304fd4246a1:
+  "Enemies Never Grab":
+    Games:
+      "Resident Evil 4(Artemis)":
+        NPEB00342: [ 01.00]
+    Author: 
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *residentevil411 ]
+PPU-8cdcee42aad6de638d009b615081e304fd4246a1:
+  "Mercenaries Max Points + Kills From 2 Kills":
+    Games:
+      "Resident Evil 4(Artemis)":
+        NPEB00342: [ 01.00]
+    Author: 
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *residentevil412 ]
+PPU-8cdcee42aad6de638d009b615081e304fd4246a1:
+  "Infinite Ammo Usage":
+    Games:
+      "Resident Evil 4(Artemis)":
+        NPEB00342: [ 01.00]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *residentevil413 ]
+PPU-8cdcee42aad6de638d009b615081e304fd4246a1:
+  "PRL 412 Always Full Shot":
+    Games:
+      "Resident Evil 4(Artemis)":
+        NPEB00342: [ 01.00]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *residentevil414 ]
+PPU-8cdcee42aad6de638d009b615081e304fd4246a1:
+  "Krauser Arm Always Red":
+    Games:
+      "Resident Evil 4(Artemis)":
+        NPEB00342: [ 01.00]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *residentevil415 ]
+PPU-8cdcee42aad6de638d009b615081e304fd4246a1:
+  "Partial Invincibility":
+    Games:
+      "Resident Evil 4(Artemis)":
+        NPEB00342: [ 01.00]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *residentevil49 ]
+
 # Title: STRANGLEHOLD™
 # Serial: BLUS30080
 # Category: DG
