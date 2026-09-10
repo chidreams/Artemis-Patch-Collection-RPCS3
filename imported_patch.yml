@@ -12956,6 +12956,39 @@ PPU-7eb68b132788bbcad11bc4b4bf51577f47feba7f:
       - [ be32,0x005E0640,0x60000000]
       - [ be32,0x00540DFC,0x60000000] 
 
+PPU-34ba6b66b0ac0b8b531cc549b5b301d43902ccea:
+  "1P Invincible":
+    Games:
+      "STREET FIGHTER X TEKKEN (Artemis)":
+        BLUS30722: [ 01.08 ]
+    Author: xtatu Ported by ChiDreams 
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x005C386C,0x807C0008]
+      - [ be32,0x005C3870,0x2C030002]
+      - [ be32,0x005C3874,0x41800014]
+  "1P Invincible":
+    Games:
+      "STREET FIGHTER X TEKKEN (Artemis)":
+        BLUS30722: [ 01.08 ]
+    Author: xtatu Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [be32,0x005c386c,0x807C0008]
+      - [be32,0x005c3870,0x2C030002]
+      - [be32,0x005c3874,0x41800014]    
+  "Auto Max Power 1P + 2P":
+    Games:
+      "STREET FIGHTER X TEKKEN (Artemis)":
+        BLUS30722: [ 01.08 ]
+    Author: xtatu Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+     - [ be32,0x007EFAB0,0x418100A4]
+
 # Title: Galaga Legions DX
 # Serial: NPUB30321
 # Category: HG
