@@ -19,6 +19,7 @@ PPU-7e4dd1e6c3a014983a9ccd4d675a97e390e80e9a:
     Author: xtatu, predprey ported by Chidreams
     Notes: 
     Patch Version: 1.2
+    Group: 1
     Patch:
       - [ be32,0x0010ABD8,0x60000000]
       - [ be32,0x0010AD1C,0x60000000]
@@ -40,19 +41,9 @@ PPU-7e4dd1e6c3a014983a9ccd4d675a97e390e80e9a:
     Author: predprey ported by Chidreams
     Notes: 
     Patch Version: 1.2
+    Group: 1
     Patch:
-      - [ be32,0x0015DAE8,0x60000000]
-  "Infinite Ammo":
-    Games:
-      "VANQUISH (Dreams)":
-        BLUS30543: [ 01.01 ]
-    Author: xtatu ported by Chidreams
-    Notes: 
-    Patch Version: 1.2
-    Patch:
-      - [ be32,0x00109FAC,0x60000000]
-      - [ be32,0x00109FCC,0x60000000]
-      - [ be32,0x00109FE0,0x60000000]     
+      - [ be32,0x0015DAE8,0x60000000]    
   "Max Score After Battle":
     Games:
       "VANQUISH (Dreams)":
@@ -62,3 +53,30 @@ PPU-7e4dd1e6c3a014983a9ccd4d675a97e390e80e9a:
     Patch Version: 1.2
     Patch:
       - [ be32,0x00492058,0x60000000]
+  "Infinite Ammo":
+    Games:
+      "VANQUISH (Dreams)":
+        BLUS30543: [ 01.01 ]
+    Author: xtatu ported by Chidreams
+    Notes: 
+    Patch Version: 1.2
+    Group: 2
+    Patch:
+      - [ be32, 0x000100C0, 0x3C60270F ]
+      - [ be32, 0x000100C4, 0x6063270F ]
+      - [ be32, 0x000100C8, 0x90640008 ]
+      - [ be32, 0x000100CC, 0x38600063 ]
+      - [ be32, 0x000100D0, 0xB064000E ]
+      - [ be32, 0x000100D4, 0x80640004 ]
+      - [ be32, 0x000100D8, 0x480E1A10 ]
+      - [ be32, 0x000F1AE4, 0x4BF1E5DC ]
+  "Infinite Gernades":
+    Games:
+      "VANQUISH (Dreams)":
+        BLUS30543: [ 01.01 ]
+    Author: xtatu ported by Chidreams
+    Notes: 
+    Patch Version: 1.2   
+    Patch:
+      - [ be32, 0x00010130, 0x3C60270F ]
+      - [ be32, 0x00010134, 0x6063270F ]
