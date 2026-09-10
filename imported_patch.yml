@@ -592,6 +592,108 @@ PPU-4bcd2185175c3f5047d64c292dd2f3fe17b12ac9:
      - [ be32,0x00324D38,0x60000000]
      - [ be32,0x00324D3C,0x90490008] 
 
+Anchors:
+  DarkSector: &DarkSector
+      - [ be32,0x00734654,0x380003E8]
+      - [ be32,0x0073465C,0x90090474]
+      - [ be32,0x00734660,0x90090478]
+  DarkSector2: &DarkSector2
+      - [ be32,0x00DA3370,0x39490000]
+      - [ be32,0x0097CB14,0x60000000]
+  DarkSector3: &DarkSector3
+      - [ be32,0x00D373A8,0x3D20447A]
+      - [ be32,0x00D373AC,0x91370200]
+      - [ be32,0x00D373B8,0x4BFFFEA8]
+  DarkSector4: &DarkSector4
+      - [ be32,0x0146B030,0x3D2005F5]
+      - [ be32,0x0146B034,0x6129E0FF]
+      - [ be32,0x0146B038,0x912301F4]
+      - [ be32,0x0146B03C,0x806301F4]
+      - [ be32,0x0146B040,0x4B50A4A4]
+      - [ be32,0x009754E0,0x48AF5B50]
+  DarkSector5: &DarkSector5
+      - [ be32,0x009FB9B0,0xC01F0130]
+      - [ be32,0x009FB7A4,0x38000001]
+      - [ be32,0x009FB7AC,0x981F0158]
+  DarkSector6: &DarkSector6
+      - [ be32,0x009F0160,0x38000001]
+      - [ be32,0x009F0168,0x981C10B0]
+      - [ be32,0x009F016C,0x48000008]
+  DarkSector6: &DarkSector7
+      - [ be32,0x000AB57CC,0x60000000]
+PPU-0e0c6b7daa6812c8e82e7eba70ee5332751dbf67:
+  "Max Infinite Health":
+    Games:
+      "Dark Sector(Artemis)":
+        BLUS30116: [ 01.01]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DarkSector ]
+PPU-0e0c6b7daa6812c8e82e7eba70ee5332751dbf67:
+  "Infinite Ammo":
+    Games:
+      "Dark Sector(Artemis)":
+        BLUS30116: [ 01.01]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DarkSector2 ]
+PPU-0e0c6b7daa6812c8e82e7eba70ee5332751dbf67:
+  "Weapons Never Time Out":
+    Games:
+      "Dark Sector(Artemis)":
+        BLUS30116: [ 01.01]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DarkSector3 ]
+PPU-0e0c6b7daa6812c8e82e7eba70ee5332751dbf67:
+  "Max Rubles":
+    Games:
+      "Dark Sector(Artemis)":
+        BLUS30116: [ 01.01]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DarkSector4 ]
+PPU-0e0c6b7daa6812c8e82e7eba70ee5332751dbf67:
+  "Shield Always Enabled":
+    Games:
+      "Dark Sector(Artemis)":
+        BLUS30116: [ 01.01]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: Only works if you have this power
+    Patch Version: 1.2
+    Group: AA
+    Patch:
+      - [ load, *DarkSector5 ]
+PPU-0e0c6b7daa6812c8e82e7eba70ee5332751dbf67:
+  "Shift Always Enabled":
+    Games:
+      "Dark Sector(Artemis)":
+        BLUS30116: [ 01.01]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: Shoot one time to be invisible, does not work together with shield
+    Patch Version: 1.2
+    Group: AA
+    Patch:
+      - [ load, *DarkSector6 ]
+PPU-0e0c6b7daa6812c8e82e7eba70ee5332751dbf67:
+  "Infinite Glaive Time":
+    Games:
+      "Dark Sector(Artemis)":
+        BLUS30116: [ 01.01]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *DarkSector7 ]
+
 # Title: Twisted Metal™
 # Serial: BCUS98106
 # Category: GD
