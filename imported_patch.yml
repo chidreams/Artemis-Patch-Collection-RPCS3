@@ -3925,6 +3925,65 @@ PPU-1817acf3207d81feda9c82306d97a98ffbd32140:
       - [ be32, 0x0050C274, 0x60000000 ] # NOP subtract instruction
       - [ be32, 0x01459654, 0x60000000 ] # Likely a secondary ammo/item NOP      
 
+PPU-4230af63b0a7ebf36351d4fd67eea055ab809962:
+  Infinite Ki:
+    Games:
+      "Ninja Gaiden Sigma (Artemis)":
+        NPUB30851: [ 01.01 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+     - [ be32,0x00129C3C,0xA17F01CC]
+  Infinite Health:
+    Games:
+      "Ninja Gaiden Sigma (Artemis))":
+        NPUB30851: [ 01.01 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+     - [ be32,0x0007F430,0xA39F01C4] 
+     - [ be32,0x0007F438,0xB39F01C6]
+     - [ be32,0x0007F43C,0xB39F0194]
+  Infinite Oxygen:
+    Games:
+      "Ninja Gaiden Sigma (Artemis)":
+        NPUB30851: [ 01.01 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+     - [ be32,0x001291E8,0x409CFFDC]
+  Instant Ultimate Technique:
+    Games:
+      "Ninja Gaiden Sigma (Artemis)":
+        NPUB30851: [ 01.01 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+     - [ be32,0x000F41BC,0x409E0214]  
+  Items Never Decrease:
+    Games:
+      "Ninja Gaiden Sigma (Artemis)":
+        NPUB30851: [ 01.01 ]
+    Author: GuitarMan + Hiei-YYH Ported by ChiDreams + jgduff Ported by ChiDreams1
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+     - [ be32,0x0012DBB8,0x60000000]
+     - [ be32,0x0012F97C,0x60000000]     
+  Attack Power 100x:
+    Games:
+      "Ninja Gaiden Sigma (Artemis)":
+        NPUB30851: [ 01.01 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+     - [ be32,0x001298A8,0xC3A2A7B8]
+
 # Title: Mafia II
 # Serial: BLUS30281
 # Category: DG
