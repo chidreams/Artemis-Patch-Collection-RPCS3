@@ -1,0 +1,75 @@
+Anchors:
+  ModernW3: &ModernW3
+     - [ be32,0x0058E530,0x3A002710]
+     - [ be32,0x0058E534,0x921F0154]
+     - [ be32,0x0058E538,0x921F0150]
+     - [ be32,0x0058E53C,0x807F01D4]
+     - [ be32,0x0058E540,0x4BBA1DC8]
+     - [ be32,0x00130304,0x4845E22C]
+  ModernW32: &ModernW32
+     - [ be32,0x0058E550,0x38600001]
+     - [ be32,0x0058E554,0x90640010]
+     - [ be32,0x0058E558,0x4BBA1D90]
+     - [ be32,0x001302E4,0x4845E26C]
+  ModernW33: &ModernW33
+     - [ be32,0x0058E560,0xC03D0338]
+     - [ be32,0x0058E564,0xD03D033C]
+     - [ be32,0x0058E568,0x4BD20C30]
+     - [ be32,0x002AF194,0x482DF3CC]
+  ModernW34: &ModernW34
+     - [ be32,0x002C1954,0x386003E7]
+  ModernW35: &ModernW35
+     - [ be32,0x0058E460,0x60640000]
+     - [ be32,0x0058E464,0x90830000]
+     - [ be32,0x0058E468,0x4BD2C86C]
+     - [ be32,0x002BACD0,0x482D3790]
+PPU-3f15dfc5d7a8069f2dea390893b9b150926c3a34:
+  "Infinite Health":
+    Games:
+      "Call of Duty: Modern Warfare 3 (Artemis)":
+        BLUS30838: [ 01.24 ]
+    Author: Randy97Killa Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *ModernW3 ]
+PPU-3f15dfc5d7a8069f2dea390893b9b150926c3a34:
+  "Invincible From Melee Attack":
+    Games:
+      "Call of Duty: Modern Warfare 3 (Artemis)":
+        BLUS30838: [ 01.24 ]
+    Author: Randy97Killa Ported by ChiDreams
+    Notes: Little Bit Buggy At Missions 1 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *ModernW32 ]
+PPU-3f15dfc5d7a8069f2dea390893b9b150926c3a34:
+  "Improved-Accuracy":
+    Games:
+      "Call of Duty: Modern Warfare 3 (Artemis)":
+        BLUS30838: [ 01.24 ]
+    Author: Randy97Killa Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *ModernW33 ]
+PPU-3f15dfc5d7a8069f2dea390893b9b150926c3a34:
+  "Infinite Ammo ":
+    Games:
+      "Call of Duty: Modern Warfare 3 (Artemis)":
+        BLUS30838: [ 01.24 ]
+    Author: Randy97Killa Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *ModernW34 ]
+PPU-3f15dfc5d7a8069f2dea390893b9b150926c3a34:
+  "Infinite Ammo-No Reload + Unlimited-Throwables":
+    Games:
+      "Call of Duty: Modern Warfare 3 (Artemis)":
+        BLUS30838: [ 01.24 ]
+    Author: Randy97Killa Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *ModernW35 ]
