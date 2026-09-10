@@ -1,4 +1,102 @@
 
+Anchors:
+  GTAVI: &GTAVI
+      - [ be32,0x00404604,0x60000000]
+      - [ be32,0x00404618,0x60000000]
+  GTAVI2: &GTAVI2
+      - [ be32,0x00D211C8,0x8BBC0211]
+      - [ be32,0x00D211CC,0x2C1D0000]
+      - [ be32,0x00D211D0,0x41820020]
+      - [ be32,0x00D211D4,0x3FA043FA]
+      - [ be32,0x00D211D8,0x93BC01E4]
+      - [ be32,0x00D211DC,0x93BC09D8]
+      - [ be32,0x00D211E0,0xC01C01E4]
+      - [ be32,0x00D211E4,0x3BA00000]
+      - [ be32,0x00D211E8,0x817C0220]
+      - [ be32,0x00D211EC,0x93AB00D8]
+      - [ be32,0x00D211F0,0x4818D2DE]
+      - [ be32,0x0018D2D8,0x48D211CA]
+  GTAVI3: &GTAVI3
+      - [ be32,0x002EA2D8,0x3C003FE0]
+  GTAVI4: &GTAVI4
+      - [ be32,0x0066B558,0x3C00447A]
+  GTAVI5: &GTAVI5
+      - [ be32,0x0066C2E4,0x3D2042C8]
+  GTAVI6: &GTAVI6
+      - [ be32,0x0066A780,0x419EFF40]
+  GTAVI7: &GTAVI7
+      - [ be32,0x00EFE338,0x00000000]
+PPU-d5041972c3464b734ed27f0b94b505a2a14471c8:
+  "Max Money":
+    Games:
+      "Grand Theft Auto IV (Artemis)":
+        BLUS30127: [ 01.08]
+    Author: Hiei-YYH Ported by ChiDreams / jgduff Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *GTAVI ]
+PPU-d5041972c3464b734ed27f0b94b505a2a14471c8:
+  "Infinite HP + Armour + No Wanted Level":
+    Games:
+      "Grand Theft Auto IV (Artemis)":
+        BLUS30127: [ 01.08]
+    Author: Hiei-YYH Ported by ChiDreams / jgduff Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *GTAVI2 ]
+PPU-d5041972c3464b734ed27f0b94b505a2a14471c8:
+  "Run Speed Modifier":
+    Games:
+      "Grand Theft Auto IV (Artemis)":
+        BLUS30127: [ 01.08]
+    Author: Hiei-YYH Ported by ChiDreams / jgduff Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *GTAVI3 ]
+PPU-d5041972c3464b734ed27f0b94b505a2a14471c8:
+  "1,000 Hit Kill Ammo":
+    Games:
+      "Grand Theft Auto IV (Artemis)":
+        BLUS30127: [ 01.08]
+    Author: Hiei-YYH Ported by ChiDreams / jgduff Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *GTAVI4 ]
+PPU-d5041972c3464b734ed27f0b94b505a2a14471c8:
+  "Rapid Fire":
+    Games:
+      "Grand Theft Auto IV (Artemis)":
+        BLUS30127: [ 01.08]
+    Author: Hiei-YYH Ported by ChiDreams / jgduff Ported by ChiDreams1
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *GTAVI5 ]
+PPU-d5041972c3464b734ed27f0b94b505a2a14471c8:
+  "Invincibility":
+    Games:
+      "Grand Theft Auto IV (Artemis)":
+        BLUS30127: [ 01.08]
+    Author: Hiei-YYH Ported by ChiDreams / jgduff Ported by ChiDreams1
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *GTAVI6 ]
+PPU-d5041972c3464b734ed27f0b94b505a2a14471c8:
+  "No Police":
+    Games:
+      "Grand Theft Auto IV (Artemis)":
+        BLUS30127: [ 01.08]
+    Author: Hiei-YYH Ported by ChiDreams / jgduff Ported by ChiDreams1
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *GTAVI7 ]
+
 # Title: Dragon Ball Z Ultimate Tenkaichi
 # Serial: BLES01401
 # Category: DG
