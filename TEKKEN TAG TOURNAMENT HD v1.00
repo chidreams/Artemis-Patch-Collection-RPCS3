@@ -1,0 +1,20 @@
+PPU-613533a29ddaddc1fd6f2dbfb00e6dfd39d415a8:
+  "Invincible P1 Mode":
+    Games:
+      "TEKKEN TAG TOURNAMENT HD (Artemis)":
+        NPUB30590: [ 01.00]
+    Author: xtatu Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x00104ACC,0x4086FF4C ]
+PPU-613533a29ddaddc1fd6f2dbfb00e6dfd39d415a8:
+  "Invincible P2 Mode":
+    Games:
+      "TEKKEN TAG TOURNAMENT HD (Artemis)":
+        NPUB30590: [ 01.00]
+    Author: xtatu Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+     - [ be32,0x00104B4C,0x409EFEA0]     
