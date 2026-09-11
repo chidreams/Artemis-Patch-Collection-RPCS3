@@ -21627,6 +21627,95 @@ PPU-337df400e4ec631d1b4789ee2c2d7d91496e8ca7:
       - [ be32,0x000F659C,0xC07F001C]
       - [ be32,0x000F65A0,0xFC201890]  
 
+Anchors:
+  SAMURAIW4: &SAMURAIW4
+      - [ be32,0x0008C660,0x41820060]
+  SAMURAIW42: &SAMURAIW42
+      - [ be32,0x0005759C,0x447A0000]
+  SAMURAIW43: &SAMURAIW43
+      - [ be32,0x00052754,0x80830030]
+      - [ be32,0x00052758,0x90830034]
+      - [ be32,0x00052760,0x7C8307B4]
+  SAMURAIW44: &SAMURAIW44
+      - [ be32,0x0004818C,0xC3E30038]
+      - [ be32,0x00048194,0xD3E3003C]
+  SAMURAIW45: &SAMURAIW45
+      - [ be32,0x00049938,0x3F800010]
+  SAMURAIW46: &SAMURAIW46
+      - [ be32,0x00101E14,0x48000008]
+  SAMURAIW47: &SAMURAIW47
+      - [ be32,0x00047100,0x60000000]
+PPU-b6068ae204bd3c615024829abd4fbf4a18cbdc63:
+  "Invincible":
+    Games:
+      "SAMURAI WARRIORS 4 (Artemis)":
+        NPUB31564: [ 01.00]
+    Author: xtatu Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *SAMURAIW4 ]
+PPU-b6068ae204bd3c615024829abd4fbf4a18cbdc63:
+  "Damage Multiplier 1000x":
+    Games:
+      "SAMURAI WARRIORS 4 (Artemis)":
+        NPUB31564: [ 01.00]
+    Author: xtatu Ported by ChiDreams 
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *SAMURAIW42 ]
+PPU-b6068ae204bd3c615024829abd4fbf4a18cbdc63:
+  "Physical Fitness Maximum Maintenance":
+    Games:
+      "SAMURAI WARRIORS 4 (Artemis)":
+        NPUB31564: [ 01.00]
+    Author: games24? Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *SAMURAIW43 ]
+PPU-b6068ae204bd3c615024829abd4fbf4a18cbdc63:
+  "Musou Gauge Maximum Maintenance":
+    Games:
+      "SAMURAI WARRIORS 4 (Artemis)":
+        NPUB31564: [ 01.00]
+    Author: games24? Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *SAMURAIW44 ]
+PPU-b6068ae204bd3c615024829abd4fbf4a18cbdc63:
+  "Maximum Class In Meritorious Increase":
+    Games:
+      "SAMURAI WARRIORS 4 (Artemis)":
+        NPUB31564: [ 01.00]
+    Author: games24? Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *SAMURAIW45 ]
+PPU-b6068ae204bd3c615024829abd4fbf4a18cbdc63:
+  "Maximum Proficiency In The Skill Value Increase":
+    Games:
+      "SAMURAI WARRIORS 4 (Artemis)":
+        NPUB31564: [ 01.00]
+    Author: games24? Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *SAMURAIW46 ]
+PPU-b6068ae204bd3c615024829abd4fbf4a18cbdc63:
+  "Item Effect Time Permanent":
+    Games:
+      "SAMURAI WARRIORS 4 (Artemis)":
+        NPUB31564: [ 01.00]
+    Author: games24? Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *SAMURAIW47 ]
+
 # Title: METAL GEAR SOLID V: THE PHANTOM PAIN
 # Serial: BLES02102
 # Category: GD
