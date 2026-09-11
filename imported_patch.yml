@@ -13844,6 +13844,84 @@ PPU-a31b54c21682252c501ba388ddcf8ae64ed1f5a3:
     Patch:
       - [ load, *TTroopers5 ]
 
+Anchors:
+  SOCOM4: &SOCOM4
+     - [ be32,0x00028800,0x80840010]
+     - [ be32,0x00028804,0x3C004516]
+     - [ be32,0x00028808,0x90030004]
+     - [ be32,0x0002880C,0x48F208E8]
+     - [ be32,0x00F490F0,0x4B0DF710]
+  SOCOM42: &SOCOM42
+     - [ be32,0x00379FA4,0x3E004F00]
+     - [ be32,0x00379FEC,0x921F0004]
+  SOCOM43: &SOCOM43
+     - [ be32,0x0088F108,0x48000004]
+  SOCOM44: &SOCOM44
+     - [ be32,0x005CA6F0,0x60000000]
+  SOCOM45: &SOCOM45
+     - [ be32,0x005C9AE8,0x60000000]
+PPU-7bf98dfa97ff84d8db49fcf198e2ecb9d9975ac6:
+  "Infinite Health":
+    Games:
+      "SOCOM 4: U.S. Navy SEALs (Artemis)":
+        BCUS98135: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreams
+    Notes: Randomly Affects For Certain Enemies
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SOCOM4 ]
+PPU-7bf98dfa97ff84d8db49fcf198e2ecb9d9975ac6:
+  "Infinite Health Alt":
+    Games:
+      "SOCOM 4: U.S. Navy SEALs (Artemis)":
+        BCUS98135: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreams
+    Notes: Doest Not Affects To Enemies
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SOCOM42 ]
+PPU-7bf98dfa97ff84d8db49fcf198e2ecb9d9975ac6:
+  "Partial-Invincible From Bullet":
+    Games:
+      "SOCOM 4: U.S. Navy SEALs (Artemis)":
+        BCUS98135: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreams
+    Notes: Better Combine With Infinite Health
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SOCOM43 ]
+PPU-7bf98dfa97ff84d8db49fcf198e2ecb9d9975ac6:
+  "Infinite Ammo":
+    Games:
+      "SOCOM 4: U.S. Navy SEALs (Artemis)":
+        BCUS98135: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SOCOM44 ]
+PPU-7bf98dfa97ff84d8db49fcf198e2ecb9d9975ac6:
+  "No Reload":
+    Games:
+      "SOCOM 4: U.S. Navy SEALs (Artemis)":
+        BCUS98135: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SOCOM45 ]
+PPU-ecfbb6781dc8fe8de152d1a9bc46dacab4a5dc38:
+  "Infinite Ammo + Bottomless Clip":
+    Games:
+      "Lost Planet 3 (Artemis)":
+        BLUS31020: [ 01.00]
+    Author: Medo Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ jump,0x00077654,0x00077654]
+      - [ be32,0x00077654,0x60000000]
+
 # Title: Rocket Knight
 # Serial: NPUB30123
 # Category: HG
