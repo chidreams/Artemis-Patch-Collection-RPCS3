@@ -7028,6 +7028,88 @@ PPU-2906daff22ed8bd1dbcef94ef8e1ec79b73dba5e:
     - [ be32,0x000AA180,0x60000000] # orig-code 41810008    
      
 
+PPU-427ff8be3761618ff0b30d232f99a97012a63328:
+  "Max Money On Buy (Energy)":
+    Games:
+      "Lost Dimension (Artemis)":
+        BLUS31554: [ 01.00 ]
+    Author: NA
+    Notes: NA
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x002613FC,0x40810008 ]
+PPU-427ff8be3761618ff0b30d232f99a97012a63328:
+  "Infinite Gift Exp (Skill Points)":
+    Games:
+      "Lost Dimension (Artemis)":
+        BLUS31554: [ 01.00 ]
+    Author: NA
+    Notes: Activate code, go in-game, upgrade with Gift Exp and save. DO NOT play with this enabled.
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x00263CF4,0x60000000 ]
+      - [ be32,0x00263CD8,0x60000000 ]
+PPU-427ff8be3761618ff0b30d232f99a97012a63328:
+  "Freeze Turn Counter":
+    Games:
+      "Lost Dimension (Artemis)":
+        BLUS31554: [ 01.00 ]
+    Author: NA
+    Notes: Turn number stays the same after player and enemy phase.
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x00083140,0x30A60000 ]
+PPU-427ff8be3761618ff0b30d232f99a97012a63328:
+  "Infinite GP (MP During Battle)":
+    Games:
+      "Lost Dimension (Artemis)":
+        BLUS31554: [ 01.00 ]
+    Author: NA
+    Notes: NA
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x00071994,0x3BC0270F ]
+PPU-427ff8be3761618ff0b30d232f99a97012a63328:
+  "Infinite SAN (Sanity)":
+    Games:
+      "Lost Dimension (Artemis)":
+        BLUS31554: [ 01.00 ]
+    Author: NA
+    Notes: Never go berserk in battle.
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x00071FC8,0x3BC00064 ]
+PPU-427ff8be3761618ff0b30d232f99a97012a63328:
+  "98 Items on Gain or Loss":
+    Games:
+      "Lost Dimension (Artemis)":
+        BLUS31554: [ 01.00 ]
+    Author: NA
+    Notes: NA
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x00261070,0x38E00062 ]
+PPU-427ff8be3761618ff0b30d232f99a97012a63328:
+  "Infinite Gift Effect":
+    Games:
+      "Lost Dimension (Artemis)":
+        BLUS31554: [ 01.00 ]
+    Author: NA
+    Notes: Gift Debuffs Never Lost Effect On Enemy
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x003C3354,0x907F0010 ]
+PPU-427ff8be3761618ff0b30d232f99a97012a63328:
+  "Infinite Vision Points":
+    Games:
+      "Lost Dimension (Artemis)":
+        BLUS31554: [ 01.00 ]
+    Author: NA
+    Notes: Vision Points Never Decrease Or Increase
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x000775C0,0x60000000 ]
+
 # Title: Captain America™: Super Soldier
 # Serial: BLUS30642
 # Category: DG
