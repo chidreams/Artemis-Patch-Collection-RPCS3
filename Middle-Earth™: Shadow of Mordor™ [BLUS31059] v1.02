@@ -1,0 +1,126 @@
+Anchors:
+  MiddleEarth: &MiddleEarth
+      - [ be32,0x00464440,0xC03E00D4]
+      - [ be32,0x00464444,0xD03E00D8]
+      - [ be32,0x00464448,0x80610074]
+      - [ be32,0x0046444C,0xFC20081E]
+      - [ be32,0x00464450,0xE8410028]
+      - [ be32,0x00464454,0x83830000]
+      - [ be32,0x00464458,0xD8210018]
+      - [ be32,0x0046445C,0x80A1001C]
+      - [ be32,0x00464460,0x839C001C]
+      - [ be32,0x00464464,0x7CA50734]
+      - [ be32,0x00464468,0x48000008]
+  MiddleEarth2: &MiddleEarth2
+      - [ be32,0x0041ED94,0xC02400D4]
+      - [ be32,0x0041ED98,0xD02400D8]
+  MiddleEarth3: &MiddleEarth3
+      - [ be32,0x0042FE94,0x60000000]
+  MiddleEarth4: &MiddleEarth4
+      - [ be32,0x00430440,0x48000008]
+  MiddleEarth5: &MiddleEarth5
+      - [ be32,0x007667F4,0x3BE0270F]
+      - [ be32,0x00765E30,0x3BE0270F]
+  MiddleEarth6: &MiddleEarth6
+      - [ be32,0x00432B2C,0x38600008]
+      - [ be32,0x00432B30,0xB07F0082]
+      - [ be32,0x00432B34,0xA09F0082]
+  MiddleEarth7: &MiddleEarth7
+      - [ be32,0x0076449C,0x60000000]
+  MiddleEarth8: &MiddleEarth8
+      - [ be32,0x00409590,0x7C641B78]
+  MiddleEarth9: &MiddleEarth9
+      - [ be32,0x00406948,0x7C671B78]
+      - [ be32,0x00406954,0x7CC53378]
+      - [ be32,0x00406958,0x90BE02F4]
+      - [ be32,0x00406960,0x7CE63B78]
+PPU-8b70001c63ce87dfee2e4eb79ad640e2c2da97ea:
+  "Max And Infinite Health":
+    Games:
+      "Middle-Earth Shadow of Mordor (Artemis)":
+        BLUS31059: [ 01.02 ]
+    Author: FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MiddleEarth ]
+PPU-8b70001c63ce87dfee2e4eb79ad640e2c2da97ea:
+  "Max And Infinite Health For Caragor":
+    Games:
+      "Middle-Earth Shadow of Mordor (Artemis)":
+        BLUS31059: [ 01.02 ]
+    Author: FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MiddleEarth2 ]
+PPU-8b70001c63ce87dfee2e4eb79ad640e2c2da97ea:
+  "Max And Infinite Focus":
+    Games:
+      "Middle-Earth Shadow of Mordor (Artemis)":
+        BLUS31059: [ 01.02 ]
+    Author: FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MiddleEarth3 ]
+PPU-8b70001c63ce87dfee2e4eb79ad640e2c2da97ea:
+  "Max And Infinite Elf-Shot":
+    Games:
+      "Middle-Earth Shadow of Mordor (Artemis)":
+        BLUS31059: [ 01.02 ]
+    Author: FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MiddleEarth4 ]
+PPU-8b70001c63ce87dfee2e4eb79ad640e2c2da97ea:
+  "Max And Infinite Mirian Coins After Gain Or Spend":
+    Games:
+      "Middle-Earth Shadow of Mordor (Artemis)":
+        BLUS31059: [ 01.02 ]
+    Author: FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MiddleEarth5 ]
+PPU-8b70001c63ce87dfee2e4eb79ad640e2c2da97ea:
+  "Hit Streak Always Charged":
+    Games:
+      "Middle-Earth Shadow of Mordor (Artemis)":
+        BLUS31059: [ 01.02 ]
+    Author: FBML Ported by ChiDreams
+    Notes: Obtain the power to activate the code. It does infinite execution, wraith flash, combat drain, wraith burn, and fire arrow.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MiddleEarth6 ]
+PPU-8b70001c63ce87dfee2e4eb79ad640e2c2da97ea:
+  "Weapon Powers Are Always Charged":
+    Games:
+      "Middle-Earth Shadow of Mordor (Artemis)":
+        BLUS31059: [ 01.02 ]
+    Author: FBML Ported by ChiDreams
+    Notes: Only use the code after obtaining the powers or it will cause you problem. It gives max and infinite Storm Of Urfael, Flame Of Azkard, and Shadow Of Acharn.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MiddleEarth7 ]
+PPU-8b70001c63ce87dfee2e4eb79ad640e2c2da97ea:
+  "Max Ability Points On Gain":
+    Games:
+      "Middle-Earth Shadow of Mordor (Artemis)":
+        BLUS31059: [ 01.02 ]
+    Author: FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MiddleEarth8 ]
+PPU-8b70001c63ce87dfee2e4eb79ad640e2c2da97ea:
+  "Max Power Points On Gain And Unlock All Tiers":
+    Games:
+      "Middle-Earth Shadow of Mordor (Artemis)":
+        BLUS31059: [ 01.02 ]
+    Author: FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MiddleEarth9 ]
