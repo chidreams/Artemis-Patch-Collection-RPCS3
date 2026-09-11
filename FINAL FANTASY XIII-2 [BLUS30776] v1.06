@@ -1,0 +1,140 @@
+# Title: FINAL FANTASY XIII-2
+# Serial: BLUS30776
+# Category: GD
+# Version: APP_VER=01.06 VERSION=01.00
+Anchors:
+  FFXIII-2: &FFXIII-2
+    - [ be32,0x0062B5D4,0x3C6005F5]
+    - [ be32,0x0062B5D8,0x6063E0FF]
+  FFXIII-22: &FFXIII-22
+    - [ be32,0x00075588,0x3BC0270F]
+    - [ be32,0x00C3F574,0x32303139]
+    - [ be32,0x00C3F578,0x36000000]
+    - [ be32,0x00C86D58,0x30313936]    
+  FFXIII-23: &FFXIII-23
+    - [ be32,0x0062DFF0,0x7C682014]
+  FFXIII-24: &FFXIII-24
+    - [ be32,0x0062DAA0,0x386003E7]
+  FFXIII-25: &FFXIII-25
+    - [ be32,0x000AFA7C,0x7FDED014]
+  FFXIII-26: &FFXIII-26
+    - [ be32,0x000B024C,0x7CA42B78]
+  FFXIII-27: &FFXIII-27
+    - [ be32,0x000AFABC,0x60000000]
+  FFXIII-28: &FFXIII-28
+    - [ be32,0x000E4A98,0x60000000]
+    - [ be32,0x006147E0,0x4800000C]
+    - [ be32,0x006147F4,0x909E0010] 
+  FFXIII-29: &FFXIII-29
+    - [ be32,0x00CA47F8,0x3F80011A]
+    - [ be32,0x00CA47FC,0x839C55FC]
+    - [ be32,0x00CA4800,0x839C0540]
+    - [ be32,0x00CA4804,0x7F9C1800]
+    - [ be32,0x00CA4808,0x419E000C]
+    - [ be32,0x00CA480C,0x7F9D2014]
+    - [ be32,0x00CA4810,0x48000008]
+    - [ be32,0x00CA4814,0x3B807000]
+    - [ be32,0x00CA4818,0x4E800020]
+    - [ be32,0x0005ABC8,0x48C49C59]
+    - [ be32,0x00CA4820,0x3F80011A]
+    - [ be32,0x00CA4824,0x839C55FC]
+    - [ be32,0x00CA4828,0x839C0540]
+    - [ be32,0x00CA482C,0x7F9CF800]
+    - [ be32,0x00CA4830,0x419E0010]
+    - [ be32,0x00CA4834,0x839F02E8]
+    - [ be32,0x00CA4838,0x7F9C1814]
+    - [ be32,0x00CA483C,0x48000008]
+    - [ be32,0x00CA4840,0x3B807000]
+    - [ be32,0x00CA4844,0x4E800020] 
+    - [ be32,0x00068CD4,0x48C3BB25]  
+PPU-0c4a0d2160a68a1bb6b4de9930ac98ceb53e9632:
+  "Infinite CP":
+    Games:
+      "FINAL FANTASY XIII-2 (Artemis)":
+        BLUS30776: [ 01.06 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFXIII-2 ]
+PPU-0c4a0d2160a68a1bb6b4de9930ac98ceb53e9632:
+  "Infinite Feral Link":
+    Games:
+      "FINAL FANTASY XIII-2 (Artemis)":
+        BLUS30776: [ 01.06 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFXIII-22 ]
+PPU-0c4a0d2160a68a1bb6b4de9930ac98ceb53e9632:
+  "Infinite Gil on Gain":
+    Games:
+      "FINAL FANTASY XIII-2 (Artemis)":
+        BLUS30776: [ 01.06 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFXIII-23 ]
+PPU-0c4a0d2160a68a1bb6b4de9930ac98ceb53e9632:
+  "999 Equipment Capacity":
+    Games:
+      "FINAL FANTASY XIII-2 (Artemis)":
+        BLUS30776: [ 01.06 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFXIII-24 ]
+PPU-0c4a0d2160a68a1bb6b4de9930ac98ceb53e9632:
+  "Max Attack":
+    Games:
+      "FINAL FANTASY XIII-2 (Artemis)":
+        BLUS30776: [ 01.06 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFXIII-25 ]
+PPU-0c4a0d2160a68a1bb6b4de9930ac98ceb53e9632:
+  "Enemys Chain Guage Never Decreases":
+    Games:
+      "FINAL FANTASY XIII-2 (Artemis)":
+        BLUS30776: [ 01.06 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFXIII-26 ]
+PPU-0c4a0d2160a68a1bb6b4de9930ac98ceb53e9632:
+  "Easy Stagger Enemy":
+    Games:
+      "FINAL FANTASY XIII-2 (Artemis)":
+        BLUS30776: [ 01.06 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFXIII-27 ]
+PPU-0c4a0d2160a68a1bb6b4de9930ac98ceb53e9632:
+  "Infinite Item Usage During Battle":
+    Games:
+      "FINAL FANTASY XIII-2 (Artemis)":
+        BLUS30776: [ 01.06 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFXIII-28 ]  
+PPU-0c4a0d2160a68a1bb6b4de9930ac98ceb53e9632:
+  "Infinite ATB":
+    Games:
+      "FINAL FANTASY XIII-2 (Artemis)":
+        BLUS30776: [ 01.06 ]
+    Author: ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FFXIII-29 ]      
+      
