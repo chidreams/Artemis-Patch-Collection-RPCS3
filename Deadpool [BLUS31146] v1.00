@@ -1,0 +1,53 @@
+PPU-aa19cb14cdbc500656b0ef0cfe572efe40977011:
+  "Infinite DP Points On Gain":
+    Games:
+      "Deadpool (Artemis)":
+        BLUS31146: [ 01.00 ]
+    Author: dron_3 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [  be32,0x00AC41DC,0xC05E0004]
+PPU-aa19cb14cdbc500656b0ef0cfe572efe40977011:
+  "Take No Damage":
+    Games:
+      "Deadpool (Artemis)":
+        BLUS31146: [ 01.00 ]
+    Author: dron_3 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [  be32,0x0061AF2C,0x7F17B000]
+      - [  be32,0x0061AF38,0x409A000C]
+PPU-aa19cb14cdbc500656b0ef0cfe572efe40977011:
+  "Infinite Health":
+    Games:
+      "Deadpool (Artemis)":
+        BLUS31146: [ 01.00 ]
+    Author: dron_3 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [  be32,0x00B1AC44,0xC0430354]
+      - [  be32,0x00B1AC48,0xD0430350]
+      - [  be32,0x00B1AC58,0xEC421028]
+PPU-aa19cb14cdbc500656b0ef0cfe572efe40977011:
+  "No Reload":
+    Games:
+      "Deadpool (Artemis)":
+        BLUS31146: [ 01.00 ]
+    Author: dron_3 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [  be32,0x00B709E0,0x60000000]
+PPU-aa19cb14cdbc500656b0ef0cfe572efe40977011:
+  "Infinite Ammo":
+    Games:
+      "Deadpool (Artemis)":
+        BLUS31146: [ 01.00 ]
+    Author: dron_3 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [  be32,0x0077D204,0x61040000]
