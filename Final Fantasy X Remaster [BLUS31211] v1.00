@@ -1,0 +1,538 @@
+Anchors:
+  FANTASY_X: &FANTASY_X
+     - [ be32,0x0026F704,0x60000000]
+     - [ be32,0x0026F718,0x60A30000]
+  FANTASY_X2: &FANTASY_X2
+     - [ be32,0x0026F738,0x60000000]
+     - [ be32,0x0026F74C,0x60A30000]
+  FANTASY_X3: &FANTASY_X3
+     - [ be32,0x0026F768,0x60A30000]
+     - [ be32,0x0026F784,0x60A30000]
+     - [ be32,0x0026F7A0,0x60A30000]
+     - [ be32,0x0026F7BC,0x60A30000]
+     - [ be32,0x0026F7D8,0x60A30000]
+     - [ be32,0x0026F7F4,0x60A30000]
+     - [ be32,0x0026F810,0x60A30000]
+     - [ be32,0x0026F82C,0x60A30000]
+  FANTASY_X4: &FANTASY_X4
+     - [ be32,0x00245498,0x38E0000A]
+  FANTASY_X5: &FANTASY_X5
+     - [ be32,0x00769DC0,0x39E0000A]
+     - [ be32,0x00769DC4,0x7DE321AE]
+     - [ be32,0x00769DC8,0x7C6418AE]
+     - [ be32,0x00769DCC,0x4E800020]
+     - [ be32,0x0024542C,0x48524994]
+  FANTASY_X6: &FANTASY_X6
+     - [ be32,0x00769A60,0x3AA02000]
+     - [ be32,0x00769A64,0x3AC00000]
+     - [ be32,0x00769A68,0x3C800205]
+     - [ be32,0x00769A6C,0x6084912C]
+     - [ be32,0x00769A70,0xB2A40000]
+     - [ be32,0x00769A74,0x3AB50001]
+     - [ be32,0x00769A78,0x2C16006F]
+     - [ be32,0x00769A7C,0x3AD60001]
+     - [ be32,0x00769A80,0x38840002]
+     - [ be32,0x00769A84,0x4180FFEC]
+     - [ be32,0x00769A88,0x3AC00000]
+     - [ be32,0x00769A8C,0x3C800205]
+     - [ be32,0x00769A90,0x6084932C]
+     - [ be32,0x00769A94,0x3AA00063]
+     - [ be32,0x00769A98,0x9AA40000]
+     - [ be32,0x00769A9C,0x2C16006F]
+     - [ be32,0x00769AA0,0x3AD60001]
+     - [ be32,0x00769AA4,0x38840001]
+     - [ be32,0x00769AA8,0x4180FFEC]
+     - [ be32,0x00769AAC,0xA2BA0000]
+     - [ be32,0x00769AB0,0x4E800020]
+     - [ be32,0x0038FC48,0x483D9E19]
+  FANTASY_X7: &FANTASY_X7
+     - [ be32,0x00769B70,0x3FE00205]
+     - [ be32,0x00769B74,0x3C006363]
+     - [ be32,0x00769B78,0x60006363]
+     - [ be32,0x00769B7C,0xB01F681A]
+     - [ be32,0x00769B80,0x901F681C]
+     - [ be32,0x00769B84,0x981F6820]
+     - [ be32,0x00769B88,0x3C000505]
+     - [ be32,0x00769B8C,0x60000505]
+     - [ be32,0x00769B90,0xB01F67DE]
+     - [ be32,0x00769B94,0x901F67E0]
+     - [ be32,0x00769B98,0x981F67E4]
+     - [ be32,0x00769B9C,0x3C00FFFF]
+     - [ be32,0x00769BA0,0x6000FFFF]
+     - [ be32,0x00769BA4,0x3BA00001]
+     - [ be32,0x00769BA8,0x2C1D0007]
+     - [ be32,0x00769BAC,0x901F644C]
+     - [ be32,0x00769BB0,0x901F653C]
+     - [ be32,0x00769BB4,0x3BFF0004]
+     - [ be32,0x00769BB8,0x3BBD0001]
+     - [ be32,0x00769BBC,0x4180FFEC]
+     - [ be32,0x00769BC0,0x38000001]
+     - [ be32,0x00769BC4,0x3BA00001]
+     - [ be32,0x00769BC8,0x3FE00205]
+     - [ be32,0x00769BCC,0x2C1D0035]
+     - [ be32,0x00769BD0,0x981F6821]
+     - [ be32,0x00769BD4,0x3BFF0001]
+     - [ be32,0x00769BD8,0x3BBD0001]
+     - [ be32,0x00769BDC,0x4180FFF0]
+     - [ be32,0x00769BE0,0x38000000]
+     - [ be32,0x00769BE4,0x3BA00001]
+     - [ be32,0x00769BE8,0x3FE00205]
+     - [ be32,0x00769BEC,0x2C1D0035]
+     - [ be32,0x00769BF0,0xB01F69C2]
+     - [ be32,0x00769BF4,0x3BFF0002]
+     - [ be32,0x00769BF8,0x3BBD0001]
+     - [ be32,0x00769BFC,0x4180FFF0]
+     - [ be32,0x00769C00,0x8BE30000]
+     - [ be32,0x00769C04,0x4E800020]
+     - [ be32,0x00339C5C,0x4842FF15]
+  FANTASY_X8: &FANTASY_X8
+     - [ be32,0x00769CC0,0x2C1E0380]
+     - [ be32,0x00769CC4,0x40810008]
+     - [ be32,0x00769CC8,0x4E800020]
+     - [ be32,0x00769CCC,0x33DEFFFF]
+     - [ be32,0x00769CD0,0x4E800020]
+     - [ be32,0x003201E0,0x48449AE1]
+  FANTASY_X9: &FANTASY_X9
+     - [ be32,0x00769D60,0x2C090014]
+     - [ be32,0x00769D64,0x41820008]
+     - [ be32,0x00769D68,0x48000018]
+     - [ be32,0x00769D6C,0x3F800C00]
+     - [ be32,0x00769D70,0x639C00B0]
+     - [ be32,0x00769D74,0x7C1C2800]
+     - [ be32,0x00769D78,0x40820008]
+     - [ be32,0x00769D7C,0x3BE00000]
+     - [ be32,0x00769D80,0x9BE30000]
+     - [ be32,0x00769D84,0x4E800020]
+     - [ be32,0x00339A9C,0x484302C5]
+  FANTASY_X10: &FANTASY_X10
+     - [ be32,0x00769E9C,0x3FE0011B]
+     - [ be32,0x00769EA0,0xA3FF2BCA]
+     - [ be32,0x00769EA4,0x2C1F0024]
+     - [ be32,0x00769EA8,0x4182000C]
+     - [ be32,0x00769EAC,0x3BE00096]
+     - [ be32,0x00769EB0,0x4E800020]
+     - [ be32,0x00769EB4,0x3BE000C8]
+     - [ be32,0x00769EB8,0x4E800020]
+     - [ be32,0x00339AD8,0x60000000]
+     - [ be32,0x00339ADC,0x484303C1]
+  FANTASY_X11: &FANTASY_X11
+     - [ be32,0x0076C040,0x7C0802A6]
+     - [ be32,0x0076C044,0x2C0F003C]
+     - [ be32,0x0076C048,0x39EF0001]
+     - [ be32,0x0076C04C,0x408100C8]
+     - [ be32,0x0076C050,0x39E00000]
+     - [ be32,0x0076C054,0x3F60011B]
+     - [ be32,0x0076C058,0xA37B2BCA]
+     - [ be32,0x0076C05C,0x3F80011C]
+     - [ be32,0x0076C060,0x639CB998]
+     - [ be32,0x0076C064,0xA39C0000]
+     - [ be32,0x0076C068,0x2C1C0009]
+     - [ be32,0x0076C06C,0x418100A8]
+     - [ be32,0x0076C070,0x3CA00205]
+     - [ be32,0x0076C074,0x60A596FC]
+     - [ be32,0x0076C078,0x1F9C0016]
+     - [ be32,0x0076C07C,0x7F85E214]
+     - [ be32,0x0076C080,0x2C1B0900]
+     - [ be32,0x0076C084,0x40820020]
+     - [ be32,0x0076C088,0x38800004]
+     - [ be32,0x0076C08C,0x989C000B]
+     - [ be32,0x0076C090,0x388000FF]
+     - [ be32,0x0076C094,0xB09C000E]
+     - [ be32,0x0076C098,0xB09C0010]
+     - [ be32,0x0076C09C,0xB09C0012]
+     - [ be32,0x0076C0A0,0xB09C0014]
+     - [ be32,0x0076C0A4,0x2C1B0180]
+     - [ be32,0x0076C0A8,0x40820014]
+     - [ be32,0x0076C0AC,0x889C000F]
+     - [ be32,0x0076C0B0,0x48000071]
+     - [ be32,0x0076C0B4,0x98BC000E]
+     - [ be32,0x0076C0B8,0x989C000F]
+     - [ be32,0x0076C0BC,0x2C1B0110]
+     - [ be32,0x0076C0C0,0x40820014]
+     - [ be32,0x0076C0C4,0x889C0011]
+     - [ be32,0x0076C0C8,0x48000059]
+     - [ be32,0x0076C0CC,0x98BC0010]
+     - [ be32,0x0076C0D0,0x989C0011]
+     - [ be32,0x0076C0D4,0x2C1B0108]
+     - [ be32,0x0076C0D8,0x40820014]
+     - [ be32,0x0076C0DC,0x889C0013]
+     - [ be32,0x0076C0E0,0x48000041]
+     - [ be32,0x0076C0E4,0x98BC0012]
+     - [ be32,0x0076C0E8,0x989C0013]
+     - [ be32,0x0076C0EC,0x2C1B0104]
+     - [ be32,0x0076C0F0,0x40820014]
+     - [ be32,0x0076C0F4,0x889C0015]
+     - [ be32,0x0076C0F8,0x48000029]
+     - [ be32,0x0076C0FC,0x98BC0014]
+     - [ be32,0x0076C100,0x989C0015]
+     - [ be32,0x0076C104,0x2C1B0500]
+     - [ be32,0x0076C108,0x4082000C]
+     - [ be32,0x0076C10C,0x388000F0]
+     - [ be32,0x0076C110,0x989C0009]
+     - [ be32,0x0076C114,0xA39F0000]
+     - [ be32,0x0076C118,0x7C0803A6]
+     - [ be32,0x0076C11C,0x4E800020]
+     - [ be32,0x0076C120,0x38840001]
+     - [ be32,0x0076C124,0x38A00080]
+     - [ be32,0x0076C128,0x2C040080]
+     - [ be32,0x0076C12C,0x40810008]
+     - [ be32,0x0076C130,0x38800000]
+     - [ be32,0x0076C134,0x2C04007B]
+     - [ be32,0x0076C138,0x40820008]
+     - [ be32,0x0076C13C,0x3880007C]
+     - [ be32,0x0076C140,0x4E800020]
+     - [ be32,0x003D47F4,0x4839784D]
+  FANTASY_X12: &FANTASY_X12
+     - [ be32,0x00747940,0x80830594]
+     - [ be32,0x00747944,0x908305D0]
+     - [ be32,0x00747948,0x4E800020]
+     - [ be32,0x002636E0,0x484E4261]
+  FANTASY_X13: &FANTASY_X13
+     - [ be32,0x00747950,0x820305A0]
+     - [ be32,0x00747954,0x920305D4]
+     - [ be32,0x00747958,0x4E800020]
+     - [ be32,0x0026941C,0x484DE535]
+  FANTASY_X14: &FANTASY_X14
+     - [ be32,0x00769DD4,0x8A2306E1]
+     - [ be32,0x00769DD8,0x2C110032]
+     - [ be32,0x00769DDC,0x4082000C]
+     - [ be32,0x00769DE0,0x8A2305BD]
+     - [ be32,0x00769DE4,0x9A2305BC]
+     - [ be32,0x00769DE8,0x4E800020]
+     - [ be32,0x00248304,0x48521AD0]
+  FANTASY_X15: &FANTASY_X15
+     - [ be32,0x00769AD0,0x3FE0011B]
+     - [ be32,0x00769AD4,0xA3FF2BCA]
+     - [ be32,0x00769AD8,0x2C1F0200]
+     - [ be32,0x00769ADC,0x4182000C]
+     - [ be32,0x00769AE0,0x3FE042C6]
+     - [ be32,0x00769AE4,0x48000008]
+     - [ be32,0x00769AE8,0x3BE00000]
+     - [ be32,0x00769AEC,0x4E800020]
+     - [ be32,0x00361A28,0x60000000]
+     - [ be32,0x00361A2C,0x484080A5]
+     - [ be32,0x00361A38,0x60000000]
+     - [ be32,0x00361A3C,0x60000000]
+  FANTASY_X16: &FANTASY_X16
+     - [ be32,0x00747960,0x89E306E1]
+     - [ be32,0x00747964,0x2C0F0032]
+     - [ be32,0x00747968,0x40820050]
+     - [ be32,0x0074796C,0x89E30607]
+     - [ be32,0x00747970,0x2C0F0001]
+     - [ be32,0x00747974,0x39E00000]
+     - [ be32,0x00747978,0x40810008]
+     - [ be32,0x0074797C,0x99E30607]
+     - [ be32,0x00747980,0x99E30606]
+     - [ be32,0x00747984,0xB1E30608]
+     - [ be32,0x00747988,0x99E3060A]
+     - [ be32,0x0074798C,0x99E30614]
+     - [ be32,0x00747990,0x39E00101]
+     - [ be32,0x00747994,0x99E3060B]
+     - [ be32,0x00747998,0xB1E3060C]
+     - [ be32,0x0074799C,0xB1E3060E]
+     - [ be32,0x007479A0,0xB1E30610]
+     - [ be32,0x007479A4,0x99E30612]
+     - [ be32,0x007479A8,0x39E000FE]
+     - [ be32,0x007479AC,0x99E30613]
+     - [ be32,0x007479B0,0x39E00002]
+     - [ be32,0x007479B4,0x99E30616]
+     - [ be32,0x007479B8,0xA0630606]
+     - [ be32,0x007479BC,0x4E800020]
+     - [ be32,0x0025D90C,0x484EA055]
+  FANTASY_X17: &FANTASY_X17
+     - [ be32,0x00769CF0,0xA07606BE]
+     - [ be32,0x00769CF4,0x897606E1]
+     - [ be32,0x00769CF8,0x2C0B0032]
+     - [ be32,0x00769CFC,0x40820010]
+     - [ be32,0x00769D00,0x3D600098]
+     - [ be32,0x00769D04,0x616B967F]
+     - [ be32,0x00769D08,0x48000010]
+     - [ be32,0x00769D0C,0xA07606BE]
+     - [ be32,0x00769D10,0x3D600001]
+     - [ be32,0x00769D14,0x616B869F]
+     - [ be32,0x00769D18,0x5463AFFE]
+     - [ be32,0x00769D1C,0x4E800020]
+     - [ be32,0x002407A0,0x48529551]
+  FANTASY_X18: &FANTASY_X18
+     - [ be32,0x00769CF0,0xA07606BE]
+     - [ be32,0x00769CF4,0x897606E1]
+     - [ be32,0x00769CF8,0x2C0B0032]
+     - [ be32,0x00769CFC,0x40820010]
+     - [ be32,0x00769D00,0x3D600098]
+     - [ be32,0x00769D04,0x616B967F]
+     - [ be32,0x00769D08,0x48000010]
+     - [ be32,0x00769D0C,0x38600000]
+     - [ be32,0x00769D10,0x3D600001]
+     - [ be32,0x00769D14,0x616B869F]
+     - [ be32,0x00769D18,0x5463AFFE]
+     - [ be32,0x00769D1C,0x4E800020]
+     - [ be32,0x002407A0,0x48529551]
+  FANTASY_X19: &FANTASY_X19
+     - [ be32,0x00258568,0x1CC50010]
+  FANTASY_X20: &FANTASY_X20
+     - [ be32,0x00769AF0,0x3CA00101]
+     - [ be32,0x00769AF4,0x60A50101]
+     - [ be32,0x00769AF8,0x3C800206]
+     - [ be32,0x00769AFC,0x3884EA50]
+     - [ be32,0x00769B00,0x90A40000]
+     - [ be32,0x00769B04,0xB0A40004]
+     - [ be32,0x00769B08,0x98A40006]
+     - [ be32,0x00769B0C,0x38840024]
+     - [ be32,0x00769B10,0x90A40000]
+     - [ be32,0x00769B14,0xB0A40004]
+     - [ be32,0x00769B18,0x98A40006]
+     - [ be32,0x00769B1C,0x88A30DC8]
+     - [ be32,0x00769B20,0x4E800020]
+     - [ be32,0x0026B4A8,0x484FE649]
+  FANTASY_X21: &FANTASY_X21
+     - [ be32,0x00241708,0x4800000C]
+  FANTASY_X22: &FANTASY_X22
+     - [ be32,0x00769C60,0x3CA0011B]
+     - [ be32,0x00769C64,0xA0A52BCA]
+     - [ be32,0x00769C68,0x2C050008]
+     - [ be32,0x00769C6C,0x4182000C]
+     - [ be32,0x00769C70,0x38600001]
+     - [ be32,0x00769C74,0x4E800020]
+     - [ be32,0x00769C78,0x38600000]
+     - [ be32,0x00769C7C,0x4E800020]
+     - [ be32,0x00258DAC,0x48510EB5]
+  FANTASY_X23: &FANTASY_X23
+     - [ be32,0x00769C90,0x3E20011B]
+     - [ be32,0x00769C94,0xA2312BCA]
+     - [ be32,0x00769C98,0x2C110028]
+     - [ be32,0x00769C9C,0x4182000C]
+     - [ be32,0x00769CA0,0x38600000]
+     - [ be32,0x00769CA4,0x4E800020]
+     - [ be32,0x00769CA8,0x38600064]
+     - [ be32,0x00769CAC,0x4E800020]
+     - [ be32,0x00241768,0x48528529]
+PPU-10877348119cba72ea9cfb0b4129590bc90875c3:
+  "Max HP + Break HP Limit":
+    Games:
+      "Final Fantasy X Remaster (Artemis)":
+        BLUS31211: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_X ]
+PPU-10877348119cba72ea9cfb0b4129590bc90875c3:
+  "Max MP + Break MP Limit":
+    Games:
+      "Final Fantasy X Remaster (Artemis)":
+        BLUS31211: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_X2 ]
+PPU-10877348119cba72ea9cfb0b4129590bc90875c3:
+  "Max Stats":
+    Games:
+      "Final Fantasy X Remaster (Artemis)":
+        BLUS31211: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_X3 ]
+PPU-10877348119cba72ea9cfb0b4129590bc90875c3:
+  "Capture 1 Monster for Max":
+    Games:
+      "Final Fantasy X Remaster (Artemis)":
+        BLUS31211: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_X4 ]
+PPU-10877348119cba72ea9cfb0b4129590bc90875c3:
+  "All Monsters Captured":
+    Games:
+      "Final Fantasy X Remaster (Artemis)":
+        BLUS31211: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_X5 ]
+PPU-10877348119cba72ea9cfb0b4129590bc90875c3:
+  "Have All Items":
+    Games:
+      "Final Fantasy X Remaster (Artemis)":
+        BLUS31211: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_X6 ]
+PPU-10877348119cba72ea9cfb0b4129590bc90875c3:
+  "Lv.99 + All Skills In Blitzball":
+    Games:
+      "Final Fantasy X Remaster (Artemis)":
+        BLUS31211: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_X7 ]
+PPU-10877348119cba72ea9cfb0b4129590bc90875c3:
+  "Time Chest Minigame":
+    Games:
+      "Final Fantasy X Remaster (Artemis)":
+        BLUS31211: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: Do not use outside of timed minigames.
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_X8 ]
+PPU-10877348119cba72ea9cfb0b4129590bc90875c3:
+  "Time Chocobo Training":
+    Games:
+      "Final Fantasy X Remaster (Artemis)":
+        BLUS31211: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: Do not use outside of timed minigames.
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_X9 ]
+PPU-10877348119cba72ea9cfb0b4129590bc90875c3:
+  "Thunder Dodger":
+    Games:
+      "Final Fantasy X Remaster (Artemis)":
+        BLUS31211: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: Dodge 1 Thunder for 150, hold L1 and then dodge again for 200.
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_X10 ]
+PPU-10877348119cba72ea9cfb0b4129590bc90875c3:
+  "Equipment Ability Modifier":
+    Games:
+      "Final Fantasy X Remaster (Artemis)":
+        BLUS31211: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: This code will only work for the first 10 slots in the Equipment list, put the cursor over the item, hold SELECT and press START = 4 slots and clear the abilities R3 = Maximum Weapon Power [] = Modify 1st ability /\ = Modify 2nd ability R1 = Modify 3rd ability L1 = Modify 4th ability 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_X11 ]
+PPU-10877348119cba72ea9cfb0b4129590bc90875c3:
+  "Infinite HP In Battle":
+    Games:
+      "Final Fantasy X Remaster (Artemis)":
+        BLUS31211: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_X12 ]
+PPU-10877348119cba72ea9cfb0b4129590bc90875c3:
+  "Infinite MP In Battle":
+    Games:
+      "Final Fantasy X Remaster (Artemis)":
+        BLUS31211: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_X13 ]
+PPU-10877348119cba72ea9cfb0b4129590bc90875c3:
+  "Infinite Overdrive In Battle":
+    Games:
+      "Final Fantasy X Remaster (Artemis)":
+        BLUS31211: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_X14 ]
+PPU-10877348119cba72ea9cfb0b4129590bc90875c3:
+  "Infinite Overdrive Time In Battle":
+    Games:
+      "Final Fantasy X Remaster (Artemis)":
+        BLUS31211: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: Press L3 to end the counter if needed.
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_X15 ]
+PPU-10877348119cba72ea9cfb0b4129590bc90875c3:
+  "Have Good Status In Battle":
+    Games:
+      "Final Fantasy X Remaster (Artemis)":
+        BLUS31211: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_X16 ]
+PPU-10877348119cba72ea9cfb0b4129590bc90875c3:
+  "Normal Break Break Damage Limit In Battle":
+    Games:
+      "Final Fantasy X Remaster (Artemis)":
+        BLUS31211: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_X17 ]
+PPU-10877348119cba72ea9cfb0b4129590bc90875c3:
+  "Enemies Never Break �Break Damage Limit� In Battle":
+    Games:
+      "Final Fantasy X Remaster (Artemis)":
+        BLUS31211: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_X18 ]
+PPU-10877348119cba72ea9cfb0b4129590bc90875c3:
+  "AP Multiplier":
+    Games:
+      "Final Fantasy X Remaster (Artemis)":
+        BLUS31211: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: The AP Shown is not multiplied, but it will be as soon it gets added to your current EXP.
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_X19 ]
+PPU-10877348119cba72ea9cfb0b4129590bc90875c3:
+  "Everyone Receives AP":
+    Games:
+      "Final Fantasy X Remaster (Artemis)":
+        BLUS31211: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_X20 ]
+PPU-10877348119cba72ea9cfb0b4129590bc90875c3:
+  "Steal Always Successful":
+    Games:
+      "Final Fantasy X Remaster (Artemis)":
+        BLUS31211: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_X21 ]
+PPU-10877348119cba72ea9cfb0b4129590bc90875c3:
+  "Dropped Items Always Rare":
+    Games:
+      "Final Fantasy X Remaster (Artemis)":
+        BLUS31211: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: Kill enemies holding R1 for Common drops.
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_X22 ]
+PPU-10877348119cba72ea9cfb0b4129590bc90875c3:
+  "Stole Item Always Rare":
+    Games:
+      "Final Fantasy X Remaster (Artemis)":
+        BLUS31211: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_X23 ]
