@@ -7877,6 +7877,78 @@ PPU-add54ff14fc07c9c8f72b430bed28704b0cc5e5d:
     Patch:
       - [ be32,0x0001A940,0x39290000]
 
+PPU-a036ad34f64e7d5d6bc169bcc642f18a059cc672:
+  "Infinite HP All Characters":
+    Games:
+      "Shining Resonance (Artemis)":
+        BLJM61156: [ 01.00 ]
+    Author: NA
+    Notes: Characters can still be KO'ed if the damage is higher than their real base HP, so make sure to have reviving items.
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x00736704,0x83DF0184 ]
+      - [ be32,0x00736708,0x3A00270F ]
+      - [ be32,0x0073670C,0x921E00D8 ]
+      - [ be32,0x00736710,0x4E800020 ]
+      - [ be32,0x003D146C,0x48365299 ]
+PPU-a036ad34f64e7d5d6bc169bcc642f18a059cc672:
+  "Infinite MP All Characters":
+    Games:
+      "Shining Resonance (Artemis)":
+        BLJM61156: [ 01.00 ]
+    Author: NA
+    Notes: NA
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x0031B7D4,0x3BA0270F ]
+PPU-a036ad34f64e7d5d6bc169bcc642f18a059cc672:
+  "Infinite Stamina":
+    Games:
+      "Shining Resonance (Artemis)":
+        BLJM61156: [ 01.00 ]
+    Author: NA
+    Notes: NA
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x00318FE4,0x60000000 ]
+PPU-a036ad34f64e7d5d6bc169bcc642f18a059cc672:
+  "Max Gold On Buy":
+    Games:
+      "Shining Resonance (Artemis)":
+        BLJM61156: [ 01.00 ]
+    Author: NA
+    Notes: NA
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x000CFFC8,0x48000008 ]
+      - [ be32,0x000D0024,0x3CE00098 ]
+      - [ be32,0x000D0028,0x60E7987F ]
+PPU-a036ad34f64e7d5d6bc169bcc642f18a059cc672:
+  "Max Item On Gain Or Use":
+    Games:
+      "Shining Resonance (Artemis)":
+        BLJM61156: [ 01.00 ]
+    Author: NA
+    Notes: NA
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x000CE1A4,0x60000000 ]
+      - [ be32,0x000CE1A8,0x38E00063 ]
+      - [ be32,0x000CDFE4,0x60000000 ]
+      - [ be32,0x000CDFE8,0x38E00063 ]
+      - [ be32,0x000CE6B0,0x60000000 ]
+      - [ be32,0x000CE6B4,0x38E00063 ]
+PPU-a036ad34f64e7d5d6bc169bcc642f18a059cc672:
+  "Band Gauge Always Max":
+    Games:
+      "Shining Resonance (Artemis)":
+        BLJM61156: [ 01.00 ]
+    Author: NA
+    Notes: NA
+    Patch Version: 1.0
+    Patch:
+      - [ be32,0x00287534,0x607E0000 ]
+
 # Title: Resident Evil Revelations
 # Serial: BLUS31051
 # Category: GD
