@@ -4596,6 +4596,47 @@ PPU-8b70001c63ce87dfee2e4eb79ad640e2c2da97ea:
     Patch:
       - [ load, *MiddleEarth9 ]
 
+# Title: GRID 2
+# Serial: BLUS31055
+# Category: GD
+# Version: APP_VER=01.04 VERSION=01.00
+PPU-6417c77acff191a2c8101807828fc894e1f0f0d6:
+  "Always First":
+    Games:
+      "GRID 2 (Artemis)":
+        BLUS31055: [ 01.04 ]
+    Author: jgduff  Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+    - [ be32,0x003F4FF0,0x68630000]
+    - [ be32,0x003F4FF8,0x60000000]
+    - [ be32,0x00402CF0,0x60000000]
+    - [ be32,0x00C36900,0x68000000]
+    - [ be32,0x00C36904,0x60000000]
+    - [ be32,0x00CB9578,0x60000000]
+PPU-6417c77acff191a2c8101807828fc894e1f0f0d6:
+  "ASM Lot Of Fans + Victory + Podium + Race Disputed + Unlock World Series Racing On 1 Race":
+    Games:
+      "GRID 2 (Artemis)":
+        BLUS31055: [ 01.04 ]
+    Author: jgduff  Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+    - [ be32,0x0116E0F8,0x90490004]
+PPU-6417c77acff191a2c8101807828fc894e1f0f0d6:
+  "ASM Infinite Flashback":
+    Games:
+      "GRID 2 (Artemis)":
+        BLUS31055: [ 01.04 ]
+    Author: jgduff  Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+    - [ be32,0x004F2A78,0x39290000]
+    - [ be32,0x004F2A7C,0x60000000]      
+
 # Title: Mafia II
 # Serial: BLUS30281
 # Category: DG
