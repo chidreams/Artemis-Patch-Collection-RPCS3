@@ -1,0 +1,432 @@
+Anchors:
+  FANTASY_2X: &FANTASY_2X
+     - [ be32,0x00359F28,0x60000000]
+  FANTASY_2X2: &FANTASY_2X2
+     - [ be32,0x004C6BC8,0x3860FFFF]
+  FANTASY_2X3: &FANTASY_2X3
+     - [ be32,0x0035AA60,0x38A0FFFF]
+     - [ be32,0x0035AA64,0x90A60000]
+     - [ be32,0x0035AA68,0x90A60004]
+     - [ be32,0x0035AA6C,0x60000000]
+  FANTASY_2X4: &FANTASY_2X4
+     - [ be32,0x0098296C,0x3A200063]
+     - [ be32,0x00982970,0x7E2321AE]
+     - [ be32,0x00982974,0x7C6320AE]
+     - [ be32,0x00982978,0x4B9D8094]
+     - [ be32,0x0035AA08,0x48627F64]
+  FANTASY_2X5: &FANTASY_2X5
+     - [ be32,0x0091FF54,0x3C80018C]
+     - [ be32,0x0091FF58,0x60843490]
+     - [ be32,0x0091FF5C,0x3B802000]
+     - [ be32,0x0091FF60,0x3B600001]
+     - [ be32,0x0091FF64,0x2C1B0043]
+     - [ be32,0x0091FF68,0xB3840000]
+     - [ be32,0x0091FF6C,0x38840002]
+     - [ be32,0x0091FF70,0x3B7B0001]
+     - [ be32,0x0091FF74,0x3B9C0001]
+     - [ be32,0x0091FF78,0x4081FFEC]
+     - [ be32,0x0091FF7C,0xA3960000]
+     - [ be32,0x0091FF80,0x4E800020]
+     - [ be32,0x004A940C,0x48476B49]
+  FANTASY_2X6: &FANTASY_2X6
+     - [ be32,0x0091FF8C,0x3E00018C]
+     - [ be32,0x0091FF90,0x621037D0]
+     - [ be32,0x0091FF94,0xA23000FE]
+     - [ be32,0x0091FF98,0x2C1100FF]
+     - [ be32,0x0091FF9C,0x40820024]
+     - [ be32,0x0091FFA0,0x3A209000]
+     - [ be32,0x0091FFA4,0x3B600001]
+     - [ be32,0x0091FFA8,0x2C1B007F]
+     - [ be32,0x0091FFAC,0xB2300000]
+     - [ be32,0x0091FFB0,0x3A100002]
+     - [ be32,0x0091FFB4,0x3B7B0001]
+     - [ be32,0x0091FFB8,0x3A310001]
+     - [ be32,0x0091FFBC,0x4081FFEC]
+     - [ be32,0x0091FFC0,0xA3950000]
+     - [ be32,0x0091FFC4,0x4E800020]
+     - [ be32,0x004A95AC,0x484769E1]
+  FANTASY_2X7: &FANTASY_2X7
+     - [ be32,0x0035798C,0x60000000]
+     - [ be32,0x003579A4,0x60A30000]
+     - [ be32,0x003560FC,0x60A30000]
+  FANTASY_2X8: &FANTASY_2X8
+     - [ be32,0x003579E0,0x60000000]
+     - [ be32,0x003579F4,0x60A30000]
+     - [ be32,0x0035EB48,0x60000000]
+     - [ be32,0x0035EB6C,0x60A30000]
+  FANTASY_2X9: &FANTASY_2X9
+     - [ be32,0x00357A10,0x60A30000]
+     - [ be32,0x00357A2C,0x60A30000]
+     - [ be32,0x00357A48,0x60A30000]
+     - [ be32,0x00357A64,0x60A30000]
+     - [ be32,0x00357A80,0x60A30000]
+     - [ be32,0x00357A9C,0x60A30000]
+     - [ be32,0x00357AB8,0x60A30000]
+     - [ be32,0x00357AD4,0x60A30000]
+  FANTASY_2X10: &FANTASY_2X10
+     - [ be32,0x00357FF8,0x3BA0270F]
+  FANTASY_2X11: &FANTASY_2X11
+     - [ be32,0x0036082C,0x60000000]
+     - [ be32,0x00360840,0x60A30000]
+  FANTASY_2X12: &FANTASY_2X12
+     - [ be32,0x008E8020,0x3BA00F27]
+     - [ be32,0x008E8024,0xB3A30376]
+     - [ be32,0x008E8028,0xB3A30378]
+     - [ be32,0x008E802C,0xB3A3036C]
+     - [ be32,0x008E8030,0x3BA06363]
+     - [ be32,0x008E8034,0x9BA30397]
+     - [ be32,0x008E8038,0xB3A30398]
+     - [ be32,0x008E803C,0x8863037E]
+     - [ be32,0x008E8040,0x4BA736AC]
+     - [ be32,0x0035B6E8,0x4858C938]
+  FANTASY_2X13: &FANTASY_2X13
+     - [ be32,0x008E7FD0,0x3FE0018A]
+     - [ be32,0x008E7FD4,0x63FFE590]
+     - [ be32,0x008E7FD8,0x38001E1E]
+     - [ be32,0x008E7FDC,0x981F0001]
+     - [ be32,0x008E7FE0,0xB01F0002]
+     - [ be32,0x008E7FE4,0xB01F0004]
+     - [ be32,0x008E7FE8,0xB01F0006]
+     - [ be32,0x008E7FEC,0xB01F0008]
+     - [ be32,0x008E7FF0,0x981F000A]
+     - [ be32,0x008E7FF4,0x8BE30000]
+     - [ be32,0x008E7FF8,0x4E800020]
+     - [ be32,0x0044B910,0x4849C6C1]
+  FANTASY_2X14: &FANTASY_2X14
+     - [ be32,0x00920000,0x88830010]
+     - [ be32,0x00920004,0x2C040000]
+     - [ be32,0x00920008,0x4082000C]
+     - [ be32,0x0092000C,0x80830384]
+     - [ be32,0x00920010,0x908303B4]
+     - [ be32,0x00920014,0x808303B4]
+     - [ be32,0x00920018,0x4BA239F8]
+     - [ be32,0x00343A0C,0x485DC5F4]
+  FANTASY_2X15: &FANTASY_2X15
+     - [ be32,0x0092001C,0x88030010]
+     - [ be32,0x00920020,0x2C000000]
+     - [ be32,0x00920024,0x4082000C]
+     - [ be32,0x00920028,0x80030388]
+     - [ be32,0x0092002C,0x900303B8]
+     - [ be32,0x00920030,0x806303B8]
+     - [ be32,0x00920034,0x4BA239E8]
+     - [ be32,0x00343A18,0x485DC604]
+  FANTASY_2X16: &FANTASY_2X16
+     - [ be32,0x0091BAC0,0x887D0010]
+     - [ be32,0x0091BAC4,0x2C030000]
+     - [ be32,0x0091BAC8,0x40820078]
+     - [ be32,0x0091BACC,0x3860FFFF]
+     - [ be32,0x0091BAD0,0x907D09D8]
+     - [ be32,0x0091BAD4,0x907D0404]
+     - [ be32,0x0091BAD8,0x907D0408]
+     - [ be32,0x0091BADC,0x907D040C]
+     - [ be32,0x0091BAE0,0x907D0410]
+     - [ be32,0x0091BAE4,0x907D0414]
+     - [ be32,0x0091BAE8,0x907D0420]
+     - [ be32,0x0091BAEC,0x907D0424]
+     - [ be32,0x0091BAF0,0x907D0428]
+     - [ be32,0x0091BAF4,0x38605050]
+     - [ be32,0x0091BAF8,0xB07D0438]
+     - [ be32,0x0091BAFC,0x38600014]
+     - [ be32,0x0091BB00,0x987D043C]
+     - [ be32,0x0091BB04,0x3860647E]
+     - [ be32,0x0091BB08,0xB07D043A]
+     - [ be32,0x0091BB0C,0x38600013]
+     - [ be32,0x0091BB10,0x987D0449]
+     - [ be32,0x0091BB14,0x887D0437]
+     - [ be32,0x0091BB18,0x2C030001]
+     - [ be32,0x0091BB1C,0x38600000]
+     - [ be32,0x0091BB20,0x41820008]
+     - [ be32,0x0091BB24,0x987D0437]
+     - [ be32,0x0091BB28,0x987D0446]
+     - [ be32,0x0091BB2C,0x38607F7F]
+     - [ be32,0x0091BB30,0x987D043F]
+     - [ be32,0x0091BB34,0xB07D0440]
+     - [ be32,0x0091BB38,0x987D0441]
+     - [ be32,0x0091BB3C,0xB07D0442]
+     - [ be32,0x0091BB40,0x887D043C]
+     - [ be32,0x0091BB44,0x4BA259F0]
+     - [ be32,0x00341530,0x485DA590]
+  FANTASY_2X17: &FANTASY_2X17
+     - [ be32,0x008E8008,0x1E730040]
+     - [ be32,0x008E800C,0x7C7B9814]
+     - [ be32,0x008E8010,0x4E800020]
+     - [ be32,0x0033C974,0x485AB695]
+  FANTASY_2X18: &FANTASY_2X18
+     - [ be32,0x0091C720,0x88830010]
+     - [ be32,0x0091C724,0x2C040000]
+     - [ be32,0x0091C728,0x40820014]
+     - [ be32,0x0091C72C,0x38600001]
+     - [ be32,0x0091C730,0x3C80000F]
+     - [ be32,0x0091C734,0x6084423F]
+     - [ be32,0x0091C738,0x4E800020]
+     - [ be32,0x0091C73C,0xA0630652]
+     - [ be32,0x0091C740,0x3C800001]
+     - [ be32,0x0091C744,0x6084869F]
+     - [ be32,0x0091C748,0x4E800020]
+     - [ be32,0x0031D558,0x485FF1C9]
+  FANTASY_2X19: &FANTASY_2X19
+     - [ be32,0x002FB8D0,0x4800000C]
+  FANTASY_2X20: &FANTASY_2X20
+     - [ be32,0x0034A6DC,0x3860270F]
+  FANTASY_2X21: &FANTASY_2X21
+     - [ be32,0x0027A9CC,0x3BA0270F]
+     - [ be32,0x0027A9D0,0x93A30000]
+     - [ be32,0x0027A9D4,0x7FBE07B4]
+     - [ be32,0x0027A9D8,0x48128C61]
+  FANTASY_2X22: &FANTASY_2X22
+     - [ be32,0x0027A9CC,0x486A60DD]
+     - [ be32,0x00920AA8,0x3BA003E7]
+     - [ be32,0x00920AAC,0xB3A30008]
+     - [ be32,0x00920AB0,0xB3A3000A]
+     - [ be32,0x00920AB4,0xB3A3000C]
+     - [ be32,0x00920AB8,0xB3A3000E]
+     - [ be32,0x00920ABC,0xB3A30010]
+     - [ be32,0x00920AC0,0xB3A30012]
+     - [ be32,0x00920AC4,0x3BA0270F]
+     - [ be32,0x00920AC8,0x93A30000]
+     - [ be32,0x00920ACC,0x93A30004]
+     - [ be32,0x00920AD0,0x4E800020]
+  FANTASY_2X23: &FANTASY_2X23
+     - [ be32,0x00301020,0x60000000]
+  FANTASY_2X24: &FANTASY_2X24
+     - [ be32,0x00301288,0x48000008]
+PPU-a59257fa61e75236a3d57c5928db102d4916f7d8:
+  "Max Gil":
+    Games:
+      "Final Fantasy X-2 Remaster (Artemis)":
+        BLUS31211: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_2X ]
+PPU-a59257fa61e75236a3d57c5928db102d4916f7d8:
+  "Albhed Fully Translated":
+    Games:
+      "Final Fantasy X-2 Remaster (Artemis)":
+        BLUS31211: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: Get One of the Albhed Primer.
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_2X2 ]
+PPU-a59257fa61e75236a3d57c5928db102d4916f7d8:
+  "All Garments":
+    Games:
+      "Final Fantasy X-2 Remaster (Artemis)":
+        BLUS31211: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_2X3 ]
+PPU-a59257fa61e75236a3d57c5928db102d4916f7d8:
+  "All Dresses":
+    Games:
+      "Final Fantasy X-2 Remaster (Artemis)":
+        BLUS31211: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_2X4 ]
+PPU-a59257fa61e75236a3d57c5928db102d4916f7d8:
+  "Have All Items":
+    Games:
+      "Final Fantasy X-2 Remaster (Artemis)":
+        BLUS31211: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_2X5 ]
+PPU-a59257fa61e75236a3d57c5928db102d4916f7d8:
+  "Have All Accessories":
+    Games:
+      "Final Fantasy X-2 Remaster (Artemis)":
+        BLUS31211: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_2X6 ]
+PPU-a59257fa61e75236a3d57c5928db102d4916f7d8:
+  "Max HP":
+    Games:
+      "Final Fantasy X-2 Remaster (Artemis)":
+        BLUS31211: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: To max out in battle, you need to use an equipment for that (use all equipment code for Enterprise) I changed that because the original Max HP in battle was causing bugs.
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_2X7 ]
+PPU-a59257fa61e75236a3d57c5928db102d4916f7d8:
+  "Max MP":
+    Games:
+      "Final Fantasy X-2 Remaster (Artemis)":
+        BLUS31211: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_2X8 ]
+PPU-a59257fa61e75236a3d57c5928db102d4916f7d8:
+  "Max Stats":
+    Games:
+      "Final Fantasy X-2 Remaster (Artemis)":
+        BLUS31211: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_2X9 ]
+PPU-a59257fa61e75236a3d57c5928db102d4916f7d8:
+  "Learn 1 Skill Per Kill":
+    Games:
+      "Final Fantasy X-2 Remaster (Artemis)":
+        BLUS31211: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_2X10 ]
+PPU-a59257fa61e75236a3d57c5928db102d4916f7d8:
+  "Infinite Items":
+    Games:
+      "Final Fantasy X-2 Remaster (Artemis)":
+        BLUS31211: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_2X11 ]
+PPU-a59257fa61e75236a3d57c5928db102d4916f7d8:
+  "Infinite HP, Ammo + Time in Gautlets Minigame":
+    Games:
+      "Final Fantasy X-2 Remaster (Artemis)":
+        BLUS31211: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_2X12 ]
+PPU-a59257fa61e75236a3d57c5928db102d4916f7d8:
+  "All Towers Calibrated":
+    Games:
+      "Final Fantasy X-2 Remaster (Artemis)":
+        BLUS31211: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: Check Albhed guy into Rin agency in Thunder Plains
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_2X13 ]
+PPU-a59257fa61e75236a3d57c5928db102d4916f7d8:
+  "Infinite HP In Battle":
+    Games:
+      "Final Fantasy X-2 Remaster (Artemis)":
+        BLUS31211: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_2X14 ]
+PPU-a59257fa61e75236a3d57c5928db102d4916f7d8:
+  "Infinite MP In Battle":
+    Games:
+      "Final Fantasy X-2 Remaster (Artemis)":
+        BLUS31211: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_2X15 ]
+PPU-a59257fa61e75236a3d57c5928db102d4916f7d8:
+  "Good Stats In Battle":
+    Games:
+      "Final Fantasy X-2 Remaster (Artemis)":
+        BLUS31211: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_2X16 ]
+PPU-a59257fa61e75236a3d57c5928db102d4916f7d8:
+  "EXP Multiplier":
+    Games:
+      "Final Fantasy X-2 Remaster (Artemis)":
+        BLUS31211: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_2X17 ]
+PPU-a59257fa61e75236a3d57c5928db102d4916f7d8:
+  "Break Damage Limit":
+    Games:
+      "Final Fantasy X-2 Remaster (Artemis)":
+        BLUS31211: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_2X18 ]
+PPU-a59257fa61e75236a3d57c5928db102d4916f7d8:
+  "Can Always Change To Special Dress Sphere":
+    Games:
+      "Final Fantasy X-2 Remaster (Artemis)":
+        BLUS31211: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_2X19 ]
+PPU-a59257fa61e75236a3d57c5928db102d4916f7d8:
+  "Enemies Oversoul":
+    Games:
+      "Final Fantasy X-2 Remaster (Artemis)":
+        BLUS31211: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_2X20 ]
+PPU-a59257fa61e75236a3d57c5928db102d4916f7d8:
+  "Infinite HP Last Mission":
+    Games:
+      "Final Fantasy X-2 Remaster (Artemis)":
+        BLUS31211: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_2X21 ]
+PPU-a59257fa61e75236a3d57c5928db102d4916f7d8:
+  "Infinite HP & Max Stats":
+    Games:
+      "Final Fantasy X-2 Remaster (Artemis)":
+        BLUS31211: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_2X22 ]
+PPU-a59257fa61e75236a3d57c5928db102d4916f7d8:
+  "Infinite MP Last Mission":
+    Games:
+      "Final Fantasy X-2 Remaster (Artemis)":
+        BLUS31211: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_2X23 ]
+PPU-a59257fa61e75236a3d57c5928db102d4916f7d8:
+  "Max Gil on Buy Last Mission":
+    Games:
+      "Final Fantasy X-2 Remaster (Artemis)":
+        BLUS31211: [ 01.00]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *FANTASY_2X24 ]
