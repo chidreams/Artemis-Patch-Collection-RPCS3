@@ -20253,87 +20253,52 @@ PPU-6ebf2150806bf812daa9669b03e4ac6f61ef605a:
     Games:
       "ZOMBIE APOCALYPSE (Artemis)":
         NPUB30069: [ 01.01 ]
-    Author: cagao123 Ported by ChIdReamS
+    Author: cagao123 Ported by ChiDreams
     Notes: 
     Patch Version: 1.2 
     Patch:
     - [ be32,0x00176FB8,0x38840063]
-PPU-6ebf2150806bf812daa9669b03e4ac6f61ef605a:
   "Combo Score Multiplier 999x":
     Games:
       "ZOMBIE APOCALYPSE (Artemis)":
         NPUB30069: [ 01.01 ]
-    Author: cagao123 Ported by ChIdReamS
+    Author: cagao123 Ported by ChiDreams
     Notes: 
     Patch Version: 1.2 
     Patch:
     - [ be32,0x001533CC,0x419D000C]
-PPU-6ebf2150806bf812daa9669b03e4ac6f61ef605a:
   "Huge Score On Kill":
     Games:
       "ZOMBIE APOCALYPSE (Artemis)":
         NPUB30069: [ 01.01 ]
-    Author: cagao123 Ported by ChIdReamS
+    Author: cagao123 Ported by ChiDreams
     Notes: 
     Patch Version: 1.2 
     Patch:
     - [ be32,0x00157588,0x60000000]
-PPU-6ebf2150806bf812daa9669b03e4ac6f61ef605a:
-  "Kill Increment Multiplier 1000x":
-    Games:
-      "ZOMBIE APOCALYPSE (Artemis)":
-        NPUB30069: [ 01.01 ]
-    Author: cagao123 Ported by ChIdReamS
-    Notes: 0001=Normal;000A=10x;0064=100x;03E8=1000x;2710=10000x
-    Patch Version: 1.2 
-    Patch:
-    - [ be32,0x001782F0,0x392903E8]
-PPU-6ebf2150806bf812daa9669b03e4ac6f61ef605a:
-  "Camera Following Distance Modifier .05":
-    Games:
-      "ZOMBIE APOCALYPSE (Artemis)":
-        NPUB30069: [ 01.01 ]
-    Author: cagao123 Ported by ChIdReamS
-    Notes: 3F800000=Normal;00000000=0x;3F000000=0.5x;3F400000=0.75x;3F600000=0.875x;3FA00000=1.25x;3FC00000=1.5x;3FE00000=1.75x;40000000=2x;40400000=3x;40800000=4x;40A00000=5x
-    Patch Version: 1.2 
-    Patch:
-    - [ be32,0x00ACEB24,0x3F000000]
-PPU-6ebf2150806bf812daa9669b03e4ac6f61ef605a:
   "Invincible After Dying":
     Games:
       "ZOMBIE APOCALYPSE (Artemis)":
         NPUB30069: [ 01.01 ]
-    Author: cagao123 Ported by ChIdReamS
+    Author: cagao123 Ported by ChiDreams
     Notes: 
     Patch Version: 1.2 
     Patch:
     - [ be32,0x001E984C,0x905F077C]
-PPU-6ebf2150806bf812daa9669b03e4ac6f61ef605a:
   "Infinite Ammo Increase 999":
     Games:
       "ZOMBIE APOCALYPSE (Artemis)":
         NPUB30069: [ 01.01 ]
-    Author: cagao123 Ported by ChIdReamS
+    Author: cagao123 Ported by ChiDreams
     Notes: 
     Patch Version: 1.2 
     Patch:
     - [ be32,0x002079E8,0x380903E7]
-PPU-6ebf2150806bf812daa9669b03e4ac6f61ef605a:
-  "Game Speed Modifier":
-    Games:
-      "ZOMBIE APOCALYPSE (Artemis)":
-        NPUB30069: [ 01.01 ]
-    Author: cagao123 Ported by ChIdReamS
-    Notes: 3F800000=Normal;3F000000=0.5x;3F400000=0.75x;3F600000=0.875x;3F700000=0.9375x;3FA00000=1.25x;3FC00000=1.5x;3FE00000=1.75x;40000000=2x;40200000=2.5x;40400000=3x;40800000=4x;40A00000=5x
-    Patch Version: 1.2 
-    Patch:
-    - [ be32,0x00ACDE6C,0x3F80000]
-PPU-6ebf2150806bf812daa9669b03e4ac6f61ef605a:
   "Invincibility":
     Games:
       "ZOMBIE APOCALYPSE (Artemis)":
         NPUB30069: [ 01.01 ]
-    Author: cagao123 Ported by ChIdReamS
+    Author: cagao123 Ported by ChiDreams
     Notes: 
     Patch Version: 1.2 
     Patch:
@@ -20341,7 +20306,86 @@ PPU-6ebf2150806bf812daa9669b03e4ac6f61ef605a:
     - [ be32,0x009AED78,0x9A0305A3]
     - [ be32,0x009AED7C,0x800305A0]
     - [ be32,0x009AED80,0x4804270E]
-    - [ be32,0x00042708,0x489AED76]
+    - [ be32,0x00042708,0x489AED76]	
+Anchors:
+  Zombie_Speed_Values: &Zombie_Speed_Values
+    "Game Speed":
+      Type: long_enum
+      Value: &normal_speed 0x3F800000
+      Allowed Values:
+        "0.5x": 0x3F000000
+        "0.75x": 0x3F400000
+        "0.875x": 0x3F600000
+        "0.9375x": 0x3F700000
+        "Normal": *normal_speed
+        "1.25x": 0x3FA00000
+        "1.5x": 0x3FC00000
+        "1.75x": 0x3FE00000
+        "2x": 0x40000000
+        "2.5x": 0x40200000
+        "3x": 0x40400000
+        "4x": 0x40800000
+        "5x": 0x40A00000
+
+  Zombie_Camera_Values: &Zombie_Camera_Values
+    "Camera Distance":
+      Type: long_enum
+      Value: &normal_cam 0x3F800000
+      Allowed Values:
+        "0x": 0x00000000
+        "0.5x": 0x3F000000
+        "0.75x": 0x3F400000
+        "0.875x": 0x3F600000
+        "Normal": *normal_cam
+        "1.25x": 0x3FA00000
+        "1.5x": 0x3FC00000
+        "1.75x": 0x3FE00000
+        "2x": 0x40000000
+        "3x": 0x40400000
+        "4x": 0x40800000
+        "5x": 0x40A00000
+
+  Zombie_Kill_Values: &Zombie_Kill_Values
+    "Kill Multiplier":
+      Type: long_enum
+      Value: &normal_kill 0x39290001
+      Allowed Values:
+        "Normal": *normal_kill
+        "10x": 0x3929000A
+        "100x": 0x39290064
+        "1000x": 0x392903E8
+        "10000x": 0x39292710
+
+PPU-6ebf2150806bf812daa9669b03e4ac6f61ef605a:
+  "Game Speed Modifier":
+    Games:
+      "ZOMBIE APOCALYPSE (Artemis)":
+        NPUB30069: [ "01.01" ]
+    Author: "cagao123 Ported by ChiDreams"
+    Notes: "Allows you to select custom game speeds from the UI menu."
+    Configurable Values: *Zombie_Speed_Values
+    Patch:
+      - [ be32, 0x00ACDE6C, "Game Speed" ]
+
+  "Camera Following Distance Modifier":
+    Games:
+      "ZOMBIE APOCALYPSE (Artemis)":
+        NPUB30069: [ "01.01" ]
+    Author: "cagao123 Ported by ChiDreams"
+    Notes: "Allows you to select custom camera following distances from the UI menu."
+    Configurable Values: *Zombie_Camera_Values
+    Patch:
+      - [ be32, 0x00ACEB24, "Camera Distance" ]
+
+  "Kill Increment Multiplier":
+    Games:
+      "ZOMBIE APOCALYPSE (Artemis)":
+        NPUB30069: [ "01.01" ]
+    Author: "cagao123 Ported by ChiDreams"
+    Notes: "Allows you to select custom score/kill increment multipliers from the UI menu."
+    Configurable Values: *Zombie_Kill_Values
+    Patch:
+      - [ be32, 0x001782F0, "Kill Multiplier" ]
 
 Anchors:
   HSword: &HSword
