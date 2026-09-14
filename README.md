@@ -1,14 +1,19 @@
-# Aldo's PS3 Cheat Database to RPCS3 Patching System By ChiDreams 
+# Aldo’s PS3 Cheat Database → RPCS3 Patching System Ported & Maintained by ChiDreams
 
-## Introduction
+## Overview
 
-This project is dedicated to porting Aldo's extensive PS3 cheat database to the RPCS3 patching system. Our goal is to make these cheats more accessible and easy to use within the RPCS3 emulator.
+This project exists to convert and preserve Aldo’s classic PS3 cheat database in a modern, RPCS3‑compatible patch format.
+Every patch in this collection has been manually reviewed, converted, and structured so users can apply cheats directly through RPCS3’s patching system no external tools, no guesswork.
 
-## Features
+This work was done independently due to the lack of meaningful support or guidance from the RPCS3 Discord. Instead of waiting for help that never comes, this project ensures the community gets a reliable, accessible, and properly maintained cheat library.
 
-- Supports approximately 2900 games.
+## What’s Included
+
+- Supports approximately 468 games of the 2900 titles 
 - Easy to use: simply select the game and apply the cheat.
-- Regular updates: we aim to keep the cheat database up-to-date with new games and cheats.
+- RPCS3‑native YAML patch format
+- Consistent structure for easy navigation
+- Ongoing updates: we aim to keep the cheat database up-to-date with new games and cheats.
 
 ## How it Works
 
@@ -32,6 +37,19 @@ While we make every effort to deliver high quality products, we do not guarantee
 ## Note
 
 Please note that these cheats are provided for single-player games only. We do not support or condone cheating in multiplayer games.
+
+## No Affiliation With RPCS3
+This project is not affiliated with the RPCS3 Team, RPCS3 Developers, or the RPCS3 Discord in any way.
+All conversions, patches, documentation, and maintenance are performed independently by ChiDreams.
+
+RPCS3 is an open‑source emulator, and its patching system allows community‑created patches.
+However:
+
+-This project is not endorsed by the RPCS3 team
+-This project is not supported by RPCS3 staff or contributors
+-All issues, questions, and updates should be directed here, not to RPCS3
+
+The patches provided in this repository are community‑driven and exist solely to make Aldo’s classic cheat database usable within RPCS3’s patching framework.
 
 ## License
 
