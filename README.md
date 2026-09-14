@@ -45,9 +45,9 @@ All conversions, patches, documentation, and maintenance are performed independe
 RPCS3 is an open‑source emulator, and its patching system allows community‑created patches.
 However:
 
--This project is not endorsed by the RPCS3 team
--This project is not supported by RPCS3 staff or contributors
--All issues, questions, and updates should be directed here, not to RPCS3
+- This project is not endorsed by the RPCS3 team
+- This project is not supported by RPCS3 staff or contributors
+- All issues, questions, and updates should be directed here, not to RPCS3
 
 The patches provided in this repository are community‑driven and exist solely to make Aldo’s classic cheat database usable within RPCS3’s patching framework.
 
