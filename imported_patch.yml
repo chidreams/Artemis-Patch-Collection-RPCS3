@@ -5578,6 +5578,51 @@ PPU-e4cc14e35e7916b0ddc20631692494ece22823ee:
     Patch:
       - [ load, *SlyCooper117 ]
 
+# Title: Spider-Man™: Edge of Time
+# Serial: BLUS30760
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00
+PRX-AQGXs5RRhGukb2sogeGMNMhN8Xwj-0:
+  "Lot + Infinite Temporal Energy On Gain":
+    Games:
+      "Spider-Man Edge of Time (Dreams)":
+        BLUS30760: [ 01.00 ]
+    Author: "ChiDreams"
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x25ABDC, 0x92DD0000 ] # Lot On Gain (Part 1)
+      - [ be32, 0x49D9F4, 0x907D04E8 ] # Lot On Gain (Part 2) 
+  "Infinite Energy Care":
+    Games:
+      "Spider-Man Edge of Time (Dreams)":
+        BLUS30760: [ 01.00 ]
+    Author: "ChiDreams"
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x2E9C2C, 0x60000000 ] # Spider-Man In Future
+      - [ be32, 0x2FCFB8, 0x60000000 ] # Spider-Man In Present 
+  "Lot + Infinite Gold Spider On Gain":
+    Games:
+      "Spider-Man Edge of Time (Dreams)":
+        BLUS30760: [ 01.00 ]
+    Author: "ChiDreams"
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x472704, 0x923D0000 ] # Lot On Gain
+      - [ be32, 0x4727A4, 0x60000000 ] # Never Decreases
+  "Infinite Bullet Time":
+    Games:
+      "Spider-Man Edge of Time (Dreams)":
+        BLUS30760: [ 01.00 ]
+    Author: "ChiDreams"
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x2FD0B8, 0x60000000 ] # Infinite Bullet Time
+
 # Title: Star Wars: The Force Unleashed - Update
 # Serial: BLUS30144
 # Category: GD
