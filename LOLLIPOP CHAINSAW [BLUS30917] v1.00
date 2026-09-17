@@ -1,0 +1,52 @@
+PPU-df6f6701742921b9cbb2554983bb4568aae8d659:
+  "Infinite Health + Star Souls":
+    Games:
+      "Lollipop Chainsaw (Artemis)":
+        BLUS30917: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0161C138,0x80630028]
+    - [ be32,0x0161C13C,0x2C1D001C]
+    - [ be32,0x0161C140,0x40820014]
+    - [ be32,0x0161C144,0x808302F4]
+    - [ be32,0x0161C148,0x908302F0]
+    - [ be32,0x0161C14C,0x80831FF8]
+    - [ be32,0x0161C150,0x90831FF4]
+    - [ be32,0x0161C154,0x4AA99E90]
+    - [ be32,0x000B5FE0,0x49566158]
+PPU-df6f6701742921b9cbb2554983bb4568aae8d659:
+  "Max Coins On Gain":
+    Games:
+      "Lollipop Chainsaw (Artemis)":
+        BLUS30917: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0161C100,0x3FC00098]
+    - [ be32,0x0161C104,0x63DE967F]
+    - [ be32,0x0161C108,0x7C1E3800]
+    - [ be32,0x0161C10C,0x40820010]
+    - [ be32,0x0161C110,0x63C30000]
+    - [ be32,0x0161C114,0x3BC003E7]
+    - [ be32,0x0161C118,0x93DF0004]
+    - [ be32,0x0161C11C,0x83C10070]
+    - [ be32,0x0161C120,0x4E800020]
+    - [ be32,0x000A2494,0x49579C6D]    
+PPU-df6f6701742921b9cbb2554983bb4568aae8d659:
+  "Infinite Ammo":
+    Games:
+      "Lollipop Chainsaw (Artemis)":
+        BLUS30917: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0161C170,0x80640000]
+    - [ be32,0x0161C174,0x2C030023]
+    - [ be32,0x0161C178,0x4082000C]
+    - [ be32,0x0161C17C,0x38600063]
+    - [ be32,0x0161C180,0x90640000]
+    - [ be32,0x0161C184,0x4E800020]
