@@ -21276,6 +21276,133 @@ PPU-390f51a1c8cb1cb84b1b83690c51a0034840fcc1:
     Patch:
       - [ be32,0x00012A30,0x40400000]
 
+# Title: Ni no Kuni: Wrath of the White Witch
+# Serial: BLUS30947
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00
+Anchors:
+  noKuni: &noKuni
+    - [be32,0x0071CD74,0x3BA00063]
+  noKuni2: &noKuni2
+    - [be32,0x00725184,0x7CDF3378]
+  noKuni3: &noKuni3
+    - [be32,0x01933720,0x2C0500E0]
+    - [be32,0x01933724,0x80A30014]
+    - [be32,0x01933728,0x40820054]
+    - [be32,0x0193372C,0x816500C4]
+    - [be32,0x01933730,0x2C0B0000]
+    - [be32,0x01933734,0x40820048]
+    - [be32,0x01933738,0x81650098]
+    - [be32,0x0193373C,0x2C0B0000]
+    - [be32,0x01933740,0x4082003C]
+    - [be32,0x01933744,0xA165001C]
+    - [be32,0x01933748,0x2C0B41F0]
+    - [be32,0x0193374C,0x40820030]
+    - [be32,0x01933750,0x81650010]
+    - [be32,0x01933754,0x91650000]
+    - [be32,0x01933758,0x81650014]
+    - [be32,0x0193375C,0x91650004]
+    - [be32,0x01933760,0x9165000C]
+    - [be32,0x01933764,0x396000FF]
+    - [be32,0x01933768,0x916500C0]
+    - [be32,0x0193376C,0x39600F00]
+    - [be32,0x01933770,0x916500B8]
+    - [be32,0x01933774,0x39600000]
+    - [be32,0x01933778,0x916500BC]
+    - [be32,0x0193377C,0x4E800020]
+    - [be32,0x0029583C,0x4969DEE5]
+  noKuni4: &noKuni4
+    - [be32,0x01933754,0x60000000]
+  noKuni5: &noKuni5
+    - [be32,0x0193375C,0x60000000]
+    - [be32,0x01933760,0x60000000]
+  noKuni6: &noKuni6
+    - [be32,0x01933768,0x60000000]
+  noKuni7: &noKuni7
+    - [be32,0x01933770,0x60000000]
+  noKuni8: &noKuni8
+    - [be32,0x01933778,0x60000000]
+PPU-10e698b725b2c3a967fe2875f48ceb7549564416:
+  "Max Item On Gain":
+    Games:
+      "Ni no Kuni: Wrath of the White Witch (Artemis) ":
+        BLUS30947: [ 01.00 ]
+    Author: Medo Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *noKuni ]
+PPU-10e698b725b2c3a967fe2875f48ceb7549564416:
+  "Infinite Item Usage":
+    Games:
+      "Ni no Kuni: Wrath of the White Witch (Artemis) ":
+        BLUS30947: [ 01.00 ]
+    Author: Medo Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *noKuni2 ]
+PPU-10e698b725b2c3a967fe2875f48ceb7549564416:
+  "Infinite HP + MP, No Status Ailments + Buffs Status":
+    Games:
+      "Ni no Kuni: Wrath of the White Witch (Artemis) ":
+        BLUS30947: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *noKuni3 ]
+PPU-10e698b725b2c3a967fe2875f48ceb7549564416:
+  "Disable Infinite HP":
+    Games:
+      "Ni no Kuni: Wrath of the White Witch (Artemis) ":
+        BLUS30947: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *noKuni4 ]
+PPU-10e698b725b2c3a967fe2875f48ceb7549564416:
+  "Disable Infinite MP":
+    Games:
+      "Ni no Kuni: Wrath of the White Witch (Artemis) ":
+        BLUS30947: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *noKuni5 ]
+PPU-10e698b725b2c3a967fe2875f48ceb7549564416:
+  "Disable Stats Up":
+    Games:
+      "Ni no Kuni: Wrath of the White Witch (Artemis) ":
+        BLUS30947: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *noKuni6 ]
+PPU-10e698b725b2c3a967fe2875f48ceb7549564416:
+  "Disable Invincible To Most Attacks":
+    Games:
+      "Ni no Kuni: Wrath of the White Witch (Artemis) ":
+        BLUS30947: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *noKuni7 ]
+PPU-10e698b725b2c3a967fe2875f48ceb7549564416:
+  "Disable No Bad Stats":
+    Games:
+      "Ni no Kuni: Wrath of the White Witch (Artemis) ":
+        BLUS30947: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *noKuni8 ]
+
 # Title: Beowulf
 # Serial: BLUS30091
 # Category: DG
