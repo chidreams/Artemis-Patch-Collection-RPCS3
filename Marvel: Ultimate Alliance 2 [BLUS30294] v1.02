@@ -1,0 +1,85 @@
+Anchors:
+  MarvelUA2: &MarvelUA2
+    - [ be32,0x00E761C0,0x78630020]
+    - [ be32,0x00E761C4,0xFA0100D8]
+    - [ be32,0x00E761C8,0x3E0001CD]
+    - [ be32,0x00E761CC,0x93F0FFFC]
+    - [ be32,0x00E761D0,0xEA0100D8]
+    - [ be32,0x00E761D4,0x481DA21A]
+    - [ be32,0x00E761D8,0xC03F051C]
+    - [ be32,0x00E761DC,0xFA01000C]
+    - [ be32,0x00E761E0,0x3E0001CD]
+    - [ be32,0x00E761E4,0x8210FFFC]
+    - [ be32,0x00E761E8,0x7F90F800]
+    - [ be32,0x00E761EC,0x409E0014]
+    - [ be32,0x00E761F0,0xC03F0524]
+    - [ be32,0x00E761F4,0xD03F051C]
+    - [ be32,0x00E761F8,0xC11F0514]
+    - [ be32,0x00E761FC,0xD11F050C]
+    - [ be32,0x00E76200,0xEA01000C]
+    - [ be32,0x00E76204,0x481BEA92]
+    - [ be32,0x001DA214,0x48E761C2]
+    - [ be32,0x001BEA8C,0x48E761DA]
+  MarvelUA22: &MarvelUA22
+    - [ be32,0x00E76210,0xF8410028]
+    - [ be32,0x00E76214,0xF8E1FFF4]
+    - [ be32,0x00E76218,0x3CE001CD]
+    - [ be32,0x00E7621C,0x93E7FFF0]
+    - [ be32,0x00E76220,0xE8E1FFF4]
+    - [ be32,0x00E76224,0x481DA22A]
+    - [ be32,0x00E76228,0xFA01FFEC]
+    - [ be32,0x00E7622C,0x3E0001CD]
+    - [ be32,0x00E76230,0x8210FFF0]
+    - [ be32,0x00E76234,0x7F90D000]
+    - [ be32,0x00E76238,0x409E000C]
+    - [ be32,0x00E7623C,0xEA01FFEC]
+    - [ be32,0x00E76240,0x4800000C]
+    - [ be32,0x00E76244,0xEA01FFEC]
+    - [ be32,0x00E76248,0x4B3A7BF9]
+    - [ be32,0x00E7624C,0x4821EA9E]
+    - [ be32,0x001DA224,0x48E76212]
+    - [ be32,0x0021EA98,0x48E7622A]
+  MarvelUA23: &MarvelUA23
+    - [ be32,0x00E76270,0xFA01FFFC]
+    - [ be32,0x00E76274,0x60700000]
+    - [ be32,0x00E76278,0xFA21FFF4]
+    - [ be32,0x00E7627C,0x3A202710]
+    - [ be32,0x00E76280,0xB2300004]
+    - [ be32,0x00E76284,0x3E2005F5]
+    - [ be32,0x00E76288,0x6231E0FF]
+    - [ be32,0x00E7628C,0x92300008]
+    - [ be32,0x00E76290,0xEA21FFF4]
+    - [ be32,0x00E76294,0xEA01FFFC]
+    - [ be32,0x00E76298,0xA0630004]
+    - [ be32,0x00E7629C,0x4821F39E]
+    - [ be32,0x0021F398,0x48E76272]
+PPU-77619dec149ca3250dd9e629b40bdb223551e76e:
+  "Infinite Health + Stamina For Player Controlled":
+    Games:
+      "Marvel: Ultimate Alliance 2 (Artemis)":
+        BLUS30294: [ 01.02 ]
+    Author: GuitarMan ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *MarvelUA2 ]
+PPU-77619dec149ca3250dd9e629b40bdb223551e76e:
+  "Invincibility For Player Controlled":
+    Games:
+      "Marvel: Ultimate Alliance 2 (Artemis)":
+        BLUS30294: [ 01.02 ]
+    Author: GuitarMan ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *MarvelUA2 ]
+PPU-77619dec149ca3250dd9e629b40bdb223551e76e:
+  "Infinite Ability + Power Points":
+    Games:
+      "Marvel: Ultimate Alliance 2 (Artemis)":
+        BLUS30294: [ 01.02 ]
+    Author: GuitarMan ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *MarvelUA2 ]      
