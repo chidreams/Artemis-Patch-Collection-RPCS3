@@ -1,0 +1,46 @@
+# Title: James Bond 007: Blood Stone
+# Serial: BLES01017
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00
+PPU-8b504aad198bd881b7154de7947ec2b04696eb99:
+  "Infinite Ammo + No Reload":
+    Games:
+      "James Bond 007: Blood Stone (Artemis)":
+        BLES01017: [ 01.00 ]
+    Author: jgduff ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x006BABFC,0x38690000]
+      - [ be32,0x006CAC04,0x60000000]      
+PPU-8b504aad198bd881b7154de7947ec2b04696eb99:
+  "Infinite Adjusted Shoot":
+    Games:
+      "James Bond 007: Blood Stone (Artemis)":
+        BLES01017: [ 01.00 ]
+    Author: jgduff ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x0082FF28,0x60000000]
+      - [ be32,0x0082FF2C,0x60000000] 
+PPU-8b504aad198bd881b7154de7947ec2b04696eb99:
+  "Instant Max Adjusted Shoot":
+    Games:
+      "James Bond 007: Blood Stone (Artemis)":
+        BLES01017: [ 01.00 ]
+    Author: jgduff ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x00831398,0xED80602A] 
+PPU-8b504aad198bd881b7154de7947ec2b04696eb99:
+  "Infinite Health + One Hit Kill":
+    Games:
+      "James Bond 007: Blood Stone (Artemis)":
+        BLES01017: [ 01.00 ]
+    Author: jgduff ported by ChiDreams
+    Notes: Never use it in the car level.
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x008C9118,0xD0A30004] 
