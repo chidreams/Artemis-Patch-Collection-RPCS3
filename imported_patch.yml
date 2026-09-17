@@ -17858,6 +17858,107 @@ PPU-10877348119cba72ea9cfb0b4129590bc90875c3:
     Patch:
       - [ load, *FANTASY_X23 ]
 
+# Title: Lord of the Rings: War in the North
+# Serial: BLUS30421
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00        
+Anchors:
+  War_North: &War_North
+    - [ be32,0x00D7F348,0x3FC07F80]
+    - [ be32,0x00D7F34C,0x93C9000C]
+    - [ be32,0x00D7F354,0x4800000C]
+  War_North2: &War_North2
+    - [ be32,0x00D7F124,0x3FC07F80]
+    - [ be32,0x00D7F128,0x93C9000C]
+    - [ be32,0x00D7F130,0x4800000C]
+  War_North3: &War_North3
+    - [ be32,0x006225CC,0x3D607F80]
+    - [ be32,0x006225D0,0x917C000C]
+  War_North4: &War_North4
+    - [ be32,0x00E3FE54,0x60000000]
+    - [ be32,0x00E3FE6C,0x60000000]
+    - [ be32,0x00E40F54,0x60000000]
+  War_North5: &War_North5
+    - [ be32,0x00E3FE60,0x3D207F80]
+    - [ be32,0x00E3FE64,0x912B000C]
+  War_North6: &War_North6
+    - [ be32,0x00E28B40,0x60000000]
+    - [ be32,0x00E299B8,0x60000000]
+  War_North7: &War_North7
+    - [ be32,0x00581DEC,0x3C007F80]
+    - [ be32,0x00581DF4,0x90090050]
+    - [ be32,0x00581DF8,0xC0290050]
+PPU-258d5dc106be766690df702e66c09f62512dddb2:
+  "Infinite Health":
+    Games:
+      "Lord of the Rings: War in the North (Artemis)":
+        BLUS30421: [ 01.00 ]
+    Author: dron_3 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ load, *War_North ]
+PPU-258d5dc106be766690df702e66c09f62512dddb2:
+  "Infinite Power":
+    Games:
+      "Lord of the Rings: War in the North (Artemis)":
+        BLUS30421: [ 01.00 ]
+    Author: dron_3 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ load, *War_North2 ]
+PPU-258d5dc106be766690df702e66c09f62512dddb2:
+  "Max XP":
+    Games:
+      "Lord of the Rings: War in the North (Artemis)":
+        BLUS30421: [ 01.00 ]
+    Author: dron_3 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ load, *War_North3 ]
+PPU-258d5dc106be766690df702e66c09f62512dddb2:
+  "Level Up Points Never Decrease":
+    Games:
+      "Lord of the Rings: War in the North (Artemis)":
+        BLUS30421: [ 01.00 ]
+    Author: dron_3 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ load, *War_North4 ]
+PPU-258d5dc106be766690df702e66c09f62512dddb2:
+  "Infinite Strength + Dexterity + Stamina + Will After Using Point":
+    Games:
+      "Lord of the Rings: War in the North (Artemis)":
+        BLUS30421: [ 01.00 ]
+    Author: dron_3 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ load, *War_North5 ]
+PPU-258d5dc106be766690df702e66c09f62512dddb2:
+  "Skill Points Never Decrease":
+    Games:
+      "Lord of the Rings: War in the North (Artemis)":
+        BLUS30421: [ 01.00 ]
+    Author: dron_3 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ load, *War_North6 ]
+PPU-258d5dc106be766690df702e66c09f62512dddb2:
+  "Infinite Coins":
+    Games:
+      "Lord of the Rings: War in the North (Artemis)":
+        BLUS30421: [ 01.00 ]
+    Author: dron_3 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.1
+    Patch:
+      - [ load, *War_North7 ]  
+
 # Title: How To Survive
 # Serial: NPUB31240
 # Category: HG
