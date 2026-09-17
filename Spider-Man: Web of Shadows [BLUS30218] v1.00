@@ -1,0 +1,35 @@
+# Title: Spider-Man: Web of Shadows
+# Serial: BLUS30218
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00    
+PPU-525df2c4bfd1c567a975969756e9abcc76ef70a8:
+  "Infinite Health":
+    Games:
+      "Spider-Man: Web of Shadows (Artemis)":
+        BLUS30218: [ 01.00 ]
+    Author: Randy97Killa ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00C113F8,0x82090008]
+    - [ be32,0x00C11404,0x92090000]
+PPU-525df2c4bfd1c567a975969756e9abcc76ef70a8:
+  "Max Hit Combo":
+    Games:
+      "Spider-Man: Web of Shadows (Artemis)":
+        BLUS30218: [ 01.00 ]
+    Author: Randy97Killa ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x005FB384,0x60000000]   
+PPU-525df2c4bfd1c567a975969756e9abcc76ef70a8:
+  "Combo Timer Never-Break":
+    Games:
+      "Spider-Man: Web of Shadows (Artemis)":
+        BLUS30218: [ 01.00 ]
+    Author: Randy97Killa ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0069765C,0xEC3FF82A]      
