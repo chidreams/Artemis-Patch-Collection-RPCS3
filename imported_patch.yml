@@ -11030,6 +11030,117 @@ PPU-5295c6de0b3fd1b48517255ce710002c174b18f5:
       - [ be32, 0x0013CDEC, 0x91630058 ]  
 
 Anchors:
+  SaintsRow3rd: &SaintsRow3rd
+    - [ be32,0x0016C6FC,0xD0241C98]
+  SaintsRow3rd2: &SaintsRow3rd2
+    - [ be32,0x00598CC8,0xD0231C98]
+  SaintsRow3rd3: &SaintsRow3rd3
+    - [ be32,0x007F94E8,0x38A00000]
+    - [ be32,0x007F95A0,0x38A00000]    
+  SaintsRow3rd4: &SaintsRow3rd4
+    - [ be32,0x0038A7A4,0x80DC0004]
+  SaintsRow3rd5: &SaintsRow3rd5
+    - [ be32,0x0038A600,0x7CA62B78]
+  SaintsRow3rd6: &SaintsRow3rd6
+    - [ be32,0x005B40D0,0x60000000]
+  SaintsRow3rd7: &SaintsRow3rd7
+    - [ be32,0x007F85C4,0x60000000]
+  SaintsRow3rd8: &SaintsRow3rd8
+    - [ be32,0x0041FAB4,0x48000020]
+  SaintsRow3rd9: &SaintsRow3rd9
+    - [ be32,0x00124AF8,0x60000000]
+PPU-6a1c60a41eab10939c060e007d5ec92592583a4b:
+  "Max And Infinite Health":
+    Games:
+      "Saints Row: The Third (Artemis)":
+        BLUS30666: [ 01.00 ]
+    Author: FBML ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *SaintsRow3rd ]
+PPU-6a1c60a41eab10939c060e007d5ec92592583a4b:
+  "Infinite Health v2":
+    Games:
+      "Saints Row: The Third (Artemis)":
+        BLUS30666: [ 01.00 ]
+    Author: FBML ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *SaintsRow3rd2 ]
+PPU-6a1c60a41eab10939c060e007d5ec92592583a4b:
+  "Infinite Ammo And No Reload":
+    Games:
+      "Saints Row: The Third (Artemis)":
+        BLUS30666: [ 01.00 ]
+    Author: FBML ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *SaintsRow3rd3 ]
+PPU-6a1c60a41eab10939c060e007d5ec92592583a4b:
+  "Infinite Ammo In Inventory After Reloading":
+    Games:
+      "Saints Row: The Third (Artemis)":
+        BLUS30666: [ 01.00 ]
+    Author: FBML ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *SaintsRow3rd4 ]
+PPU-6a1c60a41eab10939c060e007d5ec92592583a4b:
+  "Infinite Drone Missiles, Grenades, Molotovs, Fart In A Far And Electric Grenades":
+    Games:
+      "Saints Row: The Third (Artemis)":
+        BLUS30666: [ 01.00 ]
+    Author: FBML ported by ChiDreams
+    Notes: does not Work place holder 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *SaintsRow3rd5 ]
+PPU-6a1c60a41eab10939c060e007d5ec92592583a4b:
+  "Infinite Shock Hammer Ammo (Clipless)":
+    Games:
+      "Saints Row: The Third (Artemis)":
+        BLUS30666: [ 01.00 ]
+    Author: FBML ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *SaintsRow3rd6 ]
+PPU-6a1c60a41eab10939c060e007d5ec92592583a4b:
+  "No Overheat For Machine Guns, Viper Laser Rifle And S3X Hammer":
+    Games:
+      "Saints Row: The Third (Artemis)":
+        BLUS30666: [ 01.00 ]
+    Author: FBML ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *SaintsRow3rd7 ]
+PPU-6a1c60a41eab10939c060e007d5ec92592583a4b:
+  "Max And Infinite Money On Gain":
+    Games:
+      "Saints Row: The Third (Artemis)":
+        BLUS30666: [ 01.00 ]
+    Author: FBML ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *SaintsRow3rd8 ]
+PPU-6a1c60a41eab10939c060e007d5ec92592583a4b:
+  "Max Respect Points On Gain":
+    Games:
+      "Saints Row: The Third (Artemis)":
+        BLUS30666: [ 01.00 ]
+    Author: FBML ported by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ load, *SaintsRow3rd9 ]
+
+Anchors:
   FANTASY_2X: &FANTASY_2X
      - [ be32,0x00359F28,0x60000000]
   FANTASY_2X2: &FANTASY_2X2
