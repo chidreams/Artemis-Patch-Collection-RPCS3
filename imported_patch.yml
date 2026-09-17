@@ -8969,6 +8969,134 @@ PPU-77a6b2ce9093b262e75992c025bb63a5f952daae:
     Patch:
       - [ be32, 0x002AF570, 0x42C80000 ] 
 
+# Title: Red Dead Redemption
+# Serial: BLUS30418
+# Category: GD
+# Version: APP_VER=01.07 VERSION=01.00
+# v1.07 (works for Undead Nightmare DLC)
+# https://store.brewology.com/get/update.php?url_id=f81a797b7f96402cc2b6c5f47112662cd14f17bb
+Anchors:
+  RDRedemption: &RDRedemption
+    - [ be32,0x00058CAC,0x3C6047C3]
+    - [ be32,0x00058CB0,0x907C0010]
+    - [ be32,0x00058CB4,0x907C0014]
+    - [ be32,0x00058CB8,0x4800004C]
+  RDRedemption2: &RDRedemption2
+    - [ be32,0x001E437C,0x60000000]
+  RDRedemption3: &RDRedemption3
+    - [ be32,0x000595C4,0xC0260394]
+    - [ be32,0x000595C8,0xD0260390]
+  RDRedemption4: &RDRedemption4
+    - [ be32,0x000E8C14,0x38A00063]
+    - [ be32,0x000E9A54,0x30630000]
+    - [ be32,0x00D68D50,0x30630000]
+  RDRedemption5: &RDRedemption5
+    - [ be32,0x0094FC18,0xC3DF0014]
+    - [ be32,0x0094FC1C,0xD3DF0010]
+    - [ be32,0x0094FCDC,0xC03F0014]
+  RDRedemption6: &RDRedemption6
+    - [ be32,0x00D46A34,0x4842A62C]
+    - [ be32,0x01171060,0x7CA3212E]
+    - [ be32,0x01171064,0x7CA32214]
+    - [ be32,0x01171068,0x80A5FFFC]
+    - [ be32,0x0117106C,0x2C0502B8]
+    - [ be32,0x01171070,0x40820010]
+    - [ be32,0x01171074,0x3CA04974]
+    - [ be32,0x01171078,0x60A523F0]
+    - [ be32,0x0117107C,0x7CA3212E]
+    - [ be32,0x01171080,0x4BBD59B8]
+  RDRedemption7: &RDRedemption7
+    - [ be32,0x00D46A34,0x4843BC9C]
+    - [ be32,0x011826D0,0x7CA3212E]
+    - [ be32,0x011826D4,0x7CA32214]
+    - [ be32,0x011826D8,0x80A5FFFC]
+    - [ be32,0x011826DC,0x2C0502B8]
+    - [ be32,0x011826E0,0x40820010]
+    - [ be32,0x011826E4,0x3CA04974]
+    - [ be32,0x011826E8,0x60A523F0]
+    - [ be32,0x011826EC,0x7CA3212E]
+    - [ be32,0x011826F0,0x7CA32214]
+    - [ be32,0x011826F4,0x80A5FFF8]
+    - [ be32,0x011826F8,0x2C0502B8]
+    - [ be32,0x011826FC,0x40820014]
+    - [ be32,0x01182700,0x3CA0459C]
+    - [ be32,0x01182704,0x60A54000]
+    - [ be32,0x01182708,0x90A30008]
+    - [ be32,0x0118270C,0x90A30010]
+    - [ be32,0x01182710,0x4BBC4328]
+PPU-f5cadfd694e10f37b9b703bada63017a91d2329a:
+  "Infinite Health":
+    Games:
+      "Red Dead Redemption (Artemis)":
+        BLUS30418: [ 01.07 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RDRedemption ]
+PPU-f5cadfd694e10f37b9b703bada63017a91d2329a:
+  "Infinite Ammo":
+    Games:
+      "Red Dead Redemption (Artemis)":
+        BLUS30418: [ 01.07 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RDRedemption2 ]
+PPU-f5cadfd694e10f37b9b703bada63017a91d2329a:
+  "Infinite Dead Eye":
+    Games:
+      "Red Dead Redemption (Artemis)":
+        BLUS30418: [ 01.07 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RDRedemption3 ]
+PPU-f5cadfd694e10f37b9b703bada63017a91d2329a:
+  "Infinite Items/Max on Get":
+    Games:
+      "Red Dead Redemption (Artemis)":
+        BLUS30418: [ 01.07 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RDRedemption4 ]
+PPU-f5cadfd694e10f37b9b703bada63017a91d2329a:
+  "Infinite Horse Stamina":
+    Games:
+      "Red Dead Redemption (Artemis)":
+        BLUS30418: [ 01.07 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *RDRedemption5 ]
+PPU-f5cadfd694e10f37b9b703bada63017a91d2329a:
+  "Max Money on Get/Use":
+    Games:
+      "Red Dead Redemption (Artemis)":
+        BLUS30418: [ 01.07 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+      - [ load, *RDRedemption6 ]
+PPU-f5cadfd694e10f37b9b703bada63017a91d2329a:
+  "Max Money On Get/Max Fame & Honor":
+    Games:
+      "Red Dead Redemption (Artemis)":
+        BLUS30418: [ 01.07 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: A    
+    Patch:
+      - [ load, *RDRedemption7 ]      
+
 # Title: AFRO SAMURAI
 # Serial: BLUS30264
 # Category: GD
