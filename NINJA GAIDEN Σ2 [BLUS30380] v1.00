@@ -1,0 +1,99 @@
+# Title: NINJA GAIDEN Σ2
+# Serial: BLUS30380
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.02
+Anchors:
+  GAIDEN: &GAIDEN
+    - [ be32,0x001782F0,0x81F80004]
+  GAIDEN2: &GAIDEN2
+    - [ be32,0x010D4520,0x830285A0]
+    - [ be32,0x010D4524,0x3B180F20]
+    - [ be32,0x010D4528,0xA01858A0]
+    - [ be32,0x010D452C,0xB018589E]
+    - [ be32,0x010D4530,0xB01858B0]
+    - [ be32,0x010D4534,0xA0EC58B4]
+    - [ be32,0x010D4538,0x4802CAE6]
+    - [ be32,0x0002CAE0,0x490D4522]
+  GAIDEN3: &GAIDEN3
+    - [ be32,0x0029FBBC,0xA13F58C0]
+    - [ be32,0x0029FBC0,0xB13F58C2]
+  GAIDEN4: &GAIDEN4
+    - [ be32,0x001B0D48,0x48000528]
+  GAIDEN5: &GAIDEN5
+    - [ be32,0x0029FE6C,0x3D4005F5]
+    - [ be32,0x0029FE74,0x614AE0FF]
+    - [ be32,0x0029FEAC,0x60000000]
+  GAIDEN6: &GAIDEN6
+    - [ be32,0x0029FBD4,0x60000000]
+  GAIDEN7: &GAIDEN7
+    - [ be32,0x00274AE8,0x60000000]
+PPU-842cea5b3d58ed96baecde681fe9f17491f4e8f6:
+  "Invincibility On":
+    Games:
+      "NINJA GAIDEN Σ2 (Artemis)":
+        BLUS30380: [ 01.00 ]
+    Author: Markin_Mods Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *GAIDEN ]
+PPU-842cea5b3d58ed96baecde681fe9f17491f4e8f6:
+  "Infinite Health":
+    Games:
+      "NINJA GAIDEN Σ2 (Artemis)":
+        BLUS30380: [ 01.00 ]
+    Author: Markin_Mods Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *GAIDEN2 ]
+PPU-842cea5b3d58ed96baecde681fe9f17491f4e8f6:
+  "Infinite Magic":
+    Games:
+      "NINJA GAIDEN Σ2 (Artemis)":
+        BLUS30380: [ 01.00 ]
+    Author: Markin_Mods Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *GAIDEN3 ]
+PPU-842cea5b3d58ed96baecde681fe9f17491f4e8f6:
+  "Ultimate Technique Instantly Charged":
+    Games:
+      "NINJA GAIDEN Σ2 (Artemis)":
+        BLUS30380: [ 01.00 ]
+    Author: Markin_Mods Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *GAIDEN4 ]
+PPU-842cea5b3d58ed96baecde681fe9f17491f4e8f6:
+  "Max Money On Gain":
+    Games:
+      "NINJA GAIDEN Σ2 (Artemis)":
+        BLUS30380: [ 01.00 ]
+    Author: Markin_Mods Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *GAIDEN5 ]
+PPU-842cea5b3d58ed96baecde681fe9f17491f4e8f6:
+  "Can Use Ki Without Magic ":
+    Games:
+      "NINJA GAIDEN Σ2 (Artemis)":
+        BLUS30380: [ 01.00 ]
+    Author: Markin_Mods Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *GAIDEN6 ]
+PPU-842cea5b3d58ed96baecde681fe9f17491f4e8f6:
+  "Item Never Decreases On use":
+    Games:
+      "NINJA GAIDEN Σ2 (Artemis)":
+        BLUS30380: [ 01.00 ]
+    Author: Markin_Mods Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ load, *GAIDEN7 ]      
