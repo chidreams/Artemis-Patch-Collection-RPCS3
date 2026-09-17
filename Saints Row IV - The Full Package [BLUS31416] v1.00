@@ -1,0 +1,102 @@
+Anchors:
+  SaintsRowIV : &SaintsRowIV 
+    - [ be32,0x00793B28,0xC82100C0]
+    - [ be32,0x00793B2C,0xFC200E9C]
+    - [ be32,0x00793B30,0xD03F1DF0]
+    - [ be32,0x00793B34,0xC3BF1DF0]
+  SaintsRowIV2 : &SaintsRowIV2 
+    - [ be32,0x001DBE78,0x3DE03F80]
+    - [ be32,0x001DBE7C,0x91E32048]
+  SaintsRowIV3 : &SaintsRowIV3 
+    - [ be32,0x0059AA20,0x60000000]
+  SaintsRowIV4 : &SaintsRowIV4 
+    - [ be32,0x0006AE4C,0x38C00000]
+    - [ be32,0x0006AECC,0x38600000]
+  SaintsRowIV5 : &SaintsRowIV5 
+    - [ be32,0x004C4908,0x807F0004]
+  SaintsRowIV6 : &SaintsRowIV6 
+    - [ be32,0x00561C34,0x4800001C]
+  SaintsRowIV7 : &SaintsRowIV7 
+    - [ be32,0x000699C0,0xFC201090]
+  SaintsRowIV8 : &SaintsRowIV8 
+    - [ be32,0x001D89DC,0x7CA42B78]   
+PPU-8eea92631153b120e4bc60ce2b58bd2533c6eded:
+  "Infinite Health":
+    Games:
+      "Saints Row IV - The Full Package (Artemis)":
+        BLUS31416: [ 01.00 ]
+    Author: FBML ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SaintsRowIV  ]
+PPU-8eea92631153b120e4bc60ce2b58bd2533c6eded:
+  "Infinite Power Energy":
+    Games:
+      "Saints Row IV - The Full Package (Artemis)":
+        BLUS31416: [ 01.00 ]
+    Author: FBML ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SaintsRowIV2  ]
+PPU-8eea92631153b120e4bc60ce2b58bd2533c6eded:
+  "Max Money On Gain + Sell":
+    Games:
+      "Saints Row IV - The Full Package (Artemis)":
+        BLUS31416: [ 01.00 ]
+    Author: FBML ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SaintsRowIV3  ]
+PPU-8eea92631153b120e4bc60ce2b58bd2533c6eded:
+  "Infinite Ammo And Never Need To Reload":
+    Games:
+      "Saints Row IV - The Full Package (Artemis)":
+        BLUS31416: [ 01.00 ]
+    Author: FBML ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SaintsRowIV4  ]
+PPU-8eea92631153b120e4bc60ce2b58bd2533c6eded:
+  "Infinite Ammo Usage":
+    Games:
+      "Saints Row IV - The Full Package (Artemis)":
+        BLUS31416: [ 01.00 ]
+    Author: FBML ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SaintsRowIV5  ]
+PPU-8eea92631153b120e4bc60ce2b58bd2533c6eded:
+  "Max And Infinite Money On Change":
+    Games:
+      "Saints Row IV - The Full Package (Artemis)":
+        BLUS31416: [ 01.00 ]
+    Author: FBML ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SaintsRowIV6  ]
+PPU-8eea92631153b120e4bc60ce2b58bd2533c6eded:
+  "No OverHeat Weapons":
+    Games:
+      "Saints Row IV - The Full Package (Artemis)":
+        BLUS31416: [ 01.00 ]
+    Author: FBML ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SaintsRowIV7  ]
+PPU-8eea92631153b120e4bc60ce2b58bd2533c6eded:
+  "Infinite Clusters (Powers) When Upgrading":
+    Games:
+      "Saints Row IV - The Full Package (Artemis)":
+        BLUS31416: [ 01.00 ]
+    Author: FBML ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *SaintsRowIV8  ]
