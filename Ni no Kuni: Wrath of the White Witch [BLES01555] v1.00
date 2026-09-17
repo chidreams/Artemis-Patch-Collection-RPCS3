@@ -1,0 +1,301 @@
+Anchors:
+  KuniW: &KuniW
+    - [ be32,0x0193BF8C,0x3D203123]
+    - [ be32,0x0193BF90,0x61293814]
+    - [ be32,0x0193BF94,0x3A807FFF]
+    - [ be32,0x0193BF98,0x92890000]
+    - [ be32,0x0193BF9C,0x92890004]
+    - [ be32,0x0193BFA0,0x92890008]
+    - [ be32,0x0193BFA4,0x9289000C]
+    - [ be32,0x0193BFA8,0x92890010]
+    - [ be32,0x0193BFAC,0x92890014]
+    - [ be32,0x0193BFB0,0x92890018]
+    - [ be32,0x0193BFB4,0x92890200]
+    - [ be32,0x0193BFB8,0x92890204]
+    - [ be32,0x0193BFBC,0x92890208]
+    - [ be32,0x0193BFC0,0x9289020C]
+    - [ be32,0x0193BFC4,0x92890210]
+    - [ be32,0x0193BFC8,0x92890214]
+    - [ be32,0x0193BFCC,0x92890218]
+    - [ be32,0x0193BFD0,0x92890300]
+    - [ be32,0x0193BFD4,0x92890304]
+    - [ be32,0x0193BFD8,0x92890308]
+    - [ be32,0x0193BFDC,0x9289030C]
+    - [ be32,0x0193BFE0,0x92890310]
+    - [ be32,0x0193BFE4,0x92890314]
+    - [ be32,0x0193BFE8,0x92890318]
+    - [ be32,0x0193BFEC,0x92890400]
+    - [ be32,0x0193BFF0,0x92890404]
+    - [ be32,0x0193BFF4,0x92890408]
+    - [ be32,0x0193BFF8,0x9289040C]
+    - [ be32,0x0193BFFC,0x92890410]
+    - [ be32,0x0193C000,0x92890414]
+    - [ be32,0x0193C004,0x92890418]
+    - [ be32,0x0193C008,0x92890500]
+    - [ be32,0x0193C00C,0x92890600]
+    - [ be32,0x0193C010,0x92890700]
+    - [ be32,0x0193C014,0x92890800]
+    - [ be32,0x0193C018,0x48727AAB]
+    - [ be32,0x00727AA4,0x4993BF8F]
+  KuniW2: &KuniW2
+    - [ be32,0x0193BF8C,0x3D203123]
+    - [ be32,0x0193BF90,0x61293814]
+    - [ be32,0x0193BF94,0x3A807FFF]
+    - [ be32,0x0193BF98,0x92890000]
+    - [ be32,0x0193BF9C,0x92890200]
+    - [ be32,0x0193BFA0,0x92890300]
+    - [ be32,0x0193BFA4,0x92890400]
+    - [ be32,0x0193BFA8,0x92890500]
+    - [ be32,0x0193BFAC,0x92890600]
+    - [ be32,0x0193BFB0,0x92890700]
+    - [ be32,0x0193BFB4,0x92890800]
+    - [ be32,0x0193BFB8,0x48727AAB]
+    - [ be32,0x00727AA4,0x4993BF8F]
+  KuniW3: &KuniW3
+    - [ be32,0x007263F0,0x3CA07FFF]
+  KuniW4: &KuniW4
+    - [ be32,0x006F96B8,0x3CA07FFF]
+  KuniW5: &KuniW5
+    - [ be32,0x006F96BC,0x38007FFE]
+  KuniW6: &KuniW6
+    - [ be32,0x0071CD74,0x3BA00063]
+  KuniW7: &KuniW7
+    - [ be32,0x00725184,0x7CDF3378]
+  KuniW8: &KuniW8
+    - [ be32,0x01933870,0x2C0500E0]
+    - [ be32,0x01933874,0x80A30014]
+    - [ be32,0x01933878,0x40820054]
+    - [ be32,0x0193387C,0x816500C4]
+    - [ be32,0x01933880,0x2C0B0000]
+    - [ be32,0x01933884,0x40820048]
+    - [ be32,0x01933888,0x81650098]
+    - [ be32,0x0193388C,0x2C0B0000]
+    - [ be32,0x01933890,0x4082003C]
+    - [ be32,0x01933894,0xA165001C]
+    - [ be32,0x01933898,0x2C0B41F0]
+    - [ be32,0x0193389C,0x40820030]
+    - [ be32,0x019338A0,0x81650010]
+    - [ be32,0x019338A4,0x91650000]
+    - [ be32,0x019338A8,0x81650014]
+    - [ be32,0x019338AC,0x91650004]
+    - [ be32,0x019338B0,0x9165000C]
+    - [ be32,0x019338B4,0x396000FF]
+    - [ be32,0x019338B8,0x916500C0]
+    - [ be32,0x019338BC,0x39600F00]
+    - [ be32,0x019338C0,0x916500B8]
+    - [ be32,0x019338C4,0x39600000]
+    - [ be32,0x019338C8,0x916500BC]
+    - [ be32,0x019338CC,0x4E800020]
+    - [ be32,0x00295844,0x4969E02D]
+  KuniW9: &KuniW9
+    - [ be32,0x019338A4,0x60000000]
+  KuniW10: &KuniW10
+    - [ be32,0x019338AC,0x60000000]
+    - [ be32,0x019338B0,0x60000000]
+  KuniW11: &KuniW11
+    - [ be32,0x019338B8,0x60000000]
+  KuniW12: &KuniW12
+    - [ be32,0x019338C0,0x60000000]
+  KuniW13: &KuniW13
+    - [ be32,0x019338C8,0x60000000]
+  KuniW14: &KuniW14
+    - [ be32,0x00727A78,0x3D203123]
+    - [ be32,0x00727A7C,0x61293814]
+    - [ be32,0x00727A80,0x3A807FFF]
+    - [ be32,0x00727A84,0x92890000]
+    - [ be32,0x00727A88,0x92890200]
+    - [ be32,0x00727A8C,0x3B400001]
+    - [ be32,0x00727A90,0x2F9A0063]
+    - [ be32,0x00727A94,0x419E0014]
+    - [ be32,0x00727A98,0x92890000]
+    - [ be32,0x00727A9C,0x39290100]
+    - [ be32,0x00727AA0,0x3B5A0001]
+    - [ be32,0x00727AA4,0x4BFFFFEC]
+  KuniW15: &KuniW15
+    - [ be32,0x00727AA4,0x913F089C]
+  KuniW16: &KuniW16
+    - [ be32,0x005CC994,0x60000000]
+  KuniW17: &KuniW17
+    - [ be32,0x0070F130,0x4081FDA0]
+  KuniW18: &KuniW18
+    - [ be32,0x005CD724,0x4086EC88]
+PPU-387fbca665d95cdf4293f4f2ec1c4202cdb9d0fd:
+  "Quick Level Up And Max HP + MP":
+    Games:
+      "Ni No Kuni Wrath Of The White Witch (Artemis)":
+        BLES01555: [ 01.00 ]
+    Author: Medo Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *KuniW ]
+PPU-387fbca665d95cdf4293f4f2ec1c4202cdb9d0fd:
+  "Quick Level Up Only":
+    Games:
+      "Ni No Kuni Wrath Of The White Witch (Artemis)":
+        BLES01555: [ 01.00 ]
+    Author: Medo Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *KuniW2 ]
+PPU-387fbca665d95cdf4293f4f2ec1c4202cdb9d0fd:
+  "Super Quick Level Up":
+    Games:
+      "Ni No Kuni Wrath Of The White Witch (Artemis)":
+        BLES01555: [ 01.00 ]
+    Author: Medo Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *KuniW3 ]
+PPU-387fbca665d95cdf4293f4f2ec1c4202cdb9d0fd:
+  "Super Quick Level Up 2":
+    Games:
+      "Ni No Kuni Wrath Of The White Witch (Artemis)":
+        BLES01555: [ 01.00 ]
+    Author: Medo Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *KuniW4 ]
+PPU-387fbca665d95cdf4293f4f2ec1c4202cdb9d0fd:
+  "Max EXP":
+    Games:
+      "Ni No Kuni Wrath Of The White Witch (Artemis)":
+        BLES01555: [ 01.00 ]
+    Author: Medo Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *KuniW5 ]
+PPU-387fbca665d95cdf4293f4f2ec1c4202cdb9d0fd:
+  "Max Item On Get":
+    Games:
+      "Ni No Kuni Wrath Of The White Witch (Artemis)":
+        BLES01555: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *KuniW6 ]
+PPU-387fbca665d95cdf4293f4f2ec1c4202cdb9d0fd:
+  "Infinite Item Usage":
+    Games:
+      "Ni No Kuni Wrath Of The White Witch (Artemis)":
+        BLES01555: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *KuniW7 ]
+PPU-387fbca665d95cdf4293f4f2ec1c4202cdb9d0fd:
+  "Infinite HP + MP, No Status Ailments + Buffs Status":
+    Games:
+      "Ni No Kuni Wrath Of The White Witch (Artemis)":
+        BLES01555: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *KuniW8 ]
+PPU-387fbca665d95cdf4293f4f2ec1c4202cdb9d0fd:
+  "Disable Infinite Health":
+    Games:
+      "Ni No Kuni Wrath Of The White Witch (Artemis)":
+        BLES01555: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *KuniW9 ]
+PPU-387fbca665d95cdf4293f4f2ec1c4202cdb9d0fd:
+  "Disable Infinite MP":
+    Games:
+      "Ni No Kuni Wrath Of The White Witch (Artemis)":
+        BLES01555: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *KuniW10 ]
+PPU-387fbca665d95cdf4293f4f2ec1c4202cdb9d0fd:
+  "Disable Stats Up":
+    Games:
+      "Ni No Kuni Wrath Of The White Witch (Artemis)":
+        BLES01555: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *KuniW11 ]
+PPU-387fbca665d95cdf4293f4f2ec1c4202cdb9d0fd:
+  "Disable Invincible To Most Attacks":
+    Games:
+      "Ni No Kuni Wrath Of The White Witch (Artemis)":
+        BLES01555: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *KuniW12 ]
+PPU-387fbca665d95cdf4293f4f2ec1c4202cdb9d0fd:
+  "Disable No Bad Stats":
+    Games:
+      "Ni No Kuni Wrath Of The White Witch (Artemis)":
+        BLES01555: [ 01.00 ]
+    Author: Hiei-YYH Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *KuniW13 ]
+PPU-387fbca665d95cdf4293f4f2ec1c4202cdb9d0fd:
+  "Planetary Monster Exp":
+    Games:
+      "Ni No Kuni Wrath Of The White Witch (Artemis)":
+        BLES01555: [ 01.00 ]
+    Author: Medo Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *KuniW14 ]
+PPU-387fbca665d95cdf4293f4f2ec1c4202cdb9d0fd:
+  "Max Casino Coins":
+    Games:
+      "Ni No Kuni Wrath Of The White Witch (Artemis)":
+        BLES01555: [ 01.00 ]
+    Author: Medo Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *KuniW15 ]
+PPU-387fbca665d95cdf4293f4f2ec1c4202cdb9d0fd:
+  "100% Critical Hit Rate":
+    Games:
+      "Ni No Kuni Wrath Of The White Witch (Artemis)":
+        BLES01555: [ 01.00 ]
+    Author: Medo Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *KuniW16 ]
+PPU-387fbca665d95cdf4293f4f2ec1c4202cdb9d0fd:
+  "Max Stats All Characters + Imajin":
+    Games:
+      "Ni No Kuni Wrath Of The White Witch (Artemis)":
+        BLES01555: [ 01.00 ]
+    Author: Medo Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *KuniW17 ]
+PPU-387fbca665d95cdf4293f4f2ec1c4202cdb9d0fd:
+  "Damage 0":
+    Games:
+      "Ni No Kuni Wrath Of The White Witch (Artemis)":
+        BLES01555: [ 01.00 ]
+    Author: xtatu Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *KuniW18 ]     
