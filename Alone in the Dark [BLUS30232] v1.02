@@ -1,0 +1,70 @@
+# Title: Alone in the Dark
+# Serial: BLUS30232
+# Category: GD
+# Version: APP_VER=01.02 VERSION=01.00
+Anchors:
+  AlonenDark: &AlonenDark
+    - [ be32,0x005AE020,0x60000000]
+    - [ be32,0x005AE068,0x60000000]
+    - [ be32,0x005AE0B4,0x60000000]
+  AlonenDark2: &AlonenDark2
+    - [ be32,0x005AC1A8,0xEC01082A]
+  AlonenDark3: &AlonenDark3
+    - [ be32,0x0029E114,0x60000000]
+    - [ be32,0x006FAA98,0x48000038]
+    - [ be32,0x006FAACC,0x60000000]
+    - [ be32,0x0070D858,0x60000000]
+  AlonenDark4: &AlonenDark4
+    - [ be32,0x0060DF60,0x60000000]
+  AlonenDark5: &AlonenDark5
+    - [ be32,0x0060E06C,0x60000000]
+PPU-1bce8bcf48f9f369c3ad9bea976b1fcf52953295:
+  "Infinite Health":
+    Games:
+      "Alone In The Dark (Artemis)":
+        BLUS30232: [ 01.02 ]
+    Author: FBML ported by ChiDreams
+    Notes: You will still see the bleeding effect, use it with the code to disable bleeding if needed.
+    Patch Version: 1.2
+    Patch:
+      - [ load, *AlonenDark ]
+PPU-1bce8bcf48f9f369c3ad9bea976b1fcf52953295:
+  "Disable Bleeding Time":
+    Games:
+      "Alone In The Dark (Artemis)":
+        BLUS30232: [ 01.02 ]
+    Author: FBML ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *AlonenDark2 ]
+PPU-1bce8bcf48f9f369c3ad9bea976b1fcf52953295:
+  "Ammo Never Decrease And Max Inventory + Tools On Use":
+    Games:
+      "Alone In The Dark (Artemis)":
+        BLUS30232: [ 01.02 ]
+    Author: FBML ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *AlonenDark3 ]
+PPU-1bce8bcf48f9f369c3ad9bea976b1fcf52953295:
+  "Infinite Ammo On Reload In Inventory":
+    Games:
+      "Alone In The Dark (Artemis)":
+        BLUS30232: [ 01.02 ]
+    Author: FBML ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *AlonenDark4 ]
+PPU-1bce8bcf48f9f369c3ad9bea976b1fcf52953295:
+  "Infinite Ammo On Combine If More Than 1 In Inventory":
+    Games:
+      "Alone In The Dark (Artemis)":
+        BLUS30232: [ 01.02 ]
+    Author: FBML ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *AlonenDark5 ]
