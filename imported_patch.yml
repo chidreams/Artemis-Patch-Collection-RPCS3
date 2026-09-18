@@ -8848,6 +8848,55 @@ PPU-cd22f1ce3b6f08b023c085a30772da1202f6d807:
       - [ be32,0x001328D4,0x3D207F80]
       - [ be32,0x001328E0,0x91230380]
 
+Anchors:
+  ACM: &ACM
+        - [ be32,0x006A697C,0x38600063 ]
+        - [ be32,0x006A6980,0x907E02C0 ]
+        - [ be32,0x006A6984,0x907E02E4 ]
+        - [ be32,0x006A6988,0x907E02B8 ]
+        - [ be32,0x006A698C,0x907E02E0 ]
+        - [ be32,0x006A6990,0x907E02B4 ]
+        - [ be32,0x006A6994,0x907E02DC ]
+  ACM-1: &ACM-1
+        - [ be32,0x007207D8,0x3C0045FA ]
+        - [ be32,0x007207DC,0x90031B38 ]
+        - [ be32,0x007207E0,0x90030374 ]
+        - [ be32,0x007207E4,0xC0231B38 ]
+  ACM-2: &ACM-2
+        - [ be32,0x000BFD64,0x3CA044C8 ]
+        - [ be32,0x000BFD70,0x90BD0334 ]
+        - [ be32,0x000BFD74,0xD09D017C ]
+PPU-ae8dc422c74ccca3c49233b76b88d9fe7d80be33:
+  "Infinite Ammo + No Reload":
+    Games:
+      "Aliens Colonial Marines":
+        BLUS30862: [ 01.05 ]
+    Author: Jaz
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *ACM ]
+PPU-ae8dc422c74ccca3c49233b76b88d9fe7d80be33:
+  "Infinite Health + Armor":
+    Games:
+      "Aliens Colonial Marines":
+        BLUS30862: [ 01.05 ]
+    Author: Jaz
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *ACM-1 ]
+PPU-ae8dc422c74ccca3c49233b76b88d9fe7d80be33:
+  "Super Jump":
+    Games:
+      "Aliens Colonial Marines":
+        BLUS30862: [ 01.05 ]
+    Author: Jaz
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *ACM-2 ]       
+
 # Title: Wolfenstein 3D
 # Serial: NPUB30074
 # Category: HG
