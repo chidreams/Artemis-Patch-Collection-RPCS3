@@ -1,0 +1,28 @@
+PPU-b7d282d79e16c88e2307c270406f73bb36d8edab:
+  "Unlimited Health":
+    Games:
+      "3D DOT GAME HEROES(Artemis)":
+        BLES00875: [ 01.00]
+    Author: crapulecorp PORTED by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x0011AA68,0x60000000] 
+  "Unlimited Magic":
+    Games:
+      "3D DOT GAME HEROES(Artemis)":
+        BLES00875: [ 01.00]
+    Author: crapulecorp PORTED by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x00106260,0x60000000] 
+  "Max Money When Decrease":
+    Games:
+      "3D DOT GAME HEROES(Artemis)":
+        BLES00875: [ 01.00]
+    Author: crapulecorp PORTED by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x00102B58,0x901E05C8] 
