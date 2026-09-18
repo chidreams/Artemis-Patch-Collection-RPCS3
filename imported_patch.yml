@@ -10910,6 +10910,67 @@ PPU-087937163dc1accb85f7302401f62f0f0a93b9e8:
     Patch:
       - [ load, *ACreed5 ]
 
+# Title: 007™ Legends
+# Serial: BLUS30983
+# Category: GD
+# Version: APP_VER=01.01 VERSION=01.00
+# UPDATE 1.01 http://b0.ww.np.dl.playstation.net/tppkg/np/BLUS30983/BLUS30983_T0/de1b08747d85f159/UP0002-BLUS30983_00-007LEGENDSPATCH1-A0101-V0100-PE.pkg
+PPU-2975e8f2b419cd5428368f5e9556cc27cce7db38:
+  "Dumb AI":
+    Games:
+      "007 Legends (Artemis)":
+        BLUS30983: [ 01.01 ]
+    Author: DANNY G PORTED by ChiDreams
+    Notes: 
+    Patch Version: 1.0
+    Group: AA
+    Patch:
+     - [ be32,0x00029F0C,0x60000000] 
+  "No Damage From Enemy Bullets Or Melee":
+    Games:
+      "007 Legends (Artemis)":
+        BLUS30983: [ 01.01 ]
+    Author: DANNY G PORTED by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x001FBFC4,0x60000000] 
+  "Infinite HP":
+    Games:
+      "007 Legends (Artemis)":
+        BLUS30983: [ 01.01 ]
+    Author: Randy97Killa PORTED by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x00D6AAE4,0x3E004F00] 
+      - [ be32,0x00D6AAE8,0x921D011C]
+      - [ be32,0x00D6AAEC,0x921D0118]
+      - [ be32,0x00D6AAF0,0x4E800020]
+      - [ be32,0x0032F010,0x48A3BAD5]	  
+  "Infinite Ammo-No Reload":
+    Games:
+      "007 Legends (Artemis)":
+        BLUS30983: [ 01.01 ]
+    Author: Randy97Killa PORTED by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x0006AB18,0x63FD0000] 
+  "Max EXP On Spend":
+    Games:
+      "007 Legends (Artemis)":
+        BLUS30983: [ 01.01 ]
+    Author: Randy97Killa PORTED by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32,0x00CDD1C4,0x3CA005F5]
+      - [ be32,0x00CDD1C8,0x60A5E0FF]
+      - [ be32,0x00CDD1CC,0x90BF0000]
+      - [ be32,0x00CDD1D0,0x4B7A6924]
+      - [ be32,0x00483AF0,0x488596D4]
+
 # Title: Alien Breed: Impact
 # Serial: NPUB30141
 # Category: HG
