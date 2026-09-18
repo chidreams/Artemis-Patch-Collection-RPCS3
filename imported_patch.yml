@@ -3264,6 +3264,128 @@ PPU-075f968c1577061ada3cc619cf6b7757d1f7564c:
     Patch:
       - [ load, *RemME13 ]      
 
+# Title: Tales of Symphonia Chronicles
+# Serial: BLUS31172
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00
+# Localized Title: Tales of Symphonia Chronicles
+PRX-LSe6h0etV72YkNzcFPXdYFeSkzWM-0:
+  "Max Level After 1 Battle":
+    Games:
+      "Tales of Symphonia Chronicles (Artemis)":
+        BLUS31172: [ 01.00 ]
+    Author: "tekman"
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x000C6178, 0x60000000 ]
+      - [ be32, 0x000C6180, 0x60000000 ]
+
+  "Max And Infinite Flouz On Buy":
+    Games:
+      "Tales of Symphonia Chronicles (Artemis)":
+        BLUS31172: [ 01.00 ]
+    Author: "tekman"
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x0018A8AC, 0x3CE03B9A ]
+      - [ be32, 0x0018A8B4, 0x60E7C9FF ]
+
+  "Max And Infinite Items Use":
+    Games:
+      "Tales of Symphonia Chronicles (Artemis)":
+        BLUS31172: [ 01.00 ]
+    Author: "tekman"
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x001812F0, 0x38800014 ]
+
+  "Buy An Item For 20 Of It":
+    Games:
+      "Tales of Symphonia Chronicles (Artemis)":
+        BLUS31172: [ 01.00 ]
+    Author: "bungholio"
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x0018A8C4, 0x38A00014 ]
+
+  "Sell An Item For 20 Of It":
+    Games:
+      "Tales of Symphonia Chronicles (Artemis)":
+        BLUS31172: [ 01.00 ]
+    Author: "bungholio"
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x0018AA18, 0x39000014 ]
+
+  "Use An Item While In Battle For 20 Of It":
+    Games:
+      "Tales of Symphonia Chronicles (Artemis)":
+        BLUS31172: [ 01.00 ]
+    Author: "bungholio"
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x000CF6EC, 0x38800014 ]
+
+  "Max Gald On Increase":
+    Games:
+      "Tales of Symphonia Chronicles (Artemis)":
+        BLUS31172: [ 01.00 ]
+    Author: "bungholio"
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x0018AA34, 0x48000008 ]
+
+  "Walk Through Enemies Without Battle":
+    Games:
+      "Tales of Symphonia Chronicles (Artemis)":
+        BLUS31172: [ 01.00 ]
+    Author: "bungholio"
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x0011214C, 0x48000010 ]
+      - [ be32, 0x00111E30, 0x4800009C ]
+
+  "Can Save Anywhere":
+    Games:
+      "Tales of Symphonia Chronicles (Artemis)":
+        BLUS31172: [ 01.00 ]
+    Author: "bungholio"
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x0018799C, 0x48000008 ]
+
+  "Everything Can Always Do Things That Use TP":
+    Games:
+      "Tales of Symphonia Chronicles (Artemis)":
+        BLUS31172: [ 01.00 ]
+    Author: "bungholio"
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x00069C18, 0x4800000C ]
+
+  "Unlock Mania Battle Rank And Sound Test":
+    Games:
+      "Tales of Symphonia Chronicles (Artemis)":
+        BLUS31172: [ 01.00 ]
+    Author: "bungholio"
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x0016B6A8, 0x83A366D4 ]
+      - [ be32, 0x0016B6AC, 0x38600001 ]
+      - [ be32, 0x0016B6B0, 0x987D0EB2 ]
+      - [ be32, 0x0016B6B4, 0x480000B0 ]
+
+  "Unlock Sound Test":
+    Games:
+      "Tales of Symphonia Chronicles (Artemis)":
+        BLUS31172: [ 01.00 ]
+    Author: "bungholio"
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x001E393C, 0x38C00001 ]
+      - [ be32, 0x001E3944, 0x98C499C0 ]
+      - [ be32, 0x001E3950, 0x48000018 ]
+
 # Title: DOOM Classic Complete
 # Serial: NPUB30808
 # Category: HG
