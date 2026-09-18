@@ -13796,6 +13796,45 @@ PPU-a5845990bfd8072c61ffa9a4cc6914c0b80ead1c:
     Patch:
       - [ load, *Despair8 ] 
 
+# Title: Alien Breed 3: Descent
+# Serial: NPUB30336
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.01    
+PPU-ac41897607fdc10108183784508b18f6c056b79f:
+  "Infinite Ammo":
+    Games:
+      "Alien Breed 3: Descent (Artemis)":
+        NPUB30336: [ 01.00 ]
+    Author: dron_3
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x001075F8,0x380003E7]
+    - [ be32,0x001075FC,0x90060334]
+    - [ be32,0x00107600,0x90060330]
+PPU-ac41897607fdc10108183784508b18f6c056b79f:
+  "Infinite Items":
+    Games:
+      "Alien Breed 3: Descent (Artemis)":
+        NPUB30336: [ 01.00 ]
+    Author: dron_3
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x001082B0,0x38A00063]
+    - [ be32,0x001082BC,0x90A30268]
+PPU-ac41897607fdc10108183784508b18f6c056b79f:
+  "Infinite Health":
+    Games:
+      "Alien Breed 3: Descent (Artemis)":
+        NPUB30336: [ 01.00 ]
+    Author: dron_3
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0005FE84,0x386003E8]
+    - [ be32,0x0005FE88,0x907F02DC]   
+
 # Title: ETERNAL SONATA
 # Serial: BLUS30161
 # Category: DG
