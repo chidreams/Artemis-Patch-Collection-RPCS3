@@ -463,6 +463,73 @@ PPU-654fb814f75c7c639959779f4c6a88b4d47d2bd5:
       - [ be32,0x006EE760,0x919F00B0 ] # stw r12, 0xB0(r31) (Lock 0xB0)
       - [ be32,0x006EE764,0x4BC393DC ] # b 0x00327B40 (Return to engine) 
 
+# Title: ALIEN BREED
+# Serial: NPUB31085
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.02
+PPU-ec6baa4f12a782f32278cd1c6a234072153ac799:
+  "Infinite Ammo":
+    Games:
+      "ALIEN BREED (Artemis)":
+        NPUB31085: [ 01.00 ]
+    Author: dron_3
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00095D24,0x60000000]
+PPU-ec6baa4f12a782f32278cd1c6a234072153ac799:
+  "Infinite Health":
+    Games:
+      "ALIEN BREED (Artemis)":
+        NPUB31085: [ 01.00 ]
+    Author: dron_3
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00091A20,0x60000000]   
+PPU-ec6baa4f12a782f32278cd1c6a234072153ac799:
+  "Infinite Lives":
+    Games:
+      "ALIEN BREED (Artemis)":
+        NPUB31085: [ 01.00 ]
+    Author: dron_3
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00093B3C,0x60000000] 
+PPU-ec6baa4f12a782f32278cd1c6a234072153ac799:
+  "Infinite Keys":
+    Games:
+      "ALIEN BREED (Artemis)":
+        NPUB31085: [ 01.00 ]
+    Author: dron_3
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00094DCC,0x60000000]
+PPU-ec6baa4f12a782f32278cd1c6a234072153ac799:
+  "Infinite Credits":
+    Games:
+      "ALIEN BREED (Artemis)":
+        NPUB31085: [ 01.00 ]
+    Author: dron_3
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00094FE0,0x3C803B9B]
+    - [ be32,0x00094FE4,0x3084CA00]
+    - [ be32,0x00097870,0x60A40000]
+PPU-ec6baa4f12a782f32278cd1c6a234072153ac799:
+  "Have All Weapons":
+    Games:
+      "ALIEN BREED (Artemis)":
+        NPUB31085: [ 01.00 ]
+    Author: GuitarMan
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00093710,0x7CE71A78]  
+
 # Title: Dragon Age II
 # Serial: BLUS30645
 # Category: GD
