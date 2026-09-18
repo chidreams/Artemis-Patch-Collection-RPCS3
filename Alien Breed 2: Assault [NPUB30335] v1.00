@@ -1,0 +1,38 @@
+# Title: Alien Breed 2: Assault
+# Serial: NPUB30335
+# Category: HG
+# Version: APP_VER=01.00 VERSION=01.01
+PPU-a10cdba65520eeef1d78b743e00e848da9e73f87:
+  "Infinite Ammo":
+    Games:
+      "Alien Breed 2: Assault (Artemis)":
+        NPUB30335: [ 01.00 ]
+    Author: dron_3
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x001051C8,0x380003E7]
+    - [ be32,0x001051CC,0x90060330]
+    - [ be32,0x001051D0,0x9006032C]
+PPU-a10cdba65520eeef1d78b743e00e848da9e73f87:
+  "Infinite Items":
+    Games:
+      "Alien Breed 2: Assault (Artemis)":
+        NPUB30335: [ 01.00 ]
+    Author: dron_3
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00105E88,0x38A00063]
+    - [ be32,0x00105E94,0x90A30264]
+PPU-a10cdba65520eeef1d78b743e00e848da9e73f87:
+  "Infinite Health":
+    Games:
+      "Alien Breed 2: Assault (Artemis)":
+        NPUB30335: [ 01.00 ]
+    Author: dron_3
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x0005E95C,0x38A003E8]
+    - [ be32,0x0005E960,0x90BF02D8]
