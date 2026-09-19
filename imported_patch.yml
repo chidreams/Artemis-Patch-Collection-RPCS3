@@ -1,5 +1,4 @@
 Version: 1.2
-
 Anchors:
   KuniW: &KuniW
     - [ be32,0x0193BF8C,0x3D203123]
