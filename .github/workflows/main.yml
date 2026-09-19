@@ -12,7 +12,6 @@ jobs:
   merge-all:
     runs-on: ubuntu-latest
     
-    # REQUIRED: Grants the runner permission to push code back to the repo
     permissions:
       contents: write 
       
@@ -30,21 +29,26 @@ jobs:
           # Writes Version 1.2 to the very first line of the file
           echo "Version: 1.2" > imported_patch.yml
           
-          # Finds files in the root directory with "[" and "]" in the name
-          # Uses awk to add a clean line break, then APPENDS (>>) to the version header
-          find . -maxdepth 1 -type f -name "*\[*\]*" -exec awk 'FNR==1{print ""}1' {} + >> imported_patch.yml
+          # FNR==1 && NR!=1 ensures a blank line is added between files, but NOT before the first file.
+          find . -maxdepth 1 -type f -name "*\[*\]*" -exec awk 'FNR==1 && NR!=1{print ""}1' {} + >> imported_patch.yml
           echo "Merged all game patches into imported_patch.yml"
 
-      - name: Upload merged file
-        uses: actions/upload-artifact@v4
-        with:
-          name: imported-patch
-          path: imported_patch.yml
-          
       - name: Commit and push generated patch file
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add imported_patch.yml
-          git commit -m "Auto-compiled imported_patch.yml" || echo "No changes to commit"
+          git commit -m "Auto-compiled imported_patch.yml (Android spacing fix)" || echo "No changes to commit"
           git push
+
+      - name: Generate Release Tag
+        id: generate_tag
+        run: echo "RELEASE_TAG=v$(date +'%Y.%m.%d-%H%M%S')" >> $GITHUB_ENV
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ env.RELEASE_TAG }}
+          name: Patch Update ${{ env.RELEASE_TAG }}
+          body: "Automated release containing the latest merged patches."
+          files: imported_patch.yml
