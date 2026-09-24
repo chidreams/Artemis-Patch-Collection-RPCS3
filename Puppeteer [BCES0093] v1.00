@@ -1,0 +1,11 @@
+PPU-db9cef9215ebe29a73ca63ef69481de39f112b16:
+  "Invincible":
+    Games:
+      "Puppeteer":
+        BCES00935: [ 01.00 ]
+    Author: Tiger fury
+    Notes: (Requires Nothing)
+    Patch Version: 1.0
+    Patch:
+      - [be32,0x001F4C80,0x2C030003]
+      - [be32,0x001F4C84,0x41820120]
