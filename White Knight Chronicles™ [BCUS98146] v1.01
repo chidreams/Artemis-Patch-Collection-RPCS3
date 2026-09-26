@@ -1,0 +1,219 @@
+# Title: White Knight Chronicles™
+# Serial: BCUS98146
+# Category: GD
+# Version: APP_VER=01.01 VERSION=01.01
+Anchors:
+
+  WKChronicles: &WKChronicles
+    - [ be32,0x00512F54,0x8009005C]
+    - [ be32,0x00512F58,0x2F800001]
+  WKChronicles2: &WKChronicles2
+    - [ be32,0x003BE8D8,0x380000FF]
+  WKChronicles3: &WKChronicles3
+    - [ be32,0x0051A568,0x3C0042C8]
+    - [ be32,0x0051A56C,0x90091560]
+  WKChronicles4: &WKChronicles4
+    - [ be32,0x0036EC78,0x60000000]
+    - [ be32,0x0036EC9C,0x60000000]
+  WKChronicles5: &WKChronicles5
+    - [ be32,0x003CD34C,0x48000008]
+  WKChronicles6: &WKChronicles6
+    - [ be32,0x007B1E84,0x3C0005F5]
+    - [ be32,0x007B1E88,0x6000E0FF]
+  WKChronicles7: &WKChronicles7
+    - [ be32,0x003CD34C,0x48000008]
+  WKChronicles8: &WKChronicles8
+    - [ be32,0x00374A88,0x7C030378]
+  WKChronicles9: &WKChronicles9
+    - [ be32,0x00396C54,0x3929000A] 
+  WKChronicles10: &WKChronicles10
+    - [ be32,0x00396C54,0x39290064]
+  WKChronicles11: &WKChronicles11
+    - [ be32,0x0075A26C,0x60000000]
+  WKChronicles12: &WKChronicles12
+    - [ be32,0x007B1E84,0x3C0005F5]
+    - [ be32,0x007B1E88,0x6000E0FF]
+  WKChronicles13: &WKChronicles13
+    - [ be32,0x00374C08,0x1F6400FF] 
+  WKChronicles14: &WKChronicles14
+    - [ be32,0x003A72BC,0x60000000]
+    - [ be32,0x003D3F84,0x60000000]
+    - [ be32,0x004E579C,0x60000000]
+    - [ be32,0x00595908,0x60000000]
+    - [ be32,0x0066DA5C,0x60000000]
+  WKChronicles15: &WKChronicles15
+    - [ be32,0x003C0A48,0x1FC30001]
+  WKChronicles16: &WKChronicles16
+    - [ be32,0x003CD334,0x97690080]
+  WKChronicles17: &WKChronicles17
+    - [ be32,0x003BEDD4,0x60000000]
+    - [ be32,0x003BEDDC,0x60A30000]
+  WKChronicles18: &WKChronicles18
+    - [ be32,0x00374A94,0x7C1A0038]
+    - [ be32,0x00374AA0,0x905F0028]
+  
+PPU-90fc7062842b4747cd42c0c478bc08f833fe7138:
+  "HP + MP Recover When Drawing Weapon":
+    Games:
+      "White Knight Chronicles (Artemis)":
+        BCUS98146: [ 01.01 ]
+    Author: gameurawaza Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WKChronicles ]
+  "Gain Or Lose Items To Get 255":
+    Games:
+      "White Knight Chronicles (Artemis)":
+        BCUS98146: [ 01.01 ]
+    Author: gameurawaza Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WKChronicles2 ]
+  "AC Max When Attacking Enemies (Not Combo)":
+    Games:
+      "White Knight Chronicles (Artemis)":
+        BCUS98146: [ 01.01 ]
+    Author: gameurawaza Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WKChronicles3 ]
+  "Use Skill Points To Gain Skill Points":
+    Games:
+      "White Knight Chronicles (Artemis)":
+        BCUS98146: [ 01.01 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WKChronicles4 ]
+  "Max Gold On Gain Or Loss":
+    Games:
+      "White Knight Chronicles (Artemis)":
+        BCUS98146: [ 01.01 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WKChronicles5 ]
+  "Max Item After Second Item (Storage)":
+    Games:
+      "White Knight Chronicles (Artemis)":
+        BCUS98146: [ 01.01 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WKChronicles6 ]
+  "Max Gold On Gain Or Loss":
+    Games:
+      "White Knight Chronicles (Artemis)":
+        BCUS98146: [ 01.01 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WKChronicles7 ]
+  "1 Kill Max Exp":
+    Games:
+      "White Knight Chronicles (Artemis)":
+        BCUS98146: [ 01.01 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WKChronicles8 ]
+  "Gain 10x Items (Only From Monster)":
+    Games:
+      "White Knight Chronicles (Artemis)":
+        BCUS98146: [ 01.01 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+      - [ load, *WKChronicles9 ]
+  "Gain 100x Items (Only From Monster)":
+    Games:
+      "White Knight Chronicles (Artemis)":
+        BCUS98146: [ 01.01 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+      - [ load, *WKChronicles10 ]
+  "Enchance Without Materials":
+    Games:
+      "White Knight Chronicles (Artemis)":
+        BCUS98146: [ 01.01 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WKChronicles11 ]
+  "Get Max Guild Points On Gain":
+    Games:
+      "White Knight Chronicles (Artemis)":
+        BCUS98146: [ 01.01 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WKChronicles12 ]
+  "1 Kill For Full HP + MP + AC":
+    Games:
+      "White Knight Chronicles (Artemis)":
+        BCUS98146: [ 01.01 ]
+    Author: Ported by ChiDreams
+    Notes: Only use at lvl 50 because this causes you to get 0 Sp on lvl up
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WKChronicles13 ]
+  "Infinite Items (Character Inventory)":
+    Games:
+      "White Knight Chronicles (Artemis)":
+        BCUS98146: [ 01.01 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WKChronicles14 ]
+  "Max Items In Quest Loot + Max Money":
+    Games:
+      "White Knight Chronicles (Artemis)":
+        BCUS98146: [ 01.01 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WKChronicles15 ]
+  "Max Gil":
+    Games:
+      "White Knight Chronicles (Artemis)":
+        BCUS98146: [ 01.01 ]
+    Author: Serp87 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WKChronicles16 ]
+  "Infinite Items":
+    Games:
+      "White Knight Chronicles (Artemis)":
+        BCUS98146: [ 01.01 ]
+    Author: Serp87 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WKChronicles17 ]
+  "Max Level 50 + Skill Points 200 Per Kill":
+    Games:
+      "White Knight Chronicles (Artemis)":
+        BCUS98146: [ 01.01 ]
+    Author: Serp87 Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WKChronicles18 ]
