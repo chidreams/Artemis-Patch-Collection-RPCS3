@@ -3159,6 +3159,162 @@ PPU-424b7d9815818fceff287387f84a8f92e27a1230:
     Patch:
       - [ be32,0x001C9EBC,0x60000000] 
 
+# Title: White Knight Chronicles™ II
+# Serial: BLUS30784
+# Category: GD
+# Version: APP_VER=01.01 VERSION=01.00      
+Anchors:
+  WK2Chronicles: &WK2Chronicles
+      - [ be32,0x0038E664,0x60000000]
+      - [ be32,0x0038E688,0x60000000]
+      - [ be32,0x01048638,0x60000000]
+  WK2Chronicles2: &WK2Chronicles2
+      - [ be32,0x003EA648,0x380000FF]
+  WK2Chronicles3: &WK2Chronicles3
+      - [ be32,0x00583F70,0x8009005C]
+      - [ be32,0x00583F74,0x2F800001]
+  WK2Chronicles4: &WK2Chronicles4
+      - [ be32,0x00591B08,0x3C0042C8]
+      - [ be32,0x00591B0C,0x90091560]
+  WK2Chronicles5: &WK2Chronicles5
+      - [ be32,0x003FBFC0,0x60000000]
+  WK2Chronicles6: &WK2Chronicles6
+      - [ be16,0x00843470,0x4BFF]  
+      - [ be32,0x0085ADF4,0x60000000]
+      - [ be32,0x00874D00,0x60000000]
+  WK2Chronicles7: &WK2Chronicles7
+      - [ be32,0x003A66A4,0x78636420]
+      - [ be32,0x005385B4,0x78006420]
+      - [ be32,0x005385BC,0x90010070]
+      - [ be32,0x005385C0,0x4BDDE75D]
+      - [ be32,0x0053886C,0x78006420]
+      - [ be32,0x00538870,0x90010070]
+      - [ be32,0x00538874,0x4BDDE4A9]
+  WK2Chronicles8: &WK2Chronicles8
+      - [ be32,0x0037A72C,0x60000000]
+  WK2Chronicles9: &WK2Chronicles9
+      - [ be32,0x003AA594,0x3B400008]
+      - [ be16,0x003AA60C,0x4800]
+      - [ be16,0x003AA7A0,0x7F9E]
+      - [ be16,0x003AA7A4,0x419D]
+  WK2Chronicles10: &WK2Chronicles10
+      - [ be32,0x005654B0,0x8009005C]
+      - [ be32,0x005654B4,0x2F800001]
+  WK2Chronicles11: &WK2Chronicles11
+      - [ be32, 0x003FBFB4, 0x91690080 ]
+  WK2Chronicles12: &WK2Chronicles12
+      - [ be16, 0x003FD73C, 0x4800 ]
+      
+PPU-c5e01068965ae9b5e98fc0b50b6520e1184e4fba:
+  "Unlimited Skill Points":
+    Games:
+      "White Knight Chronicles II (Artemis)":
+        BLUS30784: [ 01.01 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WK2Chronicles ]
+  "Gain/Loss of item gets 255":
+    Games:
+      "White Knight Chronicles II (Artemis)":
+        BLUS30784: [ 01.01 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WK2Chronicles2 ]
+  "HP/MP Recovery when drawing weapon":
+    Games:
+      "White Knight Chronicles II (Artemis)":
+        BLUS30784: [ 01.01 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WK2Chronicles3 ]
+  "Normal attacks restore AC":
+    Games:
+      "White Knight Chronicles II (Artemis)":
+        BLUS30784: [ 01.01 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WK2Chronicles4 ]
+  "Gold max":
+    Games:
+      "White Knight Chronicles II (Artemis)":
+        BLUS30784: [ 01.01 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WK2Chronicles5 ]
+  "Synthesis without the materials":
+    Games:
+      "White Knight Chronicles II (Artemis)":
+        BLUS30784: [ 01.01 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WK2Chronicles6 ]
+  "Exp 100":
+    Games:
+      "White Knight Chronicles II (Artemis)":
+        BLUS30784: [ 01.01 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WK2Chronicles7 ]
+  "Infinite CP":
+    Games:
+      "White Knight Chronicles II (Artemis)":
+        BLUS30784: [ 01.01 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WK2Chronicles8 ]
+  "Item Drop Rate 100%":
+    Games:
+      "White Knight Chronicles II (Artemis)":
+        BLUS30784: [ 01.01 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WK2Chronicles9 ]
+  "HP + MP Recover When Holding Weapon":
+    Games:
+      "White Knight Chronicles II (Artemis)":
+        BLUS30784: [ 01.01 ]
+    Author: Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WK2Chronicles10 ]
+  "Max Money (On Gain/Spend)":
+    Games:
+      "White Knight Chronicles II (Artemis)":
+        BLUS30784: [ 01.01 ]
+    Author: "ChiDreams"
+    Notes: "Sets money to 999,999,999 whenever a transaction occurs."
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WK2Chronicles11 ]
+  "Dahlia Points Max":
+    Games:
+      "White Knight Chronicles II (Artemis)":
+        BLUS30784: [ 01.01 ]
+    Author: "ChiDreams"
+    Notes: "Sets money to 999,999,999 whenever a transaction occurs."
+    Patch Version: 1.2
+    Patch:
+      - [ load, *WK2Chronicles12 ]
+
 # Title: FINAL FANTASY XIII-2
 # Serial: BLUS30776
 # Category: GD
