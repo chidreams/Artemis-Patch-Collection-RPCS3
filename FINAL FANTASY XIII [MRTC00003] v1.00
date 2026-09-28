@@ -4,54 +4,64 @@
 # Version: APP_VER=01.00 VERSION=01.00
 # Localized Title: FINAL FANTASY XIII 
 Anchors:
-  FFXIII: &FFXIII
+  FXIIFIANTASY: &FXIIFIANTASY
       - [ be32, 0x0059EB40, 0x48000008 ]
-  FFXIII3: &FFXIII3
+  FXIIFIANTASY2: &FXIIFIANTASY2
       - [ be32, 0x005A22D4, 0x48000004 ]
-  FFXIII4: &FFXIII4
+  FXIIFIANTASY3: &FXIIFIANTASY3
       - [ be32, 0x005898A0, 0x48000008 ]
-  FFXIII5: &FFXIII5
+  FXIIFIANTASY4: &FXIIFIANTASY4
       - [ be32, 0x005893FC, 0x3E203B9A ]  
       - [ be32, 0x00589414, 0x6231C9FF ]
-  FFXIII6: &FFXIII6
+  FXIIFIANTASY5: &FXIIFIANTASY5
       - [ be32, 0x005898A0, 0x92370018 ] 
       - [ be32, 0x005898A4, 0x9237001C ]
-  FFXIII7: &FFXIII7
+  FXIIFIANTASY6: &FXIIFIANTASY6
       - [ be32, 0x00591440, 0x60000000 ]
-  FFXIII8: &FFXIII8
+  FXIIFIANTASY7: &FXIIFIANTASY7
       - [ be32, 0x0059139C, 0x60000000 ] 
       - [ be32, 0x005913A0, 0x60000000 ]
       - [ be32, 0x005913A4, 0x38A00063 ] 
       - [ be32, 0x005913AC, 0x60000000 ]
-  FFXIII9: &FFXIII9
-      - [ be32, 0x000879E8, 0x3C000000 ] 
-      - [ be32, 0x000879EC, 0x60000000 ]
-  FFXIII10: &FFXIII10
-      - [ be32, 0x00087ACC, 0x3FE00098 ] 
-      - [ be32, 0x00087AD0, 0x63FF967F ]
-  FFXIII11: &FFXIII11
-      - [ be32, 0x005913A4, 0x38A00063 ] 
-  FFXIII12: &FFXIII12
-      - [ be32, 0x005914A0, 0x2B800000 ] 
-  FFXIII13: &FFXIII13
-      - [ be32, 0x0041CA60, 0x93830014 ]
-  FFXIII14: &FFXIII14
-      - [ be32, 0x005A2190, 0x3C00000F ] 
+  FXIIFIANTASY8: &FXIIFIANTASY8
+      - [ be32, 0x005A2190, 0x3C00000F ]
       - [ be32, 0x005A2194, 0x6000423F ]
-  FFXIII15: &FFXIII15
-      - [ be32, 0x005A2190, 0x3C003B9A ] 
+  FXIIFIANTASY9: &FXIIFIANTASY9
+      - [ be32, 0x005A2190, 0x3C003B9A ]
       - [ be32, 0x005A2194, 0x6000C9FF ]
-  FFXIII16: &FFXIII16
-      - [ be32, 0x005A2190, 0x3C003B9A ] 
+  FXIIFIANTASY10: &FXIIFIANTASY10
+      - [ be32, 0x005A2190, 0x3C003B9A ]
       - [ be32, 0x005A2194, 0x6000C9FF ]
-  FFXIII17: &FFXIII17
-      - [ be32, 0x005A2190, 0x3C003B9A ] 
-      - [ be32, 0x005A2194, 0x6000C9FF ] 
-  FFXIII18: &FFXIII18
-      - [ be32, 0x00087ACC, 0x3FE00000 ] 
-      - [ be32, 0x00087AD0, 0x63FF0001 ] 
-  FFXIII19: &FFXIII19
-      - [ be32, 0x005AA434, 0x549B1838 ]      
+  FXIIFIANTASY11: &FXIIFIANTASY11
+      - [ be32, 0x005A2190, 0x3C003B9A ]
+      - [ be32, 0x005A2194, 0x6000C9FF ]
+  FXIIFIANTASY12: &FXIIFIANTASY12
+      - [ be32, 0x000879EC, 0x60000000 ]
+  FXIIFIANTASY13: &FXIIFIANTASY13
+      - [ be32, 0x00087AD0, 0x63FF967F ]
+  FXIIFIANTASY14: &FXIIFIANTASY14
+      - [ be32, 0x00087AD0, 0x63FF0001 ]
+  FXIIFIANTASY15: &FXIIFIANTASY15
+      - [ be32, 0x0006BF20, 0x48000018 ]
+      - [ be32, 0x000C4EC0, 0x48000124 ]
+      - [ be32, 0x000C4C9C, 0x4800008C ]
+      - [ be32, 0x000C4D24, 0x60000000 ]
+  FXIIFIANTASY16: &FXIIFIANTASY16
+      - [ be32, 0x0006BF20, 0x48000018 ]
+      - [ be32, 0x000C4EC0, 0x48000124 ]
+      - [ be32, 0x000C4C9C, 0x4800008C ]
+      - [ be32, 0x000C4D24, 0x48000208 ]
+  FXIIFIANTASY17: &FXIIFIANTASY17
+      - [ be32, 0x0006BF20, 0x48000018 ]
+      - [ be32, 0x000C4EC0, 0x48000124 ]
+      - [ be32, 0x000C4C9C, 0x4800008C ]
+  FXIIFIANTASY18: &FXIIFIANTASY18
+      - [ be32, 0x005913A4, 0x38A00063 ]
+  FXIIFIANTASY19: &FXIIFIANTASY19
+      - [ be32, 0x005914A0, 0x2B800000 ]
+  FXIIFIANTASY20: &FXIIFIANTASY20
+      - [ be32, 0x0041CA60, 0x93830014 ] 
+      
 PPU-2845afa9e4dc56df06a61f2e51463468e9a557c7:
   "Max Gil On Buy Or Sell":
     Games:
@@ -61,7 +71,7 @@ PPU-2845afa9e4dc56df06a61f2e51463468e9a557c7:
     Notes: 
     Patch Version: 1.2
     Patch:
-      - [ load, *FFXIII ]
+      - [ load, *FXIIFIANTASY ]
   "Max CP After Battle":
     Games:
       "FINAL FANTASY XIII (Artemis)":
@@ -70,7 +80,7 @@ PPU-2845afa9e4dc56df06a61f2e51463468e9a557c7:
     Notes: 
     Patch Version: 1.2
     Patch:
-      - [ load, *FFXIII3 ]
+      - [ load, *FXIIFIANTASY2 ]
   "Max HP (99,999)":
     Games:
       "FINAL FANTASY XIII (Artemis)":
@@ -78,9 +88,8 @@ PPU-2845afa9e4dc56df06a61f2e51463468e9a557c7:
     Author: Hazado Ported by ChiDreams
     Notes: 
     Patch Version: 1.2
-    Group: A
     Patch:
-      - [ load, *FFXIII4 ]
+      - [ load, *FXIIFIANTASY3 ]
   "999,999,999 HP Max":
     Games:
       "FINAL FANTASY XIII (Artemis)":
@@ -89,7 +98,7 @@ PPU-2845afa9e4dc56df06a61f2e51463468e9a557c7:
     Notes: 
     Patch Version: 1.2
     Patch:
-      - [ load, *FFXIII5 ]
+      - [ load, *FXIIFIANTASY4 ]
   "Max HP + MAG + STR (99,999)":
     Games:
       "FINAL FANTASY XIII (Artemis)":
@@ -97,9 +106,8 @@ PPU-2845afa9e4dc56df06a61f2e51463468e9a557c7:
     Author: Hazado Ported by ChiDreams
     Notes: Use this with 999,999,999 HP Max Mod and you can set your Stats over 99,999. Do not use this with Max HP Code.
     Patch Version: 1.2
-    Group: A
     Patch:
-      - [ load, *FFXIII6 ]
+      - [ load, *FXIIFIANTASY5 ]
   "Get Item For Max":
     Games:
       "FINAL FANTASY XIII (Artemis)":
@@ -108,16 +116,55 @@ PPU-2845afa9e4dc56df06a61f2e51463468e9a557c7:
     Notes: 
     Patch Version: 1.2
     Patch:
-      - [ load, *FFXIII7 ]
+      - [ load, *FXIIFIANTASY6 ]
   "Max Item Usage":
     Games:
       "FINAL FANTASY XIII (Artemis)":
         MRTC00003: [ 01.00 ]
-    Author: Skiller Ported by ChiDreams
+    Author: Hiei-YYH Ported by ChiDreams
     Notes: You can not sell all your accessories or weapons. Delete the game from xmb and start from the disc, then after that just activate the code again.
     Patch Version: 1.2
     Patch:
-      - [ load, *FFXIII8 ]
+      - [ load, *FXIIFIANTASY7 ]
+  "Max CP Use Then Exit Crystarum":
+    Games:
+      "FINAL FANTASY XIII (Artemis)":
+        MRTC00003: [ 01.00 ]
+    Author: hyper2k Ported by ChiDreams
+    Notes: When in the Crystarum it will go down but just leave and it goes back to max
+    Patch Version: 1.2
+    Patch:
+      - [ load, *FXIIFIANTASY8 ]
+  "Use CP Get 999,999,999 HP":
+    Games:
+      "FINAL FANTASY XIII (Artemis)":
+        MRTC00003: [ 01.00 ]
+    Author: hyper2k Ported by ChiDreams
+    Notes: Do not use this code if you used Max CP Use Then Exit Crystarum or STR or Mag. You will have the Stats until you change your weapons
+    Patch Version: 1.2
+    Group: CC
+    Patch:
+      - [ load, *FXIIFIANTASY9 ]
+  "Use CP Get 999,999,999 STR":
+    Games:
+      "FINAL FANTASY XIII (Artemis)":
+        MRTC00003: [ 01.00 ]
+    Author: hyper2k Ported by ChiDreams
+    Notes: Do not use this code if you used Max CP Use Then Exit Crystarum or HP or Mag. You will have the Stats until you change your weapons
+    Patch Version: 1.2
+    Group: CC
+    Patch:
+      - [ load, *FXIIFIANTASY10 ]
+  "Use CP Get 999,999,999 Mag":
+    Games:
+      "FINAL FANTASY XIII (Artemis)":
+        MRTC00003: [ 01.00 ]
+    Author: hyper2k Ported by ChiDreams
+    Notes: Do not use this code if you used Max CP Use Then Exit Crystarum or HP or STR. You will have the Stats until you change your weapons
+    Patch Version: 1.2
+    Group: CC
+    Patch:
+      - [ load, *FXIIFIANTASY11 ]
   "Jump To Max Attack (Max Attack Trigger)":
     Games:
       "FINAL FANTASY XIII (Artemis)":
@@ -126,7 +173,7 @@ PPU-2845afa9e4dc56df06a61f2e51463468e9a557c7:
     Notes: 
     Patch Version: 1.2
     Patch:
-      - [ load, *FFXIII9 ]
+      - [ load, *FXIIFIANTASY12 ]
   "Max Attack Hit Damage 9,999,999":
     Games:
       "FINAL FANTASY XIII (Artemis)":
@@ -134,8 +181,49 @@ PPU-2845afa9e4dc56df06a61f2e51463468e9a557c7:
     Author: Skiller Ported by ChiDreams
     Notes: 
     Patch Version: 1.2
+    Group: G
     Patch:
-      - [ load, *FFXIII10 ]
+      - [ load, *FXIIFIANTASY13 ]
+  "Max Attack Hit Damage 1":
+    Games:
+      "FINAL FANTASY XIII (Artemis)":
+        MRTC00003: [ 01.00 ]
+    Author: Skiller Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: G
+    Patch:
+      - [ load, *FXIIFIANTASY14 ]
+  "Rare Items Drop More":
+    Games:
+      "FINAL FANTASY XIII (Artemis)":
+        MRTC00003: [ 01.00 ]
+    Author: hnop.blog11.fc2.com Ported by ChiDreams
+    Notes: Beware, enemies will not drop key items with this.
+    Patch Version: 1.2
+    Group: F
+    Patch:
+      - [ load, *FXIIFIANTASY15 ]
+  "Normal Items Drop More":
+    Games:
+      "FINAL FANTASY XIII (Artemis)":
+        MRTC00003: [ 01.00 ]
+    Author: hnop.blog11.fc2.com Ported by ChiDreams
+    Notes: Beware, enemies will not drop key items with this.
+    Patch Version: 1.2
+    Group: F
+    Patch:
+      - [ load, *FXIIFIANTASY16 ]
+  "Rare And Normal Items Drop More":
+    Games:
+      "FINAL FANTASY XIII (Artemis)":
+        MRTC00003: [ 01.00 ]
+    Author: hnop.blog11.fc2.com Ported by ChiDreams
+    Notes: Beware, enemies will not drop key items with this.
+    Patch Version: 1.2
+    Group: F
+    Patch: 
+      - [ load, *FXIIFIANTASY17 ]
   "Max Materials 99":
     Games:
       "FINAL FANTASY XIII (Artemis)":
@@ -144,7 +232,7 @@ PPU-2845afa9e4dc56df06a61f2e51463468e9a557c7:
     Notes: 
     Patch Version: 1.2
     Patch:
-      - [ load, *FFXIII11 ]
+      - [ load, *FXIIFIANTASY18 ]
   "Battle Item And Material 99":
     Games:
       "FINAL FANTASY XIII (Artemis)":
@@ -153,7 +241,7 @@ PPU-2845afa9e4dc56df06a61f2e51463468e9a557c7:
     Notes: 
     Patch Version: 1.2
     Patch:
-      - [ load, *FFXIII12 ]
+      - [ load, *FXIIFIANTASY19 ]
   "Upgrade Weapon Exp Max":
     Games:
       "FINAL FANTASY XIII (Artemis)":
@@ -162,62 +250,4 @@ PPU-2845afa9e4dc56df06a61f2e51463468e9a557c7:
     Notes: 
     Patch Version: 1.2
     Patch:
-      - [ load, *FFXIII13 ]           
-  "Max CP Use Then Exit Crystarum":
-    Games:
-      "FINAL FANTASY XIII (Artemis)":
-        MRTC00003: [ 01.00 ]
-    Author: hyper2k Ported by ChiDreams
-    Notes: When in the Crystarum it will go down but just leave and it goes back to max
-    Patch Version: 1.2
-    Group: C
-    Patch:
-      - [ load, *FFXIII14 ]
-  "Use CP Get 999,999,999 HP":
-    Games:
-      "FINAL FANTASY XIII (Artemis)":
-        MRTC00003: [ 01.00 ]
-    Author: hyper2k Ported by ChiDreams
-    Notes: Do not use this code if you used Max CP Use Then Exit Crystarum or STR or Mag. You will have the Stats until you change your weapons
-    Patch Version: 1.2
-    Group: C
-    Patch:
-      - [ load, *FFXIII15 ]
-  "Use CP Get 999,999,999 STR":
-    Games:
-      "FINAL FANTASY XIII (Artemis)":
-        MRTC00003: [ 01.00 ]
-    Author: hyper2k Ported by ChiDreams
-    Notes: Do not use this code if you used Max CP Use Then Exit Crystarum or STR or Mag. You will have the Stats until you change your weapons
-    Patch Version: 1.2
-    Group: C
-    Patch:
-      - [ load, *FFXIII16 ]
-  "Use CP Get 999,999,999 Mag":
-    Games:
-      "FINAL FANTASY XIII (Artemis)":
-        MRTC00003: [ 01.00 ]
-    Author: hyper2k Ported by ChiDreams
-    Notes: Do not use this code if you used Max CP Use Then Exit Crystarum or STR or Mag. You will have the Stats until you change your weapons
-    Patch Version: 1.2
-    Group: C
-    Patch:
-      - [ load, *FFXIII17 ]      
-  "Max Attack Hit Damage 1":
-    Games:
-      "FINAL FANTASY XIII (Artemis)":
-        MRTC00003: [ 01.00 ]
-    Author: Skiller Ported by ChiDreams
-    Notes: 
-    Patch Version: 1.2
-    Patch:
-      - [ load, *FFXIII18 ]      
-  "Item Drop X 8":
-    Games:
-      "FINAL FANTASY XIII (Artemis)":
-        MRTC00003: [ 01.00 ]
-    Author: CodeFreak/PS3UserCheat Ported by ChiDreams
-    Notes: 
-    Patch Version: 1.2
-    Patch:
-      - [ load, *FFXIII19 ]      
+      - [ load, *FXIIFIANTASY20 ] 
