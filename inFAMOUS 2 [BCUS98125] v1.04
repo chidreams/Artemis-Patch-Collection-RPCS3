@@ -4,163 +4,336 @@
 # Version: APP_VER=01.04 VERSION=01.00
 #  PPU executable hash: PPU-41a7d047c573c78c0307506c9d1b52d15a66e4f5 v1.04
 Anchors:
-  inFAMOUS4: &inFAMOUS4
-    - [ be32,0x001F4764,0x3C000000]
-  inFAMOUS42: &inFAMOUS42
-    - [ be32,0x001D99BC,0x3CC03E80]
-  inFAMOUS43: &inFAMOUS43
-    - [ be32,0x0022A104,0x3C004000]
-  inFAMOUS44: &inFAMOUS44
-    - [ be32,0x00154DAC,0x60000000]
-  inFAMOUS45: &inFAMOUS45
-    - [ be32,0x00155F18,0x60000000]
-  inFAMOUS46: &inFAMOUS46
-    - [ be32,0x0017AC50,0x3C007F7F]
-    - [ be32,0x0017AC54,0x900907EC]
-    - [ be32,0x0017AC58,0x900907F0]
-  inFAMOUS47: &inFAMOUS47
-    - [ be32,0x0017AC7C,0x60000000]
-  inFAMOUS48: &inFAMOUS48
-    - [ be32,0x001582F4,0x60000000]
-  inFAMOUS49: &inFAMOUS49
-    - [ be32,0x0012FE34,0xEC210028]
-  inFAMOUS410: &inFAMOUS410
-    - [ be32,0x0012FE58,0x60000000]
-  inFAMOUS411: &inFAMOUS411
-    - [ be32,0x0012FE50,0x60000000]
-  inFAMOUS412: &inFAMOUS412
-    - [ be32,0x0012FE6C,0x480000C0]
-  inFAMOUS413: &inFAMOUS413
-    - [ be32,0x0012FE6C,0x60000000]
+  ai_movement_speed_inf2: &ai_movement_speed_inf2
+    "Speed Multiplier":
+      Type: long_enum
+      Value: 0x3CC03F80
+      Allowed Values:
+        "Normal (1x)": 0x3CC03F80
+        "Stand Still": 0x3CC00000
+        "0.25x": 0x3CC03E80
+        "0.5x": 0x3CC03F00
+        "2x": 0x3CC04000
+        "3x": 0x3CC04040
+        "4x": 0x3CC04080
+        "5x": 0x3CC040A0
+        "Backwards Normal": 0x3CC0BF80
+        "Backwards 0.25x": 0x3CC0BE80
+        "Backwards 0.5x": 0x3CC0BF00
+        "Backwards 2x": 0x3CC0C000
+        "Backwards 3x": 0x3CC0C040
+        "Backwards 4x": 0x3CC0C080
+        "Backwards 5x": 0x3CC0C0A0
+
+  jump_height_inf2: &jump_height_inf2
+    "Jump Height Multiplier":
+      Type: long_enum
+      Value: 0x3C003F80
+      Allowed Values:
+        "Normal (1x)": 0x3C003F80
+        "2x": 0x3C004000
+        "3x": 0x3C004040
+        "4x": 0x3C004080
+        "5x": 0x3C0040A0
+        "6x": 0x3C0040C0
+        "7x": 0x3C0040E0
+        "8x": 0x3C004100
+        "9x": 0x3C004110
+        "10x": 0x3C004120
+        
+  xp_multiplier_inf2_v104: &xp_multiplier_inf2_v104
+    "XP Multiplier":
+      Type: long_enum
+      Value: 0x1D6B000A
+      Allowed Values:
+        "10x": 0x1D6B000A
+        "100x": 0x1D6B0064
+        "1,000x": 0x1D6B03E8
+        "10,000x": 0x1D6B2710   
+        
 PPU-41a7d047c573c78c0307506c9d1b52d15a66e4f5:
-  "Most Enemies Never Attack":
+  "Health Never Decreases":
     Games:
       "inFAMOUS 2 (Artemis)":
         BCUS98125: [ 01.04 ]
-    Author: bungholio Ported by ChIdReamS 
+    Author: bungholio Ported by ChiDreams
     Notes: 
     Patch Version: 1.2
     Patch:
-      - [ load, *inFAMOUS4 ]
-PPU-41a7d047c573c78c0307506c9d1b52d15a66e4f5:
-  "AI Movement Speed Modifier":
-    Games:
-      "inFAMOUS 2 (Artemis)":
-        BCUS98125: [ 01.04 ]
-    Author: bungholio Ported by ChIdReamS 
-    Notes: 
-    Patch Version: 1.2
-    Patch:
-      - [ load, *inFAMOUS42 ]
-PPU-41a7d047c573c78c0307506c9d1b52d15a66e4f5:
-  "Jump Height Multiplier":
-    Games:
-      "inFAMOUS 2 (Artemis)":
-        BCUS98125: [ 01.04 ]
-    Author: bungholio Ported by ChIdReamS 
-    Notes: 
-    Patch Version: 1.2
-    Patch:
-      - [ load, *inFAMOUS43 ]
-PPU-41a7d047c573c78c0307506c9d1b52d15a66e4f5:
+      - [ be32, 0x0017AC50, 0x3C007F7F ]
+      - [ be32, 0x0017AC54, 0x900907EC ]
+      - [ be32, 0x0017AC58, 0x900907F0 ]
+      - [ be32, 0x0017AC7C, 0x60000000 ] 
   "Electrical Attacks Do Not Decrease Electricity":
     Games:
       "inFAMOUS 2 (Artemis)":
         BCUS98125: [ 01.04 ]
-    Author: bungholio Ported by ChIdReamS 
+    Author: bungholio Ported by ChiDreams
     Notes: 
     Patch Version: 1.2
     Patch:
-      - [ load, *inFAMOUS44 ]
-PPU-41a7d047c573c78c0307506c9d1b52d15a66e4f5:
-  "Zooming For A Sniper Shot Does Not Decrease Electricity":
-    Games:
-      "inFAMOUS 2 (Artemis)":
-        BCUS98125: [ 01.04 ]
-    Author: bungholio Ported by ChIdReamS 
-    Notes: 
-    Patch Version: 1.2
-    Patch:
-      - [ load, *inFAMOUS45 ]
-PPU-41a7d047c573c78c0307506c9d1b52d15a66e4f5:
-  "Cole Never Dies":
-    Games:
-      "inFAMOUS 2 (Artemis)":
-        BCUS98125: [ 01.04 ]
-    Author: bungholio Ported by ChIdReamS 
-    Notes: 
-    Patch Version: 1.2
-    Patch:
-      - [ load, *inFAMOUS46 ]
-PPU-41a7d047c573c78c0307506c9d1b52d15a66e4f5:
-  "Cole Does Not React To Harm":
-    Games:
-      "inFAMOUS 2 (Artemis)":
-        BCUS98125: [ 01.04 ]
-    Author: bungholio Ported by ChIdReamS 
-    Notes: Do not use this without the code "Cole Never Dies" or the screen will go black right about where you would normally die.
-    Patch Version: 1.2
-    Patch:
-      - [ load, *inFAMOUS47 ]
-PPU-41a7d047c573c78c0307506c9d1b52d15a66e4f5:
+      - [ be32, 0x00154DAC, 0x60000000]
   "Ionic Charges Never Decrease":
     Games:
       "inFAMOUS 2 (Artemis)":
         BCUS98125: [ 01.04 ]
-    Author: bungholio Ported by ChIdReamS 
+    Author: bungholio Ported by ChiDreams
     Notes: 
     Patch Version: 1.2
     Patch:
-      - [ load, *inFAMOUS48 ]
-PPU-41a7d047c573c78c0307506c9d1b52d15a66e4f5:
-  "Instant Karma Changes Version 1":
+      - [ be32, 0x001538D4, 0x38600003 ]
+      - [ be32, 0x001538D8, 0x90690038 ]
+  "Most Enemies Never Attack":
     Games:
       "inFAMOUS 2 (Artemis)":
         BCUS98125: [ 01.04 ]
-    Author: bungholio Ported by ChIdReamS 
+    Author: bungholio Ported by ChiDreams
     Notes: 
     Patch Version: 1.2
-    Group: A
     Patch:
-      - [ load, *inFAMOUS49 ]
-PPU-41a7d047c573c78c0307506c9d1b52d15a66e4f5:
-  "Instant Karma Changes Version 2":
+      - [ be32, 0x001F4764, 0x3C000000 ] 
+  "Zooming For A Sniper Shot Does Not Decrease Electricity":
     Games:
       "inFAMOUS 2 (Artemis)":
         BCUS98125: [ 01.04 ]
-    Author: bungholio Ported by ChIdReamS 
-    Notes: 
-    Patch Version: 1.2
-    Group: A
-    Patch:
-      - [ load, *inFAMOUS410 ]
-PPU-41a7d047c573c78c0307506c9d1b52d15a66e4f5:
-  "Nothing Changes Karma":
-    Games:
-      "inFAMOUS 2 (Artemis)":
-        BCUS98125: [ 01.04 ]
-    Author: bungholio Ported by ChIdReamS 
+    Author: bungholio Ported by ChiDreams
     Notes: 
     Patch Version: 1.2
     Patch:
-      - [ load, *inFAMOUS411 ]
-PPU-41a7d047c573c78c0307506c9d1b52d15a66e4f5:
-  "Can Only Gain Evil Karma":
-    Games:
-      "inFAMOUS 2 (Artemis)":
-        BCUS98125: [ 01.04 ]
-    Author: bungholio Ported by ChIdReamS 
-    Notes: 
-    Patch Version: 1.2
-    Patch:
-      - [ load, *inFAMOUS412 ]
-PPU-41a7d047c573c78c0307506c9d1b52d15a66e4f5:
+      - [ be32, 0x00155F18, 0x60000000 ]    
   "Can Only Gain Good Karma":
     Games:
       "inFAMOUS 2 (Artemis)":
         BCUS98125: [ 01.04 ]
-    Author: bungholio Ported by ChIdReamS 
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+      - [ be32, 0x0012FE6C, 0x60000000 ]
+  "Can Only Gain Evil Karma":
+    Games:
+      "inFAMOUS 2 (Artemis)":
+        BCUS98125: [ 01.04 ]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+      - [ be32, 0x0012FE6C, 0x480000C0 ]
+  "Instant Karma Changes (Version 1)":
+    Games:
+      "inFAMOUS 2 (Artemis)":
+        BCUS98125: [ 01.04 ]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: B
+    Patch:
+      - [ be32, 0x0012FE34, 0xEC210028 ]
+  "Nothing Changes Karma":
+    Games:
+      "inFAMOUS 2 (Artemis)":
+        BCUS98125: [ 01.04 ]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+      - [ be32, 0x0012FE50, 0x60000000 ]
+  "Instant Karma Changes (Version 2)":
+    Games:
+      "inFAMOUS 2 (Artemis)":
+        BCUS98125: [ 01.04 ]
+    Author: bungholio Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: B
+    Patch:
+      - [ be32, 0x0012FE58, 0x60000000]      
+  "AI Movement Speed Modifier":
+    Games:
+      "inFAMOUS 2 (Artemis)":
+        BCUS98125: [ 01.04 ]
+    Author: "bungholio Ported by Chidreams"
+    Notes: "Modifies AI movement speed."
+    Configurable Values: *ai_movement_speed_inf2
+    Patch:
+      - [ be32, 0x001D99BC, "Speed Multiplier" ]
+  "Jump Height Multiplier":
+    Games:
+      "inFAMOUS 2 (Artemis)":
+        BCUS98125: [ 01.04 ]
+    Author: "bungholio Ported by Chidreams"
+    Notes: "Modifies player jump height."
+    Configurable Values: *jump_height_inf2
+    Patch:
+      - [ be32, 0x0022A104, "Jump Height Multiplier" ] 
+  "XP Gained Multiplier":
+    Games:
+      "inFAMOUS 2 (Artemis)":
+        BCUS98125: [ 01.04 ]
+    Author: "bungholio Ported by Chidreams"
+    Notes: "Multiplies XP gained. Shifted for v1.04."
+    Configurable Values: *xp_multiplier_inf2_v104
+    Patch:
+      - [ be32, 0x00130564, "XP Multiplier" ]
+      - [ be32, 0x00130568, 0x3863026C ]
+      - [ be32, 0x0013056C, 0x7C005A14 ]
+      - [ be32, 0x00130570, 0x901D0030 ]
+      - [ be32, 0x00130574, 0x901D0034 ]
+      - [ be32, 0x00130578, 0x483C2F4D ]      
+  "All 6 Karmic Boosts Are Active At The Same Time":
+    Games:
+      "inFAMOUS 2 (Artemis)":
+        BCUS98125: [ 01.04 ]
+    Author: bungholio Ported by ChiDreams
     Notes: 
     Patch Version: 1.2
     Patch:
-      - [ load, *inFAMOUS413 ]
+      - [ be32, 0x0012D654, 0x38600001 ] 
+  "(B) Button Enable Code (TURN ON FIRST)":
+    Games:
+      "inFAMOUS 2 (Artemis)":
+        BCUS98125: [ 01.04 ]
+    Author: "bungholio / ChiDreams"
+    Notes: "Master code cave. Relocated to safe executable block at 0x0075FA3C."
+    Patch:
+      # --- BSS DATA AREA ---
+      - [ be32, 0x00C3F004, 0x000001FF ] 
+      
+      # --- CAVE FUNCTION 1 (Hook 1) ---
+      - [ be32, 0x0075FA3C, 0x80E3001C ]
+      - [ be32, 0x0075FA40, 0x3D0000C4 ]
+      - [ be32, 0x0075FA44, 0x70EA0220 ]
+      - [ be32, 0x0075FA48, 0xB148F004 ]
+      - [ be32, 0x0075FA4C, 0xA128F006 ]
+      - [ be32, 0x0075FA50, 0x70EA4200 ]
+      - [ be32, 0x0075FA54, 0xB148F006 ]
+      - [ be32, 0x0075FA58, 0x2B8A4200 ]
+      - [ be32, 0x0075FA5C, 0x409E0018 ]
+      - [ be32, 0x0075FA60, 0x7F8A4840 ]
+      - [ be32, 0x0075FA64, 0x419E0010 ]
+      - [ be32, 0x0075FA68, 0x8948F00C ]
+      - [ be32, 0x0075FA6C, 0x694A0001 ]
+      - [ be32, 0x0075FA70, 0x9948F00C ]
+      - [ be32, 0x0075FA74, 0x70EA2000 ]
+      - [ be32, 0x0075FA78, 0xB148F00A ]
+      - [ be32, 0x0075FA7C, 0x70EA6000 ]
+      - [ be32, 0x0075FA80, 0x2B8A6000 ]
+      - [ be32, 0x0075FA84, 0x409E0020 ]
+      - [ be32, 0x0075FA88, 0x39400008 ]
+      - [ be32, 0x0075FA8C, 0x7D4903A6 ]
+      - [ be32, 0x0075FA90, 0x39400000 ]
+      - [ be32, 0x0075FA94, 0x39280010 ]
+      - [ be32, 0x0075FA98, 0xF949F000 ]
+      - [ be32, 0x0075FA9C, 0x39290008 ]
+      - [ be32, 0x0075FAA0, 0x4200FFF8 ]
+      - [ be32, 0x0075FAA4, 0x481963F2 ] # ba 0x1963F0 (v1.04 Hook 1 Return)
+      
+      # --- CAVE FUNCTION 2 (Hook 2) ---
+      - [ be32, 0x0075FAA8, 0x3C8000C4 ]
+      - [ be32, 0x0075FAAC, 0x93A4F000 ]
+      - [ be32, 0x0075FAB0, 0x483317CE ] # ba 0x3317CC (v1.04 Hook 2 Return)
+      
+      # --- CAVE FUNCTION 3 (Fly) ---
+      - [ be32, 0x0075FAB4, 0x7C3D49CE ]
+      - [ be32, 0x0075FAB8, 0x3D2000C4 ]
+      - [ be32, 0x0075FABC, 0x8009F000 ]
+      - [ be32, 0x0075FAC0, 0x7F9F0040 ]
+      - [ be32, 0x0075FAC4, 0x409E0018 ]
+      - [ be32, 0x0075FAC8, 0xA009F004 ]
+      - [ be32, 0x0075FACC, 0x2B800220 ]
+      - [ be32, 0x0075FAD0, 0x409E000C ]
+      - [ be32, 0x0075FAD4, 0x3D204480 ]
+      - [ be32, 0x0075FAD8, 0x913D0018 ]
+      - [ be32, 0x0075FADC, 0x39200070 ]
+      - [ be32, 0x0075FAE0, 0x484A640E ] # ba 0x4A640C (v1.04 Fly Return)
+      
+      # --- CAVE FUNCTION 4 (AI Toggle) ---
+      - [ be32, 0x0075FAE4, 0x3D2000C4 ]
+      - [ be32, 0x0075FAE8, 0x8929F00C ]
+      - [ be32, 0x0075FAEC, 0x71290001 ]
+      - [ be32, 0x0075FAF0, 0x2B890001 ]
+      - [ be32, 0x0075FAF4, 0x409E0008 ]
+      - [ be32, 0x0075FAF8, 0x3CC00000 ]
+      - [ be32, 0x0075FAFC, 0x3D2042A0 ]
+      - [ be32, 0x0075FB00, 0x481D9A0A ] # ba 0x1D9A08 (v1.04 AI Return)
+      
+      # --- CAVE FUNCTION 5 (Invincibility) ---
+      - [ be32, 0x0075FB04, 0xC3FE8000 ]
+      - [ be32, 0x0075FB08, 0x3F8000C4 ]
+      - [ be32, 0x0075FB0C, 0xA0BCF00A ]
+      - [ be32, 0x0075FB10, 0x2B852000 ]
+      - [ be32, 0x0075FB14, 0x409E002C ]
+      - [ be32, 0x0075FB18, 0x38A00010 ]
+      - [ be32, 0x0075FB1C, 0x7CA903A6 ]
+      - [ be32, 0x0075FB20, 0x393C0010 ]
+      - [ be32, 0x0075FB24, 0x80A9F000 ]
+      - [ be32, 0x0075FB28, 0x2B850000 ]
+      - [ be32, 0x0075FB2C, 0x409E000C ]
+      - [ be32, 0x0075FB30, 0x93E9F000 ]
+      - [ be32, 0x0075FB34, 0x4800000C ]
+      - [ be32, 0x0075FB38, 0x39290004 ]
+      - [ be32, 0x0075FB3C, 0x4200FFE8 ]
+      - [ be32, 0x0075FB40, 0x3B9C0010 ]
+      - [ be32, 0x0075FB44, 0x80BCF000 ]
+      - [ be32, 0x0075FB48, 0x2B850000 ]
+      - [ be32, 0x0075FB4C, 0x419E0018 ]
+      - [ be32, 0x0075FB50, 0x7F9F2840 ]
+      - [ be32, 0x0075FB54, 0x419E000C ]
+      - [ be32, 0x0075FB58, 0x3B9C0004 ]
+      - [ be32, 0x0075FB5C, 0x4BFFFFE8 ]
+      - [ be32, 0x0075FB60, 0xD3FF0008 ]
+      - [ be32, 0x0075FB64, 0x4806A9D2 ] # ba 0x06A9D0 (v1.04 Invincibility Return)
+
+      # === THE GAME HOOKS ===
+      # Hook 1: Branches to 0x0075FA3C
+      - [ be32, 0x001963E0, 0x83C282D0 ]
+      - [ be32, 0x001963E4, 0x38000020 ]
+      - [ be32, 0x001963E8, 0x7C661B78 ]
+      - [ be32, 0x001963EC, 0x4875FA3E ] 
+      # Hook 2: Branches to 0x0075FAA8
+      - [ be32, 0x003317C8, 0x4875FAAA ]
+      - [ be32, 0x003317CC, 0x3C80531B ]
+      - [ be32, 0x003317D0, 0x7C6507B4 ]
+      - [ be32, 0x003317D4, 0x60847387 ]
+      - [ be32, 0x003317D8, 0x7FE3FB78 ]
+
+  "(B) Hold L2 + X To Fly":
+    Games:
+      "inFAMOUS 2 (Artemis)":
+        BCUS98125: [ 01.04 ]
+    Author: "bungholio / ChiDreams"
+    Notes: "Requires Button Enable Code to be ON. Hook branches to 0x0075FAB4."
+    Patch:
+      - [ be32, 0x004A63FC, 0x39200020 ]
+      - [ be32, 0x004A6400, 0x814B0014 ]
+      - [ be32, 0x004A6404, 0x7C1D01CE ]
+      - [ be32, 0x004A6408, 0x4875FAB6 ] # Branch to Fly Cave
+      - [ be32, 0x004A640C, 0x38000060 ]
+
+  "(B) Press L2 + L3 To Toggle AI Movement":
+    Games:
+      "inFAMOUS 2 (Artemis)":
+        BCUS98125: [ 01.04 ]
+    Author: "bungholio / ChiDreams"
+    Notes: "People might not instantly stop, but once they do they will stay stopped until you turn it off."
+    Patch:
+      - [ be32, 0x001D99F8, 0x3D2040A0 ]
+      - [ be32, 0x001D99FC, 0x91630018 ]
+      - [ be32, 0x001D9A00, 0x91230024 ]
+      - [ be32, 0x001D9A04, 0x4875FAE6 ] # Branch to AI Cave
+
+  "(B) Invincibility Marker (Select to Mark/Unmark)":
+    Games:
+      "inFAMOUS 2 (Artemis)":
+        BCUS98125: [ 01.04 ]
+    Author: "bungholio / ChiDreams"
+    Notes: " Hold Select While Damaging A Vehicle Or Object To Mark It For Invincibility, Select + L3 To Unmark"
+    Patch:
+      - [ be32, 0x0006A9C0, 0x7B230020 ]
+      - [ be32, 0x0006A9C4, 0x817D0000 ]
+      - [ be32, 0x0006A9C8, 0x7F6407B4 ]
+      - [ be32, 0x0006A9CC, 0x4875FB06 ] # Branch to Invincibility Cave
+      - [ be32, 0x0006A9D0, 0x54092834 ]
