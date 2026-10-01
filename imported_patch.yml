@@ -19336,6 +19336,125 @@ PPU-c143108d332a4f456c1551658978dfab79872aca:
       - [ byte, 0x00121A36, 0x00 ]
       - [ byte, 0x00121A37, 0x00 ]
 
+# Title: Need for Speed™ Most Wanted
+# Serial: BLUS31010
+# Category: GD
+# Version: APP_VER=01.03 VERSION=01.00
+Anchors:
+  MostWanted: &MostWanted
+      - [ be32,0x00237744,0xFC20E090]
+  MostWanted2: &MostWanted2
+      - [ be32,0x00237AC8,0x60000000]
+  MostWanted3: &MostWanted3
+    - [ be32,0x00236E80,0xFC20E090]
+    - [ be32,0x00236D48,0xFC20E090]
+    - [ be32,0x00237098,0xFC20E090]
+    - [ be32,0x0023716C,0xFC20E090]
+    - [ be32,0x002371EC,0xFC20E090]
+    - [ be32,0x00237470,0xFC20E090]
+    - [ be32,0x00237578,0xFC20E090]
+    - [ be32,0x0023765C,0xFC20E090]
+    - [ be32,0x002386A8,0xFCA02090]
+  MostWanted4: &MostWanted4
+    - [ be32,0x0029B654,0xC03F03D4]
+  MostWanted5: &MostWanted5
+    - [ be32,0x0029F9AC,0xC03F03D4]
+  MostWanted6: &MostWanted6
+    - [ be32,0x0023F1A4,0xFC201890]
+  MostWanted7: &MostWanted7
+    - [ be32,0x002F6DCC,0x7CA62B78]
+  MostWanted8: &MostWanted8
+    - [ be32,0x003336C8,0x3C600001]
+    - [ be32,0x003336CC,0x6063869F]
+  MostWanted9: &MostWanted9
+    - [ be32,0x0032FD74,0x3CC00001]
+    - [ be32,0x0032FD80,0x60C6869F]
+
+PPU-bc0ec6a32569ab470495da87f49fe62eb080f66b:
+  "MAX & INFINITE NITROUS":
+    Games:
+      "Need for Speed Most Wanted (Artemis)":
+        BLUS31010: [ 01.03 ]
+    Author: HACKED BY FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+      - [ load, *MostWanted ]
+  "Max & INFINITE NITROUS (ALTERNATIVE)":
+    Games:
+      "Need for Speed Most Wanted (Artemis)":
+        BLUS31010: [ 01.03 ]
+    Author: HACKED BY FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+      - [ load, *MostWanted2 ]
+  "Max Nitro When Acquired":
+    Games:
+      "Need for Speed Most Wanted (Artemis)":
+        BLUS31010: [ 01.03 ]
+    Author: HACKED BY FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MostWanted3 ]
+  "Heat Level Always Low & Instantly Evade PURSUIT WHEN GET COOLDOWN":
+    Games:
+      "Need for Speed Most Wanted (Artemis)":
+        BLUS31010: [ 01.03 ]
+    Author: HACKED BY FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MostWanted4 ]
+  "Instantly Evade Pursuit When Get Cooldown":
+    Games:
+      "Need for Speed Most Wanted (Artemis)":
+        BLUS31010: [ 01.03 ]
+    Author: HACKED BY FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MostWanted5 ]
+  "Cant Be Arrested By Police":
+    Games:
+      "Need for Speed Most Wanted (Artemis)":
+        BLUS31010: [ 01.03 ]
+    Author: HACKED BY FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MostWanted6 ]
+  "Max Speed Points (RANKING) When Acquired (40,000,000)":
+    Games:
+      "Need for Speed Most Wanted (Artemis)":
+        BLUS31010: [ 01.03 ]
+    Author: HACKED BY FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MostWanted7 ]
+  "Max Score Points (SMASH AND GRAB) When Acquired (99,999)":
+    Games:
+      "Need for Speed Most Wanted (Artemis)":
+        BLUS31010: [ 01.03 ]
+    Author: HACKED BY FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MostWanted8 ]
+  "Max Banked Points (Drifting) When Acquired (99,999)":
+    Games:
+      "Need for Speed Most Wanted (Artemis)":
+        BLUS31010: [ 01.03 ]
+    Author: HACKED BY FBML Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *MostWanted9 ]     
+
 # Title: NARUTO SHIPPUDEN™: Ultimate Ninja® STORM 3 Full Burst
 # Serial: BLUS31350
 # Category: DG
