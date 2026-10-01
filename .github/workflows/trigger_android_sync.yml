@@ -3,7 +3,7 @@ name: Trigger Android Sync
 on:
   push:
     branches:
-      - main # Change to 'master' if your default branch is master
+      - main
 
 jobs:
   notify-android-repo:
@@ -12,6 +12,6 @@ jobs:
       - name: Send Repository Dispatch Event
         uses: peter-evans/repository-dispatch@v3
         with:
-          token: ${{ secrets.ANDROID_REPO_PAT }} # Personal Access Token with repo access
-          repository: chidreams/Artemis-Patch-Collection-Android # Replace with your exact Android repo name
+          token: ${{ secrets.ANDROID_REPO_PAT }}
+          repository: chidreams/Artemis-Patch-Collection-Android
           event_type: sync_android_patches
