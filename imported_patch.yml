@@ -24394,6 +24394,38 @@ PPU-9ef94f24f84f5923f9c88557e33c2ffab380fb7b:
     Patch:
       - [ load, *THEDARKNESS8 ]
 
+# Title: Sniper Elite V2
+# Serial: BLUS30798
+# Category: GD
+# Version: APP_VER=01.04 VERSION=01.00  
+PPU-a37e08a44ff7f9fe5bd2d876ef23f9ad132ff1c3:
+  "Max & Infinite Health":
+    Games:
+      "Sniper Elite V2 (Artemis)":
+        BLUS30798: [ 01.04 ]
+    Author: "Chidreams"
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x004A6F50, 0x7FA3EB78 ]
+      - [ be32, 0x004A6F54, 0x60844C09 ]
+      - [ be32, 0x004A6F58, 0x60000000 ]
+      - [ be32, 0x004A6F94, 0x3DE04974 ]
+      - [ be32, 0x004A6F98, 0x61EF2400 ]
+      - [ be32, 0x004A6F9C, 0x91E90034 ]
+      - [ be32, 0x004A6FA0, 0x91E90030 ]
+      - [ be32, 0x004A6FA4, 0xC0230030 ]  
+  "Max & Infinite Ammo When Reload (Inventory)":
+    Games:
+      "Sniper Elite V2 (Artemis)":
+        BLUS30798: [ 01.04 ]
+    Author: "Chidreams"
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x0060430C, 0x80830034 ]
+      - [ be32, 0x00604314, 0x4800000C ]      
+
 Anchors:
   Homecoming: &Homecoming
      - [ be32,0x00765340,0x60000000]
