@@ -1137,7 +1137,7 @@ PPU-31191d1af19987410112b51edf0452d937af9879:
     Author: bungholio
     Notes: 
     Patch Version: 1.2
-    Patch::
+    Patch:
       - [ load, *DARKSIDE3 ]
   "Partner Health Does Not Drain While Grabbed":
     Games:
