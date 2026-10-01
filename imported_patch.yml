@@ -8798,6 +8798,63 @@ PPU-ade4c30b0c6701258bdce104b11ee74f199ebee8:
     Patch:
       - [ load, *DeadSpace21 ]
 
+# Title: Sniper Elite 3 Ultimate Edition
+# Serial: BLUS31532
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00	
+PPU-92022f93f458dc98cbf0e51267f5a5efd9a5f868:
+  "Infinite Ammo":
+    Games:
+      "Sniper Elite 3 Ultimate Edition (Artemis)":
+        BLUS31532: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+    - [ be32,0x007AA6C4,0x60000000]
+  "No Reload":
+    Games:
+      "Sniper Elite 3 Ultimate Edition (Artemis)":
+        BLUS31532: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x007AA4A8,0x60000000]
+  "Infinite Ammo/Items":
+    Games:
+      "Sniper Elite 3 Ultimate Edition (Artemis)":
+        BLUS31532: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: A
+    Patch:
+    - [ be32,0x007AD558,0x60640000]
+  "Infinite Focus":
+    Games:
+      "Sniper Elite 3 Ultimate Edition (Artemis)":
+        BLUS31532: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x007041D0,0x60000000]
+    - [ be32,0x00704204,0x60000000]
+    - [ be32,0x007044A8,0x60000000]    
+  "Infinite Health ":
+    Games:
+      "Sniper Elite 3 Ultimate Edition (Artemis)":
+        BLUS31532: [ 01.00 ]
+    Author: Randy97Killa Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+    - [ be32,0x00598954,0x3C00447A]
+    - [ be32,0x00598958,0x901E003C]
+    - [ be32,0x0059895C,0xC01E003C]      
+
 # Title: [PROTOTYPE]™
 # Serial: BLUS30145
 # Category: GD
