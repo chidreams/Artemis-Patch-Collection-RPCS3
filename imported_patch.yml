@@ -5198,7 +5198,8 @@ PPU-d0c3e2a107c47d20d3316325ce6f75464a8f4f1d:
     Author: bungholio ported by Chidreams
     Notes: Be careful when going into water, some of it has no bottom so you will fall forever unless you quit or use the code to fly.
     Patch Version: 1.2
-    Group: AB 
+    Group: AB
+    Patch:
       - [ load, *inFamousaltv2 ] 
 PPU-d0c3e2a107c47d20d3316325ce6f75464a8f4f1d:
   "Electricity Never Decreases":
