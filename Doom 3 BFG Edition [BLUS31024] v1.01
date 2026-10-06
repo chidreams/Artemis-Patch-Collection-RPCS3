@@ -1,0 +1,140 @@
+Anchors:
+  Doom3: &Doom3
+      - [ be32,0x004AD504,0x60000000]
+  Doom32: &Doom32
+      - [ be32,0x007E960C,0x60000000]
+  Doom33: &Doom33
+      - [ be32,0x007F2F60,0x60000000]
+  Doom34: &Doom34
+      - [ be32,0x00855BD8,0x60000000]
+  Doom3: &Doom3
+      - [ be32,0x00855BD8,0x60000000]
+  Doom: &Doom
+      - [ be32,0x0010D488,0x396B0000]
+      - [ be32,0x0010DF50,0x396B0000]
+  Doom2: &Doom2
+      - [ be32,0x0010D7E4,0x396B0000]
+      - [ be32,0x0010DBB8,0x396B0000]
+  Doom3a: &Doom3a
+      - [ be32,0x0010CD58,0x396B0000]
+  Doom4: &Doom4
+      - [ be32,0x00103B68,0x396000C8]    
+  Doom5: &Doom5
+      - [ be32,0x00102B74,0x7D3E0050]
+      - [ be32,0x00102B8C,0x7D3E0214]
+      - [ be32,0x00102BA4,0x7D3E0050]  
+  Doom6: &Doom6
+      - [ be32,0x00103BAC,0x392000C8]  
+  Doom7: &Doom7
+      - [ be32,0x00102B6C,0x60000000]  
+  Doom8: &Doom8
+      - [ be32,0x000F00E4,0x380000C8]  
+PPU-550b1abcdf036c3106c268ec870e7b237dcc492b:
+  "No Bullet Damage":
+    Games:
+      "Doom 3 BFG Edition (Artemis)":
+        BLUS31024: [ 01.01 ]
+    Author: DANNY G Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Doom3 ]
+  "No Fall Damage":
+    Games:
+      "Doom 3 BFG Edition (Artemis)":
+        BLUS31024: [ 01.01 ]
+    Author: DANNY G Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Doom32 ]
+  "No Death On Oxygen Depletion":
+    Games:
+      "Doom 3 BFG Edition (Artemis)":
+        BLUS31024: [ 01.01 ]
+    Author: DANNY G Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Doom33 ]
+  "Infinite Ammo":
+    Games:
+      "Doom 3 BFG Edition (Artemis)":
+        BLUS31024: [ 01.01 ]
+    Author: DANNY G Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Doom34 ]
+  "Bullets Never Decrease":
+    Games:
+      "Doom 1&2 Edition (Artemis)":
+        BLUS31024: [ 01.01 ]
+    Author: jgduff Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Doom ]      
+  "Shells Never Decrease":
+    Games:
+      "Doom 1&2 Edition (Artemis)":
+        BLUS31024: [ 01.01 ]
+    Author: jgduff Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Doom2 ] 
+  "Rockets Never Decrease":
+    Games:
+      "Doom 1&2 Edition (Artemis)":
+        BLUS31024: [ 01.01 ]
+    Author: jgduff Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Doom3a ] 
+  "Max Health On Medkit Gain":
+    Games:
+      "Doom 1&2 Edition (Artemis)":
+        BLUS31024: [ 01.01 ]
+    Author: jgduff Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Doom4 ] 
+  "Health Never Decreases":
+    Games:
+      "Doom 1&2 Edition (Artemis)":
+        BLUS31024: [ 01.01 ]
+    Author: jgduff Ported by ChiDreams
+    Notes: Affects enemies too
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Doom5 ] 
+  "Max Armor On Gain":
+    Games:
+      "Doom 1&2 Edition (Artemis)":
+        BLUS31024: [ 01.01 ]
+    Author: jgduff Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Doom6 ] 
+  "Infinite Armor":
+    Games:
+      "Doom 1&2 Edition (Artemis)":
+        BLUS31024: [ 01.01 ]
+    Author: jgduff Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Doom7 ] 
+  "Start With Max Health":
+    Games:
+      "Doom 1&2 Edition (Artemis)":
+        BLUS31024: [ 01.01 ]
+    Author: jgduff Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Doom8 ]  
