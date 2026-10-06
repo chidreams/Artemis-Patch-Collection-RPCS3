@@ -1,0 +1,125 @@
+Anchors:
+  Solid4: &Solid4
+    - [ be32,0x0008C578,0x60000000]
+  Solid42: &Solid42
+    - [ be32,0x0008C754,0x60000000]
+  Solid43: &Solid43
+    - [ be32,0x0008C4DC,0x7D004378]
+  Solid44: &Solid44
+    - [ be32,0x00087484,0x7C040378]
+  Solid45: &Solid45
+    - [ be32,0x0007665C,0x380000C8]
+  Solid46: &Solid46
+    - [ be32,0x000385B0,0x39600000]
+    - [ be32,0x000385B4,0x3800012C]
+    - [ be32,0x000385B8,0xB00809EA]
+    - [ be32,0x000385BC,0xB16809E8]
+    - [ be32,0x000385C0,0x380007D0]
+    - [ be32,0x000385C4,0xB00809E4]
+    - [ be32,0x000385C8,0xB00809E0]
+    - [ be32,0x000385CC,0xB1680010]
+    - [ be32,0x000385D0,0xB1680006]
+  Solid47: &Solid47
+    - [ be32,0x00076564,0x38000064]
+    - [ be32,0x00076568,0x38600064]
+    - [ be32,0x000765B4,0x3BA00064]
+  Solid48: &Solid48
+    - [ be32,0x000385B4,0xB18809E8]
+    - [ be32,0x000385B8,0x3800012C]
+    - [ be32,0x000385BC,0xB00809EA]
+    - [ be32,0x000385C0,0x38000500]
+    - [ be32,0x000385C4,0xB00809E4]
+    - [ be32,0x000385C8,0x60000000]
+    - [ be32,0x000385CC,0x39600000]
+    - [ be32,0x000385D0,0x91680000]
+  Solid49: &Solid49
+    - [ be32,0x0003E268,0x380040E0]
+    - [ be32,0x0003E280,0xA367FF8E]
+    - [ be32,0x0003E284,0x291B0780]
+    - [ be32,0x0003E288,0xC005007C]
+    - [ be32,0x0003E28C,0x408A000C]
+    - [ be32,0x0003E290,0xB0070000]
+    - [ be32,0x0003E294,0x48000008]
+    - [ be32,0x0003DBDC,0x60000000]
+PPU-33e09a0bd8fa2a3b28780a3feeb7b0e018bae381:
+  "Infinite Ammo":
+    Games:
+      "Metal Gear Solid 4 Guns of the Patriots (Artemis)":
+        BLUS30109: [ 02.00 ]
+    Author:  dron_3  Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Solid4 ]
+  "Infinite Grenades":
+    Games:
+      "Metal Gear Solid 4 Guns of the Patriots (Artemis)":
+        BLUS30109: [ 02.00 ]
+    Author:  dron_3  Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:    
+      - [ load, *Solid42 ]
+  "No Reload":
+    Games:
+      "Metal Gear Solid 4 Guns of the Patriots (Artemis)":
+        BLUS30109: [ 02.00 ]
+    Author:  dron_3  Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Solid43 ]
+  "Infinite Items":
+    Games:
+      "Metal Gear Solid 4 Guns of the Patriots (Artemis)":
+        BLUS30109: [ 02.00 ]
+    Author:  dron_3  Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Solid44 ]
+  "Camouflage (%99)":
+    Games:
+      "Metal Gear Solid 4 Guns of the Patriots (Artemis)":
+        BLUS30109: [ 02.00 ]
+    Author:  dron_3  Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Solid45 ]
+  "Infinite Psyche/Health/Battery 0 Stress/Play Time/Alert Phases/Kills":
+    Games:
+      "Metal Gear Solid 4 Guns of the Patriots (Artemis)":
+        BLUS30109: [ 02.00 ]
+    Author:  dron_3  Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Solid46 ]
+  "Max Camo":
+    Games:
+      "Metal Gear Solid 4 Guns of the Patriots (Artemis)":
+        BLUS30109: [ 02.00 ]
+    Author:  dron_3  Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Solid47 ]
+  "Play Time/Battery, 0 Stress/Infinite Psyche":
+    Games:
+      "Metal Gear Solid 4 Guns of the Patriots (Artemis)":
+        BLUS30109: [ 02.00 ]
+    Author:  dron_3  Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Solid48 ]
+  "Subjective zoom":
+    Games:
+      "Metal Gear Solid 4 Guns of the Patriots (Artemis)":
+        BLUS30109: [ 02.00 ]
+    Author:  dron_3  Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Solid49 ]      
