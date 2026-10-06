@@ -1,0 +1,106 @@
+# Title: X-Men Origins: Wolverine
+# Serial: BLUS30268
+# Category: DG
+# Version: APP_VER=01.00 VERSION=01.00 
+Anchors:
+
+  wolverine_exp_mult: &wolverine_exp_mult
+    "Multiplier Amount":
+      Type: long_enum
+      Value: 0x1FBD2710
+      Allowed Values:
+        "10x": 0x1FBD000A
+        "100x": 0x1FBD0064
+        "1,000x": 0x1FBD03E8
+        "10,000x": 0x1FBD2710
+  
+  XWOrigins: &XWOrigins
+      - [ be32, 0x0091B734, 0xD00B0058 ]
+  XWOrigins2: &XWOrigins2
+      - [ be32, 0x008E70E8, 0x39207F7F ]
+      - [ be32, 0x008E7110, 0x91380050 ]
+  XWOrigins3: &XWOrigins3
+      - [ be32, 0x0089783C, 0x3D20461C ]
+      - [ be32, 0x0089F29C, 0x3D40461C ]     
+      - [ be32, 0x00914330, 0xC0230510 ]
+  XWOrigins4: &XWOrigins4
+      - [ be32, 0x01CF5D00, 0xC0230944 ]
+      - [ be32, 0x01CF5D04, 0x28050002 ]
+      - [ be32, 0x01CF5D08, 0x4082000C ]
+      - [ be32, 0x01CF5D0C, 0xFC2D082A ]
+      - [ be32, 0x01CF5D10, 0xD0230938 ]
+      - [ be32, 0x01CF5D14, 0xC0230938 ]
+      - [ be32, 0x01CF5D18, 0x48914336 ]
+      - [ be32, 0x00914330, 0x49CF5D02 ]
+  XWOrigins5: &XWOrigins5
+      - [ be32, 0x01CF5D60, 0x80821250 ]
+      - [ be32, 0x01CF5D64, 0x80840000 ]
+      - [ be32, 0x01CF5D68, 0x8084032C ]
+      - [ be32, 0x01CF5D6C, 0x80840000 ]
+      - [ be32, 0x01CF5D70, 0x80840040 ]
+      - [ be32, 0x01CF5D74, 0x808401D4 ]
+      - [ be32, 0x01CF5D78, 0x7C04F800 ]
+      - [ be32, 0x01CF5D7C, 0x41820008 ]
+      - [ be32, 0x01CF5D80, 0xFDA00090 ]
+      - [ be32, 0x01CF5D84, 0xEC006828 ]
+      - [ be32, 0x01CF5D88, 0x4893F11E ]
+      - [ be32, 0x0093F118, 0x49CF5D62 ]
+
+PPU-1967a332fcb03f5c7b1540671268da920155a352:
+  "Infinite Health":
+    Games:
+      "X-Men Origins Wolverine (Artemis)":
+        BLUS30268: [ 01.00 ]
+    Author: GuitarMan Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *XWOrigins ]
+  "Infinite Upgrade Points":
+    Games:
+      "X-Men Origins Wolverine (Artemis)":
+        BLUS30268: [ 01.00 ]
+    Author: GuitarMan Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *XWOrigins2 ]
+  "Infinite Rage":
+    Games:
+      "X-Men Origins Wolverine (Artemis)":
+        BLUS30268: [ 01.00 ]
+    Author: GuitarMan Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: A 
+    Patch:
+      - [ load, *XWOrigins3 ]
+  "Infinite Rage (Alt)":
+    Games:
+      "X-Men Origins Wolverine (Artemis)":
+        BLUS30268: [ 01.00 ]
+    Author: GuitarMan Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Group: A 
+    Patch:
+      - [ load, *XWOrigins4 ]
+  "One Hit Kill":
+    Games:
+      "X-Men Origins Wolverine (Artemis)":
+        BLUS30268: [ 01.00 ]
+    Author: GuitarMan Ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ load, *XWOrigins5 ]
+  "Exp Multiplier":
+    Games:
+      "X-Men Origins Wolverine (Artemis)":
+        BLUS30268: [ 01.00 ]
+    Author: "GuitarMan Ported by ChiDreams"
+    Notes: "Select your desired EXP multiplier from the configuration menu."
+    Patch Version: 1.2  
+    Configurable Values: *wolverine_exp_mult
+    Patch:
+      - [ be32, 0x0095373C, "Multiplier Amount" ]   
