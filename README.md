@@ -15,6 +15,15 @@ This work was done independently due to the lack of meaningful support or guidan
 - Consistent structure for easy navigation
 - Ongoing updates: we aim to keep the cheat database up-to-date with new games and cheats.
 
+## **💬 Support the Project**
+
+If you enjoy the work or want to help keep the project alive, consider supporting:
+
+### **☕ Buy Me a Coffee**
+<a href="https://buymeacoffee.com/chidreams2q" target="_blank">
+<img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="220" />
+</a>
+
 ## How it Works
 
 The RPCS3 patching system allows for game modifications through the use of patch files. We have taken Aldo's PS3 cheat database and converted these cheats into a format that can be recognized and used by the RPCS3 emulator.
@@ -50,6 +59,7 @@ However:
 - All issues, questions, and updates should be directed here, not to RPCS3
 
 The patches provided in this repository are community‑driven and exist solely to make Aldo’s classic cheat database usable within RPCS3’s patching framework.
+
 
 ## License
 
