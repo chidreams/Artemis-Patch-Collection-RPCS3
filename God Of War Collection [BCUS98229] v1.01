@@ -173,7 +173,7 @@ PPU-9cd8d28963ebc29b59c79819cb56f3d92e857a37:
     Notes: 
     Patch Version: 1.2
     Patch:
-      - [ be32, 0x003A4A34, 0x4B11C854 ]
+      - [ be32, 0x003A4A34, 0x4811C854 ]
       - [ be32, 0x004C1288, 0xFA01FFE4 ]
       - [ be32, 0x004C128C, 0x3E000059 ]
       - [ be32, 0x004C1290, 0x8210A568 ]
