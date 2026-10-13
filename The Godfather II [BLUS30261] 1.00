@@ -51,37 +51,34 @@ PPU-880fe5d46b1704b89cab09b087de24f14c7d5e0c:
     Games:
       "The Godfather™ II (Artemis)":
         BLUS30261: [ 01.00 ]
-    Author: Wulf2k
+    Author: Wulf2k Ported by ChiDreams
     Notes: X + Left = Health Regeneration On X + Right = Health Regeneration Off X + Up = Unfreeze NPCs X + Down = Freeze NPCs
     Patch Version: 1.2
     Patch:
       - [ load, *Thegodfat2 ]
-PPU-880fe5d46b1704b89cab09b087de24f14c7d5e0c:
   "Never Reload":
     Games:
       "The Godfather™ II (Artemis)":
         BLUS30261: [ 01.00 ]
-    Author: Wulf2k
+    Author: Wulf2k Ported by ChiDreams
     Notes: 
     Patch Version: 1.2
     Patch:
       - [ load, *Thegodfat21 ] 
-PPU-880fe5d46b1704b89cab09b087de24f14c7d5e0c:
   "Max Money On Pickup":
     Games:
       "The Godfather™ II (Artemis)":
         BLUS30261: [ 01.00 ]
-    Author: Wulf2k
+    Author: Wulf2k Ported by ChiDreams
     Notes: 
     Patch Version: 1.2
     Patch:
       - [ load, *Thegodfat22 ]
-PPU-880fe5d46b1704b89cab09b087de24f14c7d5e0c:
   "Infinite Health":
     Games:
       "The Godfather™ II (Artemis)":
         BLUS30261: [ 01.00 ]
-    Author: Serp87
+    Author: Serp87 Ported by ChiDreams
     Notes: Because of infinite health, some cars and some people can't be killed, it is one way out, change your weapon to a revolver-shotgun-rifle, the machine gun do not kill people and cars
     Patch Version: 1.2
     Patch:
