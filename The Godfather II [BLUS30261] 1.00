@@ -42,8 +42,10 @@ Anchors:
   Thegodfat21: &Thegodfat21
     - [ jump,0x0009A6C4,0x0009A6C4]  
     - [ be32,0x0009A6C4,0x60000000]
-  Thegodfat21: &Thegodfat22    
+  Thegodfat22: &Thegodfat22    
     - [ be32,0x00322FE8,0xD17F0100]
+  Thegodfat23: &Thegodfat23
+    - [ be32,0x004623A8,0xFC07F36E]  
 PPU-880fe5d46b1704b89cab09b087de24f14c7d5e0c:
   "Health Regeneration + Freeze NPCs":
     Games:
@@ -51,7 +53,7 @@ PPU-880fe5d46b1704b89cab09b087de24f14c7d5e0c:
         BLUS30261: [ 01.00 ]
     Author: Wulf2k
     Notes: X + Left = Health Regeneration On X + Right = Health Regeneration Off X + Up = Unfreeze NPCs X + Down = Freeze NPCs
-    Patch Version: 1.0
+    Patch Version: 1.2
     Patch:
       - [ load, *Thegodfat2 ]
 PPU-880fe5d46b1704b89cab09b087de24f14c7d5e0c:
@@ -61,7 +63,7 @@ PPU-880fe5d46b1704b89cab09b087de24f14c7d5e0c:
         BLUS30261: [ 01.00 ]
     Author: Wulf2k
     Notes: 
-    Patch Version: 1.0
+    Patch Version: 1.2
     Patch:
       - [ load, *Thegodfat21 ] 
 PPU-880fe5d46b1704b89cab09b087de24f14c7d5e0c:
@@ -71,6 +73,16 @@ PPU-880fe5d46b1704b89cab09b087de24f14c7d5e0c:
         BLUS30261: [ 01.00 ]
     Author: Wulf2k
     Notes: 
-    Patch Version: 1.0
+    Patch Version: 1.2
     Patch:
       - [ load, *Thegodfat22 ]
+PPU-880fe5d46b1704b89cab09b087de24f14c7d5e0c:
+  "Infinite Health":
+    Games:
+      "The Godfather™ II (Artemis)":
+        BLUS30261: [ 01.00 ]
+    Author: Serp87
+    Notes: Because of infinite health, some cars and some people can't be killed, it is one way out, change your weapon to a revolver-shotgun-rifle, the machine gun do not kill people and cars
+    Patch Version: 1.2
+    Patch:
+      - [ load, *Thegodfat23 ]
