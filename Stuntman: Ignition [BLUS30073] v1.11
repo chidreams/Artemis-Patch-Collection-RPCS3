@@ -1,0 +1,61 @@
+# Title: Stuntman: Ignition
+# Serial: BLUS30073
+# Category: GD
+# Version: APP_VER=01.11 VERSION=01.00 
+PPU-b164fd1b55e47b0eda65b974777274ca0f0a545d:
+  "Infinite X":
+    Games:
+      "Stuntman: Ignition (Artemis)":
+        BLUS30073: [ 01.11 ]
+    Author: jgduff1 ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32, 0x000730C4, 0x39290000 ]
+      - [ be32, 0x000730C8, 0x60000000 ]
+  "Instant Easy Points + 5 Stars Rank":
+    Games:
+      "Stuntman: Ignition (Artemis)":
+        BLUS30073: [ 01.11 ]
+    Author: jgduff1 ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32, 0x00073EB0, 0x905F002C ]
+  "Infinite Time":
+    Games:
+      "Stuntman: Ignition (Artemis)":
+        BLUS30073: [ 01.11 ]
+    Author: jgduff1 ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32,0x0015AB60, 0x60000000 ]
+  "Max Scores Points":
+    Games:
+      "Stuntman: Ignition (Artemis)":
+        BLUS30073: [ 01.11 ]
+    Author: jgduff1o ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32,0x00073B58, 0x7C02E214 ]
+  "Gain 5 Stars After All Race":
+    Games:
+      "Stuntman: Ignition (Artemis)":
+        BLUS30073: [ 01.11 ]
+    Author: jgduff1 ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32,0x000731B0, 0xEC1F682A ]
+      - [ be32,0x000731B4, 0xEC1F682A ]
+  "String Bonus x9999":
+    Games:
+      "Stuntman: Ignition (Artemis)":
+        BLUS30073: [ 01.11 ]
+    Author: jgduff1 ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2 
+    Patch:
+      - [ be32,0x00073BE0, 0x3929270F ] 
