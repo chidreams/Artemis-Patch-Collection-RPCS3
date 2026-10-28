@@ -1,0 +1,15 @@
+# Title: Disney Universe
+# Serial: BLUS30773
+# Category: GD
+# Version: APP_VER=01.01 VERSION=01.00 
+PPU-8182452c8131ec0f3815e925cc6c87258bc1ef7a:
+  "Infinite Health":
+    Games:
+      "Disney Universe (Artemis)":
+        BLUS30773: [ 01.01 ]
+    Author: Randy97Killa ported by ChiDreams
+    Notes: 
+    Patch Version: 1.2
+    Patch:
+      - [ be32, 0x00A6AB84, 0xC19F0008 ]
+      - [ be32, 0x00A6AB90, 0xD19F0004 ]  
